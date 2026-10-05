@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "root": "dist",
+  "checks": [
+    {
+      "test": "Call/Text clicks, form start and locally mocked provider acceptance emit only event/topic",
+      "status": "PASS",
+      "kind": "LOCAL MOCK",
+      "events": [
+        {
+          "event": "contact_call_click",
+          "topic": "unsure"
+        },
+        {
+          "event": "contact_text_click",
+          "topic": "unsure"
+        },
+        {
+          "event": "form_start",
+          "topic": "prebuy"
+        },
+        {
+          "event": "form_accepted",
+          "topic": "prebuy"
+        }
+      ]
+    },
+    {
+      "test": "Selected phone method rejects four-digit and sixteen-digit phone numbers without a provider request",
+      "status": "PASS",
+      "kind": "LOCAL MOCK"
+    },
+    {
+      "test": "Independent menu and native form remain usable when the external enhancement script fails",
+      "status": "PASS",
+      "limit": "Native provider POST not sent"
+    },
+    {
+      "test": "Legacy benchmark fragment lands at retained page introduction rather than obsolete footer alias",
+      "status": "PASS",
+      "position": {
+        "top": 35.875,
+        "pageTop": 150.875
+      }
+    }
+  ],
+  "limits": [
+    "Local event dispatch only; no external analytics collection or inbox delivery tested"
+  ],
+  "message_style": {
+    "foreground": "rgb(19, 45, 64)",
+    "background": "rgb(255, 255, 255)",
+    "placeholder": "rgb(117, 117, 117)",
+    "placeholder_opacity": "1"
+  },
+  "axe_incomplete_followup": [
+    {
+      "id": "color-contrast",
+      "nodes": [
+        {
+          "target": [
+            "#support-message"
+          ],
+          "html": "<textarea id=\"support-message\" name=\"message\" required=\"\" maxlength=\"8000\" aria-describedby=\"support-message-error\" placeholder=\"A brief description is enough. Technical details can follow.\"></textarea>",
+          "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+        }
+      ]
+    }
+  ],
+  "native_select_style": {
+    "color": "rgb(19, 45, 64)",
+    "background": "rgb(255, 255, 255)"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "light-sport-prebuy-evaluation": {
+    "baseline_words": 545,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-912-high-oil-temperature": {
+    "baseline_words": 296,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "s-lsa-e-lsa-maintenance": {
+    "baseline_words": 669,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "privacy": {
+    "baseline_words": 196,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "the-lima-charlie-aero-standard": {
+    "baseline_words": 1121,
+    "baseline_present": true,
+    "restored_sections": [
+      "Aircraft-specific evidence"
+    ],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-engine-systems-support": {
+    "baseline_words": 917,
+    "baseline_present": true,
+    "restored_sections": [
+      "Aircraft-specific evidence",
+      "ROTAX Alert Service Bulletin Review",
+      "Five-Year Rubber Replacement: Why It is a Real Package, Not One Hose"
+    ],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-ignition-ecu-electrical-faults": {
+    "baseline_words": 386,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "404": {
+    "baseline_words": 41,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "joseph-helminiak-bio": {
+    "baseline_words": 725,
+    "baseline_present": true,
+    "restored_sections": [
+      "Aircraft-specific evidence"
+    ],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-gearbox-propeller-vibration": {
+    "baseline_words": 495,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "support-request": {
+    "baseline_words": 841,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "service-area": {
+    "baseline_words": 538,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-installation-review": {
+    "baseline_words": 705,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "light-sport-experimental-avionics": {
+    "baseline_words": 368,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "faq": {
+    "baseline_words": 1080,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "index": {
+    "baseline_words": 740,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-915-916-turbo-ems-support": {
+    "baseline_words": 295,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "image-credits": {
+    "baseline_words": 292,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "thank-you": {
+    "baseline_words": 66,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-fuel-pressure-fuel-delivery-problems": {
+    "baseline_words": 346,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "card": {
+    "baseline_words": 57,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "about-credentials": {
+    "baseline_words": 32,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "e-props-dealer-support": {
+    "baseline_words": 1580,
+    "baseline_present": true,
+    "restored_sections": [
+      "E-PROPS Sales, Setup, Warranty, and Repair Support for U.S. Aircraft Owners"
+    ],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-9-series-912-914-915-916-support": {
+    "baseline_words": 356,
+    "baseline_present": true,
+    "restored_sections": [
+      "Aircraft-specific evidence"
+    ],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "contact": {
+    "baseline_words": 485,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "aircraft-records-review": {
+    "baseline_words": 613,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-rubber-hose-replacement-fluid-leaks": {
+    "baseline_words": 820,
+    "baseline_present": true,
+    "restored_sections": [
+      "Five-Year Rubber Replacement: Why It is a Real Package, Not One Hose"
+    ],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-912-mag-drop-troubleshooting": {
+    "baseline_words": 265,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-cooling-oil-temperature-problems": {
+    "baseline_words": 355,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "rotax-912-carb-sync": {
+    "baseline_words": 274,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "security-disclosure": {
+    "baseline_words": 101,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  },
+  "services": {
+    "baseline_words": 877,
+    "baseline_present": true,
+    "restored_sections": [],
+    "removed": "Repeated navigation/CTAs, unsupported marketing superlatives, founder-as-default language; technical scope retained for review."
+  }
+}

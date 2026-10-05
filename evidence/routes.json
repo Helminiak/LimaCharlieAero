@@ -1,0 +1,236 @@
+[
+  {
+    "route": "/light-sport-prebuy-evaluation",
+    "file": "light-sport-prebuy-evaluation.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-912-high-oil-temperature",
+    "file": "rotax-912-high-oil-temperature.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/s-lsa-e-lsa-maintenance",
+    "file": "s-lsa-e-lsa-maintenance.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/privacy",
+    "file": "privacy.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/the-lima-charlie-aero-standard",
+    "file": "the-lima-charlie-aero-standard.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-engine-systems-support",
+    "file": "rotax-engine-systems-support.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-ignition-ecu-electrical-faults",
+    "file": "rotax-ignition-ecu-electrical-faults.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/404",
+    "file": "404.html",
+    "last_modified": "2026-10-05",
+    "indexed": false
+  },
+  {
+    "route": "/joseph-helminiak-bio",
+    "file": "joseph-helminiak-bio.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-gearbox-propeller-vibration",
+    "file": "rotax-gearbox-propeller-vibration.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/support-request",
+    "file": "support-request.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/service-area",
+    "file": "service-area.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-installation-review",
+    "file": "rotax-installation-review.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/light-sport-experimental-avionics",
+    "file": "light-sport-experimental-avionics.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/faq",
+    "file": "faq.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/",
+    "file": "index.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-915-916-turbo-ems-support",
+    "file": "rotax-915-916-turbo-ems-support.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/image-credits",
+    "file": "image-credits.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/thank-you",
+    "file": "thank-you.html",
+    "last_modified": "2026-10-05",
+    "indexed": false
+  },
+  {
+    "route": "/rotax-fuel-pressure-fuel-delivery-problems",
+    "file": "rotax-fuel-pressure-fuel-delivery-problems.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/card",
+    "file": "card.html",
+    "last_modified": "2026-10-05",
+    "indexed": false
+  },
+  {
+    "route": "/about-credentials",
+    "file": "about-credentials.html",
+    "last_modified": "2026-10-05",
+    "indexed": false
+  },
+  {
+    "route": "/e-props-dealer-support",
+    "file": "e-props-dealer-support.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-9-series-912-914-915-916-support",
+    "file": "rotax-9-series-912-914-915-916-support.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/contact",
+    "file": "contact.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/aircraft-records-review",
+    "file": "aircraft-records-review.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-rubber-hose-replacement-fluid-leaks",
+    "file": "rotax-rubber-hose-replacement-fluid-leaks.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-912-mag-drop-troubleshooting",
+    "file": "rotax-912-mag-drop-troubleshooting.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-cooling-oil-temperature-problems",
+    "file": "rotax-cooling-oil-temperature-problems.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-912-carb-sync",
+    "file": "rotax-912-carb-sync.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/security-disclosure",
+    "file": "security-disclosure.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/services",
+    "file": "services.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-gearbox-notice",
+    "file": "rotax-gearbox-notice.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/rotax-turbocharger-notice",
+    "file": "rotax-turbocharger-notice.html",
+    "last_modified": "2026-10-04",
+    "indexed": true
+  },
+  {
+    "route": "/start-with-the-symptom",
+    "file": "start-with-the-symptom.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/prebuy-first-inquiry",
+    "file": "prebuy-first-inquiry.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/planning-service-downtime",
+    "file": "planning-service-downtime.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/updates",
+    "file": "updates.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  },
+  {
+    "route": "/owner-notices",
+    "file": "owner-notices.html",
+    "last_modified": "2026-10-05",
+    "indexed": true
+  }
+]
