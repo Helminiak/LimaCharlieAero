@@ -2,61 +2,44 @@
 
 - Current branch: `rc3-proof-of-work-seo`
 - Starting remote SHA for this continuation: `0b44b1eb06363a217de6a67fd7c0362492b19aac`
-- Approved main (unchanged): `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`
-- Review vehicle: PR #2, draft, open, unmerged
-- Current phase: resume/recovery audit complete; preserve evidence and complete clean-room/review handoff
-- Latest pushed implementation SHA: `0b44b1eb06363a217de6a67fd7c0362492b19aac`
-- Latest pushed continuation evidence SHA: `04db1ffd230813002cca4b0d2e08d846a5742033`
-- Latest checkpoint push: the commit containing this checkpoint (resolve through branch HEAD; a commit cannot embed its own SHA)
+- Latest pushed commit SHA: `8580d1f167490077b9cd847f608f32f15dd5cd55`
+- Current phase: final shared-header performance correction complete; browser/visual retest running
+- Approved main, unchanged: `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`
+- Review vehicle: PR #2 only, open/draft/unmerged
 
-## Recovery audit
+## Recovery
 
-Fetched current RC3/main refs, recursive tree, commit log, main comparison, PR #2 and all comments. Remote has four commits ahead of main, zero behind. The bot review concerned the pre-implementation specification commit, not RC3 acceptance. All 99 remote file blobs match the recovered local files exactly. No reset, force push, replacement from main, or production operation was performed.
+Remote branch, main, log, main diff, PR and all comments audited. All 99 starting remote blobs matched recovered source. This directory is an API-synchronized Git source export, not a native checkout. No reset/revert/force push was used. Existing implementation was preserved. Starting audit is in RESUME_RECOVERY_AUDIT.md.
 
-The recovered working directory was an API-synchronized source tree rather than a native Git checkout; `git status`/`git log` correctly reported no local repository. Remote Git history and a complete blob-by-blob comparison were used to audit status. No local code differences were found. Local unpushed evidence exists and must be preserved.
+## Completed requirements
 
-## Requirements by state
-
-| State | Requirements / evidence |
-| --- | --- |
-| COMPLETE | Structured source, deterministic builder, 39 routes, company-first copy, 38 proof subjects, contextual modules, responsive WebP, form behavior, canonical/sitemap/schema, no deployed documentation |
-| COMPLETE | First-pass static failure retained; repetition corrected; navigation contrast corrected; homepage render-blocking CSS corrected |
-| COMPLETE | Frozen generated output matches all 132 manifest entries; final static checks pass; Chromium 234 layouts, 39 axe pages, 124 route cases, 20 form checks pass |
-| COMPLETE | Eight Lighthouse routes score 100 performance/accessibility/SEO; home LCP 1.580 s, E-PROPS 0.979 s; max CLS 0.01322; TBT 0; homepage transfer 222346 bytes |
-| PARTIALLY COMPLETE | Visual self-review performed with defect corrections; 28 before and 28 after screenshots recovered, but final screenshots need refresh after last shared-style correction |
-| PARTIALLY COMPLETE | Content/proof/SEO audit data exists in JSON; required Markdown review registers and complete retention mapping not yet written |
-| PARTIALLY COMPLETE | Clean-room copy exists; offline npm install failed on uncached zod package; Python/browser installs lacked confirmed completion |
-| NOT STARTED | Release ZIP creation, extraction verification, artifact hash manifest, release report, final PR #2 handoff |
-| NEED RETEST | Final visual screenshots; clean-room dependency installation/build/static comparison; package-extracted verification |
-| BLOCKED / EXTERNAL | Actual Formspree inbox delivery, production Cloudflare/DNS behavior, physical-device/assistive-technology validation, asset-specific rights confirmation, independent Design/SEO approval |
+Structured source; 39 routes; 38 proof subjects and 55 contextual placements; company voice; content depth (30/30 numeric bands met); cross-links; metadata/schema; optional aircraft intake; document privacy masks; rights gates; before screenshots; review matrices; local SEO handoff; defect correction. Recovered first-pass results are retained. Fresh pinned Node and Python installations succeeded.
 
 ## Tests already passed
 
-- `python3 tools/build.py`
-- `python3 tools/verify_static.py`: 39 routes, 38 proof subjects, no errors
-- `LCA_CHROMIUM_EXECUTABLE=... node tools/verify_browser.mjs dist final`: Chromium pass; Firefox/WebKit recorded blocked
-- `node tools/verify_auxiliary.mjs dist`: local mocked form/events and script-failure fallback pass
-- `node tools/verify_release_features.mjs`: deterministic output, draft exclusion, unsafe URL rejection pass
-- `node tools/performance.mjs dist --after-only`: eight-route controlled lab gates pass, not field CWV
+- Build: 39 HTML routes, 134 public files.
+- Static: 2,189 assertions; 1,282 references; no errors, all five repetition gates pass.
+- Previous full browser: Chromium/Firefox PASS, 276 layouts, 39 axe pages, 124 route cases, 20 mocked form checks. Header change now requires refreshed sweep.
+- Final performance after header correction: eight routes P/A/SEO 100; home LCP 1.657 s, E-PROPS 1.205 s; CLS 0; TBT 0; home transfer 202,676 bytes. Earlier 1.883 s failure preserved in concurrent-final-performance.json.
+- Auxiliary and authoring/determinism tests passed before the header change; determinism to be rechecked through clean-room build.
 
-## Known defects and outstanding decisions
+## Remaining requirements / tests
 
-- No confirmed open locally correctable P0/P1 in recovered automated results; full specification/evidence audit continues.
-- Rights are REVIEW REQUIRED, not cleared. Private candidate review does not authorize public publication.
-- Cage/borescope/measurement sequences must not imply verified chronology or causal outcomes without records.
-- Screenshot existence alone is not visual approval.
-- Clean-room dependency installation has not yet passed.
+NEED RETEST: shared-header full browser and final screenshots (running), actual visual inspection, clean-room final source/output comparison, extracted package verification.
+NOT STARTED: final release report, ZIP artifacts and SHA256SUMS, full changed-file inventory, final PR #2 handoff.
 
-## Files currently being worked on
+## Known defects
 
-`evidence/WORK_RESUME_CHECKPOINT.md`, recovered `evidence/*.json` and screenshots, required evidence registers, `docs/LOCAL_SEO_HANDOFF.md`, release reports and reproducibility evidence.
+RC3-01 through RC3-10 corrected. RC3-10 shared-header visual/browser retest pending. No other known locally correctable P0/P1; visual inspection remains an active acceptance step.
+
+## External blockers
+
+Photo rights REVIEW REQUIRED for 38 subjects; real Formspree inbox delivery; live Cloudflare/DNS; WebKit missing native host libraries; physical-device/screen-reader checks; independent Design/SEO approval. No external gate is PASS. No deployment or main merge authorized.
+
+## Files being worked on
+
+`tools/build.py`, `templates/page.html`, `tools/verify_static.py`, final evidence and screenshots, release packaging/report.
 
 ## Next exact action
 
-Persist recovered first/final test results to this branch, resolve the clean-room installation status, generate required review matrices from verified source/output, refresh only invalidated screenshots, then package and verify the candidate. Do not rerun the already-valid full browser/performance suites unless source changes invalidate them.
-
-## Continuation phase update — corrections and review registers
-
-Completed: recovered evidence pushed; E-PROPS privacy masks; contextual cross-links on 21 routes; ROTAX hub proof placement; content/proof/permissions/SEO/human-factors registers; local SEO handoff; independent review checklist; defect register. All 30 numeric content bands are met. Current static check: 2,080 assertions, 1,282 references, 39 routes, 38 subjects, no errors. Full browser rerun: Chromium and Firefox PASS, 276 layout cases, 39 axe pages, 124 route cases, 20 form cases. WebKit is blocked by native libraries. Fresh pinned npm install succeeded; isolated pinned Python packages installed.
-
-Next exact action: refresh/reinspect final screenshots, complete final clean-room source/output comparison, package/extract/hash releases, persist all review evidence, then update PR #2. Do not change source unless a remaining defect is identified. No production action is authorized.
+Collect full browser result and final screenshots; visually inspect all required mobile/desktop routes and proof details. Then build final source in clean-room with pinned dependencies and compare all 134 hashes. Package, verify, hash, push evidence, update PR #2. Commit containing this checkpoint supersedes the latest-pushed SHA above; resolve its SHA from branch history.

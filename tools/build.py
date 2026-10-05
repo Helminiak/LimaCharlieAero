@@ -57,6 +57,14 @@ def main():
      vr=str(Path(rel).with_name(f.stem+'-responsive-400.webp'));vn='assets/'+str(Path(vr).with_name(Path(vr).stem+'.'+digest(bd)[:12]+'.webp'))
      (out/vn).parent.mkdir(parents=True,exist_ok=True);(out/vn).write_bytes(bd);amap['assets/'+vr]='/'+vn
 
+ # Header-only derivatives preserve the original brand masters. Reserve their
+ # actual aspect ratios so decoding cannot move the first-screen content.
+ for source,key,width in [('brand/lca-wordmark-v17-transparent-640.webp','header-wordmark',400),('brand/lca-icon-lc-aircraft-v26b-transparent-128.png','header-icon',96)]:
+  with Image.open(ROOT/'assets-src'/source) as im:
+   im.thumbnail((width,width),Image.Resampling.LANCZOS);buf=io.BytesIO()
+   im.save(buf,'WEBP',method=6,**({'lossless':True} if key=='header-icon' else {'quality':85}))
+   data=buf.getvalue();name='assets/brand/'+key+'.'+digest(data)[:12]+'.webp'
+   (out/name).write_bytes(data);amap[key]='/'+name
  for f,key in [('site.css','css'),('site.js','js')]:
   d=(ROOT/'templates'/f).read_bytes();name='assets/'+Path(f).stem+'.'+digest(d)[:12]+Path(f).suffix;(out/name).write_bytes(d);amap[key]='/'+name
  def asset(src):return amap[src.split('?')[0]]
@@ -116,7 +124,7 @@ def main():
   if article:
    graph[2]['author']={'@id':site['domain']+'/#business'};graph[2]['image']=site['domain']+asset('assets/images/rotax-engine-installed-green-covers-800.webp')
   data={'@context':'https://schema.org','@graph':graph}
-  markup=template.substitute(inline_css=(ROOT/'templates/site.css').read_text(),menu_js=(ROOT/'templates/menu.js').read_text(encoding="utf-8"),title=E(p['title']),description=E(p['description']),canonical=E(canonical),robots='<meta name="robots" content="noindex,follow">' if key in ['404','thank-you','card','about-credentials'] else '',ogtype=kind,social=site['domain']+asset('assets/images/rotax-engine-installed-green-covers-800.webp'),css=amap['css'],js=amap['js'],schema=json.dumps(data,ensure_ascii=False).replace('<','\\u003c'),icon=asset('assets/brand/lca-icon-lc-aircraft-v26b-transparent-128.png'),wordmark=asset('assets/brand/lca-wordmark-v17-transparent-640.webp'),nav=nav,main=body,**{k:E(site[k]) for k in ['phone','display_phone','email']})
+  markup=template.substitute(inline_css=(ROOT/'templates/site.css').read_text(),menu_js=(ROOT/'templates/menu.js').read_text(encoding="utf-8"),title=E(p['title']),description=E(p['description']),canonical=E(canonical),robots='<meta name="robots" content="noindex,follow">' if key in ['404','thank-you','card','about-credentials'] else '',ogtype=kind,social=site['domain']+asset('assets/images/rotax-engine-installed-green-covers-800.webp'),css=amap['css'],js=amap['js'],schema=json.dumps(data,ensure_ascii=False).replace('<','\\u003c'),icon=amap['header-icon'],wordmark=amap['header-wordmark'],nav=nav,main=body,**{k:E(site[k]) for k in ['phone','display_phone','email']})
   banned=['Tell Joe','Contact Joe','Call Joe','Text Joe','Meet Joe','Joe reviews','owner-operated']
   assert not any(x.lower() in markup.lower() for x in banned),'Banned brand phrase in '+key
   (out/(key+'.html')).write_text(markup, encoding="utf-8", newline="\n");routes.append({'route':route,'file':key+'.html','last_modified':p.get('last_modified',site['date']),'indexed':key not in ['404','thank-you','card','about-credentials']})
