@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Rotax Genuine Parts badge</title>
+  <desc id="desc">Original trust, original value, original quality, Rotax Genuine Parts.</desc>
+  <defs>
+    <path id="arcTop" d="M 124 126 A 194 194 0 0 1 396 126" />
+    <path id="arcRight" d="M 428 152 A 194 194 0 0 1 410 394" />
+    <path id="arcLeft" d="M 110 394 A 194 194 0 0 1 92 152" />
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+  <g fill="#ffffff" filter="url(#softShadow)">
+    <text font-family="Arial Black, Impact, Arial, sans-serif" font-weight="900" font-size="32" letter-spacing="4.1">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">ORIGINAL TRUST</textPath>
+    </text>
+    <text font-family="Arial Black, Impact, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="3.8">
+      <textPath href="#arcLeft" startOffset="50%" text-anchor="middle">ORIGINAL VALUE</textPath>
+    </text>
+    <text font-family="Arial Black, Impact, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="3.8">
+      <textPath href="#arcRight" startOffset="50%" text-anchor="middle">ORIGINAL QUALITY</textPath>
+    </text>
+    <circle cx="92" cy="260" r="3.6"/>
+    <circle cx="428" cy="260" r="3.6"/>
+    <circle cx="260" cy="424" r="3.6"/>
+    <text x="260" y="220" font-family="Arial Black, Impact, Arial, sans-serif" font-weight="900" font-size="52" letter-spacing="1.5" text-anchor="middle">ROTAX</text>
+    <text x="260" y="278" font-family="Arial Black, Impact, Arial, sans-serif" font-weight="900" font-size="52" letter-spacing="1.5" text-anchor="middle">GENUINE</text>
+    <text x="260" y="336" font-family="Arial Black, Impact, Arial, sans-serif" font-weight="900" font-size="52" letter-spacing="1.5" text-anchor="middle">PARTS</text>
+  </g>
+</svg>
