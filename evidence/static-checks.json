@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "checks": 2028,
-  "references": 1232,
+  "checks": 2080,
+  "references": 1282,
   "routes": 39,
   "proof_subjects": 38,
   "errors": [],
@@ -18,7 +18,7 @@
   },
   "voice_frequency": {
     "Joe": 7,
-    "Joseph": 8,
+    "Joseph": 7,
     "we": 47,
     "our": 5,
     "us": 11,

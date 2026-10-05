@@ -6,6 +6,7 @@
 - Review vehicle: PR #2, draft, open, unmerged
 - Current phase: resume/recovery audit complete; preserve evidence and complete clean-room/review handoff
 - Latest pushed implementation SHA: `0b44b1eb06363a217de6a67fd7c0362492b19aac`
+- Latest pushed continuation evidence SHA: `04db1ffd230813002cca4b0d2e08d846a5742033`
 - Latest checkpoint push: the commit containing this checkpoint (resolve through branch HEAD; a commit cannot embed its own SHA)
 
 ## Recovery audit
@@ -53,3 +54,9 @@ The recovered working directory was an API-synchronized source tree rather than 
 ## Next exact action
 
 Persist recovered first/final test results to this branch, resolve the clean-room installation status, generate required review matrices from verified source/output, refresh only invalidated screenshots, then package and verify the candidate. Do not rerun the already-valid full browser/performance suites unless source changes invalidate them.
+
+## Continuation phase update — corrections and review registers
+
+Completed: recovered evidence pushed; E-PROPS privacy masks; contextual cross-links on 21 routes; ROTAX hub proof placement; content/proof/permissions/SEO/human-factors registers; local SEO handoff; independent review checklist; defect register. All 30 numeric content bands are met. Current static check: 2,080 assertions, 1,282 references, 39 routes, 38 subjects, no errors. Full browser rerun: Chromium and Firefox PASS, 276 layout cases, 39 axe pages, 124 route cases, 20 form cases. WebKit is blocked by native libraries. Fresh pinned npm install succeeded; isolated pinned Python packages installed.
+
+Next exact action: refresh/reinspect final screenshots, complete final clean-room source/output comparison, package/extract/hash releases, persist all review evidence, then update PR #2. Do not change source unless a remaining defect is identified. No production action is authorized.

@@ -66,10 +66,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1883.333,
-      "cls": 0.01321979605765003,
+      "lcp_ms": 1580.23,
+      "cls": 0,
       "tbt_ms": 0,
-      "transfer_bytes": 272312,
+      "transfer_bytes": 222346,
       "errors": null
     },
     {
@@ -136,7 +136,7 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1657.261,
+      "lcp_ms": 1655.235,
       "cls": 0.01321979605765003,
       "tbt_ms": 0,
       "transfer_bytes": 401086,
@@ -206,10 +206,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1360.867,
-      "cls": 0.01321979605765003,
+      "lcp_ms": 979.0799999999999,
+      "cls": 0,
       "tbt_ms": 0,
-      "transfer_bytes": 323280,
+      "transfer_bytes": 340255,
       "errors": null
     },
     {
@@ -276,10 +276,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1504.765,
+      "lcp_ms": 1504.447,
       "cls": 0.01321979605765003,
       "tbt_ms": 0,
-      "transfer_bytes": 227715,
+      "transfer_bytes": 227437,
       "errors": null
     },
     {
@@ -346,10 +346,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1509.204,
-      "cls": 0.01321979605765003,
+      "lcp_ms": 981.4780000000001,
+      "cls": 0,
       "tbt_ms": 0,
-      "transfer_bytes": 430222,
+      "transfer_bytes": 429983,
       "errors": null
     },
     {
@@ -416,10 +416,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1504.582,
-      "cls": 0.01321979605765003,
+      "lcp_ms": 919.0319999999999,
+      "cls": 0,
       "tbt_ms": 0,
-      "transfer_bytes": 361702,
+      "transfer_bytes": 361524,
       "errors": null
     },
     {
@@ -486,10 +486,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 980.5139999999999,
+      "lcp_ms": 980.421,
       "cls": 0,
       "tbt_ms": 0,
-      "transfer_bytes": 174538,
+      "transfer_bytes": 174331,
       "errors": null
     },
     {
@@ -556,8 +556,8 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1354.82,
-      "cls": 0.01321979605765003,
+      "lcp_ms": 1140.897,
+      "cls": 0,
       "tbt_ms": 0,
       "transfer_bytes": 82420,
       "errors": null

@@ -6,7 +6,7 @@
     "description": "Review a light-sport aircraft\u2019s records and condition before travel or purchase decisions. A listing link is enough to begin; a tail number is optional at first contact.",
     "h1": "Prebuy help before you commit",
     "canonical": "https://limacharlieaero.com/light-sport-prebuy-evaluation",
-    "words": 923,
+    "words": 932,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -15,6 +15,9 @@
     ],
     "links": [
       "/",
+      "/aircraft-records-review",
+      "/prebuy-first-inquiry",
+      "/service-area",
       "/support-request?topic=prebuy",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -31,7 +34,7 @@
     "description": "This guide focuses on changing or high oil-temperature indications in ROTAX 912 installations.",
     "h1": "ROTAX 912 high oil temperature",
     "canonical": "https://limacharlieaero.com/rotax-912-high-oil-temperature",
-    "words": 618,
+    "words": 624,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -40,6 +43,8 @@
     ],
     "links": [
       "/",
+      "/rotax-cooling-oil-temperature-problems",
+      "/rotax-installation-review",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -55,7 +60,7 @@
     "description": "Get help identifying what inspection or maintenance is due for your light-sport or experimental aircraft. You do not need to know its category before calling.",
     "h1": "Plan an aircraft inspection or maintenance visit",
     "canonical": "https://limacharlieaero.com/s-lsa-e-lsa-maintenance",
-    "words": 942,
+    "words": 948,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -64,6 +69,8 @@
     ],
     "links": [
       "/",
+      "/aircraft-records-review",
+      "/services",
       "/support-request?topic=service",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -125,7 +132,7 @@
     "description": "Support for ROTAX-powered light-sport and experimental aircraft, from routine service to rough running, leaks, electrical warnings and vibration.",
     "h1": "ROTAX service and troubleshooting",
     "canonical": "https://limacharlieaero.com/rotax-engine-systems-support",
-    "words": 971,
+    "words": 980,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -164,7 +171,7 @@
     "description": "Start with a hard-starting complaint, intermittent warning, charging concern or unusual ignition-check behavior.",
     "h1": "ROTAX starting, electrical and ECU warnings",
     "canonical": "https://limacharlieaero.com/rotax-ignition-ecu-electrical-faults",
-    "words": 768,
+    "words": 774,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -173,6 +180,8 @@
     ],
     "links": [
       "/",
+      "/light-sport-experimental-avionics",
+      "/rotax-fuel-pressure-fuel-delivery-problems",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -212,7 +221,7 @@
     "description": "Joe owns and operates Lima Charlie Aero at KAKH / Gastonia, bringing an aircraft owner\u2019s experience to maintenance questions.",
     "h1": "Joseph \u201cJoe\u201d Helminiak \u2014 Founder & Technical Lead",
     "canonical": "https://limacharlieaero.com/joseph-helminiak-bio",
-    "words": 780,
+    "words": 782,
     "schema": [
       "LocalBusiness",
       "ProfilePage",
@@ -223,6 +232,7 @@
       "/",
       "/contact#credentials",
       "/support-request?topic=unsure",
+      "/the-lima-charlie-aero-standard",
       "sms:+19803821344",
       "tel:+19803821344"
     ],
@@ -237,7 +247,7 @@
     "description": "Describe a new vibration, unusual gearbox behavior or a propeller concern and begin a review of the aircraft and maintenance history.",
     "h1": "ROTAX propeller vibration and gearbox concerns",
     "canonical": "https://limacharlieaero.com/rotax-gearbox-propeller-vibration",
-    "words": 897,
+    "words": 905,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -246,8 +256,11 @@
     ],
     "links": [
       "/",
+      "/aircraft-records-review",
+      "/e-props-dealer-support",
       "/owner-notices",
       "/rotax-gearbox-notice",
+      "/rotax-installation-review",
       "/rotax-turbocharger-notice",
       "/support-request?topic=symptom",
       "sms:+19803821344",
@@ -290,7 +303,7 @@
     "description": "Lima Charlie Aero is based at Gastonia Municipal Airport, serving the Gastonia, Charlotte and Carolinas region by appointment.",
     "h1": "Arrange support at KAKH / Gastonia",
     "canonical": "https://limacharlieaero.com/service-area",
-    "words": 818,
+    "words": 824,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -298,6 +311,8 @@
     ],
     "links": [
       "/",
+      "/contact",
+      "/planning-service-downtime",
       "/support-request?topic=unsure",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -313,7 +328,7 @@
     "description": "A review considers how the engine, hoses, wiring, controls and other systems are installed in the aircraft.",
     "h1": "ROTAX engine installation review",
     "canonical": "https://limacharlieaero.com/rotax-installation-review",
-    "words": 877,
+    "words": 882,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -322,6 +337,8 @@
     ],
     "links": [
       "/",
+      "/aircraft-records-review",
+      "/rotax-rubber-hose-replacement-fluid-leaks",
       "/support-request?topic=service",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -342,7 +359,7 @@
     "description": "Help with display, radio, wiring and electrical concerns in light-sport and experimental aircraft. Start with the symptom or the equipment change you want.",
     "h1": "Avionics and aircraft electrical support",
     "canonical": "https://limacharlieaero.com/light-sport-experimental-avionics",
-    "words": 794,
+    "words": 799,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -351,6 +368,8 @@
     ],
     "links": [
       "/",
+      "/aircraft-records-review",
+      "/rotax-ignition-ecu-electrical-faults",
       "/support-request?topic=avionics",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -393,7 +412,7 @@
     "description": "Light-sport and experimental aircraft support at KAKH in Gastonia, serving the Charlotte and Carolinas region by appointment. ROTAX engines, inspections, prebuys, propellers and avionics.",
     "h1": "Light-Sport & Experimental Aircraft Maintenance",
     "canonical": "https://limacharlieaero.com/",
-    "words": 881,
+    "words": 886,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -442,7 +461,7 @@
     "description": "Help evaluating turbocharger, engine-management and warning concerns in supported ROTAX installations.",
     "h1": "ROTAX 914 / 915 / 916 turbo and engine warnings",
     "canonical": "https://limacharlieaero.com/rotax-915-916-turbo-ems-support",
-    "words": 685,
+    "words": 692,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -453,6 +472,7 @@
       "/",
       "/owner-notices",
       "/rotax-gearbox-notice",
+      "/rotax-ignition-ecu-electrical-faults",
       "/rotax-turbocharger-notice",
       "/support-request?topic=symptom",
       "sms:+19803821344",
@@ -508,7 +528,7 @@
     "description": "Discuss pressure changes, rough running, delivery concerns or suspected fuel-system contamination.",
     "h1": "ROTAX fuel pressure and delivery concerns",
     "canonical": "https://limacharlieaero.com/rotax-fuel-pressure-fuel-delivery-problems",
-    "words": 788,
+    "words": 795,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -517,6 +537,8 @@
     ],
     "links": [
       "/",
+      "/rotax-engine-systems-support",
+      "/start-with-the-symptom",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -578,7 +600,7 @@
     "description": "Discuss an E-PROPS propeller for your aircraft, get help with an existing installation, or begin a warranty or repair inquiry.",
     "h1": "E-PROPS Dealer & Service Support",
     "canonical": "https://limacharlieaero.com/e-props-dealer-support",
-    "words": 1324,
+    "words": 1336,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -587,13 +609,15 @@
     ],
     "links": [
       "/",
+      "/rotax-gearbox-propeller-vibration",
+      "/services",
       "/support-request?topic=eprops",
       "sms:+19803821344",
       "tel:+19803821344"
     ],
     "images": [
-      "/assets/images/proof/eprops-engineering-packet-fanout-1200-clean.d5df1610bc54.webp",
-      "/assets/images/proof/eprops-install-checklist-preview-1200.fa81f844fc30.webp",
+      "/assets/images/proof/eprops-engineering-packet-fanout-1200-clean.a276129cd427.webp",
+      "/assets/images/proof/eprops-install-checklist-preview-1200.ed787e002be1.webp",
       "/assets/images/proof/eprops-aircraft-closeup-sky-ranger-1200.e528244af6fb.webp",
       "/assets/images/proof/eprops-blade-damage-closeup-800.4e782a9a1125.webp"
     ]
@@ -605,7 +629,7 @@
     "description": "The engine family helps identify the appropriate service and diagnostic instructions. If you are unsure which model is installed, start with your aircraft details.",
     "h1": "ROTAX 912, 914, 915 and 916 owner guide",
     "canonical": "https://limacharlieaero.com/rotax-9-series-912-914-915-916-support",
-    "words": 745,
+    "words": 793,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -614,11 +638,17 @@
     ],
     "links": [
       "/",
+      "/rotax-912-carb-sync",
+      "/rotax-915-916-turbo-ems-support",
+      "/rotax-engine-systems-support",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"
     ],
-    "images": []
+    "images": [
+      "/assets/images/proof/rotax-engine-on-hoist-800.934116da4fec.webp",
+      "/assets/images/proof/dynavibe-kit-secured-seat-800.f28e8596fc80.webp"
+    ]
   },
   {
     "route": "/contact",
@@ -627,7 +657,7 @@
     "description": "Call, text or send a short inquiry. Aircraft details help if known, but you can start by explaining what is happening.",
     "h1": "Contact Lima Charlie Aero",
     "canonical": "https://limacharlieaero.com/contact",
-    "words": 351,
+    "words": 354,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -653,7 +683,7 @@
     "description": "A remote records review can help identify missing entries, inspection questions and items to clarify before a purchase or maintenance visit.",
     "h1": "Understand the aircraft\u2019s maintenance history",
     "canonical": "https://limacharlieaero.com/aircraft-records-review",
-    "words": 855,
+    "words": 862,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -662,7 +692,9 @@
     ],
     "links": [
       "/",
+      "/light-sport-prebuy-evaluation",
       "/support-request?topic=records",
+      "/the-lima-charlie-aero-standard",
       "sms:+19803821344",
       "tel:+19803821344"
     ],
@@ -677,7 +709,7 @@
     "description": "Plan calendar-driven rubber replacement and investigate fluid leaks without assuming every aircraft needs the same parts package.",
     "h1": "ROTAX rubber and hose replacement planning",
     "canonical": "https://limacharlieaero.com/rotax-rubber-hose-replacement-fluid-leaks",
-    "words": 907,
+    "words": 913,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -686,6 +718,8 @@
     ],
     "links": [
       "/",
+      "/planning-service-downtime",
+      "/rotax-installation-review",
       "/support-request?topic=service",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -702,7 +736,7 @@
     "description": "A rough ignition check or an unusual RPM drop is a symptom to investigate, rather than a reason to select a replacement part.",
     "h1": "ROTAX 912 / 914 ignition-check roughness",
     "canonical": "https://limacharlieaero.com/rotax-912-mag-drop-troubleshooting",
-    "words": 651,
+    "words": 656,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -711,6 +745,8 @@
     ],
     "links": [
       "/",
+      "/rotax-912-carb-sync",
+      "/rotax-ignition-ecu-electrical-faults",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -724,7 +760,7 @@
     "description": "Discuss coolant loss, leaks, changing cylinder-head or coolant temperatures, and cooling airflow concerns.",
     "h1": "ROTAX coolant loss and cooling concerns",
     "canonical": "https://limacharlieaero.com/rotax-cooling-oil-temperature-problems",
-    "words": 661,
+    "words": 667,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -733,6 +769,8 @@
     ],
     "links": [
       "/",
+      "/rotax-912-high-oil-temperature",
+      "/rotax-rubber-hose-replacement-fluid-leaks",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"
@@ -748,7 +786,7 @@
     "description": "Rough idle, uneven running or vibration in a carbureted ROTAX installation can justify a carburetor-balance review.",
     "h1": "ROTAX 912 / 914 rough idle and carburetor balance",
     "canonical": "https://limacharlieaero.com/rotax-912-carb-sync",
-    "words": 674,
+    "words": 678,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -757,6 +795,8 @@
     ],
     "links": [
       "/",
+      "/rotax-912-mag-drop-troubleshooting",
+      "/rotax-fuel-pressure-fuel-delivery-problems",
       "/support-request?topic=symptom",
       "sms:+19803821344",
       "tel:+19803821344"

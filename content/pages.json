@@ -69,7 +69,21 @@
       },
       {
         "heading": "Separate evidence, interpretation and unresolved questions",
-        "text": "A useful report lets the buyer distinguish an observation from an inference. An image can show a visible condition; the associated record may explain when work occurred; a missing document may leave an approval or maintenance-history question unresolved. Keep those categories separate. The owner can then ask a focused follow-up question, seek the missing record or discuss additional inspection access. Neither a photograph nor a records summary guarantees future reliability. The deliverable supports the purchase decision within the agreed scope and the evidence actually available."
+        "text": "A useful report lets the buyer distinguish an observation from an inference. An image can show a visible condition; the associated record may explain when work occurred; a missing document may leave an approval or maintenance-history question unresolved. Keep those categories separate. The owner can then ask a focused follow-up question, seek the missing record or discuss additional inspection access. Neither a photograph nor a records summary guarantees future reliability. The deliverable supports the purchase decision within the agreed scope and the evidence actually available.",
+        "links": [
+          [
+            "/aircraft-records-review",
+            "Review the maintenance history"
+          ],
+          [
+            "/prebuy-first-inquiry",
+            "Send a first prebuy inquiry"
+          ],
+          [
+            "/service-area",
+            "Plan aircraft access"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -159,7 +173,17 @@
       },
       {
         "heading": "Review the installation and recent work together",
-        "text": "Cooling airflow, installed routing, instrumentation and the maintenance history are relevant parts of the picture. A recent change is a lead to investigate, not proof of causation. Keep photographs that show the surrounding installation as well as any close detail. The useful next step is to establish what was observed and what configuration was present before selecting a diagnostic path. Send the relevant records and explain what changed from the aircraft’s previous behavior."
+        "text": "Cooling airflow, installed routing, instrumentation and the maintenance history are relevant parts of the picture. A recent change is a lead to investigate, not proof of causation. Keep photographs that show the surrounding installation as well as any close detail. The useful next step is to establish what was observed and what configuration was present before selecting a diagnostic path. Send the relevant records and explain what changed from the aircraft’s previous behavior.",
+        "links": [
+          [
+            "/rotax-cooling-oil-temperature-problems",
+            "Cooling and oil-temperature context"
+          ],
+          [
+            "/rotax-installation-review",
+            "Review the surrounding installation"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -260,7 +284,17 @@
       },
       {
         "heading": "Prepare records and access together",
-        "text": "Inspection planning is easier when the available maintenance history, aircraft configuration and access arrangements are clear. Explain what is due or what decision you are trying to make. If you are unsure which inspection or task applies, begin with the aircraft and the records you have; the inquiry does not require you to supply a legal conclusion."
+        "text": "Inspection planning is easier when the available maintenance history, aircraft configuration and access arrangements are clear. Explain what is due or what decision you are trying to make. If you are unsure which inspection or task applies, begin with the aircraft and the records you have; the inquiry does not require you to supply a legal conclusion.",
+        "links": [
+          [
+            "/services",
+            "Choose the maintenance task"
+          ],
+          [
+            "/aircraft-records-review",
+            "Establish the aircraft history"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -608,7 +642,21 @@
       },
       {
         "heading": "Keep the system relationships visible",
-        "text": "Treating an engine symptom as an isolated component problem can hide the evidence. A report of vibration needs operating conditions and installation context. A pressure indication needs the instrument, supply path and recent work considered together. Electrical connections, grounds and available power can affect what an owner sees on the panel. Keep the exact indication, when it appeared, and what changed separate from any suspected cause. This preserves a useful sequence of observations and reduces the chance of building the investigation around an untested assumption."
+        "text": "Treating an engine symptom as an isolated component problem can hide the evidence. A report of vibration needs operating conditions and installation context. A pressure indication needs the instrument, supply path and recent work considered together. Electrical connections, grounds and available power can affect what an owner sees on the panel. Keep the exact indication, when it appeared, and what changed separate from any suspected cause. This preserves a useful sequence of observations and reduces the chance of building the investigation around an untested assumption.",
+        "links": [
+          [
+            "/rotax-fuel-pressure-fuel-delivery-problems",
+            "Fuel pressure and supply"
+          ],
+          [
+            "/rotax-ignition-ecu-electrical-faults",
+            "Ignition and electrical concerns"
+          ],
+          [
+            "/rotax-cooling-oil-temperature-problems",
+            "Cooling and lubrication context"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -715,7 +763,17 @@
       },
       {
         "heading": "Keep uncertainty explicit",
-        "text": "If a warning cannot be reproduced or a relevant record is unavailable, preserve that limitation. An unresolved question is more useful than a confident component label unsupported by the evidence."
+        "text": "If a warning cannot be reproduced or a relevant record is unavailable, preserve that limitation. An unresolved question is more useful than a confident component label unsupported by the evidence.",
+        "links": [
+          [
+            "/light-sport-experimental-avionics",
+            "Panel and wiring installation evidence"
+          ],
+          [
+            "/rotax-fuel-pressure-fuel-delivery-problems",
+            "Distinguish fuel-system symptoms"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -841,7 +899,13 @@
       },
       {
         "heading": "Technical leadership within the company",
-        "text": "The biography identifies the person behind the documented background and training. Lima Charlie Aero remains the service entity, and the aircraft-specific work scope remains the basis for each inquiry. A personal credential is not a blanket authorization for every aircraft category, installation change or manufacturer task. The relevant records, current instructions and applicable authority must be established for the work being discussed."
+        "text": "The biography identifies the person behind the documented background and training. Lima Charlie Aero remains the service entity, and the aircraft-specific work scope remains the basis for each inquiry. A personal credential is not a blanket authorization for every aircraft category, installation change or manufacturer task. The relevant records, current instructions and applicable authority must be established for the work being discussed.",
+        "links": [
+          [
+            "/the-lima-charlie-aero-standard",
+            "Company operating method"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -944,7 +1008,21 @@
       },
       {
         "heading": "Turn the concern into a reviewable starting point",
-        "text": "Send the aircraft and engine information you know, the RPM or operating range associated with the concern if recorded, recent work and any existing measurement report. Do not perform additional runs solely to gather website inquiry material. If no measurements exist, a clear description still starts the process. We can discuss the appropriate next evidence and access before agreeing the scope."
+        "text": "Send the aircraft and engine information you know, the RPM or operating range associated with the concern if recorded, recent work and any existing measurement report. Do not perform additional runs solely to gather website inquiry material. If no measurements exist, a clear description still starts the process. We can discuss the appropriate next evidence and access before agreeing the scope.",
+        "links": [
+          [
+            "/rotax-installation-review",
+            "Installation relationships"
+          ],
+          [
+            "/aircraft-records-review",
+            "Connect readings with records"
+          ],
+          [
+            "/e-props-dealer-support",
+            "Propeller condition and fitment support"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -1102,7 +1180,17 @@
       },
       {
         "heading": "Coordinate access before traveling",
-        "text": "KAKH / Gastonia is the practical location anchor for the shop. Charlotte and Carolinas references describe regional relevance; they are not a promise of mobile service, a pickup radius or an additional facility. Confirm the aircraft location, proposed access and scheduling before making travel plans. Remote records discussion and physical aircraft work have different requirements, so explain which kind of help you need. We can then clarify what information is useful and whether further access arrangements are needed."
+        "text": "KAKH / Gastonia is the practical location anchor for the shop. Charlotte and Carolinas references describe regional relevance; they are not a promise of mobile service, a pickup radius or an additional facility. Confirm the aircraft location, proposed access and scheduling before making travel plans. Remote records discussion and physical aircraft work have different requirements, so explain which kind of help you need. We can then clarify what information is useful and whether further access arrangements are needed.",
+        "links": [
+          [
+            "/planning-service-downtime",
+            "Plan access and timing"
+          ],
+          [
+            "/contact",
+            "Coordinate with the shop"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -1187,7 +1275,17 @@
       },
       {
         "heading": "Document condition without overstating chronology",
-        "text": "The hoist, cage and joint images show useful categories of installation evidence. They are arranged to explain what should be documented, not to assert an independently verified repair sequence or acceptance result. A repair record would need to connect the original concern, applicable instructions, work performed and inspection outcome to the aircraft. The photographs support that record; they cannot replace it. Keeping this distinction visible protects both technical accuracy and owner understanding."
+        "text": "The hoist, cage and joint images show useful categories of installation evidence. They are arranged to explain what should be documented, not to assert an independently verified repair sequence or acceptance result. A repair record would need to connect the original concern, applicable instructions, work performed and inspection outcome to the aircraft. The photographs support that record; they cannot replace it. Keeping this distinction visible protects both technical accuracy and owner understanding.",
+        "links": [
+          [
+            "/rotax-rubber-hose-replacement-fluid-leaks",
+            "Review installed hose systems"
+          ],
+          [
+            "/aircraft-records-review",
+            "Trace installation history"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -1303,7 +1401,17 @@
       },
       {
         "heading": "Describe the exact behavior before naming a failed unit",
-        "text": "An intermittent indication, a radio problem and a power interruption call for different evidence. Record the displayed message or behavior, the equipment in use, the phase of operation and whether the concern followed recent work. If several systems changed at the same time, include that relationship. Do not disturb wiring to recreate a fault for an inquiry. Available photographs, existing records and a clear timeline help define the first review without assuming that an expensive instrument or electronic module needs replacement."
+        "text": "An intermittent indication, a radio problem and a power interruption call for different evidence. Record the displayed message or behavior, the equipment in use, the phase of operation and whether the concern followed recent work. If several systems changed at the same time, include that relationship. Do not disturb wiring to recreate a fault for an inquiry. Available photographs, existing records and a clear timeline help define the first review without assuming that an expensive instrument or electronic module needs replacement.",
+        "links": [
+          [
+            "/rotax-ignition-ecu-electrical-faults",
+            "Connection faults and component assumptions"
+          ],
+          [
+            "/aircraft-records-review",
+            "Installation records"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -1663,6 +1771,14 @@
           [
             "/the-lima-charlie-aero-standard",
             "The Lima Charlie Aero Standard"
+          ],
+          [
+            "/aircraft-records-review",
+            "Aircraft records review"
+          ],
+          [
+            "/start-with-the-symptom",
+            "Start with the symptom"
           ]
         ]
       }
@@ -1787,7 +1903,17 @@
       },
       {
         "heading": "Use the timeline to guide the inquiry",
-        "text": "Explain the first occurrence, any recent maintenance and whether the concern changed over time. If records or data are unavailable, identify that limitation. We can still begin with your observations and clarify what information is required for a meaningful next step."
+        "text": "Explain the first occurrence, any recent maintenance and whether the concern changed over time. If records or data are unavailable, identify that limitation. We can still begin with your observations and clarify what information is required for a meaningful next step.",
+        "links": [
+          [
+            "/rotax-ignition-ecu-electrical-faults",
+            "Electrical connections and warnings"
+          ],
+          [
+            "/rotax-turbocharger-notice",
+            "Read the dated turbocharger notice"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -1912,7 +2038,17 @@
       },
       {
         "heading": "Plan access around the actual installation",
-        "text": "Fuel-system review may depend on aircraft configuration and which areas can be inspected safely under the applicable instructions. Send a general installation view and the relevant maintenance history if already available. A description of recent fueling, maintenance or configuration changes can help frame the discussion. Do not open the system or carry out an improvised test for an initial inquiry. The next step is to agree what evidence and access are needed, then define the work from that information."
+        "text": "Fuel-system review may depend on aircraft configuration and which areas can be inspected safely under the applicable instructions. Send a general installation view and the relevant maintenance history if already available. A description of recent fueling, maintenance or configuration changes can help frame the discussion. Do not open the system or carry out an improvised test for an initial inquiry. The next step is to agree what evidence and access are needed, then define the work from that information.",
+        "links": [
+          [
+            "/rotax-engine-systems-support",
+            "Fuel within the engine systems"
+          ],
+          [
+            "/start-with-the-symptom",
+            "Start with your observations"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2089,7 +2225,17 @@
       },
       {
         "heading": "Keep purchasing and maintenance decisions distinct",
-        "text": "A catalog selection, a dealer inquiry and an aircraft installation approval are different steps. We help connect the support request with the information needed for the actual aircraft. Do not treat an advertised product family or a photograph of another installation as evidence that the same configuration is suitable for yours. Discuss the documentation path, agreed work scope, access and any unresolved questions before making the maintenance plan. Parts availability and external technical review can affect planning; no turnaround is implied by this page."
+        "text": "A catalog selection, a dealer inquiry and an aircraft installation approval are different steps. We help connect the support request with the information needed for the actual aircraft. Do not treat an advertised product family or a photograph of another installation as evidence that the same configuration is suitable for yours. Discuss the documentation path, agreed work scope, access and any unresolved questions before making the maintenance plan. Parts availability and external technical review can affect planning; no turnaround is implied by this page.",
+        "links": [
+          [
+            "/rotax-gearbox-propeller-vibration",
+            "Vibration and installation evidence"
+          ],
+          [
+            "/services",
+            "Related aircraft services"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2116,13 +2262,13 @@
       {
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
         "alt": "Redacted engineering packet pages arranged for review",
-        "caption": "A redacted engineering packet shows how aircraft and installation information can be organized. It is process evidence, not a new approval or customer outcome.",
+        "caption": "Redacted engineering packet structure connects configuration information, installation details and documentation. The preview is process evidence, not approval for another aircraft.",
         "proof_id": "eprops-engineering-packet-fanout-1200-clean"
       },
       {
         "src": "assets/images/proof/eprops-install-checklist-preview-1200.webp",
         "alt": "Installation checklist document overview",
-        "caption": "A checklist supports a documented installation process. The current aircraft-specific requirements govern the actual work.",
+        "caption": "Redacted checklist structure: identity, preparation, installation, checks and records. Private identifiers and aircraft-specific values are withheld; this preview is not a procedure for another aircraft.",
         "proof_id": "eprops-install-checklist-preview-1200"
       },
       {
@@ -2219,7 +2365,21 @@
       },
       {
         "heading": "Records connect symptoms to changes",
-        "text": "A timeline of recent service, component changes and the first appearance of a concern can be more useful than a long list of suspected causes. Record what changed, when it changed, and whether the symptom is repeatable under ordinary operating conditions. Include the relevant maintenance entry when available. This does not prove that recent work caused the issue; it gives the investigation a chronology that can be checked against the aircraft."
+        "text": "A timeline of recent service, component changes and the first appearance of a concern can be more useful than a long list of suspected causes. Record what changed, when it changed, and whether the symptom is repeatable under ordinary operating conditions. Include the relevant maintenance entry when available. This does not prove that recent work caused the issue; it gives the investigation a chronology that can be checked against the aircraft.",
+        "links": [
+          [
+            "/rotax-engine-systems-support",
+            "Explore engine system concerns"
+          ],
+          [
+            "/rotax-912-carb-sync",
+            "Carburetor synchronization context"
+          ],
+          [
+            "/rotax-915-916-turbo-ems-support",
+            "Turbo and engine-management concerns"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2229,7 +2389,21 @@
       "rotax-9-series-document-boundary"
     ],
     "topic": "symptom",
-    "last_modified": "2026-10-05"
+    "last_modified": "2026-10-05",
+    "proof": [
+      {
+        "src": "assets/images/proof/rotax-engine-on-hoist-800.webp",
+        "alt": "Aircraft engine supported on a hoist",
+        "caption": "Engine support and access are part of the installation work context. This view records the engine and surrounding work area.",
+        "proof_id": "rotax-engine-on-hoist-800"
+      },
+      {
+        "src": "assets/images/proof/dynavibe-kit-secured-seat-800.webp",
+        "alt": "DynaVibe measurement equipment secured in an aircraft seat",
+        "caption": "Measurement equipment in its aircraft context. Setup and operating conditions belong with the result, not just the number.",
+        "proof_id": "dynavibe-kit-secured-seat-800"
+      }
+    ]
   },
   "contact": {
     "title": "Contact Lima Charlie Aero",
@@ -2264,6 +2438,10 @@
           [
             "/support-request",
             "Request Service"
+          ],
+          [
+            "/support-request",
+            "Start a service inquiry"
           ]
         ]
       }
@@ -2357,7 +2535,17 @@
       },
       {
         "heading": "Separate a missing record from a missing action",
-        "text": "An unavailable entry and an unperformed maintenance action are different findings. A records review should say what was supplied, which dates and components it covers, and which questions remain open. An invoice can identify a purchased part without proving where or when it was installed. A photograph may show an apparent configuration without establishing its approval basis. Keeping those distinctions visible makes the review useful to an owner, buyer and subsequent maintainer. Request the missing evidence before treating a gap as either resolved or proof of a defect."
+        "text": "An unavailable entry and an unperformed maintenance action are different findings. A records review should say what was supplied, which dates and components it covers, and which questions remain open. An invoice can identify a purchased part without proving where or when it was installed. A photograph may show an apparent configuration without establishing its approval basis. Keeping those distinctions visible makes the review useful to an owner, buyer and subsequent maintainer. Request the missing evidence before treating a gap as either resolved or proof of a defect.",
+        "links": [
+          [
+            "/light-sport-prebuy-evaluation",
+            "Records in a purchase decision"
+          ],
+          [
+            "/the-lima-charlie-aero-standard",
+            "How evidence guides work"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2465,7 +2653,17 @@
       },
       {
         "heading": "A stain is a clue, not the source label",
-        "text": "Residue can move along a hose, fitting or surrounding surface before it becomes visible. Record the observed area and recent maintenance context without assuming that the nearest joint is responsible. The work plan should distinguish source tracing from replacement and identify the applicable post-work checks and records. A clean photograph after wiping a surface would not establish that a leak has been resolved."
+        "text": "Residue can move along a hose, fitting or surrounding surface before it becomes visible. Record the observed area and recent maintenance context without assuming that the nearest joint is responsible. The work plan should distinguish source tracing from replacement and identify the applicable post-work checks and records. A clean photograph after wiping a surface would not establish that a leak has been resolved.",
+        "links": [
+          [
+            "/rotax-installation-review",
+            "Installed routing and access"
+          ],
+          [
+            "/planning-service-downtime",
+            "Plan records and downtime"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2560,7 +2758,17 @@
       },
       {
         "heading": "What to send with the first message",
-        "text": "Describe when the concern began, what the check showed, whether it is intermittent and what work preceded it. Add the aircraft and engine details you know. If a value or model is uncertain, say so rather than estimating it. We can agree which records and inspection access are needed next."
+        "text": "Describe when the concern began, what the check showed, whether it is intermittent and what work preceded it. Add the aircraft and engine details you know. If a value or model is uncertain, say so rather than estimating it. We can agree which records and inspection access are needed next.",
+        "links": [
+          [
+            "/rotax-ignition-ecu-electrical-faults",
+            "Ignition and electrical troubleshooting"
+          ],
+          [
+            "/rotax-912-carb-sync",
+            "Carburetor running context"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2640,7 +2848,17 @@
       },
       {
         "heading": "Preserve chronology after maintenance",
-        "text": "If the behavior appeared after service, explain what work is recorded and when the first change was observed. Include any known configuration or routing changes and the conditions under which the concern appears. The timing is useful evidence without being proof that the work caused the problem. Avoid cleaning away or disturbing relevant evidence merely to make a photograph look better. Discuss the aircraft-specific review and required access before a troubleshooting scope is agreed."
+        "text": "If the behavior appeared after service, explain what work is recorded and when the first change was observed. Include any known configuration or routing changes and the conditions under which the concern appears. The timing is useful evidence without being proof that the work caused the problem. Avoid cleaning away or disturbing relevant evidence merely to make a photograph look better. Discuss the aircraft-specific review and required access before a troubleshooting scope is agreed.",
+        "links": [
+          [
+            "/rotax-912-high-oil-temperature",
+            "High oil-temperature observations"
+          ],
+          [
+            "/rotax-rubber-hose-replacement-fluid-leaks",
+            "Hose routing and leak tracing"
+          ]
+        ]
       }
     ],
     "images": [],
@@ -2726,7 +2944,17 @@
       },
       {
         "heading": "Begin with the history you already have",
-        "text": "Send the aircraft and engine information, the recent maintenance timeline and a concise description of the behavior. Existing records are more useful than trying to produce a new test for the website inquiry. We can clarify the next evidence and access requirements before a scope is agreed."
+        "text": "Send the aircraft and engine information, the recent maintenance timeline and a concise description of the behavior. Existing records are more useful than trying to produce a new test for the website inquiry. We can clarify the next evidence and access requirements before a scope is agreed.",
+        "links": [
+          [
+            "/rotax-912-mag-drop-troubleshooting",
+            "When ignition-check symptoms overlap"
+          ],
+          [
+            "/rotax-fuel-pressure-fuel-delivery-problems",
+            "Fuel-delivery evidence"
+          ]
+        ]
       }
     ],
     "images": [],
