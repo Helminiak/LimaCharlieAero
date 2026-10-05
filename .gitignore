@@ -1,0 +1,8 @@
+node_modules/
+dist/
+repro-dist/
+verification-root/
+clean-room/
+releases/
+__pycache__/
+*.pyc

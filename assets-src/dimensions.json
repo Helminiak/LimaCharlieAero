@@ -1,0 +1,482 @@
+{
+  "favicon.ico": [
+    64,
+    64
+  ],
+  "apple-touch-icon.png": [
+    180,
+    180
+  ],
+  "brand/lca-icon-lc-aircraft-v26b-transparent-192.png": [
+    192,
+    192
+  ],
+  "brand/lca-wordmark-v17-transparent-640.webp": [
+    640,
+    213
+  ],
+  "brand/lca-icon-lc-aircraft-v26b-transparent-128.png": [
+    128,
+    128
+  ],
+  "brand/lca-icon-lc-aircraft-v26b-transparent-512.png": [
+    512,
+    512
+  ],
+  "brand/lca-mission-badge-v26b-transparent-128.png": [
+    128,
+    128
+  ],
+  "images/rotax-engine-installed-green-covers-800.webp": [
+    600,
+    800
+  ],
+  "images/proof-owner-joe-airfield-1200.webp": [
+    1000,
+    750
+  ],
+  "images/proof-light-sport-aircraft-800.webp": [
+    800,
+    600
+  ],
+  "images/proof-owner-joe-airfield-800.webp": [
+    800,
+    600
+  ],
+  "images/eprops/proof/eprops-aircraft-installed-sky-ranger-large-1200.webp": [
+    900,
+    900
+  ],
+  "images/lca-proof/v28/eprops-blade-damage-closeup-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/garmin-g5-installed-panel-close-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/fuel-tank-borescope-dirty-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/dynavibe-kit-secured-seat-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/electrical-connector-close-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/voltage-regulator-connector-frayed-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/aircraft-side-canopy-joe-working-800.webp": [
+    368,
+    800
+  ],
+  "images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-1000.webp": [
+    900,
+    600
+  ],
+  "images/lca-proof/webp_800/coolant-residue-cylinder-head-hose-leak-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/webp_800/rotax-coolant-leak-fitting-example-800.webp": [
+    768,
+    1000
+  ],
+  "images/lca-proof/webp_800/rotax-engine-on-hoist-800.webp": [
+    600,
+    800
+  ],
+  "images/lca-proof/hero_16x9_1600/rotax-installed-hoses-overview-16x9-1280.webp": [
+    900,
+    507
+  ],
+  "images/lca-proof/hero_16x9_1600/rotax-support-hero-original-photo-16x9-1600.webp": [
+    900,
+    507
+  ],
+  "images/lca-proof/hero_16x9_1600/garmin-g5-installed-panel-wide-16x9-1600.webp": [
+    900,
+    507
+  ],
+  "images/rotax/proof/rotax-genuine-parts-badge-original-transparent.png": [
+    720,
+    720
+  ],
+  "images/recovered/dsub-connector-wiring-close-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/soft-start-connector-annotated-800.webp": [
+    558,
+    800
+  ],
+  "images/recovered/xps-oil-rotax-filter-service-800.webp": [
+    800,
+    600
+  ],
+  "images/recovered/engine-cage-crack-closeup-before-repair-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/fuel-tank-borescope-clean-800.webp": [
+    605,
+    800
+  ],
+  "images/recovered/lca-logbook-work-sticker-proof-800.webp": [
+    800,
+    565
+  ],
+  "images/recovered/engine-cage-ndt-facility-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/dynavibe-good-0-04-ips-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/gearbox-pocket-wear-2-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/engine-cage-painted-finished-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/electrical-connector-wide-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/differential-pressure-tester-clean-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/carbmate-carb-sync-kit-card-800.webp": [
+    582,
+    800
+  ],
+  "images/recovered/gearbox-pocket-wear-1-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/engine-cage-weld-repair-detail-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/dynavibe-bad-1-27-ips-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/gearbox-pocket-wear-3-800.webp": [
+    600,
+    800
+  ],
+  "images/recovered/bing64-carburetor-rebuild-float-check-card-800.webp": [
+    582,
+    800
+  ],
+  "images/recovered/rotax-fuel-pump-in-out-card-800.webp": [
+    582,
+    800
+  ],
+  "images/recovered/hangar-prop-two-person-inspection-1200.webp": [
+    450,
+    800
+  ],
+  "images/rotax-engine-installed-green-covers-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/proof-light-sport-aircraft-800-responsive-400.webp": [
+    400,
+    300
+  ],
+  "images/recovered/dsub-connector-wiring-close-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/soft-start-connector-annotated-800-responsive-400.webp": [
+    279,
+    400
+  ],
+  "images/recovered/xps-oil-rotax-filter-service-800-responsive-400.webp": [
+    400,
+    300
+  ],
+  "images/recovered/engine-cage-crack-closeup-before-repair-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/fuel-tank-borescope-clean-800-responsive-400.webp": [
+    302,
+    400
+  ],
+  "images/recovered/lca-logbook-work-sticker-proof-800-responsive-400.webp": [
+    400,
+    283
+  ],
+  "images/recovered/engine-cage-ndt-facility-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/dynavibe-good-0-04-ips-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/gearbox-pocket-wear-2-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/engine-cage-painted-finished-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/electrical-connector-wide-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/differential-pressure-tester-clean-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/carbmate-carb-sync-kit-card-800-responsive-400.webp": [
+    291,
+    400
+  ],
+  "images/recovered/gearbox-pocket-wear-1-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/engine-cage-weld-repair-detail-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/dynavibe-bad-1-27-ips-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/gearbox-pocket-wear-3-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/recovered/bing64-carburetor-rebuild-float-check-card-800-responsive-400.webp": [
+    291,
+    400
+  ],
+  "images/recovered/rotax-fuel-pump-in-out-card-800-responsive-400.webp": [
+    291,
+    400
+  ],
+  "images/lca-proof/webp_800/rotax-engine-on-hoist-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-1000-responsive-400.webp": [
+    400,
+    267
+  ],
+  "images/lca-proof/webp_800/dynavibe-kit-secured-seat-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/fuel-tank-borescope-dirty-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/coolant-residue-cylinder-head-hose-leak-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/electrical-connector-close-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/voltage-regulator-connector-frayed-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/garmin-g5-installed-panel-close-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/lca-proof/webp_800/rotax-coolant-leak-fitting-example-800-responsive-400.webp": [
+    307,
+    400
+  ],
+  "images/lca-proof/hero_16x9_1600/rotax-support-hero-original-photo-16x9-1600-responsive-400.webp": [
+    400,
+    225
+  ],
+  "images/lca-proof/hero_16x9_1600/rotax-installed-hoses-overview-16x9-1280-responsive-400.webp": [
+    400,
+    225
+  ],
+  "images/lca-proof/hero_16x9_1600/garmin-g5-installed-panel-wide-16x9-1600-responsive-400.webp": [
+    400,
+    225
+  ],
+  "images/lca-proof/v28/eprops-blade-damage-closeup-800-responsive-400.webp": [
+    300,
+    400
+  ],
+  "images/eprops/proof/eprops-aircraft-installed-sky-ranger-large-1200-responsive-400.webp": [
+    400,
+    400
+  ],
+  "images/proof/coolant-hose-leak-source-tracing-800.webp": [
+    519,
+    800
+  ],
+  "images/proof/engine-cage-weld-joint-detail-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/lca-logbook-work-sticker-proof-800.webp": [
+    800,
+    565
+  ],
+  "images/proof/top-end-parts-organized-shelf-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/engine-cage-crack-closeup-before-repair-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/dynavibe-bad-1-27-ips-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/eprops-blade-damage-closeup-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/dsub-connector-wiring-close-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/soft-start-connector-annotated-800.webp": [
+    558,
+    800
+  ],
+  "images/proof/carbmate-carb-sync-kit-card-800.webp": [
+    800,
+    1100
+  ],
+  "images/proof/garmin-g5-installed-panel-close-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/icom-radio-coax-adapters-800.webp": [
+    800,
+    600
+  ],
+  "images/proof/dynavibe-kit-secured-seat-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/electrical-connector-close-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/fuel-tank-borescope-clean-800.webp": [
+    605,
+    800
+  ],
+  "images/proof/gearbox-pocket-wear-3-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/engine-cage-ndt-facility-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/aircraft-open-cowling-under-canopy-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/engine-cage-weld-repair-detail-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/avionics-tools-coax-workbench-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/xps-oil-rotax-filter-service-800.webp": [
+    800,
+    600
+  ],
+  "images/proof/voltage-regulator-connector-frayed-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/gearbox-pocket-wear-1-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/eprops-install-checklist-preview-1200.webp": [
+    1200,
+    760
+  ],
+  "images/proof/differential-pressure-tester-clean-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/coolant-residue-cylinder-head-hose-leak-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/dynavibe-good-0-04-ips-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/eprops-engineering-packet-fanout-1200-clean.webp": [
+    1200,
+    780
+  ],
+  "images/proof/rotax-fuel-pump-in-out-card-800.webp": [
+    800,
+    1100
+  ],
+  "images/proof/aircraft-side-canopy-joe-working-800.webp": [
+    368,
+    800
+  ],
+  "images/proof/fuel-tank-borescope-dirty-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/rotax-engine-on-hoist-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/electrical-connector-wide-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/gearbox-pocket-wear-2-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/engine-cage-painted-finished-800.webp": [
+    600,
+    800
+  ],
+  "images/proof/rotax-rubber-hose-routing-overview-1000.webp": [
+    1000,
+    667
+  ],
+  "images/proof/rotax-installed-hose-overview-card-800.webp": [
+    800,
+    1100
+  ],
+  "images/proof/eprops-aircraft-closeup-sky-ranger-1200.webp": [
+    1200,
+    1200
+  ]
+}

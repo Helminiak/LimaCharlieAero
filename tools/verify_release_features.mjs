@@ -1,0 +1,8 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {spawnSync} from 'node:child_process';
+const original=fs.readFileSync('content/updates.json','utf8');const manifest=fs.readFileSync('evidence/deployment-manifest.json','utf8');const checks=[];
+try{
+ const r=spawnSync('python3',['tools/build.py','--output','repro-dist'],{encoding:'utf8'});assert.equal(r.status,0,r.stderr);assert.equal(fs.readFileSync('evidence/deployment-manifest.json','utf8'),manifest);checks.push('Independent output-directory rebuild matches every SHA-256');
+ const records=JSON.parse(original);const sample={...records[0],slug:'private-validation-draft',state:'draft',internal:true};fs.writeFileSync('content/updates.json',JSON.stringify([...records,sample]));const d=spawnSync('python3',['tools/build.py','--output','repro-dist'],{encoding:'utf8'});assert.equal(d.status,0,d.stderr);assert.ok(!fs.existsSync('repro-dist/private-validation-draft.html'));checks.push('Draft/internal update excluded');
+ sample.sources=['javascript:alert(1)'];fs.writeFileSync('content/updates.json',JSON.stringify([...records,sample]));const bad=spawnSync('python3',['tools/build.py','--output','repro-dist'],{encoding:'utf8'});assert.notEqual(bad.status,0);checks.push('Unsafe editorial source URL rejected');
+ console.log(JSON.stringify({status:'PASS',checks}));fs.writeFileSync('evidence/release-feature-checks.json',JSON.stringify({status:'PASS',checks},null,2)+'\n');
+}finally{fs.writeFileSync('content/updates.json',original);fs.writeFileSync('evidence/deployment-manifest.json',manifest);fs.rmSync('repro-dist',{recursive:true,force:true})}

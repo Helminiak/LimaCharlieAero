@@ -1,50 +1,36 @@
-# Lima Charlie Aero Website
+# Lima Charlie Aero RC3 engineering candidate
 
-Private source repository for the Lima Charlie Aero website.
+The authoritative product specification is `docs/RC3_CODEX_MASTER_IMPLEMENTATION_PROMPT.md`. Work is limited to `rc3-proof-of-work-seo` and PR #2. No production deployment or merge is authorized.
 
-## Repository role
+The approved live rollback commit is `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`. RC2 is a comparison/engineering reference, not the approved live baseline. The RC3 authoring source is `content/`, `templates/`, and `assets-src/`; `dist/` is generated and excluded from Git.
 
-This repository is intended to become the authoritative, version-controlled source of truth for the website.
+## Reproduce
 
-### Branch policy
+Use Node 22 or later, Python 3.11 or later and the pinned dependencies:
 
-- `main` = production-approved website source only.
-- Substantial work is performed on named development branches.
-- Codex implements code changes on development branches.
-- Codex must complete its closed-loop implementation / verification cycle before review.
-- ChatGPT serves as the independent design / SEO / human-factors reviewer.
-- Changes merge to `main` only after review and acceptance.
-
-## Current live baseline
-
-The current live website baseline supplied for import is:
-
-- Baseline ID: `live-v100.2.5F`
-- Artifact: `LCA_SOURCE_OF_TRUTH_BASELINE_v100_2_5F_DEPLOYABLE(1).zip`
-- SHA-256: `e160c234b86aac2076db101c1b2e1acd27c46ed010866fd1aa6b21ff8214710a`
-- Files in archive: `214`
-- Uncompressed bytes: `14,184,009`
-
-The archive itself is the authoritative binary reference until its complete contents are imported and verified in Git.
-
-## Change-control rule
-
-Do not perform a major redesign directly on `main`.
-
-The expected flow is:
-
-```text
-main
-  -> development branch
-  -> Codex implementation
-  -> Codex closed-loop QA
-  -> pull request
-  -> independent design/SEO review
-  -> corrections if required
-  -> merge to main
-  -> release/deployment
+```sh
+npm ci
+python3 -m pip install -r requirements-dev.txt
+npx playwright install chromium firefox webkit
+npm run build
+npm test
+npm run verify:performance
+npm run package
 ```
 
-## Immediate next step
+Set `LCA_CHROMIUM_EXECUTABLE` only when using an existing compatible Chromium binary. Browser checks use local Cloudflare Wrangler Pages emulation. No command here deploys to Cloudflare. Performance checks use the local route/header preview model. Tests mock Formspree; they never submit customer messages.
 
-Import the exact `live-v100.2.5F` deployed contents into a controlled import branch, verify every file against the baseline archive, then merge that verified baseline into `main` before the next redesign branch is created.
+```sh
+python3 tools/preview.py --root dist --port 8080
+node tools/capture_review.mjs dist final
+```
+
+For before screenshots, export the approved rollback commit into a separate temporary directory and pass that directory to `capture_review.mjs` with label `before`. This baseline is reference material, not a second authoring source.
+
+## Editorial model
+
+`pages.json` stores route-specific content and proof placements. `proof-assets.json` records source mapping, factual caption, privacy treatment and rights status. `hubs.json` contains updates/notice hub explanations. `updates.json` contains dated notices and owner answers; unpublished/internal records are excluded. Build dates come from `site.json`, not the wall clock. Assets receive content hashes and deterministic responsive WebP variants. Preserve the image subject when changing a source asset.
+
+## Release gate
+
+Asset-specific rights marked `REVIEW REQUIRED` require owner confirmation before public publication. The private engineering candidate does not confer that permission. Source history and prior publication are not a substitute for rights evidence. Actual inbox delivery, live edge behavior, physical-device checks and independent Design/SEO acceptance remain separate validation gates. Read `evidence/` before considering release.

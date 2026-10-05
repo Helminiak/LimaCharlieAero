@@ -1,7 +1,0 @@
-# Lima Charlie Aero — public crawl policy
-# This site is intended to be crawlable and indexable by compliant crawlers.
-
-User-agent: *
-Allow: /
-
-Sitemap: https://limacharlieaero.com/sitemap.xml
