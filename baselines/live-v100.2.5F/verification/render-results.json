@@ -1,0 +1,174 @@
+{
+  "browser": "153.0.8010.0",
+  "environment": "Local static HTTP server, Chromium desktop and mobile viewport emulation; hosting redirects, external services and form delivery not validated",
+  "results": [
+    {
+      "route": "index",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "title": "Light Sport & Experimental Aircraft Support with ROTAX Specialty | Lima Charlie Aero",
+      "h1": "\nLight Sport & Experimental\nAircraft Support\nROTAX Specialty\n",
+      "brokenImages": [],
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "services",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "title": "LSA, E-LSA & Experimental Aircraft Services near Charlotte | Lima Charlie Aero",
+      "h1": "Light-Sport AircraftSupport with ROTAXSpecialization",
+      "brokenImages": [],
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "rotax-engine-systems-support",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "title": "ROTAX 9 Series Support near Charlotte | Lima Charlie Aero",
+      "h1": "ROTAX Support Organized Around the Service Package or Symptom",
+      "brokenImages": [],
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "e-props-dealer-support",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "title": "E-PROPS Dealer Support near Charlotte | Lima Charlie Aero",
+      "h1": "E-PROPS Dealer & Service Center Support",
+      "brokenImages": [],
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "contact",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "title": "Contact Lima Charlie Aero | KAKH / Gastonia NC",
+      "h1": "Contact Lima Charlie Aero",
+      "brokenImages": [],
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "support-request",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "title": "Aircraft Support Intake | Lima Charlie Aero",
+      "h1": "Request ROTAX or E-PROPS Support",
+      "brokenImages": [],
+      "bodyWidth": 1440,
+      "viewportWidth": 1440,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "index",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Light Sport & Experimental Aircraft Support with ROTAX Specialty | Lima Charlie Aero",
+      "h1": "\nLight Sport & Experimental\nAircraft Support\nROTAX Specialty\n",
+      "brokenImages": [],
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "services",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "LSA, E-LSA & Experimental Aircraft Services near Charlotte | Lima Charlie Aero",
+      "h1": "Light-Sport AircraftSupport with ROTAXSpecialization",
+      "brokenImages": [],
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "rotax-engine-systems-support",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "ROTAX 9 Series Support near Charlotte | Lima Charlie Aero",
+      "h1": "ROTAX Support Organized Around the Service Package or Symptom",
+      "brokenImages": [],
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "e-props-dealer-support",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "E-PROPS Dealer Support near Charlotte | Lima Charlie Aero",
+      "h1": "E-PROPS Dealer & Service Center Support",
+      "brokenImages": [],
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "contact",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Contact Lima Charlie Aero | KAKH / Gastonia NC",
+      "h1": "Contact Lima Charlie Aero",
+      "brokenImages": [],
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "errors": [],
+      "failed": []
+    },
+    {
+      "route": "support-request",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "title": "Aircraft Support Intake | Lima Charlie Aero",
+      "h1": "Request ROTAX or E-PROPS Support",
+      "brokenImages": [],
+      "bodyWidth": 390,
+      "viewportWidth": 390,
+      "errors": [],
+      "failed": []
+    }
+  ]
+}

@@ -1,0 +1,1077 @@
+{
+  "archive_sha256": "e160c234b86aac2076db101c1b2e1acd27c46ed010866fd1aa6b21ff8214710a",
+  "file_count": 214,
+  "total_bytes": 14184009,
+  "files": [
+    {
+      "path": "404.html",
+      "size_bytes": 7030,
+      "sha256": "779b9617695b21b08090d0477281d75499e5dcb26df985e438ed72f9108f1ae5"
+    },
+    {
+      "path": "_headers",
+      "size_bytes": 980,
+      "sha256": "e8e7248ce18a2aa6e8025ab2c4645129bc71854bac625986fb1a62649b214bf4"
+    },
+    {
+      "path": "_redirects",
+      "size_bytes": 2220,
+      "sha256": "0f0f35b5842c970160d14ce91860a6d63925ab1294c43bb883307057cfe92f5f"
+    },
+    {
+      "path": "about-credentials.html",
+      "size_bytes": 7689,
+      "sha256": "418470fa55173ebd55ad3d3f14ea8149ddad50d0d6b334dff1413a89e66899c6"
+    },
+    {
+      "path": "aircraft-records-review.html",
+      "size_bytes": 17466,
+      "sha256": "828f695b96dc09f819578e078d06eeb035e3fb8eefe21c40ba709b2c8176c818"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "size_bytes": 40824,
+      "sha256": "f46434e71230f50006f4b7ef9ae7eb60e2db1010b1796a4ac1545dd9c572eb1a"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-128.png",
+      "size_bytes": 23684,
+      "sha256": "774ee90ee3e0361a7d7b98a13a4a4f570ea2c7b0aaaabb1c47d5f231a02db51d"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-128.webp",
+      "size_bytes": 18268,
+      "sha256": "8bd03e441600314e22922e72083d1c199ec6d89f796277816a559088cd15675c"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-180.png",
+      "size_bytes": 40824,
+      "sha256": "f46434e71230f50006f4b7ef9ae7eb60e2db1010b1796a4ac1545dd9c572eb1a"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-192.png",
+      "size_bytes": 45588,
+      "sha256": "18dc8bfad520aeafe50cc60282c3b55a5340ba8aa9ba1d669af0ca991f52a732"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-512.png",
+      "size_bytes": 244690,
+      "sha256": "1414ab92ac697116d32a9286cfbc96847c97c734e849d6deb8cde1434cf74e41"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-64.png",
+      "size_bytes": 8043,
+      "sha256": "fbcc5e106e882404c44b83efd8d84c82ef2d66125166f4d754cb638237160125"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-128.png",
+      "size_bytes": 27146,
+      "sha256": "12e9b4e2d96547fe985626a37bc6f3bcdfceabaa942152e9171a8bdac3e8fc32"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-128.webp",
+      "size_bytes": 21906,
+      "sha256": "61efc968e845a8c20b6e0598c66722c351e58f23cdf22f224afa1ca4f6c6208d"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-256.png",
+      "size_bytes": 81023,
+      "sha256": "a4f3bd856c3cbc7a1ed959ff0f34f485f99cb9517c75d3fbbcab77bf75620ee8"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-512.png",
+      "size_bytes": 271439,
+      "sha256": "dc0eae1fc5c71e55cef97d03951185b8b6a7b168d8c33b0093f1044c6ab15e26"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-320.png",
+      "size_bytes": 29077,
+      "sha256": "07108226bdc78ec37625353ae7c7000d5806df3c31c2ac5ee9a25d760f4cfd4d"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-320.webp",
+      "size_bytes": 19790,
+      "sha256": "7d510f92bdfee6a29c740c00f3e1d63e8522644465e14efa30552b82455cc022"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-480.png",
+      "size_bytes": 46550,
+      "sha256": "008dbf37449dd311e875ffd9b52b9c184a8230903f89cc7c6beb41d9187334f6"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-640.webp",
+      "size_bytes": 42458,
+      "sha256": "23c67edd288f4c3d7fcabc455a81c99c4f82eabeac69425cf27a4f23ae9fed31"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v26b-transparent-1600.png",
+      "size_bytes": 293157,
+      "sha256": "dd14786142440cd487319e8cac4430e321969736e6c17f278e907f6c2d53a421"
+    },
+    {
+      "path": "assets/downloads/joseph-helminiak-lima-charlie-aero.vcf",
+      "size_bytes": 267,
+      "sha256": "7e240debe3e5b504da3ad64b632806480dad373c44d7efa9f243ff7269bdc9c9"
+    },
+    {
+      "path": "assets/images/connector-replacement-in-aircraft-800.webp",
+      "size_bytes": 56448,
+      "sha256": "1faa243d0911568ef4e00b3144206e657de79fdd3160c48e8082153d6e75ebd1"
+    },
+    {
+      "path": "assets/images/eprops/brand/eprops-logo-simple-320.webp",
+      "size_bytes": 12866,
+      "sha256": "78956da65fe0bb164992cc3fe3d0fddf34c097f6488dde5a77b5e6e8de64bde4"
+    },
+    {
+      "path": "assets/images/eprops/brand/eprops-logo-with-prop-640.webp",
+      "size_bytes": 20430,
+      "sha256": "4a7fdd7195d9e1205a04ea43bcc835f85e16801be85f1e406ad10c636a59f89b"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-durandal-3-640.webp",
+      "size_bytes": 8408,
+      "sha256": "5dda424ee6faaf9ab1ef08cf69a5007c39856f62062f739f75145d357db94c57"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-glorieuse-912-640.webp",
+      "size_bytes": 10574,
+      "sha256": "94a064aaba532692b88b8c79c80caa344cba1f3814128468995ce37ecfe34a15"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-glorieuse-916-640.webp",
+      "size_bytes": 10002,
+      "sha256": "880851c6aaf1135d2e1d51eced490b0c91fbd1a233f44d12fa45eed8d91c430b"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-scimitar-propeller-640.webp",
+      "size_bytes": 23938,
+      "sha256": "eacc47a2ba6f497f2a40db3e40a9407d7131465ec1b9c768ac73b338875dbefd"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-aircraft-closeup-sky-ranger-1200.webp",
+      "size_bytes": 65258,
+      "sha256": "60f3f558c010d7bb2ddf7f201e18223b27533144c84ed2f8bd78ba7d5e15f1f9"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-aircraft-installed-sky-ranger-hero-1200x675.webp",
+      "size_bytes": 16692,
+      "sha256": "475d23eb9bbfb2318f3e1cc403464b42022a5b6624dadbeffa321efd94e0cebe"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-aircraft-installed-sky-ranger-large-1200.webp",
+      "size_bytes": 53180,
+      "sha256": "3aef16509da924743c89aa75da9d4cabe83dff1f59a6438be5c1337ae4838084"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-engineering-packet-fanout-1200-clean.webp",
+      "size_bytes": 70980,
+      "sha256": "4682ad7ad7052aec2ea37b12789a7e56c62ae82850b17ea19ed230e365c1097d"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-install-checklist-fanout-1400.webp",
+      "size_bytes": 63134,
+      "sha256": "b2e5d7f86271d889703d1f1845fc31b4ca311be9cbc1ce92209f612e70c3766c"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-install-checklist-preview-1200.webp",
+      "size_bytes": 45420,
+      "sha256": "428cc04518b98bde6d41d7a776a42bb0f3cdb99b221212cd77d7b7ddd7e47011"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-shark-aircraft-cutout-900.webp",
+      "size_bytes": 68526,
+      "sha256": "338b95456995550052523d545f99b7974dba20d3181de19d4fbf9f5fb1057b1b"
+    },
+    {
+      "path": "assets/images/garmin-g5-installed-panel-close-800.webp",
+      "size_bytes": 34726,
+      "sha256": "f7cfe3f179777c4ccaf0cd2f70dbf0b329d581c13f9f35285604e9dd9859ce6f"
+    },
+    {
+      "path": "assets/images/lca-proof/contact/contact-owner-aircraft-hero-blend-v2-1400.webp",
+      "size_bytes": 105656,
+      "sha256": "9a8eadc04ee1fd857f103615936139c6a62445079d23c377a741db97ce391bc7"
+    },
+    {
+      "path": "assets/images/lca-proof/contact/contact-owner-aircraft-hero-blend-v2-900.webp",
+      "size_bytes": 55722,
+      "sha256": "195a27344815067cdacc43789d717968111206287f7813c3a8fb2981ab8da994"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/aircraft-open-cowling-under-canopy-16x9-1600.webp",
+      "size_bytes": 149522,
+      "sha256": "fa45c25373be3477f43fd5ae1aa710b528c3267cb0d72138e74c18ef7099c521"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/garmin-g5-installed-panel-wide-16x9-1600.webp",
+      "size_bytes": 61678,
+      "sha256": "c2909a5d51449414c8b82517fd7164f02576e9d4203121fb3d868919158613ac"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/rotax-engine-installed-green-covers-16x9-1600.webp",
+      "size_bytes": 83632,
+      "sha256": "d1ce85654d688c48291650db4e002f73a0239c6a41611b540603d3724cae0358"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/rotax-installed-hoses-overview-16x9-1280.webp",
+      "size_bytes": 144850,
+      "sha256": "9b366ac7aae1b704b65ddc8f427d00867a553e06a7e269cf4ba6c8f86ed8b281"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/rotax-support-hero-original-photo-16x9-1600.webp",
+      "size_bytes": 66634,
+      "sha256": "25f8eae7605a8d7067741182d4d83313a4de5435b5ba18fde4aba62a2bdd9311"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blade-damage-closeup-1200.webp",
+      "size_bytes": 123646,
+      "sha256": "3ee1f3fe097843fc3c1bb34df946dc00dd4da2cff4a42eb1d2a59f70370ce747"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blade-damage-closeup-800.webp",
+      "size_bytes": 72372,
+      "sha256": "886379acd2d08874edf4569295665b74e1e1b317f0f88a41e4ce60b7e780766f"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blades-box-documents-1200.webp",
+      "size_bytes": 108060,
+      "sha256": "2fabb7e309ca26ae587cb513674318413ceac30a91f268c0bac0aa45b585650f"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blades-box-documents-800.webp",
+      "size_bytes": 52690,
+      "sha256": "cd896a5259b37ccc40a7ead151c6ec5b026481699a1119aa3284485913bdde6f"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-customs-spinner-documents-1200.webp",
+      "size_bytes": 103934,
+      "sha256": "963d547840546de4c6c377850b86ec8e399df783df44c179a458a815c40d1cbd"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-customs-spinner-documents-800.webp",
+      "size_bytes": 53818,
+      "sha256": "469eac8dd45bbfd4a6daeb4936c7b4bf87dba0a1b654850d30541d412e15957f"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-return-tracker-blades-1200.webp",
+      "size_bytes": 78902,
+      "sha256": "a5a9f8619e3429a0e5807a483b0e99f1425068202e7d69f918a1de60a709a1ac"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-return-tracker-blades-800.webp",
+      "size_bytes": 45444,
+      "sha256": "0b9be97aa0a827d73eaabf32d4333323e46f70b005b3e455b56510281eadbf84"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-spinner-return-paperwork-1200.webp",
+      "size_bytes": 79884,
+      "sha256": "9242e65dafeb4f9a7fcdac614303fb5062fdfb77f5ea533a42fc158a2425c0b9"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-spinner-return-paperwork-800.webp",
+      "size_bytes": 43550,
+      "sha256": "1fb48503c178ca2e8d7d8ec87efd17ebcc1918a6afb17db64b0b16f92a356c85"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-1200.webp",
+      "size_bytes": 98034,
+      "sha256": "194db72fded3eacf6ed96593fa80300d8e2f64b219178eded8d79095ca904fd1"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-800.webp",
+      "size_bytes": 63324,
+      "sha256": "ef6244ba8dad84a153b5c85efceafdb8b997c0912e9537f76f5add0fad18d0d5"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-radioactive-material-license-1200.webp",
+      "size_bytes": 162538,
+      "sha256": "649b59b11445e6987fabd01dc1ee38da9e00b7fed5bf0a9939702812fee4d0b6"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-radioactive-material-license-800.webp",
+      "size_bytes": 92406,
+      "sha256": "dcbde3692ad55c3a2d5a9d8b217670e6acd8b9bc0d2f21b8273101fe849df6bd"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-1200.webp",
+      "size_bytes": 36172,
+      "sha256": "b8a5b1e8828d4974d7695c094f8e5721449a98b195f9317de4b3a892e6897b0e"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-800.webp",
+      "size_bytes": 22622,
+      "sha256": "d4420fa2e85e400ff68a2d164ed864dbc751cb30abfbc263cbd42b4896009411"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/aircraft-open-cowling-under-canopy-1200.webp",
+      "size_bytes": 151210,
+      "sha256": "6363e10c05d2496a3a47896e8feac898bde6e7d2244655b6c15d58a9bc037010"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/aircraft-side-canopy-joe-working-1200.webp",
+      "size_bytes": 68228,
+      "sha256": "c76f46f6c4e5e95ecafcb69ee4b474e847bbd6db746816c2b519cb720bc20b59"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/avionics-tools-coax-workbench-1200.webp",
+      "size_bytes": 68934,
+      "sha256": "a386285ba3e620c49f7b3e1ed7dd55fc01959b7c4b50c0bceb1e390ac9008ef5"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/bing64-carburetor-rebuild-float-check-card-1200.webp",
+      "size_bytes": 218610,
+      "sha256": "917bfefaac501227585b7f29795b6e80e82ed30ca0320f271f6635743f30efb9"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/carbmate-carb-sync-kit-card-1200.webp",
+      "size_bytes": 63092,
+      "sha256": "a7e7f1f84efc92b7a1f6f42aecb66fa6407bc89aa4ec32c70bb1dc0ecc33abbd"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/coolant-hose-leak-source-tracing-1200.webp",
+      "size_bytes": 29180,
+      "sha256": "ca2fc2dcdbe55049ec6427d3af246aa7a8f53ce5b757d3f0533d720e81e76ea1"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/coolant-residue-cylinder-head-hose-leak-1200.webp",
+      "size_bytes": 183302,
+      "sha256": "399b930fd7057bea33089bd3120c7b4252b7d5bc4b7c4c5fc4b739d914173115"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/differential-pressure-tester-clean-1200.webp",
+      "size_bytes": 102896,
+      "sha256": "d4d750d433743c14f9775687de6e91c8559515df4c7c35dbb5dec876fff353e1"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dsub-connector-wiring-close-1200.webp",
+      "size_bytes": 48500,
+      "sha256": "2f5526f9d149e32ab0ca11c83444a607fa238aa137658ee956d46657e29e2c59"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dynavibe-bad-1-27-ips-1200.webp",
+      "size_bytes": 103100,
+      "sha256": "5b2030199d226ce26b9e1de78f597f5e96d2d38f5066c4aea4b1e98a1e1db6a7"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dynavibe-good-0-04-ips-1200.webp",
+      "size_bytes": 178218,
+      "sha256": "57017579b4a24f816a8ec019be9cbe7a3eb2d53f1c4e70f9652c93500cb7b10b"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dynavibe-kit-secured-seat-1200.webp",
+      "size_bytes": 107980,
+      "sha256": "88d7a30b46f9e7370e6ca83efdfc16d3387683b83d42056ee2227c2b10dbb59e"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/electrical-connector-close-1200.webp",
+      "size_bytes": 53870,
+      "sha256": "5254907070a78d71cc729eefd3414af94a2b2f8a90951670699c01d435de13fa"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/electrical-connector-wide-1200.webp",
+      "size_bytes": 117638,
+      "sha256": "d152357e47d6672cac3dd7768edd44072696655cbb0e38e61afef78baac7cde5"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-crack-closeup-before-repair-1200.webp",
+      "size_bytes": 22130,
+      "sha256": "ee2121a5973f86cb5c6f8f413f0ce7b27d05ae485828d815ccdefacccbfce63c"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-ndt-facility-1200.webp",
+      "size_bytes": 111378,
+      "sha256": "c70478fe37230d2a708795db39997df7f898915274d1a793742aa42d17fbfa51"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-painted-finished-1200.webp",
+      "size_bytes": 114604,
+      "sha256": "c8943800e220eb6c4176c06c841c159cb2841dfba66e08a6f208792c6f73524d"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-weld-joint-detail-1200.webp",
+      "size_bytes": 169960,
+      "sha256": "e779f6af2ff8adc1137c1de29ae6059d1fc97fdcd912f666020e0d1b88cb87c4"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-weld-repair-detail-1200.webp",
+      "size_bytes": 73010,
+      "sha256": "8758d2fd696eb3b3610f6831e42578516d48774d680f4ff892c3c5257e545774"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/exhaust-marking-hydra-detail-1200.webp",
+      "size_bytes": 128914,
+      "sha256": "d82a338cd1fe14a914e88378dc8c734f5c8c87d216ed18f9c2cc50e7e75a7563"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/fuel-tank-borescope-clean-1200.webp",
+      "size_bytes": 55298,
+      "sha256": "ddba2f2a05e1adb83be2cbc3abffe714094e869a9f55649bfc18695b62841a15"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/fuel-tank-borescope-dirty-1200.webp",
+      "size_bytes": 88646,
+      "sha256": "7933a715b9a609665cd7707ef2f8499d854aef5fefa18fad62077c9562e78da0"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/garmin-g5-box-unit-1200.webp",
+      "size_bytes": 115482,
+      "sha256": "23c880179c0bca88b18c8a96d0d83b41e59c00ccf957aead9b9d40c0a215b5fe"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/garmin-g5-installed-panel-close-1200.webp",
+      "size_bytes": 78998,
+      "sha256": "924b480caf1e4a5c23988650446da4ec01071fdf4e8d6603d64fcc37f77bc882"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/gearbox-pocket-wear-1-1200.webp",
+      "size_bytes": 89870,
+      "sha256": "82391a74cd88f95a8214729bf173583948c34d93dd5ffad84d51ca230ba15dd5"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/gearbox-pocket-wear-2-1200.webp",
+      "size_bytes": 86476,
+      "sha256": "66bcc5f93af8663d8a18adc16e761cdc05a124eb17543074d91df9d1262d0678"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/gearbox-pocket-wear-3-1200.webp",
+      "size_bytes": 81982,
+      "sha256": "122774b8be4ac97aa26b2c33dbb1d652461cdbaecf0507a81c5b30ba8041c8dc"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/hangar-prop-two-person-inspection-1200.webp",
+      "size_bytes": 35360,
+      "sha256": "b835e3d46b7d127acc5da8e87b166c4c5e4af1f22de5aef3c2875e57c33a49b8"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/icom-radio-coax-adapters-1200.webp",
+      "size_bytes": 177146,
+      "sha256": "78658009cfdafa9cc1016d6e1426fec3e437ccefefcc8e6416266d400adefbf4"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/lca-logbook-work-sticker-proof-1200.webp",
+      "size_bytes": 79904,
+      "sha256": "e8b9cf8e771ae03b7b315a151e0e65b4155298b00c50d0fd1e1aefc6f6639c5a"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-engine-installed-green-covers-1200.webp",
+      "size_bytes": 91050,
+      "sha256": "1ffc29ad70c8a90065fc6805c0d96ba69b184542c5dd1d24691d92d396afabf1"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-engine-on-hoist-1200.webp",
+      "size_bytes": 107100,
+      "sha256": "c2710abf07c71e0055d7de80904a2cce9262c57953ee968d8ad8f2b132439c66"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-fuel-pump-in-out-card-1200.webp",
+      "size_bytes": 149554,
+      "sha256": "63fce815769fb3bb18b280fea2fc35113e545b8ad1c80d32c6c4f0ee07f58485"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-installed-hose-overview-card-1200.webp",
+      "size_bytes": 187240,
+      "sha256": "f4371cbe5a9d73255179b7fcfcd4144456435b3fa491a561f5447217a3e044c8"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-support-hero-original-photo-1200.webp",
+      "size_bytes": 45876,
+      "sha256": "8751d1addcff96ce9550c80e1beedb3176d4c5dabea804458a53eabc7b9daaa3"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/soft-start-connector-annotated-1200.webp",
+      "size_bytes": 75290,
+      "sha256": "238d4cb7aae55e796e0ea9306d43831e0341a6ab139c7b26de7b36d66e5af5b9"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/top-end-parts-organized-shelf-1200.webp",
+      "size_bytes": 96756,
+      "sha256": "ec2ee5b083610863672d2714e497820a0194595b44bd5bab079d972c380525a1"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/voltage-regulator-connector-frayed-1200.webp",
+      "size_bytes": 74284,
+      "sha256": "4da192782d790c7295a97fd1c822510868e9e9d2ca172a36e03c62277ade5eae"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/weld-detail-with-quarter-scale-1200.webp",
+      "size_bytes": 74398,
+      "sha256": "a25f4c1bf69469a89711004f36ff272f218976f8388874e5d06544fe772a1da4"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/xps-oil-rotax-filter-service-1200.webp",
+      "size_bytes": 94422,
+      "sha256": "d0a4e7f1310c7fb29d96853ba6208ae6adf2d2acd3f781b70f2fe8990d0b5a88"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/aircraft-open-cowling-under-canopy-800.webp",
+      "size_bytes": 68176,
+      "sha256": "50de1f9375ee4002167adbebcbd35b825a871ebccbf89fdd03e4addeb471ec7b"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/aircraft-side-canopy-joe-working-800.webp",
+      "size_bytes": 31672,
+      "sha256": "f634ce3ee22c993623e6b2251460b94bebdc00b0de22e58f91c560888775d1d5"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/avionics-tools-coax-workbench-800.webp",
+      "size_bytes": 36760,
+      "sha256": "62ce94e3ef8cb8a86d02fa1dd50c4e93628adf5b1c0a15616b347a04ff5e6620"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/bing64-carburetor-rebuild-float-check-card-800.webp",
+      "size_bytes": 115894,
+      "sha256": "0b7ff3aad4302c833040f29bb6ee7bb90125d953f016e6eac7e223220af07359"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/carbmate-carb-sync-kit-card-800.webp",
+      "size_bytes": 61124,
+      "sha256": "38a89813817d85de6a9d501f8b852ea72ad9b16e8a45a9bf50d6f2ef24397def"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/coolant-hose-leak-source-tracing-800.webp",
+      "size_bytes": 18048,
+      "sha256": "597946017921e0430607b1eb1c560c6c00650d97e06bebbabc017e88fc9f4c65"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/coolant-residue-cylinder-head-hose-leak-800.webp",
+      "size_bytes": 90096,
+      "sha256": "78158ec6371927039b4f87edd492acf430a07ff7b7bee60686e232cfe04ceafe"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/differential-pressure-tester-clean-800.webp",
+      "size_bytes": 60610,
+      "sha256": "f160cfeae18cf662683c931ad34c2faa5b1f86437c1657029b0af15b9f991c1b"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dsub-connector-wiring-close-800.webp",
+      "size_bytes": 26444,
+      "sha256": "2881dc5245bbb9c058994a35a4ea43da2ee971bdaab78474791021efecfe59d5"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dynavibe-bad-1-27-ips-800.webp",
+      "size_bytes": 63168,
+      "sha256": "3a34f9c303d9357e837cf32ac7c95f60d886ff233f7e34825f7e013d45189707"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dynavibe-good-0-04-ips-800.webp",
+      "size_bytes": 90644,
+      "sha256": "523500cebfe390d35b504d249ffee6b7d588cf9e70b608ce02cfb534f612a5a0"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dynavibe-kit-secured-seat-800.webp",
+      "size_bytes": 56058,
+      "sha256": "c4cb673f7b39d4b838ff731aded25b3ebcd661732411f3fdd3a321a38df5eff7"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/electrical-connector-close-800.webp",
+      "size_bytes": 32190,
+      "sha256": "b2e7d9f749443e5da5576c1b28be754182e7bca43e3f72ec7d4b6e4d37869af0"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/electrical-connector-wide-800.webp",
+      "size_bytes": 56108,
+      "sha256": "3c1464b047f9c7a8456f2d5a3e14c146582715c85c975909a1820a87820c6a1a"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-crack-closeup-before-repair-800.webp",
+      "size_bytes": 12792,
+      "sha256": "56341e1432560ceaec71a6e0032e3de22f25c8336ef94a78faa60ed9a29ca640"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-ndt-facility-800.webp",
+      "size_bytes": 66556,
+      "sha256": "8a047cfb7f92c52a0b87347e228978a33b12061246b67e55f2dec807fab2f2c4"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-painted-finished-800.webp",
+      "size_bytes": 48772,
+      "sha256": "58fc5bb612c3e000757096bdc01ec2e3b7d478498fa87463462c5ba5de9c754a"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-weld-joint-detail-800.webp",
+      "size_bytes": 81876,
+      "sha256": "555b755e4e31a0a5128fd8fc4694855e63cc170d13abf4e4cc829105f7371acb"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-weld-repair-detail-800.webp",
+      "size_bytes": 33996,
+      "sha256": "7f407b0562a09c95dcac9e778a859d143883df0e87b15b675e7a862aec479447"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/exhaust-marking-hydra-detail-800.webp",
+      "size_bytes": 71234,
+      "sha256": "d6d4906942ad7a54378f3d040728a319058b94a51322ccabc0fec3efaa874da1"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/fuel-tank-borescope-clean-800.webp",
+      "size_bytes": 29454,
+      "sha256": "1a0a45b91c4fe5639480b062ce5e79a3db27e20bb95d2b1443ec8f70f1deae92"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/fuel-tank-borescope-dirty-800.webp",
+      "size_bytes": 42428,
+      "sha256": "7f84e8db6ed1e6c50d4776323e9bdeb3f84eb12381be55b8bfbf26674a1b8a6b"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/garmin-g5-box-unit-800.webp",
+      "size_bytes": 55842,
+      "sha256": "b116af5227455c758b0576f8315fdcfab929251712544d93d29fc310026f0060"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/garmin-g5-installed-panel-close-800.webp",
+      "size_bytes": 45700,
+      "sha256": "99d276404b149049e1787904de6128b00661f4618e50368cda20411cb2b6c0b0"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-1-800.webp",
+      "size_bytes": 46954,
+      "sha256": "a16b0090b9334f1e81e359f337ea4c4826ab5703cea36e652f5070f3c466e8c9"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-2-800.webp",
+      "size_bytes": 47348,
+      "sha256": "4cd63f2522853349499525726c2642e1a5bb28ddebd8fb82c4d545d795bb3aa7"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-3-800.webp",
+      "size_bytes": 45564,
+      "sha256": "684cdb84be6fd3f95e5bc6fcfc301158626b26859aa671be0ed8c7209761dbb7"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/icom-radio-coax-adapters-800.webp",
+      "size_bytes": 92292,
+      "sha256": "78017be5f187db063bb6fc8c09bcb19ef1226990ff27700af7381de5be122a25"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/lca-logbook-work-sticker-proof-800.webp",
+      "size_bytes": 33520,
+      "sha256": "27098ff1c7f9c21a343a73336be2534a7dc1d517068b65f7113a051a0247d0f3"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-coolant-leak-fitting-example-500.webp",
+      "size_bytes": 87370,
+      "sha256": "456167b44c936dfb56bde96c3ecf56edb381c77a77fcbbc0574cbfde66324440"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-coolant-leak-fitting-example-800.webp",
+      "size_bytes": 192726,
+      "sha256": "efecea3c0eec3f8997b4ef949813ab73dcc029e32ea09f25d978d2d848ca7f79"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-engine-installed-green-covers-800.webp",
+      "size_bytes": 51754,
+      "sha256": "a46574271d59e4867d381ac75e95161ca08af31f7b16428d24d45870693f62ab"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-engine-on-hoist-800.webp",
+      "size_bytes": 55302,
+      "sha256": "b26a0a9be9b1d9ba8d710f32191e5e6186912cbd7ac873206bb71cde94be5a1e"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-fuel-pump-in-out-card-800.webp",
+      "size_bytes": 96564,
+      "sha256": "88a543c6fbe70007d1bcf77c675ea30146e1247969b7bba17fb6bdf45515ae84"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-installed-hose-overview-card-800.webp",
+      "size_bytes": 120110,
+      "sha256": "b617d76ada4f0c59f0cf7441cb3dce1b2485b18c45310fbdc1a0b477a9de9465"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-1000.webp",
+      "size_bytes": 116644,
+      "sha256": "bbfc953d78232afcc9fd95487b99fa213f7d7306a4394d2deb1e40cdac893799"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-600.webp",
+      "size_bytes": 58112,
+      "sha256": "d4ada65f819aed2b97674c9b37186a90bd20ebdb3aee41f9955f491de8e61b5f"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-rubber-package-installed-hoses-400.webp",
+      "size_bytes": 39612,
+      "sha256": "35262f0e61239ad33b6fa8dc87476b09a202c45acdd8c467c07a81b244093292"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/soft-start-connector-annotated-800.webp",
+      "size_bytes": 44954,
+      "sha256": "dd536b569cc8d8ef7efe015ec9edfd295137e0c8936ca8ac48ac0d9fe0e9a089"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/top-end-parts-organized-shelf-800.webp",
+      "size_bytes": 53196,
+      "sha256": "3b728e326b9bd176b68de852a0dff58c2552e460ce7f17894fca7a8c7b1e9bf6"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/voltage-regulator-connector-frayed-800.webp",
+      "size_bytes": 43376,
+      "sha256": "1b9e2ac3e871a56d760dbe6ca7745bc5009d708ea673ab8e2f92d4c6d193844a"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/weld-detail-with-quarter-scale-800.webp",
+      "size_bytes": 44890,
+      "sha256": "3cb181c404492037b21804051376f2636967efe889c3d092a8525d837a09aff1"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/xps-oil-rotax-filter-service-800.webp",
+      "size_bytes": 49728,
+      "sha256": "cba2a89a7141ec7b6f0f804d44fa3a378395f45c5cf8becd2a288d6036c3fee5"
+    },
+    {
+      "path": "assets/images/og/lca-about-og-1200x630.webp",
+      "size_bytes": 28534,
+      "sha256": "9b2833d4012bdc7dfb73742fad78c5ab1143c3814559fa27758e90a4824f56a0"
+    },
+    {
+      "path": "assets/images/og/lca-contact-og-1200x630.webp",
+      "size_bytes": 29172,
+      "sha256": "7bbbc5f7ffdb2ecf06a6a6a89feabaddcad4ab69b524aacb71fcc1b7ca6551a7"
+    },
+    {
+      "path": "assets/images/og/lca-contact-og-v90-1200x630.jpg",
+      "size_bytes": 83789,
+      "sha256": "bca2624f4cddc40ab151c59e0f688acc26279432369d7af6da0799f136fc74c0"
+    },
+    {
+      "path": "assets/images/og/lca-eprops-og-1200x630.webp",
+      "size_bytes": 45942,
+      "sha256": "f4bc0a0ce57b55b223a655f2cc9f05c88f8d98297d69ab1d4fcbce20a73ba139"
+    },
+    {
+      "path": "assets/images/og/lca-eprops-og-v90-1200x630.jpg",
+      "size_bytes": 66325,
+      "sha256": "402953801b227fef621e765b6c053ad82575c5d4645e2d2d7cb7d4b345d8a1ea"
+    },
+    {
+      "path": "assets/images/og/lca-eprops-og-v91-1200x630.jpg",
+      "size_bytes": 89501,
+      "sha256": "cf8d3510a2f2c057f8cb551b0535b6c58646acb0c094762be32d84b89d2594c2"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-1200x630.webp",
+      "size_bytes": 43620,
+      "sha256": "5e419ae72e709e5b83573c3079f020a2957242b5311a64366d55fcc8ec2faab2"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-v90-1200x630.jpg",
+      "size_bytes": 176931,
+      "sha256": "80ee0be271ce887709ea4da413ef6d0f0dd85eccbd84fd919b68331be7af051d"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-v91-1200x630.jpg",
+      "size_bytes": 180122,
+      "sha256": "0574181445769e6aeff8dc3d1577be1c15ae3c243e1db3b58bfbe8ac42df6270"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-v92-1200x630.jpg",
+      "size_bytes": 112701,
+      "sha256": "572600a75d4fffe214aff1940ca9771dec425fba7fbd00115efc5874045a847c"
+    },
+    {
+      "path": "assets/images/og/lca-rotax-og-1200x630.webp",
+      "size_bytes": 56678,
+      "sha256": "a002a6fe68002cbbc0391417f535bcd8b63b28ef42dd7a3920b104542bef0df8"
+    },
+    {
+      "path": "assets/images/og/lca-rotax-og-v90-1200x630.jpg",
+      "size_bytes": 180122,
+      "sha256": "0574181445769e6aeff8dc3d1577be1c15ae3c243e1db3b58bfbe8ac42df6270"
+    },
+    {
+      "path": "assets/images/og/lca-rotax-support-hero-social-v16e-1200x630.jpg",
+      "size_bytes": 154372,
+      "sha256": "4b6c7a7e42eba0a35b188af594b2b96efe5bee3aa81e4d8e7227eec3632963f3"
+    },
+    {
+      "path": "assets/images/og/lca-services-og-1200x630.webp",
+      "size_bytes": 56636,
+      "sha256": "666ece376b66b5b621d203f2aa5e07385f1d74eb23764dcf84dd86babeb3482d"
+    },
+    {
+      "path": "assets/images/og/lca-services-og-v90-1200x630.jpg",
+      "size_bytes": 103464,
+      "sha256": "3a721cd7b5a36e15e7154cf9e3c6b460b5c46c27afc582ab5009b801dd9c4f2f"
+    },
+    {
+      "path": "assets/images/og/lca-social-v16f-light-sport-experimental-rotax-1200x630.jpg",
+      "size_bytes": 152522,
+      "sha256": "e6b31d23faeaa19b10ecc0576f2ea7af0f76360b449bb5788574f544609c4458"
+    },
+    {
+      "path": "assets/images/og/lca-support-request-og-1200x630.webp",
+      "size_bytes": 71778,
+      "sha256": "ebd662d842c076652d05561b1bbe5a9ad6389e90bdfb05438682d5a797f9071b"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-480.jpg",
+      "size_bytes": 38007,
+      "sha256": "634ce8081717194ac06ffd3cdddc4ca2642bb6920d4bddea02acdaf82a62a168"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-480.webp",
+      "size_bytes": 26992,
+      "sha256": "d89d6fe89de52f0cc120650fee20d7f07114798b8365e76857537c9a81bf6e68"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-800.jpg",
+      "size_bytes": 102031,
+      "sha256": "febd5bc4a687211c83c97b4971437c435ee4e2684446631d2503c9f9a7a19173"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-800.webp",
+      "size_bytes": 72366,
+      "sha256": "2d6ca01220a57ddeb5c55efca323cc57f6546839aabf767679c59bbb80f94f45"
+    },
+    {
+      "path": "assets/images/proof-light-sport-aircraft-1200.webp",
+      "size_bytes": 72072,
+      "sha256": "6c59c28057702d35f712c80432add8542bbe2f0e6f78f00142362ba8afb8459d"
+    },
+    {
+      "path": "assets/images/proof-light-sport-aircraft-800.webp",
+      "size_bytes": 47736,
+      "sha256": "39a7868dcefceaa74a8df384a412b9df1fedcbae280570aa690a2e0c2c6066f3"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-1200.webp",
+      "size_bytes": 25802,
+      "sha256": "2d883293bbd329bd6fbaf383b49b1a9709246eb82824d51f6f3d78b4d54cfc9f"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-480.webp",
+      "size_bytes": 11144,
+      "sha256": "dfe1ece524cd8662a92c1f8d263b2f67f44fa4b34e7e77cb05826bd5aa192e5d"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-640.webp",
+      "size_bytes": 15484,
+      "sha256": "7e219bb75047b350a39be54d23c9116bb6431518e96ec83354e0613c1e371295"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-800.webp",
+      "size_bytes": 15516,
+      "sha256": "701932fe92cb2773a54a56e1acb5402a8d0ae3688751d13472b3fe96a2b9a4e1"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-original-transparent-320.png",
+      "size_bytes": 35351,
+      "sha256": "a6dc3e3274f2f41dff4c2cecd0b10989ed98f9c60db6f9890fe4e5683dcaa1e4"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-original-transparent.png",
+      "size_bytes": 135649,
+      "sha256": "c6959562584d14fa38afcd92a0a21581abb992e0c319e21a973d349d6da21eb0"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-original.svg",
+      "size_bytes": 2015,
+      "sha256": "add265f2165bb2180631acf0ff12d4b5a53fb51e7faf88aa923e5daaf73c3843"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-white-260.png",
+      "size_bytes": 22288,
+      "sha256": "21d221198e7a527a8edd34d38b354adf51fb1f0ef05e44b477c7d0780ec4db94"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-white.png",
+      "size_bytes": 42616,
+      "sha256": "4ce2c16ff452f249bdd5880a8a48b23a9c6fa4aff274326497e7a4356671e620"
+    },
+    {
+      "path": "assets/images/rotax-airbox-focus-card.webp",
+      "size_bytes": 73296,
+      "sha256": "0f1caeaca2c35a64ad85504a52c9cc665e1711d280b1f725f030c450eba6243e"
+    },
+    {
+      "path": "assets/images/rotax-engine-installed-green-covers-800.webp",
+      "size_bytes": 51932,
+      "sha256": "866d8a10cb9560f712d489a3faa8491a24cff7f59864aa219608b0c7c57a0291"
+    },
+    {
+      "path": "assets/images/rotax-engine-installed-green-covers.webp",
+      "size_bytes": 172590,
+      "sha256": "0150b902043119110958f23baee61ed13a9df8781b2c60058ea5577a760a9f04"
+    },
+    {
+      "path": "assets/script.js",
+      "size_bytes": 16781,
+      "sha256": "1b7dde1dee2b4029a67aa9dcda6d365f082ddb46ef23f064f82db3e873268da7"
+    },
+    {
+      "path": "assets/styles.css",
+      "size_bytes": 341749,
+      "sha256": "605990580ebdcce1b8ff62981215248de60477d63211f28b70ee2e7404082369"
+    },
+    {
+      "path": "assets/styles.min.css",
+      "size_bytes": 290907,
+      "sha256": "f3f9569b94779a19e7a0ec3d1917de2fdb0b7bb18bdfcae2729942497dab9da6"
+    },
+    {
+      "path": "card.html",
+      "size_bytes": 5006,
+      "sha256": "722126280c40f1b7ceecdc3b6174e3af8ca191888345ad354542be033fde0eae"
+    },
+    {
+      "path": "contact.html",
+      "size_bytes": 19979,
+      "sha256": "3356f31316f15af5c6dd5b381c7f5975a36558f2c797c8c866091909617748e3"
+    },
+    {
+      "path": "e-props-dealer-support.html",
+      "size_bytes": 33871,
+      "sha256": "4622b77d09c04fa898f0065e24d9da3386353781afcf3502329e5cc4f36b341e"
+    },
+    {
+      "path": "faq.html",
+      "size_bytes": 28097,
+      "sha256": "b08fdf6876f25b35f098902d87468ff6bd0cc6fa2ea20fbccf70ec2fe6fa01b9"
+    },
+    {
+      "path": "favicon.ico",
+      "size_bytes": 17449,
+      "sha256": "037b3f87decbd0f9996fca1bf913c2ae879fbadbf3c092a483acf60ba752a8fb"
+    },
+    {
+      "path": "image-credits.html",
+      "size_bytes": 10634,
+      "sha256": "a0720d985c5b0726bdf68ba57fc063147902ec23a852aed4036d0a995e845199"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 61456,
+      "sha256": "95ee380886fa4efb8f2657bcf5e3ae7afb48cf6a5abb5f7452d5652d2a1b49cd"
+    },
+    {
+      "path": "joseph-helminiak-bio.html",
+      "size_bytes": 18173,
+      "sha256": "230b521254e0981802ddd20029d0cec582cd00957020704b36be9e45a0aa7b60"
+    },
+    {
+      "path": "light-sport-experimental-avionics.html",
+      "size_bytes": 17243,
+      "sha256": "19f915795a856f5a2953550576fa33a5df7411c1bb29f2cd75894622de61a5d6"
+    },
+    {
+      "path": "light-sport-prebuy-evaluation.html",
+      "size_bytes": 17126,
+      "sha256": "90ba8b41d0f9da5ecd739d82a1dee0984832a1e842578b3c5f058662073badcc"
+    },
+    {
+      "path": "privacy.html",
+      "size_bytes": 9527,
+      "sha256": "d938a26b0d9bb076aebd29db3668e61d20d2e14c12cc1c5bccb5ed0eb6dfb079"
+    },
+    {
+      "path": "robots.txt",
+      "size_bytes": 195,
+      "sha256": "be44c3135143e9fa9c41b3c622a1f96ee99bdecc8a6b984c905071ad0fa7fd50"
+    },
+    {
+      "path": "rotax-9-series-912-914-915-916-support.html",
+      "size_bytes": 14288,
+      "sha256": "cb211a40482a657c61a64e88df64d191cff4805c5e2b96e7fe37ca8022822b1d"
+    },
+    {
+      "path": "rotax-912-carb-sync.html",
+      "size_bytes": 12489,
+      "sha256": "078dd03337319cf3f34b40b146d6f17d499fd6a452af196898c34a2e84b5b148"
+    },
+    {
+      "path": "rotax-912-high-oil-temperature.html",
+      "size_bytes": 12816,
+      "sha256": "8fbb96ccdaac9b7582a9ba0ce2e70f78c8c80eb4fa97d43c61ccb33d0158e522"
+    },
+    {
+      "path": "rotax-912-mag-drop-troubleshooting.html",
+      "size_bytes": 12390,
+      "sha256": "563c1b7a2ab7db6f1e79dd7d24ca5608be032d107f2699eb386204a525de32ea"
+    },
+    {
+      "path": "rotax-915-916-turbo-ems-support.html",
+      "size_bytes": 12847,
+      "sha256": "10ce9740b118ab8a3ab129bd609a4297414aa8547754cd395c016dce409e7282"
+    },
+    {
+      "path": "rotax-cooling-oil-temperature-problems.html",
+      "size_bytes": 14242,
+      "sha256": "3485bb39a369e210c0d69893ef2ec56a81ea2fd967dbfd36b5c318cc43a6f4b2"
+    },
+    {
+      "path": "rotax-engine-systems-support.html",
+      "size_bytes": 22779,
+      "sha256": "7f8dc630a2870c2c94e824b79bd71400b65c078c19f17873d1d3a3537afce554"
+    },
+    {
+      "path": "rotax-fuel-pressure-fuel-delivery-problems.html",
+      "size_bytes": 14774,
+      "sha256": "fd41b559c0ede490d461d25666ebf58f31de05558509714aafa67bbf588e20ad"
+    },
+    {
+      "path": "rotax-gearbox-propeller-vibration.html",
+      "size_bytes": 19230,
+      "sha256": "f7fbb425f559b171dd821374663e1ac4ef5f29bcd595222318343043555f4dea"
+    },
+    {
+      "path": "rotax-ignition-ecu-electrical-faults.html",
+      "size_bytes": 16947,
+      "sha256": "8f2f965739f60636db20cfc2af3bfe25ab1a5663b7e44e8f0b339b5281ff53b0"
+    },
+    {
+      "path": "rotax-installation-review.html",
+      "size_bytes": 23322,
+      "sha256": "107fd9a3d573d0e1b97746de95dd20c85b11a95bca69f934ef9a3b68226f1a21"
+    },
+    {
+      "path": "rotax-rubber-hose-replacement-fluid-leaks.html",
+      "size_bytes": 19802,
+      "sha256": "10c9413b54a3dff14b92e06204d93c3abd6e5344ffa7c3fcd1c6b868bdca450c"
+    },
+    {
+      "path": "s-lsa-e-lsa-maintenance.html",
+      "size_bytes": 18287,
+      "sha256": "283a283349609af20e0a6d56d6ea7872a1afbc7b31b9227276593f38d84074cb"
+    },
+    {
+      "path": "security-disclosure.html",
+      "size_bytes": 8422,
+      "sha256": "c1e979be8974a4ffa9acebcda3f8a8e0a66451b73996da978e446509251bdf7d"
+    },
+    {
+      "path": "service-area.html",
+      "size_bytes": 15880,
+      "sha256": "7e825c78f9573f8de66d4b9335c78c3b297633bd5c54057ff66af7c5810b42eb"
+    },
+    {
+      "path": "services.html",
+      "size_bytes": 32878,
+      "sha256": "72c6f7c85a7176a97189554ce4df37daf091c9c507a8deb10e6ea85a089c0417"
+    },
+    {
+      "path": "site.webmanifest",
+      "size_bytes": 692,
+      "sha256": "4f93f5b6a5a5ca6abaca4c87f54d9d647000d1110c460d45127c572cc0bbf3c3"
+    },
+    {
+      "path": "sitemap.xml",
+      "size_bytes": 4618,
+      "sha256": "6fbf31fd164e72b173ac8429a1660e296ccaa6083a2520e8ccad02de73f4d7b1"
+    },
+    {
+      "path": "support-request.html",
+      "size_bytes": 23461,
+      "sha256": "421ec63117e31319d7b2cb7c3356cf7af092c14565b75668ff6b694d2ce326ab"
+    },
+    {
+      "path": "thank-you.html",
+      "size_bytes": 8396,
+      "sha256": "437eaf55a3bebb53d15a5ce79c25aa8029c2262ed499defac54a8c9d25f3b89f"
+    },
+    {
+      "path": "the-lima-charlie-aero-standard.html",
+      "size_bytes": 20825,
+      "sha256": "f4204a1ea36f3171390e95c5fa97f346e017d52d5288a4158dca0e577cab3a60"
+    }
+  ]
+}

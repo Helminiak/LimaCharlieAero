@@ -1,0 +1,10 @@
+{
+  "byte_comparison": "PASS",
+  "file_count": 214,
+  "total_bytes": 14184009,
+  "missing_files": [],
+  "extra_website_files": [],
+  "local_references_checked": 1301,
+  "missing_targets": [],
+  "scope": "HTML attributes and srcsets, CSS URLs, literal JS asset paths, webmanifest icons; external services and dynamic JS excluded"
+}
