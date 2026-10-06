@@ -15,7 +15,7 @@ Baseline: approved main `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`. Word counts 
 | Proof assets | aircraft-open-cowling-under-canopy-800, lca-logbook-work-sticker-proof-800 |
 | Indexability | index |
 | Target band | 900–1100 |
-| Final words | 942 |
+| Final words | 940 |
 | Reviewer notes | Compare the supplied before/after screenshots and original inventory. Scope and claims require independent review; word count is not a semantic completeness proof. |
 
 ## /rotax-912-high-oil-temperature
@@ -191,7 +191,7 @@ Baseline: approved main `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`. Word counts 
 | Proof assets | aircraft-open-cowling-under-canopy-800 |
 | Indexability | index |
 | Target band | 750–950 |
-| Final words | 846 |
+| Final words | 811 |
 | Reviewer notes | Compare the supplied before/after screenshots and original inventory. Scope and claims require independent review; word count is not a semantic completeness proof. |
 
 ## /rotax-installation-review

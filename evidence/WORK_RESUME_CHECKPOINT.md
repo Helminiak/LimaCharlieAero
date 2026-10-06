@@ -70,3 +70,14 @@ Finish saving four verified artifacts, push the final release-evidence commit, u
 - External gates unchanged: photo rights, delivery, production/DNS, WebKit host libraries, physical-device/screen-reader and independent Design/SEO approval.
 - Next exact action: build and run static verification, then inspect affected desktop/mobile output.
 - Latest pushed SHA: starting SHA above; correction commit pending.
+
+### Focused correction pass completed
+
+- Latest pushed implementation SHA: `c6c3059c65044b5f59c586fdc51d468b54de9775`. Final evidence commit follows this checkpoint; resolve its containing branch HEAD.
+- All four requested corrections complete, including visual-found masked-record wording and Service Area logistics fixes.
+- Static/brand/repetition PASS 2189 assertions; 30/30 bands; 39 routes / 38 subjects / 55 distinct contextual placements.
+- Browser PASS 126 layouts / 21 axe scans; final three-route correction retest PASS 18 layouts / three axe scans; all zero violations. Actual mobile/desktop inspection complete.
+- No shared CSS/template/image/runtime changes; conditional performance rerun not triggered.
+- Remaining exact action: push focused evidence, update PR #2 and return for independent re-review. No further implementation absent new review findings.
+- Previous packages/hashes remain prior-freeze artifacts, superseded for corrected copy; do not present them as current branch artifacts.
+- External gates unchanged and NOT PASS; no main modification, merge or deployment.

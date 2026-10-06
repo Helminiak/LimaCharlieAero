@@ -102,7 +102,7 @@
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
-        "caption": "This masked work entry illustrates the record detail a prebuy review needs. Match aircraft identity, dates and described work with the candidate aircraft’s history; private details are withheld here.",
+        "caption": "Logbook and work-entry context for a prebuy, with private details masked. Review the candidate aircraft’s original entries to match identity, dates and described work with its history.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       }
     ]
@@ -1164,13 +1164,21 @@
       },
       {
         "heading": "Plan around the KAKH home base",
-        "text": "Lima Charlie Aero LLC works from KAKH / Gastonia Municipal Airport, which keeps the home base close to Gastonia, Charlotte, and nearby North Carolina and South Carolina airports. That location is useful for light-sport owners who need document-driven support, ROTAX 9 Series review, appointment planning, or a first pass on whether the aircraft should come to KAKH or be reviewed at another field. The practical service range is not defined by a map alone. Aircraft condition, urgency, available parts, weather, hangar access, airport rules, travel time, and the tools available at the field all affect whether mobile or owner-coordinated support makes sense.",
-        "items": []
+        "text": "Lima Charlie Aero LLC works from KAKH / Gastonia Municipal Airport, which keeps the home base close to Gastonia, Charlotte and nearby North Carolina and South Carolina airports. The practical service range is not defined by a map alone.",
+        "items": [
+          "The base supports document-driven planning, ROTAX 9 Series review and appointments for light-sport owners",
+          "Discuss whether the aircraft should come to KAKH or whether review at another field is feasible",
+          "Aircraft condition, urgency, available parts, weather, hangar access, airport rules, travel time and field tools all affect mobile or owner-coordinated feasibility"
+        ]
       },
       {
         "heading": "Match the work to the available access",
-        "text": "Some support can begin remotely with records, symptoms, and aircraft details. Some work needs the airplane, appropriate tools, power, lighting, safe access, and enough time to keep the work controlled. If the aircraft is away from KAKH, the support request should include the airport, hangar situation if known, urgency, and a short description of the concern. When the tools and airfield conditions are suitable, Lima Charlie Aero LLC can consider flying to the aircraft by appointment. When the scope points to deeper access, special tools, parts staging, or weather-sensitive work, bringing the aircraft to a better-supported location may be the cleaner path.",
-        "items": []
+        "text": "Some support can begin remotely with records, symptoms and aircraft details. Physical work needs the airplane, appropriate tools, power, lighting, safe access and enough time to keep the work controlled.",
+        "items": [
+          "Away from KAKH: send the airport, hangar situation if known, urgency and a short description of the concern",
+          "When tools and airfield conditions are suitable, Lima Charlie Aero LLC can consider flying to the aircraft by appointment",
+          "Deeper access, special tools, parts staging or weather-sensitive work may favor bringing the aircraft to a better-supported location"
+        ]
       },
       {
         "heading": "Check the aircraft and airfield conditions",
@@ -2566,7 +2574,7 @@
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
-        "caption": "This privacy-masked entry shows the structure of a maintenance record. Aircraft identity, work description and date connect an entry to the aircraft’s chronology; private details remain withheld.",
+        "caption": "Logbook and work-entry context, with private record details masked. In a records review, aircraft identity, work description and date connect the original entry to the aircraft’s chronology.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       }
     ]

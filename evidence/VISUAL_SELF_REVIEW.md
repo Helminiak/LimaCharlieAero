@@ -101,3 +101,7 @@ Travel/location planning can be confused with service promises; explicit coordin
 ## Limits requiring independent review
 
 The masked logbook preserves privacy at the cost of detailed-record visibility. Owner-cleared documentary evidence would strengthen the public version, but no customer record or chronology is fabricated. Image rights remain REVIEW REQUIRED, and any stronger repair/balancing/cleaning sequence claim needs associated records. Design/SEO must score the candidate independently using the checklist; this visual review does not grant publication, merger or aesthetic approval.
+
+## Focused independent correction pass — 2026-10-06
+
+See [DESIGN_SEO_CORRECTION_REVIEW.md](DESIGN_SEO_CORRECTION_REVIEW.md) for DSEO-01 through DSEO-04, actual mobile/desktop visual findings, the masked-record and logistics correction cycle, and final affected retests. Prior freeze evidence remains historical. Independent Design/SEO re-review required.

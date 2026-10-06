@@ -2,7 +2,7 @@
 
 | Route | Words | Band | Result |
 | --- | --- | --- | --- |
-| /light-sport-prebuy-evaluation | 942 | 900–1100 | WITHIN |
+| /light-sport-prebuy-evaluation | 940 | 900–1100 | WITHIN |
 | /rotax-912-high-oil-temperature | 630 | 600–800 | WITHIN |
 | /s-lsa-e-lsa-maintenance | 948 | 900–1100 | WITHIN |
 | /privacy | 196 | utility/notice | WITHIN |
@@ -13,7 +13,7 @@
 | /joseph-helminiak-bio | 782 | 750–900 | WITHIN |
 | /rotax-gearbox-propeller-vibration | 920 | 850–1050 | WITHIN |
 | /support-request | 321 | 300–450 | WITHIN |
-| /service-area | 846 | 750–950 | WITHIN |
+| /service-area | 811 | 750–950 | WITHIN |
 | /rotax-installation-review | 904 | 850–1050 | WITHIN |
 | /light-sport-experimental-avionics | 810 | 750–950 | WITHIN |
 | /faq | 1151 | 1100–1400 | WITHIN |

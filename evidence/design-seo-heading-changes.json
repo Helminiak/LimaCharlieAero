@@ -1,0 +1,536 @@
+[
+  {
+    "route": "rotax-912-high-oil-temperature",
+    "section": 5,
+    "before": "Temperature Concerns Need Operating Context.",
+    "after": "Record the conditions around a temperature concern"
+  },
+  {
+    "route": "rotax-912-high-oil-temperature",
+    "section": 6,
+    "before": "Cooling, Oil, Installation, and Records All Matter.",
+    "after": "Cooling, oil, installation, and records all matter"
+  },
+  {
+    "route": "rotax-912-high-oil-temperature",
+    "section": 7,
+    "before": "The Value Matters, but the Trend Matters More.",
+    "after": "The value matters, but the trend matters more"
+  },
+  {
+    "route": "rotax-912-high-oil-temperature",
+    "section": 8,
+    "before": "Cooling Performance is Aircraft-specific.",
+    "after": "Cooling performance is aircraft-specific"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 5,
+    "before": "ROTAX Alert Service Bulletin Review",
+    "after": "ROTAX alert service bulletin review"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 6,
+    "before": "Five-Year Rubber Replacement: Why It is a Real Package, Not One Hose",
+    "after": "Five-year rubber replacement: why it is a real package, not one hose"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 7,
+    "before": "Start with the Service Item, Package, Symptom, or Installation Question.",
+    "after": "Start with the service item, package, symptom, or installation question"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 8,
+    "before": "Aircraft, Location, Symptom, and Recent Context.",
+    "after": "Aircraft, location, symptom, and recent context"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 9,
+    "before": "The Engine is Reviewed as Part of the Aircraft System.",
+    "after": "The engine is reviewed as part of the aircraft system"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 13,
+    "before": "ROTAX Alert Service Bulletin Review",
+    "after": "ROTAX alert service bulletin review"
+  },
+  {
+    "route": "rotax-engine-systems-support",
+    "section": 14,
+    "before": "Five-Year Rubber Replacement: Why It is a Real Package, Not One Hose",
+    "after": "Five-year rubber replacement: why it is a real package, not one hose"
+  },
+  {
+    "route": "rotax-ignition-ecu-electrical-faults",
+    "section": 5,
+    "before": "Electrical Symptoms Can Be Intermittent and Misleading.",
+    "after": "Electrical symptoms can be intermittent and misleading"
+  },
+  {
+    "route": "rotax-ignition-ecu-electrical-faults",
+    "section": 6,
+    "before": "Evidence Comes Before Diagnosis.",
+    "after": "Evidence comes before diagnosis"
+  },
+  {
+    "route": "rotax-ignition-ecu-electrical-faults",
+    "section": 7,
+    "before": "Find the Failed Connection, Not Just the Warning It Created.",
+    "after": "Find the failed connection, not just the warning it created"
+  },
+  {
+    "route": "rotax-ignition-ecu-electrical-faults",
+    "section": 8,
+    "before": "Intermittent Faults Need a Timeline.",
+    "after": "Intermittent faults need a timeline"
+  },
+  {
+    "route": "rotax-ignition-ecu-electrical-faults",
+    "section": 9,
+    "before": "Wiring and Fuel Clues Can Overlap.",
+    "after": "Wiring and fuel clues can overlap"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 5,
+    "before": "Vibration Should Be Described by Condition.",
+    "after": "Vibration should be described by condition"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 6,
+    "before": "Gearbox and Propeller Context Must Be Separated Carefully.",
+    "after": "Gearbox and propeller context must be separated carefully"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 7,
+    "before": "A Useful Vibration Report Turns a Feeling into Comparable Data.",
+    "after": "A useful vibration report turns a feeling into comparable data"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 8,
+    "before": "Wear Patterns Need Photographs, History, and the Applicable Inspection Path.",
+    "after": "Wear patterns need photographs, history, and the applicable inspection path"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 9,
+    "before": "Describe the Condition, Not Just the Feeling.",
+    "after": "Describe the condition, not just the feeling"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 10,
+    "before": "Gearbox and Propeller Clues Need Separation.",
+    "after": "Gearbox and propeller clues need separation"
+  },
+  {
+    "route": "rotax-gearbox-propeller-vibration",
+    "section": 11,
+    "before": "Some Propeller Problems Need Records, Manufacturer Coordination, and Follow-through.",
+    "after": "Some propeller problems need records, manufacturer coordination, and follow-through"
+  },
+  {
+    "route": "service-area",
+    "section": 5,
+    "before": "ROTAX Shop, ROTAX Maintenance, and ROTAX Engine Support in the Carolinas.",
+    "after": "ROTAX-focused support from KAKH / Gastonia"
+  },
+  {
+    "route": "service-area",
+    "section": 6,
+    "before": "KAKH / Gastonia Municipal Airport.",
+    "after": "KAKH / Gastonia Municipal Airport"
+  },
+  {
+    "route": "service-area",
+    "section": 7,
+    "before": "Appointment-based Support",
+    "after": "Appointment-based support"
+  },
+  {
+    "route": "service-area",
+    "section": 8,
+    "before": "Gastonia, Charlotte, and Nearby Airports.",
+    "after": "Help for owners around Gastonia and Charlotte"
+  },
+  {
+    "route": "service-area",
+    "section": 9,
+    "before": "KAKH is the Anchor Point.",
+    "after": "Plan around the KAKH home base"
+  },
+  {
+    "route": "service-area",
+    "section": 10,
+    "before": "Travel Depends on the Work Environment.",
+    "after": "Match the work to the available access"
+  },
+  {
+    "route": "service-area",
+    "section": 11,
+    "before": "Feasibility Depends on the Aircraft and the Airfield.",
+    "after": "Check the aircraft and airfield conditions"
+  },
+  {
+    "route": "rotax-installation-review",
+    "section": 5,
+    "before": "Access, Support, Organization, Inspection, and Records Are Part of the Job.",
+    "after": "Access, support, organization, inspection, and records are part of the job"
+  },
+  {
+    "route": "rotax-installation-review",
+    "section": 6,
+    "before": "The Surrounding Systems Can Shape the Symptom.",
+    "after": "The surrounding systems can shape the symptom"
+  },
+  {
+    "route": "rotax-installation-review",
+    "section": 7,
+    "before": "Small Installation Details Can Have Large Effects.",
+    "after": "Small installation details can have large effects"
+  },
+  {
+    "route": "rotax-installation-review",
+    "section": 8,
+    "before": "The Engine Does Not Work Alone.",
+    "after": "The engine does not work alone"
+  },
+  {
+    "route": "rotax-915-916-turbo-ems-support",
+    "section": 5,
+    "before": "Turbo and EMS Concerns Need Exact Messages and Conditions.",
+    "after": "Turbo and EMS concerns need exact messages and conditions"
+  },
+  {
+    "route": "rotax-915-916-turbo-ems-support",
+    "section": 6,
+    "before": "The Engine Management Context Matters.",
+    "after": "The engine management context matters"
+  },
+  {
+    "route": "rotax-915-916-turbo-ems-support",
+    "section": 7,
+    "before": "The Exact Message and Condition Matter.",
+    "after": "The exact message and condition matter"
+  },
+  {
+    "route": "rotax-915-916-turbo-ems-support",
+    "section": 8,
+    "before": "The Engine Management System Sees the Whole Installation.",
+    "after": "The engine management system sees the whole installation"
+  },
+  {
+    "route": "rotax-fuel-pressure-fuel-delivery-problems",
+    "section": 5,
+    "before": "Fuel Problems Often Show Up as Operating Changes.",
+    "after": "Fuel problems often show up as operating changes"
+  },
+  {
+    "route": "rotax-fuel-pressure-fuel-delivery-problems",
+    "section": 6,
+    "before": "Carbureted and Injected Engines Need Different Context.",
+    "after": "Carbureted and injected engines need different context"
+  },
+  {
+    "route": "rotax-fuel-pressure-fuel-delivery-problems",
+    "section": 7,
+    "before": "A tank can look serviceable from the filler and tell a different story through a borescope.",
+    "after": "A tank can look serviceable from the filler and tell a different story through a borescope"
+  },
+  {
+    "route": "rotax-fuel-pressure-fuel-delivery-problems",
+    "section": 8,
+    "before": "Pressure is Only Useful with Context.",
+    "after": "Pressure is only useful with context"
+  },
+  {
+    "route": "rotax-fuel-pressure-fuel-delivery-problems",
+    "section": 9,
+    "before": "Routing and History Can Create the Complaint.",
+    "after": "Routing and history can create the complaint"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 6,
+    "before": "Start with Fitment, Documentation, and Order Readiness.",
+    "after": "Start with fitment, documentation, and order readiness"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 7,
+    "before": "The Authorization Path is the First Technical Gate.",
+    "after": "Confirm the authorization path first"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 8,
+    "before": "Authorization Sequence",
+    "after": "Authorization sequence"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 9,
+    "before": "E-PROPS Sales, Setup, Warranty, and Repair Support for U.S. Aircraft Owners.",
+    "after": "Sales, setup, warranty and repair support"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 10,
+    "before": "01 \u2014 Authorization First",
+    "after": "01 \u2014 authorization first"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 11,
+    "before": "Authorization Review Packet",
+    "after": "Authorization review packet"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 12,
+    "before": "Installation Planning is Treated as a Controlled Process.",
+    "after": "Plan the installation as a controlled process"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 13,
+    "before": "Propeller Support Must Keep Hardware, Shipment, Paperwork, and Follow-up Connected.",
+    "after": "Connect hardware, shipment, paperwork and follow-up"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 14,
+    "before": "Process Controls",
+    "after": "Process controls"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 15,
+    "before": "Match the E-PROPS Family to the Actual Application.",
+    "after": "Match the E-PROPS family to the actual application"
+  },
+  {
+    "route": "e-props-dealer-support",
+    "section": 17,
+    "before": "E-PROPS Sales, Setup, Warranty, and Repair Support for U.S. Aircraft Owners",
+    "after": "Plan sales and after-sale support together"
+  },
+  {
+    "route": "rotax-9-series-912-914-915-916-support",
+    "section": 5,
+    "before": "Start with the Engine Family, Then the Symptom.",
+    "after": "Start with the engine family, then the symptom"
+  },
+  {
+    "route": "rotax-9-series-912-914-915-916-support",
+    "section": 8,
+    "before": "The Same Symptom Can Have Different Meaning by Model and Installation.",
+    "after": "The same symptom can have different meaning by model and installation"
+  },
+  {
+    "route": "rotax-9-series-912-914-915-916-support",
+    "section": 9,
+    "before": "Documents and Installed Configuration Control the Next Step.",
+    "after": "Documents and installed configuration control the next step"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 5,
+    "before": "One Package Review, Multiple Rubber and Fluid Systems.",
+    "after": "One package review, multiple rubber and fluid systems"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 6,
+    "before": "Five-Year Rubber Replacement: Why It is a Real Package, Not One Hose",
+    "after": "Five-year rubber replacement: why it is a real package, not one hose"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 7,
+    "before": "ROTAX Maintenance Manual Basis",
+    "after": "ROTAX maintenance manual basis"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 8,
+    "before": "Current Instructions Control",
+    "after": "Current instructions control"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 9,
+    "before": "Rubber Age and Fluid Leaks Often Show Up Together.",
+    "after": "Rubber age and fluid leaks often show up together"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 10,
+    "before": "Intake, Records, Scope, Work Path, and Documentation.",
+    "after": "Intake, records, scope, work path, and documentation"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 11,
+    "before": "Staining is Not the Same as a Source.",
+    "after": "Staining is not the same as a source"
+  },
+  {
+    "route": "rotax-rubber-hose-replacement-fluid-leaks",
+    "section": 13,
+    "before": "Five-Year Rubber Replacement: Why It is a Real Package, Not One Hose",
+    "after": "Five-year rubber replacement: why it is a real package, not one hose"
+  },
+  {
+    "route": "rotax-912-mag-drop-troubleshooting",
+    "section": 5,
+    "before": "Record the Behavior Before the Details Blur Together.",
+    "after": "Record the behavior before the details blur together"
+  },
+  {
+    "route": "rotax-912-mag-drop-troubleshooting",
+    "section": 6,
+    "before": "Several Systems Can Create the Same Complaint.",
+    "after": "Several systems can create the same complaint"
+  },
+  {
+    "route": "rotax-912-mag-drop-troubleshooting",
+    "section": 7,
+    "before": "The Check Result Needs Its Operating Conditions.",
+    "after": "The check result needs its operating conditions"
+  },
+  {
+    "route": "rotax-912-mag-drop-troubleshooting",
+    "section": 8,
+    "before": "Ignition is Only One Possible Path.",
+    "after": "Ignition is only one possible path"
+  },
+  {
+    "route": "rotax-cooling-oil-temperature-problems",
+    "section": 5,
+    "before": "Temperature Trends Are Useful When They Are Specific.",
+    "after": "Temperature trends are useful when they are specific"
+  },
+  {
+    "route": "rotax-cooling-oil-temperature-problems",
+    "section": 6,
+    "before": "Cooling Complaints Are Often Installation-sensitive.",
+    "after": "Cooling complaints are often installation-sensitive"
+  },
+  {
+    "route": "rotax-cooling-oil-temperature-problems",
+    "section": 7,
+    "before": "Residue Location Can Point Away from the Actual Source.",
+    "after": "Residue location can point away from the actual source"
+  },
+  {
+    "route": "rotax-cooling-oil-temperature-problems",
+    "section": 8,
+    "before": "Temperatures Should Be Read as a Pattern.",
+    "after": "Temperatures should be read as a pattern"
+  },
+  {
+    "route": "rotax-cooling-oil-temperature-problems",
+    "section": 9,
+    "before": "Airflow and Routing Are Part of the Engine Story.",
+    "after": "Airflow and routing are part of the engine story"
+  },
+  {
+    "route": "rotax-912-carb-sync",
+    "section": 5,
+    "before": "Carb Balance Problems Often Feel Mechanical Before They Look Obvious.",
+    "after": "Carb balance problems often feel mechanical before they look obvious"
+  },
+  {
+    "route": "rotax-912-carb-sync",
+    "section": 6,
+    "before": "The Issue May Not Be Just the Balance Setting.",
+    "after": "The issue may not be just the balance setting"
+  },
+  {
+    "route": "rotax-912-carb-sync",
+    "section": 7,
+    "before": "Balance Starts Before the Gauges Come Out.",
+    "after": "Balance starts before the gauges come out"
+  },
+  {
+    "route": "rotax-912-carb-sync",
+    "section": 8,
+    "before": "A Sync Can Hide Another Problem.",
+    "after": "A sync can hide another problem"
+  },
+  {
+    "route": "services",
+    "section": 6,
+    "before": "Light-Sport 100-Hour / Annual Condition Inspection Planning",
+    "after": "Light-sport 100-hour / annual condition inspection planning"
+  },
+  {
+    "route": "services",
+    "section": 7,
+    "before": "Planning Inputs to Gather",
+    "after": "Planning inputs to gather"
+  },
+  {
+    "route": "services",
+    "section": 8,
+    "before": "Detailed ROTAX Service and Planning Paths",
+    "after": "Detailed ROTAX service and planning paths"
+  },
+  {
+    "route": "services",
+    "section": 9,
+    "before": "Five-Year Rubber Hose Package",
+    "after": "Five-year rubber hose package"
+  },
+  {
+    "route": "services",
+    "section": 10,
+    "before": "Fuel System / Fuel Delivery Checks",
+    "after": "Fuel system / fuel delivery checks"
+  },
+  {
+    "route": "services",
+    "section": 11,
+    "before": "Electrical, Grounding & Charging Checks",
+    "after": "Electrical, grounding & charging checks"
+  },
+  {
+    "route": "services",
+    "section": 12,
+    "before": "Bing 64 Carburetor Service / Float Checks",
+    "after": "Bing 64 carburetor service / float checks"
+  },
+  {
+    "route": "services",
+    "section": 13,
+    "before": "Carburetor Synchronization",
+    "after": "Carburetor synchronization"
+  },
+  {
+    "route": "services",
+    "section": 14,
+    "before": "Vibration / Propeller Analysis",
+    "after": "Vibration / propeller analysis"
+  },
+  {
+    "route": "services",
+    "section": 15,
+    "before": "Start With the Symptom You Are Seeing",
+    "after": "Start with the symptom you are seeing"
+  },
+  {
+    "route": "services",
+    "section": 16,
+    "before": "Start With the Aircraft, Engine, and Symptom",
+    "after": "Start with the aircraft, engine, and symptom"
+  }
+]

@@ -9,7 +9,7 @@
     "route": "light-sport-prebuy-evaluation",
     "proof_id": "lca-logbook-work-sticker-proof-800",
     "before": "Record details are withheld for privacy. A maintenance record needs traceable aircraft, work and date context; this photograph does not assert a finding for a customer aircraft.",
-    "after": "This masked work entry illustrates the record detail a prebuy review needs. Match aircraft identity, dates and described work with the candidate aircraft\u2019s history; private details are withheld here."
+    "after": "Logbook and work-entry context for a prebuy, with private details masked. Review the candidate aircraft\u2019s original entries to match identity, dates and described work with its history."
   },
   {
     "route": "rotax-912-high-oil-temperature",
@@ -195,7 +195,7 @@
     "route": "aircraft-records-review",
     "proof_id": "lca-logbook-work-sticker-proof-800",
     "before": "Record details are withheld for privacy. A maintenance record needs traceable aircraft, work and date context; this photograph does not assert a finding for a customer aircraft.",
-    "after": "This privacy-masked entry shows the structure of a maintenance record. Aircraft identity, work description and date connect an entry to the aircraft\u2019s chronology; private details remain withheld."
+    "after": "Logbook and work-entry context, with private record details masked. In a records review, aircraft identity, work description and date connect the original entry to the aircraft\u2019s chronology."
   },
   {
     "route": "rotax-cooling-oil-temperature-problems",

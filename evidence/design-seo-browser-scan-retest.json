@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "routes": 3,
+  "layouts": [
+    {
+      "slug": "aircraft-records-review",
+      "width": 320,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "aircraft-records-review",
+      "width": 375,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "aircraft-records-review",
+      "width": 390,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "aircraft-records-review",
+      "width": 768,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "aircraft-records-review",
+      "width": 1024,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "aircraft-records-review",
+      "width": 1440,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 320,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 375,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 390,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 768,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 1024,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 1440,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "service-area",
+      "width": 320,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "service-area",
+      "width": 375,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "service-area",
+      "width": 390,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "service-area",
+      "width": 768,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "service-area",
+      "width": 1024,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    },
+    {
+      "slug": "service-area",
+      "width": 1440,
+      "overflow": false,
+      "broken": 0,
+      "clippedCaptions": 0
+    }
+  ],
+  "axe": [
+    {
+      "slug": "aircraft-records-review",
+      "violations": 0
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "violations": 0
+    },
+    {
+      "slug": "service-area",
+      "violations": 0
+    }
+  ],
+  "screenshots": [
+    {
+      "slug": "aircraft-records-review",
+      "width": 390,
+      "path": "evidence/screenshots/design-seo-correction/aircraft-records-review-390.jpg"
+    },
+    {
+      "slug": "aircraft-records-review",
+      "width": 1440,
+      "path": "evidence/screenshots/design-seo-correction/aircraft-records-review-1440.jpg"
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 390,
+      "path": "evidence/screenshots/design-seo-correction/light-sport-prebuy-evaluation-390.jpg"
+    },
+    {
+      "slug": "light-sport-prebuy-evaluation",
+      "width": 1440,
+      "path": "evidence/screenshots/design-seo-correction/light-sport-prebuy-evaluation-1440.jpg"
+    },
+    {
+      "slug": "service-area",
+      "width": 390,
+      "path": "evidence/screenshots/design-seo-correction/service-area-390.jpg"
+    },
+    {
+      "slug": "service-area",
+      "width": 1440,
+      "path": "evidence/screenshots/design-seo-correction/service-area-1440.jpg"
+    }
+  ]
+}

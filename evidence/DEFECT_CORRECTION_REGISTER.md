@@ -26,3 +26,7 @@ No open locally correctable P0/P1 remains after the listed corrections and relev
 - Production Cloudflare behavior, DNS and deployment: NOT RUN — EXTERNAL VALIDATION REQUIRED / outside authorized scope. Local Wrangler behavior is separately tested.
 - WebKit native runtime lacks required host libraries. Chromium and Firefox pass; WebKit and physical Safari/mobile-device testing remain external validation requirements.
 - Actual screen-reader and physical-device usability checks and independent Design/SEO acceptance remain unperformed. No weighted release approval is claimed.
+
+## Focused independent correction pass — 2026-10-06
+
+See [DESIGN_SEO_CORRECTION_REVIEW.md](DESIGN_SEO_CORRECTION_REVIEW.md) for DSEO-01 through DSEO-04, actual mobile/desktop visual findings, the masked-record and logistics correction cycle, and final affected retests. Prior freeze evidence remains historical. Independent Design/SEO re-review required.
