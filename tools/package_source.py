@@ -8,7 +8,8 @@ def main():
  ap=argparse.ArgumentParser();ap.add_argument('--archive-dir',default=str(R/'releases'));a=ap.parse_args();out=Path(a.archive_dir);out.mkdir(parents=True,exist_ok=True);site=json.loads((R/'content/site.json').read_text());d=date.fromisoformat(site['date']);files={}
  for dirname in ['content','templates','assets-src','tools','docs','evidence']:
   for p in sorted((R/dirname).rglob('*')):
-   if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ['.pyc','.png'] and not p.name.endswith('.log'):files[p.relative_to(R).as_posix()]=p.read_bytes()
+   # Only legacy screenshot PNGs are omitted; PNG brand/build inputs are required.
+   if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc' and not (dirname=='evidence' and p.suffix=='.png'):files[p.relative_to(R).as_posix()]=p.read_bytes()
  for n in ['README.md','AGENTS.md','package.json','package-lock.json','requirements-dev.txt','.gitignore']:files[n]=(R/n).read_bytes()
  manifest={n:sha(b) for n,b in sorted(files.items())};files['SOURCE_PACKAGE_MANIFEST.json']=(json.dumps({'algorithm':'SHA-256','scope':'All payload files except this self-describing manifest','files':manifest},indent=2)+'\n').encode()
  dest=out/'LCA_SITE_v102_0_0_RC3_SOURCE_AND_VERIFICATION.zip'

@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "e-props-dealer-support",
+    "width": 390,
+    "box": {
+      "x": 16,
+      "y": 1626.8125,
+      "width": 358,
+      "height": 2054.109375
+    },
+    "screenshot": "visual-review/proof-e-props-dealer-support-390.jpg"
+  },
+  {
+    "slug": "e-props-dealer-support",
+    "width": 1440,
+    "box": {
+      "x": 160,
+      "y": 1268.375,
+      "width": 820,
+      "height": 1104.609375
+    },
+    "screenshot": "visual-review/proof-e-props-dealer-support-1440.jpg"
+  }
+]

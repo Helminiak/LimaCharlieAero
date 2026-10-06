@@ -9,7 +9,7 @@ R=Path(__file__).resolve().parents[1];B=Path(sys.argv[1]);dest=R/'assets-src/ima
 # Coordinates are normalized against the inspected 1200px baseline previews.
 specs={
 'eprops-install-checklist-preview-1200':[(.12,.252,.45,.375),(.119,.63,.465,.805),(.55,.30,.93,.368),(.55,.423,.935,.468),(.55,.758,.92,.807)],
-'eprops-engineering-packet-fanout-1200-clean':[(.152,.405,.27,.468),(.74,.671,.958,.817)]
+'eprops-engineering-packet-fanout-1200-clean':[(.152,.405,.27,.468),(.69,.65,.965,.827)]
 }
 for name,rects in specs.items():
  src=B/'assets/images/eprops/proof'/f'{name}.webp';im=Image.open(src).convert('RGB');d=ImageDraw.Draw(im)

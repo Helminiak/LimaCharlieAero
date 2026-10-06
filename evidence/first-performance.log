@@ -1,0 +1,8 @@
+{"release":"artifact","route":"/","performance":100,"lcp_ms":1803,"cls":0,"bytes":234614}
+{"release":"artifact","route":"/services","performance":100,"lcp_ms":1131,"cls":0,"bytes":401476}
+{"release":"artifact","route":"/e-props-dealer-support","performance":100,"lcp_ms":1059,"cls":0,"bytes":340637}
+{"release":"artifact","route":"/rotax-engine-systems-support","performance":100,"lcp_ms":1129,"cls":0,"bytes":227819}
+{"release":"artifact","route":"/rotax-gearbox-propeller-vibration","performance":100,"lcp_ms":1135,"cls":0,"bytes":430365}
+{"release":"artifact","route":"/rotax-installation-review","performance":100,"lcp_ms":1133,"cls":0,"bytes":361907}
+{"release":"artifact","route":"/light-sport-prebuy-evaluation","performance":100,"lcp_ms":1135,"cls":0,"bytes":174711}
+{"release":"artifact","route":"/support-request","performance":100,"lcp_ms":932,"cls":0,"bytes":82816}

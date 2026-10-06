@@ -1,0 +1,122 @@
+{
+  "index": {
+    "question": "Can this shop help with my aircraft or symptom?",
+    "early": "Aircraft class, ROTAX specialty and KAKH are visible before the primary CTA.",
+    "proof": "Installed-engine hero; four distinct measurements/conditions under Work, documented.",
+    "mobile": "Mobile stacks the hero after the CTA; desktop keeps image beside the introduction.",
+    "burden": "Owner-path cards add choice, but none demands a diagnosis. Long detail below proof is divided by descriptive headings.",
+    "correction": "Header derivatives and actual wordmark ratio remove shift without changing identity."
+  },
+  "services": {
+    "question": "Which service should I ask about?",
+    "early": "Plain-language maintenance, troubleshooting and buying paths.",
+    "proof": "Four contextual images follow three short service groups.",
+    "mobile": "Single-column mobile; desktop aside does not displace the main reading column.",
+    "burden": "Broad service taxonomy is supported by contextual links rather than another grid of equal cards.",
+    "correction": "Added direct records, prebuy, propeller and ROTAX paths."
+  },
+  "e-props-dealer-support": {
+    "question": "How do fitment, ordering and support work?",
+    "early": "Fitment and manufacturer-level boundaries precede detailed process.",
+    "proof": "Redacted packet/checklist, installed propeller and blade detail.",
+    "mobile": "Document previews contain their complete subjects; captions wrap without clipping.",
+    "burden": "Longest technical page; headings break up ordering, configuration, records and support. A preview is not approval for another aircraft.",
+    "correction": "Expanded signature mask after source-resolution review; retested page at six widths."
+  },
+  "the-lima-charlie-aero-standard": {
+    "question": "What does the company method look like in practice?",
+    "early": "Institutional process and scope decisions, without founder-as-default CTA.",
+    "proof": "Crack, joint detail and photographed cage under Standard in practice.",
+    "mobile": "Three proof figures stack with their own captions; crack remains visible.",
+    "burden": "Captions deliberately do not assert structural acceptance or verified chronology. Owner records are still required for that stronger claim.",
+    "correction": "Retained factual limitations and sequence review gate."
+  },
+  "rotax-9-series-912-914-915-916-support": {
+    "question": "Where should I start if I know only the engine family?",
+    "early": "Family guide begins with uncertainty-friendly model context.",
+    "proof": "Hoist/work context plus measurement kit after the family introduction.",
+    "mobile": "Portrait images retain full aircraft/equipment context on mobile.",
+    "burden": "Engine-family jargon is followed by problem categories and links; reader need not choose a component.",
+    "correction": "Corrected earlier text-only hub with relevant existing proof."
+  },
+  "rotax-engine-systems-support": {
+    "question": "Could the symptom involve systems around the engine?",
+    "early": "Broad owner observation and installation context.",
+    "proof": "Contextual system imagery and specific service links.",
+    "mobile": "Six tested widths; separate mobile/desktop review captures supplied.",
+    "burden": "Technical depth remains under system-specific headings.",
+    "correction": "Contextual cross-links preserve the relationship between engine and surrounding systems."
+  },
+  "rotax-gearbox-propeller-vibration": {
+    "question": "What does a vibration reading actually establish?",
+    "early": "Symptom and maintenance history before diagnosis.",
+    "proof": "1.27 IPS display, component surfaces, separate 0.04 IPS display and equipment setup.",
+    "mobile": "Readings are uncropped; caption stays with its image at mobile width.",
+    "burden": "Six figures are a long module, justified by measurement and mechanical evidence; captions explicitly deny unsupported causal before/after inference.",
+    "correction": "No implied universal balancing result; current-instruction context retained."
+  },
+  "rotax-installation-review": {
+    "question": "Could installation details explain this concern?",
+    "early": "Hoses, controls, wiring and access are named in the entry.",
+    "proof": "Engine access, crack, joint angles, photographed cage and workshop context.",
+    "mobile": "Portrait work images remain contained, without cropping joint geometry.",
+    "burden": "Several figures are deliberate evidence detail; facility image is expressly not an inspection report.",
+    "correction": "Cross-links connect fluid, fuel, electrical and records work."
+  },
+  "rotax-fuel-pressure-fuel-delivery-problems": {
+    "question": "What information helps trace a pressure or delivery problem?",
+    "early": "Observed conditions and installation history precede parts replacement.",
+    "proof": "Two distinct tank views and pump/installation context.",
+    "mobile": "Borescope display edges remain visible; captions fit a single column.",
+    "burden": "The clean-looking view does not prove a cleaning chronology or identify the material.",
+    "correction": "Preserved factual limits and source-rights hold."
+  },
+  "light-sport-prebuy-evaluation": {
+    "question": "What review should I request before buying?",
+    "early": "Listing link is enough to start; tail number optional.",
+    "proof": "Aircraft access and privacy-masked records.",
+    "mobile": "Comparison table fits 390px; full browser checks cover 320px.",
+    "burden": "Review depth and deliverables remain distinct; aircraft condition and paperwork are not collapsed into a guarantee.",
+    "correction": "Related records inquiry is directly linked."
+  },
+  "light-sport-experimental-avionics": {
+    "question": "Can I start with a display or electrical symptom?",
+    "early": "Plain-language symptom/equipment goal before technical detail.",
+    "proof": "Installed panel plus connector, behind-panel and bench evidence.",
+    "mobile": "Small wiring/termination subjects remain visible with contain sizing.",
+    "burden": "Several photographs establish access and connection context; no expensive component failure is diagnosed from one photo.",
+    "correction": "Added electrical and installation cross-links."
+  },
+  "aircraft-records-review": {
+    "question": "What will a records review tell me?",
+    "early": "Missing entries and inspection questions before travel/purchase.",
+    "proof": "Redacted logbook; captions explain the privacy limit.",
+    "mobile": "Record covers remain visible; illustrative findings table is readable and labeled.",
+    "burden": "Large privacy mask weakens detailed-record proof but protects identifiers; genuine cleared sample records require owner approval.",
+    "correction": "Retained useful findings/deliverable structure; no invented customer finding."
+  },
+  "contact": {
+    "question": "How do I start a conversation with the business?",
+    "early": "Company contact, KAKH and no-diagnosis-needed invitation.",
+    "proof": "Actual aircraft access context.",
+    "mobile": "Call/Text and Request Service remain separate touch targets.",
+    "burden": "Appointment and scope still require confirmation; no promised turnaround.",
+    "correction": "Company-first wording; no founder-default action."
+  },
+  "support-request": {
+    "question": "Can I ask for help without complete technical details?",
+    "early": "Short introduction followed immediately by name/reply fields.",
+    "proof": "No decorative proof competes with the intake task.",
+    "mobile": "Single-column mobile; visible desktop primary CTA and alternative call option.",
+    "burden": "Required name/contact/message distinguished from collapsed optional aircraft data.",
+    "correction": "Active nav contrast corrected; mock failure/retry and phone-only/email-only paths tested."
+  },
+  "service-area": {
+    "question": "Where is the shop and how do I arrange access?",
+    "early": "KAKH/Gastonia, regional relevance and appointment basis.",
+    "proof": "Aircraft/work access context, without invented mobile-service imagery.",
+    "mobile": "Scope and coordination paragraphs precede the photo on mobile.",
+    "burden": "Travel/location planning can be confused with service promises; explicit coordination language resolves that.",
+    "correction": "Removed implied off-airport/mobile-service promise."
+  }
+}

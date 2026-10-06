@@ -4,7 +4,7 @@
   "runs": [
     {
       "release": "artifact",
-      "route": "/",
+      "route": "/e-props-dealer-support",
       "lighthouse_version": "13.5.0",
       "chromium": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.0 Safari/537.36",
       "configuration": {
@@ -66,10 +66,10 @@
       "performance": 100,
       "accessibility": 100,
       "seo": 100,
-      "lcp_ms": 1731.876,
+      "lcp_ms": 1213.866,
       "cls": 0,
       "tbt_ms": 0,
-      "transfer_bytes": 252520,
+      "transfer_bytes": 302022,
       "errors": null
     }
   ]

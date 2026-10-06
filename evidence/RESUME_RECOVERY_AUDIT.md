@@ -1,0 +1,5 @@
+# Recovery audit
+
+User-recorded and fetched starting HEAD: `0b44b1eb06363a217de6a67fd7c0362492b19aac`. Approved main: `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`. Existing PR #2 was open/draft/unmerged. Remote RC3 was four commits ahead of main and zero behind, including the substantial structured-source implementation. All 99 remote blobs matched the recovered local export byte-for-byte. Native git status/log reported that the local directory was an API-synchronized export, not a checkout; Git Data API history/tree comparison supplied the audit instead. No reset, revert, overwrite or force push occurred.
+
+Read AGENTS.md, RC3_BRANCH_SCOPE.md and the entire master implementation prompt; inspected source/content/templates/assets/tools/tests/generated output/evidence, main comparison, PR #2 and all comments. Existing comments contained the original task and an automated review of the preimplementation spec commit, not implementation acceptance. Preserved and resumed existing implementation. First-pass and recovered final results remain in evidence. Subsequent corrections and retests are recorded in DEFECT_CORRECTION_REGISTER.md and WORK_RESUME_CHECKPOINT.md.

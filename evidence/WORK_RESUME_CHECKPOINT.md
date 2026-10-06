@@ -2,8 +2,8 @@
 
 - Current branch: `rc3-proof-of-work-seo`
 - Starting remote SHA for this continuation: `0b44b1eb06363a217de6a67fd7c0362492b19aac`
-- Latest pushed commit SHA: `8580d1f167490077b9cd847f608f32f15dd5cd55`
-- Current phase: final shared-header performance correction complete; browser/visual retest running
+- Latest pushed commit SHA: `206f9bbb66d748d0f0832a58e3a56fbae6787fad`
+- Current phase: visual/correction and clean-room verification complete; packaging and handoff next
 - Approved main, unchanged: `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`
 - Review vehicle: PR #2 only, open/draft/unmerged
 
@@ -43,3 +43,13 @@ Photo rights REVIEW REQUIRED for 38 subjects; real Formspree inbox delivery; liv
 ## Next exact action
 
 Collect full browser result and final screenshots; visually inspect all required mobile/desktop routes and proof details. Then build final source in clean-room with pinned dependencies and compare all 134 hashes. Package, verify, hash, push evidence, update PR #2. Commit containing this checkpoint supersedes the latest-pushed SHA above; resolve its SHA from branch history.
+
+## Completed phase — visual/correction/clean-room
+
+Final full browser sweep PASS in Chromium/Firefox: 276 layouts, 39 axe routes, 124 route cases, 20 form checks. Source-resolution visual review widened one E-PROPS signature mask; affected six-width browser/axe and performance checks PASS afterward. All 15 major routes have final 390/1440 screenshots, plus 30 baseline comparison views. Actual entry/proof/full-page rhythm views were inspected. Final clean-room install/build/static passed and every one of 134 public SHA-256 hashes matches. Review matrices now include page-specific human observations, not just generic automation labels. Ten defects are corrected; external gates remain unchanged.
+
+Remaining: package/extract/static and browser smoke, source ZIP manifest verification, full changed-file inventory, release report/hashes, final evidence push and PR #2 update. Next exact action: preserve this phase to remote, freeze the candidate source SHA, then generate release ZIPs and verify extracted content. No additional implementation change is planned.
+
+## Recovery at 206f9bbb66d748d0f0832a58e3a56fbae6787fad
+
+Fetched the current remote HEAD again after continuation; it matches the user-recorded SHA. Re-read the remote checkpoint, repository instructions and current PR #2 state/comments. Local completed work was preserved and verified against the checkpoint: final browser results, final visual review, one mask refinement and affected retest, clean-room 134-file hash comparison. This phase is being persisted now. Source packaging inspection found a tooling defect: excluding all PNGs would omit required brand inputs; restricted the exclusion to legacy evidence PNGs. Source ZIP extraction/rebuild must verify this correction before completion.
