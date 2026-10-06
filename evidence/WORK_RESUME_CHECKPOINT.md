@@ -57,3 +57,16 @@ Application/content/templates/assets are frozen. Only final release receipts, ar
 ## Next exact action
 
 Finish saving four verified artifacts, push the final release-evidence commit, update PR #2 with the exact final branch SHA/status/hashes, then fetch refs/PR to confirm main unchanged and PR unmerged. If PR #2 already contains this terminal handoff for the current HEAD, no further implementation action is due. Resume only from an independent review correction request; do not recreate or repeat completed RC3 work.
+
+## Focused independent Design/SEO correction pass — 2026-10-06
+
+- Starting remote SHA: `17500ca79944ac7b7ee66843eb4e189f1bc3abd3`.
+- Review request: PR #2 comment 6009835609. Four focused copy/scanability corrections only.
+- Current phase: caption, section-heading and existing-list corrections implemented; build/static/browser/visual verification pending.
+- Completed engineering retained: 39 routes, 38 proof subjects, 55 placements, all forms/templates/CSS/images/schema/link and release architecture.
+- Files being worked on: content/pages.json; focused review evidence and verification.
+- Remaining: static/brand/repetition, affected browser/mobile visual inspection, correction ledger, push and PR #2 re-review handoff.
+- Performance: rerun only if shared CSS/template/image behavior changes; none changed in this pass. Prior lab evidence retained, not represented as a fresh run.
+- External gates unchanged: photo rights, delivery, production/DNS, WebKit host libraries, physical-device/screen-reader and independent Design/SEO approval.
+- Next exact action: build and run static verification, then inspect affected desktop/mobile output.
+- Latest pushed SHA: starting SHA above; correction commit pending.

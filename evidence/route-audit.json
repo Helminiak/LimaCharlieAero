@@ -6,7 +6,7 @@
     "description": "Review a light-sport aircraft\u2019s records and condition before travel or purchase decisions. A listing link is enough to begin; a tail number is optional at first contact.",
     "h1": "Prebuy help before you commit",
     "canonical": "https://limacharlieaero.com/light-sport-prebuy-evaluation",
-    "words": 932,
+    "words": 942,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -34,7 +34,7 @@
     "description": "This guide focuses on changing or high oil-temperature indications in ROTAX 912 installations.",
     "h1": "ROTAX 912 high oil temperature",
     "canonical": "https://limacharlieaero.com/rotax-912-high-oil-temperature",
-    "words": 624,
+    "words": 630,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -107,7 +107,7 @@
     "description": "A clear explanation of the concern, an agreed scope and an informed owner are the basis for the work.",
     "h1": "The Lima Charlie Aero Standard",
     "canonical": "https://limacharlieaero.com/the-lima-charlie-aero-standard",
-    "words": 1153,
+    "words": 1165,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -132,7 +132,7 @@
     "description": "Support for ROTAX-powered light-sport and experimental aircraft, from routine service to rough running, leaks, electrical warnings and vibration.",
     "h1": "ROTAX service and troubleshooting",
     "canonical": "https://limacharlieaero.com/rotax-engine-systems-support",
-    "words": 980,
+    "words": 985,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -171,7 +171,7 @@
     "description": "Start with a hard-starting complaint, intermittent warning, charging concern or unusual ignition-check behavior.",
     "h1": "ROTAX starting, electrical and ECU warnings",
     "canonical": "https://limacharlieaero.com/rotax-ignition-ecu-electrical-faults",
-    "words": 774,
+    "words": 784,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -247,7 +247,7 @@
     "description": "Describe a new vibration, unusual gearbox behavior or a propeller concern and begin a review of the aircraft and maintenance history.",
     "h1": "ROTAX propeller vibration and gearbox concerns",
     "canonical": "https://limacharlieaero.com/rotax-gearbox-propeller-vibration",
-    "words": 905,
+    "words": 920,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -303,7 +303,7 @@
     "description": "Lima Charlie Aero is based at Gastonia Municipal Airport, serving the Gastonia, Charlotte and Carolinas region by appointment.",
     "h1": "Arrange support at KAKH / Gastonia",
     "canonical": "https://limacharlieaero.com/service-area",
-    "words": 824,
+    "words": 846,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -328,7 +328,7 @@
     "description": "A review considers how the engine, hoses, wiring, controls and other systems are installed in the aircraft.",
     "h1": "ROTAX engine installation review",
     "canonical": "https://limacharlieaero.com/rotax-installation-review",
-    "words": 882,
+    "words": 904,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -359,7 +359,7 @@
     "description": "Help with display, radio, wiring and electrical concerns in light-sport and experimental aircraft. Start with the symptom or the equipment change you want.",
     "h1": "Avionics and aircraft electrical support",
     "canonical": "https://limacharlieaero.com/light-sport-experimental-avionics",
-    "words": 799,
+    "words": 810,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -412,7 +412,7 @@
     "description": "Light-sport and experimental aircraft support at KAKH in Gastonia, serving the Charlotte and Carolinas region by appointment. ROTAX engines, inspections, prebuys, propellers and avionics.",
     "h1": "Light-Sport & Experimental Aircraft Maintenance",
     "canonical": "https://limacharlieaero.com/",
-    "words": 886,
+    "words": 898,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -528,7 +528,7 @@
     "description": "Discuss pressure changes, rough running, delivery concerns or suspected fuel-system contamination.",
     "h1": "ROTAX fuel pressure and delivery concerns",
     "canonical": "https://limacharlieaero.com/rotax-fuel-pressure-fuel-delivery-problems",
-    "words": 795,
+    "words": 801,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -600,7 +600,7 @@
     "description": "Discuss an E-PROPS propeller for your aircraft, get help with an existing installation, or begin a warranty or repair inquiry.",
     "h1": "E-PROPS Dealer & Service Support",
     "canonical": "https://limacharlieaero.com/e-props-dealer-support",
-    "words": 1336,
+    "words": 1321,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -629,7 +629,7 @@
     "description": "The engine family helps identify the appropriate service and diagnostic instructions. If you are unsure which model is installed, start with your aircraft details.",
     "h1": "ROTAX 912, 914, 915 and 916 owner guide",
     "canonical": "https://limacharlieaero.com/rotax-9-series-912-914-915-916-support",
-    "words": 793,
+    "words": 804,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -657,7 +657,7 @@
     "description": "Call, text or send a short inquiry. Aircraft details help if known, but you can start by explaining what is happening.",
     "h1": "Contact Lima Charlie Aero",
     "canonical": "https://limacharlieaero.com/contact",
-    "words": 354,
+    "words": 364,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -786,7 +786,7 @@
     "description": "Rough idle, uneven running or vibration in a carbureted ROTAX installation can justify a carburetor-balance review.",
     "h1": "ROTAX 912 / 914 rough idle and carburetor balance",
     "canonical": "https://limacharlieaero.com/rotax-912-carb-sync",
-    "words": 678,
+    "words": 679,
     "schema": [
       "LocalBusiness",
       "WebPage",
@@ -833,7 +833,7 @@
     "description": "Describe the problem or the work you are planning. You do not need to identify the failed component or know the engine model before requesting service.",
     "h1": "Find the right help for your aircraft",
     "canonical": "https://limacharlieaero.com/services",
-    "words": 1079,
+    "words": 1094,
     "schema": [
       "LocalBusiness",
       "WebPage",
