@@ -1,3 +1,23 @@
+# Final RC3 release freeze checkpoint
+
+FINAL RC3 RELEASE FREEZE COMPLETE — READY FOR RELEASE-INTEGRITY REVIEW
+
+- Branch: `rc3-proof-of-work-seo`; approved source/starting remote SHA `abd0eb5a053d9cf6799782c3d08d4b9098fbb642`.
+- Independent Design/SEO sign-off: PR #2 comment 6010107244. Approved for freeze only; no merge/deployment approval.
+- Latest pushed SHA at freeze preparation: `abd0eb5a053d9cf6799782c3d08d4b9098fbb642`; exact final release-evidence SHA is the containing commit and PR #2 handoff.
+- Current phase: final source/archive freeze; exact final verification receipt is `evidence/final-source-package-checks.json` (external to source ZIP to avoid self-reference).
+- Completed: Git blob audit of 367 files; fresh pinned npm and isolated Python; build 39 routes/134 files; static 2189/1282 PASS; all output hashes equal approved source; independent directory rebuild; 39 axe scans zero violations; Chromium 234 layouts/20 mocked forms PASS; deployable extraction/CRC/payload hashes and browser smoke PASS; independently extracted source preflight fresh install/build/static/output parity PASS.
+- Application, approved copy, templates/CSS/JS, images, links, schema architecture, forms and release tooling unchanged.
+- Final archive extraction/rebuild, exact payload/hash and repeat-archive results are supplied by the external receipt; final SHA256SUMS identifies delivered bytes.
+- Known locally correctable packaging defects: none found. Prior Design/SEO defects resolved and approved; no redesign due.
+- Fresh Firefox/WebKit unavailable; historical Firefox PASS is not a fresh run. Other external gates: all38 photo rights REVIEW REQUIRED, real inbox delivery, Cloudflare/DNS/production, physical-device/screen-reader, stronger chronology records, final release-integrity review.
+- Files worked on: release report, checksum file, verification receipts/logs, this checkpoint. No source implementation edits.
+- Next exact action after verified final artifact freeze: save four artifacts, push evidence-only commit, update PR #2 with exact final SHA/hashes and confirm main unchanged/open unmerged. Then await release-integrity review; do not merge or deploy.
+
+---
+
+## Prior checkpoint history
+
 # RC3 work resume checkpoint
 
 ENGINEERING CANDIDATE COMPLETE — DESIGN/SEO SIGN-OFF REQUIRED

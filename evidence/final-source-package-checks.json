@@ -1,16 +1,34 @@
 {
   "status": "PASS",
-  "archive_sha256": "93a95482cb88d859fee3beec57c705fd41e1bd2f14292519465b1d4f47a66651",
-  "source_payload_files": 287,
-  "exact_payload_set": true,
-  "every_source_payload_sha256_match": true,
-  "every_verified_build_input_equal": true,
-  "final_archive_extracted_build": "PASS",
-  "final_archive_static_checks": 2189,
+  "approved_source_sha": "abd0eb5a053d9cf6799782c3d08d4b9098fbb642",
+  "archives": {
+    "deployable": {
+      "archive": "LCA_SITE_v102_0_0_RC3_DEPLOYABLE.zip",
+      "sha256": "7173c73c78b1d1f5d364d0bf16071d30994ecb4ff7e099c7b265ee7d9995ec7d",
+      "archive_bytes": 4194678,
+      "payload_files": 134,
+      "crc": "PASS",
+      "exact_payload_file_set": true,
+      "all_extracted_payload_sha256_match": true
+    },
+    "source": {
+      "archive": "LCA_SITE_v102_0_0_RC3_SOURCE_AND_VERIFICATION.zip",
+      "sha256": "bb45ff70f00fc5142fe19c33fde9e475efef7ec4f5380e226ec90808762b30f2",
+      "archive_bytes": 86074308,
+      "payload_files": 366,
+      "crc": "PASS",
+      "exact_payload_file_set": true,
+      "all_extracted_payload_sha256_match": true,
+      "all_79_approved_build_inputs_equal": true
+    }
+  },
+  "final_archive_extracted_source_build": "PASS",
+  "final_archive_static_assertions": 2189,
   "all_134_output_hashes_equal": true,
+  "fresh_final_source_install": "156 pinned npm packages and isolated Pillow12.3.0/lxml6.1.1 install",
   "source_zip_repeat_hash_identical": true,
-  "dependency_provenance": "Fresh pinned installations validated from source-package preflight; unchanged requirement/lockfile and isolated dependencies reused for final evidence-only archive rebuild",
-  "excluded_external_receipts": [
+  "deployable_zip_repeat_hash_identical": true,
+  "external_to_source_archive": [
     "SHA256SUMS.txt",
     "evidence/final-source-package-checks.json"
   ]
