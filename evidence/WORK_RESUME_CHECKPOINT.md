@@ -2,7 +2,7 @@
 
 - Current branch: `rc3-proof-of-work-seo`
 - Starting remote SHA for this continuation: `0b44b1eb06363a217de6a67fd7c0362492b19aac`
-- Latest pushed commit SHA: `206f9bbb66d748d0f0832a58e3a56fbae6787fad`
+- Latest pushed commit SHA: `e4c71441a69e25bfebc1d753f0ad9643ddf88e72`
 - Current phase: visual/correction and clean-room verification complete; packaging and handoff next
 - Approved main, unchanged: `3d48ea6ec3785bc1faf67a5826eb678c3d14cc58`
 - Review vehicle: PR #2 only, open/draft/unmerged
@@ -53,3 +53,7 @@ Remaining: package/extract/static and browser smoke, source ZIP manifest verific
 ## Recovery at 206f9bbb66d748d0f0832a58e3a56fbae6787fad
 
 Fetched the current remote HEAD again after continuation; it matches the user-recorded SHA. Re-read the remote checkpoint, repository instructions and current PR #2 state/comments. Local completed work was preserved and verified against the checkpoint: final browser results, final visual review, one mask refinement and affected retest, clean-room 134-file hash comparison. This phase is being persisted now. Source packaging inspection found a tooling defect: excluding all PNGs would omit required brand inputs; restricted the exclusion to legacy evidence PNGs. Source ZIP extraction/rebuild must verify this correction before completion.
+
+## Screenshot/performance evidence persistence
+
+30 before and 30 final mobile/desktop full-page screenshots, six first-pass screenshots, 26 proof-module captures, entry/rhythm review sheets and exact compressed Lighthouse reports are persisted in the commit containing this checkpoint. gzip reports decompress to the original JSON bytes. These are review artifacts, excluded from public dist. Next exact action: create deployable ZIP, extract and compare manifest, run extracted static/browser smoke; create source ZIP and perform extracted source rebuild; write report, artifact hashes and final PR #2 handoff.
