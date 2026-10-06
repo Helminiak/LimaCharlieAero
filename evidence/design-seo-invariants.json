@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "authoring_pages": 32,
+  "proof_placements": 55,
+  "unique_page_specific_captions": 55,
+  "unchanged": "H1/title/description/intro/routes/image IDs/alt text/order/section count/links/legacy anchors/topics",
+  "heading_changes": 89,
+  "content_bands": "30/30 per regenerated WORD_COUNT_REPORT; no exceptions"
+}

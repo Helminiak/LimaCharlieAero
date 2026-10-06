@@ -1,0 +1,122 @@
+[
+  {
+    "id": "B11",
+    "planned_review_date": "2026-10-05",
+    "title": "Do I need to know my engine model before calling?",
+    "kind": "owner-question",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": "start-with-the-symptom"
+  },
+  {
+    "id": "B12",
+    "planned_review_date": "2026-10-07",
+    "title": "What a verified vibration measurement tells an owner.",
+    "kind": "documented-work",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Original case record, permissions/redaction, aircraft/conditions, actual action and comparable verification; no invented result.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B13",
+    "planned_review_date": "2026-10-09",
+    "title": "Current gearbox and turbocharger notice review.",
+    "kind": "source/planning-review",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B21",
+    "planned_review_date": "2026-10-12",
+    "title": "What should I send before a prebuy review?",
+    "kind": "owner-question",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": "prebuy-first-inquiry"
+  },
+  {
+    "id": "B22",
+    "planned_review_date": "2026-10-14",
+    "title": "A leak’s visible stain versus its actual source.",
+    "kind": "documented-work",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Original case record, permissions/redaction, aircraft/conditions, actual action and comparable verification; no invented result.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B23",
+    "planned_review_date": "2026-10-16",
+    "title": "What changes rubber-work scope and downtime?",
+    "kind": "source/planning-review",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": "planning-service-downtime"
+  },
+  {
+    "id": "B31",
+    "planned_review_date": "2026-10-19",
+    "title": "Can a warning message mean a wiring problem?",
+    "kind": "owner-question",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B32",
+    "planned_review_date": "2026-10-21",
+    "title": "A connector finding and how the result was verified.",
+    "kind": "documented-work",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Original case record, permissions/redaction, aircraft/conditions, actual action and comparable verification; no invented result.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B33",
+    "planned_review_date": "2026-10-23",
+    "title": "What happens between an E-PROPS inquiry and an order?",
+    "kind": "source/planning-review",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B41",
+    "planned_review_date": "2026-10-26",
+    "title": "What does a records review reveal before travel?",
+    "kind": "owner-question",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B42",
+    "planned_review_date": "2026-10-28",
+    "title": "A documented discrepancy and the owner’s decision.",
+    "kind": "documented-work",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Original case record, permissions/redaction, aircraft/conditions, actual action and comparable verification; no invented result.",
+    "existing_article_to_improve": null
+  },
+  {
+    "id": "B43",
+    "planned_review_date": "2026-10-30",
+    "title": "What to bring to a scheduled service visit.",
+    "kind": "source/planning-review",
+    "state": "draft",
+    "publication_date": null,
+    "evidence_needed": "Owner/business confirmation for shop process; current primary documents for technical statements. Review is not automatically a substantive article update.",
+    "existing_article_to_improve": null
+  }
+]

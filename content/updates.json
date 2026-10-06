@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "rotax-gearbox-notice",
+    "type": "notice",
+    "title": "ROTAX gearbox notice: check engine and gearbox identification",
+    "summary": "Selected 912, 914 and 912 i engines or replacement gearboxes need an applicability review.",
+    "body": [
+      "The manufacturer document identifies suspect gearbox and engine serial numbers. Gearbox replacement history matters as well as the original engine identity.",
+      "Use the manufacturer document and its referenced certified-engine instructions to establish the action and timing for your installation. Contact Lima Charlie Aero with engine and gearbox identification if known, and relevant service history. Do not treat a website summary as a compliance determination.",
+      "Regulatory documents are separate from the ASTM/non-certified bulletin. FAA AD 2026-16-11 has specific certified-engine, aircraft and installed-gearbox criteria. EASA AD 2026-0170 identifies specified aircraft types. Use the applicable rule and aircraft records; these links do not establish a blanket obligation for every U.S. aircraft."
+    ],
+    "document": "ASB_A-2026-001R01",
+    "issue_date": "2026-07-02",
+    "sources": [
+      "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000ZoRljIAF?asPdf=false",
+      "https://www.flyrotax.com/p/service/technical-documentation",
+      "https://www.govinfo.gov/content/pkg/FR-2026-08-13/pdf/2026-16512.pdf",
+      "https://ad.easa.europa.eu/ad/2026-0170"
+    ],
+    "supersedes": "ASB_A-2026-001R00",
+    "topic": "notice",
+    "state": "published",
+    "published": "2026-10-04",
+    "last_modified": "2026-10-05",
+    "last_review": "2026-10-05",
+    "next_review": "2026-10-12",
+    "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
+    "owner_question": "Does the gearbox notice affect my aircraft?"
+  },
+  {
+    "slug": "rotax-turbocharger-notice",
+    "type": "notice",
+    "title": "ROTAX 915 / 916 turbocharger valve-housing notice",
+    "summary": "Selected turbocharger valve housings need review for a manufacturing issue. Affected installed units have a before-next-flight instruction.",
+    "body": [
+      "The manufacturer describes a valve-housing defect that can cause oil leakage and a fire hazard. Applicability depends on listed engine or turbocharger identification and prior modification records.",
+      "Read the official document’s applicability and compliance sections. If your installation may be affected, establish its status before flying. Replacement and marking requirements depend on the records; specialist qualifications and manufacturer coordination may be needed."
+    ],
+    "document": "ASB_A-2026-002R01",
+    "issue_date": "2026-09-11",
+    "sources": [
+      "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000dA334IAC?asPdf=false",
+      "https://www.flyrotax.com/p/service/technical-documentation"
+    ],
+    "supersedes": "ASB_A-2026-002 initial issue",
+    "topic": "notice",
+    "state": "published",
+    "published": "2026-10-04",
+    "last_modified": "2026-10-04",
+    "last_review": "2026-10-05",
+    "next_review": "2026-10-12",
+    "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
+    "owner_question": "Does the turbocharger notice affect my aircraft?"
+  },
+  {
+    "slug": "start-with-the-symptom",
+    "type": "answer",
+    "title": "You do not need a diagnosis before requesting service",
+    "summary": "Explain what changed and when it happens. Technical details can follow.",
+    "body": [
+      "Describe what changed in ordinary language. A rough-running concern, a new indication, a leak, a vibration or an intermittent electrical behavior is enough to start the conversation. You do not need to identify the failed component. Preserving what you actually observed is more useful than selecting a technical label before the evidence has been reviewed.",
+      "Include when the concern appeared, the operating conditions you already know and any recent maintenance. If an exact warning or value was recorded, retain that wording and its context. A photograph of the affected area and a wider installation view may help. Existing observations are sufficient for an inquiry; do not perform additional runs, disturb connections or open systems just to generate material for this page.",
+      "Separate observations from assumptions. “The indication changed after the recent service” records a chronology; it does not prove the service caused the change. A stain identifies a place to inspect, not necessarily the source of a leak. A vibration value needs measurement conditions. These distinctions help the investigation remain open to the actual evidence.",
+      "Use Request Service and choose the closest topic or “not sure.” Aircraft and engine details are optional at the first contact. Tell us where the aircraft is located and what decision you need to make. The next step is to clarify useful records, access and the proposed scope. The inquiry itself does not determine flight readiness or authorize maintenance."
+    ],
+    "sources": [],
+    "topic": "symptom",
+    "state": "published",
+    "published": "2026-10-04",
+    "last_modified": "2026-10-05",
+    "last_review": "2026-10-04",
+    "next_review": "2027-01-04",
+    "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
+    "owner_question": "Do I need to diagnose the problem before requesting service?"
+  },
+  {
+    "slug": "prebuy-first-inquiry",
+    "type": "answer",
+    "title": "What to send before a prebuy discussion",
+    "summary": "A listing and the decision you are trying to make are useful first inputs.",
+    "body": [
+      "Send the listing or aircraft model, the location, and the purchase decision you need to make. Explain any deadline and whether the seller can provide records and physical access. You do not need a complete technical file or a diagnosis to begin. If the aircraft identity or engine model is unknown, make that uncertainty visible rather than guessing.",
+      "The initial information helps separate a records question from a physical inspection question. A listing may show equipment and advertised history, but it does not establish the complete maintenance record or current condition. Available logbook pages, equipment information and photographs can identify the next questions. Avoid sending unnecessary personal information; relevant records can be requested and handled in context.",
+      "Agree the review scope before assuming what a prebuy includes. Identify the records and aircraft areas that will be available, what deliverable is expected and which questions the buyer needs answered. If access or documentation is limited, the result must state that limitation. A review supports a purchase decision within the agreed scope; it is not a guarantee of future reliability.",
+      "Use the inquiry to explain concerns in ordinary language. For example, tell us that the history is incomplete, equipment appears to have changed, or you want a closer look at the installation. These are starting questions rather than diagnoses. We can then discuss records, access, the proposed scope and the next practical step."
+    ],
+    "sources": [],
+    "topic": "prebuy",
+    "state": "published",
+    "published": "2026-10-04",
+    "last_modified": "2026-10-05",
+    "last_review": "2026-10-04",
+    "next_review": "2027-01-04",
+    "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
+    "owner_question": "What can I send when I do not know the tail number yet?"
+  },
+  {
+    "slug": "planning-service-downtime",
+    "type": "answer",
+    "title": "What changes a maintenance estimate and downtime?",
+    "summary": "Access, applicable parts, service history and findings affect the plan.",
+    "body": [
+      "Begin with the work you are planning and the dates that matter to you. A scheduling preference is useful context, not a confirmed appointment or turnaround commitment. Aircraft access, records availability, inspection findings, parts and any outside technical input can affect the eventual plan. Explain whether the aircraft is available at KAKH or whether access still needs coordination.",
+      "Gather the relevant maintenance entries and identify the known aircraft configuration. If you do not know the exact task that is due, say what prompted the inquiry and provide the records you have. Missing information should remain an explicit planning question. Avoid ordering a collection of parts before the actual scope and applicable instructions have been established.",
+      "Keep initial planning and authorized work separate. The inquiry helps establish what needs review, what access is required and what can be estimated. If inspection produces additional findings, the scope may need another discussion. The purpose is to make decisions from the aircraft and evidence, without presenting a preliminary conversation as a promise of completion.",
+      "Before traveling, confirm access and scheduling with the shop. Tell us about a purchase deadline, planned trip or other constraint, while recognizing that an owner deadline cannot determine the technical work required. A concise timeline lets us discuss the practical options. You can start with a description and add the exact engine or component information later."
+    ],
+    "sources": [],
+    "topic": "service",
+    "state": "published",
+    "published": "2026-10-04",
+    "last_modified": "2026-10-05",
+    "last_review": "2026-10-04",
+    "next_review": "2027-01-04",
+    "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
+    "owner_question": "What affects the estimate and time the aircraft is unavailable?"
+  }
+]

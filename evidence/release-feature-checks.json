@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": [
+    "Independent output-directory rebuild matches every SHA-256",
+    "Draft/internal update excluded",
+    "Unsafe editorial source URL rejected"
+  ]
+}

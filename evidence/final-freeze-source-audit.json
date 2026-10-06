@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "approved_source_sha": "abd0eb5a053d9cf6799782c3d08d4b9098fbb642",
+  "source_method": "Only exact Git blob-verified remote tree files copied into new directory; no dist, node_modules, stale local proof captures or untracked input",
+  "tracked_files": 367
+}

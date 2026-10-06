@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "release": "v102.0.0-RC3",
+  "archive": "/workspace/scratch/8f5130b2b757/rc3-final-release-freeze-artifacts/LCA_SITE_v102_0_0_RC3_DEPLOYABLE.zip",
+  "archive_sha256": "7173c73c78b1d1f5d364d0bf16071d30994ecb4ff7e099c7b265ee7d9995ec7d",
+  "archive_bytes": 4194678,
+  "public_files": 134,
+  "html_routes": 39,
+  "deployment_root": "index.html is at ZIP root; no enclosing folder",
+  "clean_extraction_hashes_match": true,
+  "baseline_sha256": "e160c234b86aac2076db101c1b2e1acd27c46ed010866fd1aa6b21ff8214710a",
+  "extracted_root": "/workspace/scratch/8f5130b2b757/rc3-approved-freeze-clean/verification-root"
+}

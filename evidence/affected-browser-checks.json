@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "reason": "Only E-PROPS captions and two privacy-redacted images changed after the full final sweep",
+  "checks": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "broken": 0,
+      "axe_violations": 0
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "broken": 0,
+      "axe_violations": 0
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "broken": 0,
+      "axe_violations": 0
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "broken": 0,
+      "axe_violations": 0
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "broken": 0,
+      "axe_violations": 0
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "broken": 0,
+      "axe_violations": 0
+    }
+  ]
+}

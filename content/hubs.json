@@ -1,0 +1,38 @@
+{
+  "owner-notices": [
+    {
+      "heading": "Start with the exact document and aircraft",
+      "text": "A notice is a prompt to check the source and the actual engine or component identity. A familiar model family or a matching symptom does not establish applicability. Use the linked manufacturer material and the relevant aircraft records to identify the document, revision, configuration and any recorded action. These pages are a maintained selection, not a complete bulletin database."
+    },
+    {
+      "heading": "Keep dates and applicability separate",
+      "text": "Publication and review dates explain the history of a page. They do not establish the current status of an individual aircraft. Manufacturer documents may be revised, and an aircraft may have relevant work in its records. Preserve those distinctions when discussing a notice. Where information is missing, identify the gap rather than treating it as proof of compliance or noncompliance."
+    },
+    {
+      "heading": "Ask with the information you have",
+      "text": "You can begin with the aircraft identity, the notice you are asking about and the records already available. An exact serial or component detail can follow if it is not immediately known. Do not use an online summary to decide whether an aircraft is ready for flight. We can discuss the evidence and documentation needed for the aircraft-specific next step."
+    }
+  ],
+  "updates": [
+    {
+      "heading": "Useful updates begin with an owner question",
+      "text": "This hub brings together service-planning answers and dated source notices. Use the symptom entry when something has changed, the prebuy entry when a purchase decision is approaching, or the downtime entry when you are planning maintenance. Each route explains the information useful at the start. You can begin without a complete diagnosis or a full technical file."
+    },
+    {
+      "heading": "Read a notice with its source",
+      "text": "A notice page identifies its source documents and dates so an owner can distinguish a maintained explanation from an aircraft-specific finding. Check the current manufacturer material and the actual installed configuration. A publication date, model family or online summary cannot establish compliance. Relevant records and the applicable document revision remain part of the question."
+    },
+    {
+      "heading": "Work evidence has a place beside the service",
+      "text": "Photographs of measurements, installation details, connections and visible conditions appear on the relevant technical pages. They are useful when their captions explain what is shown and what additional context matters. We do not turn an isolated image into a customer outcome or a before-and-after claim without supporting records. See the service pages for the evidence in its technical setting."
+    },
+    {
+      "heading": "What makes an update worth publishing",
+      "text": "A useful update answers a real owner question, explains a substantive documentation change or adds factual work context that can be shared with permission. Repeating the same information with a new date does not make it more useful. The site records publication and substantive modification dates so changes can be followed without implying that every page was revalidated during a routine build."
+    },
+    {
+      "heading": "Use the right starting point",
+      "text": "If you are not sure which article fits, describe the situation through Request Service. Include what changed, recent work if relevant and the decision you need to make. Records, engine details and photographs can follow in context. The website helps organize that first conversation; it does not replace inspection, applicable instructions or an agreed maintenance scope."
+    }
+  ]
+}

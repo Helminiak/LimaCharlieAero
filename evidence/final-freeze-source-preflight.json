@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_sha": "abd0eb5a053d9cf6799782c3d08d4b9098fbb642",
+  "independent_source_extraction_crc": "PASS",
+  "exact_payload_file_set": "PASS",
+  "source_payload_sha256": "PASS",
+  "fresh_pinned_npm_and_isolated_python_install": "PASS",
+  "source_package_build": "PASS",
+  "static_assertions": 2189,
+  "routes": 39,
+  "all_134_generated_sha256_equal": true
+}

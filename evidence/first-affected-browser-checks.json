@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "reason": "Only E-PROPS captions and two privacy-redacted images changed after the full final sweep",
+  "checks": [],
+  "error": "Error: Please use browser.newContext()\n Please check out https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md"
+}

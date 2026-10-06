@@ -1,0 +1,118 @@
+{
+  "candidate_source_sha": "e4c71441a69e25bfebc1d753f0ad9643ddf88e72",
+  "review_evidence_sha": "349bc8a569f275921adc324f6f4c3683a7c702a8",
+  "starting_sha": "206f9bbb66d748d0f0832a58e3a56fbae6787fad",
+  "commits": [
+    {
+      "sha": "349bc8a569f275921adc324f6f4c3683a7c702a8",
+      "message": "Persist mobile and desktop comparison screenshots, proof review and raw Lighthouse evidence",
+      "parents": [
+        "e4c71441a69e25bfebc1d753f0ad9643ddf88e72"
+      ]
+    },
+    {
+      "sha": "e4c71441a69e25bfebc1d753f0ad9643ddf88e72",
+      "message": "Complete visual defect review and final clean-room verification; preserve continuation evidence",
+      "parents": [
+        "206f9bbb66d748d0f0832a58e3a56fbae6787fad"
+      ]
+    },
+    {
+      "sha": "206f9bbb66d748d0f0832a58e3a56fbae6787fad",
+      "message": "Optimize shared header assets and eliminate layout shift; close performance gate",
+      "parents": [
+        "8580d1f167490077b9cd847f608f32f15dd5cd55"
+      ]
+    },
+    {
+      "sha": "8580d1f167490077b9cd847f608f32f15dd5cd55",
+      "message": "Close RC3 privacy and contextual-link gaps; preserve review matrices\n\nMask identifiers in historical E-PROPS previews, add intent-specific technical links and ROTAX hub evidence, and record final Chromium/Firefox, accessibility, content, proof and SEO results.",
+      "parents": [
+        "04db1ffd230813002cca4b0d2e08d846a5742033"
+      ]
+    },
+    {
+      "sha": "04db1ffd230813002cca4b0d2e08d846a5742033",
+      "message": "Preserve recovered RC3 first-pass and final verification evidence",
+      "parents": [
+        "44662ddaf057161e6ecfc549020dde57593fb877"
+      ]
+    },
+    {
+      "sha": "44662ddaf057161e6ecfc549020dde57593fb877",
+      "message": "Record RC3 recovery audit and resumable completion checkpoint",
+      "parents": [
+        "0b44b1eb06363a217de6a67fd7c0362492b19aac"
+      ]
+    },
+    {
+      "sha": "0b44b1eb06363a217de6a67fd7c0362492b19aac",
+      "message": "Implement RC3 structured source, company voice, proof modules and SEO\n\nGenerate 39 static routes from structured source. Restore contextual technical content and 38 proof subjects, with explicit rights-review gates. Correct navigation contrast and measured homepage render delay. Preserve approved baseline in Git history; generated output is isolated in dist.",
+      "parents": [
+        "3f9f3ce05622a8bd4870660e449779f851fcf86c"
+      ]
+    },
+    {
+      "sha": "3f9f3ce05622a8bd4870660e449779f851fcf86c",
+      "message": "Add repository-wide Codex implementation and review rules",
+      "parents": [
+        "06be06bf721c3187e0254c8edbc4d83d4584166d"
+      ]
+    },
+    {
+      "sha": "06be06bf721c3187e0254c8edbc4d83d4584166d",
+      "message": "Add full RC3 Codex master implementation specification",
+      "parents": [
+        "16280f665465ad8ee0b5fda0a1d24c1fa530ea41"
+      ]
+    },
+    {
+      "sha": "16280f665465ad8ee0b5fda0a1d24c1fa530ea41",
+      "message": "Create RC3 controlled redesign branch and governance scope",
+      "parents": [
+        "3d48ea6ec3785bc1faf67a5826eb678c3d14cc58"
+      ]
+    },
+    {
+      "sha": "3d48ea6ec3785bc1faf67a5826eb678c3d14cc58",
+      "message": "Import verified live website baseline v100.2.5F\n\nEstablish the verified current-live website as the permanent pre-redesign rollback baseline. Source archive SHA-256: e160c234b86aac2076db101c1b2e1acd27c46ed010866fd1aa6b21ff8214710a.",
+      "parents": [
+        "938c9fde853f902b215dc4adfdf2e35041f37575",
+        "f04be5b6c0821fa7f765fc462342899d4c797ee6"
+      ]
+    },
+    {
+      "sha": "f04be5b6c0821fa7f765fc462342899d4c797ee6",
+      "message": "Import verified live website baseline v100.2.5F\n\nPreserve all 214 website files byte-for-byte from the authoritative archive.\nAdd SHA-256 manifest, reference verification, and desktop/mobile render evidence.",
+      "parents": [
+        "3a1640658143096da6b04efaaf5982b00b83af33"
+      ]
+    },
+    {
+      "sha": "3a1640658143096da6b04efaaf5982b00b83af33",
+      "message": "Add verified live baseline import instructions",
+      "parents": [
+        "938c9fde853f902b215dc4adfdf2e35041f37575"
+      ]
+    },
+    {
+      "sha": "938c9fde853f902b215dc4adfdf2e35041f37575",
+      "message": "Document GitHub and Codex change-control workflow",
+      "parents": [
+        "eeb1be258459f3865e689124496493eac2102dc1"
+      ]
+    },
+    {
+      "sha": "eeb1be258459f3865e689124496493eac2102dc1",
+      "message": "Record current live v100.2.5F baseline identity",
+      "parents": [
+        "72aba0332bbd506f7b7811819adfcfb95c005ccf"
+      ]
+    },
+    {
+      "sha": "72aba0332bbd506f7b7811819adfcfb95c005ccf",
+      "message": "Initialize repository governance and live baseline record",
+      "parents": []
+    }
+  ]
+}

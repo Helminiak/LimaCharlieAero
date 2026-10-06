@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "routes": 39,
+  "preserved": [
+    "internal/external links",
+    "all element IDs",
+    "form actions and field names",
+    "meta descriptions/canonicals",
+    "schema except editorial dateModified",
+    "shared templates/CSS/JS"
+  ]
+}

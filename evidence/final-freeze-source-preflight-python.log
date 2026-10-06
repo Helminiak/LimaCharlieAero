@@ -1,0 +1,5 @@
+Looking in links: ../rc3-freeze-wheelhouse
+Processing /workspace/scratch/8f5130b2b757/rc3-freeze-wheelhouse/pillow-12.3.0-cp312-cp312-manylinux_2_27_x86_64.whl (from -r requirements-dev.txt (line 1))
+Processing /workspace/scratch/8f5130b2b757/rc3-freeze-wheelhouse/lxml-6.1.1-cp312-cp312-manylinux_2_26_x86_64.whl (from -r requirements-dev.txt (line 2))
+Installing collected packages: Pillow, lxml
+Successfully installed Pillow-12.3.0 lxml-6.1.1

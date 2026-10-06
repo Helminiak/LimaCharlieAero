@@ -1,0 +1,210 @@
+{
+  "root": "verification-root",
+  "status": "PASS",
+  "files": 134,
+  "routes": [
+    {
+      "route": "/light-sport-prebuy-evaluation",
+      "status": 200
+    },
+    {
+      "route": "/rotax-912-high-oil-temperature",
+      "status": 200
+    },
+    {
+      "route": "/s-lsa-e-lsa-maintenance",
+      "status": 200
+    },
+    {
+      "route": "/privacy",
+      "status": 200
+    },
+    {
+      "route": "/the-lima-charlie-aero-standard",
+      "status": 200
+    },
+    {
+      "route": "/rotax-engine-systems-support",
+      "status": 200
+    },
+    {
+      "route": "/rotax-ignition-ecu-electrical-faults",
+      "status": 200
+    },
+    {
+      "route": "/404",
+      "status": 200
+    },
+    {
+      "route": "/joseph-helminiak-bio",
+      "status": 200
+    },
+    {
+      "route": "/rotax-gearbox-propeller-vibration",
+      "status": 200
+    },
+    {
+      "route": "/support-request",
+      "status": 200
+    },
+    {
+      "route": "/service-area",
+      "status": 200
+    },
+    {
+      "route": "/rotax-installation-review",
+      "status": 200
+    },
+    {
+      "route": "/light-sport-experimental-avionics",
+      "status": 200
+    },
+    {
+      "route": "/faq",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/rotax-915-916-turbo-ems-support",
+      "status": 200
+    },
+    {
+      "route": "/image-credits",
+      "status": 200
+    },
+    {
+      "route": "/thank-you",
+      "status": 200
+    },
+    {
+      "route": "/rotax-fuel-pressure-fuel-delivery-problems",
+      "status": 200
+    },
+    {
+      "route": "/card",
+      "status": 200
+    },
+    {
+      "route": "/about-credentials",
+      "status": 200
+    },
+    {
+      "route": "/e-props-dealer-support",
+      "status": 200
+    },
+    {
+      "route": "/rotax-9-series-912-914-915-916-support",
+      "status": 200
+    },
+    {
+      "route": "/contact",
+      "status": 200
+    },
+    {
+      "route": "/aircraft-records-review",
+      "status": 200
+    },
+    {
+      "route": "/rotax-rubber-hose-replacement-fluid-leaks",
+      "status": 200
+    },
+    {
+      "route": "/rotax-912-mag-drop-troubleshooting",
+      "status": 200
+    },
+    {
+      "route": "/rotax-cooling-oil-temperature-problems",
+      "status": 200
+    },
+    {
+      "route": "/rotax-912-carb-sync",
+      "status": 200
+    },
+    {
+      "route": "/security-disclosure",
+      "status": 200
+    },
+    {
+      "route": "/services",
+      "status": 200
+    },
+    {
+      "route": "/rotax-gearbox-notice",
+      "status": 200
+    },
+    {
+      "route": "/rotax-turbocharger-notice",
+      "status": 200
+    },
+    {
+      "route": "/start-with-the-symptom",
+      "status": 200
+    },
+    {
+      "route": "/prebuy-first-inquiry",
+      "status": 200
+    },
+    {
+      "route": "/planning-service-downtime",
+      "status": 200
+    },
+    {
+      "route": "/updates",
+      "status": 200
+    },
+    {
+      "route": "/owner-notices",
+      "status": 200
+    }
+  ],
+  "layouts": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": "PASS"
+    },
+    {
+      "route": "/e-props-dealer-support",
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "route": "/e-props-dealer-support",
+      "width": 1440,
+      "status": "PASS"
+    },
+    {
+      "route": "/support-request",
+      "width": 390,
+      "status": "PASS"
+    },
+    {
+      "route": "/support-request",
+      "width": 1440,
+      "status": "PASS"
+    }
+  ],
+  "axe": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/e-props-dealer-support",
+      "violations": []
+    },
+    {
+      "route": "/support-request",
+      "violations": []
+    }
+  ],
+  "method": "Exact extracted output SHA-256 comparison plus route/header and representative browser smoke; final full candidate suite recorded separately"
+}

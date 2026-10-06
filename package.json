@@ -1,0 +1,25 @@
+{
+  "name": "lima-charlie-aero-release",
+  "version": "102.0.0-rc.3",
+  "description": "Static site source and verification tools",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "verify:static": "python3 tools/verify_static.py",
+    "verify:browser": "node tools/verify_browser.mjs dist final",
+    "verify:auxiliary": "node tools/verify_auxiliary.mjs dist",
+    "verify:features": "node tools/verify_release_features.mjs",
+    "verify:performance": "node tools/performance.mjs dist --after-only",
+    "test": "npm run verify:static && npm run verify:browser && npm run verify:auxiliary && npm run verify:features",
+    "package": "python3 tools/package_release.py && python3 tools/package_source.py"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "devDependencies": {
+    "@axe-core/playwright": "4.10.2",
+    "lighthouse": "13.5.0",
+    "playwright": "1.63.0",
+    "wrangler": "4.147.0"
+  },
+  "private": true
+}

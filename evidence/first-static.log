@@ -1,0 +1,53 @@
+{
+  "status": "FAIL",
+  "checks": 2065,
+  "references": 1269,
+  "routes": 39,
+  "proof_subjects": 38,
+  "errors": [
+    "repetition What happens next"
+  ],
+  "repetition": {
+    "Owner information": [],
+    "Unsure where to start?": [],
+    "What happens next": [
+      "light-sport-prebuy-evaluation",
+      "rotax-912-high-oil-temperature",
+      "s-lsa-e-lsa-maintenance",
+      "the-lima-charlie-aero-standard",
+      "rotax-engine-systems-support",
+      "rotax-ignition-ecu-electrical-faults",
+      "rotax-gearbox-propeller-vibration",
+      "service-area",
+      "rotax-installation-review",
+      "light-sport-experimental-avionics",
+      "rotax-915-916-turbo-ems-support",
+      "rotax-fuel-pressure-fuel-delivery-problems",
+      "e-props-dealer-support",
+      "rotax-9-series-912-914-915-916-support",
+      "aircraft-records-review",
+      "rotax-rubber-hose-replacement-fluid-leaks",
+      "rotax-912-mag-drop-troubleshooting",
+      "rotax-cooling-oil-temperature-problems",
+      "rotax-912-carb-sync",
+      "services"
+    ],
+    "Inspection context": [
+      "s-lsa-e-lsa-maintenance",
+      "rotax-gearbox-propeller-vibration",
+      "image-credits"
+    ]
+  },
+  "voice_frequency": {
+    "Joe": 7,
+    "Joseph": 7,
+    "we": 44,
+    "our": 2,
+    "us": 10,
+    "team": 0,
+    "technician": 0,
+    "shop": 55,
+    "Lima Charlie Aero": 50
+  },
+  "rights_gate": "REVIEW REQUIRED \u2014 private candidate only; no public publication authorization inferred"
+}
