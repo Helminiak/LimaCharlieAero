@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checks": 2189,
+  "references": 1282,
+  "routes": 39,
+  "proof_subjects": 38,
+  "errors": [],
+  "repetition": {
+    "Owner information": [],
+    "Unsure where to start?": [],
+    "What happens next": [],
+    "Inspection context": [
+      "s-lsa-e-lsa-maintenance",
+      "rotax-gearbox-propeller-vibration",
+      "faq",
+      "image-credits"
+    ],
+    "diagnosis and serviceability require aircraft-specific evidence and applicable instructions": []
+  },
+  "voice_frequency": {
+    "Joe": 7,
+    "Joseph": 7,
+    "we": 47,
+    "our": 5,
+    "us": 11,
+    "team": 0,
+    "technician": 0,
+    "shop": 57,
+    "Lima Charlie Aero": 51
+  },
+  "rights_gate": "REVIEW REQUIRED \u2014 private candidate only; no public publication authorization inferred"
+}

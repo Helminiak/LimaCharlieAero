@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "release": "v102.0.0-RC3",
+  "archive": "/workspace/scratch/8f5130b2b757/rc3/releases/LCA_SITE_v102_0_0_RC3_DEPLOYABLE.zip",
+  "archive_sha256": "45db6ae72010f9555aabe233377358b87e7034d88a124855f8037e62a31c92f1",
+  "archive_bytes": 4194773,
+  "public_files": 134,
+  "html_routes": 39,
+  "deployment_root": "index.html is at ZIP root; no enclosing folder",
+  "clean_extraction_hashes_match": true,
+  "baseline_sha256": "e160c234b86aac2076db101c1b2e1acd27c46ed010866fd1aa6b21ff8214710a",
+  "extracted_root": "/workspace/scratch/8f5130b2b757/rc3/verification-root"
+}

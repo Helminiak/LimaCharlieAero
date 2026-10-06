@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "archive_sha256": "93a95482cb88d859fee3beec57c705fd41e1bd2f14292519465b1d4f47a66651",
+  "source_payload_files": 287,
+  "exact_payload_set": true,
+  "every_source_payload_sha256_match": true,
+  "every_verified_build_input_equal": true,
+  "final_archive_extracted_build": "PASS",
+  "final_archive_static_checks": 2189,
+  "all_134_output_hashes_equal": true,
+  "source_zip_repeat_hash_identical": true,
+  "dependency_provenance": "Fresh pinned installations validated from source-package preflight; unchanged requirement/lockfile and isolated dependencies reused for final evidence-only archive rebuild",
+  "excluded_external_receipts": [
+    "SHA256SUMS.txt",
+    "evidence/final-source-package-checks.json"
+  ]
+}

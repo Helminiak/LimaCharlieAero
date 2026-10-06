@@ -16,6 +16,8 @@ No open locally correctable P0/P1 remains after the listed corrections and relev
 
 | RC3-10 | P1 | Final and isolated homepage LCP 1.883 s; CLS 0.01322 | Oversized header assets and incorrect declared wordmark ratio | Deterministic header derivatives; original brand masters preserved; correct 400:133 ratio | Isolated LCP 1.732 s, final eight-route LCP home 1.657 s / E-PROPS 1.205 s; CLS 0 on all eight; shared browser/visual rerun PASS |
 
+| RC3-11 | P1 packaging | Source packaging filter excluded required PNG brand/build inputs | Global extension exclusion intended for legacy screenshots | Restrict PNG exclusion to evidence; include source PNG inputs and installation logs | Fresh source archive extraction/install/build/static PASS; all 134 output hashes equal |
+
 ## External gates, not locally correctable defects
 
 - All 38 proof subjects retain REVIEW REQUIRED rights status. Public release remains on hold until the owner confirms rights and any identifiable-person/aircraft permissions.

@@ -1,0 +1,2016 @@
+{
+  "baseline_sha": "3d48ea6ec3785bc1faf67a5826eb678c3d14cc58",
+  "candidate_snapshot_sha": "349bc8a569f275921adc324f6f4c3683a7c702a8",
+  "scope": "Complete final reviewed paths/statuses against main; current source/evidence overlay. SHA256SUMS is external to source ZIP to avoid self-referential hashing.",
+  "counts": {
+    "ADDED": 286,
+    "MODIFIED": 1,
+    "REMOVED": 214
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "status": "ADDED"
+    },
+    {
+      "path": "404.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "AGENTS.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "LCA_RELEASE_REPORT_v102_0_0_RC3.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "README.md",
+      "status": "MODIFIED"
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "status": "ADDED"
+    },
+    {
+      "path": "_headers",
+      "status": "REMOVED"
+    },
+    {
+      "path": "_redirects",
+      "status": "REMOVED"
+    },
+    {
+      "path": "about-credentials.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "aircraft-records-review.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets-src/apple-touch-icon.png",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/brand/lca-icon-lc-aircraft-v26b-transparent-128.png",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/brand/lca-icon-lc-aircraft-v26b-transparent-192.png",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/brand/lca-icon-lc-aircraft-v26b-transparent-512.png",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/brand/lca-wordmark-v17-transparent-640.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/dimensions.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/downloads/joseph-helminiak-lima-charlie-aero.vcf",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/favicon.ico",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/aircraft-open-cowling-under-canopy-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/aircraft-side-canopy-joe-working-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/avionics-tools-coax-workbench-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/carbmate-carb-sync-kit-card-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/coolant-hose-leak-source-tracing-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/differential-pressure-tester-clean-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/dsub-connector-wiring-close-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/dynavibe-bad-1-27-ips-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/dynavibe-good-0-04-ips-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/dynavibe-kit-secured-seat-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/electrical-connector-close-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/electrical-connector-wide-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/engine-cage-ndt-facility-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/engine-cage-painted-finished-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/engine-cage-weld-joint-detail-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/engine-cage-weld-repair-detail-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/eprops-aircraft-closeup-sky-ranger-1200.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/eprops-blade-damage-closeup-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/eprops-install-checklist-preview-1200.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/fuel-tank-borescope-clean-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/fuel-tank-borescope-dirty-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/garmin-g5-installed-panel-close-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/gearbox-pocket-wear-1-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/gearbox-pocket-wear-2-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/gearbox-pocket-wear-3-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/icom-radio-coax-adapters-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/lca-logbook-work-sticker-proof-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/rotax-engine-on-hoist-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/rotax-fuel-pump-in-out-card-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/rotax-installed-hose-overview-card-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/rotax-rubber-hose-routing-overview-1000.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/soft-start-connector-annotated-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/top-end-parts-organized-shelf-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/voltage-regulator-connector-frayed-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/proof/xps-oil-rotax-filter-service-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets-src/images/rotax-engine-installed-green-covers-800.webp",
+      "status": "ADDED"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-128.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-128.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-180.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-192.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-512.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-icon-lc-aircraft-v26b-transparent-64.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-128.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-128.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-256.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-mission-badge-v26b-transparent-512.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-320.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-320.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-480.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v17-transparent-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/brand/lca-wordmark-v26b-transparent-1600.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/downloads/joseph-helminiak-lima-charlie-aero.vcf",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/connector-replacement-in-aircraft-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/brand/eprops-logo-simple-320.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/brand/eprops-logo-with-prop-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-durandal-3-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-glorieuse-912-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-glorieuse-916-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/products/eprops-scimitar-propeller-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-aircraft-closeup-sky-ranger-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-aircraft-installed-sky-ranger-hero-1200x675.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-aircraft-installed-sky-ranger-large-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-engineering-packet-fanout-1200-clean.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-install-checklist-fanout-1400.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-install-checklist-preview-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/eprops/proof/eprops-shark-aircraft-cutout-900.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/garmin-g5-installed-panel-close-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/contact/contact-owner-aircraft-hero-blend-v2-1400.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/contact/contact-owner-aircraft-hero-blend-v2-900.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/aircraft-open-cowling-under-canopy-16x9-1600.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/garmin-g5-installed-panel-wide-16x9-1600.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/rotax-engine-installed-green-covers-16x9-1600.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/rotax-installed-hoses-overview-16x9-1280.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/hero_16x9_1600/rotax-support-hero-original-photo-16x9-1600.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blade-damage-closeup-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blade-damage-closeup-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blades-box-documents-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-blades-box-documents-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-customs-spinner-documents-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-customs-spinner-documents-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-return-tracker-blades-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-return-tracker-blades-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-spinner-return-paperwork-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/eprops-spinner-return-paperwork-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-radioactive-material-license-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/ndt-radioactive-material-license-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/aircraft-open-cowling-under-canopy-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/aircraft-side-canopy-joe-working-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/avionics-tools-coax-workbench-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/bing64-carburetor-rebuild-float-check-card-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/carbmate-carb-sync-kit-card-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/coolant-hose-leak-source-tracing-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/coolant-residue-cylinder-head-hose-leak-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/differential-pressure-tester-clean-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dsub-connector-wiring-close-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dynavibe-bad-1-27-ips-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dynavibe-good-0-04-ips-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/dynavibe-kit-secured-seat-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/electrical-connector-close-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/electrical-connector-wide-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-crack-closeup-before-repair-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-ndt-facility-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-painted-finished-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-weld-joint-detail-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/engine-cage-weld-repair-detail-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/exhaust-marking-hydra-detail-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/fuel-tank-borescope-clean-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/fuel-tank-borescope-dirty-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/garmin-g5-box-unit-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/garmin-g5-installed-panel-close-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/gearbox-pocket-wear-1-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/gearbox-pocket-wear-2-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/gearbox-pocket-wear-3-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/hangar-prop-two-person-inspection-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/icom-radio-coax-adapters-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/lca-logbook-work-sticker-proof-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-engine-installed-green-covers-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-engine-on-hoist-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-fuel-pump-in-out-card-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-installed-hose-overview-card-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/rotax-support-hero-original-photo-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/soft-start-connector-annotated-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/top-end-parts-organized-shelf-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/voltage-regulator-connector-frayed-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/weld-detail-with-quarter-scale-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_1200/xps-oil-rotax-filter-service-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/aircraft-open-cowling-under-canopy-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/aircraft-side-canopy-joe-working-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/avionics-tools-coax-workbench-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/bing64-carburetor-rebuild-float-check-card-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/carbmate-carb-sync-kit-card-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/coolant-hose-leak-source-tracing-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/coolant-residue-cylinder-head-hose-leak-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/differential-pressure-tester-clean-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dsub-connector-wiring-close-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dynavibe-bad-1-27-ips-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dynavibe-good-0-04-ips-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/dynavibe-kit-secured-seat-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/electrical-connector-close-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/electrical-connector-wide-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-crack-closeup-before-repair-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-ndt-facility-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-painted-finished-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-weld-joint-detail-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/engine-cage-weld-repair-detail-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/exhaust-marking-hydra-detail-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/fuel-tank-borescope-clean-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/fuel-tank-borescope-dirty-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/garmin-g5-box-unit-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/garmin-g5-installed-panel-close-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-1-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-2-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-3-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/icom-radio-coax-adapters-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/lca-logbook-work-sticker-proof-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-coolant-leak-fitting-example-500.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-coolant-leak-fitting-example-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-engine-installed-green-covers-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-engine-on-hoist-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-fuel-pump-in-out-card-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-installed-hose-overview-card-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-1000.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-600.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/rotax-rubber-package-installed-hoses-400.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/soft-start-connector-annotated-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/top-end-parts-organized-shelf-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/voltage-regulator-connector-frayed-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/weld-detail-with-quarter-scale-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/lca-proof/webp_800/xps-oil-rotax-filter-service-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-about-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-contact-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-contact-og-v90-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-eprops-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-eprops-og-v90-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-eprops-og-v91-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-v90-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-v91-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-home-og-v92-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-rotax-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-rotax-og-v90-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-rotax-support-hero-social-v16e-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-services-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-services-og-v90-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-social-v16f-light-sport-experimental-rotax-1200x630.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/og/lca-support-request-og-1200x630.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-480.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-480.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-800.jpg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/proof-light-sport-aircraft-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/proof-light-sport-aircraft-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-1200.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-480.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-640.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/proof-owner-joe-airfield-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax-airbox-focus-card.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax-engine-installed-green-covers-800.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax-engine-installed-green-covers.webp",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-original-transparent-320.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-original-transparent.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-original.svg",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-white-260.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/images/rotax/proof/rotax-genuine-parts-badge-white.png",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/script.js",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/styles.css",
+      "status": "REMOVED"
+    },
+    {
+      "path": "assets/styles.min.css",
+      "status": "REMOVED"
+    },
+    {
+      "path": "card.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "contact.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "content/editorial-backlog.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "content/hubs.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "content/pages.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "content/proof-assets.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "content/site.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "content/updates.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "docs/LOCAL_SEO_HANDOFF.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "docs/RC3_BRANCH_SCOPE.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "docs/RC3_CODEX_MASTER_IMPLEMENTATION_PROMPT.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "e-props-dealer-support.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "evidence/ACCESSIBILITY_BROWSER_RESULTS.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/ASSET_PERMISSIONS_REGISTER.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/CHANGED_FILE_INVENTORY.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/CONTENT_RETENTION_REGISTER.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/DEFECT_CORRECTION_REGISTER.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/DESIGN_SEO_REVIEW_CHECKLIST.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/HUMAN_FACTORS_DESIGN_MATRIX.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/PERFORMANCE_RESULTS.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/PROOF_OF_WORK_REGISTER.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/RESUME_RECOVERY_AUDIT.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/ROUTE_CHANGE_MATRIX.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/SEO_ROUTE_MAP.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/SOURCE_PACKAGE_VERIFICATION.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/VISUAL_SELF_REVIEW.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/WORD_COUNT_REPORT.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/WORK_RESUME_CHECKPOINT.md",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-browser-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-browser-final.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-browser.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-performance-final.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-performance.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-proof-review-captures.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/affected-screenshots.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/artifact-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/asset-map.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/auxiliary-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/auxiliary.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/baseline-content-audit.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/baseline-content-inventory.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/before-screenshots.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/browser-install-resume.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/browser-install.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/capture-before.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/capture-final-resume.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/capture.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/changed-file-inventory.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-build.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-final-npm.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-final-python.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-npm-install-online.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-npm-install.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-python-install.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-python-isolated-install.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-room-reproducibility.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/clean-static.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/concurrent-final-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/deployment-manifest.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-browser.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-performance.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-screenshots.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-source-package-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-static.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/final-wrangler.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-affected-browser-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-browser.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-performance.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-static-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-static.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/first-wrangler.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/git-review-snapshot.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/header-correction-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-engine.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-eprops.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-form.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-home.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-installation.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-prebuy.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-services.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/artifact-vibration.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/lighthouse/concurrent-final-home.json.gz",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/package-browser-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/package-browser.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/package-deployable.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/package-static.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/packaging.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/performance-header-correction.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/performance-home-isolated.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/proof-review-capture.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/proof-review-captures.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/recovered-final-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/recovered-final-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/register-generation.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/release-feature-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/release-features.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/release-provenance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/resume-build.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/resume-static.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/review-warnings.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/route-audit.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/routes.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/aircraft-records-review-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/aircraft-records-review-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/contact-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/contact-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/e-props-dealer-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/e-props-dealer-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/index-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/index-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/light-sport-experimental-avionics-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/light-sport-experimental-avionics-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/light-sport-prebuy-evaluation-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/light-sport-prebuy-evaluation-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-9-series-912-914-915-916-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-9-series-912-914-915-916-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-engine-systems-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-engine-systems-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-fuel-pressure-fuel-delivery-problems-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-fuel-pressure-fuel-delivery-problems-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-gearbox-propeller-vibration-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-gearbox-propeller-vibration-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-installation-review-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/rotax-installation-review-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/service-area-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/service-area-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/services-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/services-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/support-request-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/support-request-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/the-lima-charlie-aero-standard-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/before/the-lima-charlie-aero-standard-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/aircraft-records-review-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/aircraft-records-review-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/contact-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/contact-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/e-props-dealer-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/e-props-dealer-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/index-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/index-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/light-sport-experimental-avionics-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/light-sport-experimental-avionics-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/light-sport-prebuy-evaluation-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/light-sport-prebuy-evaluation-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-9-series-912-914-915-916-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-9-series-912-914-915-916-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-engine-systems-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-engine-systems-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-fuel-pressure-fuel-delivery-problems-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-fuel-pressure-fuel-delivery-problems-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-gearbox-propeller-vibration-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-gearbox-propeller-vibration-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-installation-review-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/rotax-installation-review-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/service-area-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/service-area-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/services-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/services-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/support-request-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/support-request-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/the-lima-charlie-aero-standard-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/final/the-lima-charlie-aero-standard-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/first/first-eprops-desktop.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/first/first-eprops-mobile.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/first/first-form-desktop.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/first/first-form-mobile.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/first/first-home-desktop.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/screenshots/first/first-home-mobile.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/second-performance.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/source-package-build.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/source-package-npm.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/source-package-preflight.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/source-package-python.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/source-package-static.log",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/static-checks.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-observations.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/entry-1.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/entry-2.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/entry-3.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/entry-4.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/entry-engine.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/fullpage-1.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/fullpage-2.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-aircraft-records-review-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-aircraft-records-review-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-contact-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-contact-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-e-props-dealer-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-e-props-dealer-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-index-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-index-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-light-sport-experimental-avionics-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-light-sport-experimental-avionics-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-light-sport-prebuy-evaluation-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-light-sport-prebuy-evaluation-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-9-series-912-914-915-916-support-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-9-series-912-914-915-916-support-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-fuel-pressure-fuel-delivery-problems-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-fuel-pressure-fuel-delivery-problems-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-gearbox-propeller-vibration-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-gearbox-propeller-vibration-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-installation-review-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-rotax-installation-review-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-service-area-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-service-area-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-services-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-services-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-the-lima-charlie-aero-standard-1440.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "evidence/visual-review/proof-the-lima-charlie-aero-standard-390.jpg",
+      "status": "ADDED"
+    },
+    {
+      "path": "faq.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "favicon.ico",
+      "status": "REMOVED"
+    },
+    {
+      "path": "image-credits.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "index.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "joseph-helminiak-bio.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "light-sport-experimental-avionics.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "light-sport-prebuy-evaluation.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "package-lock.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "package.json",
+      "status": "ADDED"
+    },
+    {
+      "path": "privacy.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "status": "ADDED"
+    },
+    {
+      "path": "robots.txt",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-9-series-912-914-915-916-support.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-912-carb-sync.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-912-high-oil-temperature.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-912-mag-drop-troubleshooting.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-915-916-turbo-ems-support.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-cooling-oil-temperature-problems.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-engine-systems-support.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-fuel-pressure-fuel-delivery-problems.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-gearbox-propeller-vibration.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-ignition-ecu-electrical-faults.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-installation-review.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "rotax-rubber-hose-replacement-fluid-leaks.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "s-lsa-e-lsa-maintenance.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "security-disclosure.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "service-area.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "services.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "site.webmanifest",
+      "status": "REMOVED"
+    },
+    {
+      "path": "sitemap.xml",
+      "status": "REMOVED"
+    },
+    {
+      "path": "support-request.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "templates/menu.js",
+      "status": "ADDED"
+    },
+    {
+      "path": "templates/page.html",
+      "status": "ADDED"
+    },
+    {
+      "path": "templates/site.css",
+      "status": "ADDED"
+    },
+    {
+      "path": "templates/site.js",
+      "status": "ADDED"
+    },
+    {
+      "path": "thank-you.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "the-lima-charlie-aero-standard.html",
+      "status": "REMOVED"
+    },
+    {
+      "path": "tools/build.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/capture_proof_review.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/capture_review.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/changed_file_inventory.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/package_release.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/package_source.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/performance.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/preview.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/redact_proof.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/review_registers.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/test-server.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/verify_affected.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/verify_auxiliary.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/verify_browser.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/verify_package.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/verify_release_features.mjs",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/verify_static.py",
+      "status": "ADDED"
+    },
+    {
+      "path": "tools/wrangler-local.cjs",
+      "status": "ADDED"
+    }
+  ]
+}
