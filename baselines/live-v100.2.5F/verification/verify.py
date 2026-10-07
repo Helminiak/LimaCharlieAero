@@ -13,7 +13,15 @@ with zipfile.ZipFile(archive) as z:
  for i in manifest:
   b=(root/i['path']).read_bytes();assert b==z.read(i['path']);assert len(b)==i['size_bytes'] and sha(b)==i['sha256']
 paths={i['path'] for i in manifest}
-actual={p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file() and '.git' not in p.parts and p.relative_to(root).parts[0] not in ('docs','baselines') and p.name!='README.md'}
+def website_paths(root):
+ # These exact governance entrypoints are repository metadata, not deployable site files.
+ metadata_dirs = {'docs', 'baselines', '.ai', '.github'}
+ metadata_files = {'README.md', 'AGENTS.md', 'SECURITY.md', '.gitignore'}
+ return {p.relative_to(root).as_posix() for p in root.rglob('*')
+         if p.is_file() and '.git' not in p.parts
+         and p.relative_to(root).parts[0] not in metadata_dirs
+         and p.relative_to(root).as_posix() not in metadata_files}
+actual=website_paths(root)
 assert actual==paths,(actual-paths,paths-actual)
 (out/'manifest.json').write_text(json.dumps({'archive_sha256':sha(archive.read_bytes()),'file_count':214,'total_bytes':14184009,'files':manifest},indent=2)+'\n')
 redirects={l.split()[0]:l.split()[1] for l in (root/'_redirects').read_text().splitlines() if l.strip() and not l.startswith('#')}
