@@ -9,12 +9,40 @@ def ck(ok,label):
  global checks
  checks+=1
  if not ok:errors.append(label)
-ck({r['file'] for r in routes}==expected,'39 expected routes');ck(len(routes)==39,'route count');ck(files==json.loads((E/'deployment-manifest.json').read_text()),'frozen output manifest')
+expected.add('our-work.html')
+ck({r['file'] for r in routes}==expected,'40 expected routes');ck(len(routes)==40,'route count');ck(files==json.loads((E/'deployment-manifest.json').read_text()),'frozen output manifest')
 ck(not any(p.split('/')[0] in ['docs','baselines','tools','content','evidence','templates','assets-src'] for p in files),'source excluded from public output')
 redirects={l.split()[0]:l.split()[1] for l in (root/'_redirects').read_text().splitlines() if l.strip() and not l.startswith('#')}
 sitemap=html.parse(str(root/'sitemap.xml'));xml=(root/'sitemap.xml').read_text();repetition={x:[] for x in ['Owner information','Unsure where to start?','What happens next','Inspection context','diagnosis and serviceability require aircraft-specific evidence and applicable instructions']};voices={x:0 for x in ['Joe','Joseph','we','our','us','team','technician','shop','Lima Charlie Aero']}
+actual_subjects=set()
+registry=json.loads((R/'content/proof-assets.json').read_text())
+subject_ids={a['id'] for a in registry}
+registration=re.compile(r'(?<![A-Za-z0-9])N[0-9]{1,5}[A-Z]{0,2}(?![A-Za-z0-9])',re.I)
+preview=root.name=='dist-preview'
+from PIL import Image
+for path in files:
+ ck(not registration.search(path),'registration in filename '+path)
+ if Path(path).suffix.lower() in {'.jpg','.webp','.avif','.ico','.png'}:
+  with Image.open(root/path) as im:
+   ck(not im.getexif() and not any(k.lower() in {'exif','xmp','xml:com.adobe.xmp'} for k in im.info),'image metadata '+path)
 for r in routes:
  d=html.parse(str(root/r['file']));main=d.xpath('//main')[0];text=' '.join(main.text_content().split());raw=(root/r['file']).read_text();key=Path(r['file']).stem;canonical='https://limacharlieaero.com'+r['route']
+ actual_subjects.update(d.xpath('//img/@data-subject'))
+ headings=[' '.join(h.text_content().split()).casefold() for h in d.xpath('//h2')]
+ ck(len(headings)==len(set(headings)),key+' distinct H2')
+ ck(not re.search(r'joseph.{0,12}the shop.{0,12}helminiak',raw,re.I),key+' founder name')
+ ck(not registration.search(' '.join(d.xpath('//body//text()[not(parent::script)] | //@alt | //meta/@content | //@data-caption'))), key+' public registration')
+ ck(not registration.search(d.xpath('string(//script[@type="application/ld+json"])')),key+' registration in schema')
+ if not preview:ck('[OWNER' not in raw and 'PRIVATE PREVIEW:' not in raw,key+' public copy clean')
+ else:ck('noindex' in d.xpath('string(//meta[@name="robots"]/@content)'),key+' preview noindex')
+ if key=='support-request':
+  ck(bool(d.xpath('//form[@id="aircraft-intake-form"]//input[@type="email" and @required]')),'native email path')
+  ck(bool(d.xpath('//details[@id="native-phone"]//form//input[@type="tel" and @required and @pattern]')),'native phone path')
+ if key=='our-work':
+  cases=json.loads((R/'content/cases.json').read_text())
+  for case in cases:
+   present=bool(d.xpath('//*[@id=$slug]',slug=case['slug']))
+   ck(present==(preview or case['state']=='published'),'case visibility '+case['slug'])
  title=d.xpath('string(//title)');desc=d.xpath('//meta[@name="description"]/@content')[0];h1=d.xpath('//h1');can=d.xpath('//link[@rel="canonical"]/@href');og=d.xpath('//meta[@property="og:url"]/@content')
  ck(len(h1)==1,r['file']+' H1');ck(can==[canonical] and og==can,r['file']+' canonical/OG');ck((canonical+'</loc>' in xml)==r['indexed'],r['file']+' sitemap');ck(bool(title and desc),r['file']+' metadata');ck(d.xpath('//html/@lang')==['en'],r['file']+' language')
  if r['indexed']:titles.append(title);descs.append(desc)
@@ -49,13 +77,13 @@ for phrase,limit in zip(repetition,[3,10,12,5,2]):ck(len(repetition[phrase])<=li
 for path in root.glob('assets/*.css'):
  for target in re.findall(r'url\([\"\']?([^\)\"\']+)',path.read_text()):
   if not urlsplit(target).scheme:ck((path.parent/target).exists(),'CSS reference '+target)
-proof=json.loads((R/'content/proof-assets.json').read_text());pages=json.loads((R/'content/pages.json').read_text());ck(35<=len(proof)<=45,'proof subject count');ck(all(x['permission'] in ['REVIEW REQUIRED','CLEARED'] for x in proof),'permission statuses explicit')
+proof=json.loads((R/'content/proof-assets.json').read_text());pages=json.loads((R/'content/pages.json').read_text());ck(50<=len(actual_subjects)<=55,'proof subject count');ck(all(x['permission'] in ['REVIEW REQUIRED','CLEARED'] for x in proof),'permission statuses explicit')
 proof_by_id={x['id']:x for x in proof};used=set()
 for key,p in pages.items():
  for image in p.get('proof',[]):
   used.add(image['proof_id']);a=proof_by_id.get(image['proof_id'],{})
   ck(a.get('asset')==image['src'] and bool(a.get('provenance')) and bool(image.get('caption')) and bool(image.get('alt')),key+' registered proof '+image['proof_id'])
-ck(used==set(proof_by_id),'every registered proof subject is placed')
+ck(actual_subjects=={a['id'] for a in proof if preview or not a.get('case_only') or a['id'] in actual_subjects},'rendered subject coverage')
 for key,min_count in {'index':4,'services':4,'rotax-gearbox-propeller-vibration':3,'rotax-installation-review':4,'rotax-fuel-pressure-fuel-delivery-problems':3,'light-sport-experimental-avionics':3,'e-props-dealer-support':3,'aircraft-records-review':1,'the-lima-charlie-aero-standard':3,'light-sport-prebuy-evaluation':1,'contact':1,'service-area':1,'joseph-helminiak-bio':1}.items():ck(len(pages[key].get('proof',[]))>=min_count,key+' proof placement')
-result={'status':'PASS' if not errors else 'FAIL','checks':checks,'references':refs,'routes':len(rows),'proof_subjects':len(proof),'errors':errors,'repetition':repetition,'voice_frequency':voices,'rights_gate':'REVIEW REQUIRED — private candidate only; no public publication authorization inferred'}
+result={'status':'PASS' if not errors else 'FAIL','checks':checks,'references':refs,'routes':len(rows),'proof_subjects':len(actual_subjects),'errors':errors,'repetition':repetition,'voice_frequency':voices,'rights_gate':'REVIEW REQUIRED — private candidate only; no public publication authorization inferred'}
 (E/'static-checks.json').write_text(json.dumps(result,indent=2)+'\n');(E/'route-audit.json').write_text(json.dumps(rows,indent=2)+'\n');print(json.dumps(result,indent=2));sys.exit(bool(errors))
