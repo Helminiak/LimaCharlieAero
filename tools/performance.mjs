@@ -20,7 +20,8 @@ if (selected.some(route => !routes.includes(route)) || new Set(selected).size !=
 if (!only && !fs.existsSync('cache-baseline/index.html') && !fs.existsSync(nestedBaseline + '/index.html')) {
   execFileSync('python3', ['-c', "import zipfile; zipfile.ZipFile('reference/baseline-v101.1.5I.zip').extractall('cache-baseline')"]);
 }
-const before = only ? null : await startServer(fs.existsSync('cache-baseline/index.html') ? 'cache-baseline' : nestedBaseline, 8787);
+const paired = process.env.LCA_PERF_BASELINE;
+const before = paired ? await startServer(paired, 8792, {wrangler:true}) : only ? null : await startServer(fs.existsSync('cache-baseline/index.html') ? 'cache-baseline' : nestedBaseline, 8787);
 const after = await startServer(root, 8793, {wrangler:only});
 const results = [];
 const dir = '.build-evidence/lighthouse';
@@ -55,7 +56,16 @@ async function measure(release, url, route, device) {
 
 try {
   const servers = before ? [['before',before],['after',after]] : [['artifact',after]];
-  for (const [release, server] of servers) {
+  if (paired) {
+    for (let round = 1; round <= 5; round++) {
+      for (const route of selected) {
+        for (const [release, server] of round % 2 ? servers : [...servers].reverse()) {
+          await measure(release, server.url, route, 'mobile');
+          results.at(-1).round = round;
+        }
+      }
+    }
+  } else for (const [release, server] of servers) {
     for (const route of routes.filter(route => selected.includes(route))) {
       for (const device of ['mobile','desktop']) await measure(release,server.url,route,device);
     }
@@ -63,12 +73,17 @@ try {
 } finally {
   before?.stop();
   after.stop();
-  const name = process.env.LCA_PERF_ROUTES ? 'affected-performance' : only ? 'artifact-performance' : 'performance';
+  const name = paired ? 'corrections-2/performance' : process.env.LCA_PERF_ROUTES ? 'affected-performance' : only ? 'artifact-performance' : 'performance';
   save('evidence/redesign/' + name + '.json', {method:'Cold local lab navigation per route and device. Simulated Lighthouse mobile and desktop profiles. Decimal bytes.',root,runs:results});
 }
-const expected = selected.length * 2 * (before ? 2 : 1);
+const expected = selected.length * (paired ? 10 : 2 * (before ? 2 : 1));
 if (results.length !== expected) throw Error(`Expected ${expected} Lighthouse measurements, got ${results.length}`);
 const missed = results.filter(r => r.device === 'mobile' && (r.performance < 95 || r.accessibility < 98 || r.seo < 100 ||
   (['/','/e-props-dealer-support'].includes(r.route) && r.lcp_ms > 1800) || r.cls > 0.05 || r.tbt_ms > 100 ||
   (r.route === '/' && r.transfer_bytes > 350000)));
-if (only && missed.length) process.exitCode = 1;
+if (paired) {
+  for (const route of selected) {
+    const median = release => results.filter(r => r.route === route && r.release === release).map(r => r.lcp_ms).sort((a,b) => a-b)[2];
+    if (median('after') > 1800 || median('after') > median('before') * 1.05) process.exitCode = 1;
+  }
+} else if (only && missed.length) process.exitCode = 1;

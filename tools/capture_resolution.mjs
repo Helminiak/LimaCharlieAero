@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import AxeBuilder from '@axe-core/playwright';
 import path from 'node:path';
 import {chromium} from 'playwright';
 import {startServer, save} from './test-server.mjs';
@@ -14,9 +15,14 @@ const common = {
   'our-work': '.legend',
   'index': '.sand:has(a[href="/our-work"])'
 };
+const corrections2 = process.argv.includes('--corrections-2');
+const targets = corrections2 ? {
+ 'rotax-gearbox-notice': 'main .lead', 'rotax-turbocharger-notice': '.source-note',
+ 'owner-notices': '.cards', 'updates': '.cards'
+} : common;
 const root = process.argv[2];
 if (!['dist','dist-preview'].includes(root)) throw Error('Choose dist or dist-preview');
-const out = path.join('evidence','redesign','corrections',root==='dist'?'public':'preview');
+const out = path.join('evidence','redesign',corrections2?'corrections-2':'corrections',root==='dist'?'public':'preview');
 fs.mkdirSync(out,{recursive:true});
 const rows=[];
 const server=await startServer(root,root==='dist'?18081:18082);
@@ -25,7 +31,7 @@ try {
  browser=await chromium.launch({executablePath:process.env.LCA_CHROMIUM_EXECUTABLE});
  const page=await browser.newPage({reducedMotion:'reduce'});
  await page.route('**/*', req=>new URL(req.request().url()).origin===server.url?req.continue():req.abort());
- for(const [slug,selector] of Object.entries(common)){
+ for(const [slug,selector] of Object.entries(targets)){
   for(const width of [320,375,390,768,1024,1440]){
    const name=slug+'-'+width;
    await page.setViewportSize({width,height:width<768?844:900});
@@ -43,7 +49,13 @@ try {
     await page.locator(other).first().scrollIntoViewIfNeeded();
     await page.screenshot({path:path.join(out,name+'-detail.jpg'),type:'jpeg',quality:82});
    }
-   rows.push({slug,width,...metrics});
+   const row = {slug,width,...metrics};
+   if (corrections2 && width === 390) {
+    const scan = await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();
+    row.violations = scan.violations.map(v => v.id);
+    if (row.violations.length) throw Error(JSON.stringify(row));
+   }
+   rows.push(row);
   }
  }
 } finally {
