@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {startServer,save} from './test-server.mjs';
-const root=process.argv[2]||'dist',prefix=process.argv[3]||'browser';
+const root=process.argv[2]||'dist',prefix=process.env.LCA_NOTICE_RETEST?'corrections-2/npm':process.argv[3]||'browser';
 const server=await startServer(root,root==='dist-preview'?8790:8788,{wrangler:true});
 const routes=JSON.parse(fs.readFileSync('.build-evidence/'+root+'/routes.json'));
 const result={environment:'Cloudflare Wrangler Pages local static-asset engine; loopback interface-display shim; not deployed production',root,engines:[],routes:[],layouts:[],axe:[],forms:[],manual:[],console_errors:[],failures:[],limits:['No physical iPhone/Android, screen reader, actual inbox delivery, field Core Web Vitals or five-person owner study']};
@@ -126,5 +126,5 @@ try{
   await context.close();await Promise.race([browser.close(),new Promise(r=>setTimeout(r,3000))]);
  }
  check(result.engines.some(e=>e.name==='chromium'&&e.status==='PASS'),'Chromium unavailable');check(result.console_errors.length===0,'Page script errors');result.status='PASS';
-}catch(e){result.status='FAIL';result.failures.push(String(e));console.error(String(e))}finally{save(`evidence/redesign/${prefix}-checks.json`,result);fs.writeFileSync(`evidence/redesign/${prefix}-wrangler.log`,server.logs());server.stop()}
+}catch(e){result.status='FAIL';result.failures.push(String(e));console.error(String(e))}finally{save(`evidence/redesign/${prefix}-checks.json`,result);fs.writeFileSync(process.env.LCA_NOTICE_RETEST?'.build-evidence/notice-wrangler.log':`evidence/redesign/${prefix}-wrangler.log`,server.logs());server.stop()}
 console.log(JSON.stringify({status:result.status,engines:result.engines.map(e=>({name:e.name,version:e.version,status:e.status})),route_checks:result.routes.length,layout_checks:result.layouts.length,axe_pages:result.axe.length,form_checks:result.forms.length,failures:result.failures}));process.exit(result.status==='PASS'?0:1);
