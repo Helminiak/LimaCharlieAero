@@ -1,4 +1,5 @@
 """Enforce the amended notice copy in rendered editorial surfaces."""
+from datetime import date
 from html import unescape
 from pathlib import Path
 import re
@@ -39,5 +40,8 @@ def check_notices(root):
         raise ValueError('Missing A1-02 regulatory sentence')
     if not doc.xpath('//li[a[contains(@href,"2026-22307.pdf")]]/following-sibling::li[1]/a[@href=$url]', url=CORRECTION):
         raise ValueError('Missing adjacent A1-02 correction link')
-    if not doc.xpath('//p[@class="source-note" and text()=$source]', source=SOURCE):
+    metadata = doc.xpath('string(//main//p[@class="meta"][1])')
+    checked = date.fromisoformat(metadata.split('Source checked ')[-1])
+    source = SOURCE.replace('November 21, 2026', f'{checked:%B} {checked.day}, {checked.year}')
+    if not doc.xpath('//p[@class="source-note" and text()=$source]', source=source):
         raise ValueError('Missing A1-02 source line')

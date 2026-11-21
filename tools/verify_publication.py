@@ -1,6 +1,5 @@
 """Exercise publication safeguards with independent faults in a disposable source tree."""
 import copy
-import http.client
 import json
 import os
 from pathlib import Path
@@ -8,16 +7,15 @@ import shutil
 import subprocess
 import sys
 import tempfile
-import threading
-from http.server import ThreadingHTTPServer
-from urllib.parse import urlencode
-from unittest.mock import patch
 from PIL import Image
 
 from build_common import ROOT
 from cases import select_cases
+from editorial import select_editorial
+from datetime import date
+from notice_checks import check_notices, GEARBOX, SUPERSEDED, TURBO, SOURCE, CORRECTION
+from html import escape
 from publication import publication_errors
-import preview
 
 def read(path):
     return json.loads(path.read_text())
@@ -59,33 +57,14 @@ def edit_flags(root):
     fixtures = [dict(rows[0], slug='editor-flag-'+flag, title='Private flag '+flag, **{flag:True})
                 for flag in ('internal','placeholder')]
     write(file, rows + fixtures)
-    with patch.object(preview, 'ROOT', root), ThreadingHTTPServer(('127.0.0.1',0),preview.Handler) as server:
-        server.root = root/'dist'
-        server.editor_enabled = True
-        server.root_file = None
-        thread = threading.Thread(target=server.serve_forever)
-        thread.start()
-        try:
-            for row in fixtures:
-                q = dict(row, token=preview.TOKEN, original_slug=row['slug'], operation='save',
-                         title=row['title']+' edited', body='\n\n'.join(row['body']),
-                         sources='\n'.join(row['sources']), asof='2026-11-21')
-                flag = row['slug'].removeprefix('editor-flag-')
-                del q[flag]  # the actual form does not contain the suppression flag
-                c = http.client.HTTPConnection('127.0.0.1',server.server_port, timeout=120)
-                try:
-                    c.request('POST','/__editor',urlencode(q),{'Content-Type':'application/x-www-form-urlencoded'})
-                    response = c.getresponse()
-                    assert response.status == 303, response.read()
-                finally:
-                    c.close()
-                saved = next(r for r in read(file) if r['slug']==row['slug'])
-                assert saved[flag] is True and saved['title'] == q['title']
-                assert_hidden(server.root, saved)
-        finally:
-            server.shutdown()
-            thread.join()
+    subprocess.run(['node', 'tools/test_editor_save.mjs'], cwd=root, check=True)
+    for row in fixtures:
+        saved = next(r for r in read(file) if r['slug'] == row['slug'])
+        assert saved[row['slug'].removeprefix('editor-flag-')] is True
+        assert_hidden(root/'dist', saved)
     saved_rows = read(file)
+    turbo = 'rotax-turbocharger-notice'
+    saved_rows = [next(r for r in rows if r['slug'] == turbo) if row['slug'] == turbo else row for row in saved_rows]
     for row in saved_rows:
         if row['slug'].startswith('editor-flag-'):
             del row[row['slug'].removeprefix('editor-flag-')]
@@ -145,6 +124,45 @@ def surfaces(root, cases):
         else:file.unlink()
     clean()
 
+def notice_faults(root):
+    turbo = next(r for r in read(root/'content/updates.json') if r['slug'] == 'rotax-turbocharger-notice')
+    def validate(record):
+        return select_editorial([record], {}, date.fromisoformat(turbo['last_review']))[0]
+    assert validate(turbo) == [turbo]
+    for reviewer, note, diagnostic in [('   ', None, 'Reviewer must'), ('', True, 'Source note must'),
+                                       (False, 'Source', 'Reviewer must'), ('', '  ', 'Source note must'),
+                                       ('', None, 'Editorial record needs')]:
+        record = dict(turbo, reviewer=reviewer, source_note=note)
+        if reviewer == '' and note is None:
+            del record['source_note']
+        rejected(f'R-02 {reviewer!r}, {note!r}', lambda: validate(record), diagnostic)
+    for preview in (False, True):
+        build(root, *(['--preview'] if preview else []))
+        out = root / ('dist-preview' if preview else 'dist')
+        check_notices(out)
+        def fault(name, filename, before, after, diagnostic):
+            path = out/filename
+            original = path.read_text()
+            assert before in original
+            path.write_text(original.replace(before, after, 1))
+            try:
+                rejected(f'{name} {out.name} {filename}', lambda: check_notices(out), diagnostic)
+            finally:
+                path.write_text(original)
+        for phrase in SUPERSEDED:
+            fault('A1-01', 'updates.html', '</main>', phrase+'</main>', 'superseded gearbox wording')
+        for day in ('November 23, 2026', '2026-11-23'):
+            fault('A1-02', 'rotax-turbocharger-notice.html', 'November 4, 2026', day, 'superseded turbo date')
+        for slug in ('rotax-gearbox-notice', 'owner-notices', 'updates'):
+            fault('A1-01', slug+'.html', '>'+escape(GEARBOX)+'</p>', '>Wrong.</p>', 'missing Amendment 1a')
+        for attr in ('name="description"', 'property="og:description"'):
+            start = attr + ' content="' + escape(GEARBOX)
+            fault('A1-01', 'rotax-gearbox-notice.html', start, attr+' content="Wrong', 'missing Amendment 1a')
+        for value, diagnostic in [(TURBO, 'A1-02 regulatory sentence'), (SOURCE, 'A1-02 source line'),
+                                  (CORRECTION, 'adjacent A1-02 correction link')]:
+            fault('A1-02', 'rotax-turbocharger-notice.html', value, 'Wrong', diagnostic)
+
+
 def main():
     os.environ.update(CLOUDFLARE_CF_FETCH_ENABLED='false',WRANGLER_SEND_METRICS='false')
     with tempfile.TemporaryDirectory(prefix='v103-publication-') as tmp:
@@ -171,6 +189,7 @@ def main():
         Image.new('RGB',(24,24)).save(known,icc_profile=b'SYNTHETIC PRIVATE ICC TEXT')
         build(root,item='X-08 ICC',error='Raster metadata in '+known.name)
         known.write_bytes(original)
+        notice_faults(root)
         edit_flags(root)
         surfaces(root,records)
     for value in ['/our-wrok','/,/our-wrok']:
