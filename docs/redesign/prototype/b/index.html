@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Direction B · Flight Line — Lima Charlie Aero (concept)</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#08182a; --navy:#0e2a47; --sand:#f3eee5; --white:#fff; --ink:#111c27; --ink-2:#44515e;
+  --orange:#d9531e; --orange-d:#b6400f; --amber:#f2b134; --line:#e1d9cb;
+  --display:"Archivo",system-ui,sans-serif; --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --max:1240px; --g:clamp(16px,4vw,48px); --r:14px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--ink);font:400 17px/1.65 var(--sans)}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+h1,h2,h3{font-family:var(--display);font-stretch:85%;line-height:1.05;letter-spacing:-.01em;margin:0}
+.eyebrow{font:700 .8rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid currentColor}
+.btn.primary{background:var(--orange-d);border-color:var(--orange-d);color:#fff}
+.btn.primary:hover{background:#9a360c;border-color:#9a360c}
+.btn.ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+
+/* header overlays hero */
+header.site{position:absolute;inset:0 0 auto;z-index:5}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}
+.brand img{width:190px}
+nav ul{display:flex;gap:6px;list-style:none;margin:0;padding:0;align-items:center}
+nav a{color:#fff;text-decoration:none;font-weight:600;padding:10px 12px;font-size:.98rem}
+nav a:hover{text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--orange)}
+nav .btn{min-height:44px;padding:0 18px}
+.menu-toggle{display:none;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);border-radius:999px;min-height:44px;padding:0 18px;font-weight:700}
+
+.hero{position:relative;min-height:min(92vh,860px);background:#000;color:#fff;display:flex;align-items:flex-end;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:75% 50%}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.65) 42%,rgba(0,0,0,.05) 75%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-bottom:clamp(48px,9vh,96px)}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);font-weight:800;max-width:11.5em;margin:18px 0 20px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p{font-size:clamp(1.05rem,1.5vw,1.25rem);max-width:34em;color:#e7ecf1;margin:0 0 30px}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.trust{background:var(--night);color:#cfd9e3}
+.trust ul{list-style:none;margin:0;padding:22px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trust b{display:block;color:#fff;font-family:var(--display);font-stretch:85%;font-size:1.15rem;letter-spacing:.01em}
+.trust span{font-size:.9rem}
+
+section{padding:clamp(64px,9vw,112px) 0}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:end;margin-bottom:44px}
+.intro h2{font-size:clamp(2rem,4vw,3.3rem);font-weight:800}
+.intro p{margin:0;color:var(--ink-2);font-size:1.1rem}
+
+/* photo service tiles */
+.tiles{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;color:#fff;text-decoration:none;min-height:320px;display:flex;align-items:flex-end;background:#222}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.tile:hover img{transform:scale(1.03)}
+.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,15,28,.92) 0%,rgba(5,15,28,.25) 55%,rgba(5,15,28,0) 100%)}
+.tile div{position:relative;z-index:1;padding:22px 24px}
+.tile h3{font-size:1.6rem;font-weight:750}
+.tile p{margin:6px 0 0;color:#dbe3ea;font-size:.95rem;max-width:30em}
+.t-a{grid-column:span 7;min-height:440px}.t-b{grid-column:span 5;min-height:440px}
+.t-c,.t-d,.t-e{grid-column:span 4}
+@media (prefers-reduced-motion:reduce){.tile img{transition:none}}
+
+/* full-bleed system statement */
+.band{position:relative;color:#fff;padding:0;background:var(--navy)}
+.band .grid{display:grid;grid-template-columns:1fr 1fr;min-height:620px}
+.band .photo{position:relative}
+.band .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band .copy{padding:clamp(40px,7vw,96px) clamp(24px,6vw,88px);display:flex;flex-direction:column;justify-content:center}
+.band h2{font-size:clamp(2rem,3.6vw,3rem);font-weight:800;margin:14px 0 18px}
+.band p{color:#d6dfe8;font-size:1.08rem;margin:0 0 18px}
+.band ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.band li{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 14px;font-size:.88rem;color:#fff}
+
+/* stories */
+.stories{background:var(--sand)}
+.story{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center;margin-top:48px}
+.story.rev .pics{order:2}
+.pics{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:10px;height:clamp(320px,42vw,520px)}
+.pics img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.pics img:first-child{grid-row:span 2}
+.story h3{font-size:clamp(1.7rem,2.8vw,2.4rem);font-weight:800;margin:12px 0 14px}
+.story p{color:var(--ink-2);margin:0 0 16px}
+.steps{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:8px}
+.steps li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:.98rem}
+.steps li:before{content:"";width:10px;height:10px;border-radius:50%;background:var(--orange);margin-top:8px}
+.steps li.todo:before{background:transparent;border:2px solid var(--orange)}
+.pill{display:inline-block;font-weight:700;font-size:.8rem;border-radius:999px;padding:5px 12px;background:#e6f1e9;color:#1d5c33}
+.pill.pending{background:#fbefd6;color:#7a4c00}
+.more{font-weight:700;color:var(--orange-d);text-underline-offset:4px}
+
+/* how it works */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
+.how div{border-top:3px solid var(--orange);padding-top:18px}
+.how b{font-family:var(--display);font-stretch:85%;font-size:1.4rem;display:block;margin-bottom:6px}
+.how p{margin:0;color:var(--ink-2)}
+
+.people{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.people img{border-radius:var(--r);aspect-ratio:4/3;object-fit:cover;width:100%}
+.people h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;margin:12px 0 14px}
+.people p{color:var(--ink-2)}
+
+.final{background:var(--night);color:#fff;text-align:center}
+.final h2{font-size:clamp(2.2rem,5vw,4rem);font-weight:800;margin:0 auto 16px;max-width:14em}
+.final p{color:#c9d4de;max-width:36em;margin:0 auto 28px;font-size:1.1rem}
+.final .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+footer{background:#050f1b;color:#9fb0c0;padding:36px 0;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+footer a{color:#e8eef4}
+
+@media (max-width:1020px){
+  nav li:not(.keep){display:none}.menu-toggle{display:inline-flex;align-items:center}
+  .intro,.band .grid,.story,.people{grid-template-columns:1fr}
+  .story.rev .pics{order:0}
+  .band .photo{min-height:360px}
+  .t-a,.t-b{grid-column:span 12;min-height:360px}.t-c,.t-d,.t-e{grid-column:span 6}
+  .trust ul{grid-template-columns:1fr 1fr}
+  .how{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .brand img{width:140px}
+  nav .btn.primary{display:none}
+  .hero{min-height:88vh}
+  .hero img.bg{object-position:80% 50%}
+  .hero:after{background:linear-gradient(0deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 50%,rgba(0,0,0,.15) 100%)}
+  .t-c,.t-d,.t-e{grid-column:span 12;min-height:260px}
+  .tile{min-height:280px}
+  .pics{height:360px}
+  .hero .actions .btn{flex:1 1 100%}
+}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="#"><img src="../img/wordmark.webp" alt="Lima Charlie Aero" width="640" height="160"></a>
+  <nav aria-label="Primary"><ul>
+    <li><a href="#">Services</a></li><li><a href="#">ROTAX</a></li><li><a href="#">E-PROPS</a></li><li><a href="#">Our Work</a></li><li><a href="#">About</a></li>
+    <li class="keep"><a class="btn primary" href="#">Request Service</a></li><li class="keep"><button class="menu-toggle" type="button" aria-expanded="false">Menu</button></li>
+  </ul></nav>
+</div></header>
+<main>
+<section class="hero">
+  <img class="bg" src="../img/hero-rotax-1600.webp" alt="" width="1600" height="900" fetchpriority="high">
+  <div class="wrap">
+    <p class="eyebrow">KAKH · Gastonia, North Carolina</p>
+    <h1>Light-sport &amp; experimental aircraft, <em>worked as a complete system.</em></h1>
+    <p>Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.</p>
+    <div class="actions"><a class="btn primary" href="#">Request Service</a><a class="btn ghost" href="#">Call 980.382.1344</a></div>
+  </div>
+</section>
+<div class="trust"><div class="wrap"><ul>
+  <li><b>ROTAX 9-Series</b><span>912 · 914 · 915 · 916</span></li>
+  <li><b>E-PROPS dealer</b><span>Fitment, installation, balance</span></li>
+  <li><b>LSRM-A</b><span>FAA-certificated repairman</span></li>
+  <li><b>By appointment</b><span>Gastonia &amp; the Charlotte region</span></li>
+</ul></div></div>
+
+<section><div class="wrap">
+  <div class="intro"><div><p class="eyebrow">What we work on</p><h2>Bring the aircraft and what you noticed.</h2></div><p>No diagnosis needed. Tell us what changed or what is due, and we will help work out where to start.</p></div>
+  <div class="tiles">
+    <a class="tile t-a" href="#"><img src="../img/hoses-1600.webp" alt="" loading="lazy" width="1280" height="720"><div><h3>ROTAX service &amp; troubleshooting</h3><p>912, 914, 915 and 916. Rough running, fuel pressure, cooling, ignition and five-year rubber.</p></div></a>
+    <a class="tile t-b" href="#"><img src="../img/eprops-close-800.webp" alt="" loading="lazy" width="800" height="800"><div><h3>E-PROPS</h3><p>Selection, fitment, installation planning and dealer support.</p></div></a>
+    <a class="tile t-c" href="#"><img src="../img/dyna-kit-800.webp" alt="" loading="lazy" width="800" height="1067"><div><h3>Vibration &amp; balancing</h3><p>Measured, corrected, re-measured.</p></div></a>
+    <a class="tile t-d" href="#"><img src="../img/bushcat-800.webp" alt="" loading="lazy" width="800" height="600"><div><h3>Prebuy &amp; records</h3><p>The logbooks against the aircraft.</p></div></a>
+    <a class="tile t-e" href="#"><img src="../img/g5-wide-800.webp" alt="" loading="lazy" width="800" height="450"><div><h3>Avionics &amp; electrical</h3><p>Power, grounds, connectors, displays.</p></div></a>
+  </div>
+</div></section>
+
+<section class="band"><div class="grid">
+  <div class="photo"><img src="../img/cowling-800.webp" alt="Light-sport aircraft with the cowling open under a canopy tent on the ramp" loading="lazy" width="800" height="1067"></div>
+  <div class="copy"><p class="eyebrow">The LCA Standard</p><h2>We don't stop at the part that failed.</h2>
+  <p>An aircraft is a system of systems. A fuel symptom can be a cooling problem; a vibration can be a propeller, a gearbox or a mount. We trace how the systems interact, check the records and the approval path, and work the problem until the next step is supportable.</p>
+  <ul><li>Engine</li><li>Propeller</li><li>Fuel</li><li>Cooling</li><li>Electrical</li><li>Avionics</li><li>Airframe</li><li>Controls</li><li>Records</li><li>Approvals</li></ul></div>
+</div></section>
+
+<section class="stories"><div class="wrap">
+  <div class="intro"><div><p class="eyebrow">Our Work</p><h2>Real aircraft. The whole paper trail.</h2></div><p>Each example follows the same path: problem, configuration, evidence, evaluation, action, verification, documentation. Work that is still pending says so.</p></div>
+  <article class="story">
+    <div class="pics"><img src="../img/cage-crack-800.webp" alt="Crack at a steel-tube engine mount joint" loading="lazy" width="800" height="1067"><img src="../img/cage-weld-800.webp" alt="Welded repair at the engine mount joint" loading="lazy" width="800" height="1067"><img src="../img/ndt-report-800.webp" alt="Magnetic-particle inspection report, identifying details redacted" loading="lazy" width="800" height="1048"></div>
+    <div><p class="eyebrow">TL-2000 Sting Sport</p><h3>A cracked engine mount, worked from finding to paper trail.</h3>
+      <ul class="steps"><li>Documented the crack at the mount joint</li><li>Evaluated repair versus replacement with the designer</li><li>Repaired, then held to magnetic-particle NDT acceptance</li><li>Re-work and re-test where required; records kept with the aircraft</li></ul>
+      <span class="pill">Documented process</span> &nbsp;<a class="more" href="#">Read the case</a></div>
+  </article>
+  <article class="story rev">
+    <div class="pics"><img src="../img/eprops-close-800.webp" alt="E-PROPS propeller installed on a light-sport aircraft" loading="lazy" width="800" height="800"><img src="../img/eprops-packet-800.webp" alt="Redacted engineering packet pages" loading="lazy" width="800" height="520"><img src="../img/eprops-checklist-800.webp" alt="Redacted installation checklist pages" loading="lazy" width="800" height="514"></div>
+    <div><p class="eyebrow">Sling 2 · ROTAX 912 iS</p><h3>Qualifying a propeller with the airframe manufacturer.</h3>
+      <ul class="steps"><li>Exact engine, gearbox and propeller configuration</li><li>E-PROPS technical data assembled into a package</li><li>Submitted to Sling engineering for configuration-level review</li><li class="todo">Manufacturer review and validation testing</li></ul>
+      <span class="pill pending">In progress · pending manufacturer review</span> &nbsp;<a class="more" href="#">Read the case</a></div>
+  </article>
+</div></section>
+
+<section><div class="wrap">
+  <div class="intro"><div><p class="eyebrow">How it works</p><h2>Simple to start. Careful from there.</h2></div><p>Service is by appointment at KAKH, Gastonia Municipal Airport.</p></div>
+  <div class="how">
+    <div><b>1 · Tell us</b><p>The aircraft, the engine, and what changed or what is due. A phone photo helps.</p></div>
+    <div><b>2 · We scope it</b><p>We clarify records, access and the approval path, then agree an estimate and schedule.</p></div>
+    <div><b>3 · We document it</b><p>Findings, measurements and work entries you and the next mechanic can follow.</p></div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap people">
+  <img src="../img/founder-800.webp" alt="Joseph Helminiak on the flight line beside a light-sport aircraft" loading="lazy" width="800" height="600">
+  <div><p class="eyebrow">About</p><h2>Built on maintenance and engineering discipline.</h2><p>Lima Charlie Aero was founded by Joseph Helminiak, an FAA-certificated LSRM-A with ROTAX iRMT training and a background in systems engineering, logistics and quality assurance.</p><a class="more" href="#">About the shop</a></div>
+</div></section>
+
+<section class="final"><div class="wrap">
+  <h2>Tell us what your aircraft is doing.</h2><p>We will help you work out the next supportable step.</p>
+  <div class="actions"><a class="btn primary" href="#">Request Service</a><a class="btn ghost" href="#">Call 980.382.1344</a><a class="btn ghost" href="#">Text the Shop</a></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>Lima Charlie Aero LLC · KAKH · Gastonia, NC</span><span><a href="#">Privacy</a> · <a href="#">support@limacharlieaero.com</a></span></div></footer>
+</body>
+</html>
