@@ -16,7 +16,7 @@ const common = {
 };
 const root = process.argv[2];
 if (!['dist','dist-preview'].includes(root)) throw Error('Choose dist or dist-preview');
-const out = path.join('evidence','redesign','corrections',root);
+const out = path.join('evidence','redesign','corrections',root==='dist'?'public':'preview');
 fs.mkdirSync(out,{recursive:true});
 const rows=[];
 const server=await startServer(root,root==='dist'?18081:18082);
