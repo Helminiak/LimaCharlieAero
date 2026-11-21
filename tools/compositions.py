@@ -63,9 +63,10 @@ def home(p,site,img,actions,cases,notices):
     result+=band(f'<div class="intro"><h2>{E(title)}</h2><p>{E(intro)} <a href="/start-with-the-symptom">Start with the symptom</a></p></div><div class="tiles">{tiles}</div>')
     label,title,body=p['system']
     result+='<section class="system-band">'+img.figure('aircraft-open-cowling-under-canopy-800','band')+f'<div><p class="eyebrow">{E(label)}</p><h2>{E(title)}</h2><p>{E(body)}</p>{chips(site["systems"])}<a href="/the-lima-charlie-aero-standard">How we work →</a></div></section>'
-    title,intro=p['stories']
+    title,intro=p['stories'] if cases else p['empty_stories']
+    work_link='Explore our work' if cases else 'See more of our work'
     stories=case_stories(cases[:2],img.figure,True) if cases else gallery(p['proof'][:4],img)
-    result+=band(f'<div class="intro"><h2>{E(title)}</h2><p>{E(intro)}</p></div>{stories}<a href="/our-work">Explore our work</a>','sand')
+    result+=band(f'<div class="intro"><h2>{E(title)}</h2><p>{E(intro)}</p></div>{stories}<a href="/our-work">{work_link}</a>','sand')
     result+=band('<h2>'+E(p['method'])+'</h2>'+step_list(p['steps']))
     if notices:result+=band(notices,'notice-section')
     label,title,body=p['founder']
@@ -107,7 +108,7 @@ def service_page(key,p,pages,site,img,actions,cases,notices,table):
     proof=p['proof']
     if key=='rotax-gearbox-propeller-vibration':
         pair=[i for i in proof if 'dynavibe-' in i['proof_id'] and ('good-' in i['proof_id'] or 'bad-' in i['proof_id'])]
-        result+=band('<h2>Before and after the correction</h2><div class="pair">'+''.join(img.figure(i['proof_id'],caption=t) for i,t in zip(sorted(pair,key=lambda i:i['proof_id']),['Initial measurement: 1.27 IPS.','After correction: 0.04 IPS.']))+'</div><p>Measured 1.27 IPS → 0.04 IPS after correction.</p>')
+        result+=band('<h2>Measured, not guessed</h2><div class="pair">'+''.join(img.figure(i['proof_id'],caption=i['caption']) for i in pair)+'</div>')
         proof=[i for i in proof if i not in pair]
     result+=band('<h2>From the work</h2>'+gallery(proof[:4],img))
     used.update(i for i, section in enumerate(sections)
@@ -116,7 +117,7 @@ def service_page(key,p,pages,site,img,actions,cases,notices,table):
     result+=band('<h2>Service details</h2>'+table+themed_sections(p,site,used,extra),'sand')
     if key in ['rotax-915-916-turbo-ems-support','rotax-gearbox-propeller-vibration']:result+=band(notices)
     related=related_cases(cases,plan.get('cases',[]))
-    return result+band('<aside class="limits"><h2>Authorization &amp; limits</h2><p>'+E(model['limits'])+'</p></aside>'+related+links([('/services','All services'),('/our-work','Our Work')]))+band(actions(p['topic']),'final')
+    return result+band('<aside class="limits"><h2>'+E(model.get('limits_heading','Authorization & limits'))+'</h2><p>'+E(model['limits'])+'</p></aside>'+related+links([('/services','All services'),('/our-work','Our Work')]))+band(actions(p['topic']),'final')
 
 def showcase(key,p,pages,site,img,actions,cases,notices,table):
     if key=='index':return home(p,site,img,actions,cases,notices)
@@ -124,7 +125,8 @@ def showcase(key,p,pages,site,img,actions,cases,notices,table):
     result=hero(p,key,img,actions)
     if key=='our-work':
         legend='<ol class="legend">'+''.join(f'<li><b>{name}</b> {text}</li>' for name,text in STAGES.items())+'</ol>'
-        return result+band('<h2>How we document the work</h2>'+legend)+band(case_stories(cases,img.figure) if cases else '<h2>Evidence from the work</h2>'+gallery(pages['index']['proof'][:4],img)+links([('/rotax-installation-review','Installation review'),('/rotax-gearbox-propeller-vibration','Vibration measurements')]),'sand')+band('<aside class="limits"><h2>What these cases do and don’t show</h2><p>'+E(p['limits'])+'</p></aside>'+actions())
+        limits_title = 'What these cases do and don’t show' if cases else 'What these photographs show'
+        return result+band('<h2>How we document the work</h2>'+legend)+band(case_stories(cases,img.figure) if cases else '<h2>Evidence from the work</h2>'+gallery(pages['index']['proof'][:4],img)+links([('/rotax-installation-review','Installation review'),('/rotax-gearbox-propeller-vibration','Vibration measurements')]),'sand')+band('<aside class="limits"><h2>'+limits_title+'</h2><p>'+E(p['limits'])+'</p></aside>'+actions())
     if key=='services':
         rows=[(t['destination'],t['title'],t.get('index_image',t['image']),t['line']) for t in pages['index']['tiles']]
         result+=band('<h2>Aircraft systems and service paths</h2>'+system_map(site))+band('<h2>Choose a starting point</h2>'+service_index(rows,img),'sand')
@@ -142,7 +144,9 @@ def showcase(key,p,pages,site,img,actions,cases,notices,table):
     for n,s in enumerate([] if p.get('themes') else p['sections']):
         if key=='the-lima-charlie-aero-standard' and s['heading'][:1].isdigit():continue
         ident='credentials' if key=='contact' and n==1 else f'section-{n+1}'
-        if len(p['sections'])>5 or key=='faq':substantive.append(details(s,site,ident))
+        if key=='faq':
+            substantive.append(f'<div id="{ident}">'+details(s,site,f'question-{n+1}')+'</div>')
+        elif len(p['sections'])>5:substantive.append(details(s,site,ident))
         else:substantive.append(f'<section id="{ident}"><h2>{E(s["heading"])}</h2>'+paragraph(s,site)+'</section>')
     if substantive:result+=band('<div class="prose">'+''.join(substantive)+'</div>')
     if p.get('proof') and key!='the-lima-charlie-aero-standard':result+=band('<h2>From the work</h2>'+gallery(p['proof'],img),'sand')

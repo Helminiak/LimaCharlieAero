@@ -393,7 +393,7 @@
       "records-first-inspection-planning"
     ],
     "topic": "service",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "proof": [
       {
         "proof_id": "differential-pressure-tester-clean-800",
@@ -414,7 +414,7 @@
         "Airframe",
         "Records"
       ],
-      "limits": "Light-sport-category aircraft can be returned to service by an LSRM-A after maintenance and inspection within the rating's limits. Experimental aircraft condition inspections follow the aircraft's operating limitations. Major repairs and alterations follow the applicable manufacturer or FAA-approved data.",
+      "limits": "Under 14 CFR 65.109(b), a light-sport repairman certificate with a maintenance rating allows approval for return to service of light-sport-category aircraft, except a major repair or major alteration of a product produced under an FAA approval. For experimental aircraft certificated under §21.191(g), (i), (k) or (l), it allows the annual condition inspection. Work is limited to the aircraft category and class the repairman is trained for, and a major repair requires additional FAA-accepted training. If a job falls outside those limits, we tell you before work starts.",
       "layout": {
         "situation": 0,
         "systems": 1,
@@ -432,7 +432,8 @@
         "cases": [
           "searey-evaluation"
         ]
-      }
+      },
+      "limits_heading": "What a light-sport repairman can sign off"
     },
     "themes": [
       "Aircraft category & privileges",
@@ -1157,7 +1158,7 @@
       },
       {
         "heading": "Facts Before Guessing.",
-        "text": "Lima Charlie Aero exists for the aircraft owner who knows something is not right but does not yet know whether the issue is ignition, fuel, cooling, rubber, gearbox, propeller, installation, records, or service-interval related. From there, Lima Charlie Aero works to identify the next supportable step. That may be a ROTAX service-planning discussion, an aircraft records review, a prebuy risk discussion, manufacturer coordination, dynamic propeller/vibration support, or a referral path when the issue is outside the supported scope. Credentials / Boundaries",
+        "text": "Lima Charlie Aero exists for the aircraft owner who knows something is not right but does not yet know whether the issue is ignition, fuel, cooling, rubber, gearbox, propeller, installation, records, or service-interval related. From there, Lima Charlie Aero works to identify the next supportable step. That may be a ROTAX service-planning discussion, an aircraft records review, a prebuy risk discussion, manufacturer coordination, dynamic propeller/vibration support, or a referral path when the issue is outside the supported scope.",
         "theme": "Approach to aircraft support"
       },
       {
@@ -1195,7 +1196,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "unsure",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "proof": [
       {
         "src": "assets/images/proof/aircraft-side-canopy-joe-working-800.webp",
@@ -1335,12 +1336,12 @@
       "propeller-documentation-bridge-heading"
     ],
     "topic": "symptom",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "proof": [
       {
         "src": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
         "alt": "DynaVibe instrument displaying a vibration reading",
-        "caption": "This DynaVibe reading is 1.27 IPS.",
+        "caption": "A DynaVibe reading of 1.27 IPS.",
         "proof_id": "dynavibe-bad-1-27-ips-800"
       },
       {
@@ -1364,7 +1365,7 @@
       {
         "src": "assets/images/proof/dynavibe-good-0-04-ips-800.webp",
         "alt": "DynaVibe instrument displaying a separate vibration reading",
-        "caption": "This separate display records 0.04 IPS.",
+        "caption": "A DynaVibe reading of 0.04 IPS.",
         "proof_id": "dynavibe-good-0-04-ips-800"
       },
       {
@@ -1622,7 +1623,7 @@
       },
       {
         "heading": "Small installation details can have large effects",
-        "text": "Exhaust condition, heat shielding, sensor placement, wiring support, ground paths, connector security, and chafe protection can change how a ROTAX 9 Series installation behaves. On 915 iS and 916 iS aircraft, EMS/ECU context, turbo-related routing, intercooler layout, and heat management add another layer of installation review. Service access is part of the standard. If a component cannot be inspected, adjusted, secured, or documented without fighting the installation, the aircraft may be harder to support even when the engine itself is healthy. Propeller / Gearbox Interface",
+        "text": "Exhaust condition, heat shielding, sensor placement, wiring support, ground paths, connector security, and chafe protection can change how a ROTAX 9 Series installation behaves. On 915 iS and 916 iS aircraft, EMS/ECU context, turbo-related routing, intercooler layout, and heat management add another layer of installation review. Service access is part of the standard. If a component cannot be inspected, adjusted, secured, or documented without fighting the installation, the aircraft may be harder to support even when the engine itself is healthy.",
         "items": [],
         "theme": "System relationships"
       },
@@ -1668,7 +1669,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "service",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "proof": [
       {
         "src": "assets/images/proof/rotax-engine-on-hoist-800.webp",
@@ -1770,7 +1771,7 @@
       },
       {
         "heading": "Work the Symptom, Configuration, and Aircraft Context Together.",
-        "text": "This service line extends the same root-cause approach used on the ROTAX side of the business. The goal is not to guess and swap parts. The goal is to understand the symptom, review the aircraft context, and define a clear practical next step. Support is focused on LSA, E-LSA, and experimental aircraft, with owner-facing communication that keeps technical findings understandable. Avionics / Electrical",
+        "text": "This service line extends the same root-cause approach used on the ROTAX side of the business. The goal is not to guess and swap parts. The goal is to understand the symptom, review the aircraft context, and define a clear practical next step. Support is focused on LSA, E-LSA, and experimental aircraft, with owner-facing communication that keeps technical findings understandable.",
         "items": [],
         "theme": "Configuration & scope"
       },
@@ -1835,7 +1836,7 @@
       "avionics-proof"
     ],
     "topic": "avionics",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "proof": [
       {
         "src": "assets/images/proof/garmin-g5-installed-panel-close-800.webp",
@@ -2106,7 +2107,7 @@
       "home-eprops-heading"
     ],
     "topic": "unsure",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "proof": [
       {
         "src": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
@@ -2221,7 +2222,11 @@
       "Tell us what your aircraft is doing.",
       "We'll help you work out the next supportable step."
     ],
-    "hero_id": "rotax-support-hero-original-photo"
+    "hero_id": "rotax-support-hero-original-photo",
+    "empty_stories": [
+      "From the hangar floor.",
+      "Readings, findings and records from real aircraft."
+    ]
   },
   "rotax-915-916-turbo-ems-support": {
     "title": "ROTAX 914 / 915 / 916 turbo and engine warnings",
@@ -4162,9 +4167,14 @@
     "sections": [],
     "images": [],
     "topic": "unsure",
-    "last_modified": "2026-11-20",
+    "last_modified": "2026-11-21",
     "intro": "Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.",
     "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft.",
-    "hero_id": "aircraft-open-cowling-under-canopy-800"
+    "hero_id": "gearbox-pocket-wear-1-800",
+    "empty": {
+      "title": "Our Work: Evidence from Light-Sport & Experimental Aircraft",
+      "description": "Photographs and measurements from aircraft we have worked on: what was found and how it was documented. Detailed case records are published after the aircraft owner has reviewed them.",
+      "intro": "Photographs and measurements from aircraft we have worked on: what was found and how it was documented. Detailed case records are published after the aircraft owner has reviewed them."
+    }
   }
 }

@@ -3,7 +3,7 @@
     "slug": "rotax-gearbox-notice",
     "type": "notice",
     "title": "ROTAX gearbox notice: check engine and gearbox identification",
-    "summary": "Selected 912, 914 and 912 i engines or replacement gearboxes need an applicability review.",
+    "summary": "FAA AD 2026-16-11 (effective August 28, 2026) applies to certified ROTAX 912 F2/F3/F4, 912 S2/S3/S4, 912 A1/A2/A3, 912 iSc2/iSc3 Sport and 914 F2/F3/F4 engines installed in the type-certificated aircraft listed in the AD's Table 1, where the gearbox serial number is listed in ROTAX ASB-2026-001. It does not apply to ASTM-standard 912 UL, ULS or iS Sport engines. Owners of those engines should check ROTAX ASB-2026-001 and the aircraft manufacturer's instructions for applicability. Check your engine model, gearbox serial number and aircraft against the official documents linked below.",
     "body": [
       "The manufacturer document identifies suspect gearbox and engine serial numbers. Gearbox replacement history matters as well as the original engine identity.",
       "Use the manufacturer document and its referenced certified-engine instructions to establish the action and timing for your installation. Contact Lima Charlie Aero with engine and gearbox identification if known, and relevant service history. Do not treat a website summary as a compliance determination.",
@@ -21,8 +21,8 @@
     "topic": "notice",
     "state": "published",
     "published": "2026-10-04",
-    "last_modified": "2026-10-05",
-    "last_review": "2026-11-20",
+    "last_modified": "2026-11-21",
+    "last_review": "2026-11-21",
     "next_review": "2026-12-20",
     "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
     "owner_question": "Does the gearbox notice affect my aircraft?"
@@ -48,11 +48,12 @@
     "topic": "notice",
     "state": "published",
     "published": "2026-10-04",
-    "last_modified": "2026-11-20",
-    "last_review": "2026-11-20",
+    "last_modified": "2026-11-21",
+    "last_review": "2026-11-21",
     "next_review": "2026-12-20",
-    "reviewer": "Lima Charlie Aero technical review",
-    "owner_question": "Does the turbocharger notice affect my aircraft?"
+    "reviewer": "",
+    "owner_question": "Does the turbocharger notice affect my aircraft?",
+    "source_note": "Prepared from the FAA AD and ROTAX bulletin linked below; dates and engine scope checked against those documents on November 21, 2026."
   },
   {
     "slug": "start-with-the-symptom",

@@ -63,6 +63,8 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         (out / (key + '.html')).write_text(markup, encoding='utf-8', newline='\n')
         routes.append({'route': route, 'file': key + '.html', 'last_modified': p.get('last_modified', site['date']), 'indexed': indexed})
     for key, p in pages.items():
+        if key == 'our-work' and not cases:
+            p = {**p, **p['empty']}
         if key == 'card':
             body = f'''<div class="container"><section class="utility-card"><h1>{E(p['heading'])}</h1><p>{E(p['intro'])}</p><p>ROTAX · Light-sport · E-PROPS · Avionics</p><a class="button" href="{asset('assets/downloads/joseph-helminiak-lima-charlie-aero.vcf')}" download="Joseph-Helminiak-Lima-Charlie-Aero.vcf">Save contact</a>{actions()}<a href="mailto:{site['email']}">{site['email']}</a></section></div>'''
         else:
@@ -77,6 +79,8 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         p = {'title': r['title'], 'description': r['summary'], 'last_modified': r['last_modified']}
         meta = f"""<p class="meta">Published {r['published']} · Substantive update {r['last_modified']}""" + (f" · Source checked {r['last_review']}" if r['type'] == 'notice' else '') + '</p>'
         review = f"""<p class="source-note">Review status: source checked {r['last_review']}; next review {r['next_review']}. Reviewer: {E(r['reviewer'])}.</p>""" if r['type'] == 'notice' else ''
+        if r.get('source_note'):
+            review = '<p class="source-note">' + E(r['source_note']) + '</p>'
         state = f"""<p class="notice-strip">This entry is {r['state']}. """ + (f"""<a href="/{E(r['replaced_by'])}">Read the replacement notice</a>.""" if r.get('replaced_by') else 'It is retained for reference; check current source documents.') + '</p>' if r['state'] != 'published' else ''
         doc = f"""<p><strong>Manufacturer reference:</strong> {E(r['document'])} · Issue {r['issue_date']}</p><p class="meta">Supersedes {E(r.get('supersedes', ''))}. Source documents were checked; this is not an aircraft compliance determination. Check the manufacturer portal for later revisions.</p>""" + review if r['type'] == 'notice' else ''
         sources = '<h2>Official source documents</h2><ul class="source-list">' + ''.join((f'''<li><a href="{safe_link(u)}">{('Manufacturer document: ' + E(r.get('document', '')) if i == 0 else 'ROTAX technical documentation portal' if 'technical-documentation' in u else ('FAA AD 2026-22-03 — official rule' if '2026-22307' in u else 'FAA AD 2026-16-11 — official rule') if 'govinfo.gov' in u else 'EASA AD 2026-0170 — official record' if 'ad.easa.europa.eu' in u else urlparse(u).netloc)}</a></li>''' for i, u in enumerate(r['sources']))) + '</ul>' if r['sources'] else ''

@@ -211,6 +211,8 @@ textarea { min-height: 100px; }
 .case-panel { display: grid; align-content: center; justify-items: start; gap: 12px; padding: clamp(16px,3vw,40px); border-radius: 8px; background: var(--navy); }
 .case-panel .stage-rail::before { background: white; }
 .case-panel .stage-rail li { border-color: white; }
+.case-panel .stage-rail .done { background: white; color: var(--navy); }
+.case-panel .stage-rail .pending { background: transparent; color: white; }
 .case-panel .pill { margin: 0; }
 .case-evidence { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 16px; }
 .case-evidence:not(:empty) { margin-block: 20px; }
@@ -236,15 +238,17 @@ textarea { min-height: 100px; }
   .case-intro h2 { font-size: clamp(1.8rem,2.2vw,2.1rem); }
   .case-intro h3 { font-size: 1.2rem; }
   .case-intro .stage-rail { margin-top: 0; }
-  .case-stages section { display: block; padding-block: 9px; }
+  .case-stages section { display: block; padding-block: 7px; }
   .case-stages h3,.case-stages p { display: inline; }
   .case-stages h3 { margin-right: .5em; }
   .case-evidence,.case-strip { grid-template-columns: repeat(3,minmax(0,1fr)); }
   .case-strip { max-width: none; margin-top: 16px; }
   .case-evidence .document { grid-column: auto; }
+  .case-evidence .document:has([data-subject="ndt-magnetic-particle-report"]) { grid-column: span 2; }
+  .legend b { overflow-wrap: normal; }
+  .legend { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
 }
 @media(min-width:1200px) {
-  .legend { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 16px; }
   .method:has(> :nth-child(7)) { grid-template-columns: repeat(12,minmax(0,1fr)); }
   .method:has(> :nth-child(7)) li { grid-column: span 3; }
   .method:has(> :nth-child(7)) li:nth-child(n+5) { grid-column: span 4; }
