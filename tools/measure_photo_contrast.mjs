@@ -1,3 +1,4 @@
+import {prepareCapture} from './prepare_capture.mjs';
 import {chromium} from 'playwright';
 import {startServer, save} from './test-server.mjs';
 
@@ -9,11 +10,7 @@ try {
   for (const width of [320,375,390,768,1024,1440]) {
     await page.setViewportSize({width,height:width < 768 ? 844 : 900});
     await page.goto(server.url);
-    await page.evaluate(async () => {
-      for (const image of document.images) image.loading = 'eager';
-      await Promise.all([...document.images].map(image => image.decode()));
-      await document.fonts.ready;
-    });
+    await prepareCapture(page);
     const selector = '.hero-copy p,.hero-copy h1,.hero-copy a,.tile h3,.tile p';
     const boxes = await page.locator(selector).evaluateAll(elements => {
       const results = [];

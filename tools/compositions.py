@@ -126,7 +126,7 @@ def showcase(key,p,pages,site,img,actions,cases,notices,table):
         legend='<ol class="legend">'+''.join(f'<li><b>{name}</b> {text}</li>' for name,text in STAGES.items())+'</ol>'
         return result+band('<h2>How we document the work</h2>'+legend)+band(case_stories(cases,img.figure) if cases else '<h2>Evidence from the work</h2>'+gallery(pages['index']['proof'][:4],img)+links([('/rotax-installation-review','Installation review'),('/rotax-gearbox-propeller-vibration','Vibration measurements')]),'sand')+band('<aside class="limits"><h2>What these cases do and don’t show</h2><p>'+E(p['limits'])+'</p></aside>'+actions())
     if key=='services':
-        rows=[(t['destination'],t['title'],t['image'],t['line']) for t in pages['index']['tiles']]
+        rows=[(t['destination'],t['title'],t.get('index_image',t['image']),t['line']) for t in pages['index']['tiles']]
         result+=band('<h2>Aircraft systems and service paths</h2>'+system_map(site))+band('<h2>Choose a starting point</h2>'+service_index(rows,img),'sand')
     if key=='the-lima-charlie-aero-standard':
         result+=band('<h2>One aircraft, ten connected systems</h2>'+system_map(site))

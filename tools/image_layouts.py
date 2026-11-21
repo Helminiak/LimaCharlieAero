@@ -38,8 +38,7 @@ class Images:
         if self.registry[subject].get('document') and role in {'evidence', 'case'}:
             natural += ' document'
             original = self.assets[self.registry[subject]['asset']]
-            img = f'<a class="document-link" href="{original}" aria-label="Open full size: {E(caption)}">{img}</a>'
-            caption += ' Open full size.'
+            img = f'<a class="document-link" href="{original}" aria-label="Open full size: {E(caption)}">{img}<span>Open full size</span></a>'
         return f'<figure class="{role}-figure{natural}">{img}<figcaption>{label}{E(caption)}</figcaption></figure>'
 
     def home_picture(self, subject):

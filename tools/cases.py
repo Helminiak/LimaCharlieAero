@@ -87,7 +87,7 @@ def case_stories(cases, figure, compact=False):
             limits = ''
             if case.get('limits'):
                 limits = f'<aside class="limits"><b>What this does and does not show</b><p>{E(case["limits"])}</p></aside>'
-            body = (f'<div class="case-intro">{head}{rail}<h3>Problem</h3>{problem}</div>'
+            body = (f'<div class="case-intro"><div>{head}</div><div>{rail}<h3>Problem</h3>{problem}</div></div>'
                     + f'<div class="case-strip">{strip}</div>'
                     + '<details class="case-record"><summary>Full case record</summary>'
                     + '<div class="case-stages">' + ''.join(sections) + '</div>'

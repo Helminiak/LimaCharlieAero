@@ -64,7 +64,8 @@ button,summary { cursor: pointer; }
 .proof-grid { align-items: start; }
 .proof-grid > :only-child { grid-column: 1/-1; max-width: 32rem; }
 .proof-grid .document { grid-column: 1/-1; max-width: 56rem; }
-.document .document-link { display: block; width: fit-content; }
+.section .document a.document-link { display: block; width: fit-content; max-width: 100%; }
+.document-link span { font-size: .9rem; }
 .document img { width: auto; max-width: 100%; }
 .case-strip:empty,.proof-grid:empty { display:none; }
 .proof-grid,.method,.legend { margin-block: 24px; }
@@ -228,9 +229,17 @@ textarea { min-height: 100px; }
   .case-evidence .document { grid-column: auto; }
 }
 @media(min-width:1024px) {
+  .case-story:has(.case-record) { padding-block: 20px; }
+  .case-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .case-intro h2 { font-size: clamp(1.8rem,2.2vw,2.1rem); }
+  .case-intro h3 { font-size: 1.2rem; }
+  .case-intro .stage-rail { margin-top: 0; }
+  .case-stages section { display: block; padding-block: 9px; }
+  .case-stages h3,.case-stages p { display: inline; }
+  .case-stages h3 { margin-right: .5em; }
   .case-evidence,.case-strip { grid-template-columns: repeat(3,minmax(0,1fr)); }
-  .case-strip { max-width: none; }
-  .case-evidence .document { grid-column: span 2; }
+  .case-strip { max-width: none; margin-top: 16px; }
+  .case-evidence .document { grid-column: auto; }
 }
 @media(min-width:1200px) {
   .legend,.method:has(> :nth-child(7)) { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 16px; }

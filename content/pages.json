@@ -633,7 +633,7 @@
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
-        "caption": "A logbook entry with identifying details masked.",
+        "caption": "Logbooks with private entry details masked.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
@@ -883,7 +883,7 @@
         "caption": "The gearbox pocket shows wear on its inner surface."
       }
     ],
-    "hero_id": "rotax-airbox-focus",
+    "hero_id": "rotax-engine-installed-green-covers",
     "service": {
       "systems": [
         "Engine",
@@ -2144,7 +2144,8 @@
         "title": "ROTAX service & troubleshooting",
         "line": "912, 914, 915 and 916: rough running, fuel pressure, cooling, ignition, five-year rubber.",
         "destination": "/rotax-engine-systems-support",
-        "image": "rotax-installed-hoses-overview"
+        "image": "rotax-installed-hoses-overview",
+        "index_image": "rotax-engine-installed-green-covers"
       },
       {
         "title": "E-PROPS",
@@ -2973,7 +2974,7 @@
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
     ],
-    "hero_id": "rotax-engine-installed-green-covers",
+    "hero_id": "rotax-airbox-focus",
     "service": {
       "systems": [
         "Engine",
@@ -3171,7 +3172,7 @@
         "caption": "The redacted report excerpt lists the inspected regions and their recorded findings."
       }
     ],
-    "hero_id": "eprops-engineering-packet-fanout-1200-clean",
+    "hero_id": "aircraft-open-cowling-under-canopy-800",
     "service": {
       "systems": [
         "Records",
@@ -4146,7 +4147,7 @@
         "proof_id": "carbmate-carb-sync-kit-card-800"
       }
     ],
-    "hero_id": "rotax-support-hero-original-photo",
+    "hero_id": "rotax-installed-hoses-overview",
     "themes": [
       "Plan the visit",
       "ROTAX maintenance",

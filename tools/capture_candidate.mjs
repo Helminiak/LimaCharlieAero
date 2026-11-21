@@ -1,3 +1,4 @@
+import {prepareCapture} from './prepare_capture.mjs';
 import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
 import {chromium} from 'playwright';
@@ -24,11 +25,9 @@ try {
     for(const width of widths) {
       await page.setViewportSize({width,height:width<768?844:900});
       await page.goto(server.url+route.route);
+      await prepareCapture(page);
       const metrics=await page.evaluate(async()=>{
         const visibleImages=[...document.images].filter(i=>i.getClientRects().length);
-        visibleImages.forEach(i=>i.loading='eager');
-        await Promise.all(visibleImages.map(i=>i.decode()));
-        await document.fonts.ready;
         const rect=el=>{
           const {x,y,width,height}=el.getBoundingClientRect();
           return {x,y,width,height};
