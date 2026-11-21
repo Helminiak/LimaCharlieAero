@@ -21,17 +21,32 @@ try{
   try{browser=await type.launch({headless:true,timeout:15000,...(name==='chromium'&&process.env.LCA_CHROMIUM_EXECUTABLE?{executablePath:process.env.LCA_CHROMIUM_EXECUTABLE}:{}),...(name==='firefox'?{env:{...process.env,MOZ_DISABLE_CONTENT_SANDBOX:'1'}}:{})});result.engines.push({name,version:browser.version(),status:'PASS',emulated:true});console.log('Checking '+name+' '+browser.version())}catch(e){result.engines.push({name,status:'BLOCKED',reason:String(e).slice(0,2200)});continue}
   const context=await browser.newContext({reducedMotion:'reduce'});await context.route('https://formspree.io/**',r=>r.abort());const page=await context.newPage();page.on('pageerror',e=>result.console_errors.push({engine:name,error:String(e)}));
   const testRoutes=name==='chromium'?routes:routes.filter(r=>['/','/support-request','/e-props-dealer-support','/light-sport-prebuy-evaluation','/rotax-turbocharger-notice','/faq','/card'].includes(r.route));
-  for(const route of testRoutes){for(const width of [320,375,390,768,1024,1440]){await page.setViewportSize({width,height:width<768?844:900});await page.goto(server.url+route.route);await page.evaluate(async()=>{for(const i of document.images){i.scrollIntoView({block:'center'});await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,2500))])};window.scrollTo(0,0)});const metrics=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,broken:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),h1:document.querySelectorAll('h1').length}));check(metrics.scrollWidth<=width+1,'Overflow '+name+' '+route.route+' '+width);check(metrics.broken.length===0,'Broken image '+route.route);check(metrics.h1===1,'Heading '+route.route);result.layouts.push({engine:name,route:route.route,width,...metrics})}
+  for(const route of testRoutes){for(const width of [320,375,390,768,1024,1440]){await page.setViewportSize({width,height:width<768?844:900});await page.goto(server.url+route.route);await page.evaluate(async()=>{for(const i of document.images)i.loading='eager';await Promise.all([...document.images].map(i=>i.decode()));await document.fonts.ready});const metrics=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,broken:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),h1:document.querySelectorAll('h1').length}));check(metrics.scrollWidth<=width+1,'Overflow '+name+' '+route.route+' '+width);check(metrics.broken.length===0,'Broken image '+route.route);check(metrics.h1===1,'Heading '+route.route);result.layouts.push({engine:name,route:route.route,width,...metrics})}
    if(name==='chromium'){await page.setViewportSize({width:390,height:844});await page.goto(server.url+route.route);const a=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();result.axe.push({route:route.route,violations:a.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})),incomplete:a.incomplete.map(v=>({id:v.id,nodes:v.nodes.length}))});check(a.violations.length===0,'Axe violation '+route.route+': '+a.violations.map(v=>v.id).join(','))}
   }
-  await page.setViewportSize({width:390,height:844});await page.goto(server.url+'/support-request');const first=await page.locator('#support-name').boundingBox();check(first.y+first.height<844,'First field below fold');const legend=await page.locator('legend').boundingBox();check(legend.y<844,'Form heading below fold');result.manual.push({engine:name,test:'390×844 form introduction and first field visible without scroll',status:'PASS',first_field:first});
+  await page.setViewportSize({width:390,height:844});await page.goto(server.url+'/support-request');const first=await page.locator('#support-name').boundingBox();check(first.y+first.height<844,'First field below fold');const legend=await page.locator('legend').first().boundingBox();check(legend.y<844,'Form heading below fold');result.manual.push({engine:name,test:'390×844 form introduction and first field visible without scroll',status:'PASS',first_field:first});
   await page.setViewportSize({width:1366,height:768});await page.goto(server.url+'/support-request');const desktop=await page.locator('#support-name').boundingBox();check(desktop.y+desktop.height<768,'Desktop first field below fold');
   await page.setViewportSize({width:844,height:390});for(const route of ['/','/support-request','/card']){await page.goto(server.url+route);check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Landscape overflow '+route)}
   await page.setViewportSize({width:320,height:844});await page.goto(server.url+'/support-request');await page.evaluate(()=>{const all=[...document.querySelectorAll('body,body *')].map(el=>[el,getComputedStyle(el).fontSize]);for(const [el,size] of all)el.style.fontSize=(parseFloat(size)*2)+'px'});check(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'200% text overflow');result.manual.push({engine:name,test:'200% computed text enlargement at 320 CSS px and 844×390 landscape',status:'PASS',method:'CSS font enlargement; not a physical-device or OS browser-zoom test'});
   await page.setViewportSize({width:390,height:844});await page.goto(server.url+'/');await page.keyboard.press('Tab');check(await page.locator('.skip').evaluate(el=>el===document.activeElement),'Skip link first');await page.keyboard.press('Enter');check(await page.locator('main').evaluate(el=>el===document.activeElement),'Skip target focus');await page.locator('[data-menu]').click();check(await page.locator('[data-menu]').getAttribute('aria-expanded')==='true','Menu open');await page.keyboard.press('Escape');check(await page.locator('[data-menu]').getAttribute('aria-expanded')==='false','Menu escape');check(await page.locator('[data-menu]').evaluate(el=>el===document.activeElement),'Menu focus');await page.goto(server.url+'/faq');const question=page.locator('.prose summary').first();await question.focus();await page.keyboard.press('Enter');check(await page.locator('.prose details').first().getAttribute('open')!==null,'FAQ keyboard');result.manual.push({engine:name,test:'Keyboard skip, menu open/Escape/focus, FAQ disclosure; reduced motion with no automatic carousel',status:'PASS'});
   if(name==='chromium'){
+   await page.setViewportSize({width:320,height:844});await page.goto(server.url+'/light-sport-prebuy-evaluation');
+   const region=page.getByRole('region',{name:'Prebuy review options'});
+   await region.focus();await page.keyboard.press('ArrowRight');await page.waitForFunction(()=>document.querySelector('.table-wrap').scrollLeft>0);
+   check(await region.evaluate(el=>el===document.activeElement && getComputedStyle(el).overflowX==='auto'),'Keyboard table scrolling');
+   result.manual.push({test:'Prebuy comparison region scrolls with the keyboard at 320px',status:'PASS'});
+   await page.goto(server.url+'/our-work');
+   const records=page.locator('.case-record');
+   if(await records.count()){
+    check(await records.evaluateAll(all=>all.every(el=>!el.open)),'Mobile records collapsed');
+    await page.setViewportSize({width:1024,height:900});
+    await page.waitForFunction(()=>[...document.querySelectorAll('.case-record')].every(el=>el.open));
+    const expanded=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();
+    check(!expanded.violations.length,'Expanded case accessibility');
+    result.manual.push({test:'Five full records open at desktop breakpoint and pass axe expanded',status:'PASS',count:await records.count()});
+   }
    await page.goto(server.url+'/');const contrast=[];for(const sel of ['.flight-hero .button','.trust b','.tile h3']){const loc=page.locator(sel).first();for(const state of ['normal','hover','focus']){await page.mouse.move(0,0);if(state==='hover')await loc.hover();if(state==='focus')await loc.focus();contrast.push({selector:sel,state,...await loc.evaluate(el=>{const s=getComputedStyle(el);let parent=el,bg=s.backgroundColor;while(bg==='rgba(0, 0, 0, 0)'&&parent.parentElement){parent=parent.parentElement;bg=getComputedStyle(parent).backgroundColor}return {foreground:s.color,background:bg,outline:s.outlineColor,font_size:s.fontSize}})})}}result.contrast=contrast;
-   const fpage=await context.newPage();await fpage.unroute('https://formspree.io/**');let requests=[];
+   const fpage=await context.newPage();let requests=[];
    async function setup(path='/support-request',mode='success'){
     await fpage.unroute('https://formspree.io/**');await fpage.route('https://formspree.io/**',async r=>{requests.push({method:r.request().method,body:r.request().postData()});if(mode==='offline')return r.abort('internetdisconnected');if(mode==='timeout')return;const status=mode==='reject'?400:mode==='rate'?429:mode==='server'?500:200;await new Promise(resolve=>setTimeout(resolve,100));await r.fulfill({status,contentType:'application/json',headers:{'Access-Control-Allow-Origin':'*'},body:mode==='unconfirmed'?JSON.stringify({note:'no acceptance marker'}):JSON.stringify(status===200?{ok:true}:{errors:[{field:'email',message:'Mock provider rejected this email'}]})})});await fpage.goto(server.url+path);requests=[];
    }
@@ -39,11 +54,49 @@ try{
    async function send(){await fpage.locator('#aircraft-intake-form button[type=submit]').click();await fpage.locator('#form-status:not([hidden])').waitFor({timeout:20000});}
    await setup();check(await fpage.locator('#support-topic').inputValue()==='','Neutral topic');check(await fpage.locator('#support-urgency').inputValue()==='','Neutral urgency');await send();check(requests.length===0,'Empty form submitted');check(await fpage.locator('#support-name').getAttribute('aria-invalid')==='true','Required field error');result.forms.push({test:'Neutral initial topic/timing and empty validation',status:'PASS',kind:'LOCAL MOCK'});
    for(const [query,method] of [['equipment','email'],['symptom','email'],['service','phone'],['prebuy','email'],['eprops','phone'],['avionics','email'],['notice','phone'],['records','email'],['unsure','email']]){await setup('/support-request?topic='+query);check(await fpage.locator('#support-topic').inputValue()===query,'Prefill '+query);check(await fpage.locator('#topic-prefill').isVisible(),'Prefill visible');check(!fpage.url().includes('?'),'Query retained');await fill(method);await send();check(requests.length===1,'Submission count '+query);check((await fpage.locator('#form-status').textContent()).startsWith('Request submitted.'),'Mock acceptance '+query);check(!requests[0].body.includes('name="n_number"'),'Required tail unexpectedly sent');result.forms.push({test:query+' owner path with '+method+' only, unknown technical details and accepted mock',status:'PASS',kind:'LOCAL MOCK',request_count:requests.length})}
+   await setup('/support-request?request=rotax-asb-review');check(await fpage.locator('#support-topic').inputValue()==='notice','Legacy notice topic');result.forms.push({test:'Legacy ASB review request selects notice',status:'PASS'});
    await setup('/support-request?topic=invalid&name=do-not-copy');check(await fpage.locator('#support-topic').inputValue()==='','Invalid topic accepted');await fill();await fpage.locator('#support-email').fill('invalid-email');await send();check(requests.length===0,'Malformed email sent');result.forms.push({test:'Invalid/stale query and malformed email',status:'PASS',kind:'LOCAL MOCK'});
    for(const mode of ['reject','rate','server','offline','unconfirmed','timeout']){await setup('/support-request',mode);await fill();await send();check(await fpage.locator('#support-message').inputValue()!=='','Data lost after '+mode);check(!((await fpage.locator('#form-status').textContent()).startsWith('Request submitted.')),'False acceptance '+mode);check(!(await fpage.locator('#aircraft-intake-form button[type=submit]').isDisabled()),'Retry disabled '+mode);result.forms.push({test:mode+' feedback preserves input without false success',status:'PASS',kind:'LOCAL MOCK'});if(mode==='reject'){await fpage.unroute('https://formspree.io/**');await fpage.route('https://formspree.io/**',r=>r.fulfill({status:200,contentType:'application/json',body:'{"ok":true}'}));await send();check((await fpage.locator('#form-status').textContent()).startsWith('Request submitted.'),'Retry after rejection');result.forms.push({test:'Retry after recoverable rejection',status:'PASS',kind:'LOCAL MOCK'})}}
    await setup();await fill();await fpage.locator('#aircraft-intake-form').evaluate(form=>{form.requestSubmit();form.requestSubmit()});await fpage.locator('#form-status:not([hidden])').waitFor();check(requests.length===1,'Duplicate rapid submit');result.forms.push({test:'Rapid double submit results in one request while pending',status:'PASS',kind:'LOCAL MOCK'});
    await fpage.goto(server.url+'/thank-you');check(!/copy sent|on the board|appointment confirmed|your request has been received/i.test(await fpage.locator('main').innerText()),'False direct confirmation');check(await fpage.evaluate(()=>localStorage.length===0&&sessionStorage.length===0),'Form data storage');result.forms.push({test:'Direct thank-you is neutral; no local/session PII persistence',status:'PASS',kind:'LOCAL'});
-   const offline=await browser.newContext({javaScriptEnabled:false});await offline.route('https://formspree.io/**',r=>r.abort());const nojs=await offline.newPage();for(const route of ['/','/support-request','/card']){await nojs.goto(server.url+route);check(await nojs.locator('a[href="tel:+19803821344"]').first().isVisible(),'No-JS call fallback '+route);check(await nojs.locator('main').innerText(),'No-JS content')}await offline.close();result.manual.push({test:'Content, navigation, Call/Text and native form markup without JavaScript',status:'PASS',limit:'Actual native Formspree submission not verified'});
+   const offline=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
+   let nativePosts=[];
+   await offline.route('**/*',async route=>{
+    if(new URL(route.request().url()).origin===server.url)return route.continue();
+    if(route.request().url().startsWith('https://formspree.io/') && route.request().method()==='POST'){
+     nativePosts.push(new URLSearchParams(route.request().postData()));
+     return route.fulfill({status:200,contentType:'text/html',body:'Local form receipt'});
+    }
+    return route.abort();
+   });
+   const nojs=await offline.newPage();
+   for(const route of ['/','/support-request','/card']){
+    await nojs.goto(server.url+route);
+    check(await nojs.locator('#site-nav a[href="/services"]').isVisible(),'Native navigation '+route);
+    check(await nojs.locator('#site-nav a[href^="tel:"]').isVisible(),'Native call '+route);
+   }
+   for(const method of ['email','phone','text']){
+    await nojs.goto(server.url+'/support-request');
+    if(method!=='email')await nojs.locator('#native-phone summary').click();
+    const native=nojs.locator(method==='email'?'#aircraft-intake-form':'#native-phone form');
+    await native.locator('[name=name]').fill('Local native validation');
+    await native.locator('[name=message]').fill('Synthetic local message');
+    await native.locator('[name=preferred_contact]').selectOption(method);
+    const detail=native.locator(method==='email'?'input[type=email]':'input[type=tel]');
+    const before=nativePosts.length;
+    for(const invalid of ['',method==='email'?'invalid':'1234']){
+     await detail.fill(invalid);await native.locator('button[type=submit]').click();
+     check(await detail.evaluate(el=>!el.validity.valid) && before===nativePosts.length,'Native required/format '+method);
+    }
+    const value=method==='email'?'local@example.invalid':'202-555-0100';
+    await detail.fill(value);
+    await Promise.all([nojs.waitForURL('https://formspree.io/**'),native.locator('button[type=submit]').click()]);
+    const data=nativePosts.at(-1);
+    check(nativePosts.length===before+1 && data.get('preferred_contact')===method && data.get(method==='email'?'email':'best_contact')===value,'Intercepted native payload '+method);
+    result.forms.push({test:'Native '+method+' path: missing and invalid detail blocked, valid POST intercepted',status:'PASS',kind:'LOCAL MOCK'});
+   }
+   await offline.close();
+
   }
   await context.close();await Promise.race([browser.close(),new Promise(r=>setTimeout(r,3000))]);
  }
