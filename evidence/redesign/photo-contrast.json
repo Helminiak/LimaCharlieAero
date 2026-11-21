@@ -1,0 +1,752 @@
+[
+  {
+    "width": 320,
+    "samples": [
+      {
+        "label": "KAKH · Gastonia, North Carolina",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 5472,
+        "worst": 8.096760814494733,
+        "lightest_decile": 9.903367659935952
+      },
+      {
+        "label": "Light-sport & experimental aircraft,",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 22876,
+        "worst": 9.598852189886939,
+        "lightest_decile": 13.623200485917984
+      },
+      {
+        "label": "worked as a complete system.",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 19694,
+        "worst": 5.048956154754791,
+        "lightest_decile": 6.1786403493428175
+      },
+      {
+        "label": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 28037,
+        "worst": 11.104340207953685,
+        "lightest_decile": 15.999819514469026
+      },
+      {
+        "label": "Request Service",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 2944,
+        "worst": 5.631124419248413,
+        "lightest_decile": 5.631124419248409
+      },
+      {
+        "label": "Call 980.382.1344",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3128,
+        "worst": 17.86710025569194,
+        "lightest_decile": 18.73591313103289
+      },
+      {
+        "label": "ROTAX service & troubleshooting",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 9000,
+        "worst": 15.273194734989755,
+        "lightest_decile": 16.409049417705972
+      },
+      {
+        "label": "E-PROPS",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 2400,
+        "worst": 15.467068722898519,
+        "lightest_decile": 15.791429051916877
+      },
+      {
+        "label": "Inspections & scheduled work",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 4560,
+        "worst": 17.19449647652274,
+        "lightest_decile": 17.636552297000073
+      },
+      {
+        "label": "Vibration & balancing",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 4560,
+        "worst": 14.690022681179407,
+        "lightest_decile": 15.150755591261504
+      },
+      {
+        "label": "Prebuy & records",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 4560,
+        "worst": 16.643907429799604,
+        "lightest_decile": 16.91993826362468
+      },
+      {
+        "label": "Avionics & electrical",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 4560,
+        "worst": 17.723799710395536,
+        "lightest_decile": 18.59529769337598
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "samples": [
+      {
+        "label": "KAKH · Gastonia, North Carolina",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 5548,
+        "worst": 9.676520779912346,
+        "lightest_decile": 10.486079323035593
+      },
+      {
+        "label": "Light-sport & experimental aircraft,",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 22962,
+        "worst": 8.657888456324569,
+        "lightest_decile": 15.770813614255909
+      },
+      {
+        "label": "worked as a complete system.",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 19534,
+        "worst": 5.03988507702008,
+        "lightest_decile": 6.096519276039379
+      },
+      {
+        "label": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 27772,
+        "worst": 9.86087075376048,
+        "lightest_decile": 15.26528597445494
+      },
+      {
+        "label": "Request Service",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 2921,
+        "worst": 5.631124419248413,
+        "lightest_decile": 5.631124419248409
+      },
+      {
+        "label": "Call 980.382.1344",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3105,
+        "worst": 18.386844386682238,
+        "lightest_decile": 19.210912301539256
+      },
+      {
+        "label": "ROTAX service & troubleshooting",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5624,
+        "worst": 15.307232422215419,
+        "lightest_decile": 16.491010964072867
+      },
+      {
+        "label": "E-PROPS",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 2812,
+        "worst": 15.484432374322818,
+        "lightest_decile": 15.79197014434324
+      },
+      {
+        "label": "Inspections & scheduled work",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5624,
+        "worst": 17.34408363482975,
+        "lightest_decile": 17.68420255134428
+      },
+      {
+        "label": "Vibration & balancing",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5624,
+        "worst": 14.884502673699012,
+        "lightest_decile": 16.175059204242178
+      },
+      {
+        "label": "Prebuy & records",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 2812,
+        "worst": 16.441753398751285,
+        "lightest_decile": 16.74965460935439
+      },
+      {
+        "label": "Avionics & electrical",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5624,
+        "worst": 16.999430129471058,
+        "lightest_decile": 18.169061045471132
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "samples": [
+      {
+        "label": "KAKH · Gastonia, North Carolina",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 5548,
+        "worst": 6.894401083071409,
+        "lightest_decile": 9.690746384749739
+      },
+      {
+        "label": "Light-sport & experimental aircraft,",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 23091,
+        "worst": 9.675671174916657,
+        "lightest_decile": 14.675941703083895
+      },
+      {
+        "label": "worked as a complete system.",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 19694,
+        "worst": 5.119612173219091,
+        "lightest_decile": 6.0700290446343725
+      },
+      {
+        "label": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 28175,
+        "worst": 10.783203063556,
+        "lightest_decile": 15.465063994693311
+      },
+      {
+        "label": "Request Service",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 2944,
+        "worst": 5.631124419248413,
+        "lightest_decile": 5.631124419248409
+      },
+      {
+        "label": "Call 980.382.1344",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3128,
+        "worst": 18.559086124315318,
+        "lightest_decile": 19.217962148153646
+      },
+      {
+        "label": "ROTAX service & troubleshooting",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6200,
+        "worst": 15.307232422215419,
+        "lightest_decile": 16.407382157605593
+      },
+      {
+        "label": "E-PROPS",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3255,
+        "worst": 15.467068722898519,
+        "lightest_decile": 15.779246888629933
+      },
+      {
+        "label": "Inspections & scheduled work",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6200,
+        "worst": 17.34408363482975,
+        "lightest_decile": 17.659550386733084
+      },
+      {
+        "label": "Vibration & balancing",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6200,
+        "worst": 15.061289790198407,
+        "lightest_decile": 16.64180520032427
+      },
+      {
+        "label": "Prebuy & records",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3255,
+        "worst": 16.285161461417633,
+        "lightest_decile": 16.754207907265464
+      },
+      {
+        "label": "Avionics & electrical",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6200,
+        "worst": 16.458615604924265,
+        "lightest_decile": 18.08511833247011
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "samples": [
+      {
+        "label": "KAKH · Gastonia, North Carolina",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 5567,
+        "worst": 9.18794814699454,
+        "lightest_decile": 10.21172307600539
+      },
+      {
+        "label": "Light-sport & experimental aircraft,",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 33303,
+        "worst": 10.011968000584531,
+        "lightest_decile": 14.775694131778144
+      },
+      {
+        "label": "worked as a complete system.",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 28152,
+        "worst": 7.262399296203664,
+        "lightest_decile": 9.25881205517259
+      },
+      {
+        "label": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 28290,
+        "worst": 10.44239033923222,
+        "lightest_decile": 16.667055706375
+      },
+      {
+        "label": "Request Service",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3240,
+        "worst": 5.631124419248413,
+        "lightest_decile": 5.631124419248415
+      },
+      {
+        "label": "Call 980.382.1344",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3432,
+        "worst": 18.559086124315318,
+        "lightest_decile": 19.241280587668488
+      },
+      {
+        "label": "ROTAX service & troubleshooting",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8832,
+        "worst": 14.690022681179407,
+        "lightest_decile": 15.619435850307138
+      },
+      {
+        "label": "912, 914, 915 and 916: rough running, fuel pressure, cooling, ignition, five-year rubber.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 12915,
+        "worst": 14.808373573156347,
+        "lightest_decile": 16.11040382512434
+      },
+      {
+        "label": "E-PROPS",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5928,
+        "worst": 14.495668930595693,
+        "lightest_decile": 14.613949552838955
+      },
+      {
+        "label": "Selection, fitment, installation planning and dealer support.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8820,
+        "worst": 14.512775802607,
+        "lightest_decile": 14.960501084656563
+      },
+      {
+        "label": "Inspections & scheduled work",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 7368,
+        "worst": 14.672495651816892,
+        "lightest_decile": 15.225923210274825
+      },
+      {
+        "label": "Condition inspections, 100-hour, calendar items and planning downtime.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 10815,
+        "worst": 14.690022681179407,
+        "lightest_decile": 15.37589882548287
+      },
+      {
+        "label": "Vibration & balancing",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 7368,
+        "worst": 14.918643360059425,
+        "lightest_decile": 15.609650961743
+      },
+      {
+        "label": "Measured, corrected, re-measured.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5271,
+        "worst": 15.30750175812444,
+        "lightest_decile": 17.121006260583137
+      },
+      {
+        "label": "Prebuy & records",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5928,
+        "worst": 15.199894604842651,
+        "lightest_decile": 16.297988610888712
+      },
+      {
+        "label": "The logbooks checked against the aircraft.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6279,
+        "worst": 15.307232422215419,
+        "lightest_decile": 16.76673763277795
+      },
+      {
+        "label": "Avionics & electrical",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8832,
+        "worst": 14.758169640519169,
+        "lightest_decile": 17.080481818874034
+      },
+      {
+        "label": "Power, grounds, connectors and displays traced as one system.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 9387,
+        "worst": 15.852985864677896,
+        "lightest_decile": 17.68103884611138
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "samples": [
+      {
+        "label": "KAKH · Gastonia, North Carolina",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 5567,
+        "worst": 9.604336745906252,
+        "lightest_decile": 10.158404420116636
+      },
+      {
+        "label": "Light-sport & experimental aircraft,",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 59432,
+        "worst": 10.346852459709119,
+        "lightest_decile": 15.96765403274133
+      },
+      {
+        "label": "worked as a complete system.",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 50320,
+        "worst": 7.280731187279446,
+        "lightest_decile": 9.256774910935837
+      },
+      {
+        "label": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 30216,
+        "worst": 14.5302589293953,
+        "lightest_decile": 17.87877133155689
+      },
+      {
+        "label": "Request Service",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3264,
+        "worst": 5.631124419248413,
+        "lightest_decile": 5.631124419248415
+      },
+      {
+        "label": "Call 980.382.1344",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3456,
+        "worst": 18.36177542349064,
+        "lightest_decile": 18.824188271324147
+      },
+      {
+        "label": "ROTAX service & troubleshooting",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 12625,
+        "worst": 14.5302589293953,
+        "lightest_decile": 15.578183397180563
+      },
+      {
+        "label": "912, 914, 915 and 916: rough running, fuel pressure, cooling, ignition, five-year rubber.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 12915,
+        "worst": 14.72452450669731,
+        "lightest_decile": 15.581175484725515
+      },
+      {
+        "label": "E-PROPS",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8650,
+        "worst": 14.495668930595693,
+        "lightest_decile": 14.57573859086074
+      },
+      {
+        "label": "Selection, fitment, installation planning and dealer support.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8862,
+        "worst": 14.495668930595693,
+        "lightest_decile": 14.757775253628495
+      },
+      {
+        "label": "Inspections & scheduled work",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 10625,
+        "worst": 14.672495651816892,
+        "lightest_decile": 15.198021716222684
+      },
+      {
+        "label": "Condition inspections, 100-hour, calendar items and planning downtime.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 10815,
+        "worst": 14.690022681179407,
+        "lightest_decile": 15.267945713911345
+      },
+      {
+        "label": "Vibration & balancing",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 10650,
+        "worst": 14.495668930595693,
+        "lightest_decile": 15.427548719425454
+      },
+      {
+        "label": "Measured, corrected, re-measured.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5292,
+        "worst": 14.741787894005896,
+        "lightest_decile": 15.73578055462782
+      },
+      {
+        "label": "Prebuy & records",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8650,
+        "worst": 15.18104717449178,
+        "lightest_decile": 16.835759303093305
+      },
+      {
+        "label": "The logbooks checked against the aircraft.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6363,
+        "worst": 16.23522098450539,
+        "lightest_decile": 17.179962067993998
+      },
+      {
+        "label": "Avionics & electrical",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 12625,
+        "worst": 15.130552561242668,
+        "lightest_decile": 17.742004437641718
+      },
+      {
+        "label": "Power, grounds, connectors and displays traced as one system.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 9429,
+        "worst": 15.887341392498096,
+        "lightest_decile": 17.731276554064724
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "samples": [
+      {
+        "label": "KAKH · Gastonia, North Carolina",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 5548,
+        "worst": 10.524291655656135,
+        "lightest_decile": 10.52429165565613
+      },
+      {
+        "label": "Light-sport & experimental aircraft,",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 99968,
+        "worst": 9.569027971850312,
+        "lightest_decile": 15.893280700648363
+      },
+      {
+        "label": "worked as a complete system.",
+        "group": "hero",
+        "foreground": "rgb(242, 177, 52)",
+        "pixels": 84920,
+        "worst": 6.860186680372906,
+        "lightest_decile": 9.815093205263349
+      },
+      {
+        "label": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 41916,
+        "worst": 13.340371275488918,
+        "lightest_decile": 17.963634687029906
+      },
+      {
+        "label": "Request Service",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3240,
+        "worst": 5.631124419248413,
+        "lightest_decile": 5.631124419248415
+      },
+      {
+        "label": "Call 980.382.1344",
+        "group": "hero",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 3456,
+        "worst": 19.88593419031247,
+        "lightest_decile": 19.885934190312472
+      },
+      {
+        "label": "ROTAX service & troubleshooting",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 19904,
+        "worst": 14.5302589293953,
+        "lightest_decile": 15.59763882707734
+      },
+      {
+        "label": "912, 914, 915 and 916: rough running, fuel pressure, cooling, ignition, five-year rubber.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 12873,
+        "worst": 14.690022681179407,
+        "lightest_decile": 15.771573774236108
+      },
+      {
+        "label": "E-PROPS",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 13728,
+        "worst": 14.495668930595693,
+        "lightest_decile": 14.641853734206526
+      },
+      {
+        "label": "Selection, fitment, installation planning and dealer support.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 8925,
+        "worst": 14.495668930595693,
+        "lightest_decile": 14.824876626933072
+      },
+      {
+        "label": "Inspections & scheduled work",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 16800,
+        "worst": 14.690022681179407,
+        "lightest_decile": 15.249048252284162
+      },
+      {
+        "label": "Condition inspections, 100-hour, calendar items and planning downtime.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 10857,
+        "worst": 14.495668930595693,
+        "lightest_decile": 15.299585403024135
+      },
+      {
+        "label": "Vibration & balancing",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 16800,
+        "worst": 14.512775802607,
+        "lightest_decile": 15.167348765960318
+      },
+      {
+        "label": "Measured, corrected, re-measured.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 5271,
+        "worst": 14.512775802607,
+        "lightest_decile": 15.44400393772659
+      },
+      {
+        "label": "Prebuy & records",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 13728,
+        "worst": 14.918883724042237,
+        "lightest_decile": 16.202486821926453
+      },
+      {
+        "label": "The logbooks checked against the aircraft.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 6342,
+        "worst": 15.1131754012804,
+        "lightest_decile": 16.803276574821197
+      },
+      {
+        "label": "Avionics & electrical",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 19904,
+        "worst": 14.936210130427755,
+        "lightest_decile": 17.50850583991124
+      },
+      {
+        "label": "Power, grounds, connectors and displays traced as one system.",
+        "group": "tile",
+        "foreground": "rgb(255, 255, 255)",
+        "pixels": 9450,
+        "worst": 15.903687471680342,
+        "lightest_decile": 17.86917091973523
+      }
+    ]
+  }
+]
