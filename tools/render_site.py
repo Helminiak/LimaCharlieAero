@@ -52,9 +52,14 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
             else:
                 summary_html = E(summary)
             notice = '<div class="notice-bar"><div class="container">'+summary_html+' <a href="/owner-notices">Check applicability</a></div></div>'
+        stylesheet = f'<link rel="stylesheet" href="{amap["css"]}">'
+        if key == 'e-props-dealer-support':
+            # The mobile LCP is text. Paint it without a blocking CSS round trip.
+            css = (ROOT / 'templates/site.css').read_text().replace('ARCHIVO_LOCAL', amap['assets/fonts/archivo-latin.woff2'])
+            stylesheet = '<style>' + css + '</style>'
         markup = template.substitute(image_preload=home_preloads(amap) if key=='index' else '', menu_js=(ROOT/'templates/menu.js').read_text(), title=E(p['title']),
                     description=E(p['description']), canonical=E(canonical), robots=robots, ogtype=kind,
-                    social=social, social_alt=E(registry[SOCIAL[family]]['alt']), css=amap['css'], js=amap['js'],
+                    social=social, social_alt=E(registry[SOCIAL[family]]['alt']), stylesheet=stylesheet, js=amap['js'],
                     schema=json.dumps(data,ensure_ascii=False).replace('<',r'\u003c'), wordmark=amap['header-wordmark'],
                     nav=nav, main=body, notice=notice, page_class='home' if key=='index' else 'inside',
                     **{k:E(site[k]) for k in ['phone','display_phone','email']})
