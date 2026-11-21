@@ -29,7 +29,8 @@ const server=await startServer(root,root==='dist'?18081:18082);
 let browser;
 try {
  browser=await chromium.launch({executablePath:process.env.LCA_CHROMIUM_EXECUTABLE});
- const page=await browser.newPage({reducedMotion:'reduce'});
+ const context=await browser.newContext({reducedMotion:'reduce'});
+ const page=await context.newPage();
  await page.route('**/*', req=>new URL(req.request().url()).origin===server.url?req.continue():req.abort());
  for(const [slug,selector] of Object.entries(targets)){
   for(const width of [320,375,390,768,1024,1440]){
