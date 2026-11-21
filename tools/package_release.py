@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def sha(data):return hashlib.sha256(data).hexdigest()
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--archive-dir',default=str(ROOT/'releases'));args=ap.parse_args()
- site=json.loads((ROOT/'content/site.json').read_text(encoding="utf-8"));manifest=json.loads((ROOT/'evidence/deployment-manifest.json').read_text(encoding="utf-8"));out=ROOT/'dist';name='LCA_SITE_'+site['release'].replace('.','_').replace('-','_')+'_DEPLOYABLE.zip';archive_dir=Path(args.archive_dir).resolve();archive_dir.mkdir(parents=True,exist_ok=True);dest=archive_dir/name
+ site=json.loads((ROOT/'content/site.json').read_text(encoding="utf-8"));manifest=json.loads((ROOT/'.build-evidence/dist/deployment-manifest.json').read_text(encoding="utf-8"));out=ROOT/'dist';name='LCA_SITE_'+site['release'].replace('.','_').replace('-','_')+'_DEPLOYABLE.zip';archive_dir=Path(args.archive_dir).resolve();archive_dir.mkdir(parents=True,exist_ok=True);dest=archive_dir/name
  actual={p.relative_to(out).as_posix():sha(p.read_bytes()) for p in out.rglob('*') if p.is_file()};assert actual==manifest,'Output changed since verification'
  for key in ['index.html','_headers','_redirects','404.html']:assert key in actual
  assert all(not (out/f).is_symlink() for f in actual),'No public symlinks'

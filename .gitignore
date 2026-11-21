@@ -6,3 +6,5 @@ clean-room/
 releases/
 __pycache__/
 *.pyc
+.build-evidence/
+dist-preview/

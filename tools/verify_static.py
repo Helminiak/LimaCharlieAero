@@ -2,7 +2,7 @@ from pathlib import Path
 from lxml import html
 from urllib.parse import urlsplit,unquote
 import json,re,hashlib,posixpath,sys
-R=Path(__file__).resolve().parents[1];root=R/(sys.argv[1] if len(sys.argv)>1 else 'dist');E=R/'evidence';E.mkdir(exist_ok=True)
+R=Path(__file__).resolve().parents[1];root=R/(sys.argv[1] if len(sys.argv)>1 else 'dist');E=R/'.build-evidence'/root.name;E.mkdir(exist_ok=True)
 routes=json.loads((E/'routes.json').read_text());files={p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in root.rglob('*') if p.is_file()};errors=[];checks=0;rows=[];titles=[];descs=[];refs=0
 expected=set(re.findall(r'^([a-z0-9-]+\.html)$',(R/'docs/RC3_CODEX_MASTER_IMPLEMENTATION_PROMPT.md').read_text(),re.M))
 def ck(ok,label):
