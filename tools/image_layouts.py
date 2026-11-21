@@ -1,6 +1,13 @@
 from build_common import E
 from build_assets import RESPONSIVE_WIDTHS
 
+HOME_CROPS = [(640, '(max-width:640px)'), (1024, '(640px < width <= 1024px)'), (1600, '(width > 1024px)')]
+
+def home_preloads(assets):
+    return ''.join(f'<link rel="preload" as="image" type="image/avif" media="{E(media)}" '
+                   f'href="{assets[f"hero-{width}.avif"]}" fetchpriority="high">'
+                   for width, media in HOME_CROPS)
+
 class Images:
     def __init__(self, registry, assets, dimensions, page):
         self.registry = registry
@@ -38,12 +45,13 @@ class Images:
         if self.registry[subject].get('document') and role in {'evidence', 'case'}:
             natural += ' document'
             original = self.assets[self.registry[subject]['asset']]
-            img = f'<a class="document-link" href="{original}" aria-label="Open full size: {E(caption)}">{img}<span>Open full size</span></a>'
+            source_width = self.dimensions[self.registry[subject]['asset'].removeprefix('assets/')][0]
+            img = f'<a class="document-link" style="max-width:{source_width}px" href="{original}" aria-label="Open full size: {E(caption)}">{img}<span>Open full size</span></a>'
         return f'<figure class="{role}-figure{natural}">{img}<figcaption>{label}{E(caption)}</figcaption></figure>'
 
     def home_picture(self, subject):
         sources = []
-        for width, media in [(640,'(max-width:640px)'),(1024,'(max-width:1024px)'),(1600,'(min-width:1025px)')]:
+        for width, media in HOME_CROPS:
             for fmt in ['avif','webp']:
-                sources.append(f'<source media="{media}" type="image/{fmt}" srcset="{self.assets[f"hero-{width}.{fmt}"]}">')
+                sources.append(f'<source media="{E(media)}" type="image/{fmt}" srcset="{self.assets[f"hero-{width}.{fmt}"]}">')
         return '<picture class="backdrop">'+''.join(sources)+f'<img src="{self.assets["hero-1600.webp"]}" width="1600" height="900" data-subject="{subject}" data-purpose="backdrop" data-caption="ROTAX engine photograph behind the shop introduction." fetchpriority="high" alt=""></picture>'

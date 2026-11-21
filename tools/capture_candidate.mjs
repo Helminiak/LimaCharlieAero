@@ -27,13 +27,13 @@ try {
       await page.goto(server.url+route.route);
       await prepareCapture(page);
       const metrics=await page.evaluate(async()=>{
-        const visibleImages=[...document.images].filter(i=>i.getClientRects().length);
+        const visibleImages=[...document.images].filter(i=>i.checkVisibility());
         const rect=el=>{
           const {x,y,width,height}=el.getBoundingClientRect();
           return {x,y,width,height};
         };
         const controls=[...document.querySelectorAll('a,button,summary')].filter(el=>
-          el.getClientRects().length && !el.matches('.skip') && !el.closest('[inert]'));
+          el.checkVisibility() && !el.matches('.skip') && !el.closest('[inert]'));
         const smallTargets=controls.filter(el=>{
           const {width,height}=rect(el);
           return width<24 || height<24;

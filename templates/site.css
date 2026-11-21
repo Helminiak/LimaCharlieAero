@@ -64,9 +64,9 @@ button,summary { cursor: pointer; }
 .proof-grid { align-items: start; }
 .proof-grid > :only-child { grid-column: 1/-1; max-width: 32rem; }
 .proof-grid .document { grid-column: 1/-1; max-width: 56rem; }
-.section .document a.document-link { display: block; width: fit-content; max-width: 100%; }
+.section .document a.document-link { display: block; width: 100%; }
 .document-link span { font-size: .9rem; }
-.document img { width: auto; max-width: 100%; }
+.document img { width: 100%; max-width: 100%; }
 .case-strip:empty,.proof-grid:empty { display:none; }
 .proof-grid,.method,.legend { margin-block: 24px; }
 /* Shell */
@@ -219,6 +219,8 @@ textarea { min-height: 100px; }
 .case-figure img { max-height: 560px; }
 .case-record .limits { margin-block: 16px; }
 @media(min-width:760px) {
+  .proof-grid:has(.document) { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .proof-grid:has(.document) > .document { grid-column: auto; }
   .case-panel { min-height: clamp(210px,28vw,350px); }
   .case-intro,.case-stages,.case-record > summary,.case-record > .limits { max-width: 72ch; margin-inline: auto; }
   .case-intro h2 { max-width: none; }
@@ -242,8 +244,10 @@ textarea { min-height: 100px; }
   .case-evidence .document { grid-column: auto; }
 }
 @media(min-width:1200px) {
-  .legend,.method:has(> :nth-child(7)) { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 16px; }
-  .method:has(> :nth-child(7)) h3 { font-size: 1.15rem; }
+  .legend { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 16px; }
+  .method:has(> :nth-child(7)) { grid-template-columns: repeat(12,minmax(0,1fr)); }
+  .method:has(> :nth-child(7)) li { grid-column: span 3; }
+  .method:has(> :nth-child(7)) li:nth-child(n+5) { grid-column: span 4; }
 }
 @media(min-width:1021px) {
   .home .site-header { background: rgba(8,24,42,.62); }

@@ -66,6 +66,7 @@ try {
     console.log(width,...['hero','tile'].map(group => Math.min(...samples.filter(s => s.group===group).map(s=>s.worst))));
   }
   save('evidence/redesign/photo-contrast.json',rows);
+  if (rows.some(row => row.samples.some(sample => sample.worst < 4.5))) process.exitCode = 1;
 } finally {
   await browser.close();
   server.stop();

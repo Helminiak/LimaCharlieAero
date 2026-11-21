@@ -19,7 +19,7 @@ try{
  for(const [name,type] of Object.entries({chromium,firefox,webkit})){
   let browser;
   try{browser=await type.launch({headless:true,timeout:15000,...(name==='chromium'&&process.env.LCA_CHROMIUM_EXECUTABLE?{executablePath:process.env.LCA_CHROMIUM_EXECUTABLE}:{}),...(name==='firefox'?{env:{...process.env,MOZ_DISABLE_CONTENT_SANDBOX:'1'}}:{})});result.engines.push({name,version:browser.version(),status:'PASS',emulated:true});console.log('Checking '+name+' '+browser.version())}catch(e){result.engines.push({name,status:'BLOCKED',reason:String(e).slice(0,2200)});continue}
-  const context=await browser.newContext({reducedMotion:'reduce'});await context.route('https://formspree.io/**',r=>r.abort());const page=await context.newPage();page.on('pageerror',e=>result.console_errors.push({engine:name,error:String(e)}));
+  const context=await browser.newContext({reducedMotion:'reduce'});await context.route('**/*',r=>new URL(r.request().url()).origin===server.url?r.continue():r.abort());const page=await context.newPage();page.on('pageerror',e=>result.console_errors.push({engine:name,error:String(e)}));
   const testRoutes=name==='chromium'?routes:routes.filter(r=>['/','/support-request','/e-props-dealer-support','/light-sport-prebuy-evaluation','/rotax-turbocharger-notice','/faq','/card'].includes(r.route));
   for(const route of testRoutes){for(const width of [320,375,390,768,1024,1440]){await page.setViewportSize({width,height:width<768?844:900});await page.goto(server.url+route.route);await page.evaluate(async()=>{for(const i of document.images)i.loading='eager';await Promise.all([...document.images].map(i=>i.decode()));await document.fonts.ready});const metrics=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,broken:[...document.images].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src),h1:document.querySelectorAll('h1').length}));check(metrics.scrollWidth<=width+1,'Overflow '+name+' '+route.route+' '+width);check(metrics.broken.length===0,'Broken image '+route.route);check(metrics.h1===1,'Heading '+route.route);result.layouts.push({engine:name,route:route.route,width,...metrics})}
    if(name==='chromium'){await page.setViewportSize({width:390,height:844});await page.goto(server.url+route.route);const a=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();result.axe.push({route:route.route,violations:a.violations.map(v=>({id:v.id,impact:v.impact,description:v.description,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))})),incomplete:a.incomplete.map(v=>({id:v.id,nodes:v.nodes.length}))});check(a.violations.length===0,'Axe violation '+route.route+': '+a.violations.map(v=>v.id).join(','))}
@@ -41,9 +41,14 @@ try{
     check(await records.evaluateAll(all=>all.every(el=>!el.open)),'Mobile records collapsed');
     await page.setViewportSize({width:1024,height:900});
     await page.waitForFunction(()=>[...document.querySelectorAll('.case-record')].every(el=>el.open));
+    await records.first().locator('summary').focus();
+    await page.keyboard.press('Enter');
+    check(!await records.first().evaluate(el=>el.open),'Close full record with the keyboard');
+    await page.keyboard.press('Space');
+    check(await records.first().evaluate(el=>el.open),'Reopen full record with the keyboard');
     const expanded=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();
     check(!expanded.violations.length,'Expanded case accessibility');
-    result.manual.push({test:'Five full records open at desktop breakpoint and pass axe expanded',status:'PASS',count:await records.count()});
+    result.manual.push({test:'Full records open at desktop breakpoint, toggle by keyboard and pass axe expanded',status:'PASS',count:await records.count()});
    }
    await page.goto(server.url+'/');const contrast=[];for(const sel of ['.flight-hero .button','.trust b','.tile h3']){const loc=page.locator(sel).first();for(const state of ['normal','hover','focus']){await page.mouse.move(0,0);if(state==='hover')await loc.hover();if(state==='focus')await loc.focus();contrast.push({selector:sel,state,...await loc.evaluate(el=>{const s=getComputedStyle(el);let parent=el,bg=s.backgroundColor;while(bg==='rgba(0, 0, 0, 0)'&&parent.parentElement){parent=parent.parentElement;bg=getComputedStyle(parent).backgroundColor}return {foreground:s.color,background:bg,outline:s.outlineColor,font_size:s.fontSize}})})}}result.contrast=contrast;
    const fpage=await context.newPage();let requests=[];

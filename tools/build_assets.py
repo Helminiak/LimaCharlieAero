@@ -72,7 +72,7 @@ def presentation_assets(out, amap, registry):
     engine = source('rotax-support-hero-original-photo')
     for width,height in [(640,760),(1024,720),(1600,900)]:
         crop = ImageOps.fit(engine,(width,height),centering=(0.8,0.5))
-        for fmt,quality in [('WEBP',78),('AVIF',63)]:
+        for fmt,quality in [('WEBP',78),('AVIF',48 if width == 640 else 63)]:
             save(f'hero-{width}.{fmt.lower()}',crop,fmt,quality)
     for family, subject in SOCIAL.items():
         photo = source(subject)
