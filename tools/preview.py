@@ -47,7 +47,11 @@ class Handler(BaseHTTPRequestHandler):
     row={k:q.get(k,'').strip() for k in ['slug','type','title','owner_question','summary','document','issue_date','supersedes','state','published','last_modified','last_review','next_review','reviewer','replaced_by']}
     row['body']=[s.strip() for s in q.get('body','').replace('\r','').split('\n\n') if s.strip()];row['sources']=[s.strip() for s in q.get('sources','').splitlines() if s.strip()];row['topic']='notice' if row['type']=='notice' else 'unsure'
     if not original and any(r['slug']==row['slug'] for r in records):raise ValueError('Choose a unique slug')
-    records=[r for r in records if r['slug']!=original]+[row]
+    if original:
+     previous=next(r for r in records if r['slug']==original)
+     row={**previous,**row}
+     row['topic']=previous.get('topic',row['topic'])
+    records=[row if r['slug']==original else r for r in records] if original else [*records,row]
    content.write_text(json.dumps(records,indent=2,ensure_ascii=False)+'\n', encoding="utf-8", newline="\n")
    result=subprocess.run([sys.executable,str(ROOT/'tools/build.py'),'--output',str(self.server.root),'--as-of',q['asof']],capture_output=True,text=True)
    if result.returncode:raise ValueError(result.stderr)

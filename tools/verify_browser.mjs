@@ -46,6 +46,19 @@ try{
     check(await records.evaluateAll(all=>all.every(el=>!el.open)),'Mobile records collapsed');
     await page.setViewportSize({width:1024,height:900});
     await page.waitForFunction(()=>[...document.querySelectorAll('.case-record')].every(el=>el.open));
+    for (const route of ['/our-work','/']) {
+     await page.goto(server.url+route);
+     const rails=await page.locator('.stage-rail').evaluateAll(list=>list.map(rail=>{
+      const panel=rail.closest('.case-panel');
+      return [...rail.children].every(step=>{
+       const style=getComputedStyle(step);
+       if (panel) return style.backgroundColor===(step.matches('.done')?'rgb(255, 255, 255)':'rgba(0, 0, 0, 0)');
+       return step.matches('.done')?style.backgroundColor!== 'rgb(255, 255, 255)':style.backgroundColor==='rgb(255, 255, 255)';
+      });
+     }));
+     check(rails.length && rails.every(Boolean),'Stage fills on '+route);
+    }
+    await page.goto(server.url+'/our-work');
     await records.first().locator('summary').focus();
     await page.keyboard.press('Enter');
     check(!await records.first().evaluate(el=>el.open),'Close full record with the keyboard');
@@ -65,7 +78,7 @@ try{
    await setup();check(await fpage.locator('#support-topic').inputValue()==='','Neutral topic');check(await fpage.locator('#support-urgency').inputValue()==='','Neutral urgency');await send();check(requests.length===0,'Empty form submitted');check(await fpage.locator('#support-name').getAttribute('aria-invalid')==='true','Required field error');result.forms.push({test:'Neutral initial topic/timing and empty validation',status:'PASS',kind:'LOCAL MOCK'});
    for(const [query,method] of [['equipment','email'],['symptom','email'],['service','phone'],['prebuy','email'],['eprops','phone'],['avionics','email'],['notice','phone'],['records','email'],['unsure','email']]){await setup('/support-request?topic='+query);check(await fpage.locator('#support-topic').inputValue()===query,'Prefill '+query);check(await fpage.locator('#topic-prefill').isVisible(),'Prefill visible');check(!fpage.url().includes('?'),'Query retained');await fill(method);await send();check(requests.length===1,'Submission count '+query);check((await fpage.locator('#form-status').textContent()).startsWith('Request submitted.'),'Mock acceptance '+query);check(!requests[0].body.includes('name="n_number"'),'Required tail unexpectedly sent');result.forms.push({test:query+' owner path with '+method+' only, unknown technical details and accepted mock',status:'PASS',kind:'LOCAL MOCK',request_count:requests.length})}
    await setup('/support-request?request=rotax-asb-review');check(await fpage.locator('#support-topic').inputValue()==='notice','Legacy notice topic');result.forms.push({test:'Legacy ASB review request selects notice',status:'PASS'});
-   await setup('/support-request?topic=invalid&name=do-not-copy');check(await fpage.locator('#support-topic').inputValue()==='','Invalid topic accepted');await fill();await fpage.locator('#support-email').fill('invalid-email');await send();check(requests.length===0,'Malformed email sent');result.forms.push({test:'Invalid/stale query and malformed email',status:'PASS',kind:'LOCAL MOCK'});
+   await setup('/support-request?topic=toString&name=do-not-copy');check(await fpage.locator('#support-topic').inputValue()==='','Invalid topic accepted');await fill();await fpage.locator('#support-email').fill('invalid-email');await send();check(requests.length===0,'Malformed email sent');result.forms.push({test:'Invalid/stale query and malformed email',status:'PASS',kind:'LOCAL MOCK'});
    for(const mode of ['reject','rate','server','offline','unconfirmed','timeout']){await setup('/support-request',mode);await fill();await send();check(await fpage.locator('#support-message').inputValue()!=='','Data lost after '+mode);check(!((await fpage.locator('#form-status').textContent()).startsWith('Request submitted.')),'False acceptance '+mode);check(!(await fpage.locator('#aircraft-intake-form button[type=submit]').isDisabled()),'Retry disabled '+mode);result.forms.push({test:mode+' feedback preserves input without false success',status:'PASS',kind:'LOCAL MOCK'});if(mode==='reject'){await fpage.unroute('https://formspree.io/**');await fpage.route('https://formspree.io/**',r=>r.fulfill({status:200,contentType:'application/json',body:'{"ok":true}'}));await send();check((await fpage.locator('#form-status').textContent()).startsWith('Request submitted.'),'Retry after rejection');result.forms.push({test:'Retry after recoverable rejection',status:'PASS',kind:'LOCAL MOCK'})}}
    await setup();await fill();await fpage.locator('#aircraft-intake-form').evaluate(form=>{form.requestSubmit();form.requestSubmit()});await fpage.locator('#form-status:not([hidden])').waitFor();check(requests.length===1,'Duplicate rapid submit');result.forms.push({test:'Rapid double submit results in one request while pending',status:'PASS',kind:'LOCAL MOCK'});
    await fpage.goto(server.url+'/thank-you');check(!/copy sent|on the board|appointment confirmed|your request has been received/i.test(await fpage.locator('main').innerText()),'False direct confirmation');check(await fpage.evaluate(()=>localStorage.length===0&&sessionStorage.length===0),'Form data storage');result.forms.push({test:'Direct thank-you is neutral; no local/session PII persistence',status:'PASS',kind:'LOCAL'});

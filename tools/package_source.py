@@ -11,11 +11,10 @@ def main():
    # Only legacy screenshot PNGs are omitted; PNG brand/build inputs are required.
    # The final ZIP verification receipt contains this archive's hash and is
    # external to its payload, as is the root SHA256SUMS checksum manifest.
-   if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc' and not (dirname=='evidence' and (p.suffix=='.png' or p.name=='final-source-package-checks.json')):files[p.relative_to(R).as_posix()]=p.read_bytes()
+   if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc' and not (dirname=='evidence' and ((p.suffix=='.png' and 'redesign' not in p.parts) or p.name=='final-source-package-checks.json')):files[p.relative_to(R).as_posix()]=p.read_bytes()
  for n in ['README.md','AGENTS.md','package.json','package-lock.json','requirements-dev.txt','.gitignore']:files[n]=(R/n).read_bytes()
- if (R/'LCA_RELEASE_REPORT_v102_0_0_RC3.md').is_file():files['LCA_RELEASE_REPORT_v102_0_0_RC3.md']=(R/'LCA_RELEASE_REPORT_v102_0_0_RC3.md').read_bytes()
  manifest={n:sha(b) for n,b in sorted(files.items())};files['SOURCE_PACKAGE_MANIFEST.json']=(json.dumps({'algorithm':'SHA-256','scope':'All payload files except this self-describing manifest','files':manifest},indent=2)+'\n').encode()
- dest=out/'LCA_SITE_v102_0_0_RC3_SOURCE_AND_VERIFICATION.zip'
+ dest=out/('LCA_SITE_'+site['release'].replace('.','_').replace('-','_')+'_SOURCE_AND_VERIFICATION.zip')
  with zipfile.ZipFile(dest,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
   for n,b in sorted(files.items()):
    i=zipfile.ZipInfo(n,(d.year,d.month,d.day,0,0,0));i.external_attr=0o100644<<16;i.compress_type=zipfile.ZIP_DEFLATED;z.writestr(i,b,compresslevel=9)

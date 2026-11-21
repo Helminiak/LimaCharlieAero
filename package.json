@@ -9,7 +9,7 @@
     "verify:auxiliary": "node tools/verify_auxiliary.mjs dist",
     "verify:features": "node tools/verify_release_features.mjs",
     "verify:performance": "node tools/performance.mjs dist --after-only",
-    "test": "npm run verify:static && npm run verify:browser && npm run verify:auxiliary && npm run verify:features",
+    "test": "npm run verify:static && npm run verify:browser && npm run verify:auxiliary && npm run verify:features && python3 tools/verify_publication.py",
     "package": "python3 tools/package_release.py && python3 tools/package_source.py"
   },
   "keywords": [],

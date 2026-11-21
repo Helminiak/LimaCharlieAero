@@ -10,15 +10,18 @@ const args = process.argv.slice(2);
 const only = args.includes('--after-only');
 const root = args.find(a => !a.startsWith('--')) || 'dist';
 const nestedBaseline = 'cache-baseline/LCA_WEBSITE_v101_1_5I_DEPLOYABLE 2';
+const routes = ['/', '/services', '/e-props-dealer-support', '/rotax-engine-systems-support',
+  '/rotax-gearbox-propeller-vibration', '/rotax-installation-review', '/light-sport-prebuy-evaluation',
+  '/support-request', '/our-work'];
+const selected = process.env.LCA_PERF_ROUTES?.split(',') || routes;
+if (selected.some(route => !routes.includes(route)) || new Set(selected).size !== selected.length) {
+  throw Error('Unknown or duplicate performance route: ' + selected.join(','));
+}
 if (!only && !fs.existsSync('cache-baseline/index.html') && !fs.existsSync(nestedBaseline + '/index.html')) {
   execFileSync('python3', ['-c', "import zipfile; zipfile.ZipFile('reference/baseline-v101.1.5I.zip').extractall('cache-baseline')"]);
 }
 const before = only ? null : await startServer(fs.existsSync('cache-baseline/index.html') ? 'cache-baseline' : nestedBaseline, 8787);
 const after = await startServer(root, 8793, {wrangler:only});
-const routes = ['/', '/services', '/e-props-dealer-support', '/rotax-engine-systems-support',
-  '/rotax-gearbox-propeller-vibration', '/rotax-installation-review', '/light-sport-prebuy-evaluation',
-  '/support-request', '/our-work'];
-const selected = process.env.LCA_PERF_ROUTES?.split(',') || routes;
 const results = [];
 const dir = '.build-evidence/lighthouse';
 fs.mkdirSync(dir, {recursive:true});
@@ -63,6 +66,8 @@ try {
   const name = process.env.LCA_PERF_ROUTES ? 'affected-performance' : only ? 'artifact-performance' : 'performance';
   save('evidence/redesign/' + name + '.json', {method:'Cold local lab navigation per route and device. Simulated Lighthouse mobile and desktop profiles. Decimal bytes.',root,runs:results});
 }
+const expected = selected.length * 2 * (before ? 2 : 1);
+if (results.length !== expected) throw Error(`Expected ${expected} Lighthouse measurements, got ${results.length}`);
 const missed = results.filter(r => r.device === 'mobile' && (r.performance < 95 || r.accessibility < 98 || r.seo < 100 ||
   (['/','/e-props-dealer-support'].includes(r.route) && r.lcp_ms > 1800) || r.cls > 0.05 || r.tbt_ms > 100 ||
   (r.route === '/' && r.transfer_bytes > 350000)));

@@ -1,14 +1,29 @@
 from build_common import *
+from publication import require_clean_raster, RASTERS
+
+BRAND_RASTERS = {'favicon.ico', 'apple-touch-icon.png', 'brand/lca-wordmark-v17-transparent-640.webp',
+                 *(f'brand/lca-icon-lc-aircraft-v26b-transparent-{width}.png' for width in (128,192,512))}
 
 RESPONSIVE_WIDTHS = (160, 352, 400, 640, 800, 1200)
 
-def build_assets(out, excluded):
+def build_assets(out, eligible, registry):
+    allowed = {row['asset'] for row in eligible.values()}
+    registered = {row['asset'] for row in registry.values()}
+    if len(registered) != len(registry):
+        raise ValueError('Ambiguous proof source registered more than once')
     amap = {}
     metadata = json.loads((ROOT / 'assets-src/dimensions.json').read_text(encoding='utf-8'))
     for f in sorted((ROOT / 'assets-src').rglob('*')):
-        if not f.is_file() or f.name == 'dimensions.json' or f.relative_to(ROOT/'assets-src').as_posix() in excluded:
+        if not f.is_file() or f.name == 'dimensions.json':
             continue
         rel = f.relative_to(ROOT / 'assets-src').as_posix()
+        if rel.startswith('images/') or (f.suffix.lower() in RASTERS and rel not in BRAND_RASTERS):
+            if 'assets/' + rel not in registered:
+                raise ValueError('Unregistered proof source: ' + rel)
+            if 'assets/' + rel not in allowed:
+                continue
+        if f.suffix.lower() in RASTERS:
+            require_clean_raster(f)
         d = f.read_bytes()
         if rel == 'brand/lca-icon-lc-aircraft-v26b-transparent-192.png':
             # Preserve the original icon dimensions and alpha with an indexed PNG.
@@ -68,6 +83,8 @@ def presentation_assets(out, amap, registry):
         amap[key] = '/'+path.as_posix()
 
     def source(subject):
+        if subject not in registry:
+            raise ValueError('Ineligible presentation subject: ' + subject)
         return Image.open(ROOT/'assets-src'/registry[subject]['asset'].removeprefix('assets/')).convert('RGB')
     engine = source('rotax-support-hero-original-photo')
     for width,height in [(640,760),(1024,720),(1600,900)]:

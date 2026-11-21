@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def sha(data):return hashlib.sha256(data).hexdigest()
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--archive-dir',default=str(ROOT/'releases'));args=ap.parse_args()
- site=json.loads((ROOT/'content/site.json').read_text(encoding="utf-8"));manifest=json.loads((ROOT/'.build-evidence/dist/deployment-manifest.json').read_text(encoding="utf-8"));out=ROOT/'dist';name='LCA_SITE_'+site['release'].replace('.','_').replace('-','_')+'_DEPLOYABLE.zip';archive_dir=Path(args.archive_dir).resolve();archive_dir.mkdir(parents=True,exist_ok=True);dest=archive_dir/name
+ site=json.loads((ROOT/'content/site.json').read_text(encoding="utf-8"));manifest=json.loads((ROOT/'evidence/redesign'/site['release']/'deployment-manifest.json').read_text(encoding="utf-8"));out=ROOT/'dist';name='LCA_SITE_'+site['release'].replace('.','_').replace('-','_')+'_DEPLOYABLE.zip';archive_dir=Path(args.archive_dir).resolve();archive_dir.mkdir(parents=True,exist_ok=True);dest=archive_dir/name
  actual={p.relative_to(out).as_posix():sha(p.read_bytes()) for p in out.rglob('*') if p.is_file()};assert actual==manifest,'Output changed since verification'
  for key in ['index.html','_headers','_redirects','404.html']:assert key in actual
  assert all(not (out/f).is_symlink() for f in actual),'No public symlinks'
@@ -27,6 +27,6 @@ def main():
   assert set(z.namelist())==set(manifest)
   z.extractall(extracted)
  checked={p.relative_to(extracted).as_posix():sha(p.read_bytes()) for p in extracted.rglob('*') if p.is_file()};assert checked==actual,'Extraction hash mismatch'
- record={'status':'PASS','release':site['release'],'archive':str(dest),'archive_sha256':sha(dest.read_bytes()),'archive_bytes':dest.stat().st_size,'public_files':len(actual),'html_routes':sum(f.endswith('.html') for f in actual),'deployment_root':'index.html is at ZIP root; no enclosing folder','clean_extraction_hashes_match':True,'baseline_sha256':'e160c234b86aac2076db101c1b2e1acd27c46ed010866fd1aa6b21ff8214710a','extracted_root':str(extracted)}
- (ROOT/'evidence/packaging.json').write_text(json.dumps(record,indent=2)+'\n', encoding="utf-8", newline="\n");print(json.dumps(record))
+ record={'status':'PASS','release':site['release'],'archive':str(dest),'archive_sha256':sha(dest.read_bytes()),'archive_bytes':dest.stat().st_size,'public_files':len(actual),'html_routes':sum(f.endswith('.html') for f in actual),'deployment_root':'index.html is at ZIP root; no enclosing folder','clean_extraction_hashes_match':True,'extracted_root':str(extracted)}
+ (ROOT/'evidence/redesign'/site['release']/'packaging.json').write_text(json.dumps(record,indent=2)+'\n', encoding="utf-8", newline="\n");print(json.dumps(record))
 if __name__=='__main__':main()

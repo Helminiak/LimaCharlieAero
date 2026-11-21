@@ -1,5 +1,6 @@
 from build_common import *
 from build_assets import build_assets, presentation_assets
+from publication import eligible_registry, RASTERS, require_clean_raster
 from cases import select_cases
 from editorial import select_editorial
 from render_site import render_site
@@ -21,8 +22,7 @@ def main():
     registry = {a['id']:a for a in json.loads((ROOT/'content/proof-assets.json').read_text())}
     records = json.loads((ROOT/'content/cases.json').read_text())
     cases = select_cases(records,set(registry),args.preview)
-    case_images = {i for c in cases for stage in c['stages'] for i in stage['evidence']}
-    excluded = {r['asset'].removeprefix('assets/') for r in registry.values() if r.get('case_only') and r['id'] not in case_images}
+    eligible = eligible_registry(registry, cases)
     if out not in [ROOT / 'dist', ROOT / 'dist-preview', ROOT / 'repro-dist'] or out.is_symlink():
         raise ValueError('Choose dist, dist-preview or repro-dist')
     out.mkdir(exist_ok=True)
@@ -31,9 +31,9 @@ def main():
             f.unlink()
         else:
             shutil.rmtree(f)
-    amap, metadata = build_assets(out, excluded)
-    presentation_assets(out, amap, registry)
-    routes = render_site(out, site, pages, public, published, amap, metadata, registry, cases, args.preview)
+    amap, metadata = build_assets(out, eligible, registry)
+    presentation_assets(out, amap, eligible)
+    routes = render_site(out, site, pages, public, published, amap, metadata, eligible, cases, args.preview)
 
     def asset(src):
         return amap[src]
@@ -58,6 +58,9 @@ def main():
     (evidence / 'asset-map.json').write_text(json.dumps(amap, indent=2), encoding='utf-8', newline='\n')
     (evidence / 'routes.json').write_text(json.dumps(routes, indent=2), encoding='utf-8', newline='\n')
     (evidence / 'review-warnings.json').write_text(json.dumps(warnings, indent=2), encoding='utf-8', newline='\n')
+    for file in out.rglob('*'):
+        if file.suffix.lower() in RASTERS:
+            require_clean_raster(file)
     files = {f.relative_to(out).as_posix(): digest(f.read_bytes()) for f in sorted(out.rglob('*')) if f.is_file()}
     (evidence / 'deployment-manifest.json').write_text(json.dumps(files, indent=2), encoding='utf-8', newline='\n')
     print(json.dumps({'output': str(out), 'release': site['release'], 'html_pages': len(routes), 'files': len(files), 'bytes': sum((f.stat().st_size for f in out.rglob('*') if f.is_file())), 'review_warnings': warnings}))

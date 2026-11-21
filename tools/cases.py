@@ -22,12 +22,27 @@ def select_cases(records, subjects, preview):
         slugs.add(slug)
         if case['state'] not in {'draft', 'published'} or not all(case[k] for k in ('title','sources','status')):
             raise ValueError('Incomplete case: ' + slug)
+        sources = case['sources']
+        if not isinstance(sources, list) or not all(isinstance(src,str) and src.strip() for src in sources):
+            raise ValueError('Invalid source reference: ' + slug)
+        if 'owner_confirmation' in case and type(case['owner_confirmation']) is not bool:
+            raise ValueError('Confirmation must be a boolean: ' + slug)
         if [s['name'] for s in case['stages']] != list(STAGES):
             raise ValueError('Case needs seven ordered stages: ' + slug)
         for s in case['stages']:
             if not s['text'] or s['status'] not in {'done','pending'} or len(s['evidence']) > 2 or set(s['evidence']) - subjects:
                 raise ValueError('Invalid case stage: ' + slug)
-        if case['state'] == 'published' and ('[OWNER' in json.dumps(case) or not case.get('owner_confirmation')):
+        verification = case['stages'][5]['status']
+        complete = all(s['status'] == 'done' for s in case['stages'])
+        if case['status'] == 'Documented process':
+            consistent = complete
+        elif 'pending' in case['status'].lower() or case['status'].startswith('Evaluation plan'):
+            consistent = verification == 'pending'
+        else:
+            consistent = False
+        if not consistent:
+            raise ValueError('Case status conflicts with stages: ' + slug)
+        if case['state'] == 'published' and ('[OWNER' in json.dumps(case) or case.get('owner_confirmation') is not True):
             raise ValueError('Published case needs confirmed facts: ' + slug)
         if preview or case['state'] == 'published':
             selected.append(case)

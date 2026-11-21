@@ -1,5 +1,6 @@
 from pathlib import Path
 from lxml import html
+from publication import publication_errors, RASTERS, require_clean_raster
 from urllib.parse import urlsplit,unquote
 import json,re,hashlib,posixpath,sys
 R=Path(__file__).resolve().parents[1];root=R/(sys.argv[1] if len(sys.argv)>1 else 'dist');E=R/'.build-evidence'/root.name;E.mkdir(exist_ok=True)
@@ -13,18 +14,25 @@ expected.add('our-work.html')
 ck({r['file'] for r in routes}==expected,'40 expected routes');ck(len(routes)==40,'route count');ck(files==json.loads((E/'deployment-manifest.json').read_text()),'frozen output manifest')
 ck(not any(p.split('/')[0] in ['docs','baselines','tools','content','evidence','templates','assets-src'] for p in files),'source excluded from public output')
 redirects={l.split()[0]:l.split()[1] for l in (root/'_redirects').read_text().splitlines() if l.strip() and not l.startswith('#')}
-sitemap=html.parse(str(root/'sitemap.xml'));xml=(root/'sitemap.xml').read_text();repetition={x:[] for x in ['Owner information','Unsure where to start?','What happens next','Inspection context','diagnosis and serviceability require aircraft-specific evidence and applicable instructions']};voices={x:0 for x in ['Joe','Joseph','we','our','us','team','technician','shop','Lima Charlie Aero']}
+xml=(root/'sitemap.xml').read_text();repetition={x:[] for x in ['Owner information','Unsure where to start?','What happens next','Inspection context','diagnosis and serviceability require aircraft-specific evidence and applicable instructions']};voices={x:0 for x in ['Joe','Joseph','we','our','us','team','technician','shop','Lima Charlie Aero']}
 actual_subjects=set()
 registry=json.loads((R/'content/proof-assets.json').read_text())
-subject_ids={a['id'] for a in registry}
+cases=json.loads((R/'content/cases.json').read_text())
 registration=re.compile(r'(?<![A-Za-z0-9])N[0-9]{1,5}[A-Z]{0,2}(?![A-Za-z0-9])',re.I)
 preview=root.name=='dist-preview'
-from PIL import Image
+zero_public_cases = not preview and not any(c['state']=='published' for c in cases)
+indexed_files = expected - {'404.html','thank-you.html','card.html','about-credentials.html'}
+domain=json.loads((R/'content/site.json').read_text())['domain']
+expected_urls = set() if preview else {domain + ('/' if f=='index.html' else '/'+Path(f).stem) for f in indexed_files}
+for error in publication_errors(root, cases, expected_urls, preview):
+ ck(False,error)
+ck(True,'publication surfaces inspected')
 for path in files:
  ck(not registration.search(path),'registration in filename '+path)
- if Path(path).suffix.lower() in {'.jpg','.webp','.avif','.ico','.png'}:
-  with Image.open(root/path) as im:
-   ck(not im.getexif() and not any(k.lower() in {'exif','xmp','xml:com.adobe.xmp'} for k in im.info),'image metadata '+path)
+ if Path(path).suffix.lower() in RASTERS:
+  try:require_clean_raster(root/path)
+  except ValueError as error:ck(False,str(error))
+  else:ck(True,'clean raster '+path)
 for r in routes:
  d=html.parse(str(root/r['file']));main=d.xpath('//main')[0];text=' '.join(main.text_content().split());raw=(root/r['file']).read_text();key=Path(r['file']).stem;canonical='https://limacharlieaero.com'+r['route']
  actual_subjects.update(d.xpath('//img/@data-subject'))
@@ -47,11 +55,18 @@ for r in routes:
  ck(not registration.search(d.xpath('string(//script[@type="application/ld+json"])')),key+' registration in schema')
  if not preview:ck('[OWNER' not in raw and 'PRIVATE PREVIEW:' not in raw,key+' public copy clean')
  else:ck('noindex' in d.xpath('string(//meta[@name="robots"]/@content)'),key+' preview noindex')
+ for para in main.xpath('.//p'):
+  ck(not re.search(r'[.!?]\s+[A-Z][\w -]+\s+/\s+[A-Z][\w -]+$', ' '.join(para.text_content().split())),key+' trailing section label')
+ if key=='faq':
+  inbound=json.loads((R/'tools/fixtures/rc3-faq.json').read_text())['questions']
+  for anchor,question in inbound.items():
+   ck(d.xpath('string(//details[@id=$anchor]/summary)',anchor=anchor)==question,'RC3 FAQ #'+anchor)
+ if zero_public_cases:
+  ck(not re.search(r'\beach\s+(?:case|example)\b',' '.join([text,*d.xpath('//meta/@content')]),re.I),key+' zero case copy')
  if key=='support-request':
   ck(bool(d.xpath('//form[@id="aircraft-intake-form"]//input[@type="email" and @required]')),'native email path')
   ck(bool(d.xpath('//details[@id="native-phone"]//form//input[@type="tel" and @required and @pattern]')),'native phone path')
  if key=='our-work':
-  cases=json.loads((R/'content/cases.json').read_text())
   for case in cases:
    present=bool(d.xpath('//*[@id=$slug]',slug=case['slug']))
    ck(present==(preview or case['state']=='published'),'case visibility '+case['slug'])
@@ -90,12 +105,13 @@ for path in root.glob('assets/*.css'):
  for target in re.findall(r'url\([\"\']?([^\)\"\']+)',path.read_text()):
   if not urlsplit(target).scheme:ck((path.parent/target).exists(),'CSS reference '+target)
 proof=json.loads((R/'content/proof-assets.json').read_text());pages=json.loads((R/'content/pages.json').read_text());ck(50<=len(actual_subjects)<=55,'proof subject count');ck(all(x['permission'] in ['REVIEW REQUIRED','CLEARED'] for x in proof),'permission statuses explicit')
-proof_by_id={x['id']:x for x in proof};used=set()
+proof_by_id={x['id']:x for x in proof}
 for key,p in pages.items():
  for image in p.get('proof',[]):
-  used.add(image['proof_id']);a=proof_by_id.get(image['proof_id'],{})
+  a=proof_by_id.get(image['proof_id'],{})
   ck(a.get('asset')==image['src'] and bool(a.get('provenance')) and bool(image.get('caption')) and bool(image.get('alt')),key+' registered proof '+image['proof_id'])
-ck(actual_subjects=={a['id'] for a in proof if preview or not a.get('case_only') or a['id'] in actual_subjects},'rendered subject coverage')
+permitted_case_images={i for c in cases if preview or c['state']=='published' for stage in c['stages'] for i in stage['evidence']}
+ck(actual_subjects=={a['id'] for a in proof if not a.get('case_only') or a['id'] in permitted_case_images},'rendered subject coverage')
 for key,min_count in {'index':4,'services':4,'rotax-gearbox-propeller-vibration':3,'rotax-installation-review':4,'rotax-fuel-pressure-fuel-delivery-problems':3,'light-sport-experimental-avionics':3,'e-props-dealer-support':3,'aircraft-records-review':1,'the-lima-charlie-aero-standard':3,'light-sport-prebuy-evaluation':1,'contact':1,'service-area':1,'joseph-helminiak-bio':1}.items():ck(len(pages[key].get('proof',[]))>=min_count,key+' proof placement')
 result={'status':'PASS' if not errors else 'FAIL','checks':checks,'references':refs,'routes':len(rows),'proof_subjects':len(actual_subjects),'errors':errors,'repetition':repetition,'voice_frequency':voices,'rights_gate':'REVIEW REQUIRED — private candidate only; no public publication authorization inferred'}
 (E/'static-checks.json').write_text(json.dumps(result,indent=2)+'\n');(E/'route-audit.json').write_text(json.dumps(rows,indent=2)+'\n');print(json.dumps(result,indent=2));sys.exit(bool(errors))
