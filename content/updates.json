@@ -22,8 +22,8 @@
     "state": "published",
     "published": "2026-10-04",
     "last_modified": "2026-10-05",
-    "last_review": "2026-10-05",
-    "next_review": "2026-10-12",
+    "last_review": "2026-11-20",
+    "next_review": "2026-12-20",
     "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
     "owner_question": "Does the gearbox notice affect my aircraft?"
   },
@@ -34,22 +34,24 @@
     "summary": "Selected turbocharger valve housings need review for a manufacturing issue. Affected installed units have a before-next-flight instruction.",
     "body": [
       "The manufacturer describes a valve-housing defect that can cause oil leakage and a fire hazard. Applicability depends on listed engine or turbocharger identification and prior modification records.",
-      "Read the official document’s applicability and compliance sections. If your installation may be affected, establish its status before flying. Replacement and marking requirements depend on the records; specialist qualifications and manufacturer coordination may be needed."
+      "Read the official document’s applicability and compliance sections. If your installation may be affected, establish its status before flying. Replacement and marking requirements depend on the records; specialist qualifications and manufacturer coordination may be needed.",
+      "FAA AD 2026-22-03 (effective November 23, 2026) applies to listed certified 915 iSc and 916 iSc engines and requires the action before further flight; non-certified 915/916 iS engines remain under the ROTAX bulletin."
     ],
     "document": "ASB_A-2026-002R01",
     "issue_date": "2026-09-11",
     "sources": [
       "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000dA334IAC?asPdf=false",
-      "https://www.flyrotax.com/p/service/technical-documentation"
+      "https://www.flyrotax.com/p/service/technical-documentation",
+      "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22307.pdf"
     ],
     "supersedes": "ASB_A-2026-002 initial issue",
     "topic": "notice",
     "state": "published",
     "published": "2026-10-04",
-    "last_modified": "2026-10-04",
-    "last_review": "2026-10-05",
-    "next_review": "2026-10-12",
-    "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
+    "last_modified": "2026-11-20",
+    "last_review": "2026-11-20",
+    "next_review": "2026-12-20",
+    "reviewer": "Lima Charlie Aero technical review",
     "owner_question": "Does the turbocharger notice affect my aircraft?"
   },
   {

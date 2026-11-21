@@ -307,8 +307,8 @@
   "privacy": {
     "title": "Privacy and inquiry information",
     "heading": "Privacy and inquiry information",
-    "description": "The inquiry form collects the contact and aircraft details you choose to provide so We can respond to your request.",
-    "intro": "The inquiry form collects the contact and aircraft details you choose to provide so We can respond to your request.",
+    "description": "The inquiry form collects the contact and aircraft details you choose to provide so we can respond to your request.",
+    "intro": "The inquiry form collects the contact and aircraft details you choose to provide so we can respond to your request.",
     "sections": [
       {
         "heading": "Form handling",
@@ -633,11 +633,11 @@
         "text": "locally based ROTAX support for light-sport aircraft: five-year rubber package planning, baseline service, fuel delivery, ignition/electronics, cooling, vibration, installation review, and records control. Aircraft documents, engine family, installed configuration, and certificate privileges still control final scope."
       },
       {
-        "heading": "ROTAX alert service bulletin review",
+        "heading": "Sources for an applicability review",
         "text": "Final action is determined from current ROTAX publications, the aircraft records, engine configuration, and applicable maintenance authority. This website notice is an intake and applicability-review notice, not a substitute for the bulletin or maintenance instructions."
       },
       {
-        "heading": "Five-year rubber replacement: why it is a real package, not one hose",
+        "heading": "Service history and package scope",
         "text": "Planning context: This is commonly a multi-thousand-dollar planning item and can approach or exceed about $4,000 on some installations depending on access, routing, parts, fluids, clamps, carburetor parts, fuel-pump requirements, and documentation needs. Final scope is determined after aircraft, engine, installation, and records review."
       },
       {
@@ -895,7 +895,7 @@
       },
       {
         "heading": "Aircraft-specific evidence",
-        "text": "Joseph \"the shop\" Helminiak is the owner/operator behind Lima Charlie Aero LLC, a veteran-owned business based at KAKH / Gastonia Municipal Airport and serving aircraft owners in the Charlotte, Gastonia, and Carolinas region by appointment."
+        "text": "Joseph Helminiak is the owner/operator behind Lima Charlie Aero LLC, a veteran-owned business based at KAKH / Gastonia Municipal Airport and serving aircraft owners in the Charlotte, Gastonia, and Carolinas region by appointment."
       },
       {
         "heading": "Technical leadership within the company",
@@ -1761,7 +1761,7 @@
       },
       {
         "heading": "Technical Leadership",
-        "text": "Lima Charlie Aero was founded by Joseph “the shop” Helminiak, an FAA-certificated LSRM-A. The RFSC listing in the supplied source shows 9 Series Service, 9 Series Maintenance, and 912 iS Installation training through September 16, 2027. His background in systems engineering, project management, logistics, and quality assurance informs Lima Charlie Aero’s controlled, evidence-based maintenance process.",
+        "text": "Lima Charlie Aero was founded by Joseph Helminiak, an FAA-certificated LSRM-A. The RFSC listing in the supplied source shows 9 Series Service, 9 Series Maintenance, and 912 iS Installation training through September 16, 2027. His background in systems engineering, project management, logistics, and quality assurance informs Lima Charlie Aero’s controlled, evidence-based maintenance process.",
         "links": [
           [
             "/about-credentials",
@@ -2115,7 +2115,7 @@
     "sections": [
       {
         "heading": "Qualifications and scope",
-        "text": "Joseph “the shop” Helminiak is the founder and technical lead of Lima Charlie Aero and an FAA-certificated LSRM-A. The supplied RFSC listing records 9 Series Service, 9 Series Maintenance, and 912 iS Installation training through September 16, 2027. Credentials and manufacturer training do not automatically authorize every repair or signoff. Aircraft category, operating limitations, applicable documents and the proposed work determine the authorization boundary.",
+        "text": "Joseph Helminiak is the founder and technical lead of Lima Charlie Aero and an FAA-certificated LSRM-A. The supplied RFSC listing records 9 Series Service, 9 Series Maintenance, and 912 iS Installation training through September 16, 2027. Credentials and manufacturer training do not automatically authorize every repair or signoff. Aircraft category, operating limitations, applicable documents and the proposed work determine the authorization boundary.",
         "links": [
           [
             "https://rotaxirmt.com/irmt-place/7534",
@@ -2662,7 +2662,7 @@
         ]
       },
       {
-        "heading": "Five-year rubber replacement: why it is a real package, not one hose",
+        "heading": "Service history and package scope",
         "text": "Planning context: This is commonly a multi-thousand-dollar planning item and can approach or exceed about $4,000 on some installations depending on access, hose routing, parts, fluids, clamps, carburetor parts, fuel-pump requirements, and documentation needs. Final scope is determined after aircraft, engine, installation, and records review."
       },
       {
