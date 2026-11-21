@@ -9,19 +9,28 @@ def home_preloads(assets):
                    for width, media in HOME_CROPS)
 
 class Images:
-    def __init__(self, registry, assets, dimensions, page):
+    def __init__(self, registry, assets, dimensions, asset_bytes):
         self.registry = registry
         self.assets = assets
         self.dimensions = dimensions
-        self.page = page
+        self.asset_bytes = asset_bytes
         self.number = 0
 
     def image(self, subject, role, alt=None, eager=False, caption=None):
         record = self.registry[subject]
         src = record['asset']
         w,h = self.dimensions[src.removeprefix('assets/')]
-        widths = [(size, self.assets.get(src[:-5]+f'-responsive-{size}.webp')) for size in RESPONSIVE_WIDTHS if size<w]
-        srcset = ', '.join(f'{url} {size}w' for size,url in widths+[(w,self.assets[src])] if url)
+        candidates = [(width, self.assets[src[:-5] + f'-responsive-{width}.webp'])
+                      for width in RESPONSIVE_WIDTHS if width < w]
+        candidates.append((w, self.assets[src]))
+        def srcset(items):
+            return ', '.join(f'{url} {width}w' for width, url in items)
+        mobile = []
+        if role == 'hero':
+            candidates = [item for item in candidates if self.asset_bytes[item[1]] <= 150_000]
+            mobile = [item for item in candidates if self.asset_bytes[item[1]] <= 75_000]
+            if not mobile:
+                raise ValueError('Missing mobile hero within 75 KB: ' + subject)
         sizes = {'thumbnail':'76px','tile':'(max-width:560px) 46vw, (max-width:1020px) 50vw, 620px','mosaic':'(max-width:760px) 65vw, 420px','hero':'(max-width:759px) calc(100vw - 2 * clamp(16px, 4vw, 48px)), (max-width:1240px) 44vw, 536px'}.get(role,'(max-width:760px) 94vw, 460px')
         if role == 'evidence':
             sizes = '(max-width:560px) 46vw, (max-width:760px) 94vw, 460px'
@@ -29,8 +38,11 @@ class Images:
             sizes = 'auto, ' + sizes
         priority = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
         alt = record['alt'] if alt is None else alt
-        return (f'<img src="{self.assets[src]}" srcset="{srcset}" sizes="{sizes}" width="{w}" height="{h}" '
+        markup = (f'<img src="{candidates[-1][1]}" srcset="{srcset(candidates)}" sizes="{sizes}" width="{w}" height="{h}" '
                 f'style="object-position:{E(record["focal"])}" alt="{E(alt)}" data-subject="{subject}" data-purpose="{role}" data-caption="{E(caption or record["caption"])}" {priority}>')
+        if mobile and mobile != candidates:
+            return f'<picture><source media="(max-width:759px)" srcset="{srcset(mobile)}" sizes="{sizes}">{markup}</picture>'
+        return markup
 
     def figure(self, subject, role='evidence', caption=None, alt=None, stage_label=None):
         caption = caption or self.registry[subject]['caption']

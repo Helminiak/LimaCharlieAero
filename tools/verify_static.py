@@ -32,7 +32,7 @@ for r in routes:
  seen_subjects=set()
  for image in d.xpath('//img'):
   urls={image.get('src','')}
-  variants=image.xpath('@srcset | parent::picture/source/@srcset')
+  variants=image.xpath('@srcset | ancestor::picture[1]//source/@srcset')
   urls.update(candidate.strip().split()[0] for srcset in variants for candidate in srcset.split(',') if candidate.strip())
   assets={files.get(url.lstrip('/'),url) for url in urls}
   subject=image.get('data-subject')

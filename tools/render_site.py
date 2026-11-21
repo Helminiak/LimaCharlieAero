@@ -6,6 +6,8 @@ from metadata import page_schema
 
 def render_site(out, site, pages, public, published, amap, metadata, registry, cases, preview):
 
+    asset_bytes = {url: (out / url.lstrip('/')).stat().st_size for url in set(amap.values()) if url.endswith('.webp')}
+
     def asset(src):
         return amap[src.split('?')[0]]
 
@@ -64,7 +66,7 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         if key == 'card':
             body = f'''<div class="container"><section class="utility-card"><h1>{E(p['heading'])}</h1><p>{E(p['intro'])}</p><p>ROTAX · Light-sport · E-PROPS · Avionics</p><a class="button" href="{asset('assets/downloads/joseph-helminiak-lima-charlie-aero.vcf')}" download="Joseph-Helminiak-Lima-Charlie-Aero.vcf">Save contact</a>{actions()}<a href="mailto:{site['email']}">{site['email']}</a></section></div>'''
         else:
-            images = Images(registry,amap,metadata,key)
+            images = Images(registry,amap,metadata,asset_bytes)
             table = (ROOT/'templates'/(p['topic']+'-table.html')).read_text() if key in {'light-sport-prebuy-evaluation','aircraft-records-review'} else ''
             body = showcase(key,p,pages,site,images,actions,cases,notices() if any(r['type']=='notice' for r in published) else '',table)
         actual_ids = {'main','site-nav'}
