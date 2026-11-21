@@ -1,7 +1,7 @@
 {
-  "archive": "/home/joe/work/lca-redesign/codex-impl/releases/LCA_SITE_v103_owner_preview_SOURCE_AND_VERIFICATION.zip",
-  "sha256": "ecb9bb6f7286d60ae4d4cb7369ce88c6cecca6c1ca37311d90c6b4d3f97a39fb",
-  "files": 932,
+  "archive": "/home/joe/work/lca-redesign/reviews/v103-corrections-2/LCA_SITE_v103_owner_preview_SOURCE_AND_VERIFICATION.zip",
+  "sha256": "5cde46c3fd0f130f1c121e396c091db4c843f1bf1f5cb527fd99a4b3eb10f84e",
+  "files": 1037,
   "extracted_payload_hashes": "PASS",
-  "manifest_files": 931
+  "manifest_files": 1036
 }

@@ -64,6 +64,209 @@
       "exit": 1
     },
     {
+      "test": "R-02 '   ', None",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Reviewer must",
+      "observed_failure": "Reviewer must be non-blank text when supplied"
+    },
+    {
+      "test": "R-02 '', True",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Source note must",
+      "observed_failure": "Source note must be non-blank text when supplied"
+    },
+    {
+      "test": "R-02 False, 'Source'",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Reviewer must",
+      "observed_failure": "Reviewer must be non-blank text when supplied"
+    },
+    {
+      "test": "R-02 '', '  '",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Source note must",
+      "observed_failure": "Source note must be non-blank text when supplied"
+    },
+    {
+      "test": "R-02 '', None",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Editorial record needs",
+      "observed_failure": "Editorial record needs a reviewer or source note"
+    },
+    {
+      "test": "A1-01 dist updates.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded gearbox wording",
+      "observed_failure": "updates.html: superseded gearbox wording: engines installed in the type-certificated aircraft listed in the AD's Table 1"
+    },
+    {
+      "test": "A1-01 dist updates.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded gearbox wording",
+      "observed_failure": "updates.html: superseded gearbox wording: 912 A1/A2/A3 engines installed on the type-certificated aircraft listed in the AD's Table 1, where the engine's propeller gearbox serial number"
+    },
+    {
+      "test": "A1-02 dist rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded turbo date",
+      "observed_failure": "rotax-turbocharger-notice.html: superseded turbo date: November 23, 2026"
+    },
+    {
+      "test": "A1-02 dist rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded turbo date",
+      "observed_failure": "rotax-turbocharger-notice.html: superseded turbo date: 2026-11-23"
+    },
+    {
+      "test": "A1-01 dist rotax-gearbox-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "rotax-gearbox-notice: missing Amendment 1a text in //main//p[@class=\"lead\"]"
+    },
+    {
+      "test": "A1-01 dist owner-notices.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "owner-notices: missing Amendment 1a text in //article[.//a[@href=\"/rotax-gearbox-notice\"]]/p[2]"
+    },
+    {
+      "test": "A1-01 dist updates.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "updates: missing Amendment 1a text in //article[.//a[@href=\"/rotax-gearbox-notice\"]]/p[2]"
+    },
+    {
+      "test": "A1-01 dist rotax-gearbox-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "rotax-gearbox-notice: missing Amendment 1a text in //meta[@name=\"description\"]/@content"
+    },
+    {
+      "test": "A1-01 dist rotax-gearbox-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "rotax-gearbox-notice: missing Amendment 1a text in //meta[@property=\"og:description\"]/@content"
+    },
+    {
+      "test": "A1-02 dist rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "A1-02 regulatory sentence",
+      "observed_failure": "Missing A1-02 regulatory sentence"
+    },
+    {
+      "test": "A1-02 dist rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "A1-02 source line",
+      "observed_failure": "Missing A1-02 source line"
+    },
+    {
+      "test": "A1-02 dist rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "adjacent A1-02 correction link",
+      "observed_failure": "Missing adjacent A1-02 correction link"
+    },
+    {
+      "test": "A1-01 dist-preview updates.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded gearbox wording",
+      "observed_failure": "updates.html: superseded gearbox wording: engines installed in the type-certificated aircraft listed in the AD's Table 1"
+    },
+    {
+      "test": "A1-01 dist-preview updates.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded gearbox wording",
+      "observed_failure": "updates.html: superseded gearbox wording: 912 A1/A2/A3 engines installed on the type-certificated aircraft listed in the AD's Table 1, where the engine's propeller gearbox serial number"
+    },
+    {
+      "test": "A1-02 dist-preview rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded turbo date",
+      "observed_failure": "rotax-turbocharger-notice.html: superseded turbo date: November 23, 2026"
+    },
+    {
+      "test": "A1-02 dist-preview rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "superseded turbo date",
+      "observed_failure": "rotax-turbocharger-notice.html: superseded turbo date: 2026-11-23"
+    },
+    {
+      "test": "A1-01 dist-preview rotax-gearbox-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "rotax-gearbox-notice: missing Amendment 1a text in //main//p[@class=\"lead\"]"
+    },
+    {
+      "test": "A1-01 dist-preview owner-notices.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "owner-notices: missing Amendment 1a text in //article[.//a[@href=\"/rotax-gearbox-notice\"]]/p[2]"
+    },
+    {
+      "test": "A1-01 dist-preview updates.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "updates: missing Amendment 1a text in //article[.//a[@href=\"/rotax-gearbox-notice\"]]/p[2]"
+    },
+    {
+      "test": "A1-01 dist-preview rotax-gearbox-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "rotax-gearbox-notice: missing Amendment 1a text in //meta[@name=\"description\"]/@content"
+    },
+    {
+      "test": "A1-01 dist-preview rotax-gearbox-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "missing Amendment 1a",
+      "observed_failure": "rotax-gearbox-notice: missing Amendment 1a text in //meta[@property=\"og:description\"]/@content"
+    },
+    {
+      "test": "A1-02 dist-preview rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "A1-02 regulatory sentence",
+      "observed_failure": "Missing A1-02 regulatory sentence"
+    },
+    {
+      "test": "A1-02 dist-preview rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "A1-02 source line",
+      "observed_failure": "Missing A1-02 source line"
+    },
+    {
+      "test": "A1-02 dist-preview rotax-turbocharger-notice.html",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "adjacent A1-02 correction link",
+      "observed_failure": "Missing adjacent A1-02 correction link"
+    },
+    {
       "test": "X-09 dropped editor-flag-internal",
       "injected_result": "REJECTED",
       "command": "python3 tools/verify_publication.py",

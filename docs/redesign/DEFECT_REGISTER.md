@@ -89,3 +89,15 @@ The dispositions and owner gates in REVIEW_RESOLUTION.md govern this candidate.
 - A package smoke test stalled awaiting sequential lazy-image decoding. The verifier now requests eager images and bounds the readiness wait. The extracted build passed on a fresh port.
 - Interrupting the old verifier left Wrangler HTTP and inspector listeners. The harness now rejects occupied ports, handles SIGINT/SIGTERM and cleans up at process exit. A deliberate SIGINT exited 130 and released both fresh ports. The interrupted legacy process requires separate cleanup. See the implementation log for its last observed state.
 - Wrangler's npm version checker refreshed its package-version cache during the first run. The Cloudflare metadata and metrics switches do not cover this lookup. The corrected harness keeps that check on loopback. A fresh-cache process-tree trace recorded 23 IPv4/IPv6 connect attempts, all to 127.0.0.1.
+
+## 2026-11-21 final-review corrections
+
+| Finding | Disposition and evidence |
+|---|---|
+| A1-01 / X-04 | Amendment 1a matches the detail lead, detail description, Open Graph description and both hub cards in public and preview. Detail Twitter and WebPage JSON-LD use the same summary. Neither build emits an editorial feed. Both superseded phrasings and omissions from each required surface failed independently. |
+| A1-02 / X-14 | Both builds show the November 4 effective date, the corrected source attribution and the official correction immediately after the original rule. Both spellings of the November 23 date failed when paired with the AD identifier. |
+| Design spec §7 erratum | The historical table overextended the Table 1 restriction and gave the wrong turbo effective date. The dated note points to Addendum 1 and Amendment 1a. |
+| Copy deck lines 109–110 erratum | The historical instructions retained the gearbox mistake, supplied the wrong turbo date and requested an unsupported attribution. The dated note points to the governing correction and tracks outstanding owner sign-off. |
+| R-01 | The source line derives its date from the saved review date. Two actual editor POSTs in a disposable fixture returned 303. Both showed November 22 in the rebuilt notice. Only the second rendered the synthetic reviewer. The shipped turbo record remains unsigned. |
+| R-02 | Five invalid attribution fixtures were rejected. The genuine unsigned notice passed selection and the build. Commands, expected diagnostics and observed messages are in [negative-tests.json](../../evidence/redesign/negative-tests.json). |
+| Mobile performance | Five interleaved runs on each artifact per route. Home baseline → corrected median was 1,362 → 1,362 ms (ranges 1,361–1,668 and 1,285–1,735). E-PROPS was 1,667 → 1,674 ms (+0.42%, ranges 1,360–1,888 and 1,589–1,813). The 1,800 ms median gate and 5% regression limit passed. One corrected E-PROPS sample exceeded 1,800 ms. The independent adapter's 1,807 ms home and 1,804 ms E-PROPS observations are recorded as harness variance. [All twenty runs](../../evidence/redesign/corrections-2/performance.json) |

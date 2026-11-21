@@ -1,12 +1,12 @@
 {
   "status": "PASS",
   "release": "v103-owner-preview",
-  "archive": "/home/joe/work/lca-redesign/codex-impl/releases/LCA_SITE_v103_owner_preview_DEPLOYABLE.zip",
-  "archive_sha256": "0e78c6ea894c0f18a14d5ad754edef8af76cf4fa73658b87d6bfa674eb5fdd50",
-  "archive_bytes": 8036405,
+  "archive": "/home/joe/work/lca-redesign/reviews/v103-corrections-2/LCA_SITE_v103_owner_preview_DEPLOYABLE.zip",
+  "archive_sha256": "2018beb56540e1135651f59324102c8a3704ae0aaef99bb38ad2a7543693dcc6",
+  "archive_bytes": 8036708,
   "public_files": 318,
   "html_routes": 40,
   "deployment_root": "index.html is at ZIP root; no enclosing folder",
   "clean_extraction_hashes_match": true,
-  "extracted_root": "/home/joe/work/lca-redesign/codex-impl/verification-root"
+  "extracted_root": "/tmp/lca-correction.n4iBlI/verification-root"
 }

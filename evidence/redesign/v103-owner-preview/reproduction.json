@@ -1,20 +1,20 @@
 {
   "public": {
     "files": 318,
-    "bytes": 8497509,
-    "sha256_of_manifest": "1ec8b40a6b26bac6a1817f846e666f231bfe8e5197f77c1341afb2f98e68a715",
+    "bytes": 8498776,
+    "sha256_of_manifest": "1cb97c07b208a4edabdedf5df36719ab4bef6f823b9b109efe0871dc24d834f2",
     "independent_checkout_hash_match": true,
     "routes": 40,
-    "capture_measurements": 48,
-    "capture_images": 102
+    "capture_measurements": 24,
+    "capture_images": 48
   },
   "preview": {
     "files": 324,
-    "bytes": 8545144,
-    "sha256_of_manifest": "f16beef5dafed9a4d08ad34d9f20ffa519a8fb2ddf2a99b82f406bb1b05b1c3a",
+    "bytes": 8546411,
+    "sha256_of_manifest": "2aa4ed0e66e80dc5e144a428f9d4e819eb976dae9d6374cf6459c0da56d4f951",
     "independent_checkout_hash_match": true,
     "routes": 40,
-    "capture_measurements": 48,
-    "capture_images": 108
+    "capture_measurements": 24,
+    "capture_images": 48
   }
 }

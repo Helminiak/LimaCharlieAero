@@ -257,3 +257,13 @@ Using the project virtual environment and both requested offline environment set
 - Listener exception: the interrupted original package smoke left 127.0.0.1:8798 and :9798 listening. Its owning command session exited 130. Scoped pgrep and pkill in the subsequent command namespace returned exit 1. The owner was notified. The corrected harness passed occupied-port rejection, interruption and release of its own HTTP/inspector listeners.
 
 Independent design/SEO review and the six owner gates in REVIEW_RESOLUTION.md remain open.
+
+## 2026-11-21 targeted correction pass
+
+The supplied branch started clean at 1467a2297a9d39c8301817f874bd7ed0e443bcb0. The linked worktree index rejected creation of index.lock on a read-only mount. Implementation and verification used an independent local clone on the same branch. The first commit contains only the two binding documents, compared byte-for-byte with the originals. The review transcripts remain at ../reviews/astra-final-review-1.log and ../reviews/astra-final-review-2.log relative to the implementation workspace.
+
+Applied A1-02 and Amendment 1a, annotated both historical specifications, validated attribution and exercised unsigned and synthetic signed saves. The four-route correction captures cover 320, 375, 390, 768, 1024 and 1440 CSS pixels in both builds. The source lines and long hub cards wrapped within their containers. Captures and browser receipts are in evidence/redesign/corrections-2. The first capture attempt exposed an axe browser-context error. The corrected runner completed both builds with zero overflow and zero axe violations on the four routes at 390 px.
+
+The first complete paired performance run met both median thresholds. An experimental E-PROPS CSS change was committed and reverted during analysis. Its incomplete timing run encountered a 404 during a rebuild and contributes no samples to the paired receipt. The delivered artifact has no stylesheet change. See DEFECT_REGISTER for the spreads and the reviewer's adapter observations.
+
+Verification used the repository Python environment and pinned Node dependencies, Chromium 153, and the two offline Cloudflare environment switches. The requested npm suite ran with LCA_NOTICE_RETEST=1 to scope its route layout and axe loop. Both public and preview SHA-256 file manifests matched fresh checkout builds. The package check verified all 318 extracted hashes and 40 served HTML bodies. Firefox/WebKit executables, physical-device and field metrics, live provider delivery, notice owner sign-off, and independent design/SEO approval remain outside the verified engineering gates.
