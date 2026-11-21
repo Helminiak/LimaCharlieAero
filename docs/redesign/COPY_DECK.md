@@ -108,4 +108,6 @@ Source: PR #2 comment 6019588967. Text only unless the owner supplies photos.
 ## Owner notices (content update, Codex)
 - `rotax-turbocharger-notice`: add source `https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22307.pdf` and the sentence `FAA AD 2026-22-03 (effective November 23, 2026) applies to listed certified 915 iSc and 916 iSc engines and requires the action before further flight; non-certified 915/916 iS engines remain under the ROTAX bulletin.` Set `last_modified`/`last_review` to the build date and `next_review` 30 days later. Reviewer: `Lima Charlie Aero technical review`.
 - `rotax-gearbox-notice`: content verified accurate on 2026-11-20 against FR 2026-08-13 (AD 2026-16-11, effective 2026-08-28). Update `last_review` and `next_review` only.
+
+**Erratum, 2026-11-21.** The gearbox Table 1 pairing and type-certification condition apply to the listed A-series models. Both engine groups require a listed installed gearbox. FAA AD 2026-22-03 took effect November 4, 2026. Use A1-02 and Amendment 1a of [Resolution Addendum 1](REVIEW_RESOLUTION_ADDENDUM_1.md) for the regulatory wording, source references and attribution. Owner sign-off is pending.
 - `site.json` `date`: set to the preview build date and record it.

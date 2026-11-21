@@ -10,6 +10,11 @@ def ck(ok,label):
  global checks
  checks+=1
  if not ok:errors.append(label)
+from notice_checks import check_notices
+try:
+ check_notices(root)
+except ValueError as error:
+ ck(False, str(error))
 expected.add('our-work.html')
 ck({r['file'] for r in routes}==expected,'40 expected routes');ck(len(routes)==40,'route count');ck(files==json.loads((E/'deployment-manifest.json').read_text()),'frozen output manifest')
 ck(not any(p.split('/')[0] in ['docs','baselines','tools','content','evidence','templates','assets-src'] for p in files),'source excluded from public output')

@@ -16,8 +16,6 @@ AUTHORITY = (ROOT / 'docs/redesign/REVIEW_RESOLUTION.md').read_text()
 def check_copy(root):
     for slug, selector in (
         ('s-lsa-e-lsa-maintenance', '//aside[@class="limits"]/h2 | //aside[@class="limits"]/p'),
-        ('rotax-gearbox-notice', '//main//p[@class="lead"]'),
-        ('rotax-turbocharger-notice', '//main//p[@class="source-note"]'),
         ('rotax-gearbox-propeller-vibration', '//div[@class="pair"]/preceding-sibling::h2[1]'),
     ):
         doc = html.parse(root / (slug + '.html'))
@@ -26,6 +24,8 @@ def check_copy(root):
         for element in elements:
             value = element.text_content()
             assert ('"' + value + '"' in AUTHORITY or '**' + value + '**' in AUTHORITY), (slug, value)
+    from notice_checks import check_notices
+    check_notices(root)
     vibration = html.parse(root / 'rotax-gearbox-propeller-vibration.html')
     captions = vibration.xpath('//div[@class="pair"]//figcaption')
     assert [c.text_content() for c in captions] == [

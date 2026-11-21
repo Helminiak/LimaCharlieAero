@@ -161,6 +161,8 @@ The case template enforces "What this does and does not show". Pending work is n
 | E-PROPS dealer status | Owner statement; RC3 copy | "E-PROPS dealer" is kept. Manufacturer-level decisions remain with E-PROPS. **Owner confirms dealer status is current** |
 | Manufacturer coordination | Owner steering | Approved phrase: "We work directly with manufacturers and their engineering departments on aircraft-specific technical and authorization questions." No "approved by", "partner" or "certified by" language |
 
+**Erratum, 2026-11-21.** The gearbox Table 1 pairing and type-certification condition apply to the listed A-series models. Both engine groups require a listed installed gearbox. FAA AD 2026-22-03 took effect November 4, 2026. Use A1-02 and Amendment 1a of [Resolution Addendum 1](REVIEW_RESOLUTION_ADDENDUM_1.md) for the regulatory wording, source references and attribution. Owner sign-off is pending.
+
 ## 8. Photography plan
 - Target: **50–55 distinct useful subjects** across the site (owner guidance), up from RC3's 38. All come from the live/RC3 pool. None are excluded except those in the privacy table in `01-BASELINE-AUDIT-CLAUDE.md`.
 - Every placement has: subject id, page, purpose (hero / context / evidence / case), page-specific caption, alt text, a crop focal point and a privacy check (registration, faces, documents).
