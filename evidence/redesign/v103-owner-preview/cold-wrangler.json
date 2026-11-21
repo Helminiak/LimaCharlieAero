@@ -1,0 +1,18 @@
+{
+  "method": "Fresh TMPDIR, both Cloudflare flags disabled, strace -f -e trace=connect on startServer(dist,18995,{wrangler:true}) through stop. All IPv4 and IPv6 connect calls in the process tree counted.",
+  "status": 200,
+  "inet_connect_calls": 23,
+  "non_loopback_connect_calls": 0,
+  "observed_address": "127.0.0.1",
+  "observed_ports": [
+    1,
+    18995,
+    19995,
+    36669,
+    37339,
+    44269,
+    44561
+  ],
+  "version_check_result": "connect(19, {sa_family=AF_INET, sin_port=htons(1), sin_addr=inet_addr(\"127.0.0.1\")}, 16) = -1 EINPROGRESS (Operation now in progress)",
+  "first_run_exception": "The first Wrangler run refreshed its npm package-version cache at 16:59:12 UTC. Its bundled version checker is independent of Cloudflare telemetry and cf.json. No form submission was involved."
+}

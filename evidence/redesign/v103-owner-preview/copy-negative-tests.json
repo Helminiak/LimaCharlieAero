@@ -1,0 +1,26 @@
+[
+  {
+    "item": "CR-01",
+    "command": "python3 tools/verify_static.py",
+    "page": "index.html",
+    "original": "Readings, findings and records from real aircraft.",
+    "injected": "Each example follows a case.",
+    "expected_failure": "index zero case copy",
+    "observed_failure": [
+      "index zero case copy"
+    ],
+    "exit": 1
+  },
+  {
+    "item": "CR-03",
+    "command": "python3 tools/verify_static.py",
+    "page": "light-sport-experimental-avionics.html",
+    "original": "technical findings understandable.",
+    "injected": "technical findings understandable. Avionics / Electrical",
+    "expected_failure": "light-sport-experimental-avionics trailing section label",
+    "observed_failure": [
+      "light-sport-experimental-avionics trailing section label"
+    ],
+    "exit": 1
+  }
+]

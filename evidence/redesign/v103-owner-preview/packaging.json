@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "release": "v103-owner-preview",
+  "archive": "/home/joe/work/lca-redesign/codex-impl/releases/LCA_SITE_v103_owner_preview_DEPLOYABLE.zip",
+  "archive_sha256": "0e78c6ea894c0f18a14d5ad754edef8af76cf4fa73658b87d6bfa674eb5fdd50",
+  "archive_bytes": 8036405,
+  "public_files": 318,
+  "html_routes": 40,
+  "deployment_root": "index.html is at ZIP root; no enclosing folder",
+  "clean_extraction_hashes_match": true,
+  "extracted_root": "/home/joe/work/lca-redesign/codex-impl/verification-root"
+}

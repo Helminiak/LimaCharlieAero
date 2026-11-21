@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "negative_cases": [
+    {
+      "test": "X-10 owner_confirmation 'false'",
+      "injected_result": "REJECTED",
+      "reason": "Confirmation must be a boolean: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 owner_confirmation False",
+      "injected_result": "REJECTED",
+      "reason": "Published case needs confirmed facts: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 sources [None]",
+      "injected_result": "REJECTED",
+      "reason": "Invalid source reference: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 sources ['  ']",
+      "injected_result": "REJECTED",
+      "reason": "Invalid source reference: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 status 'In progress \u00b7 pending manufacturer review'",
+      "injected_result": "REJECTED",
+      "reason": "Case status conflicts with stages: synthetic-confirmed"
+    },
+    {
+      "test": "Ineligible presentation subject: tl-ultralight-designer-correspondence",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "Unregistered proof source",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "Raster metadata in dynavibe-bad-1-27-ips-800.webp",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "X-09 dropped editor-flag-internal",
+      "injected_result": "REJECTED",
+      "reason": "editor standalone leak"
+    },
+    {
+      "test": "X-09 dropped editor-flag-placeholder",
+      "injected_result": "REJECTED",
+      "reason": "editor standalone leak"
+    },
+    {
+      "test": "X-11 sitemap.xml </urlset>",
+      "injected_result": "REJECTED",
+      "reason": "Exact sitemap membership"
+    },
+    {
+      "test": "X-11 sitemap.xml </urlset>",
+      "injected_result": "REJECTED",
+      "reason": "Exact sitemap membership, Draft content in sitemap.xml"
+    },
+    {
+      "test": "X-11 index.html property=\"og:description\" content=\"",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in index.html"
+    },
+    {
+      "test": "X-11 index.html name=\"twitter:title\" content=\"",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in index.html"
+    },
+    {
+      "test": "X-11 our-work.html \"@graph\": [",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in our-work.html"
+    },
+    {
+      "test": "X-11 updates.html </main>",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in updates.html"
+    },
+    {
+      "test": "X-11 search-index.json ",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in search-index.json"
+    },
+    {
+      "test": "X-11 site.webmanifest \"short_name\": \"",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in site.webmanifest"
+    },
+    {
+      "test": "X-11 robots.txt User-agent:",
+      "injected_result": "REJECTED",
+      "reason": "Draft content in robots.txt"
+    },
+    {
+      "test": "X-13 /our-wrok",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "X-13 /,/our-wrok",
+      "injected_result": "REJECTED",
+      "exit": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "public": {
+    "files": 318,
+    "bytes": 8497509,
+    "sha256_of_manifest": "1ec8b40a6b26bac6a1817f846e666f231bfe8e5197f77c1341afb2f98e68a715",
+    "independent_checkout_hash_match": true,
+    "routes": 40,
+    "capture_measurements": 48,
+    "capture_images": 102
+  },
+  "preview": {
+    "files": 324,
+    "bytes": 8545144,
+    "sha256_of_manifest": "f16beef5dafed9a4d08ad34d9f20ffa519a8fb2ddf2a99b82f406bb1b05b1c3a",
+    "independent_checkout_hash_match": true,
+    "routes": 40,
+    "capture_measurements": 48,
+    "capture_images": 108
+  }
+}

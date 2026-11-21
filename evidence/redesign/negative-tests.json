@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "negative_cases": [
+    {
+      "test": "X-10 owner_confirmation 'false'",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "boolean",
+      "observed_failure": "Confirmation must be a boolean: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 owner_confirmation False",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "confirmed facts",
+      "observed_failure": "Published case needs confirmed facts: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 sources [None]",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "source reference",
+      "observed_failure": "Invalid source reference: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 sources ['  ']",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "source reference",
+      "observed_failure": "Invalid source reference: synthetic-confirmed"
+    },
+    {
+      "test": "X-10 status 'In progress \u00b7 pending manufacturer review'",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "conflicts with stages",
+      "observed_failure": "Case status conflicts with stages: synthetic-confirmed"
+    },
+    {
+      "test": "X-07 social card",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py",
+      "expected_failure": "Ineligible presentation subject: tl-ultralight-designer-correspondence",
+      "observed_failure": "ValueError: Ineligible presentation subject: tl-ultralight-designer-correspondence",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "X-08 loose file",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py",
+      "expected_failure": "Unregistered proof source",
+      "observed_failure": "ValueError: Unregistered proof source: images/proof/unregistered.webp",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "X-08 ICC",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py",
+      "expected_failure": "Raster metadata in dynavibe-bad-1-27-ips-800.webp",
+      "observed_failure": "ValueError: Raster metadata in dynavibe-bad-1-27-ips-800.webp: ['icc_profile']",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "X-09 dropped editor-flag-internal",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "editor standalone leak",
+      "observed_failure": "editor standalone leak"
+    },
+    {
+      "test": "X-09 dropped editor-flag-placeholder",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "editor standalone leak",
+      "observed_failure": "editor standalone leak"
+    },
+    {
+      "test": "X-11 sitemap.xml </urlset>",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Exact sitemap membership",
+      "observed_failure": "Exact sitemap membership"
+    },
+    {
+      "test": "X-11 sitemap.xml </urlset>",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Exact sitemap membership, Draft content in sitemap.xml"
+    },
+    {
+      "test": "X-11 index.html property=\"og:description\" content=\"",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in index.html"
+    },
+    {
+      "test": "X-11 index.html name=\"twitter:title\" content=\"",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in index.html"
+    },
+    {
+      "test": "X-11 our-work.html \"@graph\": [",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in our-work.html"
+    },
+    {
+      "test": "X-11 updates.html </main>",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in updates.html"
+    },
+    {
+      "test": "X-11 search-index.json ",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in search-index.json"
+    },
+    {
+      "test": "X-11 site.webmanifest \"short_name\": \"",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in site.webmanifest"
+    },
+    {
+      "test": "X-11 robots.txt User-agent:",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Draft content",
+      "observed_failure": "Draft content in robots.txt"
+    },
+    {
+      "test": "X-13 /our-wrok",
+      "command": "LCA_PERF_ROUTES=/our-wrok node tools/performance.mjs dist --after-only",
+      "expected_failure": "Unknown or duplicate performance route",
+      "observed_failure": "Error: Unknown or duplicate performance route: /our-wrok",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "X-13 /,/our-wrok",
+      "command": "LCA_PERF_ROUTES=/,/our-wrok node tools/performance.mjs dist --after-only",
+      "expected_failure": "Unknown or duplicate performance route",
+      "observed_failure": "Error: Unknown or duplicate performance route: /,/our-wrok",
+      "injected_result": "REJECTED",
+      "exit": 1
+    }
+  ]
+}

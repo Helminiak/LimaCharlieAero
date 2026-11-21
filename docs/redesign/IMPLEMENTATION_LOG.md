@@ -240,3 +240,20 @@ Changes against the original redesign brief baseline through the engineering com
 | M | tools/verify_browser.mjs |
 | M | tools/verify_release_features.mjs |
 | M | tools/verify_static.py |
+
+## 2026-11-21 · Post-review corrections to 7d2e68e
+
+The three independent review inputs matched the supplied files with cmp before the first commit. A grouped Git command encountered a read-only worktree index. Standalone Git commands succeeded on redesign/v103-owner-preview. The sibling review worktree supplied a separate build and verification run.
+
+Using the project virtual environment and both requested offline environment settings, the implementation checkout and sibling produced identical SHA-256 manifests for all 318 public and 324 preview files. Each build contains 40 HTML routes. Public output totals 8,497,509 bytes and preview totals 8,545,144 bytes. The public sitemap has 36 entries and the noindex preview sitemap has zero. The independent public repro-dist build also matched.
+
+- Static verification completed 4,800 public checks and 4,840 preview checks. The preserved RC3 FAQ artifact has SHA-256 50a63e136a7e9ca191eac7dc48f0ba64dc5edb7739c125b313eec3e00ba3f544. The fixture and both correction builds matched its 33 ID/question pairs.
+- Both Chromium suites exercised 40 axe routes, 240 route/width combinations, 127 route checks and 24 intake checks apiece. Form requests were intercepted. No provider delivery was attempted. Firefox and WebKit reported missing executables in both builds.
+- The updated publication suite observed 21 rejected faults and passing clean controls. Two additional injected copy regressions failed independently with the expected static diagnostics. The authoritative publication receipt is evidence/redesign/negative-tests.json and the copy receipt is v103-owner-preview/copy-negative-tests.json under the same evidence directory. The earlier publication-checks.json is retained as an inherited checkpoint.
+- Captures cover only the eight requested pages at 320, 375, 390, 768, 1024 and 1440 CSS pixels in both builds. All 96 measurements recorded zero horizontal overflow. The 210 images include full pages, focused changes and additional Our Work/stepper views. Visual inspection covered mobile and desktop copy, document masks, the two independent readings, notice paragraphs, the Our Work hero, legend and preview stepper. The five native document crops remain under evidence/redesign/privacy.
+- Lighthouse 13.5.0 measured nine routes on mobile and desktop. All 18 performance, accessibility and SEO scores were 100. Maximum mobile LCP was 1,743 ms, maximum mobile CLS was 0.00734, and all mobile TBT values were zero. These are local simulated measurements.
+- The public ZIP was extracted and checked against evidence/redesign/v103-owner-preview/deployment-manifest.json. All 318 hashes and all 40 served HTML bodies matched. The extracted browser smoke covered six layouts and three axe scans.
+- First-run exception: the Wrangler npm version cache refreshed at 16:59:12 UTC despite both Cloudflare switches. This lookup concerned the Wrangler package version. The corrected harness's fresh-cache trace is in evidence/redesign/v103-owner-preview/cold-wrangler.json.
+- Listener exception: the interrupted original package smoke left 127.0.0.1:8798 and :9798 listening. Its owning command session exited 130. Scoped pgrep and pkill in the subsequent command namespace returned exit 1. The owner was notified. The corrected harness passed occupied-port rejection, interruption and release of its own HTTP/inspector listeners.
+
+Independent design/SEO review and the six owner gates in REVIEW_RESOLUTION.md remain open.

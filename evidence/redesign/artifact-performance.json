@@ -12,10 +12,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1307.0634,
+      "lcp_ms": 1306.9748,
       "cls": 0.007334114536371284,
       "tbt_ms": 0,
-      "transfer_bytes": 325609
+      "transfer_bytes": 325679
     },
     {
       "release": "artifact",
@@ -27,10 +27,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 475.758625,
+      "lcp_ms": 467.283,
       "cls": 0.04394361490597308,
       "tbt_ms": 0,
-      "transfer_bytes": 535478
+      "transfer_bytes": 535550
     },
     {
       "release": "artifact",
@@ -42,10 +42,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1613.3087,
+      "lcp_ms": 1606.1346,
       "cls": 0.0005991552741997561,
       "tbt_ms": 0,
-      "transfer_bytes": 254204
+      "transfer_bytes": 254348
     },
     {
       "release": "artifact",
@@ -57,10 +57,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 354.9465,
+      "lcp_ms": 402.33962500000007,
       "cls": 0.0007115466174095673,
       "tbt_ms": 0,
-      "transfer_bytes": 225066
+      "transfer_bytes": 225126
     },
     {
       "release": "artifact",
@@ -72,10 +72,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1381.008,
+      "lcp_ms": 1550.1644999999999,
       "cls": 0.0005991552741997561,
       "tbt_ms": 0,
-      "transfer_bytes": 197345
+      "transfer_bytes": 179214
     },
     {
       "release": "artifact",
@@ -87,10 +87,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 409.98830000000004,
+      "lcp_ms": 384.447,
       "cls": 0.000748015494616907,
       "tbt_ms": 0,
-      "transfer_bytes": 231206
+      "transfer_bytes": 222343
     },
     {
       "release": "artifact",
@@ -102,10 +102,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1533.9784,
+      "lcp_ms": 1531.8331,
       "cls": 0.0005991552741997561,
       "tbt_ms": 0,
-      "transfer_bytes": 191382
+      "transfer_bytes": 191499
     },
     {
       "release": "artifact",
@@ -117,10 +117,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 397.8626,
+      "lcp_ms": 385.6594,
       "cls": 0.0007115466174095673,
       "tbt_ms": 0,
-      "transfer_bytes": 262921
+      "transfer_bytes": 263008
     },
     {
       "release": "artifact",
@@ -132,10 +132,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1535.96,
+      "lcp_ms": 1605.5026000000003,
       "cls": 0.0008783071633155516,
       "tbt_ms": 0,
-      "transfer_bytes": 244344
+      "transfer_bytes": 244401
     },
     {
       "release": "artifact",
@@ -147,10 +147,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 344.4724,
+      "lcp_ms": 435.96725000000004,
       "cls": 0.0009124286728608126,
       "tbt_ms": 0,
-      "transfer_bytes": 354311
+      "transfer_bytes": 354363
     },
     {
       "release": "artifact",
@@ -162,10 +162,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1472.0385,
+      "lcp_ms": 1448.3544,
       "cls": 0.0005991552741997561,
       "tbt_ms": 0,
-      "transfer_bytes": 185475
+      "transfer_bytes": 185525
     },
     {
       "release": "artifact",
@@ -177,10 +177,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 416.35310000000004,
+      "lcp_ms": 411.91864999999996,
       "cls": 0.0008303844435431088,
       "tbt_ms": 0,
-      "transfer_bytes": 185438
+      "transfer_bytes": 185529
     },
     {
       "release": "artifact",
@@ -192,10 +192,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1617.2058,
+      "lcp_ms": 1614.6241499999999,
       "cls": 0.0005991552741997561,
       "tbt_ms": 0,
-      "transfer_bytes": 149841
+      "transfer_bytes": 149912
     },
     {
       "release": "artifact",
@@ -207,10 +207,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 391.6359,
+      "lcp_ms": 410.948875,
       "cls": 0.02901102341741721,
       "tbt_ms": 0,
-      "transfer_bytes": 214446
+      "transfer_bytes": 214509
     },
     {
       "release": "artifact",
@@ -222,10 +222,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1375.75875,
+      "lcp_ms": 1378.64265,
       "cls": 0.003879530400443421,
-      "tbt_ms": 8,
-      "transfer_bytes": 112401
+      "tbt_ms": 0,
+      "transfer_bytes": 112484
     },
     {
       "release": "artifact",
@@ -237,10 +237,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 405.30615,
+      "lcp_ms": 385.17855000000003,
       "cls": 0.001478281242398711,
       "tbt_ms": 0,
-      "transfer_bytes": 104633
+      "transfer_bytes": 104716
     },
     {
       "release": "artifact",
@@ -252,10 +252,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 1611.5043,
+      "lcp_ms": 1742.9829,
       "cls": 0.0003200033850839607,
       "tbt_ms": 0,
-      "transfer_bytes": 176147
+      "transfer_bytes": 205511
     },
     {
       "release": "artifact",
@@ -267,10 +267,10 @@
       "accessibility": 100,
       "best_practices": 100,
       "seo": 100,
-      "lcp_ms": 497.7226999999999,
+      "lcp_ms": 467.63689999999997,
       "cls": 0.0005394165731754742,
       "tbt_ms": 0,
-      "transfer_bytes": 229246
+      "transfer_bytes": 205499
     }
   ]
 }

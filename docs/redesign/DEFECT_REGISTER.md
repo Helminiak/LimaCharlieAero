@@ -67,3 +67,25 @@ Owner review covers the five draft histories, image-to-case associations, the Va
 | Firefox | BLOCKED in both build suites | `Error: browserType.launch: Executable doesn't exist at /home/joe/.cache/ms-playwright/firefox-1543/firefox/firefox` |
 | WebKit | BLOCKED in both build suites | `Error: browserType.launch: Executable doesn't exist at /home/joe/.cache/ms-playwright/webkit-2359/pw_run.sh` |
 | Wrangler local Request.cf cache | PARTIAL | Wrangler logged `Error: ENOENT: no such file or directory, mkdir '/home/joe/work/lca-redesign/codex-impl/node_modules/.mf'` and used its default placeholder. The static site uses no Functions. Asset serving, routes, redirects and headers ran locally. |
+
+## Corrections following the frozen Phase 9 review
+
+The dispositions and owner gates in REVIEW_RESOLUTION.md govern this candidate.
+
+| Items | Correction and verification |
+|---|---|
+| X-01, X-02, X-04, X-14 | Checked the rendered captions, maintenance limits, gearbox applicability paragraph and turbo source note against the signed-off copy blocks. Notice reviewer sign-off remains open. |
+| X-03 | The full-size checklist and engineering packet contain eight and sixteen uniform pixel masks respectively. Each WebP contains a single RGB lossless image chunk. The G5 box label and barcodes remain in the owner rights review. |
+| X-05, X-06 | The stale intake topic uses a closed mapping. Both native and enhanced form paths passed local interception. All 33 RC3 FAQ fragments resolve to their original questions. |
+| X-07, X-08 | One eligible proof pool supplies public originals, variants and social cards. Injected correspondence, an unregistered image and an ICC profile were rejected. |
+| X-09, X-10 | Editor saves preserved both suppression flags. The case model rejected unconfirmed publication, empty source references and status/stage disagreement. |
+| X-11, X-13 | The verifier rejected all nine sitemap/canary injections and both misspelled Lighthouse selections. See evidence/redesign/negative-tests.json for all 21 failures and the commands. |
+| X-12, X-15 | ZIPs use the v103 identifier. The verifier checks extracted hashes and the served HTML bytes. Wrangler has both offline flags and a loopback-only version-check registry. |
+| CR-01…CR-03 | The zero-case variant passed on public home and Our Work. Preview retained five drafts; computed stage fills passed on both rail backgrounds. Three glued labels were removed and the static paragraph check passed. |
+| CR-04…CR-07 | Wide-screen legend rows are four plus three. Our Work opens with gearbox wear. The optional NDT excerpt spans two desktop columns. CR-07 remains with the owner. |
+
+### Verification defects found during this correction run
+
+- A package smoke test stalled awaiting sequential lazy-image decoding. The verifier now requests eager images and bounds the readiness wait. The extracted build passed on a fresh port.
+- Interrupting the old verifier left Wrangler HTTP and inspector listeners. The harness now rejects occupied ports, handles SIGINT/SIGTERM and cleans up at process exit. A deliberate SIGINT exited 130 and released both fresh ports. The interrupted legacy process requires separate cleanup. See the implementation log for its last observed state.
+- Wrangler's npm version checker refreshed its package-version cache during the first run. The Cloudflare metadata and metrics switches do not cover this lookup. The corrected harness keeps that check on loopback. A fresh-cache process-tree trace recorded 23 IPv4/IPv6 connect attempts, all to 127.0.0.1.
