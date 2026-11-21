@@ -80,7 +80,11 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         meta = f"""<p class="meta">Published {r['published']} · Substantive update {r['last_modified']}""" + (f" · Source checked {r['last_review']}" if r['type'] == 'notice' else '') + '</p>'
         review = f"""<p class="source-note">Review status: source checked {r['last_review']}; next review {r['next_review']}. Reviewer: {E(r['reviewer'])}.</p>""" if r['type'] == 'notice' else ''
         if r.get('source_note'):
-            review = '<p class="source-note">' + E(r['source_note']) + '</p>'
+            checked = date.fromisoformat(r['last_review'])
+            note = r['source_note'].replace('{last_review}', f'{checked:%B} {checked.day}, {checked.year}')
+            review = '<p class="source-note">' + E(note) + '</p>'
+            if r['reviewer']:
+                review += '<p>Reviewer: ' + E(r['reviewer']) + '.</p>'
         state = f"""<p class="notice-strip">This entry is {r['state']}. """ + (f"""<a href="/{E(r['replaced_by'])}">Read the replacement notice</a>.""" if r.get('replaced_by') else 'It is retained for reference; check current source documents.') + '</p>' if r['state'] != 'published' else ''
         doc = f"""<p><strong>Manufacturer reference:</strong> {E(r['document'])} · Issue {r['issue_date']}</p><p class="meta">Supersedes {E(r.get('supersedes', ''))}. Source documents were checked; this is not an aircraft compliance determination. Check the manufacturer portal for later revisions.</p>""" + review if r['type'] == 'notice' else ''
         sources = '<h2>Official source documents</h2><ul class="source-list">' + ''.join((f'''<li><a href="{safe_link(u)}">{('Manufacturer document: ' + E(r.get('document', '')) if i == 0 else 'ROTAX technical documentation portal' if 'technical-documentation' in u else ('FAA AD 2026-22-03 — official rule' if '2026-22307' in u else 'FAA AD 2026-16-11 — official rule') if 'govinfo.gov' in u else 'Federal Register correction to FAA AD 2026-22-03' if '/C1-2026-22307/' in u else 'EASA AD 2026-0170 — official record' if 'ad.easa.europa.eu' in u else urlparse(u).netloc)}</a></li>''' for i, u in enumerate(r['sources']))) + '</ul>' if r['sources'] else ''

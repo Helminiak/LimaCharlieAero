@@ -9,8 +9,16 @@ def select_editorial(records, pages, asof):
         for key in ['slug', 'type', 'title', 'owner_question', 'summary', 'body', 'state', 'published', 'last_modified', 'last_review', 'next_review', 'reviewer', 'sources']:
             if key not in r:
                 raise ValueError('Missing ' + key)
-        if not all((isinstance(r[k], str) and r[k].strip() for k in ['title', 'owner_question', 'summary'])) or not (r['reviewer'] or r.get('source_note')):
+        if not all((isinstance(r[k], str) and r[k].strip() for k in ['title', 'owner_question', 'summary'])):
             raise ValueError('Empty required editorial field')
+        reviewer = r['reviewer']
+        note = r.get('source_note')
+        if not isinstance(reviewer, str) or (reviewer and not reviewer.strip()):
+            raise ValueError('Reviewer must be non-blank text when supplied')
+        if 'source_note' in r and not (isinstance(note, str) and note.strip()):
+            raise ValueError('Source note must be non-blank text when supplied')
+        if not reviewer and not note:
+            raise ValueError('Editorial record needs a reviewer or source note')
         if not isinstance(r['body'], list) or not r['body'] or (not all((isinstance(t, str) and t.strip() for t in r['body']))):
             raise ValueError('Body needs nonempty paragraphs')
         if not isinstance(r['sources'], list):

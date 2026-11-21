@@ -54,7 +54,7 @@
     "next_review": "2026-12-20",
     "reviewer": "",
     "owner_question": "Does the turbocharger notice affect my aircraft?",
-    "source_note": "Prepared from the FAA AD, its November 18, 2026 Federal Register correction and the ROTAX bulletin linked below; dates and engine scope checked against those documents on November 21, 2026."
+    "source_note": "Prepared from the FAA AD, its November 18, 2026 Federal Register correction and the ROTAX bulletin linked below; dates and engine scope checked against those documents on {last_review}."
   },
   {
     "slug": "start-with-the-symptom",
