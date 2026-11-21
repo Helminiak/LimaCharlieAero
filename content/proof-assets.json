@@ -476,6 +476,7 @@
   },
   {
     "id": "eprops-engineering-packet-fanout-1200-clean",
+    "document": true,
     "source": "assets/images/eprops/proof/eprops-engineering-packet-fanout-1200-clean.webp",
     "asset": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
     "alt": "Redacted engineering packet pages arranged for review",
@@ -490,6 +491,7 @@
   },
   {
     "id": "eprops-install-checklist-preview-1200",
+    "document": true,
     "source": "assets/images/eprops/proof/eprops-install-checklist-preview-1200.webp",
     "asset": "assets/images/proof/eprops-install-checklist-preview-1200.webp",
     "alt": "Installation checklist document overview",
@@ -609,6 +611,7 @@
   },
   {
     "id": "ndt-magnetic-particle-report",
+    "document": true,
     "source": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-1200.webp",
     "asset": "assets/images/proof/ndt-magnetic-particle-report.webp",
     "alt": "Redacted result rows from a magnetic-particle inspection report",
@@ -623,6 +626,7 @@
   },
   {
     "id": "tl-ultralight-designer-correspondence",
+    "document": true,
     "case_only": true,
     "source": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-1200.webp",
     "asset": "assets/images/proof/tl-ultralight-designer-correspondence.webp",

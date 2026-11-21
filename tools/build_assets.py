@@ -1,5 +1,7 @@
 from build_common import *
 
+RESPONSIVE_WIDTHS = (160, 352, 400, 640, 800, 1200)
+
 def build_assets(out, excluded):
     amap = {}
     metadata = json.loads((ROOT / 'assets-src/dimensions.json').read_text(encoding='utf-8'))
@@ -8,6 +10,12 @@ def build_assets(out, excluded):
             continue
         rel = f.relative_to(ROOT / 'assets-src').as_posix()
         d = f.read_bytes()
+        if rel == 'brand/lca-icon-lc-aircraft-v26b-transparent-192.png':
+            # Preserve the original icon dimensions and alpha with an indexed PNG.
+            with Image.open(f) as icon:
+                buf = io.BytesIO()
+                icon.convert('RGBA').quantize(colors=256).save(buf, 'PNG', optimize=True)
+                d = buf.getvalue()
         if rel in ['favicon.ico', 'apple-touch-icon.png']:
             name = rel
         else:
@@ -18,12 +26,12 @@ def build_assets(out, excluded):
         amap['assets/' + rel] = '/' + name
         if f.suffix == '.webp' and 'images/' in rel:
             with Image.open(io.BytesIO(d)) as im:
-                for width in (400,800,1200):
+                for width in RESPONSIVE_WIDTHS:
                     if width >= im.width: continue
                     resized = im.copy()
                     resized.thumbnail((width, 10000))
                     buf = io.BytesIO()
-                    resized.save(buf, 'WEBP', quality=82, method=6)
+                    resized.save(buf, 'WEBP', quality=60 if width <= 352 else 72 if width <= 640 else 82, method=6)
                     bd = buf.getvalue()
                     vr = str(Path(rel).with_name(f.stem + f'-responsive-{width}.webp'))
                     vn = 'assets/' + str(Path(vr).with_name(Path(vr).stem + '.' + digest(bd)[:12] + '.webp'))

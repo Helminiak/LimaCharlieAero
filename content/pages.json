@@ -250,7 +250,7 @@
         "caption": "Residue is visible where the hose meets the cylinder-head fitting."
       }
     ],
-    "hero_id": "xps-oil-rotax-filter-service-800",
+    "hero_id": "coolant-hose-leak-source-tracing-800",
     "service": {
       "systems": [
         "Engine",
@@ -625,34 +625,28 @@
     "last_modified": "2026-11-20",
     "proof": [
       {
-        "src": "assets/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
-        "alt": "Visible crack at an engine-cage joint",
-        "caption": "The visible crack is recorded at the joint before conclusions are drawn.",
-        "proof_id": "engine-cage-crack-closeup-before-repair-800"
-      },
-      {
-        "src": "assets/images/proof/engine-cage-weld-repair-detail-800.webp",
-        "alt": "Engine-cage joint with visible weld detail",
-        "caption": "This view documents the weld and joint condition.",
-        "proof_id": "engine-cage-weld-repair-detail-800"
-      },
-      {
         "src": "assets/images/proof/engine-cage-painted-finished-800.webp",
         "alt": "Coated engine cage shown separately from the engine",
-        "caption": "The painted cage view records its visible finish and condition.",
+        "caption": "The engine mount after refinishing.",
         "proof_id": "engine-cage-painted-finished-800"
       },
       {
-        "proof_id": "ndt-magnetic-particle-report",
-        "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
-        "alt": "Redacted result rows from a magnetic-particle inspection report",
-        "caption": "The redacted report excerpt lists the inspected regions and their recorded findings."
+        "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
+        "alt": "Logbook covers with private entry details masked",
+        "caption": "A logbook entry with identifying details masked.",
+        "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
-        "proof_id": "eprops-engineering-packet-fanout-1200-clean",
+        "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
+        "alt": "Redacted result rows from a magnetic-particle inspection report",
+        "caption": "The redacted report excerpt lists the inspected regions and their recorded findings.",
+        "proof_id": "ndt-magnetic-particle-report"
+      },
+      {
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
         "alt": "Redacted engineering packet pages arranged for review",
-        "caption": "The redacted packet brings the configuration and installation records together."
+        "caption": "The redacted packet brings the configuration and installation records together.",
+        "proof_id": "eprops-engineering-packet-fanout-1200-clean"
       }
     ],
     "hero_id": "aircraft-open-cowling-under-canopy-800",
@@ -889,7 +883,7 @@
         "caption": "The gearbox pocket shows wear on its inner surface."
       }
     ],
-    "hero_id": "rotax-engine-installed-green-covers",
+    "hero_id": "rotax-airbox-focus",
     "service": {
       "systems": [
         "Engine",
@@ -1054,7 +1048,7 @@
         "caption": "The radio, coax and adapters are shown together for installation planning."
       }
     ],
-    "hero_id": "voltage-regulator-connector-frayed-800",
+    "hero_id": "electrical-connector-wide-800",
     "service": {
       "systems": [
         "Engine",
@@ -1380,7 +1374,7 @@
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
     ],
-    "hero_id": "dynavibe-bad-1-27-ips-800",
+    "hero_id": "eprops-aircraft-closeup-sky-ranger-1200",
     "service": {
       "systems": [
         "Engine",
@@ -1573,7 +1567,7 @@
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
     ],
-    "hero_id": "aircraft-open-cowling-under-canopy-800",
+    "hero_id": "skyreach-bushcat-tailwheel-prebuy",
     "themes": [
       "At Gastonia",
       "Away from the home base",
@@ -1713,7 +1707,7 @@
         "proof_id": "engine-cage-ndt-facility-800"
       }
     ],
-    "hero_id": "rotax-engine-on-hoist-800",
+    "hero_id": "aircraft-side-canopy-joe-working-800",
     "service": {
       "systems": [
         "Airframe",
@@ -2162,7 +2156,7 @@
         "title": "Inspections & scheduled work",
         "line": "Condition inspections, 100-hour, calendar items and planning downtime.",
         "destination": "/s-lsa-e-lsa-maintenance",
-        "image": "aircraft-open-cowling-under-canopy-800"
+        "image": "aircraft-side-canopy-joe-working-800"
       },
       {
         "title": "Vibration & balancing",
@@ -2342,7 +2336,7 @@
         "caption": "The close view records the markings on the installed exhaust component."
       }
     ],
-    "hero_id": "rotax-engine-installed-green-covers",
+    "hero_id": "rotax-support-hero-original-photo",
     "service": {
       "systems": [
         "Engine",
@@ -2533,7 +2527,7 @@
         "proof_id": "rotax-fuel-pump-in-out-card-800"
       }
     ],
-    "hero_id": "fuel-tank-borescope-dirty-800",
+    "hero_id": "rotax-installed-hose-overview-card-800",
     "service": {
       "systems": [
         "Engine",
@@ -2979,7 +2973,7 @@
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
     ],
-    "hero_id": "rotax-engine-on-hoist-800",
+    "hero_id": "rotax-engine-installed-green-covers",
     "service": {
       "systems": [
         "Engine",
@@ -3060,7 +3054,7 @@
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
     ],
-    "hero_id": "aircraft-open-cowling-under-canopy-800"
+    "hero_id": "proof-owner-joe-airfield"
   },
   "aircraft-records-review": {
     "title": "Understand the aircraft’s maintenance history",
@@ -3177,7 +3171,7 @@
         "caption": "The redacted report excerpt lists the inspected regions and their recorded findings."
       }
     ],
-    "hero_id": "lca-logbook-work-sticker-proof-800",
+    "hero_id": "eprops-engineering-packet-fanout-1200-clean",
     "service": {
       "systems": [
         "Records",
@@ -3342,7 +3336,7 @@
         "proof_id": "coolant-hose-leak-source-tracing-800"
       }
     ],
-    "hero_id": "rotax-rubber-hose-routing-overview-1000",
+    "hero_id": "rotax-installed-hoses-overview",
     "service": {
       "systems": [
         "Airframe",
@@ -3479,7 +3473,7 @@
         "caption": "The connector exposes the individual conductor ends."
       }
     ],
-    "hero_id": "soft-start-connector-annotated-800",
+    "hero_id": "voltage-regulator-connector-frayed-800",
     "service": {
       "systems": [
         "Engine",
@@ -3618,7 +3612,7 @@
         "caption": "The wider view locates the hose and fitting within the installation."
       }
     ],
-    "hero_id": "coolant-residue-cylinder-head-hose-leak-800",
+    "hero_id": "rotax-rubber-hose-routing-overview-1000",
     "service": {
       "systems": [
         "Engine",
@@ -3761,7 +3755,7 @@
         "caption": "The airbox sits above the intake connections in the engine compartment."
       }
     ],
-    "hero_id": "carbmate-carb-sync-kit-card-800",
+    "hero_id": "rotax-engine-on-hoist-800",
     "service": {
       "systems": [
         "Engine",
@@ -4152,7 +4146,7 @@
         "proof_id": "carbmate-carb-sync-kit-card-800"
       }
     ],
-    "hero_id": "rotax-installed-hoses-overview",
+    "hero_id": "rotax-support-hero-original-photo",
     "themes": [
       "Plan the visit",
       "ROTAX maintenance",
@@ -4170,6 +4164,6 @@
     "last_modified": "2026-11-20",
     "intro": "Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.",
     "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft.",
-    "hero_id": "engine-cage-weld-repair-detail-800"
+    "hero_id": "aircraft-open-cowling-under-canopy-800"
   }
 }

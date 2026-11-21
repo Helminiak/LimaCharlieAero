@@ -20,7 +20,7 @@ def select_cases(records, subjects, preview):
         if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', slug) or slug in slugs:
             raise ValueError('Invalid or duplicate case slug')
         slugs.add(slug)
-        if case['state'] not in {'draft', 'published'} or not all(case[k] for k in ('title','limits','sources','status')):
+        if case['state'] not in {'draft', 'published'} or not all(case[k] for k in ('title','sources','status')):
             raise ValueError('Incomplete case: ' + slug)
         if [s['name'] for s in case['stages']] != list(STAGES):
             raise ValueError('Case needs seven ordered stages: ' + slug)
@@ -63,20 +63,34 @@ def case_stories(cases, figure, compact=False):
             # Keep readings and inspection documents uncropped in the full record.
             photos = images[:2] + images[-1:] if len(images) > 2 else images
             mosaic = ''.join(figure(i, 'mosaic') for i in photos)
-            visual = f'<div class="pics">{mosaic}</div>' if mosaic else rail
+            if mosaic:
+                visual = f'<div class="pics">{mosaic}</div>'
+                summary = head + rail
+            else:
+                visual = f'<div class="case-panel">{pill(case)}{rail}</div>'
+                summary = ribbon(case) + heading
             link = f'<a href="/our-work#{slug}">Read the case</a>'
-            body = f'<div class="story">{visual}<div>{head}{problem}{link}</div></div>'
+            body = f'<div class="story">{visual}<div>{summary}{problem}{link}</div></div>'
         else:
             strip_ids = images[:2]
             strip = ''.join(figure(i, 'case') for i in strip_ids)
             sections = []
+            evidence = []
             for n, stage in enumerate(stages[1:], 1):
-                photos = ''.join(figure(i,'case') for i in stage['evidence'] if i not in strip_ids)
-                sections.append(f'<section id="{slug}-{n}"><h3>{stage["name"]} · {stage["status"]}</h3>'
-                                f'<p>{E(stage["text"])}</p><div class="proof-grid">{photos}</div></section>')
-            limits = f'<aside class="limits"><b>What this does and does not show</b><p>{E(case["limits"])}</p></aside>'
-            body = (head + rail + '<h3>Problem</h3>' + problem + f'<div class="case-strip">{strip}</div>'
+                stage_id = f'{slug}-{n}'
+                sections.append(f'<section id="{stage_id}"><h3>{stage["name"]} · {stage["status"]}</h3>'
+                                f'<p>{E(stage["text"])}</p></section>')
+            for stage in stages:
+                for subject in stage['evidence']:
+                    if subject not in strip_ids:
+                        evidence.append(figure(subject, 'case', stage_label=stage['name']))
+            limits = ''
+            if case.get('limits'):
+                limits = f'<aside class="limits"><b>What this does and does not show</b><p>{E(case["limits"])}</p></aside>'
+            body = (f'<div class="case-intro">{head}{rail}<h3>Problem</h3>{problem}</div>'
+                    + f'<div class="case-strip">{strip}</div>'
                     + '<details class="case-record"><summary>Full case record</summary>'
-                    + ''.join(sections) + limits + '</details>')
+                    + '<div class="case-stages">' + ''.join(sections) + '</div>'
+                    + '<div class="case-evidence">' + ''.join(evidence) + '</div>' + limits + '</details>')
         blocks.append(f'<article id="{slug}" class="case-story">{body}</article>')
     return ''.join(blocks)

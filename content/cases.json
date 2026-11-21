@@ -116,8 +116,7 @@
         "text": "The submittal and correspondence are kept. [OWNER DECIDE: publish package reference numbers? default no]",
         "evidence": []
       }
-    ],
-    "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft."
+    ]
   },
   {
     "slug": "sting-propeller",
@@ -170,8 +169,7 @@
         "text": "Weight and balance, equipment list and maintenance-record updates.",
         "evidence": []
       }
-    ],
-    "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft."
+    ]
   },
   {
     "slug": "ranger-fuel",
@@ -224,8 +222,7 @@
         "text": "[OWNER CONFIRM]",
         "evidence": []
       }
-    ],
-    "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft."
+    ]
   },
   {
     "slug": "searey-evaluation",
@@ -278,7 +275,6 @@
         "text": "[OWNER CONFIRM]",
         "evidence": []
       }
-    ],
-    "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft."
+    ]
   }
 ]

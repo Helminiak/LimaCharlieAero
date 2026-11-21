@@ -28,6 +28,18 @@ for path in files:
 for r in routes:
  d=html.parse(str(root/r['file']));main=d.xpath('//main')[0];text=' '.join(main.text_content().split());raw=(root/r['file']).read_text();key=Path(r['file']).stem;canonical='https://limacharlieaero.com'+r['route']
  actual_subjects.update(d.xpath('//img/@data-subject'))
+ seen_assets=set()
+ seen_subjects=set()
+ for image in d.xpath('//img'):
+  urls={image.get('src','')}
+  variants=image.xpath('@srcset | parent::picture/source/@srcset')
+  urls.update(candidate.strip().split()[0] for srcset in variants for candidate in srcset.split(',') if candidate.strip())
+  assets={files.get(url.lstrip('/'),url) for url in urls}
+  subject=image.get('data-subject')
+  ck(not assets.intersection(seen_assets) and (not subject or subject not in seen_subjects),
+     f'{key} repeated image: {subject or image.get("src")}')
+  seen_assets.update(assets)
+  seen_subjects.add(subject)
  headings=[' '.join(h.text_content().split()).casefold() for h in d.xpath('//h2')]
  ck(len(headings)==len(set(headings)),key+' distinct H2')
  ck(not re.search(r'joseph.{0,12}the shop.{0,12}helminiak',raw,re.I),key+' founder name')
