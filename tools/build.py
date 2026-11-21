@@ -1,11 +1,13 @@
 from build_common import *
-from build_assets import build_assets
+from build_assets import build_assets, presentation_assets
+from cases import select_cases
 from editorial import select_editorial
 from render_site import render_site
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--output', default='dist')
+    ap.add_argument('--output')
+    ap.add_argument('--preview', action='store_true')
     ap.add_argument('--as-of')
     args = ap.parse_args()
     site = json.loads((ROOT / 'content/site.json').read_text(encoding='utf-8'))
@@ -13,7 +15,14 @@ def main():
     pages = json.loads((ROOT / 'content/pages.json').read_text(encoding='utf-8'))
     records = json.loads((ROOT / 'content/updates.json').read_text(encoding='utf-8'))
     public, published, warnings = select_editorial(records, pages, asof)
-    out = ROOT / args.output
+    out = ROOT / (args.output or ('dist-preview' if args.preview else 'dist'))
+    if args.preview != (out == ROOT/'dist-preview'):
+        raise ValueError('Private preview requires its own dist-preview output')
+    registry = {a['id']:a for a in json.loads((ROOT/'content/proof-assets.json').read_text())}
+    records = json.loads((ROOT/'content/cases.json').read_text())
+    cases = select_cases(records,set(registry),args.preview)
+    case_images = {i for c in cases for stage in c['stages'] for i in stage['evidence']}
+    excluded = {r['asset'].removeprefix('assets/') for r in registry.values() if r.get('case_only') and r['id'] not in case_images}
     if out not in [ROOT / 'dist', ROOT / 'dist-preview', ROOT / 'repro-dist'] or out.is_symlink():
         raise ValueError('Choose dist, dist-preview or repro-dist')
     out.mkdir(exist_ok=True)
@@ -22,8 +31,9 @@ def main():
             f.unlink()
         else:
             shutil.rmtree(f)
-    amap, metadata = build_assets(out)
-    routes = render_site(out, site, pages, public, published, amap, metadata)
+    amap, metadata = build_assets(out, excluded)
+    presentation_assets(out, amap, registry)
+    routes = render_site(out, site, pages, public, published, amap, metadata, registry, cases, args.preview)
 
     def asset(src):
         return amap[src]

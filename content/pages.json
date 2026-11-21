@@ -1,6 +1,6 @@
 {
   "light-sport-prebuy-evaluation": {
-    "title": "Prebuy help before you commit",
+    "title": "Light-Sport Aircraft Prebuy & Records Review",
     "heading": "Prebuy help before you commit",
     "description": "Review a light-sport aircraft’s records and condition before travel or purchase decisions. A listing link is enough to begin; a tail number is optional at first contact.",
     "intro": "Review a light-sport aircraft’s records and condition before travel or purchase decisions. A listing link is enough to begin; a tail number is optional at first contact.",
@@ -91,7 +91,7 @@
       "prebuy-levels"
     ],
     "topic": "prebuy",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
@@ -105,7 +105,26 @@
         "caption": "Logbook and work-entry context for a prebuy, with private details masked. Review the candidate aircraft’s original entries to match identity, dates and described work with its history.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       }
-    ]
+    ],
+    "hero_id": "skyreach-bushcat-tailwheel-prebuy",
+    "service": {
+      "systems": [
+        "Airframe",
+        "Records"
+      ],
+      "limits": "A prebuy is not a guarantee against future defects.",
+      "layout": {
+        "situation": 0,
+        "systems": 7,
+        "checklist": 8,
+        "steps": [
+          "Define the buying decision and review depth.",
+          "Agree seller access, records and timing.",
+          "Compare documented history with observed condition.",
+          "Separate findings, interpretation and unresolved questions."
+        ]
+      }
+    }
   },
   "rotax-912-high-oil-temperature": {
     "title": "ROTAX 912 high oil temperature",
@@ -189,15 +208,40 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/xps-oil-rotax-filter-service-800.webp",
         "alt": "Oil containers and ROTAX filter supplies",
         "caption": "The oil and filter supplies show a service-planning input. For a temperature concern, review the applicable product specification and service history alongside operating conditions.",
         "proof_id": "xps-oil-rotax-filter-service-800"
+      },
+      {
+        "proof_id": "coolant-residue-cylinder-head-hose-leak-800",
+        "src": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
+        "alt": "Residue around a cylinder-head fitting and hose area",
+        "caption": "Residue is visible around the fitting area. Its location guides inspection but does not by itself identify the source or fluid path."
       }
-    ]
+    ],
+    "hero_id": "xps-oil-rotax-filter-service-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 8,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "s-lsa-e-lsa-maintenance": {
     "title": "Plan an aircraft inspection or maintenance visit",
@@ -302,7 +346,47 @@
       "records-first-inspection-planning"
     ],
     "topic": "service",
-    "last_modified": "2026-10-05"
+    "last_modified": "2026-11-20",
+    "proof": [
+      {
+        "proof_id": "differential-pressure-tester-clean-800",
+        "src": "assets/images/proof/differential-pressure-tester-clean-800.webp",
+        "alt": "Two-gauge differential pressure tester in use",
+        "caption": "A two-gauge test records more than a single number. Test conditions, equipment and the applicable procedure belong with the recorded result."
+      },
+      {
+        "proof_id": "lca-logbook-work-sticker-proof-800",
+        "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
+        "alt": "Logbook covers with private entry details masked",
+        "caption": "Record details are withheld for privacy. A maintenance record needs traceable aircraft, work and date context; this photograph does not assert a finding for a customer aircraft."
+      }
+    ],
+    "hero_id": "aircraft-side-canopy-joe-working-800",
+    "service": {
+      "systems": [
+        "Airframe",
+        "Records"
+      ],
+      "limits": "Light-sport-category aircraft can be returned to service by an LSRM-A after maintenance and inspection within the rating's limits. Experimental aircraft condition inspections follow the aircraft's operating limitations. Major repairs and alterations follow the applicable manufacturer or FAA-approved data.",
+      "layout": {
+        "situation": 0,
+        "systems": 1,
+        "checklist": [
+          "Aircraft model and location, if known",
+          "The service goal or change you noticed",
+          "Relevant records and recent maintenance"
+        ],
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ],
+        "cases": [
+          "searey-evaluation"
+        ]
+      }
+    }
   },
   "privacy": {
     "title": "Privacy and inquiry information",
@@ -472,7 +556,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "unsure",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
@@ -491,8 +575,21 @@
         "alt": "Coated engine cage shown separately from the engine",
         "caption": "The painted cage view records its visible finish and condition. Structural acceptance and release to service belong in the inspection and maintenance records.",
         "proof_id": "engine-cage-painted-finished-800"
+      },
+      {
+        "proof_id": "ndt-magnetic-particle-report",
+        "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
+        "alt": "Redacted result rows from a magnetic-particle inspection report",
+        "caption": "The excerpt keeps the inspection findings with their recorded disposition."
+      },
+      {
+        "proof_id": "eprops-engineering-packet-fanout-1200-clean",
+        "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
+        "alt": "Redacted engineering packet pages arranged for review",
+        "caption": "Redacted engineering packet structure connects configuration information, installation details and documentation. The preview is process evidence, not approval for another aircraft."
       }
-    ]
+    ],
+    "hero_id": "aircraft-open-cowling-under-canopy-800"
   },
   "rotax-engine-systems-support": {
     "title": "ROTAX service and troubleshooting",
@@ -667,7 +764,7 @@
       "common-rotax-calls"
     ],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/top-end-parts-organized-shelf-800.webp",
@@ -680,8 +777,55 @@
         "alt": "Aircraft with cowling open in an outdoor work area",
         "caption": "The open cowling exposes the engine and surrounding installation. Fuel, cooling and electrical concerns need this system context as well as the engine’s records.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
+      },
+      {
+        "proof_id": "coolant-residue-cylinder-head-hose-leak-800",
+        "src": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
+        "alt": "Residue around a cylinder-head fitting and hose area",
+        "caption": "Residue is visible around the fitting area. Its location guides inspection but does not by itself identify the source or fluid path."
+      },
+      {
+        "proof_id": "fuel-tank-borescope-dirty-800",
+        "src": "assets/images/proof/fuel-tank-borescope-dirty-800.webp",
+        "alt": "Borescope display showing material on a tank interior surface",
+        "caption": "Material is visible on the tank interior in this borescope view. The image supports an observation, not identification of the material or a diagnosis of fuel pressure."
+      },
+      {
+        "proof_id": "differential-pressure-tester-clean-800",
+        "src": "assets/images/proof/differential-pressure-tester-clean-800.webp",
+        "alt": "Two-gauge differential pressure tester in use",
+        "caption": "A two-gauge test records more than a single number. Test conditions, equipment and the applicable procedure belong with the recorded result."
+      },
+      {
+        "proof_id": "gearbox-pocket-wear-1-800",
+        "src": "assets/images/proof/gearbox-pocket-wear-1-800.webp",
+        "alt": "Gearbox component surface shown for condition review",
+        "caption": "Component surface detail provides a record of the visible condition. Service history and applicable inspection criteria are needed before assigning significance."
       }
-    ]
+    ],
+    "hero_id": "rotax-engine-installed-green-covers",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 6,
+        "checklist": [
+          "Aircraft model and engine family, if known",
+          "What changed, when it occurs and any recent work",
+          "Existing readings, messages and records"
+        ],
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "rotax-ignition-ecu-electrical-faults": {
     "title": "ROTAX starting, electrical and ECU warnings",
@@ -779,7 +923,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/voltage-regulator-connector-frayed-800.webp",
@@ -798,8 +942,33 @@
         "alt": "Close view of an electrical connector and conductors",
         "caption": "The connector detail makes the connection condition visible. Inspect the circuit and its wiring context before assigning an ignition or ECU symptom to an expensive component.",
         "proof_id": "electrical-connector-close-800"
+      },
+      {
+        "proof_id": "icom-radio-coax-adapters-800",
+        "src": "assets/images/proof/icom-radio-coax-adapters-800.webp",
+        "alt": "Radio equipment with coax cable and adapters",
+        "caption": "Radio and cable components illustrate installation planning. Equipment compatibility is an aircraft-specific question."
       }
-    ]
+    ],
+    "hero_id": "voltage-regulator-connector-frayed-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 1,
+        "checklist": 9,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "404": {
     "title": "We could not find that page",
@@ -911,7 +1080,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "unsure",
-    "last_modified": "2026-10-05",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/aircraft-side-canopy-joe-working-800.webp",
@@ -919,7 +1088,8 @@
         "caption": "Founder and technical lead Joseph Helminiak shown in an aircraft work setting. Personal background supports the company’s technical accountability.",
         "proof_id": "aircraft-side-canopy-joe-working-800"
       }
-    ]
+    ],
+    "hero_id": "proof-owner-joe-airfield"
   },
   "rotax-gearbox-propeller-vibration": {
     "title": "ROTAX propeller vibration and gearbox concerns",
@@ -1030,7 +1200,7 @@
       "propeller-documentation-bridge-heading"
     ],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
@@ -1068,7 +1238,26 @@
         "caption": "The equipment is secured in the aircraft for measurement work. Keep sensor setup and operating conditions with the vibration result so later comparisons have useful context.",
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
-    ]
+    ],
+    "hero_id": "dynavibe-bad-1-27-ips-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 11,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "support-request": {
     "title": "Request Service",
@@ -1106,7 +1295,8 @@
       "support-failure-title"
     ],
     "topic": "unsure",
-    "last_modified": "2026-10-05"
+    "last_modified": "2026-11-20",
+    "hero_id": "proof-owner-joe-airfield"
   },
   "service-area": {
     "title": "Arrange support at KAKH / Gastonia",
@@ -1216,7 +1406,7 @@
       "rotax-shop-keyword-map"
     ],
     "topic": "unsure",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
@@ -1224,7 +1414,8 @@
         "caption": "This aircraft work setting shows why access matters when arranging support from KAKH / Gastonia. Confirm the aircraft location, work environment and appointment before making travel plans.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
-    ]
+    ],
+    "hero_id": "aircraft-open-cowling-under-canopy-800"
   },
   "rotax-installation-review": {
     "title": "ROTAX engine installation review",
@@ -1309,7 +1500,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "service",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/rotax-engine-on-hoist-800.webp",
@@ -1347,7 +1538,29 @@
         "caption": "The cage is shown in a workshop setting. The corresponding inspection report supplies the test method, findings and acceptance result.",
         "proof_id": "engine-cage-ndt-facility-800"
       }
-    ]
+    ],
+    "hero_id": "rotax-engine-on-hoist-800",
+    "service": {
+      "systems": [
+        "Airframe",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 8,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ],
+        "cases": [
+          "sting-mount"
+        ]
+      }
+    }
   },
   "light-sport-experimental-avionics": {
     "title": "Avionics and aircraft electrical support",
@@ -1438,7 +1651,7 @@
       "avionics-proof"
     ],
     "topic": "avionics",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/garmin-g5-installed-panel-close-800.webp",
@@ -1475,11 +1688,36 @@
         "alt": "Radio equipment with coax cable and adapters",
         "caption": "Radio and cable components illustrate installation planning. Equipment compatibility is an aircraft-specific question.",
         "proof_id": "icom-radio-coax-adapters-800"
+      },
+      {
+        "proof_id": "garmin-g5-box-unit",
+        "src": "assets/images/proof/garmin-g5-box-unit.webp",
+        "alt": "Garmin G5 unit beside its packaging",
+        "caption": "Equipment identification helps define the installation question."
       }
-    ]
+    ],
+    "hero_id": "garmin-g5-installed-panel-wide",
+    "service": {
+      "systems": [
+        "Electrical",
+        "Avionics"
+      ],
+      "limits": "Avionics support is focused on light-sport and experimental aircraft and on practical owner/operator support, installation help, troubleshooting, and system organization. If a project requires outside certification, inspection, or signoff beyond that scope, I can help identify the next practical step.",
+      "layout": {
+        "situation": 0,
+        "systems": 4,
+        "checklist": 9,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "faq": {
-    "title": "Answers for aircraft owners",
+    "title": "Light-Sport & ROTAX FAQ",
     "heading": "Answers for aircraft owners",
     "description": "Start with the question you have. You can contact the shop even if the technical details are unknown.",
     "intro": "Start with the question you have. You can contact the shop even if the technical details are unknown.",
@@ -1661,146 +1899,10 @@
   },
   "index": {
     "title": "Light-Sport & Experimental Aircraft Maintenance",
-    "heading": "Light-Sport & Experimental Aircraft Maintenance",
+    "heading": "Light-sport & experimental aircraft, worked as a complete system.",
     "description": "Light-sport and experimental aircraft support at KAKH in Gastonia, serving the Charlotte and Carolinas region by appointment. ROTAX engines, inspections, prebuys, propellers and avionics.",
-    "intro": "Aircraft support starts with what you notice and what you need to do next. At KAKH in Gastonia, we help Light-Sport and Experimental aircraft owners work through maintenance, ROTAX system concerns, propeller questions and records with clear scope and documented evidence.",
-    "sections": [
-      {
-        "heading": "Scheduled aircraft and ROTAX maintenance",
-        "text": "Inspection and service planning begins with aircraft category, operating limitations, hours, calendar age and maintenance history. Oil, filters, spark plugs, Bing 64 float checks, carburetor service and synchronization, fuel delivery, grounding and charging, and differential-pressure checks are scoped against the applicable instructions.",
-        "links": [
-          [
-            "/services",
-            "Service directory"
-          ],
-          [
-            "/s-lsa-e-lsa-maintenance",
-            "Aircraft category and inspection planning"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "Five-year rubber, fuel and cooling systems",
-        "text": "Rubber replacement is a coordinated review of fuel, cooling, lubrication and intake components, access, routing, clamps, fluids, testing and records. A stain or temperature indication is evidence to investigate; it does not identify a failed component by itself.",
-        "links": [
-          [
-            "/rotax-rubber-hose-replacement-fluid-leaks",
-            "Rubber and hose planning"
-          ],
-          [
-            "/rotax-fuel-pressure-fuel-delivery-problems",
-            "Fuel and carburetion"
-          ],
-          [
-            "/rotax-cooling-oil-temperature-problems",
-            "Cooling and temperature"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "Ignition, electrical, ECU and engine-management concerns",
-        "text": "Exact warnings, operating conditions and recent changes help separate a connection or installation issue from an expensive component fault. The engine, power supply, grounds, sensors and aircraft wiring are considered together.",
-        "links": [
-          [
-            "/rotax-ignition-ecu-electrical-faults",
-            "Ignition and electrical"
-          ],
-          [
-            "/rotax-915-916-turbo-ems-support",
-            "Turbo and EMS"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "Gearbox, propeller and vibration",
-        "text": "RPM range, load, propeller condition, gearbox history and measurement conditions define a useful investigation. Instrument readings and wear photographs are examples of evidence, not a diagnosis or an unsupported before-and-after result.",
-        "links": [
-          [
-            "/rotax-gearbox-propeller-vibration",
-            "Vibration and drivetrain"
-          ],
-          [
-            "/e-props-dealer-support",
-            "E-PROPS fitment and support"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "Records, prebuy and avionics support",
-        "text": "A listing or plain-language concern is enough to begin. Records review can identify gaps before travel or purchase. Avionics work considers displays, radios, power, antennas and terminations as an installed system. Scope and authorization are confirmed for the particular aircraft.",
-        "links": [
-          [
-            "/aircraft-records-review",
-            "Records review"
-          ],
-          [
-            "/light-sport-prebuy-evaluation",
-            "Prebuy"
-          ],
-          [
-            "/light-sport-experimental-avionics",
-            "Avionics and electrical"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "The Lima Charlie Aero Standard",
-        "text": "Precision • Reliability • Traceability. Symptoms are data points, not conclusions. Applicable documents, verified observations and authorization boundaries define a supportable next step.",
-        "links": [
-          [
-            "/the-lima-charlie-aero-standard",
-            "Our controlled maintenance process"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "Technical Leadership",
-        "text": "Lima Charlie Aero was founded by Joseph Helminiak, an FAA-certificated LSRM-A. The RFSC listing in the supplied source shows 9 Series Service, 9 Series Maintenance, and 912 iS Installation training through September 16, 2027. His background in systems engineering, project management, logistics, and quality assurance informs Lima Charlie Aero’s controlled, evidence-based maintenance process.",
-        "links": [
-          [
-            "/about-credentials",
-            "Training and qualifications"
-          ],
-          [
-            "/joseph-helminiak-bio",
-            "Founder background / bio"
-          ]
-        ],
-        "items": []
-      },
-      {
-        "heading": "A useful starting point, not a diagnosis",
-        "text": "A symptom, an upcoming inspection, a purchase decision or a change in equipment each calls for a different starting point. We help identify which records, observations and access will be useful before a work plan is agreed. Photographs and measurements make the conversation more concrete, but they do not replace an aircraft-specific inspection. Our service pages connect owner questions with the relevant system, the evidence to gather and a practical way to begin. You can describe what changed in ordinary language and leave the technical classification to the next conversation."
-      },
-      {
-        "heading": "Technical leadership, company responsibility",
-        "text": "Founder Joseph Helminiak’s background supports the technical work. Our company method keeps aircraft context, documented findings and agreed scope at the center of each service inquiry.",
-        "links": [
-          [
-            "/joseph-helminiak-bio",
-            "Read the technical lead’s background"
-          ],
-          [
-            "/the-lima-charlie-aero-standard",
-            "The Lima Charlie Aero Standard"
-          ],
-          [
-            "/aircraft-records-review",
-            "Aircraft records review"
-          ],
-          [
-            "/start-with-the-symptom",
-            "Start with the symptom"
-          ]
-        ]
-      }
-    ],
+    "intro": "Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.",
+    "sections": [],
     "images": [
       {
         "src": "assets/images/rotax-engine-installed-green-covers-800.webp",
@@ -1816,7 +1918,7 @@
       "home-eprops-heading"
     ],
     "topic": "unsure",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
@@ -1848,7 +1950,89 @@
         "caption": "An open cowling brings the installed systems into view. This is the practical aircraft access behind the shop’s records, inspection and service planning.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
-    ]
+    ],
+    "tiles": [
+      {
+        "title": "ROTAX service & troubleshooting",
+        "line": "912, 914, 915 and 916: rough running, fuel pressure, cooling, ignition, five-year rubber.",
+        "destination": "/rotax-engine-systems-support",
+        "image": "rotax-installed-hoses-overview"
+      },
+      {
+        "title": "E-PROPS",
+        "line": "Selection, fitment, installation planning and dealer support.",
+        "destination": "/e-props-dealer-support",
+        "image": "eprops-aircraft-closeup-sky-ranger-1200"
+      },
+      {
+        "title": "Inspections & scheduled work",
+        "line": "Condition inspections, 100-hour, calendar items and planning downtime.",
+        "destination": "/s-lsa-e-lsa-maintenance",
+        "image": "aircraft-open-cowling-under-canopy-800"
+      },
+      {
+        "title": "Vibration & balancing",
+        "line": "Measured, corrected, re-measured.",
+        "destination": "/rotax-gearbox-propeller-vibration",
+        "image": "dynavibe-kit-secured-seat-800"
+      },
+      {
+        "title": "Prebuy & records",
+        "line": "The logbooks checked against the aircraft.",
+        "destination": "/light-sport-prebuy-evaluation",
+        "image": "skyreach-bushcat-tailwheel-prebuy"
+      },
+      {
+        "title": "Avionics & electrical",
+        "line": "Power, grounds, connectors and displays traced as one system.",
+        "destination": "/light-sport-experimental-avionics",
+        "image": "garmin-g5-installed-panel-wide"
+      }
+    ],
+    "trust": [
+      "ROTAX 9-Series: 912 · 914 · 915 · 916",
+      "E-PROPS dealer: Fitment, installation, balance",
+      "LSRM-A: FAA-certificated repairman",
+      "By appointment: Gastonia & the Charlotte region"
+    ],
+    "problem": [
+      "Bring the aircraft and what you noticed.",
+      "No diagnosis needed. Tell us what changed or what is due, and we'll help work out where to start."
+    ],
+    "system": [
+      "The LCA Standard",
+      "We don't stop at the part that failed.",
+      "An aircraft is a system of systems. A fuel symptom can be a cooling problem; a vibration can be a propeller, a gearbox or a mount. We trace how the systems interact, check the records and the approval path, and work the problem until the next step is supportable."
+    ],
+    "stories": [
+      "Real aircraft. The whole paper trail.",
+      "Each example follows the same path: problem, configuration, evidence, evaluation, action, verification and documentation. Work that is still pending says so."
+    ],
+    "method": "Simple to start. Careful from there.",
+    "steps": [
+      [
+        "Tell us.",
+        "The aircraft, the engine, and what changed or what is due. A phone photo helps."
+      ],
+      [
+        "We scope it.",
+        "We clarify records, access and the approval path, then agree an estimate and schedule."
+      ],
+      [
+        "We document it.",
+        "Findings, measurements and work entries that you and the next mechanic can follow."
+      ]
+    ],
+    "founder": [
+      "About",
+      "Built on maintenance and engineering discipline.",
+      "Lima Charlie Aero was founded by Joseph Helminiak, an FAA-certificated light-sport repairman with a maintenance rating (LSRM-A) and ROTAX iRMT training, with a background in systems engineering, logistics and quality assurance."
+    ],
+    "final": [
+      "Tell us what your aircraft is doing.",
+      "We'll help you work out the next supportable step."
+    ],
+    "hero_id": "rotax-support-hero-original-photo"
   },
   "rotax-915-916-turbo-ems-support": {
     "title": "ROTAX 914 / 915 / 916 turbo and engine warnings",
@@ -1937,7 +2121,40 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06"
+    "last_modified": "2026-11-20",
+    "proof": [
+      {
+        "proof_id": "rotax-engine-installed-green-covers",
+        "src": "assets/images/rotax-engine-installed-green-covers-800.webp",
+        "alt": "Installed ROTAX engine with green covers",
+        "caption": "The engine installation connects fuel, cooling, electrical and mechanical systems."
+      },
+      {
+        "proof_id": "exhaust-marking-hydra-detail",
+        "src": "assets/images/proof/exhaust-marking-hydra-detail.webp",
+        "alt": "Markings on an installed exhaust component",
+        "caption": "Component markings provide an identification reference for an installation review."
+      }
+    ],
+    "hero_id": "rotax-engine-installed-green-covers",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 8,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "image-credits": {
     "title": "Website image sources",
@@ -2072,7 +2289,7 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/fuel-tank-borescope-dirty-800.webp",
@@ -2092,7 +2309,29 @@
         "caption": "Pump and installation views show the supply-path context. This historical reference image requires explicit rights confirmation before publication.",
         "proof_id": "rotax-fuel-pump-in-out-card-800"
       }
-    ]
+    ],
+    "hero_id": "fuel-tank-borescope-dirty-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 9,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ],
+        "cases": [
+          "ranger-fuel"
+        ]
+      }
+    }
   },
   "card": {
     "title": "Joseph Helminiak — Lima Charlie Aero",
@@ -2132,7 +2371,8 @@
     "images": [],
     "legacy_ids": [],
     "topic": "unsure",
-    "last_modified": "2026-10-05"
+    "last_modified": "2026-11-20",
+    "hero_id": "proof-owner-joe-airfield"
   },
   "e-props-dealer-support": {
     "title": "E-PROPS selection, setup and support",
@@ -2275,7 +2515,7 @@
       "eprops-inquiry-heading"
     ],
     "topic": "eprops",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
@@ -2300,11 +2540,56 @@
         "alt": "Close view of visible propeller blade surface damage",
         "caption": "Visible blade-surface damage is recorded in close view. Identify the propeller and consult the applicable inspection path before deciding the next step.",
         "proof_id": "eprops-blade-damage-closeup-800"
+      },
+      {
+        "proof_id": "eprops-durandal",
+        "src": "assets/images/proof/eprops-durandal.webp",
+        "alt": "Three-blade DURANDAL propeller product view",
+        "caption": "The DURANDAL family is one starting point for an aircraft-specific application review."
+      },
+      {
+        "proof_id": "eprops-glorieuse-912",
+        "src": "assets/images/proof/eprops-glorieuse-912.webp",
+        "alt": "GLORIEUSE 912 propeller product view",
+        "caption": "The product family identifies a candidate for configuration review."
+      },
+      {
+        "proof_id": "eprops-glorieuse-916",
+        "src": "assets/images/proof/eprops-glorieuse-916.webp",
+        "alt": "GLORIEUSE 916 propeller product view",
+        "caption": "Engine and gearbox identity guide the fitment discussion."
       }
-    ]
+    ],
+    "hero_id": "eprops-aircraft-closeup-sky-ranger-1200",
+    "service": {
+      "systems": [
+        "Propeller",
+        "Approvals"
+      ],
+      "limits": "Product compatibility and a dealer quote do not authorize an installation. The aircraft's category and the airframe manufacturer's position decide the approval path.",
+      "layout": {
+        "situation": 0,
+        "systems": 17,
+        "checklist": [
+          "Aircraft category, model and engine",
+          "Current propeller and installed configuration",
+          "Your goal and available approval records"
+        ],
+        "steps": [
+          "Identify the aircraft category and operating limitations.",
+          "Confirm the airframe manufacturer’s position and any required authorization.",
+          "Review application data, mass, inertia and installation requirements.",
+          "Plan pitch, clearance, tracking, balance and records."
+        ],
+        "cases": [
+          "sling-propeller",
+          "sting-propeller"
+        ]
+      }
+    }
   },
   "rotax-9-series-912-914-915-916-support": {
-    "title": "ROTAX 912, 914, 915 and 916 owner guide",
+    "title": "ROTAX 9 Series Support near Charlotte",
     "heading": "ROTAX 912, 914, 915 and 916 owner guide",
     "description": "The engine family helps identify the appropriate service and diagnostic instructions. If you are unsure which model is installed, start with your aircraft details.",
     "intro": "The engine family helps identify the appropriate service and diagnostic instructions. If you are unsure which model is installed, start with your aircraft details.",
@@ -2407,7 +2692,7 @@
       "rotax-9-series-document-boundary"
     ],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/rotax-engine-on-hoist-800.webp",
@@ -2421,7 +2706,26 @@
         "caption": "The DynaVibe kit is shown in its aircraft setting. Measurement setup and operating conditions help connect ROTAX support with the installed propeller and surrounding systems.",
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
-    ]
+    ],
+    "hero_id": "rotax-engine-on-hoist-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 7,
+        "checklist": 9,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "contact": {
     "title": "Contact Lima Charlie Aero",
@@ -2471,7 +2775,7 @@
       "records-proof"
     ],
     "topic": "unsure",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
@@ -2479,7 +2783,8 @@
         "caption": "An open cowling shows the access involved in aircraft work. When you contact us, share the aircraft location so we can discuss practical access and the right next step.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
-    ]
+    ],
+    "hero_id": "aircraft-open-cowling-under-canopy-800"
   },
   "aircraft-records-review": {
     "title": "Understand the aircraft’s maintenance history",
@@ -2569,15 +2874,40 @@
     "images": [],
     "legacy_ids": [],
     "topic": "records",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
         "caption": "Logbook and work-entry context, with private record details masked. In a records review, aircraft identity, work description and date connect the original entry to the aircraft’s chronology.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
+      },
+      {
+        "proof_id": "ndt-magnetic-particle-report",
+        "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
+        "alt": "Redacted result rows from a magnetic-particle inspection report",
+        "caption": "The excerpt keeps the inspection findings with their recorded disposition."
       }
-    ]
+    ],
+    "hero_id": "lca-logbook-work-sticker-proof-800",
+    "service": {
+      "systems": [
+        "Records",
+        "Approvals"
+      ],
+      "limits": "A records review uses the documents supplied. Installed condition requires aircraft access and inspection.",
+      "layout": {
+        "situation": 0,
+        "systems": 1,
+        "checklist": 10,
+        "steps": [
+          "Identify the decision and the records supplied.",
+          "Trace installed identities and entries.",
+          "Separate documented work from unresolved gaps.",
+          "Return findings with the source and next question."
+        ]
+      }
+    }
   },
   "rotax-rubber-hose-replacement-fluid-leaks": {
     "title": "ROTAX rubber and hose replacement planning",
@@ -2690,7 +3020,7 @@
       "major-planning-package"
     ],
     "topic": "service",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/rotax-rubber-hose-routing-overview-1000.webp",
@@ -2704,7 +3034,26 @@
         "caption": "Follow the installation context when tracing a leak. Nearby surfaces can carry residue away from its origin.",
         "proof_id": "coolant-hose-leak-source-tracing-800"
       }
-    ]
+    ],
+    "hero_id": "rotax-rubber-hose-routing-overview-1000",
+    "service": {
+      "systems": [
+        "Airframe",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 4,
+        "checklist": 6,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "rotax-912-mag-drop-troubleshooting": {
     "title": "ROTAX 912 / 914 ignition-check roughness",
@@ -2792,7 +3141,40 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06"
+    "last_modified": "2026-11-20",
+    "proof": [
+      {
+        "proof_id": "soft-start-connector-annotated-800",
+        "src": "assets/images/proof/soft-start-connector-annotated-800.webp",
+        "alt": "Annotated view identifying an electrical connector",
+        "caption": "The marked connection is a location reference. Circuit identity and the applicable wiring documentation remain necessary."
+      },
+      {
+        "proof_id": "electrical-connector-close-800",
+        "src": "assets/images/proof/electrical-connector-close-800.webp",
+        "alt": "Close view of an electrical connector and conductors",
+        "caption": "Connector detail makes a connection condition visible before an expensive component is blamed for a symptom."
+      }
+    ],
+    "hero_id": "soft-start-connector-annotated-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 8,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "rotax-cooling-oil-temperature-problems": {
     "title": "ROTAX coolant loss and cooling concerns",
@@ -2882,15 +3264,40 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
         "alt": "Residue around a cylinder-head fitting and hose area",
         "caption": "Residue around the fitting gives inspection a visible starting point. Tracing the fluid path and surrounding installation establishes where it came from.",
         "proof_id": "coolant-residue-cylinder-head-hose-leak-800"
+      },
+      {
+        "proof_id": "coolant-hose-leak-source-tracing-800",
+        "src": "assets/images/proof/coolant-hose-leak-source-tracing-800.webp",
+        "alt": "Hose and fitting within the surrounding installation",
+        "caption": "Follow the installation context when tracing a leak. Nearby surfaces can carry residue away from its origin."
       }
-    ]
+    ],
+    "hero_id": "coolant-residue-cylinder-head-hose-leak-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 5,
+        "checklist": 9,
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "rotax-912-carb-sync": {
     "title": "ROTAX 912 / 914 rough idle and carburetor balance",
@@ -2978,15 +3385,50 @@
     "images": [],
     "legacy_ids": [],
     "topic": "symptom",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/carbmate-carb-sync-kit-card-800.webp",
         "alt": "CarbMate synchronization instrument and leads",
         "caption": "The CarbMate kit supports comparison of synchronization signals. Combine the measurements with running conditions and checks for the cause of the symptom.",
         "proof_id": "carbmate-carb-sync-kit-card-800"
+      },
+      {
+        "proof_id": "bing64-carburetor-rebuild-float-check",
+        "src": "assets/images/proof/bing64-carburetor-rebuild-float-check.webp",
+        "alt": "Bing carburetor parts and float-check reference",
+        "caption": "Carburetor records help distinguish component work from synchronization."
+      },
+      {
+        "proof_id": "rotax-airbox-focus",
+        "src": "assets/images/proof/rotax-airbox-focus.webp",
+        "alt": "ROTAX airbox and intake connections",
+        "caption": "Intake configuration belongs in the troubleshooting record."
       }
-    ]
+    ],
+    "hero_id": "carbmate-carb-sync-kit-card-800",
+    "service": {
+      "systems": [
+        "Engine",
+        "Records"
+      ],
+      "limits": "A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.",
+      "layout": {
+        "situation": 0,
+        "systems": 8,
+        "checklist": [
+          "Aircraft model and location, if known",
+          "The service goal or change you noticed",
+          "Relevant records and recent maintenance"
+        ],
+        "steps": [
+          "Identify the aircraft, installed configuration and the reported concern.",
+          "Review the relevant records and applicable instructions.",
+          "Agree the scope, checks and access with the owner.",
+          "Keep findings and measurements with the work record."
+        ]
+      }
+    }
   },
   "security-disclosure": {
     "title": "Report a website security issue",
@@ -3189,6 +3631,89 @@
       {
         "heading": "Documentation stays connected to the aircraft",
         "text": "Measurements, photographs and maintenance entries are most useful when their context remains clear. A value without operating conditions or a photograph without location may raise more questions than it answers. We aim to connect observations with the actual installation and the work scope. The examples on this page show the kinds of evidence involved without implying that one pictured result applies to another aircraft."
+      },
+      {
+        "heading": "Scheduled aircraft and ROTAX maintenance",
+        "text": "Inspection and service planning begins with aircraft category, operating limitations, hours, calendar age and maintenance history. Oil, filters, spark plugs, Bing 64 float checks, carburetor service and synchronization, fuel delivery, grounding and charging, and differential-pressure checks are scoped against the applicable instructions.",
+        "links": [
+          [
+            "/services",
+            "Service directory"
+          ],
+          [
+            "/s-lsa-e-lsa-maintenance",
+            "Aircraft category and inspection planning"
+          ]
+        ],
+        "items": []
+      },
+      {
+        "heading": "Five-year rubber, fuel and cooling systems",
+        "text": "Rubber replacement is a coordinated review of fuel, cooling, lubrication and intake components, access, routing, clamps, fluids, testing and records. A stain or temperature indication is evidence to investigate; it does not identify a failed component by itself.",
+        "links": [
+          [
+            "/rotax-rubber-hose-replacement-fluid-leaks",
+            "Rubber and hose planning"
+          ],
+          [
+            "/rotax-fuel-pressure-fuel-delivery-problems",
+            "Fuel and carburetion"
+          ],
+          [
+            "/rotax-cooling-oil-temperature-problems",
+            "Cooling and temperature"
+          ]
+        ],
+        "items": []
+      },
+      {
+        "heading": "Ignition, electrical, ECU and engine-management concerns",
+        "text": "Exact warnings, operating conditions and recent changes help separate a connection or installation issue from an expensive component fault. The engine, power supply, grounds, sensors and aircraft wiring are considered together.",
+        "links": [
+          [
+            "/rotax-ignition-ecu-electrical-faults",
+            "Ignition and electrical"
+          ],
+          [
+            "/rotax-915-916-turbo-ems-support",
+            "Turbo and EMS"
+          ]
+        ],
+        "items": []
+      },
+      {
+        "heading": "Gearbox, propeller and vibration",
+        "text": "RPM range, load, propeller condition, gearbox history and measurement conditions define a useful investigation. Instrument readings and wear photographs are examples of evidence, not a diagnosis or an unsupported before-and-after result.",
+        "links": [
+          [
+            "/rotax-gearbox-propeller-vibration",
+            "Vibration and drivetrain"
+          ],
+          [
+            "/e-props-dealer-support",
+            "E-PROPS fitment and support"
+          ]
+        ],
+        "items": []
+      },
+      {
+        "heading": "Records, prebuy and avionics support",
+        "text": "A listing or plain-language concern is enough to begin. Records review can identify gaps before travel or purchase. Avionics work considers displays, radios, power, antennas and terminations as an installed system. Scope and authorization are confirmed for the particular aircraft.",
+        "links": [
+          [
+            "/aircraft-records-review",
+            "Records review"
+          ],
+          [
+            "/light-sport-prebuy-evaluation",
+            "Prebuy"
+          ],
+          [
+            "/light-sport-experimental-avionics",
+            "Avionics and electrical"
+          ]
+        ],
+        "items": []
       }
     ],
     "images": [],
@@ -3215,7 +3740,7 @@
       "specialty-planning-paths-heading"
     ],
     "topic": "service",
-    "last_modified": "2026-10-06",
+    "last_modified": "2026-11-20",
     "proof": [
       {
         "src": "assets/images/proof/differential-pressure-tester-clean-800.webp",
@@ -3241,6 +3766,19 @@
         "caption": "The CarbMate kit shows the measurement tooling used in synchronization planning. Running conditions, throttle controls and applicable instructions give those signals their meaning.",
         "proof_id": "carbmate-carb-sync-kit-card-800"
       }
-    ]
+    ],
+    "hero_id": "rotax-installed-hoses-overview"
+  },
+  "our-work": {
+    "title": "Our Work: Light-Sport & Experimental Aircraft Case Studies",
+    "heading": "Our Work",
+    "description": "Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.",
+    "sections": [],
+    "images": [],
+    "topic": "unsure",
+    "last_modified": "2026-11-20",
+    "intro": "Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.",
+    "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft.",
+    "hero_id": "engine-cage-weld-repair-detail-800"
   }
 }

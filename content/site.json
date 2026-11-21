@@ -9,5 +9,44 @@
   "form_action": "https://formspree.io/f/xojzzovz",
   "date": "2026-11-20",
   "rfsc": "https://rotaxirmt.com/irmt-place/7534",
-  "workflow": "We review your aircraft information and observations, clarify the records and access needed, then agree the work scope, estimate and scheduling. If inspection reveals a different need, we discuss the change before proceeding."
+  "workflow": "We review your aircraft information and observations, clarify the records and access needed, then agree the work scope, estimate and scheduling. If inspection reveals a different need, we discuss the change before proceeding.",
+  "nav": [
+    {
+      "label": "Services",
+      "url": "/services"
+    },
+    {
+      "label": "ROTAX",
+      "url": "/rotax-engine-systems-support"
+    },
+    {
+      "label": "E-PROPS",
+      "url": "/e-props-dealer-support"
+    },
+    {
+      "label": "Our Work",
+      "url": "/our-work"
+    },
+    {
+      "label": "About",
+      "url": "/the-lima-charlie-aero-standard"
+    },
+    {
+      "label": "Request Service",
+      "url": "/support-request"
+    }
+  ],
+  "systems": [
+    "Engine",
+    "Propeller",
+    "Fuel",
+    "Cooling",
+    "Electrical",
+    "Avionics",
+    "Airframe",
+    "Controls",
+    "Records",
+    "Approvals"
+  ],
+  "notice_bar": "ROTAX owner notices: gearbox (ASB-2026-001) and 915/916 turbocharger valve housing (ASB-2026-002)."
 }

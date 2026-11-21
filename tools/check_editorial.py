@@ -6,7 +6,7 @@ def overdue(as_of):
     for name in ('updates', 'editorial-backlog'):
         records = json.loads((ROOT / 'content' / (name + '.json')).read_text())
         for record in records:
-            due = record.get('next_review') or record.get('planned_review')
+            due = record.get('next_review') or record.get('planned_review_date')
             if due and date.fromisoformat(due) < as_of:
                 yield name, record.get('slug', record.get('title')), due
 
