@@ -4,12 +4,14 @@ import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {startServer,save} from './test-server.mjs';
 const root=process.argv[2]||'dist',prefix=process.argv[3]||'browser';
-const server=await startServer(root,8788,{wrangler:true});
+const server=await startServer(root,root==='dist-preview'?8790:8788,{wrangler:true});
 const routes=JSON.parse(fs.readFileSync('.build-evidence/'+root+'/routes.json'));
 const result={environment:'Cloudflare Wrangler Pages local static-asset engine; loopback interface-display shim; not deployed production',root,engines:[],routes:[],layouts:[],axe:[],forms:[],manual:[],console_errors:[],failures:[],limits:['No physical iPhone/Android, screen reader, actual inbox delivery, field Core Web Vitals or five-person owner study']};
 function check(condition,label){if(!condition)throw new Error(label)}
 async function chain(path){let target=server.url+path,steps=[];for(let i=0;i<8;i++){const r=await fetch(target,{redirect:'manual'});steps.push({url:new URL(target).pathname+new URL(target).search,status:r.status,location:r.headers.get('location'),cache:r.headers.get('cache-control')});if(r.status<300||r.status>=400)return steps;target=new URL(r.headers.get('location'),target).href}throw new Error('Redirect loop: '+path)}
 try{
+ const servedIndex=await (await fetch(server.url+'/')).text();
+ check(servedIndex===fs.readFileSync(root+'/index.html','utf8'),'Served home must match the selected build');
  for(const r of routes){for(const p of [r.route,r.route==='/'?'/index.html':r.route+'.html',...(r.route==='/'?[]:[r.route+'/'])]){const steps=await chain(p);check(steps.at(-1).status===200,'Route failed '+p);check(steps.length<=2,'Multiple path redirects '+p);result.routes.push({requested:p,steps})}}
  for(const p of ['/e-props-usa-dealer-support','/e-props-usa-dealer-support.html','/rotax-912-rubber-replacement','/prebuy']){const steps=await chain(p);check(steps.length===2&&steps.at(-1).status===200,'Legacy alias '+p);result.routes.push({requested:p,steps})}
  for(const p of ['/unknown-release-test-route','/_headers','/_redirects']){const steps=await chain(p);check(steps.at(-1).status===404,'Need real 404 '+p);result.routes.push({requested:p,steps})}
@@ -37,7 +39,10 @@ try{
    result.manual.push({test:'Prebuy comparison region scrolls with the keyboard at 320px',status:'PASS'});
    await page.goto(server.url+'/our-work');
    const records=page.locator('.case-record');
-   if(await records.count()){
+   const models=JSON.parse(fs.readFileSync('content/cases.json','utf8'));
+   const expectedRecords=models.filter(c=>root==='dist-preview'||c.state==='published').length;
+   check(await records.count()===expectedRecords,'Served case count matches the selected build');
+   if(expectedRecords){
     check(await records.evaluateAll(all=>all.every(el=>!el.open)),'Mobile records collapsed');
     await page.setViewportSize({width:1024,height:900});
     await page.waitForFunction(()=>[...document.querySelectorAll('.case-record')].every(el=>el.open));
