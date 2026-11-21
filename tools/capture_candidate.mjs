@@ -29,8 +29,24 @@ try {
         visibleImages.forEach(i=>i.loading='eager');
         await Promise.all(visibleImages.map(i=>i.decode()));
         await document.fonts.ready;
+        const rect=el=>{
+          const {x,y,width,height}=el.getBoundingClientRect();
+          return {x,y,width,height};
+        };
+        const controls=[...document.querySelectorAll('a,button,summary')].filter(el=>
+          el.getClientRects().length && !el.matches('.skip') && !el.closest('[inert]'));
+        const smallTargets=controls.filter(el=>{
+          const {width,height}=rect(el);
+          return width<24 || height<24;
+        }).map(el=>({label:el.textContent.trim(),...rect(el)}));
+        const photos=visibleImages.filter(el=>el.dataset.subject).map(el=>({
+          subject:el.dataset.subject,role:el.dataset.purpose,...rect(el)
+        }));
         return {height:document.documentElement.scrollHeight,overflow:document.documentElement.scrollWidth-innerWidth,
-          requestBottom:document.querySelector('main .button')?.getBoundingClientRect().bottom};
+          requestBottom:document.querySelector('main .button')?.getBoundingClientRect().bottom,
+          headerHeight:rect(document.querySelector('.site-header')).height,
+          noticeHeight:document.querySelector('.notice-bar')?.offsetHeight,
+          openCases:document.querySelectorAll('.case-record[open]').length,smallTargets,photos};
       });
       const name=route.file.replace('.html','')+'-'+width+'.webp';
       const png=await page.screenshot({fullPage:true,timeout:60000});
