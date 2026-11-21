@@ -44,7 +44,12 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         notice = ''
         if active:
             summary = site['notice_bar'] if {'rotax-gearbox-notice','rotax-turbocharger-notice'} <= active else 'ROTAX owner notice: ' + '; '.join(r['title'] for r in published if r['type']=='notice') + '.'
-            notice = '<div class="notice-bar"><div class="container">'+E(summary)+' <a href="/owner-notices">Check applicability</a></div></div>'
+            if {'rotax-gearbox-notice','rotax-turbocharger-notice'} <= active:
+                summary_html = (f'<span class="notice-long">{E(summary)}</span>'
+                                '<span class="notice-short">ROTAX gearbox &amp; 915/916 turbo notices ·</span>')
+            else:
+                summary_html = E(summary)
+            notice = '<div class="notice-bar"><div class="container">'+summary_html+' <a href="/owner-notices">Check applicability</a></div></div>'
         markup = template.substitute(menu_js=(ROOT/'templates/menu.js').read_text(), title=E(p['title']),
                     description=E(p['description']), canonical=E(canonical), robots=robots, ogtype=kind,
                     social=social, social_alt=E(registry[SOCIAL[family]]['alt']), css=amap['css'], js=amap['js'],

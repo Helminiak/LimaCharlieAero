@@ -40,24 +40,43 @@ def pill(case):
     pending = any(s['status']=='pending' for s in case['stages'])
     return f'<span class="pill {"pending" if pending else "done"}">{E(case["status"])}</span>'
 
+def stage_rail(stages):
+    dots = []
+    for n, stage in enumerate(stages, 1):
+        description = E(stage['name'] + ' · ' + stage['status'])
+        dots.append(f'<li class="{stage["status"]}" title="{description}">'
+                    f'<span aria-hidden="true">{n}</span><span class="visually-hidden">{description}</span></li>')
+    return '<ol class="stage-rail" aria-label="Case progress">' + ''.join(dots) + '</ol>'
+
+
 def case_stories(cases, figure, compact=False):
     blocks = []
     for case in cases:
-        slug = case['slug']
-        title = E(case['title'])
-        heading = f'<h3>{title}</h3>' if compact else f'<h2>{title}</h2>'
+        slug, stages = case['slug'], case['stages']
+        tag = 'h3' if compact else 'h2'
+        heading = f'<{tag}>{E(case["title"])}</{tag}>'
         head = ribbon(case) + heading + pill(case)
+        rail = stage_rail(stages)
+        problem = f'<p>{E(stages[0]["text"])}</p>'
+        images = [subject for stage in stages for subject in stage['evidence']]
         if compact:
-            images = [i for s in case['stages'] for i in s['evidence']]
-            pics = ''.join(figure(i, 'mosaic') for i in (images[:2]+images[4:5]))
-            summary = E(case['stages'][0]['text'])
-            body = f'<div class="story"><div class="pics">{pics}</div><div>{head}<p>{summary}</p><a href="/our-work#{slug}">Read the case</a></div></div>' if pics else f'{head}<p>{summary}</p><a href="/our-work#{slug}">Read the case</a>'
+            # Keep readings and inspection documents uncropped in the full record.
+            photos = images[:2] + images[-1:] if len(images) > 2 else images
+            mosaic = ''.join(figure(i, 'mosaic') for i in photos)
+            visual = f'<div class="pics">{mosaic}</div>' if mosaic else rail
+            link = f'<a href="/our-work#{slug}">Read the case</a>'
+            body = f'<div class="story">{visual}<div>{head}{problem}{link}</div></div>'
         else:
-            rail = ''.join(f'<li class="{s["status"]}"><a href="#{slug}-{n}">{s["name"]} · {s["status"]}</a></li>' for n,s in enumerate(case['stages']))
-            detail = []
-            for n,s in enumerate(case['stages']):
-                evidence = ''.join(figure(i,'case') for i in s['evidence'])
-                detail.append(f'<section id="{slug}-{n}"><h3>{s["name"]} · {s["status"]}</h3><p>{E(s["text"])}</p><div class="proof-grid">{evidence}</div></section>')
-            body = head + '<ol class="rail">'+rail+'</ol>'+''.join(detail)+f'<aside class="limits"><b>What this does and does not show</b><p>{E(case["limits"])}</p></aside>'
+            strip_ids = images[:2]
+            strip = ''.join(figure(i, 'case') for i in strip_ids)
+            sections = []
+            for n, stage in enumerate(stages[1:], 1):
+                photos = ''.join(figure(i,'case') for i in stage['evidence'] if i not in strip_ids)
+                sections.append(f'<section id="{slug}-{n}"><h3>{stage["name"]} · {stage["status"]}</h3>'
+                                f'<p>{E(stage["text"])}</p><div class="proof-grid">{photos}</div></section>')
+            limits = f'<aside class="limits"><b>What this does and does not show</b><p>{E(case["limits"])}</p></aside>'
+            body = (head + rail + '<h3>Problem</h3>' + problem + f'<div class="case-strip">{strip}</div>'
+                    + '<details class="case-record"><summary>Full case record</summary>'
+                    + ''.join(sections) + limits + '</details>')
         blocks.append(f'<article id="{slug}" class="case-story">{body}</article>')
     return ''.join(blocks)

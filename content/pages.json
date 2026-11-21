@@ -9,45 +9,53 @@
         "heading": "Choose the review depth",
         "text": "The appropriate level depends on available records, aircraft access and the decision you need to make.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Review options"
       },
       {
         "heading": "What the review can reveal",
         "text": "Inspection and maintenance gaps, aircraft category questions, engine history, configuration changes and items needing clarification can affect a buying decision. A prebuy is not a guarantee against future defects.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Access & reporting"
       },
       {
         "heading": "Plan access and timing",
         "text": "Send the listing, location, asking price and available logbooks if you have them. Document completeness, seller cooperation, aircraft access and specialist checks affect cost and timing. Lima Charlie Aero confirms the review scope before quoting.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Access & reporting"
       },
       {
         "heading": "Define the review before purchase",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Review options"
       },
       {
         "heading": "Courtesy Glance",
         "text": "Fast triage for obvious concerns before spending travel money. Listing, photos, N-number basics when available, and obvious logbook/photo red flags Questions to ask the seller before the buyer commits more time Best for: “Should I keep looking at this aircraft?” Boundary: Not an inspection, no return-to-service implication, no hidden-condition assurance, and no physical aircraft access unless separately arranged.",
-        "items": []
+        "items": [],
+        "theme": "Review options"
       },
       {
         "heading": "Standard Prebuy Evaluation",
         "text": "Structured decision support for a serious buyer before closing. Airframe, engine, propeller, avionics, records, equipment list, and operating limitations review S-LSA / E-LSA / E-AB status implications and ROTAX records, SB/SL/SI, rubber age, oil/fuel history, gearbox/propeller/vibration context where applicable Visible-system condition, installed configuration, open squawks, and buyer decision report Boundary: Not a guarantee of future condition. Scope depends on access, seller cooperation, records quality, weather, location, and certificate privileges.",
-        "items": []
+        "items": [],
+        "theme": "Review options"
       },
       {
         "heading": "Forensic Records and Condition Audit",
         "text": "Deep review for expensive aircraft, messy records, suspected damage history, or maximum risk reduction. Deeper logbook chronology, damage / repair / alteration trace, and component identity review Compliance context for manuals, bulletins, safety directives, operating limitations, and manufacturer correspondence Discrepancy matrix, engine lifecycle review, serial numbers, missing records, and escrow / negotiation support summary Boundary: More expensive and slower, requires records access and cooperation, and still is not future-condition assurance. Comparison",
-        "items": []
+        "items": [],
+        "theme": "Review options"
       },
       {
         "heading": "Records, Category, Engine, and Configuration Drive the Questions.",
         "text": "A useful prebuy evaluation looks at aircraft identity, airworthiness category, operating limitations, engine configuration, inspection history, damage history, parts support, and unresolved records questions. What to Send",
-        "items": []
+        "items": [],
+        "theme": "Access & reporting"
       },
       {
         "heading": "Define the buying decision before selecting checks",
@@ -57,15 +65,18 @@
           "Missing records are identified as missing rather than assumed satisfactory.",
           "A prebuy is not a guarantee of future condition, nor automatically the required annual or condition inspection.",
           "Aircraft access, tests and specialist inputs must be agreed before scope and timing are confirmed."
-        ]
+        ],
+        "theme": "Review options"
       },
       {
         "heading": "Make the report useful for your decision",
-        "text": "A useful finding identifies the observation, its evidence, the question it raises and any limitation on the review. Keep records findings separate from physical condition findings so the buyer understands what was actually examined. Where access or documentation was unavailable, state that limitation rather than implying a clean result. The resulting report should help frame follow-up questions and the purchase decision. It is not a guarantee of future reliability, a substitute for the aircraft records, or an expansion of the agreed inspection scope."
+        "text": "A useful finding identifies the observation, its evidence, the question it raises and any limitation on the review. Keep records findings separate from physical condition findings so the buyer understands what was actually examined. Where access or documentation was unavailable, state that limitation rather than implying a clean result. The resulting report should help frame follow-up questions and the purchase decision. It is not a guarantee of future reliability, a substitute for the aircraft records, or an expansion of the agreed inspection scope.",
+        "theme": "Access & reporting"
       },
       {
         "heading": "Agree the question and the access before the inspection",
-        "text": "A prospective buyer may need a broad condition picture, an explanation of records gaps, or a closer look at a particular installation. Those are related but different questions. Establish which aircraft, records and physical areas will be available, who can provide access and what decision the review is intended to support. A listing alone cannot define the full scope. If information is missing, the report should carry that limitation forward rather than allowing it to disappear behind a general statement about condition."
+        "text": "A prospective buyer may need a broad condition picture, an explanation of records gaps, or a closer look at a particular installation. Those are related but different questions. Establish which aircraft, records and physical areas will be available, who can provide access and what decision the review is intended to support. A listing alone cannot define the full scope. If information is missing, the report should carry that limitation forward rather than allowing it to disappear behind a general statement about condition.",
+        "theme": "Access & reporting"
       },
       {
         "heading": "Separate evidence, interpretation and unresolved questions",
@@ -83,7 +94,8 @@
             "/service-area",
             "Plan aircraft access"
           ]
-        ]
+        ],
+        "theme": "Access & reporting"
       }
     ],
     "images": [],
@@ -96,13 +108,13 @@
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
         "alt": "Aircraft with cowling open in an outdoor work area",
-        "caption": "An open cowling provides inspection access to the installed systems. For a prebuy, coordinate access and records so the review can address the aircraft you are considering.",
+        "caption": "An open cowling provides inspection access to the installed systems.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       },
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
-        "caption": "Logbook and work-entry context for a prebuy, with private details masked. Review the candidate aircraft’s original entries to match identity, dates and described work with its history.",
+        "caption": "Logbook and work-entry context for a prebuy, with private details masked.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       }
     ],
@@ -124,7 +136,11 @@
           "Separate findings, interpretation and unresolved questions."
         ]
       }
-    }
+    },
+    "themes": [
+      "Review options",
+      "Access & reporting"
+    ]
   },
   "rotax-912-high-oil-temperature": {
     "title": "ROTAX 912 high oil temperature",
@@ -136,45 +152,53 @@
         "heading": "Understanding the concern",
         "text": "Oil-system condition, airflow, installation details and indication accuracy can influence a temperature concern. Limits and maintenance decisions must use the applicable instructions.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Useful information, if known",
         "text": "Send the indicated temperatures and conditions if recorded: ground or flight, RPM, weather, climb or cruise, and what changed. Do not run an aircraft just to create new diagnostic data.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "What the review can produce",
         "text": "The initial review helps decide which readings, records or installed-system checks are needed. Broader coolant-loss and cooling issues are covered separately.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Cooling & installation"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Cooling & installation"
       },
       {
         "heading": "Record the conditions around a temperature concern",
         "text": "Oil temperature higher than normal Temperature climbing in climb, cruise, or taxi Oil pressure changes that appear with temperature Coolant temperature or CHT changes at the same time Recent cowling, cooler, hose, or maintenance changes What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Cooling, oil, installation, and records all matter",
         "text": "Oil cooler condition and airflow Coolant condition, trapped air, or hose routing Sensor readings and operating data Installation details and cowling airflow Recent maintenance records Temperature Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Cooling & installation"
       },
       {
         "heading": "The value matters, but the trend matters more",
         "text": "High oil temperature support starts with the actual value, phase of flight, outside conditions, oil pressure, coolant or CHT behavior, and whether the number changed suddenly or slowly over time. A climb-only problem, taxi problem, cruise problem, and post-maintenance problem do not point to the same review path. Installation Context",
-        "items": []
+        "items": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Cooling performance is aircraft-specific",
         "text": "Cowling airflow, oil cooler position, radiator condition, ducting, hose routing, sensor confidence, and trapped-air or coolant history can all affect the symptom. The review ties the reported temperature to records and installation details before treating the engine as the only possible cause.",
-        "items": []
+        "items": [],
+        "theme": "Cooling & installation"
       },
       {
         "heading": "Make a temperature report comparable",
@@ -184,11 +208,13 @@
           "duration and repeatability",
           "other temperatures and pressure",
           "recent cooling or oil-system changes."
-        ]
+        ],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Make the operating context part of the report",
-        "text": "An elevated indication needs the circumstances around it. Note the phase of operation, ambient conditions if known, the duration of the change, and whether the indication returned to its usual range. Include the instrument and any other simultaneous indications. Do not infer the fluid condition from a dashboard value alone or use this page to decide whether continued operation is acceptable. Aircraft-specific limits and current operating instructions govern that decision."
+        "text": "An elevated indication needs the circumstances around it. Note the phase of operation, ambient conditions if known, the duration of the change, and whether the indication returned to its usual range. Include the instrument and any other simultaneous indications. Do not infer the fluid condition from a dashboard value alone or use this page to decide whether continued operation is acceptable. Aircraft-specific limits and current operating instructions govern that decision.",
+        "theme": "Operating conditions"
       },
       {
         "heading": "Review the installation and recent work together",
@@ -202,7 +228,8 @@
             "/rotax-installation-review",
             "Review the surrounding installation"
           ]
-        ]
+        ],
+        "theme": "Cooling & installation"
       }
     ],
     "images": [],
@@ -213,14 +240,14 @@
       {
         "src": "assets/images/proof/xps-oil-rotax-filter-service-800.webp",
         "alt": "Oil containers and ROTAX filter supplies",
-        "caption": "The oil and filter supplies show a service-planning input. For a temperature concern, review the applicable product specification and service history alongside operating conditions.",
+        "caption": "The service supplies include oil and a ROTAX filter.",
         "proof_id": "xps-oil-rotax-filter-service-800"
       },
       {
         "proof_id": "coolant-residue-cylinder-head-hose-leak-800",
         "src": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
         "alt": "Residue around a cylinder-head fitting and hose area",
-        "caption": "Residue is visible around the fitting area. Its location guides inspection but does not by itself identify the source or fluid path."
+        "caption": "Residue is visible where the hose meets the cylinder-head fitting."
       }
     ],
     "hero_id": "xps-oil-rotax-filter-service-800",
@@ -241,7 +268,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Operating conditions",
+      "Cooling & installation"
+    ]
   },
   "s-lsa-e-lsa-maintenance": {
     "title": "Plan an aircraft inspection or maintenance visit",
@@ -253,78 +284,93 @@
         "heading": "What helps us plan",
         "text": "Aircraft model, location, the last inspection and any known due items help establish a starting point. A copy of the airworthiness certificate, operating limitations and relevant records may be requested after contact.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "The aircraft category matters",
         "text": "S-LSA, E-LSA and other experimental aircraft have different instruction and authorization requirements. Lima Charlie Aero checks the applicable documents and task privileges before confirming the work.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "Discuss the scope and availability",
         "text": "Access, due items, parts, previous findings and the records affect cost and downtime. Appointment and travel arrangements are confirmed for the individual job.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "Authority Starts with the Paperwork.",
         "text": "Work scope is determined from the aircraft airworthiness certificate, operating limitations, manufacturer maintenance manual, ROTAX documentation, service bulletins, safety directives, and certificate privileges.",
-        "items": []
+        "items": [],
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "What a Records-first Light-Sport Inspection Planning Path May Include",
         "text": "Inspection support starts by sorting the documents and practical service items together so the supportable path is clear before the appointment is treated as routine. Required Inputs",
-        "items": []
+        "items": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "Start with These Documents",
         "text": "Send the airworthiness certificate, operating limitations, last inspection entry, make/model, N-number, engine model, and relevant logbook photos before scheduling. Why Category Matters",
-        "items": []
+        "items": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "S-LSA, E-LSA, and Experimental Aircraft Do Not Use the Same Assumptions.",
         "text": "Light-sport aircraft support starts with category. A Special Light-Sport Aircraft and an Experimental Light-Sport Aircraft may look similar on the ramp, but the documents, maintenance instructions, operating limitations, and inspection context can point to different requirements. For S-LSA aircraft, manufacturer maintenance instructions and safety directives can be central to the work boundary. For E-LSA aircraft, operating limitations and condition inspection context often drive the review. The aircraft documents decide the path. Operating Limitations",
-        "items": []
+        "items": [],
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "The Operating Limitations Are Not Optional Background.",
         "text": "Operating limitations can define inspection language, required records, modification boundaries, and operating restrictions. They also help separate remote records review from work that needs aircraft access or owner coordination. Maintenance records matter because they show continuity: who did the work, when it was done, what instructions were referenced, and whether recurring items were handled traceably. Condition Inspection Context",
-        "items": []
+        "items": [],
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "The Inspection Entry Has to Match the Aircraft and Privileges.",
         "text": "Condition inspection support depends on the aircraft operating limitations, category/class, applicable instructions, records, and certificate/rating privileges. The goal is to define the supportable path before any light-sport task is treated as generic. What helps first: N-number or tail number, aircraft location, airworthiness certificate, operating limitations, last inspection entry, aircraft make/model, engine model, and the maintenance or inspection need.",
-        "items": []
+        "items": [],
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "Light-Sport Work Starts by Defining the Boundary.",
         "text": "Owners often need help sorting condition inspection preparation, ROTAX maintenance records, rubber replacement timing, unresolved squawks, prebuy findings, operating limitation questions, or manufacturer-instruction questions. The correct response depends on the aircraft category and documents in force. A request may be simple, but the boundary still matters. A loose logbook entry, missing operating limitation, undocumented modification, or unclear inspection privilege can change the next step. The first conversation is intentionally document-led so the aircraft, owner, and service process are not pushed by unsupported assumptions. Owner Coordination",
-        "items": []
+        "items": [],
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "Appointments Work Better When the Records Arrive First.",
         "text": "Before tools come out, Lima Charlie Aero LLC wants the aircraft identity, location, need, and document set captured. That keeps assumptions from becoming maintenance plans and helps decide whether the next move is records review, photos, aircraft access, airfield coordination, or scheduled work at KAKH / Gastonia Municipal Airport.",
-        "items": []
+        "items": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "Inspection planning is a document-and-condition task",
         "text": "An owner may describe an annual inspection, condition inspection or 100-hour requirement using the same shorthand, but the aircraft category and operating use determine the actual basis. The shop first reviews the applicable documents and existing entries, then confirms the inspection scope and privileges. Records-first planning also exposes due calendar items, unresolved discrepancies and changes that may need supporting instructions. Having those records available before travel helps distinguish a straightforward service visit from a broader review; it does not guarantee a fixed duration or that no additional findings will emerge.",
-        "items": []
+        "items": [],
+        "theme": "Records & scheduling"
       },
       {
         "heading": "Identify the aircraft basis before defining the work",
-        "text": "An aircraft’s category, documentation and configuration matter to maintenance planning. Do not infer the applicable requirements solely from appearance or a familiar model name. The records should establish the aircraft identity and the basis relevant to the requested task. Where the information is incomplete, keep that question open while obtaining the documentation. This is particularly important when discussing equipment changes, inspection planning or a history that spans multiple owners."
+        "text": "An aircraft’s category, documentation and configuration matter to maintenance planning. Do not infer the applicable requirements solely from appearance or a familiar model name. The records should establish the aircraft identity and the basis relevant to the requested task. Where the information is incomplete, keep that question open while obtaining the documentation. This is particularly important when discussing equipment changes, inspection planning or a history that spans multiple owners.",
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "Keep authority separate from experience",
-        "text": "Technical experience supports the work, but it does not replace the authority and instructions applicable to a particular aircraft and task. The proposed scope must stay within those boundaries. An owner-facing website cannot determine the legal or technical acceptability of a change from a photograph. Bring the relevant records and describe the intended work so the applicable documentation path can be established before proceeding. When additional authorization or specialist input is needed, it belongs in the planning discussion."
+        "text": "Technical experience supports the work, but it does not replace the authority and instructions applicable to a particular aircraft and task. The proposed scope must stay within those boundaries. An owner-facing website cannot determine the legal or technical acceptability of a change from a photograph. Bring the relevant records and describe the intended work so the applicable documentation path can be established before proceeding. When additional authorization or specialist input is needed, it belongs in the planning discussion.",
+        "theme": "Aircraft category & privileges"
       },
       {
         "heading": "Prepare records and access together",
@@ -338,7 +384,8 @@
             "/aircraft-records-review",
             "Establish the aircraft history"
           ]
-        ]
+        ],
+        "theme": "Records & scheduling"
       }
     ],
     "images": [],
@@ -352,13 +399,13 @@
         "proof_id": "differential-pressure-tester-clean-800",
         "src": "assets/images/proof/differential-pressure-tester-clean-800.webp",
         "alt": "Two-gauge differential pressure tester in use",
-        "caption": "A two-gauge test records more than a single number. Test conditions, equipment and the applicable procedure belong with the recorded result."
+        "caption": "Both gauges are visible on the differential pressure tester."
       },
       {
         "proof_id": "lca-logbook-work-sticker-proof-800",
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
-        "caption": "Record details are withheld for privacy. A maintenance record needs traceable aircraft, work and date context; this photograph does not assert a finding for a customer aircraft."
+        "caption": "The logbook photograph masks private entry details."
       }
     ],
     "hero_id": "aircraft-side-canopy-joe-working-800",
@@ -386,7 +433,11 @@
           "searey-evaluation"
         ]
       }
-    }
+    },
+    "themes": [
+      "Aircraft category & privileges",
+      "Records & scheduling"
+    ]
   },
   "privacy": {
     "title": "Privacy and inquiry information",
@@ -444,30 +495,35 @@
         "heading": "Understand the problem",
         "text": "Describe the symptom or goal. We review relevant records and instructions before recommending work.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Agree on the plan",
         "text": "Scope, estimate and scheduling are discussed before work. Findings that affect the plan are explained before expanding the agreed job.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Keep the result traceable",
         "text": "The appropriate findings, work and checks are documented for the agreed task. Manufacturer questions or specialist work are identified where needed.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Records & traceability"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Precision • Reliability • Traceability",
         "text": "The badge is a secondary expression of a disciplined, veteran-founded operating mindset. It does not imply Army, DoD, FAA, or government endorsement. The method stays tied to the aircraft: verify the facts, respect the documents, and define a supportable next step. View training and credential context",
-        "items": []
+        "items": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "1. Capture the aircraft and symptom",
@@ -507,50 +563,60 @@
       {
         "heading": "Symptoms Are Treated as Data Points, Not Conclusions.",
         "text": "The Lima Charlie Aero Standard is the operating method behind the business. It draws from Army QA/QC discipline, calibration and traceability work, serviceability thinking, IT/business systems education, and documentation control. The point is to keep the first decision clear and tied to the aircraft in front of you. A rough-running engine, high temperature indication, fuel pressure complaint, vibration, logbook concern, or prebuy question is not a diagnosis by itself. A symptom starts the review; the useful next step depends on the documents, records, engine configuration, and applicable privileges.",
-        "items": []
+        "items": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Controlled Before Action",
         "text": "No aircraft support activity is controlled until the aircraft, location, symptom, and next action are captured. First contact stays short: identify the aircraft and concern, then request records, photos, operating data, or airfield details only when they help define the next step. The Lima Charlie Aero Method",
-        "items": []
+        "items": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "A Reported Value, a Verified Value, and a Maintenance Conclusion Are Not the Same Thing.",
         "text": "Calibration-grade discipline is not a marketing phrase here. It means respecting the difference between what someone observed, what can be verified, and what can be concluded. A gauge reading, EMS message, RPM value, temperature trend, or fuel pressure report may be important, but each one needs instrument, operating, sensor, installation, environment, and records context. That mindset keeps the process from becoming a parts-cannon exercise and keeps one symptom from being treated as proof of one cause. The better first question is, \"What evidence is needed to define the next serviceable step?\"",
-        "items": []
+        "items": [],
+        "theme": "Records & traceability"
       },
       {
         "heading": "The Aircraft Has to Be Reviewed as a System.",
         "text": "ROTAX 9 Series concerns can involve the engine, installation, fuel system, cooling system, propeller/gearbox relationship, electrical configuration, recent maintenance, or documentation history. Light-sport aircraft add another layer because S-LSA / E-LSA and experimental aircraft can have different document boundaries. Lima Charlie Aero LLC starts with the aircraft identity, not an assumption. The next step has to fit the specific aircraft, not just the engine model. The same method applies when the next step involves LOA-related questions, manufacturer coordination, e-Prop or propeller support, cracked engine cage documentation, or an engineering packet. The task is to organize the evidence into a documented next action.",
-        "items": []
+        "items": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Documentation Control",
         "text": "Documents are not an afterthought. Operating limitations, maintenance manuals, ROTAX instructions, service bulletins, safety directives, and logbook entries define the work boundary and the questions that need to be answered.",
-        "items": []
+        "items": [],
+        "theme": "Records & traceability"
       },
       {
         "heading": "Risk-based Review",
         "text": "Not every concern deserves the same response. A prebuy records gap, a temperature trend, a fuel pressure complaint, and a vibration after propeller work carry different risk signals and require different evidence.",
-        "items": []
+        "items": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Certificate Boundary",
         "text": "Training credentials and repairman privileges are important, but they do not replace aircraft-specific documents. Work scope depends on the aircraft, the applicable instructions, and the privileges required for the specific task.",
-        "items": []
+        "items": [],
+        "theme": "Certificate boundary"
       },
       {
         "heading": "Owner Clarity",
         "text": "A disciplined process should make the owner feel less stuck, not more buried. The first request is short. The follow-up expands only when the aircraft concern justifies it. Start Clean",
-        "items": []
+        "items": [],
+        "theme": "Method in detail"
       },
       {
         "heading": "Aircraft-specific evidence",
-        "text": "Lima Charlie Aero LLC is locally based from KAKH / Gastonia Municipal Airport. The standard starts with the aircraft, the symptom or service interval, the records, and the applicable documents before the next step is recommended."
+        "text": "Lima Charlie Aero LLC is locally based from KAKH / Gastonia Municipal Airport. The standard starts with the aircraft, the symptom or service interval, the records, and the applicable documents before the next step is recommended.",
+        "theme": "Records & traceability"
       },
       {
         "heading": "The Standard in practice",
-        "text": "The engine-cage photographs below illustrate the kinds of evidence that belong in a maintenance record: the visible concern, access and support context, joint detail and documented condition. These images do not establish an approved repair or a return-to-service decision on their own. The method connects the observation to the aircraft, applicable instructions, work scope, and resulting records. A caption should tell an owner what the image shows and what additional evidence matters, without turning a photograph into a claim it cannot support."
+        "text": "The engine-cage photographs below illustrate the kinds of evidence that belong in a maintenance record: the visible concern, access and support context, joint detail and documented condition. These images do not establish an approved repair or a return-to-service decision on their own. The method connects the observation to the aircraft, applicable instructions, work scope, and resulting records. A caption should tell an owner what the image shows and what additional evidence matters, without turning a photograph into a claim it cannot support.",
+        "theme": "Method in detail"
       }
     ],
     "images": [],
@@ -561,35 +627,40 @@
       {
         "src": "assets/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
         "alt": "Visible crack at an engine-cage joint",
-        "caption": "The visible crack is recorded at the joint before conclusions are drawn. This is the Standard in practice: preserve the observation, then connect it with inspection and applicable repair instructions.",
+        "caption": "The visible crack is recorded at the joint before conclusions are drawn.",
         "proof_id": "engine-cage-crack-closeup-before-repair-800"
       },
       {
         "src": "assets/images/proof/engine-cage-weld-repair-detail-800.webp",
         "alt": "Engine-cage joint with visible weld detail",
-        "caption": "This view documents the weld and joint condition. Acceptance belongs in the corresponding inspection record and applicable repair data.",
+        "caption": "This view documents the weld and joint condition.",
         "proof_id": "engine-cage-weld-repair-detail-800"
       },
       {
         "src": "assets/images/proof/engine-cage-painted-finished-800.webp",
         "alt": "Coated engine cage shown separately from the engine",
-        "caption": "The painted cage view records its visible finish and condition. Structural acceptance and release to service belong in the inspection and maintenance records.",
+        "caption": "The painted cage view records its visible finish and condition.",
         "proof_id": "engine-cage-painted-finished-800"
       },
       {
         "proof_id": "ndt-magnetic-particle-report",
         "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
         "alt": "Redacted result rows from a magnetic-particle inspection report",
-        "caption": "The excerpt keeps the inspection findings with their recorded disposition."
+        "caption": "The redacted report excerpt lists the inspected regions and their recorded findings."
       },
       {
         "proof_id": "eprops-engineering-packet-fanout-1200-clean",
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
         "alt": "Redacted engineering packet pages arranged for review",
-        "caption": "Redacted engineering packet structure connects configuration information, installation details and documentation. The preview is process evidence, not approval for another aircraft."
+        "caption": "The redacted packet brings the configuration and installation records together."
       }
     ],
-    "hero_id": "aircraft-open-cowling-under-canopy-800"
+    "hero_id": "aircraft-open-cowling-under-canopy-800",
+    "themes": [
+      "Method in detail",
+      "Records & traceability",
+      "Certificate boundary"
+    ]
   },
   "rotax-engine-systems-support": {
     "title": "ROTAX service and troubleshooting",
@@ -601,7 +672,8 @@
         "heading": "Start with what changed",
         "text": "Describe what you noticed, when it occurs and any recent work. Engine model, operating readings and service history help if known; they are not prerequisites to an inquiry.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "Choose a symptom or planned service",
@@ -632,24 +704,28 @@
             "/rotax-9-series-912-914-915-916-support",
             "Engine-family guide"
           ]
-        ]
+        ],
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Scope is checked for your aircraft",
         "text": "The aircraft documents, installed equipment, current instructions and task qualifications are reviewed before work is confirmed. Specialist or manufacturer involvement may be needed.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "ROTAX alert service bulletin review",
         "text": "Applicability must be checked against the engine model/type, engine serial number, propeller gearbox serial number, and whether the gearbox has already been serviced, repaired, rebuilt, or replaced.",
-        "items": []
+        "items": [],
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Five-year rubber replacement: why it is a real package, not one hose",
@@ -662,22 +738,26 @@
           "Fuel-pump replacement when required by applicable time limits.",
           "Refill, bleed, ground run, leak checks and synchronization where required by the work.",
           "Aircraft-side hoses, clamps and logbook documentation under the applicable instructions."
-        ]
+        ],
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Start with the service item, package, symptom, or installation question",
         "text": "ROTAX support is routed by the closest need: routine service items, five-year rubber planning, carburetion, fuel delivery, temperature, ignition/electrical, gearbox/vibration, turbo/EMS context, or installation review. For model-family differences, use the ROTAX 9 Series guide .",
-        "items": []
+        "items": [],
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "Aircraft, location, symptom, and recent context",
         "text": "A useful first request does not need to be a maintenance worksheet. Send the N-number or tail number, aircraft location, engine model if known, what changed, when it happens, and any clear fault message. Records, photos, operating data, propeller details, airfield tools, or manufacturer coordination can be requested after intake when they are needed.",
-        "items": []
+        "items": [],
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "The engine is reviewed as part of the aircraft system",
         "text": "A reported value, a verified value, and a maintenance conclusion are not the same thing. Fuel, induction, cooling, oil, electrical, propeller, gearbox, records, and installation details can all affect the path. No support activity is controlled until aircraft, location, symptom, and next action are captured. The goal is to move from uncertainty to a clear next step.",
-        "items": []
+        "items": [],
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "Service packages and symptom paths",
@@ -704,7 +784,8 @@
             "Turbo / EMS"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Useful intake examples",
@@ -723,19 +804,23 @@
             "Installation"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "Aircraft-specific evidence",
-        "text": "locally based ROTAX support for light-sport aircraft: five-year rubber package planning, baseline service, fuel delivery, ignition/electronics, cooling, vibration, installation review, and records control. Aircraft documents, engine family, installed configuration, and certificate privileges still control final scope."
+        "text": "locally based ROTAX support for light-sport aircraft: five-year rubber package planning, baseline service, fuel delivery, ignition/electronics, cooling, vibration, installation review, and records control. Aircraft documents, engine family, installed configuration, and certificate privileges still control final scope.",
+        "theme": "Installation & symptom history"
       },
       {
         "heading": "Sources for an applicability review",
-        "text": "Final action is determined from current ROTAX publications, the aircraft records, engine configuration, and applicable maintenance authority. This website notice is an intake and applicability-review notice, not a substitute for the bulletin or maintenance instructions."
+        "text": "Final action is determined from current ROTAX publications, the aircraft records, engine configuration, and applicable maintenance authority. This website notice is an intake and applicability-review notice, not a substitute for the bulletin or maintenance instructions.",
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Service history and package scope",
-        "text": "Planning context: This is commonly a multi-thousand-dollar planning item and can approach or exceed about $4,000 on some installations depending on access, routing, parts, fluids, clamps, carburetor parts, fuel-pump requirements, and documentation needs. Final scope is determined after aircraft, engine, installation, and records review."
+        "text": "Planning context: This is commonly a multi-thousand-dollar planning item and can approach or exceed about $4,000 on some installations depending on access, routing, parts, fluids, clamps, carburetor parts, fuel-pump requirements, and documentation needs. Final scope is determined after aircraft, engine, installation, and records review.",
+        "theme": "Service packages & notices"
       },
       {
         "heading": "Keep the system relationships visible",
@@ -753,7 +838,8 @@
             "/rotax-cooling-oil-temperature-problems",
             "Cooling and lubrication context"
           ]
-        ]
+        ],
+        "theme": "Installation & symptom history"
       }
     ],
     "images": [],
@@ -769,38 +855,38 @@
       {
         "src": "assets/images/proof/top-end-parts-organized-shelf-800.webp",
         "alt": "Engine parts organized on a shelf",
-        "caption": "Organized parts preserve inspection and reassembly context. Component identity and records must remain associated with the work.",
+        "caption": "Engine parts are arranged on the shelf for inspection.",
         "proof_id": "top-end-parts-organized-shelf-800"
       },
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
         "alt": "Aircraft with cowling open in an outdoor work area",
-        "caption": "The open cowling exposes the engine and surrounding installation. Fuel, cooling and electrical concerns need this system context as well as the engine’s records.",
+        "caption": "The open cowling exposes the engine and surrounding installation.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       },
       {
         "proof_id": "coolant-residue-cylinder-head-hose-leak-800",
         "src": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
         "alt": "Residue around a cylinder-head fitting and hose area",
-        "caption": "Residue is visible around the fitting area. Its location guides inspection but does not by itself identify the source or fluid path."
+        "caption": "Residue is visible where the hose meets the cylinder-head fitting."
       },
       {
         "proof_id": "fuel-tank-borescope-dirty-800",
         "src": "assets/images/proof/fuel-tank-borescope-dirty-800.webp",
         "alt": "Borescope display showing material on a tank interior surface",
-        "caption": "Material is visible on the tank interior in this borescope view. The image supports an observation, not identification of the material or a diagnosis of fuel pressure."
+        "caption": "The borescope shows material on the tank wall."
       },
       {
         "proof_id": "differential-pressure-tester-clean-800",
         "src": "assets/images/proof/differential-pressure-tester-clean-800.webp",
         "alt": "Two-gauge differential pressure tester in use",
-        "caption": "A two-gauge test records more than a single number. Test conditions, equipment and the applicable procedure belong with the recorded result."
+        "caption": "Both gauges are visible on the differential pressure tester."
       },
       {
         "proof_id": "gearbox-pocket-wear-1-800",
         "src": "assets/images/proof/gearbox-pocket-wear-1-800.webp",
         "alt": "Gearbox component surface shown for condition review",
-        "caption": "Component surface detail provides a record of the visible condition. Service history and applicable inspection criteria are needed before assigning significance."
+        "caption": "The gearbox pocket shows wear on its inner surface."
       }
     ],
     "hero_id": "rotax-engine-installed-green-covers",
@@ -825,7 +911,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Service packages & notices",
+      "Installation & symptom history"
+    ]
   },
   "rotax-ignition-ecu-electrical-faults": {
     "title": "ROTAX starting, electrical and ECU warnings",
@@ -837,50 +927,59 @@
         "heading": "Understanding the concern",
         "text": "A wiring or connector fault can produce a warning associated with another component. Supply, grounds and connections need consideration before committing to an expensive replacement.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Intermittent symptoms"
       },
       {
         "heading": "Useful information, if known",
         "text": "Send the warning text, when the issue occurs and recent work if known. A timeline can help with intermittent faults.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Intermittent symptoms"
       },
       {
         "heading": "What the review can produce",
         "text": "We review the available evidence and checks which diagnostic work or specialist involvement is appropriate. We do not promise a particular savings or repair outcome.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Electrical symptoms can be intermittent and misleading",
         "text": "ROTAX 912 rough running or hard starting Excessive ignition drop ECU or EMS warning messages Sensor faults or charging issues Heat-related changes in behavior What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Intermittent symptoms"
       },
       {
         "heading": "Evidence comes before diagnosis",
         "text": "Ignition modules, plugs, leads, and grounds ECU/EMS inputs and fault indications Sensors, charging system, and wiring condition Fuel-system context that mimics ignition issues Recent maintenance or installation details Electrical Fault Evidence",
-        "items": []
+        "items": [],
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Find the failed connection, not just the warning it created",
         "text": "Heat damage, weak terminations, connector condition, routing, and intermittent contact can produce symptoms that look like a module or sensor failure. The installed evidence controls the next step. Electrical Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Intermittent faults need a timeline",
         "text": "Ignition, ECU, EMS, sensor, and charging concerns should be described by when they appear, what warning text is shown, what RPM and temperature were involved, and whether the behavior changes with heat, vibration, battery state, or recent maintenance. Intermittent electrical symptoms are easy to flatten into one label when the timeline is missing. System Context",
-        "items": []
+        "items": [],
+        "theme": "Intermittent symptoms"
       },
       {
         "heading": "Wiring and fuel clues can overlap",
         "text": "Plugs, leads, grounds, connectors, charging output, sensor signals, fuel delivery, and installation details can create similar owner reports. The review keeps evidence from the panel, records, and operating behavior separated until the next maintenance step is defensible.",
-        "items": []
+        "items": [],
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Build a timeline before replacing expensive components",
@@ -891,19 +990,23 @@
           "loads in use",
           "recent wiring or maintenance changes",
           "functions that remain normal."
-        ]
+        ],
+        "theme": "Intermittent symptoms"
       },
       {
         "heading": "Connections can make a component look suspect",
-        "text": "A fault at a connection can produce symptoms that lead an owner to suspect an expensive module. The connector photographs show why local condition and the wider installed circuit both matter. A close view preserves conductor or termination detail; a wider view identifies where that detail belongs. These photographs support inspection observations, not a remote diagnosis of another aircraft. Circuit documentation, power and ground context, and the exact symptom are needed to plan the investigation."
+        "text": "A fault at a connection can produce symptoms that lead an owner to suspect an expensive module. The connector photographs show why local condition and the wider installed circuit both matter. A close view preserves conductor or termination detail; a wider view identifies where that detail belongs. These photographs support inspection observations, not a remote diagnosis of another aircraft. Circuit documentation, power and ground context, and the exact symptom are needed to plan the investigation.",
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Avoid replacement as a substitute for evidence",
-        "text": "Moving or replacing an expensive ECU without a disciplined basis can obscure the original condition and introduce additional uncertainty. This page does not recommend indiscriminate swaps. Preserve the exact warning, operating circumstances, recent maintenance and any existing data. The aircraft-specific troubleshooting sequence should establish what the evidence supports and which questions remain before a component decision is made. Access, applicable instructions and the permitted work scope also matter."
+        "text": "Moving or replacing an expensive ECU without a disciplined basis can obscure the original condition and introduce additional uncertainty. This page does not recommend indiscriminate swaps. Preserve the exact warning, operating circumstances, recent maintenance and any existing data. The aircraft-specific troubleshooting sequence should establish what the evidence supports and which questions remain before a component decision is made. Access, applicable instructions and the permitted work scope also matter.",
+        "theme": "Circuits & connections"
       },
       {
         "heading": "Intermittent behavior needs a useful timeline",
-        "text": "Describe the first occurrence and any pattern you have observed during normal operation. Include whether other systems changed at the same time and whether the concern followed wiring or equipment work. Do not disturb a connector simply to test a theory for an online message. Record what is known, distinguish it from assumptions and let the next review define what inspection is appropriate."
+        "text": "Describe the first occurrence and any pattern you have observed during normal operation. Include whether other systems changed at the same time and whether the concern followed wiring or equipment work. Do not disturb a connector simply to test a theory for an online message. Record what is known, distinguish it from assumptions and let the next review define what inspection is appropriate.",
+        "theme": "Intermittent symptoms"
       },
       {
         "heading": "Keep uncertainty explicit",
@@ -917,7 +1020,8 @@
             "/rotax-fuel-pressure-fuel-delivery-problems",
             "Distinguish fuel-system symptoms"
           ]
-        ]
+        ],
+        "theme": "Circuits & connections"
       }
     ],
     "images": [],
@@ -928,26 +1032,26 @@
       {
         "src": "assets/images/proof/voltage-regulator-connector-frayed-800.webp",
         "alt": "Visible conductor condition at a regulator connector",
-        "caption": "The conductor condition is visible at the connector. Electrical inspection should establish the circuit context before any component-replacement conclusion.",
+        "caption": "Frayed conductors are visible at the regulator connector.",
         "proof_id": "voltage-regulator-connector-frayed-800"
       },
       {
         "src": "assets/images/proof/soft-start-connector-annotated-800.webp",
         "alt": "Annotated view identifying an electrical connector",
-        "caption": "The marked connection is a location reference. Circuit identity and the applicable wiring documentation remain necessary.",
+        "caption": "The marked connector identifies the soft-start wiring location.",
         "proof_id": "soft-start-connector-annotated-800"
       },
       {
         "src": "assets/images/proof/electrical-connector-close-800.webp",
         "alt": "Close view of an electrical connector and conductors",
-        "caption": "The connector detail makes the connection condition visible. Inspect the circuit and its wiring context before assigning an ignition or ECU symptom to an expensive component.",
+        "caption": "The connector detail makes the connection condition visible.",
         "proof_id": "electrical-connector-close-800"
       },
       {
         "proof_id": "icom-radio-coax-adapters-800",
         "src": "assets/images/proof/icom-radio-coax-adapters-800.webp",
         "alt": "Radio equipment with coax cable and adapters",
-        "caption": "Radio and cable components illustrate installation planning. Equipment compatibility is an aircraft-specific question."
+        "caption": "The radio, coax and adapters are shown together for installation planning."
       }
     ],
     "hero_id": "voltage-regulator-connector-frayed-800",
@@ -968,7 +1072,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Intermittent symptoms",
+      "Circuits & connections"
+    ]
   },
   "404": {
     "title": "We could not find that page",
@@ -1011,13 +1119,15 @@
         "heading": "An aircraft owner’s experience",
         "text": "An unexpected issue after an aircraft purchase led Joe into detailed records, maintenance instructions and manufacturer coordination. That experience shapes how he helps owners identify the next useful step.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Aircraft ownership"
       },
       {
         "heading": "Military and systems background",
         "text": "Joe served 23 years in the U.S. Army and retired as a Sergeant First Class. His background includes information systems, business administration, systems engineering, project management, logistics and quality assurance.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Engineering and logistics background"
       },
       {
         "heading": "Technical leadership, clear service decisions",
@@ -1028,43 +1138,53 @@
             "/contact#credentials",
             "Training and qualifications"
           ]
-        ]
+        ],
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "Built from an Aircraft-owner Problem, Not a Generic Repair-shop Script.",
-        "text": "Lima Charlie Aero was built from a simple aircraft-owner problem: sometimes the issue is not obvious, the records do not tell the whole story at first glance, and the first answer is not always the right answer. Joe's approach is to slow the problem down, identify the aircraft, review the documents, understand the symptom, and work toward the next practical step."
+        "text": "Lima Charlie Aero was built from a simple aircraft-owner problem: sometimes the issue is not obvious, the records do not tell the whole story at first glance, and the first answer is not always the right answer. Joe's approach is to slow the problem down, identify the aircraft, review the documents, understand the symptom, and work toward the next practical step.",
+        "theme": "Aircraft ownership"
       },
       {
         "heading": "The Rabbit Hole Shaped the Standard.",
-        "text": "Joe came to this work as an aircraft owner who bought an airplane, relied on the normal pre-buy process, and still had an unexpected issue surface afterward. That experience forced him into the kind of rabbit hole many owners recognize: records review, manufacturer documentation, service instructions, LOA / engineering-package coordination, ROTAX training, certificate privileges, and the practical question of what can actually be supported."
+        "text": "Joe came to this work as an aircraft owner who bought an airplane, relied on the normal pre-buy process, and still had an unexpected issue surface afterward. That experience forced him into the kind of rabbit hole many owners recognize: records review, manufacturer documentation, service instructions, LOA / engineering-package coordination, ROTAX training, certificate privileges, and the practical question of what can actually be supported.",
+        "theme": "Aircraft ownership"
       },
       {
         "heading": "Discipline, Documentation, Logistics, and Follow-through Matter Here.",
-        "text": "Before Lima Charlie Aero, Joe served 23 years in the U.S. Army and retired as a Sergeant First Class. That retired U.S. Army senior NCO background matters because aviation maintenance support depends on many of the same habits that matter in military operations: accountability, documentation, configuration control, logistics, communication, and disciplined follow-through. His broader background includes information systems management, business administration, systems engineering, program and project management, logistics, quality-assurance thinking, and traceability."
+        "text": "Before Lima Charlie Aero, Joe served 23 years in the U.S. Army and retired as a Sergeant First Class. That retired U.S. Army senior NCO background matters because aviation maintenance support depends on many of the same habits that matter in military operations: accountability, documentation, configuration control, logistics, communication, and disciplined follow-through. His broader background includes information systems management, business administration, systems engineering, program and project management, logistics, quality-assurance thinking, and traceability.",
+        "theme": "Engineering and logistics background"
       },
       {
         "heading": "A Symptom is Not Treated as a Conclusion.",
-        "text": "A mag drop, vibration, high oil temperature, fuel-pressure change, hose-age concern, or service interval is the starting point for a controlled review, not an excuse to throw parts at the aircraft. Aircraft-first Support"
+        "text": "A mag drop, vibration, high oil temperature, fuel-pressure change, hose-age concern, or service interval is the starting point for a controlled review, not an excuse to throw parts at the aircraft. Aircraft-first Support",
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "Facts Before Guessing.",
-        "text": "Lima Charlie Aero exists for the aircraft owner who knows something is not right but does not yet know whether the issue is ignition, fuel, cooling, rubber, gearbox, propeller, installation, records, or service-interval related. From there, Lima Charlie Aero works to identify the next supportable step. That may be a ROTAX service-planning discussion, an aircraft records review, a prebuy risk discussion, manufacturer coordination, dynamic propeller/vibration support, or a referral path when the issue is outside the supported scope. Credentials / Boundaries"
+        "text": "Lima Charlie Aero exists for the aircraft owner who knows something is not right but does not yet know whether the issue is ignition, fuel, cooling, rubber, gearbox, propeller, installation, records, or service-interval related. From there, Lima Charlie Aero works to identify the next supportable step. That may be a ROTAX service-planning discussion, an aircraft records review, a prebuy risk discussion, manufacturer coordination, dynamic propeller/vibration support, or a referral path when the issue is outside the supported scope. Credentials / Boundaries",
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "Proof Matters, but the Documents Still Control the Work.",
-        "text": "Joe holds the LSRM-A — Light Sport Repairman Maintenance - Aircraft credential and RFSC / ROTAX iRMT service-rated 9 Series training, including Maintenance, Service, and Injected Installation. Those credentials are important, but they are not a shortcut around the documents. Aircraft records, operating limitations, maintenance manuals, service bulletins, engine configuration, and applicable privileges still control the work."
+        "text": "Joe holds the LSRM-A — Light Sport Repairman Maintenance - Aircraft credential and RFSC / ROTAX iRMT service-rated 9 Series training, including Maintenance, Service, and Injected Installation. Those credentials are important, but they are not a shortcut around the documents. Aircraft records, operating limitations, maintenance manuals, service bulletins, engine configuration, and applicable privileges still control the work.",
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "The Goal is to Make the Next Step Clear.",
-        "text": "The goal is not to make the problem sound simple when it is not. The goal is to make the next step clear. That is the standard behind Lima Charlie Aero: start with facts, respect the documents, keep the owner informed, and work the problem until the next supportable step is defined. Connect with the shop on LinkedIn Start Clean"
+        "text": "The goal is not to make the problem sound simple when it is not. The goal is to make the next step clear. That is the standard behind Lima Charlie Aero: start with facts, respect the documents, keep the owner informed, and work the problem until the next supportable step is defined. Connect with the shop on LinkedIn Start Clean",
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "Need Aircraft Support?",
-        "text": "Start with the aircraft, airport, engine model, and what changed. I will review the aircraft context and follow up with a clear next step."
+        "text": "Start with the aircraft, airport, engine model, and what changed. I will review the aircraft context and follow up with a clear next step.",
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "Aircraft-specific evidence",
-        "text": "Joseph Helminiak is the owner/operator behind Lima Charlie Aero LLC, a veteran-owned business based at KAKH / Gastonia Municipal Airport and serving aircraft owners in the Charlotte, Gastonia, and Carolinas region by appointment."
+        "text": "Joseph Helminiak is the owner/operator behind Lima Charlie Aero LLC, a veteran-owned business based at KAKH / Gastonia Municipal Airport and serving aircraft owners in the Charlotte, Gastonia, and Carolinas region by appointment.",
+        "theme": "Approach to aircraft support"
       },
       {
         "heading": "Technical leadership within the company",
@@ -1074,7 +1194,8 @@
             "/the-lima-charlie-aero-standard",
             "Company operating method"
           ]
-        ]
+        ],
+        "theme": "Engineering and logistics background"
       }
     ],
     "images": [],
@@ -1085,11 +1206,16 @@
       {
         "src": "assets/images/proof/aircraft-side-canopy-joe-working-800.webp",
         "alt": "Joseph Helminiak working beside an aircraft",
-        "caption": "Founder and technical lead Joseph Helminiak shown in an aircraft work setting. Personal background supports the company’s technical accountability.",
+        "caption": "Joseph Helminiak works beside the aircraft at the airfield.",
         "proof_id": "aircraft-side-canopy-joe-working-800"
       }
     ],
-    "hero_id": "proof-owner-joe-airfield"
+    "hero_id": "proof-owner-joe-airfield",
+    "themes": [
+      "Aircraft ownership",
+      "Engineering and logistics background",
+      "Approach to aircraft support"
+    ]
   },
   "rotax-gearbox-propeller-vibration": {
     "title": "ROTAX propeller vibration and gearbox concerns",
@@ -1101,60 +1227,71 @@
         "heading": "Understanding the concern",
         "text": "Propeller condition, installation, engine behavior and gearbox history can all matter. The point at which vibration appears is useful context.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Comparable measurements"
       },
       {
         "heading": "Useful information, if known",
         "text": "Send the RPM range or flight phase if already known, recent propeller work and any impact or maintenance history.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Comparable measurements"
       },
       {
         "heading": "What the review can produce",
         "text": "Measured vibration work requires comparable operating conditions and a documented method. Any published images here illustrate inspection equipment; they do not establish a customer repair outcome.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "Vibration should be described by condition",
         "text": "New or worsening vibration Gearbox chatter or unusual noise Kickback during start or shutdown Propeller balance or tracking concern History of prop strike, shock loading, or hard event What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Comparable measurements"
       },
       {
         "heading": "Gearbox and propeller context must be separated carefully",
         "text": "Gearbox inspection context and friction torque Propeller balance, pitch, tracking, and mounting Engine mount and airframe vibration paths Starting behavior, kickback, and shock-loading records Maintenance history and applicable ROTAX documents Measured Vibration Evidence",
-        "items": []
+        "items": [],
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "A useful vibration report turns a feeling into comparable data",
         "text": "Dynamic measurements help establish the starting condition, guide controlled adjustment, and verify the result. The number is evidence, not a stand-alone diagnosis. Gearbox Inspection Evidence",
-        "items": []
+        "items": [],
+        "theme": "Comparable measurements"
       },
       {
         "heading": "Wear patterns need photographs, history, and the applicable inspection path",
         "text": "These close views preserve the observed pocket condition for comparison and records. They do not replace dimensional checks, current instructions, or an aircraft-specific maintenance decision. Vibration Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "Describe the condition, not just the feeling",
         "text": "A vibration complaint should identify the RPM range, phase of operation, propeller model, recent prop or gearbox work, and whether start, shutdown, or kickback behavior changed. A propeller balance question, gearbox question, mount question, and airframe vibration path may feel similar to the owner.",
-        "items": []
+        "items": [],
+        "theme": "Comparable measurements"
       },
       {
         "heading": "Gearbox and propeller clues need separation",
         "text": "Pitch, tracking, mounting, balance, friction torque history, shock-loading records, and engine mount condition each tell a different story. The review keeps those clues organized so a maintenance plan does not start from a vague vibration description alone. Propeller Documentation",
-        "items": []
+        "items": [],
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "Some propeller problems need records, manufacturer coordination, and follow-through",
         "text": "When the issue involves propeller damage, repair-return paperwork, E-PROPS support, aircraft-manufacturer questions, or post-installation vibration context, the work should stay traceable instead of becoming a simple parts swap.",
-        "items": []
+        "items": [],
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "Comparable data needs comparable conditions",
@@ -1166,15 +1303,18 @@
           "gearbox history",
           "recent changes",
           "measurement setup if available."
-        ]
+        ],
+        "theme": "Comparable measurements"
       },
       {
         "heading": "Preserve the conditions attached to the reading",
-        "text": "A measured vibration value needs more than a photograph of the display. The record should connect the aircraft configuration, measurement setup, operating condition and the relevant work history. The two display photographs shown here record separate readings; they are not presented as proof of a particular correction. Without a verified chronology, a smaller number in a second image cannot establish what changed or why. This distinction prevents a useful measurement from becoming an unsupported outcome claim."
+        "text": "A measured vibration value needs more than a photograph of the display. The record should connect the aircraft configuration, measurement setup, operating condition and the relevant work history. The two display photographs shown here record separate readings; they are not presented as proof of a particular correction. Without a verified chronology, a smaller number in a second image cannot establish what changed or why. This distinction prevents a useful measurement from becoming an unsupported outcome claim.",
+        "theme": "Comparable measurements"
       },
       {
         "heading": "Mechanical evidence and owner observations answer different questions",
-        "text": "An owner can describe where vibration is felt, when it appears and what changed from previous operation. A mechanical closeup can preserve an observed surface condition. Neither replaces the other. Propeller, gearbox, mount and surrounding installation context may need to be considered together, with the applicable inspection criteria and records. The purpose is to narrow the work from evidence, not choose a component from a symptom label."
+        "text": "An owner can describe where vibration is felt, when it appears and what changed from previous operation. A mechanical closeup can preserve an observed surface condition. Neither replaces the other. Propeller, gearbox, mount and surrounding installation context may need to be considered together, with the applicable inspection criteria and records. The purpose is to narrow the work from evidence, not choose a component from a symptom label.",
+        "theme": "Mechanical evidence"
       },
       {
         "heading": "Turn the concern into a reviewable starting point",
@@ -1192,7 +1332,8 @@
             "/e-props-dealer-support",
             "Propeller condition and fitment support"
           ]
-        ]
+        ],
+        "theme": "Comparable measurements"
       }
     ],
     "images": [],
@@ -1205,37 +1346,37 @@
       {
         "src": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
         "alt": "DynaVibe instrument displaying a vibration reading",
-        "caption": "This DynaVibe reading is 1.27 IPS. Record the RPM, sensor setup and propeller/aircraft configuration alongside it so the measurement can be interpreted and compared.",
+        "caption": "This DynaVibe reading is 1.27 IPS.",
         "proof_id": "dynavibe-bad-1-27-ips-800"
       },
       {
         "src": "assets/images/proof/gearbox-pocket-wear-1-800.webp",
         "alt": "Gearbox component surface shown for condition review",
-        "caption": "Component surface detail provides a record of the visible condition. Service history and applicable inspection criteria are needed before assigning significance.",
+        "caption": "The gearbox pocket shows wear on its inner surface.",
         "proof_id": "gearbox-pocket-wear-1-800"
       },
       {
         "src": "assets/images/proof/gearbox-pocket-wear-2-800.webp",
         "alt": "Close view of a gearbox component pocket",
-        "caption": "A second mechanical view records surface and edge detail that a general vibration description cannot convey.",
+        "caption": "The close view shows the pocket edge and adjacent surface.",
         "proof_id": "gearbox-pocket-wear-2-800"
       },
       {
         "src": "assets/images/proof/gearbox-pocket-wear-3-800.webp",
         "alt": "Additional angle of a gearbox component",
-        "caption": "This additional angle preserves the observed surface for review. Compare the detail with the applicable inspection criteria and serviceability limits.",
+        "caption": "This additional angle preserves the observed surface for review.",
         "proof_id": "gearbox-pocket-wear-3-800"
       },
       {
         "src": "assets/images/proof/dynavibe-good-0-04-ips-800.webp",
         "alt": "DynaVibe instrument displaying a separate vibration reading",
-        "caption": "This separate display records 0.04 IPS. Operating conditions and dated work records establish its relationship to other readings and any corrective work.",
+        "caption": "This separate display records 0.04 IPS.",
         "proof_id": "dynavibe-good-0-04-ips-800"
       },
       {
         "src": "assets/images/proof/dynavibe-kit-secured-seat-800.webp",
         "alt": "DynaVibe measurement equipment secured in an aircraft seat",
-        "caption": "The equipment is secured in the aircraft for measurement work. Keep sensor setup and operating conditions with the vibration result so later comparisons have useful context.",
+        "caption": "The equipment is secured in the aircraft for measurement work.",
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
     ],
@@ -1257,7 +1398,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Comparable measurements",
+      "Mechanical evidence"
+    ]
   },
   "support-request": {
     "title": "Request Service",
@@ -1308,25 +1453,29 @@
         "heading": "Arrange a visit before traveling",
         "text": "Call, text or send a request with the aircraft location and work you need. Lima Charlie Aero confirms the meeting location, access and appointment details before a visit.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "At Gastonia"
       },
       {
         "heading": "Aircraft away from KAKH",
         "text": "Tell us where the aircraft is located and what work or records review you are considering. Confirm the appropriate location and access arrangements with the shop before planning a visit. This page does not promise mobile service, aircraft transport or work at another airport.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Away from the home base"
       },
       {
         "heading": "Start remotely where useful",
         "text": "An initial records or symptom discussion can clarify what needs to happen before anyone travels.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Planning an appointment"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "At Gastonia"
       },
       {
         "heading": "ROTAX-focused support from KAKH / Gastonia",
@@ -1335,22 +1484,26 @@
           "ROTAX engine systems: hoses, fuel lines, pumps, fuel pressure and carburetor synchronization",
           "Ignition, ECU/EMS electronics, cooling and propeller vibration concerns",
           "E-PROPS propeller support, aircraft records review and light-sport prebuy planning"
-        ]
+        ],
+        "theme": "At Gastonia"
       },
       {
         "heading": "KAKH / Gastonia Municipal Airport",
         "text": "KAKH / Gastonia Municipal Airport is the primary base for Lima Charlie Aero LLC. Support may be available across the Charlotte region and nearby Carolinas airports by appointment.",
-        "items": []
+        "items": [],
+        "theme": "At Gastonia"
       },
       {
         "heading": "Appointment-based support",
         "text": "Start with the support request form so the aircraft, location, and symptom are captured before travel or scheduling is discussed.",
-        "items": []
+        "items": [],
+        "theme": "At Gastonia"
       },
       {
         "heading": "Help for owners around Gastonia and Charlotte",
         "text": "Owners in the Charlotte region and the Carolinas can begin with a ROTAX service question, light-sport aircraft concern, records review or prebuy request. S-LSA, E-LSA and experimental aircraft need their own category and configuration context. For an aircraft away from KAKH, discuss mobile or owner-coordinated feasibility before making travel plans.",
-        "items": []
+        "items": [],
+        "theme": "At Gastonia"
       },
       {
         "heading": "Plan around the KAKH home base",
@@ -1359,7 +1512,8 @@
           "The base supports document-driven planning, ROTAX 9 Series review and appointments for light-sport owners",
           "Discuss whether the aircraft should come to KAKH or whether review at another field is feasible",
           "Aircraft condition, urgency, available parts, weather, hangar access, airport rules, travel time and field tools all affect mobile or owner-coordinated feasibility"
-        ]
+        ],
+        "theme": "At Gastonia"
       },
       {
         "heading": "Match the work to the available access",
@@ -1368,12 +1522,14 @@
           "Away from KAKH: send the airport, hangar situation if known, urgency and a short description of the concern",
           "When tools and airfield conditions are suitable, Lima Charlie Aero LLC can consider flying to the aircraft by appointment",
           "Deeper access, special tools, parts staging or weather-sensitive work may favor bringing the aircraft to a better-supported location"
-        ]
+        ],
+        "theme": "Away from the home base"
       },
       {
         "heading": "Check the aircraft and airfield conditions",
         "text": "Mobile and owner-coordinated support by appointment may be considered when the aircraft need, airfield tools, hangar access, power, compressed air, parts, weather, and airport rules support safe and proper work away from home base.",
-        "items": []
+        "items": [],
+        "theme": "Away from the home base"
       },
       {
         "heading": "Information that makes appointment planning practical",
@@ -1384,7 +1540,8 @@
           "Hangar access and whether the aircraft can be made accessible in an appropriate work environment",
           "Available power, lighting, tools or compressed air, if known",
           "Relevant airport rules, parts needs and weather constraints"
-        ]
+        ],
+        "theme": "Planning an appointment"
       },
       {
         "heading": "Coordinate access before traveling",
@@ -1398,7 +1555,8 @@
             "/contact",
             "Coordinate with the shop"
           ]
-        ]
+        ],
+        "theme": "Away from the home base"
       }
     ],
     "images": [],
@@ -1411,11 +1569,16 @@
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
         "alt": "Aircraft with cowling open in an outdoor work area",
-        "caption": "This aircraft work setting shows why access matters when arranging support from KAKH / Gastonia. Confirm the aircraft location, work environment and appointment before making travel plans.",
+        "caption": "Field work under a canopy at the ramp.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
     ],
-    "hero_id": "aircraft-open-cowling-under-canopy-800"
+    "hero_id": "aircraft-open-cowling-under-canopy-800",
+    "themes": [
+      "At Gastonia",
+      "Away from the home base",
+      "Planning an appointment"
+    ]
   },
   "rotax-installation-review": {
     "title": "ROTAX engine installation review",
@@ -1427,45 +1590,53 @@
         "heading": "Understanding the concern",
         "text": "Cooling airflow, hose support, routing, wiring, service access and component history can affect engine behavior. Supporting an engine involves the surrounding airframe installation.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Access & scope"
       },
       {
         "heading": "Useful information, if known",
         "text": "Send the aircraft, engine if known, location and concern. Relevant records and photographs may be requested next.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Access & scope"
       },
       {
         "heading": "What the review can produce",
         "text": "The agreed review identifies findings, document questions and further work to consider. Structural repair, NDT and manufacturer approvals may involve appropriately qualified outside specialists.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Access & scope"
       },
       {
         "heading": "Plan this review with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Access & scope"
       },
       {
         "heading": "Access, support, organization, inspection, and records are part of the job",
         "text": "An installation review looks beyond the engine data plate. Airframe fit, wiring, hoses, controls, service access, work support, parts control, applicable documents, and outside specialist findings all affect maintainability. Review Items",
-        "items": []
+        "items": [],
+        "theme": "Access & scope"
       },
       {
         "heading": "The surrounding systems can shape the symptom",
         "text": "Cooling airflow, oil cooler placement, radiator position, ducting, cowling condition, and hose routing can all affect temperature behavior. A high oil temperature complaint may require looking at oil pressure trend, coolant or CHT trend, phase of flight, outside conditions, sensor confidence, and recent cowling or maintenance changes before any conclusion is useful. Fuel system routing also matters. Fuel pressure behavior, pump configuration, filter access, heat exposure, return-line context where applicable, hose age, clamp condition, and contamination history can influence rough running, power changes, or warning messages. The installation review keeps fuel observations separate from ignition or EMS conclusions until the evidence supports a path. Exhaust / Electrical / Sensors",
-        "items": []
+        "items": [],
+        "theme": "System relationships"
       },
       {
         "heading": "Small installation details can have large effects",
         "text": "Exhaust condition, heat shielding, sensor placement, wiring support, ground paths, connector security, and chafe protection can change how a ROTAX 9 Series installation behaves. On 915 iS and 916 iS aircraft, EMS/ECU context, turbo-related routing, intercooler layout, and heat management add another layer of installation review. Service access is part of the standard. If a component cannot be inspected, adjusted, secured, or documented without fighting the installation, the aircraft may be harder to support even when the engine itself is healthy. Propeller / Gearbox Interface",
-        "items": []
+        "items": [],
+        "theme": "System relationships"
       },
       {
         "heading": "The engine does not work alone",
         "text": "Propeller choice, pitch, balance, tracking, mounting, and gearbox history can influence vibration, starting behavior, acceleration, and owner-reported roughness. Installation review separates propeller and airframe factors from gearbox and engine factors so one complaint does not turn into a premature diagnosis. This is especially important when there is a history of propeller work, kickback, shock loading, recent mount work, or vibration in a narrow RPM range. The same discipline applies to service access and documentation. A neat-looking installation can still be difficult to inspect if hoses, wiring, sensors, or exhaust components are routed in ways that hide condition, create chafe risk, or make recurring maintenance harder than it should be.",
-        "items": []
+        "items": [],
+        "theme": "System relationships"
       },
       {
         "heading": "Trace a concern through the surrounding systems",
@@ -1476,11 +1647,13 @@
           "relevant instructions",
           "symptoms and conditions",
           "access and installation photographs if requested."
-        ]
+        ],
+        "theme": "System relationships"
       },
       {
         "heading": "Review the relationships around the engine",
-        "text": "The installed engine is part of a larger arrangement of supports, hoses, wiring, controls, cooling paths and adjacent equipment. Small details can affect access, clearance, load or the way a symptom appears. An installation review should therefore preserve wider context as well as close detail. A well-framed photograph identifies the relevant area without treating a single visible feature as the complete explanation. The actual aircraft, configuration and applicable documentation determine the scope."
+        "text": "The installed engine is part of a larger arrangement of supports, hoses, wiring, controls, cooling paths and adjacent equipment. Small details can affect access, clearance, load or the way a symptom appears. An installation review should therefore preserve wider context as well as close detail. A well-framed photograph identifies the relevant area without treating a single visible feature as the complete explanation. The actual aircraft, configuration and applicable documentation determine the scope.",
+        "theme": "System relationships"
       },
       {
         "heading": "Document condition without overstating chronology",
@@ -1494,7 +1667,8 @@
             "/aircraft-records-review",
             "Trace installation history"
           ]
-        ]
+        ],
+        "theme": "Access & scope"
       }
     ],
     "images": [],
@@ -1505,37 +1679,37 @@
       {
         "src": "assets/images/proof/rotax-engine-on-hoist-800.webp",
         "alt": "Aircraft engine supported on a hoist",
-        "caption": "The hoist supports the engine within the work area. Installation planning needs controlled access, mounting context and the aircraft’s configuration before the work scope is settled.",
+        "caption": "The hoist supports the engine within the work area.",
         "proof_id": "rotax-engine-on-hoist-800"
       },
       {
         "src": "assets/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
         "alt": "Visible crack at an engine-cage joint",
-        "caption": "The crack is visible at an engine-cage joint. Installation review connects that location with mounting geometry, surrounding conditions and the aircraft-specific inspection and repair path.",
+        "caption": "The crack is visible at an engine-cage joint.",
         "proof_id": "engine-cage-crack-closeup-before-repair-800"
       },
       {
         "src": "assets/images/proof/engine-cage-weld-repair-detail-800.webp",
         "alt": "Engine-cage joint with visible weld detail",
-        "caption": "This angle records the cage weld and joint detail for installation review. Compare it with the applicable repair data and corresponding inspection record for acceptance.",
+        "caption": "This angle records the cage weld and joint detail for installation review.",
         "proof_id": "engine-cage-weld-repair-detail-800"
       },
       {
         "src": "assets/images/proof/engine-cage-weld-joint-detail-800.webp",
         "alt": "Close view of an engine-cage weld joint",
-        "caption": "A close angle preserves the joint geometry and surface detail for comparison with the work records.",
+        "caption": "Two tubes meet at the welded joint in this close view.",
         "proof_id": "engine-cage-weld-joint-detail-800"
       },
       {
         "src": "assets/images/proof/engine-cage-painted-finished-800.webp",
         "alt": "Coated engine cage shown separately from the engine",
-        "caption": "The painted cage view preserves the visible condition for the installation record. Mounting checks, structural acceptance and release to service are established by the associated inspection and maintenance entries.",
+        "caption": "The painted cage view preserves the visible condition for the installation record.",
         "proof_id": "engine-cage-painted-finished-800"
       },
       {
         "src": "assets/images/proof/engine-cage-ndt-facility-800.webp",
         "alt": "Engine cage in a workshop inspection setting",
-        "caption": "The cage is shown in a workshop setting. The corresponding inspection report supplies the test method, findings and acceptance result.",
+        "caption": "The cage is shown in a workshop setting.",
         "proof_id": "engine-cage-ndt-facility-800"
       }
     ],
@@ -1560,7 +1734,11 @@
           "sting-mount"
         ]
       }
-    }
+    },
+    "themes": [
+      "Access & scope",
+      "System relationships"
+    ]
   },
   "light-sport-experimental-avionics": {
     "title": "Avionics and aircraft electrical support",
@@ -1572,50 +1750,59 @@
         "heading": "What an owner can send",
         "text": "A photograph of the panel, the equipment name if known, the exact warning and when it happens are useful. Describe your intended outcome if planning an upgrade.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Configuration & scope"
       },
       {
         "heading": "Check the surrounding installation",
         "text": "Power, grounding, wiring, connectors, antennas and setup can affect equipment behavior. Reviewing these helps identify the work needed before committing to replacement equipment.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Signals, power & wiring"
       },
       {
         "heading": "Agree on a practical plan",
         "text": "The aircraft’s documents and installation requirements determine which tasks can be undertaken. Manufacturer guidance or outside specialist work may be needed. Access, wiring condition and parts affect the estimate and downtime.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Configuration & scope"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Configuration & scope"
       },
       {
         "heading": "Work the Symptom, Configuration, and Aircraft Context Together.",
         "text": "This service line extends the same root-cause approach used on the ROTAX side of the business. The goal is not to guess and swap parts. The goal is to understand the symptom, review the aircraft context, and define a clear practical next step. Support is focused on LSA, E-LSA, and experimental aircraft, with owner-facing communication that keeps technical findings understandable. Avionics / Electrical",
-        "items": []
+        "items": [],
+        "theme": "Configuration & scope"
       },
       {
         "heading": "Support May Include",
         "text": "Garmin G5 and appropriate panel-support work Radio, comm, intercom, and audio troubleshooting Antenna, coax, BNC, and TNC connector work Display, wiring, and power-supply troubleshooting Connector inspection and repair Panel cleanup, organization, and wiring discipline Avionics Proof",
-        "items": []
+        "items": [],
+        "theme": "Configuration & scope"
       },
       {
         "heading": "Displays, Radios, Power, Antennas, and Terminations Are Reviewed Together.",
         "text": "These photos show the practical range of the work: installed displays, radio/coax components, test tools, and controlled termination repair. Why This Fits Lima Charlie Aero",
-        "items": []
+        "items": [],
+        "theme": "Signals, power & wiring"
       },
       {
         "heading": "Calibration Discipline Applied to Aircraft Systems.",
         "text": "20+ years of calibration, TMDE, test-support-equipment, and quality-focused technical experience Hands-on LSA, E-LSA, and experimental aircraft ownership and troubleshooting Real-world wiring, coax, panel, and equipment troubleshooting experience Direct owner communication without unnecessary jargon Appropriate Scope",
-        "items": []
+        "items": [],
+        "theme": "Signals, power & wiring"
       },
       {
         "heading": "Clear Boundaries Keep the Work Credible.",
         "text": "Avionics support is focused on light-sport and experimental aircraft and on practical owner/operator support, installation help, troubleshooting, and system organization. If a project requires outside certification, inspection, or signoff beyond that scope, I can help identify the next practical step.",
-        "items": []
+        "items": [],
+        "theme": "Configuration & scope"
       },
       {
         "heading": "Verification follows the installed signal and power path",
@@ -1624,11 +1811,13 @@
           "Provide a readable panel or warning photograph if requested.",
           "Identify equipment and connections actually installed rather than a proposed configuration.",
           "State what changed and which functions still work normally."
-        ]
+        ],
+        "theme": "Signals, power & wiring"
       },
       {
         "heading": "The panel is only one view of the installation",
-        "text": "An installed instrument is the part the owner sees each flight. The supporting installation also includes wiring, connectors, power, grounds, cable routing and the relationship to other equipment. The panel and connector photographs deliberately show both views. A tidy visible panel cannot establish the condition behind it, and a close connector photograph needs circuit identity and installation context to be useful. Records should make it possible to understand what equipment was installed and what work was performed."
+        "text": "An installed instrument is the part the owner sees each flight. The supporting installation also includes wiring, connectors, power, grounds, cable routing and the relationship to other equipment. The panel and connector photographs deliberately show both views. A tidy visible panel cannot establish the condition behind it, and a close connector photograph needs circuit identity and installation context to be useful. Records should make it possible to understand what equipment was installed and what work was performed.",
+        "theme": "Signals, power & wiring"
       },
       {
         "heading": "Describe the exact behavior before naming a failed unit",
@@ -1642,7 +1831,8 @@
             "/aircraft-records-review",
             "Installation records"
           ]
-        ]
+        ],
+        "theme": "Configuration & scope"
       }
     ],
     "images": [],
@@ -1656,44 +1846,44 @@
       {
         "src": "assets/images/proof/garmin-g5-installed-panel-close-800.webp",
         "alt": "Garmin G5 installed in an aircraft instrument panel",
-        "caption": "The installed panel shows the owner-facing result. Behind-panel routing, connections and records are also part of installation evidence.",
+        "caption": "The Garmin G5 sits beside the existing instruments in the panel.",
         "proof_id": "garmin-g5-installed-panel-close-800"
       },
       {
         "src": "assets/images/proof/dsub-connector-wiring-close-800.webp",
         "alt": "D-sub connector with visible conductor terminations",
-        "caption": "The D-sub detail records routing and terminations behind the panel. These connections belong with equipment configuration, wiring documentation and installation checks.",
+        "caption": "The D-sub detail records routing and terminations behind the panel.",
         "proof_id": "dsub-connector-wiring-close-800"
       },
       {
         "src": "assets/images/proof/electrical-connector-close-800.webp",
         "alt": "Close view of an electrical connector and conductors",
-        "caption": "The close view preserves connector condition during avionics work. Connection inspection and circuit documentation help separate wiring concerns from equipment faults.",
+        "caption": "The close view preserves connector condition during avionics work.",
         "proof_id": "electrical-connector-close-800"
       },
       {
         "src": "assets/images/proof/electrical-connector-wide-800.webp",
         "alt": "Electrical connection in its installed surroundings",
-        "caption": "The wider view locates the connection in the aircraft. Detail and context together make later review more useful.",
+        "caption": "The wider view locates the electrical connection in the aircraft.",
         "proof_id": "electrical-connector-wide-800"
       },
       {
         "src": "assets/images/proof/avionics-tools-coax-workbench-800.webp",
         "alt": "Coaxial cable and avionics tools on a workbench",
-        "caption": "Workbench evidence shows the cable-work context. Finished connections and installation documentation complete the record.",
+        "caption": "Coaxial cable and termination tools are laid out on the bench.",
         "proof_id": "avionics-tools-coax-workbench-800"
       },
       {
         "src": "assets/images/proof/icom-radio-coax-adapters-800.webp",
         "alt": "Radio equipment with coax cable and adapters",
-        "caption": "Radio and cable components illustrate installation planning. Equipment compatibility is an aircraft-specific question.",
+        "caption": "The radio, coax and adapters are shown together for installation planning.",
         "proof_id": "icom-radio-coax-adapters-800"
       },
       {
         "proof_id": "garmin-g5-box-unit",
         "src": "assets/images/proof/garmin-g5-box-unit.webp",
         "alt": "Garmin G5 unit beside its packaging",
-        "caption": "Equipment identification helps define the installation question."
+        "caption": "The Garmin G5 unit is shown with its equipment packaging."
       }
     ],
     "hero_id": "garmin-g5-installed-panel-wide",
@@ -1714,7 +1904,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Configuration & scope",
+      "Signals, power & wiring"
+    ]
   },
   "faq": {
     "title": "Light-Sport & ROTAX FAQ",
@@ -1923,31 +2117,31 @@
       {
         "src": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
         "alt": "DynaVibe instrument displaying a vibration reading",
-        "caption": "The DynaVibe display records 1.27 IPS. A measured value gives vibration investigation a starting point; RPM, sensor setup and aircraft configuration provide the context.",
+        "caption": "The DynaVibe display records 1.27 IPS.",
         "proof_id": "dynavibe-bad-1-27-ips-800"
       },
       {
         "src": "assets/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
         "alt": "Visible crack at an engine-cage joint",
-        "caption": "The close view documents a visible crack at the cage joint. Recording its location gives inspection and aircraft-specific repair planning a clear starting point.",
+        "caption": "The close view documents a visible crack at the cage joint.",
         "proof_id": "engine-cage-crack-closeup-before-repair-800"
       },
       {
         "src": "assets/images/proof/fuel-tank-borescope-dirty-800.webp",
         "alt": "Borescope display showing material on a tank interior surface",
-        "caption": "The borescope records visible material inside the fuel tank. Preserving that observation helps guide inspection; identifying the material and explaining a pressure symptom require further evidence.",
+        "caption": "The borescope records visible material inside the fuel tank.",
         "proof_id": "fuel-tank-borescope-dirty-800"
       },
       {
         "src": "assets/images/proof/dsub-connector-wiring-close-800.webp",
         "alt": "D-sub connector with visible conductor terminations",
-        "caption": "This D-sub closeup documents conductor routing and termination condition. Behind-panel evidence makes electrical work visible alongside the finished panel.",
+        "caption": "This D-sub closeup documents conductor routing and termination condition.",
         "proof_id": "dsub-connector-wiring-close-800"
       },
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
         "alt": "Aircraft with cowling open in an outdoor work area",
-        "caption": "An open cowling brings the installed systems into view. This is the practical aircraft access behind the shop’s records, inspection and service planning.",
+        "caption": "An open cowling brings the installed systems into view.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
     ],
@@ -2044,45 +2238,53 @@
         "heading": "Understanding the concern",
         "text": "Exact warnings, electrical supply, sensors, fuel-pressure context, exhaust and the surrounding installation can matter. A warning alone does not identify a failed ECU or turbocharger.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Messages & operating conditions"
       },
       {
         "heading": "Useful information, if known",
         "text": "Send the warning text or photograph, when it appeared and any maintenance history if available. Technical readings are optional at first contact.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Messages & operating conditions"
       },
       {
         "heading": "What the review can produce",
         "text": "Diagnostic scope is checked against current task requirements. Turbocharger repairs and other specialist work may require referral or manufacturer coordination. Review the maintained owner notices for relevant alerts.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Installation & engine management"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Installation & engine management"
       },
       {
         "heading": "Turbo and EMS concerns need exact messages and conditions",
         "text": "EMS warning, caution, or sensor message Boost, fuel pressure, or power-change concern Intercooler, exhaust, or turbocharger inspection question Starting, charging, or sensor behavior that changed Maintenance or software/event history questions What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Messages & operating conditions"
       },
       {
         "heading": "The engine management context matters",
         "text": "Turbocharger, wastegate, intercooler, and exhaust condition Fuel pressure and sensor inputs EMS/ECU warnings and operating data Installation, cooling airflow, and heat management ROTAX 915 iS Support or ROTAX 916 iS Support records Turbo / EMS Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Installation & engine management"
       },
       {
         "heading": "The exact message and condition matter",
         "text": "A 915 iS or 916 iS concern should start with the warning text, engine model, operating condition, fuel pressure behavior, boost or power-change context, and recent maintenance or software/event history. Turbo and EMS symptoms can look dramatic, but the review still needs to separate indication, installation, sensor, fuel, charging, and heat-management possibilities. Installation Context",
-        "items": []
+        "items": [],
+        "theme": "Messages & operating conditions"
       },
       {
         "heading": "The engine management system sees the whole installation",
         "text": "Intercooler routing, exhaust condition, sensor placement, wiring support, connector security, grounds, cooling airflow, and heat exposure can affect the way the aircraft behaves. The goal is to preserve the event context before any single component is blamed.",
-        "items": []
+        "items": [],
+        "theme": "Installation & engine management"
       },
       {
         "heading": "Exact model, message and condition define the review",
@@ -2093,15 +2295,18 @@
           "phase of operation",
           "associated indications",
           "recent installation or maintenance changes."
-        ]
+        ],
+        "theme": "Messages & operating conditions"
       },
       {
         "heading": "Retain the exact warning and configuration",
-        "text": "A paraphrase such as “engine computer problem” can lose useful information. Preserve the displayed warning, the phase of operation, other indications at the time and the known aircraft configuration. Existing photographs or recorded data should retain their context and date. A model family does not by itself establish the installed hardware, software state or applicability of a notice. Current technical documentation and the actual installation must be reconciled before interpreting the evidence."
+        "text": "A paraphrase such as “engine computer problem” can lose useful information. Preserve the displayed warning, the phase of operation, other indications at the time and the known aircraft configuration. Existing photographs or recorded data should retain their context and date. A model family does not by itself establish the installed hardware, software state or applicability of a notice. Current technical documentation and the actual installation must be reconciled before interpreting the evidence.",
+        "theme": "Messages & operating conditions"
       },
       {
         "heading": "Surrounding systems remain part of the review",
-        "text": "Electronic engine management operates within an aircraft installation. Power, wiring, connections, sensors and the surrounding fuel and cooling systems can affect the reported behavior. This page does not imply factory status or an authorization to perform every possible ECU task. Work must stay within the documented scope and applicable requirements. Establish the evidence before considering replacement of expensive components, and keep unresolved questions visible in the work plan."
+        "text": "Electronic engine management operates within an aircraft installation. Power, wiring, connections, sensors and the surrounding fuel and cooling systems can affect the reported behavior. This page does not imply factory status or an authorization to perform every possible ECU task. Work must stay within the documented scope and applicable requirements. Establish the evidence before considering replacement of expensive components, and keep unresolved questions visible in the work plan.",
+        "theme": "Installation & engine management"
       },
       {
         "heading": "Use the timeline to guide the inquiry",
@@ -2115,7 +2320,8 @@
             "/rotax-turbocharger-notice",
             "Read the dated turbocharger notice"
           ]
-        ]
+        ],
+        "theme": "Messages & operating conditions"
       }
     ],
     "images": [],
@@ -2127,13 +2333,13 @@
         "proof_id": "rotax-engine-installed-green-covers",
         "src": "assets/images/rotax-engine-installed-green-covers-800.webp",
         "alt": "Installed ROTAX engine with green covers",
-        "caption": "The engine installation connects fuel, cooling, electrical and mechanical systems."
+        "caption": "The wider installation view shows the ROTAX engine and its green covers."
       },
       {
         "proof_id": "exhaust-marking-hydra-detail",
         "src": "assets/images/proof/exhaust-marking-hydra-detail.webp",
         "alt": "Markings on an installed exhaust component",
-        "caption": "Component markings provide an identification reference for an installation review."
+        "caption": "The close view records the markings on the installed exhaust component."
       }
     ],
     "hero_id": "rotax-engine-installed-green-covers",
@@ -2154,7 +2360,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Messages & operating conditions",
+      "Installation & engine management"
+    ]
   },
   "image-credits": {
     "title": "Website image sources",
@@ -2208,50 +2418,59 @@
         "heading": "Understanding the concern",
         "text": "Engine family, pump arrangement, fuel history, routing and indication accuracy influence the checks needed. A normal-looking filler opening does not show every internal tank surface.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Fuel pressure & history"
       },
       {
         "heading": "Useful information, if known",
         "text": "Describe when the concern occurs, fuel used, known pressure readings and recent work if available. Do not diagnose the pump or injector before contacting us.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Fuel pressure & history"
       },
       {
         "heading": "What the review can produce",
         "text": "The diagnostic plan distinguishes a reported symptom from evidence of the cause and defines appropriate fuel-system or record checks.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Tank, routing & access"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Tank, routing & access"
       },
       {
         "heading": "Fuel problems often show up as operating changes",
         "text": "Low or unstable fuel pressure indications Rough running, stumble, or power change Restart, idle, or hot-operation concerns Fuel smell, contamination, or unusual drain results EMS warnings on injected or turbocharged engines What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Fuel pressure & history"
       },
       {
         "heading": "Carbureted and injected engines need different context",
         "text": "ROTAX 912 carb balance or float issue Fuel pumps, filters, routing, and vapor behavior Injector, pressure, or EMS inputs on iS engines Fuel quality, contamination, and maintenance history Installation details and operating conditions Fuel-system Inspection Evidence",
-        "items": []
+        "items": [],
+        "theme": "Tank, routing & access"
       },
       {
         "heading": "A tank can look serviceable from the filler and tell a different story through a borescope",
         "text": "Matched before-and-after views keep contamination findings and cleaning results tied to the same inspection area. They support the maintenance record; they do not replace fuel-system review. Fuel Delivery Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Tank, routing & access"
       },
       {
         "heading": "Pressure is only useful with context",
         "text": "Fuel pressure readings should be tied to engine model, phase of flight, temperature, pump status, fuel type, warning messages, and whether the symptom appears during start, taxi, climb, cruise, or hot operation. Carbureted and injected ROTAX engines use different review paths. Installation Context",
-        "items": []
+        "items": [],
+        "theme": "Fuel pressure & history"
       },
       {
         "heading": "Routing and history can create the complaint",
         "text": "Pump configuration, filters, heat exposure, hose age, fuel quality, contamination, float or injector history, and recent work can all shape fuel-system symptoms. The review separates fuel delivery evidence from ignition, sensor, or EMS conclusions before the next step is recommended.",
-        "items": []
+        "items": [],
+        "theme": "Tank, routing & access"
       },
       {
         "heading": "Pressure, timing and fuel history belong together",
@@ -2261,15 +2480,18 @@
           "fuel and refueling history",
           "cold or hot behavior",
           "recent pump, filter, hose or tank work."
-        ]
+        ],
+        "theme": "Fuel pressure & history"
       },
       {
         "heading": "A pressure indication is one part of the supply picture",
-        "text": "The reported value needs the instrument, operating condition and installed system identified. A concern may require review of the supply path, restrictions, venting, contamination, pump context and the relationship between components. The order of that review should follow the aircraft and evidence. Do not assume that a low or changing indication identifies a pump fault, or that replacing a part establishes the original cause. Preserve any associated warnings and the timeline of recent work."
+        "text": "The reported value needs the instrument, operating condition and installed system identified. A concern may require review of the supply path, restrictions, venting, contamination, pump context and the relationship between components. The order of that review should follow the aircraft and evidence. Do not assume that a low or changing indication identifies a pump fault, or that replacing a part establishes the original cause. Preserve any associated warnings and the timeline of recent work.",
+        "theme": "Fuel pressure & history"
       },
       {
         "heading": "What the tank images can and cannot show",
-        "text": "The borescope photographs make interior surface condition visible. One image shows material on the surface; another records a different view. The photographs do not identify the material, prove a cleaning outcome or connect it causally with an owner’s pressure concern. Useful documentation would establish the tank identity, inspection date, location and relevant work records. Keeping those limits explicit makes the evidence more useful than a dramatic before-and-after label unsupported by the records."
+        "text": "The borescope photographs make interior surface condition visible. One image shows material on the surface; another records a different view. The photographs do not identify the material, prove a cleaning outcome or connect it causally with an owner’s pressure concern. Useful documentation would establish the tank identity, inspection date, location and relevant work records. Keeping those limits explicit makes the evidence more useful than a dramatic before-and-after label unsupported by the records.",
+        "theme": "Tank, routing & access"
       },
       {
         "heading": "Plan access around the actual installation",
@@ -2283,7 +2505,8 @@
             "/start-with-the-symptom",
             "Start with your observations"
           ]
-        ]
+        ],
+        "theme": "Tank, routing & access"
       }
     ],
     "images": [],
@@ -2294,19 +2517,19 @@
       {
         "src": "assets/images/proof/fuel-tank-borescope-dirty-800.webp",
         "alt": "Borescope display showing material on a tank interior surface",
-        "caption": "Material is visible on the tank interior. This view helps locate an observation within the supply path; material identification and a fuel-pressure diagnosis need the associated inspection and system checks.",
+        "caption": "Material is visible on the tank interior.",
         "proof_id": "fuel-tank-borescope-dirty-800"
       },
       {
         "src": "assets/images/proof/fuel-tank-borescope-clean-800.webp",
         "alt": "Separate borescope view of a tank interior",
-        "caption": "This separate borescope view documents the tank interior surface. Dated inspection and cleaning records are needed to connect the views into a maintenance sequence.",
+        "caption": "This separate borescope view documents the tank interior surface.",
         "proof_id": "fuel-tank-borescope-clean-800"
       },
       {
         "src": "assets/images/proof/rotax-fuel-pump-in-out-card-800.webp",
         "alt": "Fuel pump and installed fuel-system reference views",
-        "caption": "Pump and installation views show the supply-path context. This historical reference image requires explicit rights confirmation before publication.",
+        "caption": "The two views show the pump and its installed connections.",
         "proof_id": "rotax-fuel-pump-in-out-card-800"
       }
     ],
@@ -2331,7 +2554,11 @@
           "ranger-fuel"
         ]
       }
-    }
+    },
+    "themes": [
+      "Fuel pressure & history",
+      "Tank, routing & access"
+    ]
   },
   "card": {
     "title": "Joseph Helminiak — Lima Charlie Aero",
@@ -2384,102 +2611,122 @@
         "heading": "Start with the aircraft and your goal",
         "text": "Send the aircraft and engine details if known, your current propeller, and what you want to improve. Fitment includes compatibility, installation requirements and the aircraft’s approval path.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "From inquiry to an order",
         "text": "Fitment and any required aircraft-manufacturer authorization are checked first. Technical information is prepared for E-PROPS coordination, followed by a current quote and order confirmation. Ask for current production and delivery information with the quote.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Setup, inspection and after-sale help",
         "text": "Support may include installation planning, setup, inspection, warranty documentation and repair coordination. Factory decisions, overhaul and blade replacement follow E-PROPS instructions or written direction as applicable.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Warranty, damage & returns"
       },
       {
         "heading": "What affects cost and timing?",
         "text": "The propeller configuration, aircraft approval requirements, manufacturer response, parts and shipping can affect the schedule. Your inquiry starts a review; it does not reserve production or a maintenance appointment.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Start with fitment, documentation, and order readiness",
         "text": "For owners already focused on E-PROPS , Lima Charlie Aero organizes the aircraft, engine, propeller, spinner, authorization, and installation details before the order is treated as final. S-LSA Letter of Authorization Path",
-        "items": []
+        "items": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Confirm the authorization path first",
         "text": "For an S-LSA aircraft, a propeller change is an aircraft configuration change, not a generic parts swap. Operating limitations, maintenance instructions, manufacturer support status, E-PROPS engineering data, proposed configuration, and records path need to align before installation planning is treated as ready. Lima Charlie Aero builds the owner packet around the aircraft: make and serial number, engine and gearbox, current propeller and spinner, proposed E-PROPS line, installation checklist, photos, pitch and torque record plan, vibration follow-up plan, and authorization route.",
-        "items": []
+        "items": [],
+        "theme": "Authorization path"
       },
       {
         "heading": "Authorization sequence",
         "text": "Confirm the aircraft category and applicable operating limitations, then establish the required manufacturer authorization and supporting configuration documents before treating a propeller change as approved. If the normal manufacturer path is unavailable, that is an unresolved authorization question requiring aircraft-specific regulatory review. Product compatibility, a dealer quote or a technical packet alone does not authorize installation or return to service.",
-        "items": []
+        "items": [],
+        "theme": "Authorization path"
       },
       {
         "heading": "Sales, setup, warranty and repair support",
         "text": "Lima Charlie Aero keeps selection, configuration, order coordination, setup, inspection, warranty, repair, records, manufacturer coordination, and follow-up on one owner path. E-PROPS currently organizes its product line around Durandal / Excalibur for ground-adjustable ROTAX gear-drive applications, Glorieuse for applicable in-flight variable-pitch ROTAX 9xx applications, Ascalon for supported Lycoming and Continental direct-drive applications, and PLUG'n'FLY for paramotor applications. A Jabiru-specific line is expected separately.",
-        "items": []
+        "items": [],
+        "theme": "Warranty, damage & returns"
       },
       {
         "heading": "01 — authorization first",
         "text": "Review certification category, S-LSA Letter of Authorization path, aircraft configuration, current propeller, performance goal, installation data, and documentation before any propeller path is treated as final.",
-        "items": []
+        "items": [],
+        "theme": "Authorization path"
       },
       {
         "heading": "Authorization review packet",
         "text": "Aircraft-specific technical information and any applicable manufacturer or approval documents are identified during scope review. The required documentation and authorization path are confirmed before an installation decision; a website description is not approval for a particular aircraft.",
-        "items": []
+        "items": [],
+        "theme": "Authorization path"
       },
       {
         "heading": "Plan the installation as a controlled process",
         "text": "The E-PROPS installation path is organized as a configuration-control record: identify aircraft, engine, gearbox, propeller, blade and hub serials; verify flange and hardware; set pitch; torque fasteners; run the engine; balance when required; verify flight RPM; and retain the records.",
-        "items": []
+        "items": [],
+        "theme": "Installation & verification"
       },
       {
         "heading": "Connect hardware, shipment, paperwork and follow-up",
         "text": "Some propeller situations involve damage documentation, shipment planning, customs or import details, manufacturer communication, aircraft-manufacturer follow-up, installation planning, and after-service questions. Lima Charlie Aero keeps those steps in one traceable owner path.",
-        "items": []
+        "items": [],
+        "theme": "Warranty, damage & returns"
       },
       {
         "heading": "Process controls",
         "text": "Document condition before the part leaves the aircraft. Keep packaging, return documentation, and import/export paperwork together when applicable. Preserve manufacturer communication and aircraft-manufacturer follow-up in the owner file. Connect installation planning, vibration context, and post-arrival questions to the same aircraft record path.",
-        "items": []
+        "items": [],
+        "theme": "Warranty, damage & returns"
       },
       {
         "heading": "Match the E-PROPS family to the actual application",
         "text": "Reference families for an application discussion include Durandal / Excalibur, Glorieuse, Ascalon and Plug’n’fly. These are reference starting points, not an exhaustive current catalog or a claim that every family fits your aircraft. Manufacturer fitment information and a current quote must confirm the relevant product, hardware and installation requirements.",
-        "items": []
+        "items": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Fitment, installation and follow-up remain connected",
         "text": "A propeller inquiry should identify the aircraft, engine, gearbox arrangement, current propeller and intended goal. Mechanical compatibility alone does not establish the authorization path. Installation documents, clearances, hardware, setup and any required aircraft-manufacturer permission need to agree with the actual aircraft. Current product information, pricing, lead time and order requirements are confirmed for the proposed configuration; the site does not promise production or shipping timing. Warranty and repair coordination mean helping gather relevant identity, condition and records for the manufacturer’s review, not guaranteeing eligibility or an outcome. Traceable owner documentation connects the selected equipment to the agreed installation and verification scope.",
-        "items": []
+        "items": [],
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Plan sales and after-sale support together",
-        "text": "Support setup review, pitch and torque records, inspection, warranty claims, repair, vibration follow-up, owner intake, and post-sale questions inside the applicable work-scope boundary. Overhaul, blade replacement, and manufacturer-level decisions stay under E-PROPS instructions and written manufacturer direction where required."
+        "text": "Support setup review, pitch and torque records, inspection, warranty claims, repair, vibration follow-up, owner intake, and post-sale questions inside the applicable work-scope boundary. Overhaul, blade replacement, and manufacturer-level decisions stay under E-PROPS instructions and written manufacturer direction where required.",
+        "theme": "Warranty, damage & returns"
       },
       {
         "heading": "Build the fitment picture before choosing hardware",
-        "text": "An aircraft model name is only the start of a fitment discussion. The engine configuration, reduction gearing where relevant, installed equipment, spinner arrangement, available clearance and existing documentation all help define the question. Send the aircraft and engine information you have, photographs of the present installation and the purpose of the proposed change. If a detail is unknown, identify the gap rather than substituting a specification from a similar aircraft. We can organize the missing questions before an order or installation plan is treated as settled."
+        "text": "An aircraft model name is only the start of a fitment discussion. The engine configuration, reduction gearing where relevant, installed equipment, spinner arrangement, available clearance and existing documentation all help define the question. Send the aircraft and engine information you have, photographs of the present installation and the purpose of the proposed change. If a detail is unknown, identify the gap rather than substituting a specification from a similar aircraft. We can organize the missing questions before an order or installation plan is treated as settled.",
+        "theme": "Fitment & ordering"
       },
       {
         "heading": "Use the engineering packet as a working record",
-        "text": "The packet should make it possible to follow the aircraft-specific decisions. Keep the supplied configuration, relevant correspondence, requested measurements and installation checklist together. A later change in engine, airframe configuration or hardware may change the original assumptions. A clear record helps distinguish what was proposed, what was confirmed, and what remains to be resolved. The redacted process images show the organization of that information; they do not represent an approval applicable to every aircraft or replace manufacturer instructions."
+        "text": "The packet should make it possible to follow the aircraft-specific decisions. Keep the supplied configuration, relevant correspondence, requested measurements and installation checklist together. A later change in engine, airframe configuration or hardware may change the original assumptions. A clear record helps distinguish what was proposed, what was confirmed, and what remains to be resolved. The redacted process images show the organization of that information; they do not represent an approval applicable to every aircraft or replace manufacturer instructions.",
+        "theme": "Installation & verification"
       },
       {
         "heading": "Condition concerns need identity and usable photographs",
-        "text": "For a blade or spinner concern, begin with the equipment identity and a description of when the condition was noticed. A close view can show surface detail, while a wider view preserves its location and orientation. Explain any known event, recent work or change in vibration without assuming that it caused the visible condition. Keep the component and installation history available for the relevant support discussion. A photograph is useful for triage, but the applicable inspection or manufacturer process determines what additional evidence is needed."
+        "text": "For a blade or spinner concern, begin with the equipment identity and a description of when the condition was noticed. A close view can show surface detail, while a wider view preserves its location and orientation. Explain any known event, recent work or change in vibration without assuming that it caused the visible condition. Keep the component and installation history available for the relevant support discussion. A photograph is useful for triage, but the applicable inspection or manufacturer process determines what additional evidence is needed.",
+        "theme": "Warranty, damage & returns"
       },
       {
         "heading": "Keep purchasing and maintenance decisions distinct",
@@ -2493,7 +2740,8 @@
             "/services",
             "Related aircraft services"
           ]
-        ]
+        ],
+        "theme": "Authorization path"
       }
     ],
     "images": [],
@@ -2520,50 +2768,54 @@
       {
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
         "alt": "Redacted engineering packet pages arranged for review",
-        "caption": "This redacted packet brings configuration, installation details and documentation together for review. Each aircraft needs its own authorization path and supporting approval records.",
+        "caption": "This redacted packet brings configuration, installation details and documentation together for review.",
         "proof_id": "eprops-engineering-packet-fanout-1200-clean"
       },
       {
         "src": "assets/images/proof/eprops-install-checklist-preview-1200.webp",
         "alt": "Installation checklist document overview",
-        "caption": "The redacted checklist organizes identity, preparation, installation, checks and records. Private identifiers and aircraft-specific values are withheld; the actual installation follows its applicable instructions and authorization.",
+        "caption": "The redacted checklist organizes identity, preparation, installation, checks and records.",
         "proof_id": "eprops-install-checklist-preview-1200"
       },
       {
-        "src": "assets/images/proof/eprops-aircraft-closeup-sky-ranger-1200.webp",
-        "alt": "Installed propeller on an aircraft",
-        "caption": "Installed propeller context connects the equipment with the airframe and engine combination. Fitment review must address the actual configuration.",
-        "proof_id": "eprops-aircraft-closeup-sky-ranger-1200"
+        "src": "assets/images/proof/eprops-blades-box-documents.webp",
+        "alt": "Three sleeved E-PROPS blades beside a shipping carton and customs pouch",
+        "caption": "Blade sleeves, shipping documents and the carton are kept together for the return.",
+        "proof_id": "eprops-blades-box-documents"
       },
       {
         "src": "assets/images/proof/eprops-blade-damage-closeup-800.webp",
         "alt": "Close view of visible propeller blade surface damage",
-        "caption": "Visible blade-surface damage is recorded in close view. Identify the propeller and consult the applicable inspection path before deciding the next step.",
+        "caption": "The close view shows the damaged surface at the blade edge.",
         "proof_id": "eprops-blade-damage-closeup-800"
       },
       {
         "proof_id": "eprops-durandal",
         "src": "assets/images/proof/eprops-durandal.webp",
         "alt": "Three-blade DURANDAL propeller product view",
-        "caption": "The DURANDAL family is one starting point for an aircraft-specific application review."
+        "caption": "The DURANDAL reference shows its three-blade configuration."
       },
       {
         "proof_id": "eprops-glorieuse-912",
         "src": "assets/images/proof/eprops-glorieuse-912.webp",
         "alt": "GLORIEUSE 912 propeller product view",
-        "caption": "The product family identifies a candidate for configuration review."
+        "caption": "The product view identifies the GLORIEUSE 912 family."
       },
       {
         "proof_id": "eprops-glorieuse-916",
         "src": "assets/images/proof/eprops-glorieuse-916.webp",
         "alt": "GLORIEUSE 916 propeller product view",
-        "caption": "Engine and gearbox identity guide the fitment discussion."
+        "caption": "The product view identifies the GLORIEUSE 916 family."
       }
     ],
     "hero_id": "eprops-aircraft-closeup-sky-ranger-1200",
     "service": {
       "systems": [
         "Propeller",
+        "Engine & gearbox",
+        "Airframe",
+        "Vibration",
+        "Records",
         "Approvals"
       ],
       "limits": "Product compatibility and a dealer quote do not authorize an installation. The aircraft's category and the airframe manufacturer's position decide the approval path.",
@@ -2586,7 +2838,13 @@
           "sting-propeller"
         ]
       }
-    }
+    },
+    "themes": [
+      "Fitment & ordering",
+      "Authorization path",
+      "Installation & verification",
+      "Warranty, damage & returns"
+    ]
   },
   "rotax-9-series-912-914-915-916-support": {
     "title": "ROTAX 9 Series Support near Charlotte",
@@ -2598,50 +2856,59 @@
         "heading": "912 UL / ULS and 914",
         "text": "Carbureted-engine questions can involve starting, ignition checks, carburetor balance, fuel delivery, cooling and vibration. The 914 also has turbocharger-related systems.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Engine families"
       },
       {
         "heading": "912 iS and later injected families",
         "text": "For 912 iS, 915 and 916 installations, record the exact warning message or indication if available. Electrical supply, fuel delivery, sensors and engine-management information are considered together.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Engine families"
       },
       {
         "heading": "Support is task-specific",
         "text": "Model identification alone does not establish which repair is appropriate or who can perform it. Current instructions, installation history and qualifications are checked.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Aircraft records & service paths"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Aircraft records & service paths"
       },
       {
         "heading": "Start with the engine family, then the symptom",
         "text": "The 9 Series label covers different installations. Carbureted 912 / 914 aircraft, injected 912 iS aircraft, and turbocharged 914 / 915 / 916 aircraft do not all start from the same troubleshooting path.",
-        "items": []
+        "items": [],
+        "theme": "Engine families"
       },
       {
         "heading": "912 iS / iSc",
         "text": "Injected installations add ECU, EMS, sensor, electrical-power, grounding, and installation-context questions to the normal service and five-year rubber hose package planning path. ECU / EMS / electrical",
-        "items": []
+        "items": [],
+        "theme": "Engine families"
       },
       {
         "heading": "915 iS / iSc and 916 iS / iSc",
         "text": "Modern turbocharged injected engines make the electronic record, EMS message, fuel pressure, cooling, and installation evidence especially important before a component is blamed. 915 / 916 support Common Owner Calls",
-        "items": []
+        "items": [],
+        "theme": "Engine families"
       },
       {
         "heading": "The same symptom can have different meaning by model and installation",
         "text": "This guide keeps the 9 Series model search path available without duplicating the main ROTAX hub. Use the systems pages when the issue is already known. Boundary Condition",
-        "items": []
+        "items": [],
+        "theme": "Engine families"
       },
       {
         "heading": "Documents and installed configuration control the next step",
         "text": "ROTAX training, aircraft records, logbook entries, serial-number-specific instructions, installed equipment, and aircraft operating limitations all matter. This page is a routing guide, not a substitute for the applicable manuals or aircraft-specific maintenance data.",
-        "items": []
+        "items": [],
+        "theme": "Aircraft records & service paths"
       },
       {
         "heading": "Identify the installed engine before transferring assumptions",
@@ -2652,19 +2919,23 @@
           "engine and component history",
           "exact symptom",
           "relevant recent changes."
-        ]
+        ],
+        "theme": "Engine families"
       },
       {
         "heading": "Aircraft-specific evidence",
-        "text": "Use this page as the ROTAX 9 Series model-family guide. It separates the 912 / 914 carbureted path from 912 iS / 915 iS / 916 iS electronically managed engines, then routes owners to the correct systems-support or service page."
+        "text": "Use this page as the ROTAX 9 Series model-family guide. It separates the 912 / 914 carbureted path from 912 iS / 915 iS / 916 iS electronically managed engines, then routes owners to the correct systems-support or service page.",
+        "theme": "Aircraft records & service paths"
       },
       {
         "heading": "Choose the system concern you can describe",
-        "text": "You do not need to select a technical fault category correctly before contacting us. Start with a change in starting, running, temperature, pressure, vibration or a displayed warning. The linked pages explain what context helps with each kind of concern. A symptom can cross the boundaries between systems: an electrical connection may affect an indication, installation details may influence cooling, and propeller or load conditions may shape a vibration report. Preserve the observation before narrowing it to one suspected component."
+        "text": "You do not need to select a technical fault category correctly before contacting us. Start with a change in starting, running, temperature, pressure, vibration or a displayed warning. The linked pages explain what context helps with each kind of concern. A symptom can cross the boundaries between systems: an electrical connection may affect an indication, installation details may influence cooling, and propeller or load conditions may shape a vibration report. Preserve the observation before narrowing it to one suspected component.",
+        "theme": "Aircraft records & service paths"
       },
       {
         "heading": "Engine identity matters without becoming an entry barrier",
-        "text": "The 9-Series name covers different configurations. Send the engine model and available records if you have them; say that the information is unknown if you do not. The exact installed configuration must be established before selecting applicable instructions or interpreting a manufacturer notice. Do not transfer limits, procedures or applicability from a similar model based on a family name. The first inquiry can begin with the aircraft and concern, while the technical review establishes the details needed for the proposed work."
+        "text": "The 9-Series name covers different configurations. Send the engine model and available records if you have them; say that the information is unknown if you do not. The exact installed configuration must be established before selecting applicable instructions or interpreting a manufacturer notice. Do not transfer limits, procedures or applicability from a similar model based on a family name. The first inquiry can begin with the aircraft and concern, while the technical review establishes the details needed for the proposed work.",
+        "theme": "Engine families"
       },
       {
         "heading": "Records connect symptoms to changes",
@@ -2682,7 +2953,8 @@
             "/rotax-915-916-turbo-ems-support",
             "Turbo and engine-management concerns"
           ]
-        ]
+        ],
+        "theme": "Aircraft records & service paths"
       }
     ],
     "images": [],
@@ -2697,13 +2969,13 @@
       {
         "src": "assets/images/proof/rotax-engine-on-hoist-800.webp",
         "alt": "Aircraft engine supported on a hoist",
-        "caption": "The engine on a hoist shows the access and support involved in ROTAX work. Engine identity, surrounding systems and records guide the service path.",
+        "caption": "The engine on a hoist shows the access and support involved in ROTAX work.",
         "proof_id": "rotax-engine-on-hoist-800"
       },
       {
         "src": "assets/images/proof/dynavibe-kit-secured-seat-800.webp",
         "alt": "DynaVibe measurement equipment secured in an aircraft seat",
-        "caption": "The DynaVibe kit is shown in its aircraft setting. Measurement setup and operating conditions help connect ROTAX support with the installed propeller and surrounding systems.",
+        "caption": "The DynaVibe kit is shown in its aircraft setting.",
         "proof_id": "dynavibe-kit-secured-seat-800"
       }
     ],
@@ -2725,7 +2997,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Engine families",
+      "Aircraft records & service paths"
+    ]
   },
   "contact": {
     "title": "Contact Lima Charlie Aero",
@@ -2780,7 +3056,7 @@
       {
         "src": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
         "alt": "Aircraft with cowling open in an outdoor work area",
-        "caption": "An open cowling shows the access involved in aircraft work. When you contact us, share the aircraft location so we can discuss practical access and the right next step.",
+        "caption": "An open cowling shows the access involved in aircraft work.",
         "proof_id": "aircraft-open-cowling-under-canopy-800"
       }
     ],
@@ -2796,56 +3072,66 @@
         "heading": "Begin with a short inquiry",
         "text": "Send a description or listing link first. Lima Charlie Aero will explain which relevant record pages to provide and how to send them. This website’s inquiry form does not accept attachments.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Identity & logbook continuity"
       },
       {
         "heading": "What you receive",
         "text": "The agreed review identifies supported findings, gaps, questions for the seller or maintainer, and suggested next steps. An incomplete logbook may leave a question unresolved; absence of an entry is not proof that work was performed.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Scope & findings"
       },
       {
         "heading": "Illustrative findings format",
         "text": "This example explains the format; it is not a customer aircraft report.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Scope & findings"
       },
       {
         "heading": "Scope and timing",
         "text": "Record volume, legibility, continuity and the complexity of installed equipment affect review effort. Confirm the deliverable and estimate before sending a full record set.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Scope & findings"
       },
       {
         "heading": "From records to the next decision",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Identity & logbook continuity"
       },
       {
         "heading": "Logbook Entries Need to Connect the Aircraft, the Work, and the Next Maintenance Decision.",
         "text": "A records review is not just a paperwork check. The goal is to preserve aircraft identity, engine time, work performed, signature data, configuration context, and missing-document questions before a support path is treated as settled. Documents Requested",
-        "items": []
+        "items": [],
+        "theme": "Identity & logbook continuity"
       },
       {
         "heading": "Structured Findings Package",
         "text": "Output can include aircraft identity summary, missing records list, risk flags, service bulletin / safety directive status, inspection status, seller/owner questions, and recommended next steps. Records to Send",
-        "items": []
+        "items": [],
+        "theme": "Scope & findings"
       },
       {
         "heading": "Logs Show Continuity, Not Just Hours.",
         "text": "A records review can show whether the aircraft story is continuous or fragmented. Airframe, engine, and propeller entries can reveal inspection timing, recurring discrepancies, skipped references, undocumented repairs, prior damage questions, rubber replacement history, and whether ROTAX-specific maintenance events were recorded clearly. Missing records do not automatically mean the aircraft is unacceptable, but they do change the questions. A missing inspection entry, vague maintenance description, incomplete service bulletin note, or absent operating limitation can affect risk, pricing, scheduling, and whether a physical inspection should happen before money or travel is committed. Documents That Help First",
-        "items": []
+        "items": [],
+        "theme": "Identity & logbook continuity"
       },
       {
         "heading": "Start with Documents That Define Authority and Identity.",
         "text": "The most useful first set includes the airworthiness certificate, registration, operating limitations, weight and balance, equipment list, airframe logbooks, engine logbooks, propeller records, data plate photos, and the most recent inspection entry. For S-LSA and E-LSA aircraft, operating limitations and manufacturer instructions are especially important because they help define the maintenance boundary. ROTAX-specific records to review include oil changes, gearbox or propeller-related entries, carburetor synchronization, rubber replacement, fuel system work, cooling-system work, ignition or EMS concerns, service bulletins, safety directives, and any installation or configuration changes. Remote Limits",
-        "items": []
+        "items": [],
+        "theme": "Identity & logbook continuity"
       },
       {
         "heading": "A Records Review is Risk Control, Not a Physical Inspection.",
         "text": "Remote review can organize uncertainty, identify missing documents, highlight questions, and define what should be checked next. It cannot verify physical condition, confirm hidden damage, prove airworthiness, or replace an aircraft inspection. If the records point to physical concerns, the next step may be a focused inspection, seller question list, or maintenance planning conversation. That boundary is part of the value. The review separates what the documents support from what still needs aircraft access. The owner or buyer gets a clearer decision path instead of a pile of logbook photos and unanswered assumptions.",
-        "items": []
+        "items": [],
+        "theme": "Scope & findings"
       },
       {
         "heading": "A useful findings package separates evidence from gaps",
@@ -2854,7 +3140,8 @@
           "Continuity: do dates, hours, installed identity and work entries connect?",
           "Scope: which records were actually reviewed, and which were unavailable?",
           "Next action: what document, clarification or physical check would resolve the gap?"
-        ]
+        ],
+        "theme": "Scope & findings"
       },
       {
         "heading": "Separate a missing record from a missing action",
@@ -2868,7 +3155,8 @@
             "/the-lima-charlie-aero-standard",
             "How evidence guides work"
           ]
-        ]
+        ],
+        "theme": "Identity & logbook continuity"
       }
     ],
     "images": [],
@@ -2879,14 +3167,14 @@
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Logbook covers with private entry details masked",
-        "caption": "Logbook and work-entry context, with private record details masked. In a records review, aircraft identity, work description and date connect the original entry to the aircraft’s chronology.",
+        "caption": "Logbook and work-entry context, with private record details masked.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
         "proof_id": "ndt-magnetic-particle-report",
         "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
         "alt": "Redacted result rows from a magnetic-particle inspection report",
-        "caption": "The excerpt keeps the inspection findings with their recorded disposition."
+        "caption": "The redacted report excerpt lists the inspected regions and their recorded findings."
       }
     ],
     "hero_id": "lca-logbook-work-sticker-proof-800",
@@ -2907,7 +3195,11 @@
           "Return findings with the source and next question."
         ]
       }
-    }
+    },
+    "themes": [
+      "Identity & logbook continuity",
+      "Scope & findings"
+    ]
   },
   "rotax-rubber-hose-replacement-fluid-leaks": {
     "title": "ROTAX rubber and hose replacement planning",
@@ -2919,35 +3211,41 @@
         "heading": "Understanding the concern",
         "text": "Applicable current maintenance instructions determine replacement intervals and included items. Fuel, oil, cooling and intake systems can have different parts and access needs.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Useful information, if known",
         "text": "Send the aircraft, engine if known, last known replacement date and available records. If the date is unknown, say so.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "What the review can produce",
         "text": "Cost and downtime depend on access, applicable parts, routing, clamps, fluids, condition findings, running checks and record work. Confirm a task-specific estimate; the page name is not a universal interval determination.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Routing, staining & leak evidence"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Routing, staining & leak evidence"
       },
       {
         "heading": "One package review, multiple rubber and fluid systems",
         "text": "Applicability depends on the engine, aircraft manufacturer instructions, installed configuration, and records. The package structure keeps a calendar-driven rubber item from being treated as a random leak repair.",
-        "items": []
+        "items": [],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Five-year rubber replacement: why it is a real package, not one hose",
         "text": "The package can reach fuel, oil, cooling, intake, carburetor, pump, belt, clamps, refill, run, leak-check, synchronization, and records. Access and aircraft configuration decide the final scope. Parts, access, routing, fluids, testing and records affect the estimate. Current scope and pricing are confirmed after reviewing the aircraft.",
-        "items": []
+        "items": [],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "ROTAX maintenance manual basis",
@@ -2960,27 +3258,32 @@
           "Fuel-pump replacement when required by applicable time limits.",
           "Refill, bleed, ground run, leak checks and synchronization where required by the work.",
           "Aircraft-side hoses, clamps and logbook documentation under the applicable instructions."
-        ]
+        ],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Current instructions control",
         "text": "Every item must be verified for the engine family, installation, records, and work scope. Not every listed item applies to every aircraft. What You May Notice",
-        "items": []
+        "items": [],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Rubber age and fluid leaks often show up together",
         "text": "Fuel, coolant, or oil residue Soft, hard, cracked, swollen, or unknown-age rubber Visible chafing, tight bends, heat exposure, or poor support Intake socket, carb socket, or seal/O-ring concern Missing, vague, or incomplete replacement records What to Send First",
-        "items": []
+        "items": [],
+        "theme": "Routing, staining & leak evidence"
       },
       {
         "heading": "Intake, records, scope, work path, and documentation",
         "text": "The goal is a clean maintenance path: identify the aircraft and installed configuration, review the age and evidence, define scope, complete or coordinate the work, and leave records that explain what was done.",
-        "items": []
+        "items": [],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Staining is not the same as a source",
         "text": "Fuel, coolant, and oil residue can move with airflow, heat, gravity, and cleaning history. A leak review needs fluid type, location, recurrence, known hose age, recent maintenance, and when the residue appears. Start the Package Review",
-        "items": []
+        "items": [],
+        "theme": "Routing, staining & leak evidence"
       },
       {
         "heading": "Define the package by system and current instructions",
@@ -2989,15 +3292,18 @@
           "Identify the affected systems and the last documented replacement.",
           "Inspect evidence and access before defining the parts and work package.",
           "Record the actual work and checks performed; a parts invoice alone is not the maintenance entry."
-        ]
+        ],
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Service history and package scope",
-        "text": "Planning context: This is commonly a multi-thousand-dollar planning item and can approach or exceed about $4,000 on some installations depending on access, hose routing, parts, fluids, clamps, carburetor parts, fuel-pump requirements, and documentation needs. Final scope is determined after aircraft, engine, installation, and records review."
+        "text": "Planning context: This is commonly a multi-thousand-dollar planning item and can approach or exceed about $4,000 on some installations depending on access, hose routing, parts, fluids, clamps, carburetor parts, fuel-pump requirements, and documentation needs. Final scope is determined after aircraft, engine, installation, and records review.",
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "Treat the package as several connected systems",
-        "text": "Fuel, cooling, lubrication and intake rubber do not become one system because their components age together. Identify which items are within the proposed work, the basis in current instructions, and the associated access and checks. Routing and attachment matter as well as the replacement part. The installed photographs help show why a package needs an aircraft-specific plan and a record of what was actually changed."
+        "text": "Fuel, cooling, lubrication and intake rubber do not become one system because their components age together. Identify which items are within the proposed work, the basis in current instructions, and the associated access and checks. Routing and attachment matter as well as the replacement part. The installed photographs help show why a package needs an aircraft-specific plan and a record of what was actually changed.",
+        "theme": "Replacement scope & records"
       },
       {
         "heading": "A stain is a clue, not the source label",
@@ -3011,7 +3317,8 @@
             "/planning-service-downtime",
             "Plan records and downtime"
           ]
-        ]
+        ],
+        "theme": "Routing, staining & leak evidence"
       }
     ],
     "images": [],
@@ -3025,13 +3332,13 @@
       {
         "src": "assets/images/proof/rotax-rubber-hose-routing-overview-1000.webp",
         "alt": "Installed hose routing around an engine",
-        "caption": "Routing evidence helps document clearances and support. A useful record connects the view with the individual hose and system.",
+        "caption": "The installed hoses pass around the engine and adjacent fittings.",
         "proof_id": "rotax-rubber-hose-routing-overview-1000"
       },
       {
         "src": "assets/images/proof/coolant-hose-leak-source-tracing-800.webp",
         "alt": "Hose and fitting within the surrounding installation",
-        "caption": "Follow the installation context when tracing a leak. Nearby surfaces can carry residue away from its origin.",
+        "caption": "The wider view locates the hose and fitting within the installation.",
         "proof_id": "coolant-hose-leak-source-tracing-800"
       }
     ],
@@ -3053,7 +3360,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Replacement scope & records",
+      "Routing, staining & leak evidence"
+    ]
   },
   "rotax-912-mag-drop-troubleshooting": {
     "title": "ROTAX 912 / 914 ignition-check roughness",
@@ -3065,45 +3376,53 @@
         "heading": "Understanding the concern",
         "text": "Owners often call this a “mag drop.” For these installations, describe what happened when each ignition circuit was checked. Ignition, fuel and engine conditions can produce overlapping symptoms.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Useful information, if known",
         "text": "If already recorded, share the RPM before and during the check, the circuit involved, roughness and recent maintenance. A description is enough if exact readings are unavailable.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "What the review can produce",
         "text": "We review the reported behavior and relevant instructions before planning diagnostic work. No flight-readiness decision is made from a generic website description.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Ignition & related systems"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Ignition & related systems"
       },
       {
         "heading": "Record the behavior before the details blur together",
         "text": "Rough running during ignition check Excessive RPM drop Left/right drop difference Hard starting or rough idle Heat-related behavior after the engine warms What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Several systems can create the same complaint",
         "text": "Plugs, plug caps, and ignition leads Carb balance or intake leaks Ignition modules, wiring, or grounds Fuel quality or stale fuel Recent maintenance quality or incomplete records Mag Drop Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Ignition & related systems"
       },
       {
         "heading": "The check result needs its operating conditions",
         "text": "A mag drop number without RPM, temperature, fuel, idle quality, and recent maintenance context can point the review in the wrong direction. The left/right difference matters, but so does when the roughness appears and what changed before it started.",
-        "items": []
+        "items": [],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Ignition is only one possible path",
         "text": "Plug condition, caps, leads, module behavior, carb balance, intake leaks, stale fuel, and ground or wiring issues can overlap. The review keeps those possibilities separate until the record and observed behavior support the next step.",
-        "items": []
+        "items": [],
+        "theme": "Ignition & related systems"
       },
       {
         "heading": "Preserve the actual check behavior",
@@ -3113,15 +3432,18 @@
           "check conditions",
           "whether one or both selections are involved",
           "what changed recently."
-        ]
+        ],
+        "theme": "Operating conditions"
       },
       {
         "heading": "Describe the check, not only the conclusion",
-        "text": "When reporting a mag-drop concern, provide the exact behavior observed during the check and the operating conditions available in your records. Distinguish a displayed change from rough running, an intermittent response or another symptom. Include the engine identity if known and any recent work involving ignition, plugs, carburetion, wiring or controls. The phrase “bad ignition” skips the evidence needed to separate possibilities. It is more useful to preserve the original observation before deciding which system is responsible."
+        "text": "When reporting a mag-drop concern, provide the exact behavior observed during the check and the operating conditions available in your records. Distinguish a displayed change from rough running, an intermittent response or another symptom. Include the engine identity if known and any recent work involving ignition, plugs, carburetion, wiring or controls. The phrase “bad ignition” skips the evidence needed to separate possibilities. It is more useful to preserve the original observation before deciding which system is responsible.",
+        "theme": "Operating conditions"
       },
       {
         "heading": "Keep the investigation wider than one component",
-        "text": "Ignition, fuel delivery, plugs and installation context can overlap in how a running concern presents. That does not make every possibility equally likely; it means that the troubleshooting sequence should be based on actual findings and applicable instructions. A record of recent changes and repeatable conditions supports that sequence. Do not perform additional engine runs or swap components simply to obtain information for an online inquiry. Existing observations and maintenance records are enough to begin the discussion."
+        "text": "Ignition, fuel delivery, plugs and installation context can overlap in how a running concern presents. That does not make every possibility equally likely; it means that the troubleshooting sequence should be based on actual findings and applicable instructions. A record of recent changes and repeatable conditions supports that sequence. Do not perform additional engine runs or swap components simply to obtain information for an online inquiry. Existing observations and maintenance records are enough to begin the discussion.",
+        "theme": "Ignition & related systems"
       },
       {
         "heading": "What to send with the first message",
@@ -3135,7 +3457,8 @@
             "/rotax-912-carb-sync",
             "Carburetor running context"
           ]
-        ]
+        ],
+        "theme": "Operating conditions"
       }
     ],
     "images": [],
@@ -3147,13 +3470,13 @@
         "proof_id": "soft-start-connector-annotated-800",
         "src": "assets/images/proof/soft-start-connector-annotated-800.webp",
         "alt": "Annotated view identifying an electrical connector",
-        "caption": "The marked connection is a location reference. Circuit identity and the applicable wiring documentation remain necessary."
+        "caption": "The marked connector identifies the soft-start wiring location."
       },
       {
         "proof_id": "electrical-connector-close-800",
         "src": "assets/images/proof/electrical-connector-close-800.webp",
         "alt": "Close view of an electrical connector and conductors",
-        "caption": "Connector detail makes a connection condition visible before an expensive component is blamed for a symptom."
+        "caption": "The connector exposes the individual conductor ends."
       }
     ],
     "hero_id": "soft-start-connector-annotated-800",
@@ -3174,7 +3497,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Operating conditions",
+      "Ignition & related systems"
+    ]
   },
   "rotax-cooling-oil-temperature-problems": {
     "title": "ROTAX coolant loss and cooling concerns",
@@ -3186,50 +3513,59 @@
         "heading": "Understanding the concern",
         "text": "A stain shows where fluid collected; it may not identify where the leak began. Hose connections, fittings and surrounding routing need examination.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Trends & chronology"
       },
       {
         "heading": "Useful information, if known",
         "text": "Describe the indication, fluid loss, operating conditions and any recent work. A photograph can be requested after initial contact.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Trends & chronology"
       },
       {
         "heading": "What the review can produce",
         "text": "A plan may include locating a leak, reviewing the installation and checking the relevant indications. For a focused 912 oil-temperature inquiry, use the dedicated guide.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Routing, airflow & residue"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Routing, airflow & residue"
       },
       {
         "heading": "Temperature trends are useful when they are specific",
         "text": "High oil temperature or changing oil temperature trend High CHT or coolant temperature Oil pressure change tied to temperature Coolant loss, odor, or trapped-air suspicion Changes after cowling, hose, cooler, or maintenance work What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Trends & chronology"
       },
       {
         "heading": "Cooling complaints are often installation-sensitive",
         "text": "Radiator and oil cooler airflow Coolant condition, trapped air, and hose routing Oil pressure, sensor data, and operating conditions Cowling, baffles, ducts, and installation details Maintenance history and applicable ROTAX information Source-tracing Evidence",
-        "items": []
+        "items": [],
+        "theme": "Routing, airflow & residue"
       },
       {
         "heading": "Residue location can point away from the actual source",
         "text": "This condition appeared near the cylinder-head area, but the investigation followed the fluid path back through the hose and fitting context. The photograph preserves what was observed without turning one stain into a premature diagnosis. Cooling System Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Routing, airflow & residue"
       },
       {
         "heading": "Temperatures should be read as a pattern",
         "text": "Oil temperature, coolant temperature, CHT, and oil pressure tell a stronger story when they are compared by phase of flight and trend over time. A value that appears after taxi, climb, cruise, or a maintenance change may point to different areas of the aircraft installation. System Context",
-        "items": []
+        "items": [],
+        "theme": "Trends & chronology"
       },
       {
         "heading": "Airflow and routing are part of the engine story",
         "text": "Radiator condition, oil cooler airflow, ducting, cowling fit, hose routing, coolant history, sensor confidence, and records all matter. The review avoids turning a temperature value into a conclusion until the aircraft-specific cooling and oil system context is understood.",
-        "items": []
+        "items": [],
+        "theme": "Routing, airflow & residue"
       },
       {
         "heading": "Separate temperatures, fluid loss and airflow",
@@ -3240,11 +3576,13 @@
           "fluid added or lost",
           "stain location",
           "recent routing or installation work."
-        ]
+        ],
+        "theme": "Trends & chronology"
       },
       {
         "heading": "Separate the indication from the physical evidence",
-        "text": "A temperature indication and a visible stain are different observations. Record both without assuming that they share a cause. A stain may remain after an earlier event or travel along adjacent surfaces. A displayed value needs instrument and operating context. Wider photographs help locate the area; closer photographs show the visible condition. Those views help define an inspection request, but they cannot establish fluid origin, a failed component or continued serviceability by themselves."
+        "text": "A temperature indication and a visible stain are different observations. Record both without assuming that they share a cause. A stain may remain after an earlier event or travel along adjacent surfaces. A displayed value needs instrument and operating context. Wider photographs help locate the area; closer photographs show the visible condition. Those views help define an inspection request, but they cannot establish fluid origin, a failed component or continued serviceability by themselves.",
+        "theme": "Routing, airflow & residue"
       },
       {
         "heading": "Preserve chronology after maintenance",
@@ -3258,7 +3596,8 @@
             "/rotax-rubber-hose-replacement-fluid-leaks",
             "Hose routing and leak tracing"
           ]
-        ]
+        ],
+        "theme": "Trends & chronology"
       }
     ],
     "images": [],
@@ -3269,14 +3608,14 @@
       {
         "src": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
         "alt": "Residue around a cylinder-head fitting and hose area",
-        "caption": "Residue around the fitting gives inspection a visible starting point. Tracing the fluid path and surrounding installation establishes where it came from.",
+        "caption": "Residue around the fitting gives inspection a visible starting point.",
         "proof_id": "coolant-residue-cylinder-head-hose-leak-800"
       },
       {
         "proof_id": "coolant-hose-leak-source-tracing-800",
         "src": "assets/images/proof/coolant-hose-leak-source-tracing-800.webp",
         "alt": "Hose and fitting within the surrounding installation",
-        "caption": "Follow the installation context when tracing a leak. Nearby surfaces can carry residue away from its origin."
+        "caption": "The wider view locates the hose and fitting within the installation."
       }
     ],
     "hero_id": "coolant-residue-cylinder-head-hose-leak-800",
@@ -3297,7 +3636,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Trends & chronology",
+      "Routing, airflow & residue"
+    ]
   },
   "rotax-912-carb-sync": {
     "title": "ROTAX 912 / 914 rough idle and carburetor balance",
@@ -3309,45 +3652,53 @@
         "heading": "Understanding the concern",
         "text": "Carburetor synchronization compares how the cylinders are being fed. Controls, intake connections and other faults can influence the readings; changing a balance setting alone may not address the cause.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Running conditions"
       },
       {
         "heading": "Useful information, if known",
         "text": "If known, describe the idle behavior, RPM range, recent adjustments and when the problem began.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Running conditions"
       },
       {
         "heading": "What the review can produce",
         "text": "A service plan can include checks needed before adjustment, synchronization to the applicable instructions, running checks and the agreed maintenance record.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Balance checks & records"
       },
       {
         "heading": "Plan this service with the shop",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Balance checks & records"
       },
       {
         "heading": "Carb balance problems often feel mechanical before they look obvious",
         "text": "Rough idle or rough transition off idle Engine vibration at specific RPM ranges Uneven running after recent maintenance Throttle or choke feel that changed Symptoms that improve or worsen with temperature What It Can Involve",
-        "items": []
+        "items": [],
+        "theme": "Running conditions"
       },
       {
         "heading": "The issue may not be just the balance setting",
         "text": "Mechanical and pneumatic carb synchronization Throttle and choke cable condition Intake socket condition or intake leaks Float condition, fuel quality, or contamination Recent ROTAX 912ULS maintenance history Carb Balance Review Focus",
-        "items": []
+        "items": [],
+        "theme": "Balance checks & records"
       },
       {
         "heading": "Balance starts before the gauges come out",
         "text": "Rough idle, vibration, and uneven transition can come from mechanical synchronization, pneumatic balance, cable movement, idle stop position, choke enrichment, intake socket condition, fuel level, or contamination. A useful review asks when it appears, what RPM range is affected, and what changed before it started.",
-        "items": []
+        "items": [],
+        "theme": "Balance checks & records"
       },
       {
         "heading": "A sync can hide another problem",
         "text": "If the installation has intake leaks, weak cable geometry, float issues, or incomplete recent work, chasing a balance number alone can hide the serviceability concern. The review keeps adjustment tied to records and operating evidence.",
-        "items": []
+        "items": [],
+        "theme": "Balance checks & records"
       },
       {
         "heading": "Operating context before a balance decision",
@@ -3357,15 +3708,18 @@
           "cold versus warm behavior",
           "fuel type and recent maintenance",
           "exact RPM range."
-        ]
+        ],
+        "theme": "Running conditions"
       },
       {
         "heading": "Establish the conditions before comparing readings",
-        "text": "A synchronization result is meaningful only with its test conditions and prerequisites. The applicable instructions determine how the work is performed and evaluated. For the initial inquiry, describe the running condition, any recent carburetor or control work and whether the concern appears during starting, idle or another operating range. A report that the engine feels rough does not establish that synchronization is the cause. The fuel, ignition, controls and installation context may need review before a comparison of carburetor signals is useful."
+        "text": "A synchronization result is meaningful only with its test conditions and prerequisites. The applicable instructions determine how the work is performed and evaluated. For the initial inquiry, describe the running condition, any recent carburetor or control work and whether the concern appears during starting, idle or another operating range. A report that the engine feels rough does not establish that synchronization is the cause. The fuel, ignition, controls and installation context may need review before a comparison of carburetor signals is useful.",
+        "theme": "Running conditions"
       },
       {
         "heading": "Keep the measurement with the work record",
-        "text": "The instrument photograph identifies the type of evidence involved, not an aircraft-specific acceptance result. A useful maintenance record connects the observed condition, relevant setup, readings and work performed. If another concern remains afterward, it should be recorded separately rather than hidden behind the statement that synchronization was completed. Owners can help by describing whether the original symptom is unchanged, different or no longer observed, without assuming that any single task resolved every possible cause."
+        "text": "The instrument photograph identifies the type of evidence involved, not an aircraft-specific acceptance result. A useful maintenance record connects the observed condition, relevant setup, readings and work performed. If another concern remains afterward, it should be recorded separately rather than hidden behind the statement that synchronization was completed. Owners can help by describing whether the original symptom is unchanged, different or no longer observed, without assuming that any single task resolved every possible cause.",
+        "theme": "Balance checks & records"
       },
       {
         "heading": "Begin with the history you already have",
@@ -3379,7 +3733,8 @@
             "/rotax-fuel-pressure-fuel-delivery-problems",
             "Fuel-delivery evidence"
           ]
-        ]
+        ],
+        "theme": "Running conditions"
       }
     ],
     "images": [],
@@ -3390,20 +3745,20 @@
       {
         "src": "assets/images/proof/carbmate-carb-sync-kit-card-800.webp",
         "alt": "CarbMate synchronization instrument and leads",
-        "caption": "The CarbMate kit supports comparison of synchronization signals. Combine the measurements with running conditions and checks for the cause of the symptom.",
+        "caption": "The CarbMate instrument is shown with its synchronization leads.",
         "proof_id": "carbmate-carb-sync-kit-card-800"
       },
       {
         "proof_id": "bing64-carburetor-rebuild-float-check",
         "src": "assets/images/proof/bing64-carburetor-rebuild-float-check.webp",
         "alt": "Bing carburetor parts and float-check reference",
-        "caption": "Carburetor records help distinguish component work from synchronization."
+        "caption": "The Bing 64 reference shows carburetor components and a float check."
       },
       {
         "proof_id": "rotax-airbox-focus",
         "src": "assets/images/proof/rotax-airbox-focus.webp",
         "alt": "ROTAX airbox and intake connections",
-        "caption": "Intake configuration belongs in the troubleshooting record."
+        "caption": "The airbox sits above the intake connections in the engine compartment."
       }
     ],
     "hero_id": "carbmate-carb-sync-kit-card-800",
@@ -3428,7 +3783,11 @@
           "Keep findings and measurements with the work record."
         ]
       }
-    }
+    },
+    "themes": [
+      "Running conditions",
+      "Balance checks & records"
+    ]
   },
   "security-disclosure": {
     "title": "Report a website security issue",
@@ -3473,7 +3832,8 @@
             "/rotax-rubber-hose-replacement-fluid-leaks",
             "Rubber and hose planning"
           ]
-        ]
+        ],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Troubleshooting",
@@ -3484,7 +3844,8 @@
             "/rotax-engine-systems-support",
             "Explore ROTAX support"
           ]
-        ]
+        ],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Buying and improving an aircraft",
@@ -3507,24 +3868,28 @@
             "/light-sport-experimental-avionics",
             "Avionics support"
           ]
-        ]
+        ],
+        "theme": "Prebuy, records & equipment"
       },
       {
         "heading": "What determines the estimate and downtime?",
         "text": "Aircraft access, the task, parts availability, previous maintenance and findings affect the plan. Send the aircraft location and your goal; we can clarify the work before quoting or scheduling.",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Agree the service scope",
         "text": "@workflow",
         "items": [],
-        "links": []
+        "links": [],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Light-sport 100-hour / annual condition inspection planning",
         "text": "For S-LSA, E-LSA, and experimental aircraft, inspection planning starts with category, operating limitations, maintenance manual, equipment list, engine records, prior entries, and owner goals. Lima Charlie Aero supports records-first inspection planning, routine service coordination, squawk review, ROTAX-related service items, and documentation discipline.",
-        "items": []
+        "items": [],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Planning inputs to gather",
@@ -3535,47 +3900,56 @@
           "Fuel system, venting, electrical and avionics condition items",
           "ROTAX oil, filter, plugs, gearbox, carburetion, cooling, fuel, rubber and applicable SB/SL/SI review",
           "Logbook continuity, discrepancy tracking, open squawks and upcoming time/calendar items"
-        ]
+        ],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Detailed ROTAX service and planning paths",
         "text": "Use these photo-backed paths after choosing the primary lane. Each path stays tied to the aircraft, engine series, current manuals, records, recent work, and installed system.",
-        "items": []
+        "items": [],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Five-year rubber hose package",
         "text": "Fuel, oil, coolant, intake rubber, clamps, routing, leak-source review, refill, run, leak-check, synchronization when disturbed, and documentation as applicable. Open package page",
-        "items": []
+        "items": [],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Fuel system / fuel delivery checks",
         "text": "Fuel pressure, lines, tanks, filters, pumps, clamps, contamination, routing, fuel type, operating conditions, and recent maintenance are reviewed as one aircraft system. Fuel-delivery support",
-        "items": []
+        "items": [],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Electrical, grounding & charging checks",
         "text": "Charging behavior, voltage-regulator connections, grounds, wiring support, sensor/EMS behavior, and ignition or ECU context are separated before a component is blamed. Electrical support",
-        "items": []
+        "items": [],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Bing 64 carburetor service / float checks",
         "text": "Bing 64 carburetor planning can include gasket and diaphragm condition, socket context, float weight checks, bowl condition, fuel history, synchronization needs, and current ROTAX/Bing instructions. Carburetor details",
-        "items": []
+        "items": [],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Carburetor synchronization",
         "text": "Mechanical and pneumatic synchronization, where applicable, are reviewed with throttle-cable condition, idle quality, vibration, starting behavior, recent rubber work, and carburetor context. Carb-sync details",
-        "items": []
+        "items": [],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Vibration / propeller analysis",
         "text": "Measured vibration, RPM range, propeller condition, gearbox history, mounting, recent work, and engine behavior are reviewed together before conclusions are drawn. Vibration pathway",
-        "items": []
+        "items": [],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Start with the symptom you are seeing",
         "text": "If the aircraft is showing a symptom, start with the closest condition below. Intake sorts whether the issue belongs in fuel delivery, ignition, cooling, carburetion, vibration, gearbox, rubber, records, or installation review.",
-        "items": []
+        "items": [],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Start with the aircraft, engine, and symptom",
@@ -3584,7 +3958,8 @@
           "Aircraft location and aircraft/engine series, if known",
           "The current symptom or service goal and any recent work",
           "Relevant records and an N-number or tail number if available; technical details are optional at first contact"
-        ]
+        ],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Oil, filter, plugs and condition checks",
@@ -3593,7 +3968,8 @@
           "Send the last inspection entry and current hours if available.",
           "Identify any recent fluid change, operating change or unresolved discrepancy.",
           "Parts, access, testing and records affect the scope rather than a generic package label."
-        ]
+        ],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Installation and specialty review",
@@ -3612,11 +3988,13 @@
             "Qualification boundaries"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Scope follows your aircraft and the evidence",
-        "text": "The first question is what decision or work the aircraft needs. Inspection planning, troubleshooting, an installation review and a records review are related services, but their evidence and access requirements differ. We establish the aircraft category and configuration, available records, relevant instructions and practical access before defining the proposed work. If findings change that scope, the new information belongs in the discussion. A photograph can clarify the request; it cannot by itself establish condition, compliance, or an authorization to return an aircraft to service."
+        "text": "The first question is what decision or work the aircraft needs. Inspection planning, troubleshooting, an installation review and a records review are related services, but their evidence and access requirements differ. We establish the aircraft category and configuration, available records, relevant instructions and practical access before defining the proposed work. If findings change that scope, the new information belongs in the discussion. A photograph can clarify the request; it cannot by itself establish condition, compliance, or an authorization to return an aircraft to service.",
+        "theme": "Plan the visit"
       },
       {
         "heading": "Choose a starting point without choosing a diagnosis",
@@ -3626,11 +4004,13 @@
           "Scheduled service: send the relevant records and the task you are planning",
           "Purchase decision: begin with the listing and available history",
           "Equipment or propeller work: identify the present configuration and the intended change"
-        ]
+        ],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Documentation stays connected to the aircraft",
-        "text": "Measurements, photographs and maintenance entries are most useful when their context remains clear. A value without operating conditions or a photograph without location may raise more questions than it answers. We aim to connect observations with the actual installation and the work scope. The examples on this page show the kinds of evidence involved without implying that one pictured result applies to another aircraft."
+        "text": "Measurements, photographs and maintenance entries are most useful when their context remains clear. A value without operating conditions or a photograph without location may raise more questions than it answers. We aim to connect observations with the actual installation and the work scope. The examples on this page show the kinds of evidence involved without implying that one pictured result applies to another aircraft.",
+        "theme": "Plan the visit"
       },
       {
         "heading": "Scheduled aircraft and ROTAX maintenance",
@@ -3645,7 +4025,8 @@
             "Aircraft category and inspection planning"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Plan the visit"
       },
       {
         "heading": "Five-year rubber, fuel and cooling systems",
@@ -3664,7 +4045,8 @@
             "Cooling and temperature"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "ROTAX maintenance"
       },
       {
         "heading": "Ignition, electrical, ECU and engine-management concerns",
@@ -3679,7 +4061,8 @@
             "Turbo and EMS"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Gearbox, propeller and vibration",
@@ -3694,7 +4077,8 @@
             "E-PROPS fitment and support"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Troubleshooting & installation"
       },
       {
         "heading": "Records, prebuy and avionics support",
@@ -3713,7 +4097,8 @@
             "Avionics and electrical"
           ]
         ],
-        "items": []
+        "items": [],
+        "theme": "Prebuy, records & equipment"
       }
     ],
     "images": [],
@@ -3745,29 +4130,35 @@
       {
         "src": "assets/images/proof/differential-pressure-tester-clean-800.webp",
         "alt": "Two-gauge differential pressure tester in use",
-        "caption": "A two-gauge test records more than a single number. Test conditions, equipment and the applicable procedure belong with the recorded result.",
+        "caption": "Both gauges are visible on the differential pressure tester.",
         "proof_id": "differential-pressure-tester-clean-800"
       },
       {
         "src": "assets/images/proof/xps-oil-rotax-filter-service-800.webp",
         "alt": "Oil containers and ROTAX filter supplies",
-        "caption": "Oil and filter supplies illustrate routine service preparation. Match product selection, due work and the maintenance entry to the aircraft’s current applicable instructions.",
+        "caption": "The service supplies include oil and a ROTAX filter.",
         "proof_id": "xps-oil-rotax-filter-service-800"
       },
       {
         "src": "assets/images/proof/rotax-installed-hose-overview-card-800.webp",
         "alt": "Installed engine showing multiple hose paths",
-        "caption": "The hose overview shows how several systems share a compact installation. Routing, attachment and access need review together.",
+        "caption": "Several hose runs share the available space around the engine.",
         "proof_id": "rotax-installed-hose-overview-card-800"
       },
       {
         "src": "assets/images/proof/carbmate-carb-sync-kit-card-800.webp",
         "alt": "CarbMate synchronization instrument and leads",
-        "caption": "The CarbMate kit shows the measurement tooling used in synchronization planning. Running conditions, throttle controls and applicable instructions give those signals their meaning.",
+        "caption": "The CarbMate kit shows the measurement tooling used in synchronization planning.",
         "proof_id": "carbmate-carb-sync-kit-card-800"
       }
     ],
-    "hero_id": "rotax-installed-hoses-overview"
+    "hero_id": "rotax-installed-hoses-overview",
+    "themes": [
+      "Plan the visit",
+      "ROTAX maintenance",
+      "Troubleshooting & installation",
+      "Prebuy, records & equipment"
+    ]
   },
   "our-work": {
     "title": "Our Work: Light-Sport & Experimental Aircraft Case Studies",

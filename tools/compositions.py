@@ -17,6 +17,18 @@ def details(s, site, ident='', opened=False):
     if opened: attrs+=' open'
     return f'<details{attrs}><summary>{E(s["heading"])}</summary>{paragraph(s,site)}</details>'
 
+def themed_sections(page, site, used=(), extra=None):
+    groups = {title: [] for title in page['themes']}
+    for i, section in enumerate(page['sections']):
+        if i in used:
+            continue
+        groups[section['theme']].append(f'<div id="section-{i+1}">{paragraph(section, site)}</div>')
+    if extra:
+        title, markup = extra
+        groups[title].append(markup)
+    return ''.join(f'<details><summary>{E(title)}</summary>{"".join(items)}</details>'
+                   for title, items in groups.items() if items)
+
 def paragraph(s, site):
     text = site['workflow'] if s['text']=='@workflow' else s['text']
     items = ''.join(f'<li>{E(x)}</li>' for x in s.get('items',[]))
@@ -98,9 +110,10 @@ def service_page(key,p,pages,site,img,actions,cases,notices,table):
         result+=band('<h2>Before and after the correction</h2><div class="pair">'+''.join(img.figure(i['proof_id'],caption=t) for i,t in zip(sorted(pair,key=lambda i:i['proof_id']),['Initial measurement: 1.27 IPS.','After correction: 0.04 IPS.']))+'</div><p>Measured 1.27 IPS → 0.04 IPS after correction.</p>')
         proof=[i for i in proof if i not in pair]
     result+=band('<h2>From the work</h2>'+gallery(proof[:4],img))
-    remainder=''.join(details(s,site,f'section-{i+1}') for i,s in enumerate(sections) if i not in used and s['text']!='@workflow' and s['text']!=model['limits'])
-    if proof[4:]:remainder+='<details><summary>Additional photographs and equipment</summary>'+gallery(proof[4:],img)+'</details>'
-    result+=band('<h2>Service details</h2>'+table+remainder,'sand')
+    used.update(i for i, section in enumerate(sections)
+                if section['text'] in ('@workflow', model['limits']))
+    extra = (p['themes'][0], gallery(proof[4:],img)) if proof[4:] else None
+    result+=band('<h2>Service details</h2>'+table+themed_sections(p,site,used,extra),'sand')
     if key in ['rotax-915-916-turbo-ems-support','rotax-gearbox-propeller-vibration']:result+=band(notices)
     related=related_cases(cases,plan.get('cases',[]))
     return result+band('<aside class="limits"><h2>Authorization &amp; limits</h2><p>'+E(model['limits'])+'</p></aside>'+related+links([('/services','All services'),('/our-work','Our Work')]))+band(actions(p['topic']),'final')
@@ -117,13 +130,16 @@ def showcase(key,p,pages,site,img,actions,cases,notices,table):
         result+=band('<h2>Aircraft systems and service paths</h2>'+system_map(site))+band('<h2>Choose a starting point</h2>'+service_index(rows,img),'sand')
     if key=='the-lima-charlie-aero-standard':
         result+=band('<h2>One aircraft, ten connected systems</h2>'+system_map(site))
-        method=[(s['heading'][3:],s['text']) for s in p['sections'] if s['heading'][:1].isdigit()]
+        method=[(s['heading'][3:].capitalize(),s['text']) for s in p['sections'] if s['heading'][:1].isdigit()]
         result+=band('<h2>How we work</h2>'+step_list(method),'sand')
         result+=band('<h2>The paper trail</h2>'+gallery(p['proof'],img))
         result+=band('<div class="split">'+img.figure('proof-owner-joe-airfield','founder')+'<div><h2>'+E(pages['index']['founder'][1])+'</h2><p>'+E(pages['index']['founder'][2])+'</p>'+links([('/joseph-helminiak-bio','Founder background'),('/about-credentials','Training and qualifications'),('/service-area','Service area')])+'</div></div>','sand')
     if key=='support-request':result+=form(site)
     substantive=[]
-    for n,s in enumerate(p['sections']):
+    if p.get('themes'):
+        used = {i for i,s in enumerate(p['sections']) if 'theme' not in s}
+        substantive.append(themed_sections(p,site,used))
+    for n,s in enumerate([] if p.get('themes') else p['sections']):
         if key=='the-lima-charlie-aero-standard' and s['heading'][:1].isdigit():continue
         ident='credentials' if key=='contact' and n==1 else f'section-{n+1}'
         if len(p['sections'])>5 or key=='faq':substantive.append(details(s,site,ident))

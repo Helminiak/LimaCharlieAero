@@ -1,4 +1,11 @@
 'use strict';
+const caseRecords = document.querySelectorAll('.case-record');
+if (caseRecords.length) {
+ const desktop = matchMedia('(min-width: 1024px)');
+ const setDefaults = () => caseRecords.forEach(record => { record.open = desktop.matches; });
+ desktop.addEventListener('change', setDefaults);
+ setDefaults();
+}
 // Progressive enhancement; never store form contents or send them to analytics.
 const emit=(name,topic)=>document.dispatchEvent(new CustomEvent('lca:measurement',{detail:{event:name,topic:topic||'unsure'}}));
 document.querySelectorAll('a[href^="tel:"],a[href^="sms:"]').forEach(a=>a.addEventListener('click',()=>emit(a.href.startsWith('tel:')?'contact_call_click':'contact_text_click')));

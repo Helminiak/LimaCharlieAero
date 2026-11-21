@@ -4,564 +4,622 @@
     "source": "assets/images/lca-proof/webp_800/dynavibe-bad-1-27-ips-800.webp",
     "asset": "assets/images/proof/dynavibe-bad-1-27-ips-800.webp",
     "alt": "DynaVibe instrument displaying a vibration reading",
-    "caption": "Displayed measurement: 1.27 IPS. The reading documents this measurement; RPM, sensor setup and aircraft configuration are needed to interpret it.",
+    "caption": "The DynaVibe display reads 1.27 IPS.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "45% 35%",
+    "natural_hero": true
   },
   {
     "id": "dynavibe-good-0-04-ips-800",
     "source": "assets/images/lca-proof/webp_800/dynavibe-good-0-04-ips-800.webp",
     "asset": "assets/images/proof/dynavibe-good-0-04-ips-800.webp",
     "alt": "DynaVibe instrument displaying a separate vibration reading",
-    "caption": "Separate documented display: 0.04 IPS. These photographs alone do not establish the sequence or prove which work caused a change.",
+    "caption": "The second DynaVibe display reads 0.04 IPS.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "dynavibe-kit-secured-seat-800",
     "source": "assets/images/lca-proof/webp_800/dynavibe-kit-secured-seat-800.webp",
     "asset": "assets/images/proof/dynavibe-kit-secured-seat-800.webp",
     "alt": "DynaVibe measurement equipment secured in an aircraft seat",
-    "caption": "Measurement equipment in its aircraft context. Setup and operating conditions belong with the result, not just the number.",
+    "caption": "The DynaVibe equipment is strapped into the aircraft seat.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "gearbox-pocket-wear-1-800",
     "source": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-1-800.webp",
     "asset": "assets/images/proof/gearbox-pocket-wear-1-800.webp",
     "alt": "Gearbox component surface shown for condition review",
-    "caption": "Component surface detail provides a record of the visible condition. Service history and applicable inspection criteria are needed before assigning significance.",
+    "caption": "The gearbox pocket shows wear on its inner surface.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "gearbox-pocket-wear-2-800",
     "source": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-2-800.webp",
     "asset": "assets/images/proof/gearbox-pocket-wear-2-800.webp",
     "alt": "Close view of a gearbox component pocket",
-    "caption": "A second mechanical view records surface and edge detail that a general vibration description cannot convey.",
+    "caption": "The close view shows the pocket edge and adjacent surface.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "gearbox-pocket-wear-3-800",
     "source": "assets/images/lca-proof/webp_800/gearbox-pocket-wear-3-800.webp",
     "asset": "assets/images/proof/gearbox-pocket-wear-3-800.webp",
     "alt": "Additional angle of a gearbox component",
-    "caption": "An additional inspection angle helps document the observed surface. No serviceability limit can be inferred from the photograph alone.",
+    "caption": "A third angle shows the profile of the component pocket.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-engine-on-hoist-800",
     "source": "assets/images/lca-proof/webp_800/rotax-engine-on-hoist-800.webp",
     "asset": "assets/images/proof/rotax-engine-on-hoist-800.webp",
     "alt": "Aircraft engine supported on a hoist",
-    "caption": "Engine support and access are part of the installation work context. This view records the engine and surrounding work area.",
+    "caption": "The hoist supports the engine in the work area.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "engine-cage-crack-closeup-before-repair-800",
     "source": "assets/images/lca-proof/webp_800/engine-cage-crack-closeup-before-repair-800.webp",
     "asset": "assets/images/proof/engine-cage-crack-closeup-before-repair-800.webp",
     "alt": "Visible crack at an engine-cage joint",
-    "caption": "A close view records the visible crack and its location at the joint. The extent and repair path require aircraft-specific inspection and instructions.",
+    "caption": "The crack at the engine-mount joint was photographed before repair.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "42% 42%"
   },
   {
     "id": "engine-cage-weld-repair-detail-800",
     "source": "assets/images/lca-proof/webp_800/engine-cage-weld-repair-detail-800.webp",
     "asset": "assets/images/proof/engine-cage-weld-repair-detail-800.webp",
     "alt": "Engine-cage joint with visible weld detail",
-    "caption": "Joint detail is documented for the record. The image does not independently establish the repair approval or inspection result.",
+    "caption": "The weld bead follows the joint between the mount tubes.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "44% 36%"
   },
   {
     "id": "engine-cage-weld-joint-detail-800",
     "source": "assets/images/lca-proof/webp_800/engine-cage-weld-joint-detail-800.webp",
     "asset": "assets/images/proof/engine-cage-weld-joint-detail-800.webp",
     "alt": "Close view of an engine-cage weld joint",
-    "caption": "A close angle preserves the joint geometry and surface detail for comparison with the work records.",
+    "caption": "Two tubes meet at the welded joint in this close view.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "45% 34%"
   },
   {
     "id": "engine-cage-painted-finished-800",
     "source": "assets/images/lca-proof/webp_800/engine-cage-painted-finished-800.webp",
     "asset": "assets/images/proof/engine-cage-painted-finished-800.webp",
     "alt": "Coated engine cage shown separately from the engine",
-    "caption": "The photographed cage condition is a record of appearance, not proof of structural acceptance or release to service.",
+    "caption": "The refinished engine mount rests on the shop floor.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "48% 48%"
   },
   {
     "id": "engine-cage-ndt-facility-800",
     "source": "assets/images/lca-proof/webp_800/engine-cage-ndt-facility-800.webp",
     "asset": "assets/images/proof/engine-cage-ndt-facility-800.webp",
     "alt": "Engine cage in a workshop inspection setting",
-    "caption": "Workshop context for the cage. A facility photograph is not a test report; the actual inspection record must identify the method and result.",
+    "caption": "The engine mount is set up at the inspection facility.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "fuel-tank-borescope-dirty-800",
     "source": "assets/images/lca-proof/webp_800/fuel-tank-borescope-dirty-800.webp",
     "asset": "assets/images/proof/fuel-tank-borescope-dirty-800.webp",
     "alt": "Borescope display showing material on a tank interior surface",
-    "caption": "Material is visible on the tank interior in this borescope view. The image supports an observation, not identification of the material or a diagnosis of fuel pressure.",
+    "caption": "The borescope shows material on the tank wall.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "fuel-tank-borescope-clean-800",
     "source": "assets/images/lca-proof/webp_800/fuel-tank-borescope-clean-800.webp",
     "asset": "assets/images/proof/fuel-tank-borescope-clean-800.webp",
     "alt": "Separate borescope view of a tank interior",
-    "caption": "A separate interior view records surface condition. Without the associated records, these views are not presented as a verified cleaning sequence.",
+    "caption": "This second borescope view shows the interior surface of the tank.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-fuel-pump-in-out-card-800",
     "source": "assets/images/lca-proof/webp_800/rotax-fuel-pump-in-out-card-800.webp",
     "asset": "assets/images/proof/rotax-fuel-pump-in-out-card-800.webp",
     "alt": "Fuel pump and installed fuel-system reference views",
-    "caption": "Pump and installation views show the supply-path context. This historical reference image requires explicit rights confirmation before publication.",
+    "caption": "The two views show the pump and its installed connections.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "differential-pressure-tester-clean-800",
     "source": "assets/images/lca-proof/webp_800/differential-pressure-tester-clean-800.webp",
     "asset": "assets/images/proof/differential-pressure-tester-clean-800.webp",
     "alt": "Two-gauge differential pressure tester in use",
-    "caption": "A two-gauge test records more than a single number. Test conditions, equipment and the applicable procedure belong with the recorded result.",
+    "caption": "Both gauges are visible on the differential pressure tester.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "carbmate-carb-sync-kit-card-800",
     "source": "assets/images/lca-proof/webp_800/carbmate-carb-sync-kit-card-800.webp",
     "asset": "assets/images/proof/carbmate-carb-sync-kit-card-800.webp",
     "alt": "CarbMate synchronization instrument and leads",
-    "caption": "Synchronization tooling provides a way to compare the relevant signals. It does not replace checks for the cause of poor running.",
+    "caption": "The CarbMate instrument is shown with its synchronization leads.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "xps-oil-rotax-filter-service-800",
     "source": "assets/images/lca-proof/webp_800/xps-oil-rotax-filter-service-800.webp",
     "asset": "assets/images/proof/xps-oil-rotax-filter-service-800.webp",
     "alt": "Oil containers and ROTAX filter supplies",
-    "caption": "Oil and filter supplies shown for service planning. Product selection and the service record must match the applicable current instructions.",
+    "caption": "The service supplies include oil and a ROTAX filter.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-installed-hose-overview-card-800",
     "source": "assets/images/lca-proof/webp_800/rotax-installed-hose-overview-card-800.webp",
     "asset": "assets/images/proof/rotax-installed-hose-overview-card-800.webp",
     "alt": "Installed engine showing multiple hose paths",
-    "caption": "The hose overview shows how several systems share a compact installation. Routing, attachment and access need review together.",
+    "caption": "Several hose runs share the available space around the engine.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-rubber-hose-routing-overview-1000",
     "source": "assets/images/lca-proof/webp_800/rotax-rubber-hose-routing-overview-1000.webp",
     "asset": "assets/images/proof/rotax-rubber-hose-routing-overview-1000.webp",
     "alt": "Installed hose routing around an engine",
-    "caption": "Routing evidence helps document clearances and support. A useful record connects the view with the individual hose and system.",
+    "caption": "The installed hoses pass around the engine and adjacent fittings.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "coolant-residue-cylinder-head-hose-leak-800",
     "source": "assets/images/lca-proof/webp_800/coolant-residue-cylinder-head-hose-leak-800.webp",
     "asset": "assets/images/proof/coolant-residue-cylinder-head-hose-leak-800.webp",
     "alt": "Residue around a cylinder-head fitting and hose area",
-    "caption": "Residue is visible around the fitting area. Its location guides inspection but does not by itself identify the source or fluid path.",
+    "caption": "Residue is visible where the hose meets the cylinder-head fitting.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 43%"
   },
   {
     "id": "coolant-hose-leak-source-tracing-800",
     "source": "assets/images/lca-proof/webp_800/coolant-hose-leak-source-tracing-800.webp",
     "asset": "assets/images/proof/coolant-hose-leak-source-tracing-800.webp",
     "alt": "Hose and fitting within the surrounding installation",
-    "caption": "Follow the installation context when tracing a leak. Nearby surfaces can carry residue away from its origin.",
+    "caption": "The wider view locates the hose and fitting within the installation.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "garmin-g5-installed-panel-close-800",
     "source": "assets/images/lca-proof/webp_800/garmin-g5-installed-panel-close-800.webp",
     "asset": "assets/images/proof/garmin-g5-installed-panel-close-800.webp",
     "alt": "Garmin G5 installed in an aircraft instrument panel",
-    "caption": "The installed panel shows the owner-facing result. Behind-panel routing, connections and records are also part of installation evidence.",
+    "caption": "The Garmin G5 sits beside the existing instruments in the panel.",
     "redaction": "Registration placard masked before derivative generation.",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "dsub-connector-wiring-close-800",
     "source": "assets/images/lca-proof/webp_800/dsub-connector-wiring-close-800.webp",
     "asset": "assets/images/proof/dsub-connector-wiring-close-800.webp",
     "alt": "D-sub connector with visible conductor terminations",
-    "caption": "Behind-panel evidence matters. This connector view documents conductor routing and termination condition during electrical work.",
+    "caption": "The close view shows the conductors at the D-sub termination.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "electrical-connector-close-800",
     "source": "assets/images/lca-proof/webp_800/electrical-connector-close-800.webp",
     "asset": "assets/images/proof/electrical-connector-close-800.webp",
     "alt": "Close view of an electrical connector and conductors",
-    "caption": "Connector detail makes a connection condition visible before an expensive component is blamed for a symptom.",
+    "caption": "The connector exposes the individual conductor ends.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "electrical-connector-wide-800",
     "source": "assets/images/lca-proof/webp_800/electrical-connector-wide-800.webp",
     "asset": "assets/images/proof/electrical-connector-wide-800.webp",
     "alt": "Electrical connection in its installed surroundings",
-    "caption": "The wider view locates the connection in the aircraft. Detail and context together make later review more useful.",
+    "caption": "The wider view locates the electrical connection in the aircraft.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "voltage-regulator-connector-frayed-800",
     "source": "assets/images/lca-proof/webp_800/voltage-regulator-connector-frayed-800.webp",
     "asset": "assets/images/proof/voltage-regulator-connector-frayed-800.webp",
     "alt": "Visible conductor condition at a regulator connector",
-    "caption": "The conductor condition is visible at the connector. Electrical inspection should establish the circuit context before any component-replacement conclusion.",
+    "caption": "Frayed conductors are visible at the regulator connector.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "soft-start-connector-annotated-800",
     "source": "assets/images/lca-proof/webp_800/soft-start-connector-annotated-800.webp",
     "asset": "assets/images/proof/soft-start-connector-annotated-800.webp",
     "alt": "Annotated view identifying an electrical connector",
-    "caption": "The marked connection is a location reference. Circuit identity and the applicable wiring documentation remain necessary.",
+    "caption": "The marked connector identifies the soft-start wiring location.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "avionics-tools-coax-workbench-800",
     "source": "assets/images/lca-proof/webp_800/avionics-tools-coax-workbench-800.webp",
     "asset": "assets/images/proof/avionics-tools-coax-workbench-800.webp",
     "alt": "Coaxial cable and avionics tools on a workbench",
-    "caption": "Workbench evidence shows the cable-work context. Finished connections and installation documentation complete the record.",
+    "caption": "Coaxial cable and termination tools are laid out on the bench.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "icom-radio-coax-adapters-800",
     "source": "assets/images/lca-proof/webp_800/icom-radio-coax-adapters-800.webp",
     "asset": "assets/images/proof/icom-radio-coax-adapters-800.webp",
     "alt": "Radio equipment with coax cable and adapters",
-    "caption": "Radio and cable components illustrate installation planning. Equipment compatibility is an aircraft-specific question.",
+    "caption": "The radio, coax and adapters are shown together for installation planning.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "top-end-parts-organized-shelf-800",
     "source": "assets/images/lca-proof/webp_800/top-end-parts-organized-shelf-800.webp",
     "asset": "assets/images/proof/top-end-parts-organized-shelf-800.webp",
     "alt": "Engine parts organized on a shelf",
-    "caption": "Organized parts preserve inspection and reassembly context. Component identity and records must remain associated with the work.",
+    "caption": "Engine parts are arranged on the shelf for inspection.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "aircraft-open-cowling-under-canopy-800",
     "source": "assets/images/lca-proof/webp_800/aircraft-open-cowling-under-canopy-800.webp",
     "asset": "assets/images/proof/aircraft-open-cowling-under-canopy-800.webp",
     "alt": "Aircraft with cowling open in an outdoor work area",
-    "caption": "Real aircraft access context: an open cowling exposes the installed systems. Coordinate aircraft location and access before planning work.",
+    "caption": "Field work under a canopy at the ramp.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "52% 43%"
   },
   {
     "id": "aircraft-side-canopy-joe-working-800",
     "source": "assets/images/lca-proof/webp_800/aircraft-side-canopy-joe-working-800.webp",
     "asset": "assets/images/proof/aircraft-side-canopy-joe-working-800.webp",
     "alt": "Joseph Helminiak working beside an aircraft",
-    "caption": "Founder and technical lead Joseph Helminiak shown in an aircraft work setting. Personal background supports the company’s technical accountability.",
+    "caption": "Joseph Helminiak works beside the aircraft at the airfield.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "52% 52%"
   },
   {
     "id": "lca-logbook-work-sticker-proof-800",
     "source": "assets/images/lca-proof/webp_800/lca-logbook-work-sticker-proof-800.webp",
     "asset": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
     "alt": "Logbook covers with private entry details masked",
-    "caption": "Record details are withheld for privacy. A maintenance record needs traceable aircraft, work and date context; this photograph does not assert a finding for a customer aircraft.",
+    "caption": "The logbook photograph masks private entry details.",
     "redaction": "Entire open record and work-label region masked; covers retained",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "eprops-aircraft-closeup-sky-ranger-1200",
     "source": "assets/images/eprops/proof/eprops-aircraft-closeup-sky-ranger-1200.webp",
     "asset": "assets/images/proof/eprops-aircraft-closeup-sky-ranger-1200.webp",
     "alt": "Installed propeller on an aircraft",
-    "caption": "Installed propeller context connects the equipment with the airframe and engine combination. Fitment review must address the actual configuration.",
+    "caption": "The installed propeller is shown against the SkyRanger cowling.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 55%"
   },
   {
     "id": "eprops-blade-damage-closeup-800",
     "source": "assets/images/lca-proof/v28/eprops-blade-damage-closeup-800.webp",
     "asset": "assets/images/proof/eprops-blade-damage-closeup-800.webp",
     "alt": "Close view of visible propeller blade surface damage",
-    "caption": "Visible blade-surface damage is recorded in close view. Identify the propeller and consult the applicable inspection path before deciding the next step.",
+    "caption": "The close view shows the damaged surface at the blade edge.",
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%"
   },
   {
     "id": "eprops-engineering-packet-fanout-1200-clean",
     "source": "assets/images/eprops/proof/eprops-engineering-packet-fanout-1200-clean.webp",
     "asset": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
     "alt": "Redacted engineering packet pages arranged for review",
-    "caption": "Redacted engineering packet structure connects configuration information, installation details and documentation. The preview is process evidence, not approval for another aircraft.",
+    "caption": "The redacted packet brings the configuration and installation records together.",
     "redaction": "Prepared-for identity, named issuer, contact block and signature masked",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "eprops-install-checklist-preview-1200",
     "source": "assets/images/eprops/proof/eprops-install-checklist-preview-1200.webp",
     "asset": "assets/images/proof/eprops-install-checklist-preview-1200.webp",
     "alt": "Installation checklist document overview",
-    "caption": "Redacted checklist structure: identity, preparation, installation, checks and records. Private identifiers and aircraft-specific values are withheld; this preview is not a procedure for another aircraft.",
+    "caption": "The redacted checklist groups preparation, installation and verification fields.",
     "redaction": "Aircraft registration, aircraft/propeller/blade/hub serial identifiers, named installer, signature area and aircraft-specific numeric settings masked",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
     "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
-    "chronology": "No causal or before/after relationship asserted"
+    "chronology": "No causal or before/after relationship asserted",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "rotax-support-hero-original-photo",
     "source": "assets/images/lca-proof/hero_16x9_1600/rotax-support-hero-original-photo-16x9-1600.webp",
     "asset": "assets/images/proof/rotax-support-hero-original-photo.webp",
     "alt": "ROTAX engine photographed against a dark background",
-    "caption": "The engine assembly introduces the shop’s ROTAX specialty.",
+    "caption": "The ROTAX engine assembly is shown with its surrounding connections.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-installed-hoses-overview",
     "source": "assets/images/lca-proof/hero_16x9_1600/rotax-installed-hoses-overview-16x9-1280.webp",
     "asset": "assets/images/proof/rotax-installed-hoses-overview.webp",
     "alt": "Hoses routed around an installed ROTAX engine",
-    "caption": "Hose routing, connections and access help define a service package.",
+    "caption": "Several hose routes are visible around the installed ROTAX engine.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "garmin-g5-installed-panel-wide",
     "source": "assets/images/lca-proof/hero_16x9_1600/garmin-g5-installed-panel-wide-16x9-1600.webp",
     "asset": "assets/images/proof/garmin-g5-installed-panel-wide.webp",
     "alt": "Garmin G5 and surrounding panel instruments",
-    "caption": "The wider panel view places the display in its installed configuration.",
+    "caption": "The wider view shows the Garmin G5 among the aircraft’s panel instruments.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "52% 50%"
   },
   {
     "id": "proof-owner-joe-airfield",
     "source": "assets/images/proof-owner-joe-airfield-1200.webp",
     "asset": "assets/images/proof/proof-owner-joe-airfield.webp",
     "alt": "Joseph Helminiak beside an aircraft at the airfield",
-    "caption": "Joseph Helminiak founded Lima Charlie Aero.",
+    "caption": "Lima Charlie Aero founder Joseph Helminiak stands beside an aircraft.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "58% 48%"
   },
   {
     "id": "skyreach-bushcat-tailwheel-prebuy",
     "source": "assets/images/prebuy/skyreach-bushcat-tailwheel-prebuy-800.webp",
     "asset": "assets/images/proof/skyreach-bushcat-tailwheel-prebuy.webp",
     "alt": "SkyReach BushCat tailwheel aircraft on the ramp",
-    "caption": "Aircraft configuration informs the questions to ask before a prebuy.",
+    "caption": "The SkyReach BushCat’s tailwheel configuration is visible on the ramp.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 48%"
   },
   {
     "id": "bing64-carburetor-rebuild-float-check",
     "source": "assets/images/lca-proof/webp_1200/bing64-carburetor-rebuild-float-check-card-1200.webp",
     "asset": "assets/images/proof/bing64-carburetor-rebuild-float-check.webp",
     "alt": "Bing carburetor parts and float-check reference",
-    "caption": "Carburetor records help distinguish component work from synchronization.",
+    "caption": "The Bing 64 reference shows carburetor components and a float check.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "garmin-g5-box-unit",
     "source": "assets/images/lca-proof/webp_1200/garmin-g5-box-unit-1200.webp",
     "asset": "assets/images/proof/garmin-g5-box-unit.webp",
     "alt": "Garmin G5 unit beside its packaging",
-    "caption": "Equipment identification helps define the installation question.",
+    "caption": "The Garmin G5 unit is shown with its equipment packaging.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "exhaust-marking-hydra-detail",
     "source": "assets/images/lca-proof/webp_1200/exhaust-marking-hydra-detail-1200.webp",
     "asset": "assets/images/proof/exhaust-marking-hydra-detail.webp",
     "alt": "Markings on an installed exhaust component",
-    "caption": "Component markings provide an identification reference for an installation review.",
+    "caption": "The close view records the markings on the installed exhaust component.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "ndt-magnetic-particle-report",
     "source": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-1200.webp",
     "asset": "assets/images/proof/ndt-magnetic-particle-report.webp",
     "alt": "Redacted result rows from a magnetic-particle inspection report",
-    "caption": "The excerpt keeps the inspection findings with their recorded disposition.",
+    "caption": "The redacted report excerpt lists the inspected regions and their recorded findings.",
     "redaction": "Results table excerpt only; identifiers excluded.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "tl-ultralight-designer-correspondence",
@@ -569,71 +627,91 @@
     "source": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-1200.webp",
     "asset": "assets/images/proof/tl-ultralight-designer-correspondence.webp",
     "alt": "Designer’s instruction to retain the inspection protocol",
-    "caption": "The redacted message connects the weldment review to the aircraft documentation.",
+    "caption": "The redacted designer message requests that the inspection protocol stay with the aircraft records.",
     "redaction": "Message body only; names, addresses, greeting and signature excluded.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%",
+    "natural_hero": true
   },
   {
     "id": "eprops-durandal",
     "source": "assets/images/eprops/products/eprops-durandal-3-640.webp",
     "asset": "assets/images/proof/eprops-durandal.webp",
     "alt": "Three-blade DURANDAL propeller product view",
-    "caption": "The DURANDAL family is one starting point for an aircraft-specific application review.",
+    "caption": "The DURANDAL reference shows its three-blade configuration.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "eprops-glorieuse-912",
     "source": "assets/images/eprops/products/eprops-glorieuse-912-640.webp",
     "asset": "assets/images/proof/eprops-glorieuse-912.webp",
     "alt": "GLORIEUSE 912 propeller product view",
-    "caption": "The product family identifies a candidate for configuration review.",
+    "caption": "The product view identifies the GLORIEUSE 912 family.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "eprops-glorieuse-916",
     "source": "assets/images/eprops/products/eprops-glorieuse-916-640.webp",
     "asset": "assets/images/proof/eprops-glorieuse-916.webp",
     "alt": "GLORIEUSE 916 propeller product view",
-    "caption": "Engine and gearbox identity guide the fitment discussion.",
+    "caption": "The product view identifies the GLORIEUSE 916 family.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-airbox-focus",
     "source": "assets/images/rotax-airbox-focus-card.webp",
     "asset": "assets/images/proof/rotax-airbox-focus.webp",
     "alt": "ROTAX airbox and intake connections",
-    "caption": "Intake configuration belongs in the troubleshooting record.",
+    "caption": "The airbox sits above the intake connections in the engine compartment.",
     "redaction": "Visually inspected; metadata stripped.",
     "permission": "REVIEW REQUIRED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
     "disposition": "Local candidate; confirm restored-subject rights before release.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
   },
   {
     "id": "rotax-engine-installed-green-covers",
     "asset": "assets/images/rotax-engine-installed-green-covers-800.webp",
     "source": "assets/images/rotax-engine-installed-green-covers-800.webp",
     "alt": "Installed ROTAX engine with green covers",
-    "caption": "The engine installation connects fuel, cooling, electrical and mechanical systems.",
+    "caption": "The wider installation view shows the ROTAX engine and its green covers.",
     "redaction": "Reviewed RC3 image.",
     "permission": "CLEARED",
     "provenance": "RC3 home image; owner attestation, PR #2 comment 6019001980.",
     "disposition": "Retain installation context.",
-    "chronology": "Context only."
+    "chronology": "Context only.",
+    "focal": "50% 50%"
+  },
+  {
+    "id": "eprops-blades-box-documents",
+    "asset": "assets/images/proof/eprops-blades-box-documents.webp",
+    "source": "assets/images/lca-proof/v28/eprops-blades-box-documents-1200.webp",
+    "alt": "Three sleeved E-PROPS blades beside a shipping carton and customs pouch",
+    "caption": "Blade sleeves, shipping documents and the carton are kept together for the return.",
+    "redaction": "No registration, address, person or signature visible in the inspected source.",
+    "permission": "REVIEW REQUIRED",
+    "provenance": "Restored from the rollback photographic pool.",
+    "disposition": "Owner permission required before publication.",
+    "chronology": "Packing context only.",
+    "focal": "50% 67%"
   }
 ]

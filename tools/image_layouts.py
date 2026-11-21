@@ -18,13 +18,17 @@ class Images:
         priority = 'loading="eager" fetchpriority="high"' if eager else 'loading="lazy" decoding="async"'
         alt = record['alt'] if alt is None else alt
         return (f'<img src="{self.assets[src]}" srcset="{srcset}" sizes="{sizes}" width="{w}" height="{h}" '
-                f'alt="{E(alt)}" data-subject="{subject}" data-purpose="{role}" data-caption="{E(caption or record["caption"])}" {priority}>')
+                f'style="object-position:{E(record["focal"])}" alt="{E(alt)}" data-subject="{subject}" data-purpose="{role}" data-caption="{E(caption or record["caption"])}" {priority}>')
 
     def figure(self, subject, role='evidence', caption=None, alt=None):
-        self.number += 1
         caption = caption or self.registry[subject]['caption']
         img = self.image(subject,role,alt,role=='hero',caption)
-        return f'<figure class="{role}-figure">{img}<figcaption><span class="fig-label">FIG. {self.number:02d}</span> {E(caption)}</figcaption></figure>'
+        label = ''
+        if role in {'case', 'evidence'}:
+            self.number += 1
+            label = f'<span class="fig-label">FIG. {self.number:02d}</span> '
+        natural = ' natural' if self.registry[subject].get('natural_hero') else ''
+        return f'<figure class="{role}-figure{natural}">{img}<figcaption>{label}{E(caption)}</figcaption></figure>'
 
     def home_picture(self, subject):
         sources = []
