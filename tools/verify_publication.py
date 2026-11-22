@@ -88,7 +88,9 @@ def case_model(records, subjects):
 
 def surfaces(root, cases):
     draft=copy.deepcopy(cases[0])
-    draft.update(slug='unpublished-fixture-61b',title='Unique private title 61b')
+    draft.update(slug='unpublished-fixture-61b',title='Unique private title 61b',state='draft',limits='Private scope 61b')
+    for stage in draft['stages']:
+        stage['text']='Unique private '+stage['name']+' 61b.'
     draft['stages'][0]['text']='Private stage narrative 61b.'
     records=[*cases,draft]
     write(root/'content/cases.json',records)
@@ -163,6 +165,61 @@ def notice_faults(root):
             fault('A1-02', 'rotax-turbocharger-notice.html', value, 'Wrong', diagnostic)
 
 
+def owner_faults(root):
+    from PIL import ImageDraw, ImageFont
+    from proof_privacy import check_ocr
+    from rotax_notices import validate, check_surfaces, IRMT
+    notices = [r for r in read(root/'content/updates.json') if r['type']=='notice']
+    day = date(2026,11,21)
+    validate(notices, day)
+
+    # Mutate one independently valid record at a time.
+    for slug, changes, expected in [
+        ('rotax-915-tbo-extension', {'prominence':'archive'}, 'R1 requires two distinct'),
+        ('rotax-915-tbo-extension', {'subject':notices[1]['subject']}, 'R1 requires two distinct'),
+        ('rotax-gearbox-notice', {'prominence':'archive'}, 'R2 active AD'),
+        ('rotax-turbocharger-notice', {'severity':'routine'}, 'R3 inconsistent'),
+        ('rotax-915-tbo-extension', {'next_review':'2026-11-20'}, 'R4 source verification'),
+        ('rotax-915-tbo-extension', {'supersedes':'FAA AD 2026-22-03'}, 'R7 unrelated'),
+        ('rotax-915-tbo-extension', {'supersedes':'ASB-2026-002R01'}, 'R7 unrelated'),
+    ]:
+        fixture = [dict(r, **changes) if r['slug']==slug else r for r in notices]
+        rejected('Owner notice '+slug+' '+str(changes), lambda:validate(fixture,day), expected)
+    fixture = copy.deepcopy(notices)
+    fixture[1]['documents'][0]['url']='https://rotax.my.salesforce-sites.com.invalid/bulletin'
+    rejected('R5 misleading bulletin hostname',lambda:validate(fixture,day),'R5 unofficial')
+
+    for build_name in ('dist','dist-preview'):
+        out=root/build_name
+        # Run against real markup, including the optional card and retained active AD.
+        for name,slug,needle,replacement,error in [
+            ('Trust link','index',IRMT,'/about-credentials','Trust strip needs'),
+            ('FAA link','services','</main>','<a href="https://www.faa.gov/">Record</a></main>','FAA website href'),
+            ('Placeholder','updates','</main>','[OWNER FIXTURE]</main>','Owner placeholder'),
+            ('Featured order','index','data-featured="turbocharger valve housing"','data-featured="915 time between overhaul"','R1 featured order'),
+            ('Active safety item','index','href="/rotax-gearbox-notice"','href="/owner-notices"','R3 safety notice missing'),
+            ('Unconditional assurance','rotax-915-tbo-extension','</main>','<p>Your engine is eligible.</p></main>','R6 unconditional'),
+        ]:
+            path=out/(slug+'.html')
+            original=path.read_text()
+            assert needle in original
+            path.write_text(original.replace(needle,replacement))
+            try:
+                rejected(name+' '+build_name,lambda:check_surfaces(out,notices),error)
+            finally:
+                path.write_text(original)
+
+    doc=root/'assets-src/images/proof/eprops-install-checklist-preview-1200.webp'
+    for prefix,number,expected in [('N','321','Registration pattern'),('TLUSA','123','Airframe serial')]:
+        # Real pixels, synthetic identifiers only. Do not retain the injected image or OCR transcript.
+        with Image.open(doc) as source:
+            fixture=source.convert('RGB')
+        draw=ImageDraw.Draw(fixture)
+        draw.rectangle((0,0,750,120),fill='white')
+        draw.text((20,12),prefix+number,font=ImageFont.truetype('DejaVuSans.ttf',56),fill='black')
+        rejected('W2 injected '+expected,lambda:check_ocr(fixture),expected)
+
+
 def main():
     os.environ.update(CLOUDFLARE_CF_FETCH_ENABLED='false',WRANGLER_SEND_METRICS='false')
     with tempfile.TemporaryDirectory(prefix='v103-publication-') as tmp:
@@ -177,8 +234,11 @@ def main():
         original=source.read_text()
         source.write_text(original.replace("'work':'engine-cage-weld-repair-detail-800'",
                                            "'work':'tl-ultralight-designer-correspondence'"))
+        # Withhold the now-authorized case in this fixture to exercise the original draft boundary.
+        write(root/'content/cases.json',[dict(r,state='draft') if r['slug']=='sting-mount' else r for r in records])
         build(root,item='X-07 social card',error='Ineligible presentation subject: tl-ultralight-designer-correspondence')
         source.write_text(original)
+        write(root/'content/cases.json',records)
         pool=root/'assets-src/images/proof'
         loose=pool/'unregistered.webp'
         Image.new('RGB',(24,24)).save(loose)
@@ -190,8 +250,14 @@ def main():
         build(root,item='X-08 ICC',error='Raster metadata in '+known.name)
         known.write_bytes(original)
         notice_faults(root)
+        owner_faults(root)
         edit_flags(root)
         surfaces(root,records)
+    from proof_privacy import check_ocr
+    from redact_proof import PROOF
+    for subject in PROOF:
+        with Image.open(ROOT/'assets-src/images/proof'/(subject+'.webp')) as proof:
+            assert check_ocr(proof)>0, subject
     for value in ['/our-wrok','/,/our-wrok']:
         result=subprocess.run(['node','tools/performance.mjs','dist','--after-only'],cwd=ROOT,
             env={**os.environ,'LCA_PERF_ROUTES':value},capture_output=True,text=True)

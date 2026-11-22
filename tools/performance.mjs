@@ -73,7 +73,7 @@ try {
 } finally {
   before?.stop();
   after.stop();
-  const name = paired ? 'corrections-2/performance' : process.env.LCA_PERF_ROUTES ? 'affected-performance' : only ? 'artifact-performance' : 'performance';
+  const name = paired ? (process.env.LCA_PERF_RECEIPT || 'corrections-2/performance') : process.env.LCA_PERF_ROUTES ? 'affected-performance' : only ? 'artifact-performance' : 'performance';
   save('evidence/redesign/' + name + '.json', {method:'Cold local lab navigation per route and device. Simulated Lighthouse mobile and desktop profiles. Decimal bytes.',root,runs:results});
 }
 const expected = selected.length * (paired ? 10 : 2 * (before ? 2 : 1));
