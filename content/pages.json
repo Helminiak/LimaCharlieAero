@@ -113,8 +113,8 @@
       },
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
-        "alt": "Logbook covers with private entry details masked",
-        "caption": "Logbook and work-entry context for a prebuy, with private details masked.",
+        "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
+        "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       }
     ],
@@ -404,8 +404,8 @@
       {
         "proof_id": "lca-logbook-work-sticker-proof-800",
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
-        "alt": "Logbook covers with private entry details masked",
-        "caption": "The logbook photograph masks private entry details."
+        "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
+        "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry."
       }
     ],
     "hero_id": "aircraft-side-canopy-joe-working-800",
@@ -633,20 +633,20 @@
       },
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
-        "alt": "Logbook covers with private entry details masked",
-        "caption": "Logbooks with private entry details masked.",
+        "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
+        "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
         "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
-        "alt": "Redacted result rows from a magnetic-particle inspection report",
-        "caption": "The redacted report excerpt lists the inspected regions and their recorded findings.",
+        "alt": "Magnetic-particle report with four accepted engine-mount inspection areas",
+        "caption": "The outside inspection report marks all four weld and heat-affected areas accepted on October 28, 2025.",
         "proof_id": "ndt-magnetic-particle-report"
       },
       {
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
-        "alt": "Redacted engineering packet pages arranged for review",
-        "caption": "The redacted packet brings the configuration and installation records together.",
+        "alt": "E-PROPS Sting Sport engineering packet and compatibility statement",
+        "caption": "The packet identifies the DUR-3-175-C4-T configuration, tightening torques and engineering compatibility reference EP-2026-398.",
         "proof_id": "eprops-engineering-packet-fanout-1200-clean"
       }
     ],
@@ -1877,8 +1877,8 @@
       {
         "proof_id": "garmin-g5-box-unit",
         "src": "assets/images/proof/garmin-g5-box-unit.webp",
-        "alt": "Garmin G5 unit beside its packaging",
-        "caption": "The Garmin G5 unit is shown with its equipment packaging."
+        "alt": "Garmin G5 with its labeled equipment box",
+        "caption": "The part number and description on the box identify the G5 beside it."
       }
     ],
     "hero_id": "garmin-g5-installed-panel-wide",
@@ -2768,14 +2768,14 @@
     "proof": [
       {
         "src": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
-        "alt": "Redacted engineering packet pages arranged for review",
-        "caption": "This redacted packet brings configuration, installation details and documentation together for review.",
+        "alt": "E-PROPS Sting Sport engineering packet and compatibility statement",
+        "caption": "The packet identifies the DUR-3-175-C4-T configuration, tightening torques and engineering compatibility reference EP-2026-398.",
         "proof_id": "eprops-engineering-packet-fanout-1200-clean"
       },
       {
         "src": "assets/images/proof/eprops-install-checklist-preview-1200.webp",
-        "alt": "Installation checklist document overview",
-        "caption": "The redacted checklist organizes identity, preparation, installation, checks and records.",
+        "alt": "Sting Sport installation and verification checklist",
+        "caption": "The checklist records torque, pitch, ground-run, flight RPM and vibration acceptance criteria.",
         "proof_id": "eprops-install-checklist-preview-1200"
       },
       {
@@ -3167,15 +3167,15 @@
     "proof": [
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
-        "alt": "Logbook covers with private entry details masked",
-        "caption": "Logbook and work-entry context, with private record details masked.",
+        "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
+        "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
         "proof_id": "ndt-magnetic-particle-report",
         "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
-        "alt": "Redacted result rows from a magnetic-particle inspection report",
-        "caption": "The redacted report excerpt lists the inspected regions and their recorded findings."
+        "alt": "Magnetic-particle report with four accepted engine-mount inspection areas",
+        "caption": "The outside inspection report marks all four weld and heat-affected areas accepted on October 28, 2025."
       }
     ],
     "hero_id": "aircraft-open-cowling-under-canopy-800",

@@ -8,10 +8,11 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "45% 35%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "dynavibe-good-0-04-ips-800",
@@ -22,10 +23,11 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "dynavibe-kit-secured-seat-800",
@@ -36,9 +38,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "gearbox-pocket-wear-1-800",
@@ -49,9 +52,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "gearbox-pocket-wear-2-800",
@@ -62,9 +66,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "gearbox-pocket-wear-3-800",
@@ -75,9 +80,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-engine-on-hoist-800",
@@ -88,9 +94,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "engine-cage-crack-closeup-before-repair-800",
@@ -101,9 +108,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "42% 42%"
+    "focal": "42% 42%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "engine-cage-weld-repair-detail-800",
@@ -114,9 +122,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "44% 36%"
+    "focal": "44% 36%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "engine-cage-weld-joint-detail-800",
@@ -127,9 +136,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "45% 34%"
+    "focal": "45% 34%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "engine-cage-painted-finished-800",
@@ -140,9 +150,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "48% 48%"
+    "focal": "48% 48%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "engine-cage-ndt-facility-800",
@@ -153,9 +164,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "fuel-tank-borescope-dirty-800",
@@ -166,10 +178,11 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "fuel-tank-borescope-clean-800",
@@ -180,9 +193,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-fuel-pump-in-out-card-800",
@@ -193,9 +207,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "differential-pressure-tester-clean-800",
@@ -206,9 +221,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "carbmate-carb-sync-kit-card-800",
@@ -219,10 +235,11 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "xps-oil-rotax-filter-service-800",
@@ -233,9 +250,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-installed-hose-overview-card-800",
@@ -246,9 +264,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-rubber-hose-routing-overview-1000",
@@ -259,9 +278,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "coolant-residue-cylinder-head-hose-leak-800",
@@ -272,9 +292,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 43%"
+    "focal": "50% 43%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "coolant-hose-leak-source-tracing-800",
@@ -285,9 +306,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "garmin-g5-installed-panel-close-800",
@@ -298,9 +320,10 @@
     "redaction": "Registration placard masked before derivative generation.",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "dsub-connector-wiring-close-800",
@@ -311,9 +334,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "electrical-connector-close-800",
@@ -324,9 +348,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "electrical-connector-wide-800",
@@ -337,9 +362,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "voltage-regulator-connector-frayed-800",
@@ -350,10 +376,11 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "soft-start-connector-annotated-800",
@@ -364,10 +391,11 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "avionics-tools-coax-workbench-800",
@@ -378,9 +406,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "icom-radio-coax-adapters-800",
@@ -391,9 +420,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "top-end-parts-organized-shelf-800",
@@ -404,9 +434,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "aircraft-open-cowling-under-canopy-800",
@@ -417,9 +448,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "52% 43%"
+    "focal": "52% 43%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "aircraft-side-canopy-joe-working-800",
@@ -430,23 +462,25 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "52% 52%"
+    "focal": "52% 52%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "lca-logbook-work-sticker-proof-800",
     "source": "assets/images/lca-proof/webp_800/lca-logbook-work-sticker-proof-800.webp",
     "asset": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
-    "alt": "Logbook covers with private entry details masked",
-    "caption": "The logbook photograph masks private entry details.",
-    "redaction": "Entire open record and work-label region masked; covers retained",
+    "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
+    "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry.",
+    "redaction": "Sticker registration and signature and three endorsement tails masked.",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-aircraft-closeup-sky-ranger-1200",
@@ -457,9 +491,10 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 55%"
+    "focal": "50% 55%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-blade-damage-closeup-800",
@@ -470,39 +505,42 @@
     "redaction": "None identified in inspected image",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-engineering-packet-fanout-1200-clean",
     "document": true,
     "source": "assets/images/eprops/proof/eprops-engineering-packet-fanout-1200-clean.webp",
     "asset": "assets/images/proof/eprops-engineering-packet-fanout-1200-clean.webp",
-    "alt": "Redacted engineering packet pages arranged for review",
-    "caption": "The redacted packet brings the configuration and installation records together.",
-    "redaction": "Masked identity, issuer, signature, contact block, aircraft type, configuration and approval references, including repeated text on packet sheets.",
+    "alt": "E-PROPS Sting Sport engineering packet and compatibility statement",
+    "caption": "The packet identifies the DUR-3-175-C4-T configuration, tightening torques and engineering compatibility reference EP-2026-398.",
+    "redaction": "Issuer identity and email, signature, stamp and printed signatory masked.",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-install-checklist-preview-1200",
     "document": true,
     "source": "assets/images/eprops/proof/eprops-install-checklist-preview-1200.webp",
     "asset": "assets/images/proof/eprops-install-checklist-preview-1200.webp",
-    "alt": "Installation checklist document overview",
-    "caption": "The redacted checklist groups preparation, installation and verification fields.",
-    "redaction": "Masked aircraft type, configuration, registration and serial identifiers, installer, signature, settings and both ground and flight RPM targets.",
+    "alt": "Sting Sport installation and verification checklist",
+    "caption": "The checklist records torque, pitch, ground-run, flight RPM and vibration acceptance criteria.",
+    "redaction": "Airframe registration and serial, blade and hub serial values masked.",
     "permission": "CLEARED",
     "provenance": "RC3 subject; owner rights attestation in PR #2 comment 6019001980.",
-    "disposition": "Owner attestation covers rights; retain documented privacy treatment.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "No causal or before/after relationship asserted",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-support-hero-original-photo",
@@ -511,11 +549,12 @@
     "alt": "ROTAX engine photographed against a dark background",
     "caption": "The ROTAX engine assembly is shown with its surrounding connections.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-installed-hoses-overview",
@@ -524,11 +563,12 @@
     "alt": "Hoses routed around an installed ROTAX engine",
     "caption": "Several hose routes are visible around the installed ROTAX engine.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "garmin-g5-installed-panel-wide",
@@ -537,11 +577,12 @@
     "alt": "Garmin G5 and surrounding panel instruments",
     "caption": "The wider view shows the Garmin G5 among the aircraft’s panel instruments.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "52% 50%"
+    "focal": "52% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "proof-owner-joe-airfield",
@@ -550,11 +591,12 @@
     "alt": "Joseph Helminiak beside an aircraft at the airfield",
     "caption": "Lima Charlie Aero founder Joseph Helminiak stands beside an aircraft.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "58% 48%"
+    "focal": "58% 48%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "skyreach-bushcat-tailwheel-prebuy",
@@ -563,11 +605,12 @@
     "alt": "SkyReach BushCat tailwheel aircraft on the ramp",
     "caption": "The SkyReach BushCat’s tailwheel configuration is visible on the ramp.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 48%"
+    "focal": "50% 48%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "bing64-carburetor-rebuild-float-check",
@@ -576,25 +619,27 @@
     "alt": "Bing carburetor parts and float-check reference",
     "caption": "The Bing 64 reference shows carburetor components and a float check.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "garmin-g5-box-unit",
     "source": "assets/images/lca-proof/webp_1200/garmin-g5-box-unit-1200.webp",
     "asset": "assets/images/proof/garmin-g5-box-unit.webp",
-    "alt": "Garmin G5 unit beside its packaging",
-    "caption": "The Garmin G5 unit is shown with its equipment packaging.",
-    "redaction": "Serial field obscured. Purchasing label and barcodes visible on the box.",
-    "permission": "REVIEW REQUIRED",
+    "alt": "Garmin G5 with its labeled equipment box",
+    "caption": "The part number and description on the box identify the G5 beside it.",
+    "redaction": "Purchasing fields and both purchasing-label barcodes masked. The serial field remains obscured.",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Owner review of purchasing label, barcodes and restored-subject rights required before publication.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "exhaust-marking-hydra-detail",
@@ -603,26 +648,28 @@
     "alt": "Markings on an installed exhaust component",
     "caption": "The close view records the markings on the installed exhaust component.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "ndt-magnetic-particle-report",
     "document": true,
     "source": "assets/images/lca-proof/v28/ndt-magnetic-particle-report-1200.webp",
     "asset": "assets/images/proof/ndt-magnetic-particle-report.webp",
-    "alt": "Redacted result rows from a magnetic-particle inspection report",
-    "caption": "The redacted report excerpt lists the inspected regions and their recorded findings.",
-    "redaction": "Results table excerpt only; identifiers excluded.",
-    "permission": "REVIEW REQUIRED",
+    "alt": "Magnetic-particle report with four accepted engine-mount inspection areas",
+    "caption": "The outside inspection report marks all four weld and heat-affected areas accepted on October 28, 2025.",
+    "redaction": "Inspector signature and printed name, airframe and equipment serial values masked.",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "tl-ultralight-designer-correspondence",
@@ -630,15 +677,16 @@
     "case_only": true,
     "source": "assets/images/lca-proof/v28/tl-ultralight-designer-correspondence-1200.webp",
     "asset": "assets/images/proof/tl-ultralight-designer-correspondence.webp",
-    "alt": "Designer’s instruction to retain the inspection protocol",
-    "caption": "The redacted designer message requests that the inspection protocol stay with the aircraft records.",
-    "redaction": "Message body only; names, addresses, greeting and signature excluded.",
-    "permission": "REVIEW REQUIRED",
+    "alt": "Aircraft designer’s dated confirmation of the mount repair",
+    "caption": "On December 8, 2025 the designer confirmed the weldment and requested the inspection protocol for the aircraft records.",
+    "redaction": "Sender name and avatar, signature name, email and phone masked.",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
     "focal": "50% 50%",
-    "natural_hero": true
+    "natural_hero": true,
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-durandal",
@@ -647,11 +695,12 @@
     "alt": "Three-blade DURANDAL propeller product view",
     "caption": "The DURANDAL reference shows its three-blade configuration.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-glorieuse-912",
@@ -660,11 +709,12 @@
     "alt": "GLORIEUSE 912 propeller product view",
     "caption": "The product view identifies the GLORIEUSE 912 family.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-glorieuse-916",
@@ -673,11 +723,12 @@
     "alt": "GLORIEUSE 916 propeller product view",
     "caption": "The product view identifies the GLORIEUSE 916 family.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-airbox-focus",
@@ -686,11 +737,12 @@
     "alt": "ROTAX airbox and intake connections",
     "caption": "The airbox sits above the intake connections in the engine compartment.",
     "redaction": "Visually inspected; metadata stripped.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Owner-supplied rollback photo pool, commit 3d48ea6.",
-    "disposition": "Local candidate; confirm restored-subject rights before release.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "rotax-engine-installed-green-covers",
@@ -701,9 +753,10 @@
     "redaction": "Reviewed RC3 image.",
     "permission": "CLEARED",
     "provenance": "RC3 home image; owner attestation, PR #2 comment 6019001980.",
-    "disposition": "Retain installation context.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Context only.",
-    "focal": "50% 50%"
+    "focal": "50% 50%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   },
   {
     "id": "eprops-blades-box-documents",
@@ -712,10 +765,11 @@
     "alt": "Three sleeved E-PROPS blades beside a shipping carton and customs pouch",
     "caption": "Blade sleeves, shipping documents and the carton are kept together for the return.",
     "redaction": "No registration, address, person or signature visible in the inspected source.",
-    "permission": "REVIEW REQUIRED",
+    "permission": "CLEARED",
     "provenance": "Restored from the rollback photographic pool.",
-    "disposition": "Owner permission required before publication.",
+    "disposition": "Owner attestation covers publication rights with the documented privacy treatment.",
     "chronology": "Packing context only.",
-    "focal": "50% 67%"
+    "focal": "50% 67%",
+    "permission_source": "Owner rights attestation, PR #2 comments 6019001980 and 6019369438."
   }
 ]

@@ -5,9 +5,9 @@ import json
 import struct
 
 from lxml import html
-from PIL import Image
+from PIL import Image, ImageColor, ImageChops
 
-from redact_proof import MASKS
+from redact_proof import PROOF, coverage
 
 ROOT = Path(__file__).resolve().parents[1]
 AUTHORITY = (ROOT / 'docs/redesign/REVIEW_RESOLUTION.md').read_text()
@@ -47,9 +47,13 @@ def check_copy(root):
 
 
 def check_documents(root):
-    doc = html.parse(root / 'e-props-dealer-support.html')
-    for subject, (size, masks) in MASKS.items():
-        href, = doc.xpath('//a[img[@data-subject=$subject]]/@href', subject=subject)
+    assets = json.loads((ROOT/'.build-evidence'/root.name/'asset-map.json').read_text())
+    for subject, (_, size, color, masks) in PROOF.items():
+        href = assets['assets/images/proof/'+subject+'.webp']
+        if subject.startswith(('eprops-', 'ndt-', 'tl-ultralight-')):
+            page = 'e-props-dealer-support' if subject.startswith('eprops-') else 'our-work'
+            doc = html.parse(root / (page+'.html'))
+            assert href in doc.xpath('//a[img[@data-subject=$subject]]/@href', subject=subject)
         file = root / href.lstrip('/')
         data = file.read_bytes()
         assert data[:4] == b'RIFF' and data[8:16] == b'WEBPVP8L'
@@ -58,9 +62,8 @@ def check_documents(root):
         assert len(data) == 20 + length + length % 2
         with Image.open(file) as image:
             assert image.size == size and image.n_frames == 1 and image.mode == 'RGB'
-            for left, top, right, bottom in masks:
-                crop = image.crop((left, top, right + 1, bottom + 1))
-                assert crop.getcolors(1) == [(crop.width * crop.height, (228, 233, 237))], subject
+            difference = ImageChops.difference(image, Image.new('RGB',size,ImageColor.getrgb(color)))
+            assert not Image.composite(difference, Image.new('RGB',size),coverage(size,masks)).getbbox(), subject
         yield root.name + '/' + subject, {
             'linked_file': href, 'sha256': hashlib.sha256(data).hexdigest(),
             'native_size': size, 'uniform_masks': len(masks)}
@@ -73,4 +76,4 @@ if __name__ == '__main__':
         receipt.update(check_documents(ROOT / build))
     dest = ROOT / 'evidence/redesign/privacy/document-mask-checks.json'
     dest.write_text(json.dumps(receipt, indent=2) + '\n')
-    print('Binding copy, four full-size links and all 48 native mask rectangles verified.')
+    print('Binding copy, full-size document links and all native masks verified.')
