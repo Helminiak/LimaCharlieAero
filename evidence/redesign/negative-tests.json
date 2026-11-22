@@ -37,6 +37,42 @@
       "observed_failure": "Case status conflicts with stages: synthetic-confirmed"
     },
     {
+      "test": "CS-3 Action marked done",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py",
+      "expected_failure": "Published stage marked done contains 'Criteria defined': sting-propeller / Action",
+      "observed_failure": "ValueError: Published stage marked done contains 'Criteria defined': sting-propeller / Action",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "CS-3 Action marked done",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py --preview",
+      "expected_failure": "Published stage marked done contains 'Criteria defined': sting-propeller / Action",
+      "observed_failure": "ValueError: Published stage marked done contains 'Criteria defined': sting-propeller / Action",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "CS-3 Verification marked done",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py",
+      "expected_failure": "Published stage marked done contains 'Criteria defined': sting-propeller / Verification",
+      "observed_failure": "ValueError: Published stage marked done contains 'Criteria defined': sting-propeller / Verification",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
+      "test": "CS-3 Verification marked done",
+      "command": "python3 tools/verify_publication.py",
+      "fixture_command": "python3 tools/build.py --preview",
+      "expected_failure": "Published stage marked done contains 'Criteria defined': sting-propeller / Verification",
+      "observed_failure": "ValueError: Published stage marked done contains 'Criteria defined': sting-propeller / Verification",
+      "injected_result": "REJECTED",
+      "exit": 1
+    },
+    {
       "test": "X-07 social card",
       "command": "python3 tools/verify_publication.py",
       "fixture_command": "python3 tools/build.py",

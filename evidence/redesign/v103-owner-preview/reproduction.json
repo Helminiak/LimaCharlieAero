@@ -1,24 +1,30 @@
 {
   "public": {
     "files": 328,
-    "bytes": 10410664,
-    "sha256_of_manifest": "43fc4cc8b384b0a0ed3ada7284597fd3ad2bf1cdd7a248a4b474fdbd062b57de",
+    "bytes": 10410726,
+    "sha256_of_manifest": "14a5ef7ca3ac698a7e3c110d687fd3d10923c0cebbe9d5a75baad1b04d25760e",
     "second_build_hash_match": true,
     "routes": 41,
-    "capture_measurements": 60,
-    "capture_images": 60,
-    "axe_scans": 20,
-    "desktop_our_work_height_px": 7964
+    "capture_measurements": 4,
+    "capture_images": 4,
+    "axe_scans": 4,
+    "desktop_our_work_height_px": 8020,
+    "desktop_our_work_height_limit_px": 8000,
+    "desktop_our_work_height_gate": "FAIL",
+    "text_files_scanned_for_private_identifiers": 52
   },
   "preview": {
     "files": 328,
-    "bytes": 10406105,
-    "sha256_of_manifest": "b94f50119b14ab7103b691fe5935707de1bed9a32c040045670e5e29b8b5ed41",
+    "bytes": 10406167,
+    "sha256_of_manifest": "c265ac8bc8aa9c12106c51891723a651ce3f6c67a6ddbb75705e68eb16aaf905",
     "second_build_hash_match": true,
     "routes": 41,
-    "capture_measurements": 60,
-    "capture_images": 60,
-    "axe_scans": 20,
-    "desktop_our_work_height_px": 7964
+    "capture_measurements": 4,
+    "capture_images": 4,
+    "axe_scans": 4,
+    "desktop_our_work_height_px": 8020,
+    "desktop_our_work_height_limit_px": 8000,
+    "desktop_our_work_height_gate": "FAIL",
+    "text_files_scanned_for_private_identifiers": 52
   }
 }

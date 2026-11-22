@@ -115,3 +115,11 @@ The dispositions and owner gates in REVIEW_RESOLUTION.md govern this candidate.
 Publishing the six expanded cases and restoring the full documents increased desktop Our Work to 9,812 px against the existing 8,000 px maximum. The route-specific two-column stage layout and bounded inline previews brought the 1,440 px view to 7,964 px. All seven stages remain present per case and both full-size documents remain linked. The ten-route capture harness now also enforces this desktop limit.
 
 The 20 interleaved mobile observations put both routes within the 1,800 ms median limit and 5% regression allowance. Home moved from 1,311.2 to 1,313.6 ms (+0.18%), and E-PROPS from 1,451.7 to 1,452.6 ms (+0.07%). The later Our Work-only change left the measured route bytes and their dependencies identical. [Measurements](../../evidence/redesign/owner-updates-3/performance.json)
+
+## Independent review corrections · 2026-11-21
+
+| Finding | Resolution and verification |
+|---|---|
+| CS-3 completion status | The Sting propeller Action and Verification stages now identify the criteria as defined and the installation and results as unreported. Both stages are pending in the progress rail and expanded record. The other five stages, figures and status line retain their reviewed values. Both build modes reject a published done stage containing “Criteria defined”. |
+| iRMT link attribution | The home trust link now has the accessible name “ROTAX iRMT listing (opens rotaxirmt.com)”. Chromium resolved that exact link name in both builds at 390 and 1,440 px. Reinstating the historical label in memory restored the reviewed home-page hash. |
+| Desktop Our Work height · open | With the required stage corrections, the 1,440 px capture measured 8,020 px in both builds against the 8,000 px limit (reviewed candidate 7,964 px). The guard returned an error after saving all requested captures. The review scope preserves the approved layout. The eight targeted axe scans recorded zero violations and every capture had zero horizontal overflow. |

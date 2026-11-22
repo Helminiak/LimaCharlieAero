@@ -30,7 +30,6 @@ try {
    const row={route,width,...metrics};
    rows.push(row);
    assert.equal(metrics.overflow,0, JSON.stringify(row));
-   if(route==='/our-work' && width===1440) assert(metrics.height<=8000,'Desktop Our Work exceeds 8,000 px');
    if(route==='/'){
     assert.equal(await page.locator('.trust').getByRole('link',{name:'ROTAX iRMT listing (opens rotaxirmt.com)',exact:true}).count(),1);
     const link=await page.locator('.trust a').boundingBox();
@@ -49,4 +48,6 @@ try {
 } finally {
  try {await browser?.close();} finally {server.stop();save(path.join(out,'measurements.json'),rows);}
 }
+const desktopWork = rows.find(row=>row.route==='/our-work' && row.width===1440);
+assert(desktopWork.height<=8000,`Desktop Our Work exceeds 8,000 px: ${desktopWork.height}`);
 console.log(root,rows.length,'captures');

@@ -1,7 +1,7 @@
 {
   "archive": "/home/joe/work/lca-redesign/codex-impl/releases/LCA_SITE_v103_owner_preview_SOURCE_AND_VERIFICATION.zip",
-  "sha256": "2239c1c7c77101ab1084a802cc060d23c7e48294315066c12f96b6e944a370c5",
-  "files": 1178,
+  "sha256": "9b24943a214c8302271fa3c136fdb49b505f66f03353d22fff6718702006be36",
+  "files": 1189,
   "extracted_payload_hashes": "PASS",
-  "manifest_files": 1177
+  "manifest_files": 1188
 }
