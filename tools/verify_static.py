@@ -1,6 +1,7 @@
 from pathlib import Path
 from lxml import html
 from publication import publication_errors, RASTERS, require_clean_raster
+from cases import select_cases
 from urllib.parse import urlsplit,unquote
 import json,re,hashlib,posixpath,sys
 R=Path(__file__).resolve().parents[1];root=R/(sys.argv[1] if len(sys.argv)>1 else 'dist');E=R/'.build-evidence'/root.name;E.mkdir(exist_ok=True)
@@ -25,6 +26,10 @@ registry=json.loads((R/'content/proof-assets.json').read_text())
 cases=json.loads((R/'content/cases.json').read_text())
 registration=re.compile(r'(?<![A-Za-z0-9])N[0-9]{1,5}[A-Z]{0,2}(?![A-Za-z0-9])',re.I)
 preview=root.name=='dist-preview'
+try:
+ select_cases(cases,{entry['id'] for entry in registry},preview)
+except ValueError as error:
+ ck(False,str(error))
 zero_public_cases = not preview and not any(c['state']=='published' for c in cases)
 indexed_files = expected - {'404.html','thank-you.html','card.html','about-credentials.html'}
 domain=json.loads((R/'content/site.json').read_text())['domain']

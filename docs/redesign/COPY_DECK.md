@@ -77,8 +77,8 @@ Propeller-manufacturer engineering complete · installation and verification con
 - **Configuration · done** TL-2000 Sting Sport, ROTAX 912 (80 hp), 2.27 gearbox and 175 cm DUR-3-175-C4-T propeller.
 - **Evidence · done** E-PROPS engineering package EP-2026-398 includes the configuration data and an Engineering Compatibility Statement dated 31 March 2026.
 - **Evaluation · done** The review covered mass, inertia, operating limits, interfaces and vibration and torsional background. Airframe-manufacturer authorization through the LOA process is a separate gate.
-- **Action · done** Criteria defined. The installation checklist calls for component identification, pre-installation inspection, torque of 24 N·m at the hub flange, 11 N·m at the hub clamp and 5 N·m at the spinner plate. Pitch is 23° with a blade-to-blade tolerance of ≤0.3°.
-- **Verification · done** Criteria defined. The checklist specifies a ground run at 5,000–5,800 rpm, dynamic balance acceptance at ≤0.10 IPS with a ≤0.07 IPS target, and wide-open-throttle flight RPM of 5,500 ± 50. It also calls for post-installation re-torque and pitch checks.
+- **Action · pending** Criteria defined; installation not yet reported. The installation checklist calls for component identification, pre-installation inspection, torque of 24 N·m at the hub flange, 11 N·m at the hub clamp and 5 N·m at the spinner plate. Pitch is 23° with a blade-to-blade tolerance of ≤0.3°.
+- **Verification · pending** Criteria defined; results not yet reported. The checklist specifies a ground run at 5,000–5,800 rpm, dynamic balance acceptance at ≤0.10 IPS with a ≤0.07 IPS target, and wide-open-throttle flight RPM of 5,500 ± 50. It also calls for post-installation re-torque and pitch checks.
 - **Documentation · done** The checklist calls for weight and balance, equipment-list and logbook entries alongside the installation record.
 
 ### CS-4 · Vashon Ranger R7 / Continental O-200-D: manufacturer-coordinated fuel evaluation

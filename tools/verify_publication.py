@@ -40,7 +40,7 @@ def build(root, *args, error=None, item=None):
     if error:
         assert result.returncode != 0 and error in result.stderr, result.stderr
         checks.append({'test': item, 'command': 'python3 tools/verify_publication.py',
-                       'fixture_command': 'python3 tools/build.py', 'expected_failure': error,
+                       'fixture_command': ' '.join(['python3 tools/build.py', *args]), 'expected_failure': error,
                        'observed_failure': result.stderr.strip().splitlines()[-1],
                        'injected_result': 'REJECTED', 'exit': result.returncode})
     else:
@@ -229,6 +229,14 @@ def main():
         registry=read(root/'content/proof-assets.json')
         records=read(root/'content/cases.json')
         case_model(records,{r['id'] for r in registry})
+        for stage_name in ('Action','Verification'):
+            modified=copy.deepcopy(records)
+            sting=next(case for case in modified if case['slug']=='sting-propeller')
+            next(s for s in sting['stages'] if s['name']==stage_name)['status']='done'
+            write(root/'content/cases.json',modified)
+            for args in [(),('--preview',)]:
+                build(root,*args,item='CS-3 '+stage_name+' marked done',error=f"Published stage marked done contains 'Criteria defined': sting-propeller / {stage_name}")
+        write(root/'content/cases.json',records)
         build(root)
         source=root/'tools/build_assets.py'
         original=source.read_text()

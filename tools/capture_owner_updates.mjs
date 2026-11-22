@@ -6,11 +6,12 @@ import AxeBuilder from '@axe-core/playwright';
 import {prepareCapture} from './prepare_capture.mjs';
 import {startServer, save} from './test-server.mjs';
 
-const routes = ['/','/our-work','/e-props-dealer-support','/services','/owner-notices','/rotax-turbocharger-notice',
+const reviewFixes = process.argv.includes('--review-fixes');
+const routes = reviewFixes ? ['/','/our-work'] : ['/','/our-work','/e-props-dealer-support','/services','/owner-notices','/rotax-turbocharger-notice',
  '/rotax-915-tbo-extension','/rotax-gearbox-notice','/support-request?topic=notice','/about-credentials'];
 const root = process.argv[2] || 'dist';
 assert(['dist','dist-preview'].includes(root));
-const out = path.join('evidence/redesign/owner-updates-3',root==='dist'?'public':'preview');
+const out = path.join('evidence/redesign/owner-updates-3',reviewFixes?'review-fixes':'',root==='dist'?'public':'preview');
 fs.mkdirSync(out,{recursive:true});
 const server = await startServer(root,root==='dist'?18081:18082);
 let browser;
@@ -21,7 +22,7 @@ try {
  await context.route('**/*', req=>new URL(req.request().url()).origin===server.url?req.continue():req.abort());
  const page=await context.newPage();
  for(const route of routes){
-  for(const width of [320,375,390,768,1024,1440]){
+  for(const width of reviewFixes ? [390,1440] : [320,375,390,768,1024,1440]){
    await page.setViewportSize({width,height:width<768?844:900});
    await page.goto(server.url+route);
    await prepareCapture(page);
@@ -31,6 +32,7 @@ try {
    assert.equal(metrics.overflow,0, JSON.stringify(row));
    if(route==='/our-work' && width===1440) assert(metrics.height<=8000,'Desktop Our Work exceeds 8,000 px');
    if(route==='/'){
+    assert.equal(await page.locator('.trust').getByRole('link',{name:'ROTAX iRMT listing (opens rotaxirmt.com)',exact:true}).count(),1);
     const link=await page.locator('.trust a').boundingBox();
     assert(link.height>=44 && link.width>=44);
    }

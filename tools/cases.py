@@ -32,11 +32,15 @@ def select_cases(records, subjects, preview):
         for s in case['stages']:
             if not s['text'] or s['status'] not in {'done','pending'} or len(s['evidence']) > 2 or set(s['evidence']) - subjects:
                 raise ValueError('Invalid case stage: ' + slug)
+            if case['state'] == 'published' and s['status'] == 'done' and 'criteria defined' in s['text'].casefold():
+                raise ValueError(f"Published stage marked done contains 'Criteria defined': {slug} / {s['name']}")
         verification = case['stages'][5]['status']
         complete = all(s['status'] == 'done' for s in case['stages'])
-        if case['status'] in {'Documented process', 'Completed · repair inspected and confirmed by the aircraft designer',
-                              'Propeller-manufacturer engineering complete · installation and verification controlled by checklist'}:
+        if case['status'] in {'Documented process', 'Completed · repair inspected and confirmed by the aircraft designer'}:
             consistent = complete
+        elif case['status'] == 'Propeller-manufacturer engineering complete · installation and verification controlled by checklist':
+            pending = {s['name'] for s in case['stages'] if s['status'] == 'pending'}
+            consistent = pending == {'Action', 'Verification'}
         elif 'pending' in case['status'].lower() or case['status'].startswith('Evaluation plan'):
             consistent = verification == 'pending'
         else:

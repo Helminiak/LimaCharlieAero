@@ -59,7 +59,7 @@ def home(p,site,img,actions,cases,notices):
         label = f'<b>{E(title)}</b>{E(detail)}'
         if title == 'ROTAX iRMT':
             label = ('<a href="https://rotaxirmt.com/irmt-place/7534" rel="noopener" '
-                     'aria-label="ROTAX iRMT listing for Lima Charlie Aero (opens rotaxirmt.com)">' + label + '</a>')
+                     'aria-label="ROTAX iRMT listing (opens rotaxirmt.com)">' + label + '</a>')
         trust.append('<li>' + label + '</li>')
     trust = ''.join(trust)
     result+=f'<div class="trust"><ul class="container">{trust}</ul></div>'
