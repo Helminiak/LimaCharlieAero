@@ -4164,13 +4164,13 @@
   "our-work": {
     "title": "Our Work: Light-Sport & Experimental Aircraft Case Studies",
     "heading": "Our Work",
-    "description": "Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.",
+    "description": "Six aircraft cases follow the evidence from the first question through the work, checks and records. Each identifies the decisions and tests still pending.",
     "sections": [],
     "images": [],
     "topic": "unsure",
     "last_modified": "2026-11-21",
-    "intro": "Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.",
-    "limits": "These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft.",
+    "intro": "Six aircraft cases follow the evidence from the first question through the work, checks and records. Each identifies the decisions and tests still pending.",
+    "limits": "Each case follows one aircraft configuration. The records show which checks were completed and which decisions still belong to the owner or manufacturer.",
     "hero_id": "gearbox-pocket-wear-1-800",
     "empty": {
       "title": "Our Work: Evidence from Light-Sport & Experimental Aircraft",

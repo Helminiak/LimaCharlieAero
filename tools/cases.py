@@ -34,7 +34,8 @@ def select_cases(records, subjects, preview):
                 raise ValueError('Invalid case stage: ' + slug)
         verification = case['stages'][5]['status']
         complete = all(s['status'] == 'done' for s in case['stages'])
-        if case['status'] == 'Documented process':
+        if case['status'] in {'Documented process', 'Completed · repair inspected and confirmed by the aircraft designer',
+                              'Propeller-manufacturer engineering complete · installation and verification controlled by checklist'}:
             consistent = complete
         elif 'pending' in case['status'].lower() or case['status'].startswith('Evaluation plan'):
             consistent = verification == 'pending'

@@ -2,11 +2,12 @@
   {
     "slug": "sting-mount",
     "title": "TL-2000 Sting Sport: engine-mount crack, repair or replace",
-    "state": "draft",
-    "status": "Documented process",
+    "state": "published",
+    "status": "Completed · repair inspected and confirmed by the aircraft designer",
     "sources": [
       "PR #2 comment 6019840432",
-      "PR #2 comment 6019938344"
+      "PR #2 comment 6019938344",
+      "Owner directive, 2026-11-21"
     ],
     "stages": [
       {
@@ -18,7 +19,7 @@
       {
         "name": "Configuration",
         "status": "done",
-        "text": "TL-2000 Sting Sport, ROTAX 912. [OWNER CONFIRM: engine model; S-LSA or E-LSA]",
+        "text": "TL-2000 Sting Sport (2005), ROTAX 912.",
         "evidence": []
       },
       {
@@ -32,13 +33,13 @@
       {
         "name": "Evaluation",
         "status": "done",
-        "text": "Repair and replacement were weighed. The repair path was taken to the aircraft designer instead of being decided on the shop floor. [OWNER CONFIRM: what repair instruction or data was used]",
+        "text": "Repair and replacement were weighed. The repair path was taken to the aircraft designer for review.",
         "evidence": []
       },
       {
         "name": "Action",
         "status": "done",
-        "text": "The joint was weld-repaired. [OWNER CONFIRM: who performed the weld, if not LCA]",
+        "text": "The joint was weld-repaired.",
         "evidence": [
           "engine-cage-weld-repair-detail-800",
           "engine-cage-weld-joint-detail-800"
@@ -47,7 +48,7 @@
       {
         "name": "Verification",
         "status": "done",
-        "text": "The repaired mount was inspected by magnetic-particle NDT at an outside testing facility. After the inspection, the aircraft designer confirmed in writing that the weldment is good and asked that the inspection protocol be added to the aircraft's documentation (correspondence shown with names and contact details redacted). Had the inspection not accepted the repair, the path was rework and re-test.",
+        "text": "On 28 October 2025 an outside facility used wet fluorescent magnetic-particle inspection with a yoke to ASTM E1444. All four areas were accepted: the lower right and lower left diagonal weld toes and the bottom and left cross-tube heat-affected zones. On 8 December 2025 the aircraft designer confirmed in writing that the weldment is good and asked that the inspection protocol be added to the aircraft documentation.",
         "evidence": [
           "engine-cage-ndt-facility-800",
           "ndt-magnetic-particle-report"
@@ -63,15 +64,17 @@
         ]
       }
     ],
-    "limits": "Repair data and acceptance are specific to this aircraft and this finding."
+    "limits": "Repair data and acceptance are specific to this aircraft and this finding.",
+    "owner_confirmation": true
   },
   {
     "slug": "sling-propeller",
     "title": "Sling 2 / ROTAX 912 iS: qualifying an E-PROPS propeller with the airframe manufacturer",
-    "state": "draft",
-    "status": "In progress · pending manufacturer review",
+    "state": "published",
+    "status": "Engineering and manufacturer coordination substantially complete · awaiting Sling Aircraft manufacturer testing in South Africa · final approval pending",
     "sources": [
-      "PR #2 comment 6019938344"
+      "PR #2 comment 6019938344",
+      "Owner directive, 2026-11-21"
     ],
     "stages": [
       {
@@ -89,7 +92,7 @@
       {
         "name": "Evidence",
         "status": "done",
-        "text": "An E-PROPS technical package with the propeller's configuration data and supporting type-certificate data. E-PROPS also supplied Sling-specific technical material and offered a propeller for testing.",
+        "text": "E-PROPS supplied technical package EP-2026-712 Rev A, DUR-3-175-C4-T configuration data and supporting EASA TCDS P.512, along with Sling-specific technical material and an offer of a propeller for testing.",
         "evidence": []
       },
       {
@@ -107,24 +110,26 @@
       {
         "name": "Verification",
         "status": "pending",
-        "text": "Expected validation covers configuration, installation, weight and balance, pitch and RPM, vibration, performance, temperatures, fuel flow and a post-test inspection.",
+        "text": "Manufacturer testing by Sling Aircraft in South Africa is the next step; expected validation covers configuration, installation, weight and balance, pitch and RPM, vibration, performance, temperatures, fuel flow and a post-test inspection.",
         "evidence": []
       },
       {
         "name": "Documentation",
         "status": "done",
-        "text": "The submittal and correspondence are kept. [OWNER DECIDE: publish package reference numbers? default no]",
+        "text": "The submittal and correspondence are kept with the job file.",
         "evidence": []
       }
-    ]
+    ],
+    "owner_confirmation": true
   },
   {
     "slug": "sting-propeller",
-    "title": "TL-2000 Sting Sport / ROTAX 912: E-PROPS qualification and installation verification",
-    "state": "draft",
-    "status": "[OWNER CONFIRM: \"Documented process\" or \"Authorization pending\"]",
+    "title": "TL-2000 Sting Sport / ROTAX 912: E-PROPS DURANDAL-3 engineering and installation control",
+    "state": "published",
+    "status": "Propeller-manufacturer engineering complete · installation and verification controlled by checklist",
     "sources": [
-      "PR #2 comment 6019938344"
+      "PR #2 comment 6019938344",
+      "Owner directive, 2026-11-21"
     ],
     "stages": [
       {
@@ -136,48 +141,54 @@
       {
         "name": "Configuration",
         "status": "done",
-        "text": "Exact engine, gearbox and propeller configuration, with serialized components identified.",
+        "text": "TL-2000 Sting Sport, ROTAX 912 (80 hp), 2.27 gearbox and 175 cm DUR-3-175-C4-T propeller.",
         "evidence": []
       },
       {
         "name": "Evidence",
         "status": "done",
-        "text": "E-PROPS application package. Mass, inertia, operating-limit and interface review. Vibration and torsional-compatibility background, including manufacturer test background.",
-        "evidence": []
+        "text": "E-PROPS engineering package EP-2026-398 includes the configuration data and an Engineering Compatibility Statement dated 31 March 2026.",
+        "evidence": [
+          "eprops-engineering-packet-fanout-1200-clean"
+        ]
       },
       {
         "name": "Evaluation",
         "status": "done",
-        "text": "The manufacturer authorization / LOA path was identified as a gate before installation was treated as settled.",
+        "text": "The review covered mass, inertia, operating limits, interfaces and vibration and torsional background. Airframe-manufacturer authorization through the LOA process is a separate gate.",
         "evidence": []
       },
       {
         "name": "Action",
-        "status": "pending",
-        "text": "Installation to the planned criteria: pitch, tracking, torque and clearance checks. WOT/static-RPM target planning.",
-        "evidence": []
+        "status": "done",
+        "text": "Criteria defined. The installation checklist calls for component identification, pre-installation inspection, torque of 24 N·m at the hub flange, 11 N·m at the hub clamp and 5 N·m at the spinner plate. Pitch is 23° with a blade-to-blade tolerance of ≤0.3°.",
+        "evidence": [
+          "eprops-install-checklist-preview-1200"
+        ]
       },
       {
         "name": "Verification",
-        "status": "pending",
-        "text": "Dynamic balancing from recorded IPS, phase and RPM, with corrections toward a final balance target of about 0.07 IPS or less where applicable. Operational verification across the RPM range.",
+        "status": "done",
+        "text": "Criteria defined. The checklist specifies a ground run at 5,000–5,800 rpm, dynamic balance acceptance at ≤0.10 IPS with a ≤0.07 IPS target, and wide-open-throttle flight RPM of 5,500 ± 50. It also calls for post-installation re-torque and pitch checks.",
         "evidence": []
       },
       {
         "name": "Documentation",
-        "status": "pending",
-        "text": "Weight and balance, equipment list and maintenance-record updates.",
+        "status": "done",
+        "text": "The checklist calls for weight and balance, equipment-list and logbook entries alongside the installation record.",
         "evidence": []
       }
-    ]
+    ],
+    "owner_confirmation": true
   },
   {
     "slug": "ranger-fuel",
-    "title": "Vashon Ranger R7: manufacturer-coordinated fuel evaluation",
-    "state": "draft",
-    "status": "Evaluation submitted · manufacturer disposition pending",
+    "title": "Vashon Ranger R7 / Continental O-200-D: manufacturer-coordinated fuel evaluation",
+    "state": "published",
+    "status": "Evaluation submitted September 2026 · manufacturer disposition pending",
     "sources": [
-      "PR #2 comment 6019588967"
+      "PR #2 comment 6019588967",
+      "Owner directive, 2026-11-21"
     ],
     "stages": [
       {
@@ -207,30 +218,32 @@
       {
         "name": "Action",
         "status": "done",
-        "text": "The packet went to the aircraft owner and, at the same time, to the airframe and engine manufacturers' technical staff so they could evaluate the question together.",
+        "text": "The 11-page packet LCA-ENGINEERING-2026-006 Rev A was sent on 6 September 2026 to the aircraft owner and, at the same time, to the airframe manufacturer’s engineering staff and the engine manufacturer’s technical services.",
         "evidence": []
       },
       {
         "name": "Verification",
         "status": "pending",
-        "text": "Manufacturer disposition pending. [OWNER CONFIRM]",
+        "text": "Manufacturer disposition pending. The evaluation's decision gates keep the two hazards separate: passing a detonation test does not establish the installed fuel-delivery and vapor margin.",
         "evidence": []
       },
       {
         "name": "Documentation",
-        "status": "pending",
-        "text": "[OWNER CONFIRM]",
+        "status": "done",
+        "text": "The packet, its data requests to the airframe and engine manufacturers and the follow-up correspondence are kept with the job file.",
         "evidence": []
       }
-    ]
+    ],
+    "owner_confirmation": true
   },
   {
     "slug": "searey-evaluation",
-    "title": "SeaRey: return-to-service systems evaluation",
-    "state": "draft",
-    "status": "Evaluation plan [OWNER CONFIRM: any completed work to report]",
+    "title": "SeaRey (2002): return-to-service systems evaluation",
+    "state": "published",
+    "status": "Evaluation plan complete · inspection findings not yet reported",
     "sources": [
-      "PR #2 comment 6019588967"
+      "PR #2 comment 6019588967",
+      "Owner directive, 2026-11-21"
     ],
     "stages": [
       {
@@ -242,13 +255,13 @@
       {
         "name": "Configuration",
         "status": "done",
-        "text": "SeaRey amphibian, ROTAX 912 UL.",
+        "text": "2002 SeaRey amphibian, ROTAX 912 UL, out of service since 2020.",
         "evidence": []
       },
       {
         "name": "Evidence",
-        "status": "pending",
-        "text": "[OWNER CONFIRM]",
+        "status": "done",
+        "text": "Six years without a current inspection: calendar-limited rubber, fuel left in the system and corrosion exposure all had to be assumed until checked.",
         "evidence": []
       },
       {
@@ -259,22 +272,77 @@
       },
       {
         "name": "Action",
-        "status": "pending",
-        "text": "[OWNER CONFIRM]",
+        "status": "done",
+        "text": "The return-to-service scope was written and sent to the seller's broker before any work was quoted, so the aircraft was evaluated as a whole rather than as a routine annual.",
         "evidence": []
       },
       {
         "name": "Verification",
         "status": "pending",
-        "text": "[OWNER CONFIRM]",
+        "text": "Compression and leak-down, fuel-system cleanliness, oil-system and gearbox condition, and attachment-hardware inspection are the planned gates.",
         "evidence": []
       },
       {
         "name": "Documentation",
         "status": "pending",
-        "text": "[OWNER CONFIRM]",
+        "text": "Findings and any return to service are recorded against that scope.",
         "evidence": []
       }
-    ]
+    ],
+    "owner_confirmation": true
+  },
+  {
+    "slug": "ctsw-forensic",
+    "sources": [
+      "Owner records: forensic compliance audit v2, 2026-09-21; PR #2 comment 6019840432"
+    ],
+    "stages": [
+      {
+        "name": "Problem",
+        "evidence": [],
+        "status": "done",
+        "text": "An aircraft whose maintenance claims could not be taken at face value: records had to be reconciled with the aircraft before any release decision."
+      },
+      {
+        "name": "Configuration",
+        "evidence": [],
+        "status": "done",
+        "text": "Flight Design CTSW, carbureted ROTAX 912, ballistic recovery system."
+      },
+      {
+        "name": "Evidence",
+        "evidence": [],
+        "status": "done",
+        "text": "A bulletin-by-bulletin audit against 54 manufacturer publications — 7 airframe safety alerts, 17 service bulletins, 6 service notifications and 24 ROTAX publications — with each claim traced to an entry, a document or a gap."
+      },
+      {
+        "name": "Evaluation",
+        "evidence": [],
+        "status": "done",
+        "text": "Gaps and contradictions were separated from confirmed items: component identities, calendar and TBO status, gearbox applicability, carburetor float and circlip actions, rubber isolators, the recovery system and an inconsistency in the fuel-system record."
+      },
+      {
+        "name": "Action",
+        "evidence": [],
+        "status": "done",
+        "text": "A return-to-service plan of 144 traceable tasks with 6 hold points, configuration-verification steps, measured fuel-flow forms and an evidence register."
+      },
+      {
+        "name": "Verification",
+        "evidence": [],
+        "status": "pending",
+        "text": "Physical inspection and measurement against the hold points; the release decision follows the evidence, not the logbook alone."
+      },
+      {
+        "name": "Documentation",
+        "evidence": [],
+        "status": "done",
+        "text": "The audit report, compliance tracker and evidence requests are kept with the job file."
+      }
+    ],
+    "state": "published",
+    "status": "Records audit and return-to-service plan complete · physical inspection gates pending",
+    "owner_confirmation": true,
+    "title": "Flight Design CTSW / ROTAX 912: forensic records audit against as-found condition"
   }
 ]
