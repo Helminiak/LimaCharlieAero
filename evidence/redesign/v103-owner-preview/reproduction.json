@@ -1,30 +1,30 @@
 {
   "public": {
     "files": 328,
-    "bytes": 10410726,
-    "sha256_of_manifest": "14a5ef7ca3ac698a7e3c110d687fd3d10923c0cebbe9d5a75baad1b04d25760e",
+    "bytes": 10409692,
+    "sha256_of_manifest": "3d434b9e8e9201f012abc3e612b6dc08a2cd440c99bbae076c44f17d707ddaf3",
     "second_build_hash_match": true,
     "routes": 41,
     "capture_measurements": 4,
     "capture_images": 4,
     "axe_scans": 4,
-    "desktop_our_work_height_px": 8020,
+    "desktop_our_work_height_px": 7992,
     "desktop_our_work_height_limit_px": 8000,
-    "desktop_our_work_height_gate": "FAIL",
+    "desktop_our_work_height_gate": "PASS",
     "text_files_scanned_for_private_identifiers": 52
   },
   "preview": {
     "files": 328,
-    "bytes": 10406167,
-    "sha256_of_manifest": "c265ac8bc8aa9c12106c51891723a651ce3f6c67a6ddbb75705e68eb16aaf905",
+    "bytes": 10405133,
+    "sha256_of_manifest": "838bcb2d541ee63025483ce82b4d4f9cbc1b999a649a402dbc396d830b7189e6",
     "second_build_hash_match": true,
     "routes": 41,
     "capture_measurements": 4,
     "capture_images": 4,
     "axe_scans": 4,
-    "desktop_our_work_height_px": 8020,
+    "desktop_our_work_height_px": 7992,
     "desktop_our_work_height_limit_px": 8000,
-    "desktop_our_work_height_gate": "FAIL",
+    "desktop_our_work_height_gate": "PASS",
     "text_files_scanned_for_private_identifiers": 52
   }
 }

@@ -1,0 +1,45 @@
+{
+  "captures": [
+    {
+      "route": "/rotax-915-916-turbo-ems-support",
+      "width": 390,
+      "height": 5634,
+      "overflow": 0,
+      "subject": "rotax-airbox-focus",
+      "alt": "ROTAX turbocharged-engine airbox with its intercooler",
+      "caption": "The ROTAX turbocharged-engine airbox is shown with its intercooler.",
+      "violations": []
+    },
+    {
+      "route": "/rotax-915-916-turbo-ems-support",
+      "width": 1440,
+      "height": 5066,
+      "overflow": 0,
+      "subject": "rotax-airbox-focus",
+      "alt": "ROTAX turbocharged-engine airbox with its intercooler",
+      "caption": "The ROTAX turbocharged-engine airbox is shown with its intercooler.",
+      "violations": []
+    },
+    {
+      "route": "/rotax-912-carb-sync",
+      "width": 390,
+      "height": 5186,
+      "overflow": 0,
+      "subject": "rotax-installed-hoses-overview",
+      "alt": "Installed carbureted ROTAX 912 with a carburetor and its connections in view",
+      "caption": "The installed carbureted ROTAX 912 shows a carburetor and its connections.",
+      "violations": []
+    },
+    {
+      "route": "/rotax-912-carb-sync",
+      "width": 1440,
+      "height": 4640,
+      "overflow": 0,
+      "subject": "rotax-installed-hoses-overview",
+      "alt": "Installed carbureted ROTAX 912 with a carburetor and its connections in view",
+      "caption": "The installed carbureted ROTAX 912 shows a carburetor and its connections.",
+      "violations": []
+    }
+  ],
+  "desktop_our_work_height_px": 7992
+}

@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "checks": 5000,
-  "references": 2353,
+  "checks": 4992,
+  "references": 2348,
   "routes": 41,
   "proof_subjects": 54,
   "errors": [],

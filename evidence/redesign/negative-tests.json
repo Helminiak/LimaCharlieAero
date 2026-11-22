@@ -359,6 +359,27 @@
       "observed_failure": "R5 unofficial bulletin URL"
     },
     {
+      "test": "Engine family photo dist rotax-support-hero-original-photo",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-support-hero-original-photo",
+      "observed_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-support-hero-original-photo"
+    },
+    {
+      "test": "Engine family photo dist rotax-engine-installed-green-covers",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-engine-installed-green-covers",
+      "observed_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-engine-installed-green-covers"
+    },
+    {
+      "test": "Engine family photo dist rotax-airbox-focus",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Wrong engine family photo on rotax-912-carb-sync: rotax-airbox-focus",
+      "observed_failure": "Wrong engine family photo on rotax-912-carb-sync: rotax-airbox-focus"
+    },
+    {
       "test": "Trust link dist",
       "injected_result": "REJECTED",
       "command": "python3 tools/verify_publication.py",
@@ -399,6 +420,27 @@
       "command": "python3 tools/verify_publication.py",
       "expected_failure": "R6 unconditional",
       "observed_failure": "R6 unconditional notice assurance"
+    },
+    {
+      "test": "Engine family photo dist-preview rotax-support-hero-original-photo",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-support-hero-original-photo",
+      "observed_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-support-hero-original-photo"
+    },
+    {
+      "test": "Engine family photo dist-preview rotax-engine-installed-green-covers",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-engine-installed-green-covers",
+      "observed_failure": "Wrong engine family photo on rotax-915-916-turbo-ems-support: rotax-engine-installed-green-covers"
+    },
+    {
+      "test": "Engine family photo dist-preview rotax-airbox-focus",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Wrong engine family photo on rotax-912-carb-sync: rotax-airbox-focus",
+      "observed_failure": "Wrong engine family photo on rotax-912-carb-sync: rotax-airbox-focus"
     },
     {
       "test": "Trust link dist-preview",

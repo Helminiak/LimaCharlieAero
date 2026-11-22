@@ -1,0 +1,40 @@
+{
+  "baseline": "b7238e201193f92cc8656277dbabceca82a36f0b",
+  "implementation": "903e7b893fcee26c431dfcfe8cd3928ab06d866c",
+  "builds": {
+    "public": {
+      "files": 328,
+      "unchanged": 326,
+      "changed": {
+        "rotax-912-carb-sync.html": {
+          "before": "82157e01775ef8e590411f9c4fa9613ed747418f6798d0d0d7fd94925d5651fc",
+          "after": "984fad1b7ef29ef4788649b5f6d453afd8f8672c219de3c6108a084059d74a6f"
+        },
+        "rotax-915-916-turbo-ems-support.html": {
+          "before": "1c370a6f896a280e4a670de19190e85a5a18cade4c0967081acb468233456ba2",
+          "after": "cf93dcc025efd5ba6747710055ada5912889f0f300a37ed85a848022a9bc61ee"
+        }
+      },
+      "before_manifest_sha256": "a7434671a490a3cef9469a8605fb42626889c5691e7b4815e7b2d900c2a1c720",
+      "after_manifest_sha256": "3d434b9e8e9201f012abc3e612b6dc08a2cd440c99bbae076c44f17d707ddaf3",
+      "repeat_manifest_identical": true
+    },
+    "preview": {
+      "files": 328,
+      "unchanged": 326,
+      "changed": {
+        "rotax-912-carb-sync.html": {
+          "before": "be0371e903713a9349a918f35bec470907bb7d6fc3a11c03b9b7d3514cabee98",
+          "after": "e388d6d284293394e3a64b78178ce40cb01f4188720497bed6be3aeeb709037d"
+        },
+        "rotax-915-916-turbo-ems-support.html": {
+          "before": "c96dffe9ffafe8f4b499877f5e101e984e401d0c7ed4f4634f596a3d6b23a4e1",
+          "after": "cb846c2259a49fdfcb9ccba9dc8553881ea5c19f288fe58d92e5a0a536a2920b"
+        }
+      },
+      "before_manifest_sha256": "c2a2ece731c0d1a8c07c582127b9bd79ecb46e1df1cf617240aef1e27d1f344f",
+      "after_manifest_sha256": "838bcb2d541ee63025483ce82b4d4f9cbc1b999a649a402dbc396d830b7189e6",
+      "repeat_manifest_identical": true
+    }
+  }
+}
