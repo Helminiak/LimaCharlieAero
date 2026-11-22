@@ -5,6 +5,7 @@ from urllib.parse import urlsplit, parse_qs, unquote
 from datetime import date, timedelta
 import argparse, mimetypes, json, html, secrets, subprocess, sys, fnmatch, hashlib
 ROOT=Path(__file__).resolve().parents[1]
+NOTICE_FIELDS={'subject','documents','engine_families','rotax_category','severity','status','prominence','faa_ad','serial_ranges','card_title','photo','applicability','change','scope','records_needed','next_step','approval','source_note'}
 TOKEN=secrets.token_urlsafe(32)
 def editor(slug=''):
  records=json.loads((ROOT/'content/updates.json').read_text(encoding="utf-8"))
@@ -20,6 +21,8 @@ def editor(slug=''):
   elif key in ['body','sources','summary']:control='<textarea rows="'+('7' if key=='body' else '3')+'" name="'+key+'">'+e(value)+'</textarea>'
   else:control='<input name="'+key+'" value="'+e(value)+'" '+('type="date"' if key in ['issue_date','published','last_modified','last_review','next_review'] else '')+'>'
   fields+='<label>'+key.replace('_',' ').title()+control+'</label>'
+ details=json.dumps({k:r[k] for k in sorted(NOTICE_FIELDS) if k in r},indent=2,ensure_ascii=False)
+ fields+='<details><summary>Technical notice details</summary><label>Bulletin fields (JSON)<textarea name="notice_fields" rows="14">'+e(details)+'</textarea></label></details>'
  links='<a href="/__editor">New draft</a> · '+ ' · '.join('<a href="/__editor?slug='+e(i['slug'])+'">'+e(i['title'])+'</a>' for i in records)
  return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>LCA local content editor</title><style>body{font:17px/1.5 system-ui;max-width:850px;margin:25px auto;padding:20px;color:#132d40}label{display:block;margin:18px 0;font-weight:650}input,textarea,select{display:block;width:100%;font:inherit;padding:10px;box-sizing:border-box}button{font:inherit;padding:12px;background:#092a44;color:white}a{color:#174d74}fieldset{margin-top:25px}</style><h1>Local owner content editor</h1><p>This interface runs only on this computer. The deployable ZIP contains no editor or admin endpoint.</p><p>'+links+'</p><p>Write body paragraphs separated by a blank line; one verified source URL per line. Use your real reviewer identity. A draft is never public. Dates are explicit; saving does not invent historical publication dates.</p><form method="POST" action="/__editor"><input type="hidden" name="token" value="'+TOKEN+'"><input type="hidden" name="original_slug" value="'+e(slug)+'">'+fields+'<label>Build as of<input type="date" name="asof" value="'+today+'" required></label><button name="operation" value="save">Save and rebuild preview</button> <button name="operation" value="delete">Delete selected item</button></form><p><a href="/">Open preview homepage</a> · <a href="/updates">Preview updates</a></p></html>'
 class Handler(BaseHTTPRequestHandler):
@@ -50,7 +53,13 @@ class Handler(BaseHTTPRequestHandler):
     if original:
      previous=next(r for r in records if r['slug']==original)
      row={**previous,**row}
+     if 'source_verified' in previous:row['source_verified']=row['last_review']
      row['topic']=previous.get('topic',row['topic'])
+    if row['type']=='notice' and 'notice_fields' in q:
+     extra=json.loads(q['notice_fields'])
+     if not isinstance(extra,dict) or set(extra)-NOTICE_FIELDS:raise ValueError('Unknown technical notice field')
+     row.update(extra)
+     row['source_verified']=row['last_review']
     records=[row if r['slug']==original else r for r in records] if original else [*records,row]
    content.write_text(json.dumps(records,indent=2,ensure_ascii=False)+'\n', encoding="utf-8", newline="\n")
    result=subprocess.run([sys.executable,str(ROOT/'tools/build.py'),'--output',str(self.server.root),'--as-of',q['asof']],capture_output=True,text=True)

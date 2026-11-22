@@ -15,8 +15,8 @@ try:
  check_notices(root)
 except ValueError as error:
  ck(False, str(error))
-expected.add('our-work.html')
-ck({r['file'] for r in routes}==expected,'40 expected routes');ck(len(routes)==40,'route count');ck(files==json.loads((E/'deployment-manifest.json').read_text()),'frozen output manifest')
+expected.update({'our-work.html','rotax-915-tbo-extension.html'})
+ck({r['file'] for r in routes}==expected,'41 expected routes');ck(len(routes)==41,'route count');ck(files==json.loads((E/'deployment-manifest.json').read_text()),'frozen output manifest')
 ck(not any(p.split('/')[0] in ['docs','baselines','tools','content','evidence','templates','assets-src'] for p in files),'source excluded from public output')
 redirects={l.split()[0]:l.split()[1] for l in (root/'_redirects').read_text().splitlines() if l.strip() and not l.startswith('#')}
 xml=(root/'sitemap.xml').read_text();repetition={x:[] for x in ['Owner information','Unsure where to start?','What happens next','Inspection context','diagnosis and serviceability require aircraft-specific evidence and applicable instructions']};voices={x:0 for x in ['Joe','Joseph','we','our','us','team','technician','shop','Lima Charlie Aero']}
@@ -29,6 +29,12 @@ zero_public_cases = not preview and not any(c['state']=='published' for c in cas
 indexed_files = expected - {'404.html','thank-you.html','card.html','about-credentials.html'}
 domain=json.loads((R/'content/site.json').read_text())['domain']
 expected_urls = set() if preview else {domain + ('/' if f=='index.html' else '/'+Path(f).stem) for f in indexed_files}
+from rotax_notices import check_surfaces
+notices = [r for r in json.loads((R/'content/updates.json').read_text()) if r['type']=='notice' and (root/(r['slug']+'.html')).exists()]
+try:
+ check_surfaces(root, notices)
+except ValueError as error:
+ ck(False,str(error))
 for error in publication_errors(root, cases, expected_urls, preview):
  ck(False,error)
 ck(True,'publication surfaces inspected')
@@ -88,11 +94,11 @@ for r in routes:
  if key=='index':ck(all(x in types for x in ['Organization','LocalBusiness','WebSite','WebPage']),'home entity types')
  if key=='faq':ck('FAQPage' in types,'FAQ schema')
  if key=='joseph-helminiak-bio':ck('ProfilePage' in types and 'Person' in types,'bio schema')
- if key in {'services','aircraft-records-review','light-sport-prebuy-evaluation','light-sport-experimental-avionics','s-lsa-e-lsa-maintenance','e-props-dealer-support'} or (key.startswith('rotax-') and not key.endswith('-notice')):ck('Service' in types and 'BreadcrumbList' in types,key+' service schema')
+ if key in {'services','aircraft-records-review','light-sport-prebuy-evaluation','light-sport-experimental-avionics','s-lsa-e-lsa-maintenance','e-props-dealer-support'} or (key.startswith('rotax-') and not key.endswith('-notice') and key!='rotax-915-tbo-extension'):ck('Service' in types and 'BreadcrumbList' in types,key+' service schema')
  ck(any(g.get('@id')=='https://limacharlieaero.com/#business' and g.get('telephone')=='+19803821344' for g in graph),key+' stable business identity')
  if key=='index':ck('https://limacharlieaero.com/#organization' in gids,'stable organization identity')
  if key=='joseph-helminiak-bio':ck(any(g.get('@id')=='https://limacharlieaero.com/#joseph-helminiak' and g.get('worksFor',{}).get('@id')=='https://limacharlieaero.com/#business' for g in graph),'person worksFor business')
- if key in {'rotax-gearbox-notice','rotax-turbocharger-notice','start-with-the-symptom','prebuy-first-inquiry','planning-service-downtime'}:ck('Article' in types and 'BreadcrumbList' in types,key+' editorial schema')
+ if key in {'rotax-915-tbo-extension','rotax-gearbox-notice','rotax-turbocharger-notice','start-with-the-symptom','prebuy-first-inquiry','planning-service-downtime'}:ck('Article' in types and 'BreadcrumbList' in types,key+' editorial schema')
  links=d.xpath('//@href|//@src|//@poster');links += [i.split()[0] for ss in d.xpath('//@srcset') for i in ss.split(',') if i.strip()]
  for link in links:
   u=urlsplit(link)
@@ -109,7 +115,7 @@ for phrase,limit in zip(repetition,[3,10,12,5,2]):ck(len(repetition[phrase])<=li
 for path in root.glob('assets/*.css'):
  for target in re.findall(r'url\([\"\']?([^\)\"\']+)',path.read_text()):
   if not urlsplit(target).scheme:ck((path.parent/target).exists(),'CSS reference '+target)
-proof=json.loads((R/'content/proof-assets.json').read_text());pages=json.loads((R/'content/pages.json').read_text());ck(50<=len(actual_subjects)<=55,'proof subject count');ck(all(x['permission'] in ['REVIEW REQUIRED','CLEARED'] for x in proof),'permission statuses explicit')
+proof=json.loads((R/'content/proof-assets.json').read_text());pages=json.loads((R/'content/pages.json').read_text());ck(50<=len(actual_subjects)<=55,'proof subject count');ck(all(x['permission']=='CLEARED' for x in proof),'permission statuses explicit')
 proof_by_id={x['id']:x for x in proof}
 for key,p in pages.items():
  for image in p.get('proof',[]):
@@ -118,5 +124,5 @@ for key,p in pages.items():
 permitted_case_images={i for c in cases if preview or c['state']=='published' for stage in c['stages'] for i in stage['evidence']}
 ck(actual_subjects=={a['id'] for a in proof if not a.get('case_only') or a['id'] in permitted_case_images},'rendered subject coverage')
 for key,min_count in {'index':4,'services':4,'rotax-gearbox-propeller-vibration':3,'rotax-installation-review':4,'rotax-fuel-pressure-fuel-delivery-problems':3,'light-sport-experimental-avionics':3,'e-props-dealer-support':3,'aircraft-records-review':1,'the-lima-charlie-aero-standard':3,'light-sport-prebuy-evaluation':1,'contact':1,'service-area':1,'joseph-helminiak-bio':1}.items():ck(len(pages[key].get('proof',[]))>=min_count,key+' proof placement')
-result={'status':'PASS' if not errors else 'FAIL','checks':checks,'references':refs,'routes':len(rows),'proof_subjects':len(actual_subjects),'errors':errors,'repetition':repetition,'voice_frequency':voices,'rights_gate':'REVIEW REQUIRED — private candidate only; no public publication authorization inferred'}
+result={'status':'PASS' if not errors else 'FAIL','checks':checks,'references':refs,'routes':len(rows),'proof_subjects':len(actual_subjects),'errors':errors,'repetition':repetition,'voice_frequency':voices,'rights_gate':'CLEARED — owner-supplied pool, PR #2 comments 6019001980 and 6019369438'}
 (E/'static-checks.json').write_text(json.dumps(result,indent=2)+'\n');(E/'route-audit.json').write_text(json.dumps(rows,indent=2)+'\n');print(json.dumps(result,indent=2));sys.exit(bool(errors))

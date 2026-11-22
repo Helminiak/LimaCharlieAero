@@ -12,7 +12,7 @@ def page_schema(key, p, site, canonical, article, asset):
     if key == 'index':
         graph.extend([{'@type': 'Organization', '@id': site['domain'] + '/#organization', 'name': site['company'], 'url': site['domain'] + '/'}, {'@type': 'WebSite', '@id': site['domain'] + '/#website', 'url': site['domain'] + '/', 'name': site['name'], 'publisher': {'@id': site['domain'] + '/#business'}}])
     service_keys = {'service-area','services', 'aircraft-records-review', 'light-sport-prebuy-evaluation', 'light-sport-experimental-avionics', 's-lsa-e-lsa-maintenance', 'e-props-dealer-support'}
-    if key in service_keys or (key.startswith('rotax-') and (not key.endswith('-notice'))):
+    if key in service_keys or (not article and key.startswith('rotax-') and not key.endswith('-notice')):
         graph.append({'@type': 'Service', '@id': canonical + '#service', 'name': p.get('heading', p['title']), 'description': p['description'], 'url': canonical, 'provider': {'@id': site['domain'] + '/#business'}})
     if key not in ['index', '404', 'card', 'thank-you']:
         graph.append({'@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': site['domain'] + '/'}, {'@type': 'ListItem', 'position': 2, 'name': p['title'], 'item': canonical}]})
@@ -23,6 +23,8 @@ def page_schema(key, p, site, canonical, article, asset):
         page_entity['mainEntity'] = {'@id': site['domain'] + '/#joseph-helminiak'}
         graph.append({'@type': 'Person', '@id': site['domain'] + '/#joseph-helminiak', 'name': 'Joseph Helminiak', 'worksFor': {'@id': site['domain'] + '/#business'}, 'url': canonical})
     if article:
+        if article.get('engine_families'):
+            graph[2]['about'] = [{'@type':'Thing','name':'ROTAX '+family} for family in article['engine_families']]
         graph[2]['author'] = {'@id': site['domain'] + '/#business'}
         graph[2]['image'] = site['domain'] + asset('assets/images/rotax-engine-installed-green-covers-800.webp')
     data = {'@context': 'https://schema.org', '@graph': graph}

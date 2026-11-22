@@ -25,22 +25,58 @@
     "last_review": "2026-11-21",
     "next_review": "2026-12-20",
     "reviewer": "Codex: source document/content review; not an aircraft compliance or human maintenance signoff",
-    "owner_question": "Does the gearbox notice affect my aircraft?"
+    "owner_question": "Does the gearbox notice affect my aircraft?",
+    "subject": "gearbox",
+    "documents": [
+      {
+        "number": "ASB-2026-001",
+        "variant": "certified",
+        "revision": "R00",
+        "issue_date": "2026-06-22",
+        "library_file": "d07278.pdf",
+        "url": "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000ZhNbkIAF?asPdf=false",
+        "engines": "Listed certified 912 / 914"
+      },
+      {
+        "number": "ASB_A-2026-001",
+        "variant": "astm",
+        "revision": "R01",
+        "issue_date": "2026-07-02",
+        "library_file": "d07280.pdf",
+        "url": "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000ZoRljIAF?asPdf=false",
+        "engines": "912 UL, ULS and iS Sport; consult bulletin"
+      }
+    ],
+    "engine_families": [
+      "912",
+      "914"
+    ],
+    "rotax_category": "mandatory",
+    "severity": "safety",
+    "status": "ad_in_effect",
+    "prominence": "safety",
+    "source_verified": "2026-11-21",
+    "faa_ad": {
+      "number": "2026-16-11",
+      "effective_date": "2026-08-28",
+      "applicability_note": "Listed certified engines with qualifying installed gearboxes",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-08-13/pdf/2026-16512.pdf",
+      "corrections": []
+    }
   },
   {
     "slug": "rotax-turbocharger-notice",
     "type": "notice",
     "title": "ROTAX 915 / 916 turbocharger valve-housing notice",
-    "summary": "Selected turbocharger valve housings need review for a manufacturing issue. Affected installed units have a before-next-flight instruction.",
+    "summary": "Cracks or insufficient wall thickness in valve housing part 956492 can let oil reach hot exhaust components. The result can be smoke or an engine-compartment fire.",
     "body": [
-      "The manufacturer describes a valve-housing defect that can cause oil leakage and a fire hazard. Applicability depends on listed engine or turbocharger identification and prior modification records.",
-      "Read the official document’s applicability and compliance sections. If your installation may be affected, establish its status before flying. Replacement and marking requirements depend on the records; specialist qualifications and manufacturer coordination may be needed.",
       "FAA AD 2026-22-03 (effective November 4, 2026) applies to listed certified 915 iSc and 916 iSc engines and requires the action before further flight; non-certified 915/916 iS engines remain under the ROTAX bulletin."
     ],
     "document": "ASB_A-2026-002R01",
     "issue_date": "2026-09-11",
     "sources": [
       "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000dA334IAC?asPdf=false",
+      "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000dA2ByIAK?asPdf=false",
       "https://www.flyrotax.com/p/service/technical-documentation",
       "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22307.pdf",
       "https://www.federalregister.gov/documents/2026/11/18/C1-2026-22307/airworthiness-directives-brp-rotax-gmbh-and-co-kg-formerly-brp-powertrain-gmbh-and-co-kg-and"
@@ -54,7 +90,134 @@
     "next_review": "2026-12-20",
     "reviewer": "",
     "owner_question": "Does the turbocharger notice affect my aircraft?",
-    "source_note": "Prepared from the FAA AD, its November 18, 2026 Federal Register correction and the ROTAX bulletin linked below; dates and engine scope checked against those documents on {last_review}."
+    "source_note": "Prepared from the FAA AD, its November 18, 2026 Federal Register correction and the ROTAX bulletin linked below; dates and engine scope checked against those documents on {last_review}.",
+    "subject": "turbocharger valve housing",
+    "documents": [
+      {
+        "number": "ASB-2026-002",
+        "variant": "certified",
+        "revision": "R01",
+        "issue_date": "2026-09-11",
+        "library_file": "d07285.pdf",
+        "url": "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000dA2ByIAK?asPdf=false",
+        "engines": "916 iSc A/B (§4.1); see spare parts (§4.2)"
+      },
+      {
+        "number": "ASB_A-2026-002",
+        "variant": "astm",
+        "revision": "R01",
+        "issue_date": "2026-09-11",
+        "library_file": "d07286.pdf",
+        "url": "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000dA334IAC?asPdf=false",
+        "engines": "915 iS A, 916 iS A/B; see spare parts"
+      }
+    ],
+    "engine_families": [
+      "915",
+      "916"
+    ],
+    "rotax_category": "mandatory",
+    "severity": "safety",
+    "status": "ad_in_effect",
+    "prominence": "featured",
+    "source_verified": "2026-11-21",
+    "faa_ad": {
+      "number": "2026-22-03",
+      "effective_date": "2026-11-04",
+      "applicability_note": "Listed certified 915 iSc and 916 iSc engines",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22307.pdf",
+      "corrections": [
+        "https://www.federalregister.gov/documents/2026/11/18/C1-2026-22307/airworthiness-directives-brp-rotax-gmbh-and-co-kg-formerly-brp-powertrain-gmbh-and-co-kg-and"
+      ]
+    },
+    "card_title": "Turbocharger valve housing",
+    "applicability": "Check the engine serial list and any replacement turbocharger assembly against the certified or ASTM bulletin for your installation.",
+    "change": "Revision 1, issued 11 September 2026, adds turbocharger marking to the Initial Issue of 3 September 2026. Units already modified under the Initial Issue need only the marking.",
+    "scope": "Criterion A uses the §4.1 engine serial lists: 916 iSc A/B in the certified bulletin and 915 iS A, 916 iS A and 916 iS B in the ASTM bulletin. Criterion B uses the §4.2 spare-part serial list for turbocharger assembly part 893102.",
+    "records_needed": "Gather engine model and serial, installed turbocharger part and serial, valve-housing identification, replacement history and any Initial Issue modification or marking record.",
+    "next_step": "ROTAX §1.5 calls for action on affected installed engines before next flight and at the latest one year from the Initial Issue. Use the applicable bulletin and directive to establish the action for the installed equipment.",
+    "approval": "DOA EASA.21J.048 (certified bulletin)"
+  },
+  {
+    "slug": "rotax-915-tbo-extension",
+    "type": "notice",
+    "title": "ROTAX 915 iS / iSc: optional extension of time between overhaul",
+    "card_title": "915 iS / iSc optional TBO extension",
+    "subject": "915 time between overhaul",
+    "summary": "For certain 915 engines, a 2,000-hour overhaul interval can be considered when the aircraft manufacturer adopts the limits and records show the required conditions from hour zero. Otherwise the 1,200-hour interval applies.",
+    "body": [
+      "This bulletin does not replace any directive."
+    ],
+    "issue_date": "2026-11-10",
+    "document": "SB-2026-003 / SB_A-2026-003",
+    "sources": [
+      "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000gKyW5IAK?asPdf=false",
+      "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000gKpJ8IAK?asPdf=false"
+    ],
+    "documents": [
+      {
+        "number": "SB-2026-003",
+        "variant": "certified",
+        "revision": "Initial Issue",
+        "issue_date": "2026-11-10",
+        "library_file": "d07277.pdf",
+        "url": "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000gKyW5IAK?asPdf=false",
+        "engines": "915 iSc A / C24"
+      },
+      {
+        "number": "SB_A-2026-003",
+        "variant": "astm",
+        "revision": "Initial Issue",
+        "issue_date": "2026-11-10",
+        "library_file": "d07275.pdf",
+        "url": "https://rotax.my.salesforce-sites.com/DocumentsSearch/sfc/servlet.shepherd/version/download/068Mm00000gKpJ8IAK?asPdf=false",
+        "engines": "915 iS A / C24"
+      }
+    ],
+    "topic": "notice",
+    "state": "published",
+    "published": "2026-11-21",
+    "last_modified": "2026-11-21",
+    "last_review": "2026-11-21",
+    "source_verified": "2026-11-21",
+    "next_review": "2026-12-20",
+    "reviewer": "",
+    "source_note": "Prepared from the ROTAX bulletins linked above. Published November 21, 2026 · Source checked {last_review}.",
+    "owner_question": "Can the 2,000-hour TBO be considered for my 915?",
+    "engine_families": [
+      "915 iS",
+      "915 iSc"
+    ],
+    "serial_ranges": [
+      {
+        "engine_type": "915 iSc A",
+        "from_sn": 10006805
+      },
+      {
+        "engine_type": "915 iSc C24",
+        "from_sn": 10012483
+      },
+      {
+        "engine_type": "915 iS A",
+        "from_sn": 10006742
+      },
+      {
+        "engine_type": "915 iS C24",
+        "from_sn": 10010510
+      }
+    ],
+    "rotax_category": "optional",
+    "faa_ad": null,
+    "severity": "optional",
+    "status": "current",
+    "prominence": "featured",
+    "photo": "xps-oil-rotax-filter-service-800",
+    "applicability": "The serial range, hour-zero maintenance and oil history, and aircraft-manufacturer adoption all matter.",
+    "change": "The November 10 Initial Issue describes an optional extension from 1,200 to 2,000 hours for specified 915 iSc and 915 iS engines.",
+    "scope": "Since hour zero the engine must have used XPS AIRCRAFT 5W50 exclusively, stayed at or below 120 °C oil temperature, and received maintenance per approved instructions. Under §3.2 the aircraft OEM must establish the temperature limit and exclusive oil rule for the aircraft type. Section 1.7 notes that the measures may affect aircraft certification.",
+    "records_needed": "Gather the engine identity, logbooks, oil purchase and service records, temperature history and aircraft-manufacturer instructions covering the installation from initial entry into service.",
+    "next_step": "Check the serial range and the complete operating history with the applicable instructions. Section 3.3 adds gearbox and rocker-arm-bushing items for 2,000-hour engines. Section 3.4 requires confirmation in the logbook. Section 3 restricts execution to authorized persons, including appropriately rated iRMT Line/Heavy personnel, distributors and service centres, or authority-approved persons.",
+    "approval": "DOA EASA.21J.048 (certified); BRP-Rotax QMS (ASTM)"
   },
   {
     "slug": "start-with-the-symptom",

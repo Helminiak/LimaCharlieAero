@@ -2,6 +2,7 @@ from build_common import *
 from build_assets import build_assets, presentation_assets
 from publication import eligible_registry, RASTERS, require_clean_raster
 from cases import select_cases
+from rotax_notices import validate, check_surfaces
 from editorial import select_editorial
 from render_site import render_site
 
@@ -16,6 +17,7 @@ def main():
     pages = json.loads((ROOT / 'content/pages.json').read_text(encoding='utf-8'))
     records = json.loads((ROOT / 'content/updates.json').read_text(encoding='utf-8'))
     public, published, warnings = select_editorial(records, pages, asof)
+    validate([r for r in public if r['type']=='notice'], asof)
     out = ROOT / (args.output or ('dist-preview' if args.preview else 'dist'))
     if args.preview != (out == ROOT/'dist-preview'):
         raise ValueError('Private preview requires its own dist-preview output')
@@ -53,6 +55,7 @@ def main():
         dest = out / f
         dest.parent.mkdir(exist_ok=True)
         dest.write_text(f"Contact: mailto:{site['email']}\nExpires: 2027-04-04T00:00:00Z\nCanonical: {site['domain']}/.well-known/security.txt\nPolicy: {site['domain']}/security-disclosure\nPreferred-Languages: en\n", encoding='utf-8', newline='\n')
+    check_surfaces(out, [r for r in public if r['type']=='notice'])
     evidence = ROOT / '.build-evidence' / out.name
     evidence.mkdir(parents=True, exist_ok=True)
     (evidence / 'asset-map.json').write_text(json.dumps(amap, indent=2), encoding='utf-8', newline='\n')

@@ -2,6 +2,7 @@ from build_common import *
 from compositions import showcase
 from image_layouts import Images, home_preloads
 from build_assets import SOCIAL
+import rotax_notices
 from metadata import page_schema
 
 def render_site(out, site, pages, public, published, amap, metadata, registry, cases, preview):
@@ -42,16 +43,9 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
             for case in cases:
                 data['@graph'].append({'@type':'CreativeWork','@id':canonical+'#'+case['slug'],
                                        'name':case['title'],'isPartOf':{'@id':canonical+'#webpage'}})
-        active = {r['slug'] for r in published if r['type']=='notice'}
         notice = ''
-        if active:
-            summary = site['notice_bar'] if {'rotax-gearbox-notice','rotax-turbocharger-notice'} <= active else 'ROTAX owner notice: ' + '; '.join(r['title'] for r in published if r['type']=='notice') + '.'
-            if {'rotax-gearbox-notice','rotax-turbocharger-notice'} <= active:
-                summary_html = (f'<span class="notice-long">{E(summary)}</span>'
-                                '<span class="notice-short">ROTAX gearbox &amp; 915/916 turbo notices ·</span>')
-            else:
-                summary_html = E(summary)
-            notice = '<div class="notice-bar"><div class="container">'+summary_html+' <a href="/owner-notices">Check applicability</a></div></div>'
+        if any(r.get('status')=='ad_in_effect' for r in published):
+            notice = '<div class="notice-bar"><div class="container">'+E(site['notice_bar'])+' <a href="/owner-notices#in-effect">Check applicability</a></div></div>'
         markup = template.substitute(image_preload=home_preloads(amap) if key=='index' else '', menu_js=(ROOT/'templates/menu.js').read_text(), title=E(p['title']),
                     description=E(p['description']), canonical=E(canonical), robots=robots, ogtype=kind,
                     social=social, social_alt=E(registry[SOCIAL[family]]['alt']), css=amap['css'], js=amap['js'],
@@ -62,6 +56,7 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         assert not any((x.lower() in markup.lower() for x in banned)), 'Banned brand phrase in ' + key
         (out / (key + '.html')).write_text(markup, encoding='utf-8', newline='\n')
         routes.append({'route': route, 'file': key + '.html', 'last_modified': p.get('last_modified', site['date']), 'indexed': indexed})
+    selected_notices = [r for r in published if r['type']=='notice']
     for key, p in pages.items():
         if key == 'our-work' and not cases:
             p = {**p, **p['empty']}
@@ -70,7 +65,7 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         else:
             images = Images(registry,amap,metadata,asset_bytes)
             table = (ROOT/'templates'/(p['topic']+'-table.html')).read_text() if key in {'light-sport-prebuy-evaluation','aircraft-records-review'} else ''
-            body = showcase(key,p,pages,site,images,actions,cases,notices() if any(r['type']=='notice' for r in published) else '',table)
+            body = showcase(key,p,pages,site,images,actions,cases,rotax_notices.home_module(selected_notices,images) if key=='index' else notices(),table)
         actual_ids = {'main','site-nav'}
         existing_ids = set(re.findall('\\bid="([^"]+)"', body))
         aliases = ''.join((f'<span id="{E(i)}" class="legacy-anchor"></span>' for i in dict.fromkeys(p.get('legacy_ids', [])) if i not in actual_ids and i not in existing_ids))
@@ -89,10 +84,17 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         doc = f"""<p><strong>Manufacturer reference:</strong> {E(r['document'])} · Issue {r['issue_date']}</p><p class="meta">Supersedes {E(r.get('supersedes', ''))}. Source documents were checked; this is not an aircraft compliance determination. Check the manufacturer portal for later revisions.</p>""" + review if r['type'] == 'notice' else ''
         sources = '<h2>Official source documents</h2><ul class="source-list">' + ''.join((f'''<li><a href="{safe_link(u)}">{('Manufacturer document: ' + E(r.get('document', '')) if i == 0 else 'ROTAX technical documentation portal' if 'technical-documentation' in u else ('FAA AD 2026-22-03 — official rule' if '2026-22307' in u else 'FAA AD 2026-16-11 — official rule') if 'govinfo.gov' in u else 'Federal Register correction to FAA AD 2026-22-03' if '/C1-2026-22307/' in u else 'EASA AD 2026-0170 — official record' if 'ad.easa.europa.eu' in u else urlparse(u).netloc)}</a></li>''' for i, u in enumerate(r['sources']))) + '</ul>' if r['sources'] else ''
         body = '<section class="hero"><div class="container"><p class="eyebrow">' + ('Owner notice' if r['type'] == 'notice' else 'Owner answer') + '</p><h1>' + E(r['title']) + '</h1><p class="lead">' + E(r['summary']) + '</p></div></section><section class="section"><div class="container prose">' + state + meta + doc + ''.join(('<p>' + E(t) + '</p>' for t in r['body'])) + sources + actions(r.get('topic', 'unsure')) + '<a href="/updates">All owner answers and updates</a></div></section>'
+        if r.get('change'):
+            hero = body.split('</section>',1)[0]+'</section>'
+            body = hero+'<section class="section"><div class="container prose">'+state+rotax_notices.detail(r,meta,review)+'<p><a href="/owner-notices">All ROTAX notices</a></p></div></section>'
         render(r['slug'], p, body, 'article', r)
     for key, title, summary, items in [('updates', 'Owner answers and updates', 'Useful owner questions, service planning and source-backed notices.', published), ('owner-notices', 'ROTAX owner notices', 'Maintain the exact source, revision and applicability review for your aircraft.', [r for r in published if r['type'] == 'notice'])]:
         hub_sections = json.loads((ROOT / 'content/hubs.json').read_text()).get(key, [])
         hub_content = ''.join(('<section><h2>' + E(h['heading']) + '</h2><p>' + E(h['text']) + '</p></section>' for h in hub_sections))
         body = f'<section class="hero"><div class="container"><h1>{title}</h1><p class="lead">{summary}</p></div></section><section class="section"><div class="container"><div class="cards">' + ''.join((card(r) for r in items)) + '</div><div class="prose">' + hub_content + '</div><p class="source-note">This is a maintained selection of notices relevant to the services described here, not a complete bulletin database or a determination of your aircraft’s status.</p>' + actions('notice' if key == 'owner-notices' else 'unsure') + '</div></section>'
+        if key == 'owner-notices':
+            archive_records = [r for r in public if r['type']=='notice']
+            hero = body.split('</section>',1)[0]+'</section>'
+            body = hero+'<section class="section"><div class="container notice-hub">'+rotax_notices.hub(archive_records,images,card)+'<div class="prose">'+hub_content+'</div></div></section>'
         render(key, {'title': title, 'description': summary, 'last_modified': max([site['date']] + [r['last_modified'] for r in items])}, body)
     return routes
