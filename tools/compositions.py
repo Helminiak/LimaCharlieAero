@@ -76,7 +76,7 @@ def home(p,site,img,actions,cases,notices):
     stories=case_stories(cases[:2],img.figure,True) if cases else gallery(p['proof'][:4],img)
     result+=band(f'<div class="intro"><h2>{E(title)}</h2><p>{E(intro)}</p></div>{stories}<a href="/our-work">{work_link}</a>','sand')
     result+=band('<h2>'+E(p['method'])+'</h2>'+step_list(p['steps']))
-    if notices:result+=band(notices,'notice-section')
+    if notices:result+=band(notices,'notice-section sand')
     label,title,body=p['founder']
     result+=band('<div class="split">'+img.figure('proof-owner-joe-airfield','founder')+f'<div><p class="eyebrow">{E(label)}</p><h2>{E(title)}</h2><p>{E(body)}</p><a href="/the-lima-charlie-aero-standard">About the shop →</a></div></div>','sand')
     title,line=p['final'];return result+band(f'<h2>{E(title)}</h2><p>{E(line)}</p>'+actions(),'final')

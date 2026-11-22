@@ -110,7 +110,7 @@ def detail(r,meta,review):
               ('What should I do next?', '<p>'+E(r['next_step'])+'</p>'),
               ('Where can I read the original bulletin?',references+review),
               ('How can Lima Charlie Aero help?', '<p>'+help_text+'</p>'+CTA)]
-    return meta+''.join('<section class="'+('notice-help' if i==6 else 'notice-question')+'"><h2>'+E(title)+'</h2>'+body+'</section>' for i,(title,body) in enumerate(sections,1))
+    return meta+''.join('<section class="'+('notice-help' if i==6 else 'notice-question')+'"><h2><span aria-hidden="true">'+str(i)+'. </span>'+E(title)+'</h2>'+body+'</section>' for i,(title,body) in enumerate(sections,1))
 
 def check_surfaces(root, records):
     from lxml import html

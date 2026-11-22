@@ -10,7 +10,7 @@ const routes = ['/','/our-work','/e-props-dealer-support','/services','/owner-no
  '/rotax-915-tbo-extension','/rotax-gearbox-notice','/support-request?topic=notice','/about-credentials'];
 const root = process.argv[2] || 'dist';
 assert(['dist','dist-preview'].includes(root));
-const out = path.join('evidence/redesign/owner-updates-3',root);
+const out = path.join('evidence/redesign/owner-updates-3',root==='dist'?'public':'preview');
 fs.mkdirSync(out,{recursive:true});
 const server = await startServer(root,root==='dist'?18081:18082);
 let browser;
