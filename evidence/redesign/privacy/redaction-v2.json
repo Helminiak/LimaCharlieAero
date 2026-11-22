@@ -14,7 +14,13 @@
     "after_area_px": 27694,
     "note": "Before area counts native flat navy pixels at 800 px.",
     "inspection": "Native image and each mask inspected at 2x. No readable registration, airframe serial, third-party personal name, email or phone.",
-    "sha256": "f30c037a8e7e689ebad6d3ec334c7189e7c266a8cbf35ee53d4bc0942acf0c34"
+    "sha256": "f30c037a8e7e689ebad6d3ec334c7189e7c266a8cbf35ee53d4bc0942acf0c34",
+    "ocr": {
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0,
+      "words_read": 153
+    }
   },
   "eprops-engineering-packet-fanout-1200-clean": {
     "before_size": [
@@ -31,7 +37,13 @@
     "after_area_px": 5226,
     "note": "Added masks relative to the supplied source.",
     "inspection": "Native image and each mask inspected at 2x. No readable registration, airframe serial, third-party personal name, email or phone.",
-    "sha256": "98ce512b4a48e9b63ad4174cceb015f2d77c951f31937484acb28744ac56cd53"
+    "sha256": "98ce512b4a48e9b63ad4174cceb015f2d77c951f31937484acb28744ac56cd53",
+    "ocr": {
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0,
+      "words_read": 505
+    }
   },
   "eprops-install-checklist-preview-1200": {
     "before_size": [
@@ -48,7 +60,13 @@
     "after_area_px": 3283,
     "note": "Added masks relative to the supplied source.",
     "inspection": "Native image and each mask inspected at 2x. No readable registration, airframe serial, third-party personal name, email or phone.",
-    "sha256": "f0dd061ebc6a478fcbfa403abfbde3d6dfd17a559e96b00755eb82185c9b88eb"
+    "sha256": "f0dd061ebc6a478fcbfa403abfbde3d6dfd17a559e96b00755eb82185c9b88eb",
+    "ocr": {
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0,
+      "words_read": 269
+    }
   },
   "garmin-g5-box-unit": {
     "before_size": [
@@ -63,9 +81,15 @@
     ],
     "after_masks": 2,
     "after_area_px": 30228,
-    "note": "Source already obscured the unit serial. Purchasing data also concealed on the comparison’s before panel.",
+    "note": "Source already obscured the unit serial. Purchasing data also concealed on the comparison\u2019s before panel.",
     "inspection": "Native image and each mask inspected at 2x. No readable registration, airframe serial, third-party personal name, email or phone.",
-    "sha256": "5c4b74f790bd264c9fc508c4cbad72b9f40e437eb637cfcd09951b321ab0d10a"
+    "sha256": "5c4b74f790bd264c9fc508c4cbad72b9f40e437eb637cfcd09951b321ab0d10a",
+    "ocr": {
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0,
+      "words_read": 106
+    }
   },
   "ndt-magnetic-particle-report": {
     "before_size": [
@@ -82,7 +106,13 @@
     "after_area_px": 18106,
     "note": "Before was a crop; area reports omitted pixels.",
     "inspection": "Native image and each mask inspected at 2x. No readable registration, airframe serial, third-party personal name, email or phone.",
-    "sha256": "195b337561a74fece28bf202ca2b18d398747a85a974c7e5f69bc6d2b30184a2"
+    "sha256": "195b337561a74fece28bf202ca2b18d398747a85a974c7e5f69bc6d2b30184a2",
+    "ocr": {
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0,
+      "words_read": 328
+    }
   },
   "tl-ultralight-designer-correspondence": {
     "before_size": [
@@ -99,6 +129,35 @@
     "after_area_px": 59784,
     "note": "Before was a crop; area reports omitted pixels.",
     "inspection": "Native image and each mask inspected at 2x. No readable registration, airframe serial, third-party personal name, email or phone.",
-    "sha256": "daf0f4d033872534aeedb3232cd93ef3ac40e3ff1445ed539e5f65135a7075aa"
+    "sha256": "daf0f4d033872534aeedb3232cd93ef3ac40e3ff1445ed539e5f65135a7075aa",
+    "ocr": {
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0,
+      "words_read": 36
+    }
+  },
+  "garmin-g5-installed-panel-close-800": {
+    "before_size": [
+      600,
+      800
+    ],
+    "before_masks": 1,
+    "before_area_px": 4784,
+    "after_size": [
+      600,
+      800
+    ],
+    "after_masks": 1,
+    "after_area_px": 4784,
+    "note": "Unchanged placard mask. Area counts exact flat neutral pixels within the existing mask of the legacy lossy WebP.",
+    "sha256": "efb8211eda3ff18aabc42f81ff0db7929f8e9940e0b3406419eb68e77d4af252",
+    "inspection": "Inspected the unchanged placard at 2x. Both native images match byte-for-byte.",
+    "ocr": {
+      "words_read": 62,
+      "registration_hits": 0,
+      "airframe_serial_hits": 0,
+      "contact_pattern_hits": 0
+    }
   }
 }

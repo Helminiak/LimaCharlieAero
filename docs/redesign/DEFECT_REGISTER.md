@@ -101,3 +101,17 @@ The dispositions and owner gates in REVIEW_RESOLUTION.md govern this candidate.
 | R-01 | The source line derives its date from the saved review date. Two actual editor POSTs in a disposable fixture returned 303. Both showed November 22 in the rebuilt notice. Only the second rendered the synthetic reviewer. The shipped turbo record remains unsigned. |
 | R-02 | Five invalid attribution fixtures were rejected. The genuine unsigned notice passed selection and the build. Commands, expected diagnostics and observed messages are in [negative-tests.json](../../evidence/redesign/negative-tests.json). |
 | Mobile performance | Five interleaved runs on each artifact per route. Home baseline → corrected median was 1,362 → 1,362 ms (ranges 1,361–1,668 and 1,285–1,735). E-PROPS was 1,667 → 1,674 ms (+0.42%, ranges 1,360–1,888 and 1,589–1,813). The 1,800 ms median gate and 5% regression limit passed. One corrected E-PROPS sample exceeded 1,800 ms. The independent adapter's 1,807 ms home and 1,804 ms E-PROPS observations are recorded as harness variance. [All twenty runs](../../evidence/redesign/corrections-2/performance.json) |
+
+## Owner directive · 2026-11-21
+
+| Item | Disposition |
+|---|---|
+| W1 · trust | Five items. The iRMT listing is the only trust link; FAA LSRM-A is text. Both builds reject a substituted listing, a site-wide FAA website link and a leaked owner placeholder. |
+| W2 · privacy and rights | The owner attestation covers all 54 pool subjects. The selective native masks restore technical evidence in six images. The installed G5 placard remains masked. A purchasing-label mask is also applied to the G5 comparison’s historical panel. The OCR injections on actual derivative pixels rejected both synthetic identifier types. Mask areas, visual checks and OCR are in the privacy receipts. |
+| W3 · cases | Six owner-confirmed type-level cases publish in both builds. The two home cards resolve to the Sting mount and Sling propeller anchors. The status rails separate outstanding physical inspection and manufacturer decisions from work performed or criteria defined. Synthetic draft cases still exercise public exclusion. |
+| W4 · notices | Both featured subjects, the safety reminder, both active directives, the certified/ASTM archive rows and the new TBO Article route are present. R1–R7, the exact regulatory text and the editor attribution checks have independent fault injections. |
+| W5 · review | The decisions register and ROTAX design amendment supersede the historical pool-rights and six-case approval gates. Independent review and deployment authorization are separate. |
+
+Publishing the six expanded cases and restoring the full documents increased desktop Our Work to 9,812 px against the existing 8,000 px maximum. The route-specific two-column stage layout and bounded inline previews brought the 1,440 px view to 7,964 px. All seven stages remain present per case and both full-size documents remain linked. The ten-route capture harness now also enforces this desktop limit.
+
+The 20 interleaved mobile observations put both routes within the 1,800 ms median limit and 5% regression allowance. Home moved from 1,311.2 to 1,313.6 ms (+0.18%), and E-PROPS from 1,451.7 to 1,452.6 ms (+0.07%). The later Our Work-only change left the measured route bytes and their dependencies identical. [Measurements](../../evidence/redesign/owner-updates-3/performance.json)

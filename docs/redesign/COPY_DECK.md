@@ -2,21 +2,21 @@
 
 Codex integrates this copy into `content/*.json` and the templates. Codex does not rewrite it. If copy does not fit a component, log it in `DEFECT_REGISTER.md` and Claude revises.
 Voice: company-first ("we", "the shop"), plain, specific, calm. No founder-centric CTAs. No invented staff, customers, results, approvals or turnaround times.
-**Source rule:** every case-study statement traces to the owner's PR #2 steering (comment IDs given) or to a visible published image. Anything else is marked `[OWNER CONFIRM]`. Case records are `state: draft` until the owner fact-checks them.
+**Case sources.** The six published cases reflect the November 21 owner directive, the cited PR #2 comments and the documented aircraft evidence. New cases require confirmed facts and publication permission.
 
 ---
 ## Global
 - Primary nav: Services · ROTAX · E-PROPS · Our Work · About · **Request Service**
 - Utility (desktop): `KAKH · Gastonia, NC · By appointment` | `Call 980.382.1344` · `Text the Shop`
 - Footer tagline: `Precision · Reliability · Traceability`
-- Notice bar (while the turbocharger or gearbox notice is active): `ROTAX owner notices: gearbox (ASB-2026-001) and 915/916 turbocharger valve housing (ASB-2026-002).` → link `Check applicability` (`/owner-notices`)
+- Safety bar. “Two FAA airworthiness directives are in effect for certain certified ROTAX engines. Check applicability” links to `/owner-notices#in-effect`.
 
 ## Home
 - Eyebrow: `KAKH · Gastonia, North Carolina`
 - H1: `Light-sport & experimental aircraft, worked as a complete system.` (the highlight span is "worked as a complete system.")
 - Lede: `Hands-on maintenance, ROTAX troubleshooting and E-PROPS installation planning, backed by the records, manufacturer data and documentation the aircraft needs.`
 - CTAs: `Request Service` · `Call 980.382.1344`
-- Trust strip: `ROTAX 9-Series: 912 · 914 · 915 · 916` | `E-PROPS dealer: Fitment, installation, balance` | `LSRM-A: FAA-certificated repairman` | `By appointment: Gastonia & the Charlotte region`
+- Trust strip. ROTAX 9-Series · ROTAX iRMT · E-PROPS dealer · FAA LSRM-A · By appointment. The iRMT item links directly to listing 7534.
 - Problem tiles. H2: `Bring the aircraft and what you noticed.` Intro: `No diagnosis needed. Tell us what changed or what is due, and we'll help work out where to start.`
 
 | Tile | Title | Line | Destination | Image |
@@ -119,7 +119,7 @@ Records audit and return-to-service plan complete · physical inspection gates p
 
 ## Service-page "Authorization & limits" standard texts
 - ROTAX pages: `A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.`
-- Inspections page: `Light-sport-category aircraft can be returned to service by an LSRM-A after maintenance and inspection within the rating's limits. Experimental aircraft condition inspections follow the aircraft's operating limitations. Major repairs and alterations follow the applicable manufacturer or FAA-approved data.` `[OWNER CONFIRM trained category/class and any major-repair training]`
+- Inspections page: `Light-sport-category aircraft can be returned to service by an LSRM-A after maintenance and inspection within the rating's limits. Experimental aircraft condition inspections follow the aircraft's operating limitations. Major repairs and alterations follow the applicable manufacturer or FAA-approved data.` The trained category/class and major-repair training still require owner documentation.
 - E-PROPS: `Product compatibility and a dealer quote do not authorize an installation. The aircraft's category and the airframe manufacturer's position decide the approval path.`
 
 ## Owner notices (content update, Codex)

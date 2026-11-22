@@ -1,38 +1,110 @@
 {
-  "dist/eprops-install-checklist-preview-1200": {
-    "linked_file": "/assets/images/proof/eprops-install-checklist-preview-1200.f1a35380ee30.webp",
-    "sha256": "f1a35380ee30a3ab52c6277d601f947652cd33a33e2374a9d2120b7556575672",
-    "native_size": [
-      1200,
-      760
-    ],
-    "uniform_masks": 8
-  },
   "dist/eprops-engineering-packet-fanout-1200-clean": {
-    "linked_file": "/assets/images/proof/eprops-engineering-packet-fanout-1200-clean.ca9f4c6888f6.webp",
-    "sha256": "ca9f4c6888f6e45a134eaa74de053bbfe7f2af382440c056d86619c5a7d146c4",
+    "linked_file": "/assets/images/proof/eprops-engineering-packet-fanout-1200-clean.98ce512b4a48.webp",
+    "sha256": "98ce512b4a48e9b63ad4174cceb015f2d77c951f31937484acb28744ac56cd53",
     "native_size": [
       1200,
       780
     ],
-    "uniform_masks": 16
+    "uniform_masks": 5
   },
-  "dist-preview/eprops-install-checklist-preview-1200": {
-    "linked_file": "/assets/images/proof/eprops-install-checklist-preview-1200.f1a35380ee30.webp",
-    "sha256": "f1a35380ee30a3ab52c6277d601f947652cd33a33e2374a9d2120b7556575672",
+  "dist/eprops-install-checklist-preview-1200": {
+    "linked_file": "/assets/images/proof/eprops-install-checklist-preview-1200.f0dd061ebc6a.webp",
+    "sha256": "f0dd061ebc6a478fcbfa403abfbde3d6dfd17a559e96b00755eb82185c9b88eb",
     "native_size": [
       1200,
       760
     ],
-    "uniform_masks": 8
+    "uniform_masks": 4
+  },
+  "dist/ndt-magnetic-particle-report": {
+    "linked_file": "/assets/images/proof/ndt-magnetic-particle-report.195b337561a7.webp",
+    "sha256": "195b337561a74fece28bf202ca2b18d398747a85a974c7e5f69bc6d2b30184a2",
+    "native_size": [
+      916,
+      1200
+    ],
+    "uniform_masks": 4
+  },
+  "dist/tl-ultralight-designer-correspondence": {
+    "linked_file": "/assets/images/proof/tl-ultralight-designer-correspondence.daf0f4d03387.webp",
+    "sha256": "daf0f4d033872534aeedb3232cd93ef3ac40e3ff1445ed539e5f65135a7075aa",
+    "native_size": [
+      951,
+      1200
+    ],
+    "uniform_masks": 5
+  },
+  "dist/lca-logbook-work-sticker-proof-800": {
+    "linked_file": "/assets/images/proof/lca-logbook-work-sticker-proof-800.f30c037a8e7e.webp",
+    "sha256": "f30c037a8e7e689ebad6d3ec334c7189e7c266a8cbf35ee53d4bc0942acf0c34",
+    "native_size": [
+      1200,
+      847
+    ],
+    "uniform_masks": 5
+  },
+  "dist/garmin-g5-box-unit": {
+    "linked_file": "/assets/images/proof/garmin-g5-box-unit.5c4b74f790bd.webp",
+    "sha256": "5c4b74f790bd264c9fc508c4cbad72b9f40e437eb637cfcd09951b321ab0d10a",
+    "native_size": [
+      1200,
+      900
+    ],
+    "uniform_masks": 2
   },
   "dist-preview/eprops-engineering-packet-fanout-1200-clean": {
-    "linked_file": "/assets/images/proof/eprops-engineering-packet-fanout-1200-clean.ca9f4c6888f6.webp",
-    "sha256": "ca9f4c6888f6e45a134eaa74de053bbfe7f2af382440c056d86619c5a7d146c4",
+    "linked_file": "/assets/images/proof/eprops-engineering-packet-fanout-1200-clean.98ce512b4a48.webp",
+    "sha256": "98ce512b4a48e9b63ad4174cceb015f2d77c951f31937484acb28744ac56cd53",
     "native_size": [
       1200,
       780
     ],
-    "uniform_masks": 16
+    "uniform_masks": 5
+  },
+  "dist-preview/eprops-install-checklist-preview-1200": {
+    "linked_file": "/assets/images/proof/eprops-install-checklist-preview-1200.f0dd061ebc6a.webp",
+    "sha256": "f0dd061ebc6a478fcbfa403abfbde3d6dfd17a559e96b00755eb82185c9b88eb",
+    "native_size": [
+      1200,
+      760
+    ],
+    "uniform_masks": 4
+  },
+  "dist-preview/ndt-magnetic-particle-report": {
+    "linked_file": "/assets/images/proof/ndt-magnetic-particle-report.195b337561a7.webp",
+    "sha256": "195b337561a74fece28bf202ca2b18d398747a85a974c7e5f69bc6d2b30184a2",
+    "native_size": [
+      916,
+      1200
+    ],
+    "uniform_masks": 4
+  },
+  "dist-preview/tl-ultralight-designer-correspondence": {
+    "linked_file": "/assets/images/proof/tl-ultralight-designer-correspondence.daf0f4d03387.webp",
+    "sha256": "daf0f4d033872534aeedb3232cd93ef3ac40e3ff1445ed539e5f65135a7075aa",
+    "native_size": [
+      951,
+      1200
+    ],
+    "uniform_masks": 5
+  },
+  "dist-preview/lca-logbook-work-sticker-proof-800": {
+    "linked_file": "/assets/images/proof/lca-logbook-work-sticker-proof-800.f30c037a8e7e.webp",
+    "sha256": "f30c037a8e7e689ebad6d3ec334c7189e7c266a8cbf35ee53d4bc0942acf0c34",
+    "native_size": [
+      1200,
+      847
+    ],
+    "uniform_masks": 5
+  },
+  "dist-preview/garmin-g5-box-unit": {
+    "linked_file": "/assets/images/proof/garmin-g5-box-unit.5c4b74f790bd.webp",
+    "sha256": "5c4b74f790bd264c9fc508c4cbad72b9f40e437eb637cfcd09951b321ab0d10a",
+    "native_size": [
+      1200,
+      900
+    ],
+    "uniform_masks": 2
   }
 }

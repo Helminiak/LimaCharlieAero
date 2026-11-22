@@ -1,20 +1,24 @@
 {
   "public": {
-    "files": 318,
-    "bytes": 8498776,
-    "sha256_of_manifest": "1cb97c07b208a4edabdedf5df36719ab4bef6f823b9b109efe0871dc24d834f2",
-    "independent_checkout_hash_match": true,
-    "routes": 40,
-    "capture_measurements": 24,
-    "capture_images": 48
+    "files": 328,
+    "bytes": 10410664,
+    "sha256_of_manifest": "43fc4cc8b384b0a0ed3ada7284597fd3ad2bf1cdd7a248a4b474fdbd062b57de",
+    "second_build_hash_match": true,
+    "routes": 41,
+    "capture_measurements": 60,
+    "capture_images": 60,
+    "axe_scans": 20,
+    "desktop_our_work_height_px": 7964
   },
   "preview": {
-    "files": 324,
-    "bytes": 8546411,
-    "sha256_of_manifest": "2aa4ed0e66e80dc5e144a428f9d4e819eb976dae9d6374cf6459c0da56d4f951",
-    "independent_checkout_hash_match": true,
-    "routes": 40,
-    "capture_measurements": 24,
-    "capture_images": 48
+    "files": 328,
+    "bytes": 10406105,
+    "sha256_of_manifest": "b94f50119b14ab7103b691fe5935707de1bed9a32c040045670e5e29b8b5ed41",
+    "second_build_hash_match": true,
+    "routes": 41,
+    "capture_measurements": 60,
+    "capture_images": 60,
+    "axe_scans": 20,
+    "desktop_our_work_height_px": 7964
   }
 }

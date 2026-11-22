@@ -1,7 +1,7 @@
 {
   "root": "verification-root",
   "status": "PASS",
-  "files": 318,
+  "files": 328,
   "routes": [
     {
       "route": "/light-sport-prebuy-evaluation",
@@ -141,6 +141,10 @@
     },
     {
       "route": "/rotax-turbocharger-notice",
+      "status": 200
+    },
+    {
+      "route": "/rotax-915-tbo-extension",
       "status": 200
     },
     {

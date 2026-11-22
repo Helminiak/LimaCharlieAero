@@ -1,0 +1,44 @@
+{
+  "cleared_subjects": 54,
+  "builds": {
+    "dist": {
+      "case_anchors": [
+        "sting-mount",
+        "sling-propeller",
+        "sting-propeller",
+        "ranger-fuel",
+        "searey-evaluation",
+        "ctsw-forensic"
+      ],
+      "home_case_cards": [
+        "sting-mount",
+        "sling-propeller"
+      ],
+      "archive_variant_rows": 6,
+      "featured_subjects": [
+        "turbocharger valve housing",
+        "915 time between overhaul"
+      ]
+    },
+    "dist-preview": {
+      "case_anchors": [
+        "sting-mount",
+        "sling-propeller",
+        "sting-propeller",
+        "ranger-fuel",
+        "searey-evaluation",
+        "ctsw-forensic"
+      ],
+      "home_case_cards": [
+        "sting-mount",
+        "sling-propeller"
+      ],
+      "archive_variant_rows": 6,
+      "featured_subjects": [
+        "turbocharger valve housing",
+        "915 time between overhaul"
+      ]
+    }
+  },
+  "safety_label_contrast": 8.984746506328634
+}

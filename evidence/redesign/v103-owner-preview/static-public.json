@@ -1,9 +1,9 @@
 {
   "status": "PASS",
-  "checks": 4800,
-  "references": 2248,
-  "routes": 40,
-  "proof_subjects": 53,
+  "checks": 5000,
+  "references": 2353,
+  "routes": 41,
+  "proof_subjects": 54,
   "errors": [],
   "repetition": {
     "Owner information": [],
@@ -20,13 +20,13 @@
   "voice_frequency": {
     "Joe": 7,
     "Joseph": 14,
-    "we": 59,
-    "our": 4,
+    "we": 61,
+    "our": 9,
     "us": 13,
     "team": 0,
     "technician": 0,
-    "shop": 45,
-    "Lima Charlie Aero": 52
+    "shop": 46,
+    "Lima Charlie Aero": 53
   },
-  "rights_gate": "REVIEW REQUIRED \u2014 private candidate only; no public publication authorization inferred"
+  "rights_gate": "CLEARED \u2014 owner-supplied pool, PR #2 comments 6019001980 and 6019369438"
 }

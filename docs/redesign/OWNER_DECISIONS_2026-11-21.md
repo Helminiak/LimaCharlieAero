@@ -11,4 +11,4 @@ The owner’s two messages to Claude on November 21 govern this pass. The underl
 | Restore technical context under selective flat masks. Withhold registrations, component and airframe serials, third-party personal details, signatures and confidential purchasing data. | November 21 directive and pool permissions above |
 | Feature two distinct verified ROTAX issues, safety first. Retain the gearbox directive in the active AD list and archive. | November 21 directive and supplied ROTAX library check |
 
-PR #2 comment 6019430509 is part of the owner’s supporting record. Publication rights and case-fact confirmation are distinct from aircraft-specific approval or release. Deployment and independent review remain separate.
+PR #2 comment 6019430509 calls for the technical reasoning and documentation behind each repair to be visible. Publication rights and case-fact confirmation are distinct from aircraft-specific approval or release. Deployment and independent review remain separate.

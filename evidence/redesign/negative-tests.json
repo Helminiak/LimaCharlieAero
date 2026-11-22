@@ -267,6 +267,160 @@
       "observed_failure": "Missing adjacent A1-02 correction link"
     },
     {
+      "test": "Owner notice rotax-915-tbo-extension {'prominence': 'archive'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R1 requires two distinct",
+      "observed_failure": "R1 requires two distinct featured subjects"
+    },
+    {
+      "test": "Owner notice rotax-915-tbo-extension {'subject': 'turbocharger valve housing'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R1 requires two distinct",
+      "observed_failure": "R1 requires two distinct featured subjects"
+    },
+    {
+      "test": "Owner notice rotax-gearbox-notice {'prominence': 'archive'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R2 active AD",
+      "observed_failure": "R2 active AD hidden in archive"
+    },
+    {
+      "test": "Owner notice rotax-turbocharger-notice {'severity': 'routine'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R3 inconsistent",
+      "observed_failure": "R3 inconsistent safety classification"
+    },
+    {
+      "test": "Owner notice rotax-915-tbo-extension {'next_review': '2026-11-20'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R4 source verification",
+      "observed_failure": "R4 source verification is stale or inconsistent"
+    },
+    {
+      "test": "Owner notice rotax-915-tbo-extension {'supersedes': 'FAA AD 2026-22-03'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R7 unrelated",
+      "observed_failure": "R7 unrelated supersession"
+    },
+    {
+      "test": "Owner notice rotax-915-tbo-extension {'supersedes': 'ASB-2026-002R01'}",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R7 unrelated",
+      "observed_failure": "R7 unrelated supersession"
+    },
+    {
+      "test": "R5 misleading bulletin hostname",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R5 unofficial",
+      "observed_failure": "R5 unofficial bulletin URL"
+    },
+    {
+      "test": "Trust link dist",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Trust strip needs",
+      "observed_failure": "Trust strip needs exactly the direct iRMT link"
+    },
+    {
+      "test": "FAA link dist",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "FAA website href",
+      "observed_failure": "FAA website href in services.html"
+    },
+    {
+      "test": "Placeholder dist",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Owner placeholder",
+      "observed_failure": "Owner placeholder in updates.html"
+    },
+    {
+      "test": "Featured order dist",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R1 featured order",
+      "observed_failure": "R1 featured order or count differs from safety-first selection"
+    },
+    {
+      "test": "Active safety item dist",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R3 safety notice missing",
+      "observed_failure": "R3 safety notice missing from home"
+    },
+    {
+      "test": "Unconditional assurance dist",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R6 unconditional",
+      "observed_failure": "R6 unconditional notice assurance"
+    },
+    {
+      "test": "Trust link dist-preview",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Trust strip needs",
+      "observed_failure": "Trust strip needs exactly the direct iRMT link"
+    },
+    {
+      "test": "FAA link dist-preview",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "FAA website href",
+      "observed_failure": "FAA website href in services.html"
+    },
+    {
+      "test": "Placeholder dist-preview",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Owner placeholder",
+      "observed_failure": "Owner placeholder in updates.html"
+    },
+    {
+      "test": "Featured order dist-preview",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R1 featured order",
+      "observed_failure": "R1 featured order or count differs from safety-first selection"
+    },
+    {
+      "test": "Active safety item dist-preview",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R3 safety notice missing",
+      "observed_failure": "R3 safety notice missing from home"
+    },
+    {
+      "test": "Unconditional assurance dist-preview",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "R6 unconditional",
+      "observed_failure": "R6 unconditional notice assurance"
+    },
+    {
+      "test": "W2 injected Registration pattern",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Registration pattern",
+      "observed_failure": "Registration pattern in proof OCR"
+    },
+    {
+      "test": "W2 injected Airframe serial",
+      "injected_result": "REJECTED",
+      "command": "python3 tools/verify_publication.py",
+      "expected_failure": "Airframe serial",
+      "observed_failure": "Airframe serial in proof OCR"
+    },
+    {
       "test": "X-09 dropped editor-flag-internal",
       "injected_result": "REJECTED",
       "command": "python3 tools/verify_publication.py",

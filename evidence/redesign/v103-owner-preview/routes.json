@@ -210,6 +210,12 @@
     "indexed": true
   },
   {
+    "route": "/rotax-915-tbo-extension",
+    "file": "rotax-915-tbo-extension.html",
+    "last_modified": "2026-11-21",
+    "indexed": true
+  },
+  {
     "route": "/start-with-the-symptom",
     "file": "start-with-the-symptom.html",
     "last_modified": "2026-10-05",

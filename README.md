@@ -33,4 +33,4 @@ For before screenshots, export the approved rollback commit into a separate temp
 
 ## Release gate
 
-Asset-specific rights marked `REVIEW REQUIRED` require owner confirmation before public publication. The private engineering candidate does not confer that permission. Source history and prior publication are not a substitute for rights evidence. Actual inbox delivery, live edge behavior, physical-device checks and independent Design/SEO acceptance remain separate validation gates. Read `evidence/` before considering release.
+The November 21 owner directive confirms publication rights for the owner-supplied proof pool and six type-level case records. See [the owner decisions](docs/redesign/OWNER_DECISIONS_2026-11-21.md). Deployment requires separate authorization. Source history and prior publication are not a substitute for rights evidence. Actual inbox delivery, live edge behavior, physical-device checks and independent Design/SEO acceptance remain separate validation gates. Read `evidence/` before considering release.

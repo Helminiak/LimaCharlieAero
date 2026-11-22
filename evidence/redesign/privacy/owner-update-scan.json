@@ -1,0 +1,230 @@
+{
+  "content_json_files": 7,
+  "builds": {
+    "dist": {
+      "rasters_without_private_metadata": 275
+    },
+    "dist-preview": {
+      "rasters_without_private_metadata": 275
+    }
+  },
+  "native_proof": {
+    "dynavibe-bad-1-27-ips-800": {
+      "sha256": "368614257668ec3b2c6475f90b2e14104f8b3fe84b93a67ce2df27f048e84692",
+      "ocr_words": 60
+    },
+    "dynavibe-good-0-04-ips-800": {
+      "sha256": "14c99d584060724439e6351c9c198af9a9b760d5a1185ce1096ac8a6f9dd808b",
+      "ocr_words": 112
+    },
+    "dynavibe-kit-secured-seat-800": {
+      "sha256": "f28e8596fc804ef52f317d543ac903721ae3d1a37679ebbe6661e264f85180a9",
+      "ocr_words": 20
+    },
+    "gearbox-pocket-wear-1-800": {
+      "sha256": "d23d341dfbf1cb509812297a7428d130f4fd266a31c4985219764cd3619f0753",
+      "ocr_words": 54
+    },
+    "gearbox-pocket-wear-2-800": {
+      "sha256": "939d2ee15447e2cf8de1f415f28196a4f048d56f4373bca800f9afa0175cd648",
+      "ocr_words": 48
+    },
+    "gearbox-pocket-wear-3-800": {
+      "sha256": "a9e4c1b6d4c42c6961577b7f2956fd4692b906c23bdfdded95944ded697633e7",
+      "ocr_words": 59
+    },
+    "rotax-engine-on-hoist-800": {
+      "sha256": "934116da4fecb3dea90e795815b3f197efa5e8f1e060f6e0dea6cc7689bcfcf0",
+      "ocr_words": 57
+    },
+    "engine-cage-crack-closeup-before-repair-800": {
+      "sha256": "9603c885e2bd9e28d56847a6bbec5a0932759442f00664cf0de44663f249d3f2",
+      "ocr_words": 5
+    },
+    "engine-cage-weld-repair-detail-800": {
+      "sha256": "c166537fea0b8f635a1ade28b4946e1f7fb59949e8542bc71faf373a77c95823",
+      "ocr_words": 16
+    },
+    "engine-cage-weld-joint-detail-800": {
+      "sha256": "fed8a75c5e4f3ebe6a1bdf826693faf38815486996039d9156e1930e0ca03f15",
+      "ocr_words": 83
+    },
+    "engine-cage-painted-finished-800": {
+      "sha256": "24ae104e5c71f1fee9c83499c50f9f52198dad6fdb7f6813b85ff0d7788c787f",
+      "ocr_words": 6
+    },
+    "engine-cage-ndt-facility-800": {
+      "sha256": "205a85d56aaaf13cc3e3ecfa483b11b95e68c83fa7f2b634b3047989e72ca6f4",
+      "ocr_words": 100
+    },
+    "fuel-tank-borescope-dirty-800": {
+      "sha256": "6a9ab18d0e87a7c23405e93772eff92151bc267b6406e7dc017a6e541f4fc270",
+      "ocr_words": 6
+    },
+    "fuel-tank-borescope-clean-800": {
+      "sha256": "873297a9ba83453d888262fd5952d14e4c1a9181abb7257b563df39944d4ef31",
+      "ocr_words": 4
+    },
+    "rotax-fuel-pump-in-out-card-800": {
+      "sha256": "98fd2c19ec74b9f442a5526defa53fa67aef44646e444579803c62abbad12143",
+      "ocr_words": 28
+    },
+    "differential-pressure-tester-clean-800": {
+      "sha256": "2119ab0c2a4af9008578257b418c2d9b99b31e37a48ddca10a4ce64bb7128fc4",
+      "ocr_words": 151
+    },
+    "carbmate-carb-sync-kit-card-800": {
+      "sha256": "cda6a94a2c807cbee435bb6ec70f3ec9c3a3bd72f6c41bc0fd850142378cd2bb",
+      "ocr_words": 11
+    },
+    "xps-oil-rotax-filter-service-800": {
+      "sha256": "81c6c2441472ecd0a574a7398f78b3cd80b6080deb3a4abdfa4ebdc0ae82e43b",
+      "ocr_words": 16
+    },
+    "rotax-installed-hose-overview-card-800": {
+      "sha256": "d45d0659b5120604b24b8a57162c696a6eca6f3d8fda579444b28c16f4fae2ea",
+      "ocr_words": 65
+    },
+    "rotax-rubber-hose-routing-overview-1000": {
+      "sha256": "12d74bf4808ff572720e0ecd373edc60403eff632799cc3ec2d783d7aed4de5d",
+      "ocr_words": 54
+    },
+    "coolant-residue-cylinder-head-hose-leak-800": {
+      "sha256": "64455d5d159e29ebc0762e404127e6f5d146f825c1edbbf770068d1bcb5d65ea",
+      "ocr_words": 81
+    },
+    "coolant-hose-leak-source-tracing-800": {
+      "sha256": "763bd5176949c2181a5bf9de54559c58506e4a1fad2ba0a9582249c55ea3791f",
+      "ocr_words": 4
+    },
+    "garmin-g5-installed-panel-close-800": {
+      "sha256": "efb8211eda3ff18aabc42f81ff0db7929f8e9940e0b3406419eb68e77d4af252",
+      "ocr_words": 62
+    },
+    "dsub-connector-wiring-close-800": {
+      "sha256": "d03d2d8fa06bc3176ed2eb5e4090fad0087af1edd8c1c1b4e566b6c66cffb0f7",
+      "ocr_words": 20
+    },
+    "electrical-connector-close-800": {
+      "sha256": "c94099010869cb53031beb84a92deeffbec882ae22896dcd8a75a2769e313bc4",
+      "ocr_words": 18
+    },
+    "electrical-connector-wide-800": {
+      "sha256": "80c922ad8e0324a21ce7e5f74c4afe738c1f7d0676bbd5809eed2b70ee801a2d",
+      "ocr_words": 40
+    },
+    "voltage-regulator-connector-frayed-800": {
+      "sha256": "38107393a7e68561003edbc1277a3f3428f3afa47b2c3c06942b8a22dd6db8ea",
+      "ocr_words": 34
+    },
+    "soft-start-connector-annotated-800": {
+      "sha256": "ffe322aa836dae05397ce5d80641d62d4776b3347c943bb4da187141c53e886c",
+      "ocr_words": 38
+    },
+    "avionics-tools-coax-workbench-800": {
+      "sha256": "b6eefaa8bbf3ebc34ef70bcd8d9329b25f7e444e7c3b8ee50258d710a55fa406",
+      "ocr_words": 14
+    },
+    "icom-radio-coax-adapters-800": {
+      "sha256": "7cfc70d99a24aa023bb395aed10df6a59137bace2f248d3863aff74e379e01b7",
+      "ocr_words": 218
+    },
+    "top-end-parts-organized-shelf-800": {
+      "sha256": "a64b3ce4398c254137988aa7141251fbee381ce5151a3eb339033d01e912822b",
+      "ocr_words": 53
+    },
+    "aircraft-open-cowling-under-canopy-800": {
+      "sha256": "76f942ad3352c4e5440dee5ac0f0c2a09d42771495fc0af8df9d5f032b1c04c7",
+      "ocr_words": 55
+    },
+    "aircraft-side-canopy-joe-working-800": {
+      "sha256": "eef2374c74427a99e063c53b9c3aa48ddc0c70d51b4fde15dc222c84f2485d64",
+      "ocr_words": 6
+    },
+    "lca-logbook-work-sticker-proof-800": {
+      "sha256": "f30c037a8e7e689ebad6d3ec334c7189e7c266a8cbf35ee53d4bc0942acf0c34",
+      "ocr_words": 153
+    },
+    "eprops-aircraft-closeup-sky-ranger-1200": {
+      "sha256": "e528244af6fb4bdae6f1c3ea864045abf6a3ae79751077aac09ffef73f4a385f",
+      "ocr_words": 17
+    },
+    "eprops-blade-damage-closeup-800": {
+      "sha256": "4e782a9a112597fc0d54c6694c4d1e9bdda4785bfaeed6fa6ceeeefc8896f5d5",
+      "ocr_words": 109
+    },
+    "eprops-engineering-packet-fanout-1200-clean": {
+      "sha256": "98ce512b4a48e9b63ad4174cceb015f2d77c951f31937484acb28744ac56cd53",
+      "ocr_words": 505
+    },
+    "eprops-install-checklist-preview-1200": {
+      "sha256": "f0dd061ebc6a478fcbfa403abfbde3d6dfd17a559e96b00755eb82185c9b88eb",
+      "ocr_words": 269
+    },
+    "rotax-support-hero-original-photo": {
+      "sha256": "a8f939f801e2620f0c357cfce1def56538af8aef88748a3cf43dd14200dd2407",
+      "ocr_words": 35
+    },
+    "rotax-installed-hoses-overview": {
+      "sha256": "0344f344f5ab78c4d5903a449f33119d2f5ac4d78138bcd5081d55fba075ef9b",
+      "ocr_words": 73
+    },
+    "garmin-g5-installed-panel-wide": {
+      "sha256": "2e27564d5f0b1a9a9dfcbe0551929d8680ae4f6bbebb1468b9dd3ea787480fb6",
+      "ocr_words": 36
+    },
+    "proof-owner-joe-airfield": {
+      "sha256": "73ec4a4071464572639ca10993a2b2478e0d52b88681e48875cb2cb21f1c75dd",
+      "ocr_words": 4
+    },
+    "skyreach-bushcat-tailwheel-prebuy": {
+      "sha256": "9fc747034037d363dcab84eaee68cf3a8fe621301d910617105295ca8f9ade58",
+      "ocr_words": 22
+    },
+    "bing64-carburetor-rebuild-float-check": {
+      "sha256": "50925550a3a299bea632587979ee8e4dddf07c9e6e6aaf807a5ae50765893763",
+      "ocr_words": 144
+    },
+    "garmin-g5-box-unit": {
+      "sha256": "5c4b74f790bd264c9fc508c4cbad72b9f40e437eb637cfcd09951b321ab0d10a",
+      "ocr_words": 106
+    },
+    "exhaust-marking-hydra-detail": {
+      "sha256": "ddb8742a6afb8c076522deff80b9b509b75d5ba8c4e3dd50666604e6b8158916",
+      "ocr_words": 27
+    },
+    "ndt-magnetic-particle-report": {
+      "sha256": "195b337561a74fece28bf202ca2b18d398747a85a974c7e5f69bc6d2b30184a2",
+      "ocr_words": 328
+    },
+    "tl-ultralight-designer-correspondence": {
+      "sha256": "daf0f4d033872534aeedb3232cd93ef3ac40e3ff1445ed539e5f65135a7075aa",
+      "ocr_words": 36
+    },
+    "eprops-durandal": {
+      "sha256": "0bbf5baa07f755d4036d9c256ecd62b84188e861ee2b481129abc49a8057b253",
+      "ocr_words": 5
+    },
+    "eprops-glorieuse-912": {
+      "sha256": "c36afd82ca1d8f4a01cdd8baa071a040551a05927f6de5df253ca5f5eaba1c56",
+      "ocr_words": 10
+    },
+    "eprops-glorieuse-916": {
+      "sha256": "3217daf8f62ee92931cc506c806724ef293584b1564d44398a6cd50092ec15ff",
+      "ocr_words": 4
+    },
+    "rotax-airbox-focus": {
+      "sha256": "5aa2102fab74e778be2c3873541a978f617289abce7b7eb0ce323efd4b5fed39",
+      "ocr_words": 15
+    },
+    "rotax-engine-installed-green-covers": {
+      "sha256": "d2d00550f6bcc4b6ffed7e0083e806bca8d6c2ea2b51aefe9661012107905940",
+      "ocr_words": 33
+    },
+    "eprops-blades-box-documents": {
+      "sha256": "d4b9cc9a7d1284ff27986afe9f61767aba722f9f847b8a499aca5dd8a0286c79",
+      "ocr_words": 20
+    }
+  },
+  "method": "Tesseract English, 2x Lanczos, sparse text. Each distinct native scanned once after byte comparison with both builds. Six new masks also manually inspected at 2x."
+}
