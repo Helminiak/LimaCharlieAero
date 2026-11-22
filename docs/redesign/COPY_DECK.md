@@ -39,66 +39,83 @@ Voice: company-first ("we", "the shop"), plain, specific, calm. No founder-centr
 
 Remove from home: the duplicate "Technical Leadership" and "Technical leadership, company responsibility" sections, the "supplied source" sentence and the malformed name. The five RC3 service-summary sections ("Scheduled aircraft and ROTAX maintenance" etc.) move to `/services` where they are not already present. Their link rows are preserved on that page. Report word counts.
 
-## Our Work (`/our-work`, new)
-- Title: `Our Work: Light-Sport & Experimental Aircraft Case Studies | Lima Charlie Aero`
-- H1: `Our Work`. Lede: `Real aircraft, identified by type. Each case shows what was found, the evidence, what was decided, how it was verified and what was documented. Pending work is labelled as pending.`
-- Legend: the stage rail with a one-line definition of each stage.
-- "What these cases do and don't show" box: `These are records of process on specific aircraft. They are not a promise of the same finding or outcome on yours, and they are not a substitute for the manufacturer instructions and approvals that apply to your aircraft.`
+## Our Work · owner-approved case copy, 2026-11-21
 
-## Case drafts (all `state: draft`)
+Six aircraft cases follow the evidence from the first question through the work, checks and records. Each identifies the decisions and tests still pending.
 
-### CS-1: TL-2000 Sting Sport: engine-mount crack, repair or replace
-Source: PR #2 comments 6019840432 and 6019938344. Images: `engine-cage-crack-closeup-before-repair`, `engine-cage-weld-repair-detail`, `engine-cage-weld-joint-detail`, `engine-cage-ndt-facility`, `ndt-magnetic-particle-report` (**redact** identifiers and registration), `tl-ultralight-designer-correspondence` (**redact** names, addresses and signature; keep the message body), `engine-cage-painted-finished`.
-- **Problem:** A crack was found at a joint of the steel-tube engine mount.
-- **Aircraft configuration:** TL-2000 Sting Sport, ROTAX 912. `[OWNER CONFIRM: engine model; S-LSA or E-LSA]`
-- **Evidence:** The crack was photographed in place before any work, to record its location and extent.
-- **Evaluation:** Repair and replacement were weighed. The repair path was taken to the aircraft designer instead of being decided on the shop floor. `[OWNER CONFIRM: what repair instruction or data was used]`
-- **Action:** The joint was weld-repaired. `[OWNER CONFIRM: who performed the weld, if not LCA]`
-- **Verification:** The repaired mount was inspected by magnetic-particle NDT at an outside testing facility. After the inspection, the aircraft designer confirmed in writing that the weldment is good and asked that the inspection protocol be added to the aircraft's documentation (correspondence shown with names and contact details redacted). Had the inspection not accepted the repair, the path was rework and re-test.
-- **Documentation:** The NDT report and the designer's confirmation are kept with the aircraft records. The mount was refinished before reinstallation.
-- Status pill: `Documented process`
-- Limits: `Repair data and acceptance are specific to this aircraft and this finding.`
+Each case follows one aircraft configuration. The records show which checks were completed and which decisions still belong to the owner or manufacturer.
 
-### CS-2: Sling 2 / ROTAX 912 iS: qualifying an E-PROPS propeller with the airframe manufacturer
-Source: PR #2 comment 6019938344. Images: `eprops-engineering-packet-fanout` / `eprops-install-checklist-fanout` **only if** they belong to this package `[OWNER CONFIRM]`; otherwise text only.
-- **Problem:** An owner wants an E-PROPS propeller on a Sling 2 with a ROTAX 912 iS. The airframe manufacturer's position decides whether that is an approved configuration.
-- **Aircraft configuration:** Sling 2 (also relevant to the Sling LSA / NGT family), ROTAX 912 iS, applicable E-PROPS DURANDAL-3 configuration.
-- **Evidence:** An E-PROPS technical package with the propeller's configuration data and supporting type-certificate data. E-PROPS also supplied Sling-specific technical material and offered a propeller for testing.
-- **Evaluation:** Instead of treating one installation as automatically approved, we asked for a configuration-level review.
-- **Action:** Lima Charlie Aero submitted the package to Sling's technical, airworthiness and engineering staff.
-- **Verification (pending):** Expected validation covers configuration, installation, weight and balance, pitch and RPM, vibration, performance, temperatures, fuel flow and a post-test inspection.
-- **Documentation:** The submittal and correspondence are kept. `[OWNER DECIDE: publish package reference numbers? default no]`
-- Status pill: `In progress · pending manufacturer review`
+### CS-1 · TL-2000 Sting Sport: engine-mount crack, repair or replace
 
-### CS-3: TL-2000 Sting Sport / ROTAX 912: E-PROPS qualification and installation verification
-Source: PR #2 comment 6019938344.
-- **Problem:** Fit an E-PROPS DURANDAL-3 to a specific TL-2000 / ROTAX 912 configuration with a controlled, documented process.
-- **Configuration:** Exact engine, gearbox and propeller configuration, with serialized components identified.
-- **Evidence:** E-PROPS application package. Mass, inertia, operating-limit and interface review. Vibration and torsional-compatibility background, including manufacturer test background.
-- **Evaluation:** The manufacturer authorization / LOA path was identified as a gate before installation was treated as settled.
-- **Action:** Installation to the planned criteria: pitch, tracking, torque and clearance checks. WOT/static-RPM target planning.
-- **Verification:** Dynamic balancing from recorded IPS, phase and RPM, with corrections toward a final balance target of about 0.07 IPS or less where applicable. Operational verification across the RPM range.
-- **Documentation:** Weight and balance, equipment list and maintenance-record updates.
-- Status pill: `[OWNER CONFIRM: "Documented process" or "Authorization pending"]`. **No final-authorization claim without the record.**
+Completed · repair inspected and confirmed by the aircraft designer
 
-### CS-4: Vashon Ranger R7: manufacturer-coordinated fuel evaluation
-Source: PR #2 comment 6019588967. **BLOCKED for publication** until the owner supplies a redacted packet excerpt and permission to describe the manufacturer correspondence.
-- **Problem:** An owner asked whether a controlled-specification automotive gasoline could be used in a Vashon Ranger R7 with a Continental O-200-D.
-- **Configuration:** Client aircraft baseline, fuel-system architecture, engine limitations and the existing approval gaps.
-- **Evidence and evaluation:** An 11-page engineering evaluation covering detonation and preignition margin, vapor lock and hot-fuel behaviour, wetted-material compatibility, fuel density and metering, contamination and misfueling controls, placards and POH implications, instrumentation, a risk register and go/no-go decision gates. It treats two hazards separately: engine detonation suitability, and the installed aircraft's fuel-delivery and vapor margin. **Passing one does not establish the other.**
-- **Action:** The packet went to the aircraft owner and, at the same time, to the airframe and engine manufacturers' technical staff so they could evaluate the question together.
-- **Verification / Documentation:** Manufacturer disposition pending. `[OWNER CONFIRM]`
-- Status pill: `Evaluation submitted · manufacturer disposition pending`
+- **Problem · done** A crack was found at a joint of the steel-tube engine mount.
+- **Configuration · done** TL-2000 Sting Sport (2005), ROTAX 912.
+- **Evidence · done** The crack was photographed in place before any work, to record its location and extent.
+- **Evaluation · done** Repair and replacement were weighed. The repair path was taken to the aircraft designer for review.
+- **Action · done** The joint was weld-repaired.
+- **Verification · done** On 28 October 2025 an outside facility used wet fluorescent magnetic-particle inspection with a yoke to ASTM E1444. All four areas were accepted: the lower right and lower left diagonal weld toes and the bottom and left cross-tube heat-affected zones. On 8 December 2025 the aircraft designer confirmed in writing that the weldment is good and asked that the inspection protocol be added to the aircraft documentation.
+- **Documentation · done** The NDT report and the designer's confirmation are kept with the aircraft records. The mount was refinished before reinstallation.
 
-### CS-5: SeaRey: return-to-service systems evaluation
-Source: PR #2 comment 6019588967. Text only unless the owner supplies photos.
-- **Problem:** An amphibian returning to service after downtime: more than a routine annual or an engine-only check.
-- **Configuration:** SeaRey amphibian, ROTAX 912 UL.
-- **Evaluation (plan):** The plan crossed system boundaries: ROTAX calendar items, hoses and rubber, carburetors, fuel pump, cooling, gearbox, compression and leak-down, fuel contamination, propeller, corrosion and downtime effects, wing-attachment hardware, amphibious-airframe systems, records and inspection status, and sale readiness. With the wings already off, the plan used the opportunity to inspect the attachment hardware and the surrounding structure.
-- Status pill: `Evaluation plan` `[OWNER CONFIRM: any completed work to report]`
+### CS-2 · Sling 2 / ROTAX 912 iS: qualifying an E-PROPS propeller with the airframe manufacturer
 
-### CS-6: forensic maintenance (records against as-found condition)
-**BLOCKED:** the aircraft type is unknown. The owner must supply the type and confirm publication. No record is created.
+Engineering and manufacturer coordination substantially complete · awaiting Sling Aircraft manufacturer testing in South Africa · final approval pending
+
+- **Problem · done** An owner wants an E-PROPS propeller on a Sling 2 with a ROTAX 912 iS. The airframe manufacturer's position decides whether that is an approved configuration.
+- **Configuration · done** Sling 2 (also relevant to the Sling LSA / NGT family), ROTAX 912 iS, applicable E-PROPS DURANDAL-3 configuration.
+- **Evidence · done** E-PROPS supplied technical package EP-2026-712 Rev A, DUR-3-175-C4-T configuration data and supporting EASA TCDS P.512, along with Sling-specific technical material and an offer of a propeller for testing.
+- **Evaluation · done** Instead of treating one installation as automatically approved, we asked for a configuration-level review.
+- **Action · done** Lima Charlie Aero submitted the package to Sling's technical, airworthiness and engineering staff.
+- **Verification · pending** Manufacturer testing by Sling Aircraft in South Africa is the next step; expected validation covers configuration, installation, weight and balance, pitch and RPM, vibration, performance, temperatures, fuel flow and a post-test inspection.
+- **Documentation · done** The submittal and correspondence are kept with the job file.
+
+### CS-3 · TL-2000 Sting Sport / ROTAX 912: E-PROPS DURANDAL-3 engineering and installation control
+
+Propeller-manufacturer engineering complete · installation and verification controlled by checklist
+
+- **Problem · done** Fit an E-PROPS DURANDAL-3 to a specific TL-2000 / ROTAX 912 configuration with a controlled, documented process.
+- **Configuration · done** TL-2000 Sting Sport, ROTAX 912 (80 hp), 2.27 gearbox and 175 cm DUR-3-175-C4-T propeller.
+- **Evidence · done** E-PROPS engineering package EP-2026-398 includes the configuration data and an Engineering Compatibility Statement dated 31 March 2026.
+- **Evaluation · done** The review covered mass, inertia, operating limits, interfaces and vibration and torsional background. Airframe-manufacturer authorization through the LOA process is a separate gate.
+- **Action · done** Criteria defined. The installation checklist calls for component identification, pre-installation inspection, torque of 24 N·m at the hub flange, 11 N·m at the hub clamp and 5 N·m at the spinner plate. Pitch is 23° with a blade-to-blade tolerance of ≤0.3°.
+- **Verification · done** Criteria defined. The checklist specifies a ground run at 5,000–5,800 rpm, dynamic balance acceptance at ≤0.10 IPS with a ≤0.07 IPS target, and wide-open-throttle flight RPM of 5,500 ± 50. It also calls for post-installation re-torque and pitch checks.
+- **Documentation · done** The checklist calls for weight and balance, equipment-list and logbook entries alongside the installation record.
+
+### CS-4 · Vashon Ranger R7 / Continental O-200-D: manufacturer-coordinated fuel evaluation
+
+Evaluation submitted September 2026 · manufacturer disposition pending
+
+- **Problem · done** An owner asked whether a controlled-specification automotive gasoline could be used in a Vashon Ranger R7 with a Continental O-200-D.
+- **Configuration · done** Client aircraft baseline, fuel-system architecture, engine limitations and the existing approval gaps.
+- **Evidence · done** An 11-page engineering evaluation covering detonation and preignition margin, vapor lock and hot-fuel behaviour, wetted-material compatibility, fuel density and metering, contamination and misfueling controls, placards and POH implications, instrumentation, a risk register and go/no-go decision gates.
+- **Evaluation · done** It treats two hazards separately: engine detonation suitability, and the installed aircraft's fuel-delivery and vapor margin. Passing one does not establish the other.
+- **Action · done** The 11-page packet LCA-ENGINEERING-2026-006 Rev A was sent on 6 September 2026 to the aircraft owner and, at the same time, to the airframe manufacturer’s engineering staff and the engine manufacturer’s technical services.
+- **Verification · pending** Manufacturer disposition pending. The evaluation's decision gates keep the two hazards separate: passing a detonation test does not establish the installed fuel-delivery and vapor margin.
+- **Documentation · done** The packet, its data requests to the airframe and engine manufacturers and the follow-up correspondence are kept with the job file.
+
+### CS-5 · SeaRey (2002): return-to-service systems evaluation
+
+Evaluation plan complete · inspection findings not yet reported
+
+- **Problem · done** An amphibian returning to service after downtime: more than a routine annual or an engine-only check.
+- **Configuration · done** 2002 SeaRey amphibian, ROTAX 912 UL, out of service since 2020.
+- **Evidence · done** Six years without a current inspection: calendar-limited rubber, fuel left in the system and corrosion exposure all had to be assumed until checked.
+- **Evaluation · done** The plan crossed system boundaries: ROTAX calendar items, hoses and rubber, carburetors, fuel pump, cooling, gearbox, compression and leak-down, fuel contamination, propeller, corrosion and downtime effects, wing-attachment hardware, amphibious-airframe systems, records and inspection status, and sale readiness. With the wings already off, the plan used the opportunity to inspect the attachment hardware and the surrounding structure.
+- **Action · done** The return-to-service scope was written and sent to the seller's broker before any work was quoted, so the aircraft was evaluated as a whole rather than as a routine annual.
+- **Verification · pending** Compression and leak-down, fuel-system cleanliness, oil-system and gearbox condition, and attachment-hardware inspection are the planned gates.
+- **Documentation · pending** Findings and any return to service are recorded against that scope.
+
+### CS-6 · Flight Design CTSW / ROTAX 912: forensic records audit against as-found condition
+
+Records audit and return-to-service plan complete · physical inspection gates pending
+
+- **Problem · done** An aircraft whose maintenance claims could not be taken at face value: records had to be reconciled with the aircraft before any release decision.
+- **Configuration · done** Flight Design CTSW, carbureted ROTAX 912, ballistic recovery system.
+- **Evidence · done** A bulletin-by-bulletin audit against 54 manufacturer publications — 7 airframe safety alerts, 17 service bulletins, 6 service notifications and 24 ROTAX publications — with each claim traced to an entry, a document or a gap.
+- **Evaluation · done** Gaps and contradictions were separated from confirmed items: component identities, calendar and TBO status, gearbox applicability, carburetor float and circlip actions, rubber isolators, the recovery system and an inconsistency in the fuel-system record.
+- **Action · done** A return-to-service plan of 144 traceable tasks with 6 hold points, configuration-verification steps, measured fuel-flow forms and an evidence register.
+- **Verification · pending** Physical inspection and measurement against the hold points; the release decision follows the evidence, not the logbook alone.
+- **Documentation · done** The audit report, compliance tracker and evidence requests are kept with the job file.
 
 ## Service-page "Authorization & limits" standard texts
 - ROTAX pages: `A family name alone does not establish whether a bulletin or directive applies. Applicability depends on the exact engine, gearbox or component identification and its service history. Certified-engine airworthiness directives and the ROTAX bulletins for non-certified engines are separate documents.`

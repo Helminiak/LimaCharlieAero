@@ -189,3 +189,9 @@ The case template enforces "What this does and does not show". Pending work is n
 ## 11. Preview vs public build
 - Case records with `state: draft` render **only** when the build is run with `--preview`. Preview output gets `noindex`, a visible "PRIVATE PREVIEW: owner fact-check required" ribbon on draft case sections, and is never packaged for deployment.
 - The default (public) build must be identical in route set and draft exclusion to what verify_static expects.
+
+## Owner addendum, 2026-11-21
+
+The six type-level case records and the full owner-supplied proof pool are cleared for publication under the recorded rights attestation. Case stage labels distinguish accepted work, defined verification criteria, planned inspections and outstanding manufacturer disposition. The November 21 selective masks replace the earlier document crops. The home trust strip contains five items and links only the ROTAX iRMT listing.
+
+The ROTAX module features two distinct issues ordered by safety significance. Both active FAA directives remain discoverable, and the archive distinguishes certified and ASTM publications. The architecture now has 41 routes. References and scope appear in [Owner decisions](OWNER_DECISIONS_2026-11-21.md) and [Amendment A](DESIGN_ROTAX_NOTICES_AMENDMENT_A.md).

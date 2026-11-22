@@ -15,8 +15,9 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
     def actions(topic='unsure'):
         return f"""<div class="actions"><a class="button" href="/support-request?topic={E(topic)}">Request Service</a><a class="button secondary" href="tel:{site['phone']}">Call the Shop</a><a class="button secondary" href="sms:{site['phone']}">Text the Shop</a></div>"""
 
-    def card(item):
-        return f'''<article class="card"><p class="tag">{('Owner notice' if item['type'] == 'notice' else 'Owner answer')}</p><h3><a href="/{E(item['slug'])}">{E(item['title'])}</a></h3><p>{E(item['summary'])}</p><p class="meta">Published <time datetime="{item['published']}">{item['published']}</time></p></article>'''
+    def card(item, label=None):
+        label = label or ('Owner notice' if item['type']=='notice' else 'Owner answer')
+        return f'''<article class="card"><p class="tag">{E(label)}</p><h3><a href="/{E(item['slug'])}">{E(item['title'])}</a></h3><p>{E(item['summary'])}</p><p class="meta">Published <time datetime="{item['published']}">{item['published']}</time></p></article>'''
 
     def notices():
         ns = [r for r in published if r['type'] == 'notice']

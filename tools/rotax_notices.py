@@ -78,7 +78,7 @@ def home_module(records,images):
 def hub(records,images,card):
     active=[r for r in records if r['status']=='ad_in_effect']
     body=cards(records,images)+'<section id="in-effect"><h2>Airworthiness directives in effect</h2><div class="cards">'
-    body+=''.join(card(r) for r in active)+'</div></section><section><h2>Reference archive</h2>'
+    body+=''.join(card(r,'FAA AD '+r['faa_ad']['number']+' · AD in effect') for r in active)+'</div></section><section><h2>Reference archive</h2>'
     body+='<div class="table-wrap" tabindex="0" role="region" aria-label="ROTAX bulletin archive"><table><thead><tr>'
     body+=''.join('<th scope="col">'+label+'</th>' for label in ('Document','Rev/issued','Engines','Category','Status','Source checked'))+'</tr></thead><tbody>'
     for r in sorted(records,key=lambda x:x['issue_date'],reverse=True):

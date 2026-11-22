@@ -634,7 +634,7 @@
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
-        "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry.",
+        "caption": "The sticker places the dated maintenance entry in the aircraft logbook.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
@@ -2375,7 +2375,7 @@
     "sections": [
       {
         "heading": "Source record",
-        "text": "Selected photographs were carried forward from Lima Charlie Aero’s prior website, where operational images were identified as owner-provided. Source attribution is distinct from permission and from evidence of an individual repair outcome. Contact the shop with an attribution or rights question.",
+        "text": "Lima Charlie Aero owns the photographs in its supplied collection or has written permission to publish them. Each caption identifies the equipment, work or record shown. Contact the shop with an attribution or privacy question.",
         "items": [],
         "links": []
       },
@@ -3168,14 +3168,14 @@
       {
         "src": "assets/images/proof/lca-logbook-work-sticker-proof-800.webp",
         "alt": "Open logbook with a Lima Charlie Aero work sticker and dated entries",
-        "caption": "The work sticker groups the aircraft type, time and date with the maintenance entry.",
+        "caption": "The type, date and airframe time on the work sticker help connect the entry to its supporting records.",
         "proof_id": "lca-logbook-work-sticker-proof-800"
       },
       {
         "proof_id": "ndt-magnetic-particle-report",
         "src": "assets/images/proof/ndt-magnetic-particle-report.webp",
         "alt": "Magnetic-particle report with four accepted engine-mount inspection areas",
-        "caption": "The outside inspection report marks all four weld and heat-affected areas accepted on October 28, 2025."
+        "caption": "The dated report ties four accepted inspection areas to the mount and inspection method."
       }
     ],
     "hero_id": "aircraft-open-cowling-under-canopy-800",
