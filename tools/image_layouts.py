@@ -1,5 +1,18 @@
 from build_common import E
 from build_assets import RESPONSIVE_WIDTHS
+from lxml import html
+
+def check_engine_family_photos(root):
+    excluded = {
+        'rotax-915-916-turbo-ems-support': ('rotax-support-hero-original-photo', 'rotax-engine-installed-green-covers'),
+        'rotax-912-carb-sync': ('rotax-airbox-focus',),
+    }
+    for page, subjects in excluded.items():
+        doc = html.parse(root / (page + '.html'))
+        references = doc.xpath('//img/@data-subject | //img/@src | //img/@srcset | //picture/source/@srcset')
+        for subject in subjects:
+            if any(subject in ref for ref in references):
+                raise ValueError(f'Wrong engine family photo on {page}: {subject}')
 
 HOME_CROPS = [(640, '(max-width:640px)'), (1024, '(640px < width <= 1024px)'), (1600, '(width > 1024px)')]
 

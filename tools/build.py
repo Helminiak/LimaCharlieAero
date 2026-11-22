@@ -5,6 +5,7 @@ from cases import select_cases
 from rotax_notices import validate, check_surfaces
 from editorial import select_editorial
 from render_site import render_site
+from image_layouts import check_engine_family_photos
 
 def main():
     ap = argparse.ArgumentParser()
@@ -56,6 +57,7 @@ def main():
         dest.parent.mkdir(exist_ok=True)
         dest.write_text(f"Contact: mailto:{site['email']}\nExpires: 2027-04-04T00:00:00Z\nCanonical: {site['domain']}/.well-known/security.txt\nPolicy: {site['domain']}/security-disclosure\nPreferred-Languages: en\n", encoding='utf-8', newline='\n')
     check_surfaces(out, [r for r in public if r['type']=='notice'])
+    check_engine_family_photos(out)
     evidence = ROOT / '.build-evidence' / out.name
     evidence.mkdir(parents=True, exist_ok=True)
     (evidence / 'asset-map.json').write_text(json.dumps(amap, indent=2), encoding='utf-8', newline='\n')

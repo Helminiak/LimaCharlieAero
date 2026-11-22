@@ -2331,19 +2331,13 @@
     "last_modified": "2026-11-20",
     "proof": [
       {
-        "proof_id": "rotax-engine-installed-green-covers",
-        "src": "assets/images/rotax-engine-installed-green-covers-800.webp",
-        "alt": "Installed ROTAX engine with green covers",
-        "caption": "The wider installation view shows the ROTAX engine and its green covers."
-      },
-      {
         "proof_id": "exhaust-marking-hydra-detail",
         "src": "assets/images/proof/exhaust-marking-hydra-detail.webp",
         "alt": "Markings on an installed exhaust component",
         "caption": "The close view records the markings on the installed exhaust component."
       }
     ],
-    "hero_id": "rotax-support-hero-original-photo",
+    "hero_id": "rotax-airbox-focus",
     "service": {
       "systems": [
         "Engine",
@@ -2365,7 +2359,10 @@
     "themes": [
       "Messages & operating conditions",
       "Installation & engine management"
-    ]
+    ],
+    "index_thumbnail_id": "rotax-support-hero-original-photo",
+    "hero_alt": "ROTAX turbocharged-engine airbox with its intercooler",
+    "hero_caption": "The ROTAX turbocharged-engine airbox is shown with its intercooler."
   },
   "image-credits": {
     "title": "Website image sources",
@@ -3756,10 +3753,10 @@
         "caption": "The Bing 64 reference shows carburetor components and a float check."
       },
       {
-        "proof_id": "rotax-airbox-focus",
-        "src": "assets/images/proof/rotax-airbox-focus.webp",
-        "alt": "ROTAX airbox and intake connections",
-        "caption": "The airbox sits above the intake connections in the engine compartment."
+        "proof_id": "rotax-installed-hoses-overview",
+        "src": "assets/images/proof/rotax-installed-hoses-overview.webp",
+        "alt": "Installed carbureted ROTAX 912 with a carburetor and its connections in view",
+        "caption": "The installed carbureted ROTAX 912 shows a carburetor and its connections."
       }
     ],
     "hero_id": "rotax-engine-on-hoist-800",

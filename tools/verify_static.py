@@ -35,9 +35,11 @@ indexed_files = expected - {'404.html','thank-you.html','card.html','about-crede
 domain=json.loads((R/'content/site.json').read_text())['domain']
 expected_urls = set() if preview else {domain + ('/' if f=='index.html' else '/'+Path(f).stem) for f in indexed_files}
 from rotax_notices import check_surfaces
+from image_layouts import check_engine_family_photos
 notices = [r for r in json.loads((R/'content/updates.json').read_text()) if r['type']=='notice' and (root/(r['slug']+'.html')).exists()]
 try:
  check_surfaces(root, notices)
+ check_engine_family_photos(root)
 except ValueError as error:
  ck(False,str(error))
 for error in publication_errors(root, cases, expected_urls, preview):

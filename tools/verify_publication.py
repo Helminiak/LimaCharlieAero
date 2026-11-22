@@ -169,6 +169,7 @@ def owner_faults(root):
     from PIL import ImageDraw, ImageFont
     from proof_privacy import check_ocr
     from rotax_notices import validate, check_surfaces, IRMT
+    from image_layouts import check_engine_family_photos
     notices = [r for r in read(root/'content/updates.json') if r['type']=='notice']
     day = date(2026,11,21)
     validate(notices, day)
@@ -191,6 +192,21 @@ def owner_faults(root):
 
     for build_name in ('dist','dist-preview'):
         out=root/build_name
+        for page, attribute, subject in [
+            ('rotax-915-916-turbo-ems-support', 'data-subject', 'rotax-support-hero-original-photo'),
+            ('rotax-915-916-turbo-ems-support', 'src', 'rotax-engine-installed-green-covers'),
+            ('rotax-912-carb-sync', 'srcset', 'rotax-airbox-focus'),
+        ]:
+            path = out / (page + '.html')
+            original = path.read_text()
+            value = subject if attribute == 'data-subject' else '/assets/images/proof/' + subject + '.webp'
+            tag = f'<img {attribute}="{value}">'
+            path.write_text(original.replace('</main>', tag + '</main>'))
+            try:
+                rejected('Engine family photo ' + build_name + ' ' + subject,
+                         lambda: check_engine_family_photos(out), f'Wrong engine family photo on {page}: {subject}')
+            finally:
+                path.write_text(original)
         # Run against real markup, including the optional card and retained active AD.
         for name,slug,needle,replacement,error in [
             ('Trust link','index',IRMT,'/about-credentials','Trust strip needs'),

@@ -46,7 +46,7 @@ def hero(p, key, images, actions):
     if key not in ['thank-you','404','about-credentials','privacy','image-credits','security-disclosure','support-request','contact']:
         text+=actions(p['topic'])
     if key=='contact':text+=actions(p['topic'])
-    photo = images.figure(p['hero_id'],'hero') if p.get('hero_id') else ''
+    photo = images.figure(p['hero_id'],'hero',caption=p.get('hero_caption'),alt=p.get('hero_alt')) if p.get('hero_id') else ''
     return f'<section class="interior {("intake-hero" if key=="support-request" else "")}"><div class="container split"><div>{text}</div>{photo}</div></section>'
 
 def home(p,site,img,actions,cases,notices):
@@ -96,7 +96,7 @@ def related_cases(cases, slugs):
 def service_page(key,p,pages,site,img,actions,cases,notices,table):
     sections=p['sections'];model=p['service'];result=hero(p,key,img,actions)
     if key=='rotax-engine-systems-support':
-        rows=[('/'+k,v['heading'],v['hero_id'],v['intro']) for k,v in pages.items() if k.startswith('rotax-') and k!=key]
+        rows=[('/'+k,v['heading'],v.get('index_thumbnail_id',v['hero_id']),v['intro']) for k,v in pages.items() if k.startswith('rotax-') and k!=key]
         result+=band('<h2>Find your ROTAX concern</h2>'+service_index(rows,img)+notices)
     plan=model['layout']
     used={plan['situation'],plan['systems']}
