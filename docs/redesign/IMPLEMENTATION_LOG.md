@@ -267,3 +267,7 @@ Applied A1-02 and Amendment 1a, annotated both historical specifications, valida
 The first complete paired performance run met both median thresholds. An experimental E-PROPS CSS change was committed and reverted during analysis. Its incomplete timing run encountered a 404 during a rebuild and contributes no samples to the paired receipt. The delivered artifact has no stylesheet change. See DEFECT_REGISTER for the spreads and the reviewer's adapter observations.
 
 Verification used the repository Python environment and pinned Node dependencies, Chromium 153, and the two offline Cloudflare environment switches. The requested npm suite ran with LCA_NOTICE_RETEST=1 to scope its route layout and axe loop. Both public and preview SHA-256 file manifests matched fresh checkout builds. The package check verified all 318 extracted hashes and 40 served HTML bodies. Firefox/WebKit executables, physical-device and field metrics, live provider delivery, notice owner sign-off, and independent design/SEO approval remain outside the verified engineering gates.
+
+## Owner directive, 2026-11-21
+
+The supervisor traced the failed package-browser receipt to an earlier verifier terminated after eight hours. The failed bytes are preserved at /home/joe/work/lca-redesign/preserve/package-browser-checks.orphan-kill-20261121.json. The supervisor restored the committed receipt. Implementation began directly in the clean redesign/v103-owner-preview worktree at a05d1c6b5adee7f57e13945973cc163d2cfb1b73.

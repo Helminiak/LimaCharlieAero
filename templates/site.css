@@ -112,7 +112,8 @@ button,summary { cursor: pointer; }
 .flight-hero h1 em { font-style: normal; color: var(--amber); }
 .hero-copy .lead { max-width: 36em; }
 .flight-hero .eyebrow,.system-band .eyebrow { color: var(--amber); }
-.trust ul { padding-block: 18px; margin-block: 0; list-style: none; display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+.trust ul { padding-block: 18px; margin-block: 0; list-style: none; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 16px; }
+.trust a { display: block; min-height: 44px; color: inherit; }
 .trust b { display: block; font: 750 1.1rem var(--display); }
 .trust li { color: #e0e8ef; font-size: .9rem; }
 .interior,.hero,.form-hero { padding: clamp(28px,4vw,64px) 0; }

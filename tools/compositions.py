@@ -53,7 +53,15 @@ def home(p,site,img,actions,cases,notices):
     begin,end=p['heading'].split(', ',1)
     first=f'<div class="container hero-copy"><p class="eyebrow">KAKH · Gastonia, North Carolina</p><h1>{E(begin)}, <em>{E(end)}</em></h1><p class="lead">{E(p["intro"])}</p><div class="actions"><a class="button" href="/support-request">Request Service</a><a class="button secondary" href="tel:{site["phone"]}">Call {site["display_phone"]}</a></div></div>'
     result=f'<section class="flight-hero">{img.home_picture(p["hero_id"])}{first}</section>'
-    trust=''.join(f'<li><b>{E(t.partition(": ")[0])}</b>{E(t.partition(": ")[2])}</li>' for t in p['trust'])
+    trust = []
+    for item in p['trust']:
+        title, _, detail = item.partition(': ')
+        label = f'<b>{E(title)}</b>{E(detail)}'
+        if title == 'ROTAX iRMT':
+            label = ('<a href="https://rotaxirmt.com/irmt-place/7534" rel="noopener" '
+                     'aria-label="ROTAX iRMT listing for Lima Charlie Aero (opens rotaxirmt.com)">' + label + '</a>')
+        trust.append('<li>' + label + '</li>')
+    trust = ''.join(trust)
     result+=f'<div class="trust"><ul class="container">{trust}</ul></div>'
     tiles=''
     for tile in p['tiles']:
