@@ -29,6 +29,7 @@ try {
    const row={route,width,...metrics};
    rows.push(row);
    assert.equal(metrics.overflow,0, JSON.stringify(row));
+   if(route==='/our-work' && width===1440) assert(metrics.height<=8000,'Desktop Our Work exceeds 8,000 px');
    if(route==='/'){
     const link=await page.locator('.trust a').boundingBox();
     assert(link.height>=44 && link.width>=44);

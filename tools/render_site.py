@@ -47,7 +47,8 @@ def render_site(out, site, pages, public, published, amap, metadata, registry, c
         notice = ''
         if any(r.get('status')=='ad_in_effect' for r in published):
             notice = '<div class="notice-bar"><div class="container">'+E(site['notice_bar'])+' <a href="/owner-notices#in-effect">Check applicability</a></div></div>'
-        markup = template.substitute(image_preload=home_preloads(amap) if key=='index' else '', menu_js=(ROOT/'templates/menu.js').read_text(), title=E(p['title']),
+        case_styles = '<style>' + (ROOT/'templates/case-records.css').read_text() + '</style>' if key=='our-work' else ''
+        markup = template.substitute(case_styles=case_styles, image_preload=home_preloads(amap) if key=='index' else '', menu_js=(ROOT/'templates/menu.js').read_text(), title=E(p['title']),
                     description=E(p['description']), canonical=E(canonical), robots=robots, ogtype=kind,
                     social=social, social_alt=E(registry[SOCIAL[family]]['alt']), css=amap['css'], js=amap['js'],
                     schema=json.dumps(data,ensure_ascii=False).replace('<',r'\u003c'), wordmark=amap['header-wordmark'],

@@ -1,0 +1,8 @@
+@media (min-width:1200px) {
+  .case-story:has(.case-record) { padding-block: 16px; }
+  .case-intro { max-width: none; grid-template-columns: minmax(0,1fr) minmax(0,1.25fr); }
+  .case-stages { max-width: none; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 32px; }
+  .case-strip:not(:empty) { max-width: 38rem; grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .case-evidence { grid-template-columns: repeat(4,minmax(0,1fr)); }
+  .case-evidence .document img { height: auto; width: auto; max-height: 275px; margin-inline: auto; }
+}
